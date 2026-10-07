@@ -16,6 +16,7 @@ Find Solana meme-coin wallets that keep turning $100-$500 into $100k+ and track 
   python -m gemtracker scan                judge the collected candidates against the rules
   python -m gemtracker analyze <WALLET>    full trade-by-trade check of one wallet
   python -m gemtracker watch [--loop]      alert when tracked wallets buy a coin
+  python -m gemtracker doctor              check that every data source answers
 
 Keys are read from environment variables (all optional, see .env.example):
   HELIUS_API_KEY / SOLANA_RPC_URL, SOLANATRACKER_API_KEY, GMGN_API_KEY, FOMOAPI_KEY,
@@ -94,6 +95,8 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("wallet")
     _criteria_args(p)
     _provider_args(p)
+
+    sub.add_parser("doctor", help="check every data source (takes a minute or two)")
 
     p = sub.add_parser("watch", help="alert on new buys by tracked wallets")
     p.add_argument("--loop", action="store_true", help="keep running (otherwise check once)")
@@ -222,6 +225,9 @@ def main(argv=None) -> int:
             return cmd_scan(a, fresh=True)
         if a.command == "analyze":
             return cmd_analyze(a)
+        if a.command == "doctor":
+            from .doctor import run as doctor
+            return doctor()
         if a.command == "watch":
             from .watch import run
             tiers = tuple(t.strip().upper() for t in a.tiers.split(",") if t.strip())

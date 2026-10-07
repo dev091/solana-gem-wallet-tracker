@@ -1,0 +1,27 @@
+name: Data source check
+
+# Quick health check of every data source (a few minutes). Run it from the Actions tab
+# when a scan looks wrong.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  doctor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check data sources
+        env:
+          SOLANA_RPC_URL: ${{ secrets.SOLANA_RPC_URL }}
+          HELIUS_API_KEY: ${{ secrets.HELIUS_API_KEY }}
+          SOLANATRACKER_API_KEY: ${{ secrets.SOLANATRACKER_API_KEY }}
+          GMGN_API_KEY: ${{ secrets.GMGN_API_KEY }}
+          FOMOAPI_KEY: ${{ secrets.FOMOAPI_KEY }}
+        run: python -m gemtracker doctor
