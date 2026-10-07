@@ -125,7 +125,8 @@ class SolanaRpc:
         host = urlsplit(url).hostname or ""
         if rps is None:
             # The free public endpoint allows ~40 getTransaction calls / 10s per IP.
-            rps = 3.5 if host == "api.mainnet-beta.solana.com" else 9.0
+            # Helius' free plan allows 10 requests/s; stay under it so bursts don't hit 429.
+            rps = {"api.mainnet-beta.solana.com": 3.5, "mainnet.helius-rpc.com": 6.0}.get(host, 9.0)
         net.set_rate(host, rps)
         self._ids = count(1)
         self._lock = threading.Lock()

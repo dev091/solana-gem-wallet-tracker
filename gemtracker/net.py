@@ -64,7 +64,7 @@ def set_rate(host: str, rps: float) -> None:
 def _retry_delay(exc: urllib.error.HTTPError, attempt: int) -> float:
     after = exc.headers.get("Retry-After") if exc.headers else None
     if after and after.strip().isdigit():
-        return min(float(after), 60.0)
+        return min(max(float(after), 1.0 + attempt), 60.0)  # "0" would retry instantly
     return min(1.5 * 2 ** attempt, 30.0)
 
 
