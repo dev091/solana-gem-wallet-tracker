@@ -148,8 +148,10 @@ def token_quotes(mints, log=None) -> dict:
             created = util.to_seconds(pair.get("pairCreatedAt"))
             if created and (quote.launched_ts is None or created < quote.launched_ts):
                 quote.launched_ts = created
-            liquidity = util.num((pair.get("liquidity") or {}).get("usd"))
-            if quote.liquidity is None or liquidity > quote.liquidity:
+            raw_liquidity = (pair.get("liquidity") or {}).get("usd")
+            # Pump.fun bonding-curve pairs report no liquidity at all: unknown, not zero.
+            liquidity = util.num(raw_liquidity) if raw_liquidity is not None else None
+            if quote.price is None or (liquidity or 0) > (quote.liquidity or 0):
                 quote.liquidity = liquidity
                 quote.price = util.num(pair.get("priceUsd")) or None
                 quote.symbol = base.get("symbol") or quote.symbol

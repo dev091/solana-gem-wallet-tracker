@@ -4,6 +4,18 @@
 अब इसमें हम **Solana meme coins के वो wallets ढूँढते और track करते हैं जो बार-बार
 $100–$500 लगाकर $100k+ बनाते हैं** — और कभी scam coin में पैसा नहीं डुबाते।
 
+## लक्ष्य: Pump.fun daily top 5 (Goal tracker)
+
+| Command | क्या करता है |
+|---|---|
+| `python -m gemtracker board` | Pump.fun का official PnL leaderboard (24h / 7d / 30d, top 100) + Kolscan daily: हर rank के लिए कितना profit चाहिए, कौन से wallets बार-बार आते हैं (consistent), किसने कम पैसे से बड़ा कमाया |
+| `python -m gemtracker watch` | consistent wallets + scan वाले + watchlist: हर 15 मिनट holdings की तुलना से buy/sell पकड़ता है (free RPC पर भी चलता है), alerts भेजता है |
+| `python -m gemtracker paper` | **Paper trading:** हर पकड़े गए buy पर $20 का नकली trade (देर से मिली price पर, 2% fees+slippage हर तरफ़) — तीन exit rules: उनके बेचते ही बेचो / 2x पर आधा / 24 घंटे बाद। पैसा लगाने से पहले यही बताता है कि copy करना फ़ायदे का है या नहीं |
+
+अपना wallet track करने के लिए उसका public address `wallets/me.txt` में डालो (या GitHub → Settings →
+Variables → `MY_WALLET`): `board` बताएगा कि आप top 5 से कितनी दूर हो।
+Dashboard के **Goal** tab में top-5 का cut-off, rank-वार chart और समय के साथ बदलाव दिखता है।
+
 ## कौन से wallets चुने जाते हैं (rules)
 
 | Rule | Default | बदलने का flag |
@@ -80,7 +92,9 @@ python -m unittest discover -s tests -t .     # tests
 | `wallets/watchlist.txt` | ये wallets हमेशा track होंगे, scan का result कुछ भी हो |
 | `wallets/gem_tokens.txt` | वो coins जिन पर 100x+ हुआ — gem search इनके traders देखता है |
 | `docs/` | Dashboard (GitHub Pages) |
-| `.github/workflows/` | रोज़ का scan + हर 15 मिनट का watch |
+| `.github/workflows/` | हर 3 घंटे leaderboard snapshot, हर 15 मिनट watch + paper trading, रोज़ का gem-hunter scan |
+| `data/leaderboards/` | leaderboard history (top-5 cut-off over time, wallet appearances) |
+| `data/paper_ledger.json` | सारे paper trades का हिसाब |
 
 ## ज़रूरी सच
 

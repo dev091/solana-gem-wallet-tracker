@@ -1,0 +1,32 @@
+window.GEM_PAPER = {
+ "updated_at": 1791382085,
+ "stake_usd": 20.0,
+ "fee_pct_per_side": 2.0,
+ "max_hold_hours": 48,
+ "summary": {
+  "overall": {
+   "trades": 0,
+   "mirror": {
+    "pnl_usd": 0,
+    "win_rate": null,
+    "avg_return_pct": null,
+    "best_x": null
+   },
+   "tp2x_half": {
+    "pnl_usd": 0,
+    "win_rate": null,
+    "avg_return_pct": null,
+    "best_x": null
+   },
+   "hold_24h": {
+    "pnl_usd": 0,
+    "win_rate": null,
+    "avg_return_pct": null,
+    "best_x": null
+   }
+  },
+  "wallets": []
+ },
+ "open": [],
+ "closed": []
+};

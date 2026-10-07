@@ -146,3 +146,24 @@ class CriteriaTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class QuotesTest(unittest.TestCase):
+    def test_missing_liquidity_is_unknown_not_zero(self):
+        from unittest import mock
+        from gemtracker import net, prices
+        curve, amm = addr("curve-coin"), addr("amm-coin")
+        pairs = [
+            {"baseToken": {"address": curve, "symbol": "NEW"}, "priceUsd": "0.00001", "pairCreatedAt": 1_700_000_000_000},
+            {"baseToken": {"address": amm, "symbol": "OLD"}, "priceUsd": "0.5", "liquidity": {"usd": 900}},
+            {"baseToken": {"address": amm, "symbol": "OLD"}, "priceUsd": "0.6", "liquidity": {"usd": 80_000},
+             "pairCreatedAt": 1_600_000_000_000},
+        ]
+        with mock.patch.object(net, "get_json", return_value=pairs):
+            q = prices.token_quotes([curve, amm])
+        self.assertIsNone(q[curve].liquidity)
+        self.assertEqual(q[curve].price, 0.00001)
+        self.assertEqual((q[amm].price, q[amm].liquidity, q[amm].launched_ts), (0.6, 80_000, 1_600_000_000))
+        positions = build_positions([d("b", 1, -1, **{curve: 1000})], price)
+        apply_quotes(positions, q)
+        self.assertAlmostEqual(positions[0].value_usd, 0.01)  # unknown liquidity: still valued

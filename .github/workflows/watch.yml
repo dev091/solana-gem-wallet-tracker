@@ -1,8 +1,9 @@
 name: Gem hunter watch
 
-# Every 15 minutes: did any tracked wallet buy something? Sends Telegram / Discord
-# alerts and updates the dashboard's live feed. GitHub may delay scheduled runs;
-# for second-by-second alerts run `python -m gemtracker watch --loop` on a PC/VPS.
+# Every 15 minutes: what did the tracked wallets (scan results, watchlist and the most
+# consistent leaderboard wallets) buy or sell? Sends Telegram / Discord alerts, updates the
+# live feed and paper-trades every buy. GitHub may delay scheduled runs; for faster alerts run
+# `python -m gemtracker watch --loop` on a PC/VPS.
 on:
   workflow_dispatch:
   schedule:
@@ -26,12 +27,13 @@ jobs:
         with:
           python-version: "3.12"
 
-      # Last-seen transaction per wallet is kept in the Actions cache, not in git.
+      # Holdings snapshots and last-seen state live in the Actions cache, not in git.
       - name: Restore watch state
         uses: actions/cache@v4
         with:
           path: |
             data/watch_state.json
+            data/watch_holdings.json
             .cache
           key: gemtracker-watch-${{ github.run_id }}
           restore-keys: gemtracker-watch-
@@ -49,12 +51,15 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data/activity.json docs/data/activity.js 2>/dev/null || true
+          for f in docs/data/activity.json docs/data/activity.js docs/data/paper.json docs/data/paper.js \
+                   data/paper_ledger.json; do
+            if [ -e "$f" ]; then git add "$f"; fi
+          done
           if git diff --cached --quiet; then
             echo "No new trades"
             exit 0
           fi
-          git commit -m "data: tracked wallet trades $(date -u +%Y-%m-%dT%H:%MZ)"
+          git commit -m "data: tracked trades and paper trading $(date -u +%Y-%m-%dT%H:%MZ)"
           for attempt in 1 2 3; do
             git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME" && exit 0
             sleep $((attempt * 5))

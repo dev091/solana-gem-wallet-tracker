@@ -3,3 +3,4 @@ __pycache__/
 .cache/
 .env
 data/watch_state.json
+data/watch_holdings.json

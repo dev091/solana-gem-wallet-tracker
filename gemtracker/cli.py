@@ -18,6 +18,7 @@ Find Solana meme-coin wallets that keep turning $100-$500 into $100k+ and track 
   python -m gemtracker watch [--loop]      alert when tracked wallets buy a coin
   python -m gemtracker doctor              check that every data source answers
   python -m gemtracker board               leaderboard snapshot: top-5 target, consistent winners
+  python -m gemtracker paper               would copying the tracked wallets have made money?
 
 Keys are read from environment variables (all optional, see .env.example):
   HELIUS_API_KEY / SOLANA_RPC_URL, SOLANATRACKER_API_KEY, GMGN_API_KEY, FOMOAPI_KEY,
@@ -99,6 +100,8 @@ def build_parser() -> argparse.ArgumentParser:
 
     sub.add_parser("doctor", help="check every data source (takes a minute or two)")
 
+    sub.add_parser("paper", help="paper-trading results: would copying the tracked wallets have paid?")
+
     p = sub.add_parser("board", help="snapshot Pump.fun + Kolscan leaderboards: top-5 target, consistent winners")
     p.add_argument("--wallet", help="also show where this wallet stands (default: wallets/me.txt or MY_WALLET)")
 
@@ -108,6 +111,10 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--sells", action="store_true", help="also alert on sells")
     p.add_argument("--tiers", default="STRICT,GEM_HUNTER",
                    help="which scan results to track (STRICT, GEM_HUNTER)")
+    p.add_argument("--board", type=int, default=15,
+                   help="also track this many of the most consistent leaderboard wallets (0 = none)")
+    p.add_argument("--mode", default="holdings", choices=["holdings", "txs"],
+                   help="holdings: cheap, works on the free RPC; txs: exact, needs a fast RPC")
     return parser
 
 
@@ -220,6 +227,28 @@ def my_wallet(explicit: str | None = None) -> str | None:
     return None
 
 
+def cmd_paper(log=print) -> int:
+    from .paper import POLICIES, PaperBook
+    book = PaperBook()
+    summary = book.summary()
+    o = summary["overall"]
+    log(f"Paper trading: ${book.stake:g} per signal, {book.fee_pct:g}% fees+slippage each side; "
+        f"{len(book.open_positions)} open, {o['trades']} closed")
+    if not o["trades"]:
+        log("No closed paper trades yet; `watch` opens them as tracked wallets buy.")
+        return 0
+    for policy in POLICIES:
+        r = o[policy]
+        log(f"  {policy:<10} PnL {util.usd(r['pnl_usd']):>8}  win rate {r['win_rate']:.0%}  "
+            f"avg {r['avg_return_pct']:+.1f}%  best {r['best_x']}x")
+    log("\nBy wallet (exit when the wallet sells):")
+    for w in summary["wallets"][:20]:
+        m = w["mirror"]
+        log(f"  {w['label'][:28] or util.short(w['wallet']):<28} {w['trades']:>3} trades  "
+            f"PnL {util.usd(m['pnl_usd']):>8}  win {m['win_rate']:.0%}  avg {m['avg_return_pct']:+.1f}%")
+    return 0
+
+
 def cmd_board(a, log=print) -> int:
     from . import leaderboard as lb
     snap = lb.take_snapshot(log)
@@ -274,13 +303,16 @@ def main(argv=None) -> int:
             return cmd_analyze(a)
         if a.command == "board":
             return cmd_board(a)
+        if a.command == "paper":
+            return cmd_paper()
         if a.command == "doctor":
             from .doctor import run as doctor
             return doctor()
         if a.command == "watch":
             from .watch import run
             tiers = tuple(t.strip().upper() for t in a.tiers.split(",") if t.strip())
-            return run(loop=a.loop, interval=a.interval, include_sells=a.sells, tiers=tiers)
+            return run(loop=a.loop, interval=a.interval, include_sells=a.sells, tiers=tiers,
+                       board=a.board, mode=a.mode)
     except KeyboardInterrupt:
         print("\nstopped")
         return 130

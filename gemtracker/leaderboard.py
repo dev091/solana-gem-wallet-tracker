@@ -129,8 +129,8 @@ def record(snapshot: dict) -> tuple:
 def repeat_leaders(snapshot: dict, seen: dict, limit: int = 40) -> list:
     """Wallets ranked by how consistently they make the boards.
 
-    Score = distinct (board, day) appearances across all snapshots, plus one point for each
-    board the wallet is on right now (daily + weekly + monthly at once = sustained, not a fluke).
+    Score = distinct (board, day) appearances over all recorded snapshots, the current one
+    included; being on the daily, weekly and monthly boards at once already counts three times.
     """
     current = {}
     for name, rows in snapshot["boards"].items():
@@ -138,9 +138,8 @@ def repeat_leaders(snapshot: dict, seen: dict, limit: int = 40) -> list:
             current.setdefault(r.wallet, {})[name] = r
     out = []
     for wallet, info in seen.items():
-        appearances = sum(len(days) for days in info.get("days", {}).values())
+        score = sum(len(days) for days in info.get("days", {}).values())
         now_on = current.get(wallet, {})
-        score = appearances + len(now_on)
         if score < 2:
             continue
         best = min(info.get("best", {}).values() or [999])

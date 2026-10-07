@@ -3,14 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gem Hunter Tracker</title>
-<meta name="description" content="Solana meme-coin wallets that keep turning $100-$500 into $100k+, and what they are buying now.">
+<title>Solana Leaderboard Tracker</title>
+<meta name="description" content="What a Pump.fun daily top-5 day takes, which wallets win consistently, and whether copying them would pay (paper trading).">
 <style>
   :root {
     --bg: #f6f7f9; --surface: #ffffff; --surface-2: #f1f3f6; --text: #111827; --muted: #5b6472;
     --border: #e3e6eb; --accent: #6d28d9; --accent-soft: #ede9fe; --good: #047857; --good-soft: #d1fae5;
     --warn: #a16207; --warn-soft: #fef3c7; --bad: #b91c1c; --bad-soft: #fee2e2; --chip: #eef0f4;
     --shadow: 0 1px 2px rgba(17, 24, 39, .06), 0 4px 16px rgba(17, 24, 39, .04);
+    --series-1: #2a78d6; --grid: #e1e0d9; --axis: #c3c2b7; --axis-text: #898781;
     color-scheme: light;
   }
   @media (prefers-color-scheme: dark) {
@@ -18,14 +19,16 @@
       --bg: #0b0d12; --surface: #131720; --surface-2: #1a1f2a; --text: #e6e8ee; --muted: #9aa3b2;
       --border: #262c38; --accent: #a78bfa; --accent-soft: #2a2140; --good: #34d399; --good-soft: #0f2e25;
       --warn: #fbbf24; --warn-soft: #33270b; --bad: #f87171; --bad-soft: #3a1717; --chip: #1e2430;
-      --shadow: none; color-scheme: dark;
+      --shadow: none; --series-1: #3987e5; --grid: #2c2c2a; --axis: #383835; --axis-text: #898781;
+      color-scheme: dark;
     }
   }
   :root[data-theme="dark"] {
     --bg: #0b0d12; --surface: #131720; --surface-2: #1a1f2a; --text: #e6e8ee; --muted: #9aa3b2;
     --border: #262c38; --accent: #a78bfa; --accent-soft: #2a2140; --good: #34d399; --good-soft: #0f2e25;
     --warn: #fbbf24; --warn-soft: #33270b; --bad: #f87171; --bad-soft: #3a1717; --chip: #1e2430;
-    --shadow: none; color-scheme: dark;
+    --shadow: none; --series-1: #3987e5; --grid: #2c2c2a; --axis: #383835; --axis-text: #898781;
+    color-scheme: dark;
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
@@ -38,48 +41,53 @@
   code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9em; }
   .wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
   header { border-bottom: 1px solid var(--border); background: var(--surface); }
-  header .wrap { padding-top: 22px; padding-bottom: 18px; }
+  header .wrap { padding-top: 22px; padding-bottom: 16px; }
   .top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
   h1 { margin: 0; font-size: 1.5rem; letter-spacing: -.01em; }
-  .sub { margin: 4px 0 12px; color: var(--muted); }
-  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  h3 { margin: 22px 0 8px; font-size: 1rem; }
+  .sub { margin: 4px 0 0; color: var(--muted); }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 4px 0 12px; }
   .chip { background: var(--chip); border-radius: 999px; padding: 3px 10px; font-size: .82rem; white-space: nowrap; }
-  .meta { margin: 10px 0 0; color: var(--muted); font-size: .85rem; }
+  .meta { margin: 6px 0 0; color: var(--muted); font-size: .85rem; }
   .icon-btn {
     border: 1px solid var(--border); background: var(--surface-2); color: var(--text); border-radius: 8px;
     padding: 6px 10px; cursor: pointer; font: inherit; font-size: .85rem;
   }
-  main.wrap { padding-top: 18px; padding-bottom: 40px; }
+  main.wrap { padding-top: 6px; padding-bottom: 40px; }
   .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
   .tile { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; box-shadow: var(--shadow); }
-  .tile .n { font-size: 1.6rem; font-weight: 650; font-variant-numeric: tabular-nums; }
+  .tile .n { font-size: 1.5rem; font-weight: 650; }
   .tile .l { color: var(--muted); font-size: .82rem; }
-  .tabs { display: flex; gap: 4px; margin: 20px 0 14px; border-bottom: 1px solid var(--border); overflow-x: auto; }
+  .tabs { display: flex; gap: 4px; margin: 14px 0 14px; border-bottom: 1px solid var(--border); overflow-x: auto; }
   .tab {
     border: 0; background: none; color: var(--muted); font: inherit; font-weight: 550; padding: 9px 12px;
     border-bottom: 2px solid transparent; cursor: pointer; white-space: nowrap;
   }
   .tab[aria-selected="true"] { color: var(--text); border-bottom-color: var(--accent); }
-  .empty {
-    background: var(--surface); border: 1px dashed var(--border); border-radius: 12px; padding: 18px;
-    color: var(--muted);
-  }
+  .empty { background: var(--surface); border: 1px dashed var(--border); border-radius: 12px; padding: 18px; color: var(--muted); }
   .empty b { color: var(--text); }
   .cards { display: grid; gap: 12px; }
   .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px 16px; box-shadow: var(--shadow); min-width: 0; }
+  .card h3 { margin: 0 0 4px; }
+  .card .note { color: var(--muted); font-size: .85rem; margin: 0 0 8px; }
+  .hero-card { padding: 18px 18px 16px; }
+  .hero-label { color: var(--muted); font-size: .9rem; }
+  .hero { font-size: 3.25rem; font-weight: 700; line-height: 1.1; letter-spacing: -.02em; margin: 4px 0; }
+  .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; margin-top: 12px; }
   .card-head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; }
-  .badge { font-size: .72rem; font-weight: 700; letter-spacing: .04em; border-radius: 6px; padding: 2px 8px; }
+  .badge { font-size: .72rem; font-weight: 700; letter-spacing: .04em; border-radius: 6px; padding: 2px 8px; white-space: nowrap; }
   .b-STRICT { background: var(--good-soft); color: var(--good); }
   .b-GEM_HUNTER { background: var(--accent-soft); color: var(--accent); }
   .b-REJECTED { background: var(--chip); color: var(--muted); }
   .b-ERROR { background: var(--bad-soft); color: var(--bad); }
   .b-WATCHLIST { background: var(--warn-soft); color: var(--warn); }
+  .b-BOARD { background: var(--chip); color: var(--text); }
   .addr { overflow-wrap: anywhere; }
   .links { margin-left: auto; display: flex; gap: 10px; font-size: .85rem; }
   .labels { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 4px; }
   .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 8px; margin: 10px 0; }
   .stat { background: var(--surface-2); border-radius: 10px; padding: 8px 10px; }
-  .stat .v { font-weight: 650; font-variant-numeric: tabular-nums; }
+  .stat .v { font-weight: 650; }
   .stat .k { color: var(--muted); font-size: .78rem; }
   ul.notes { margin: 6px 0; padding-left: 0; list-style: none; font-size: .88rem; }
   ul.notes li { margin: 3px 0; }
@@ -89,7 +97,7 @@
   .muted { color: var(--muted); }
   details { margin-top: 8px; }
   summary { cursor: pointer; font-weight: 550; font-size: .9rem; }
-  .table-wrap { overflow-x: auto; margin-top: 8px; border: 1px solid var(--border); border-radius: 10px; }
+  .table-wrap { overflow-x: auto; margin-top: 8px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); }
   table { border-collapse: collapse; width: 100%; font-size: .86rem; }
   th, td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
   th { color: var(--muted); font-weight: 550; background: var(--surface-2); }
@@ -104,7 +112,30 @@
   footer { color: var(--muted); font-size: .8rem; border-top: 1px solid var(--border); }
   footer .wrap { padding-top: 14px; padding-bottom: 24px; }
   button.copy { border: 0; background: none; color: var(--accent); cursor: pointer; font: inherit; font-size: .8rem; padding: 0; }
-  @media (max-width: 560px) { .links { margin-left: 0; width: 100%; } h1 { font-size: 1.25rem; } }
+  /* charts */
+  .chart { position: relative; width: 100%; }
+  .chart svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .chart .grid line { stroke: var(--grid); stroke-width: 1; }
+  .chart .axis line { stroke: var(--axis); stroke-width: 1; }
+  .chart text { fill: var(--axis-text); font-size: 11px; font-family: inherit; }
+  .chart text.value { fill: var(--muted); font-size: 12px; }
+  .chart text.cat { fill: var(--text); font-size: 12px; }
+  .chart .bar { fill: var(--series-1); }
+  .chart .bar, .chart text, .chart .line, .chart .area, .chart .dot, .chart .crosshair { pointer-events: none; }
+  .chart .hit:hover + .bar, .chart .hit:focus + .bar { opacity: .8; }
+  .chart .hit { fill: transparent; cursor: default; outline: none; }
+  .chart .line { fill: none; stroke: var(--series-1); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+  .chart .area { fill: var(--series-1); opacity: .1; }
+  .chart .dot { fill: var(--series-1); stroke: var(--surface); stroke-width: 2; }
+  .chart .crosshair { stroke: var(--axis); stroke-width: 1; }
+  .tooltip {
+    position: absolute; pointer-events: none; background: var(--surface); border: 1px solid var(--border);
+    border-radius: 8px; padding: 6px 9px; box-shadow: 0 4px 16px rgba(0,0,0,.12); font-size: .82rem;
+    white-space: nowrap; z-index: 5; transform: translate(-50%, -110%);
+  }
+  .tooltip .tv { font-weight: 650; color: var(--text); }
+  .tooltip .tl { color: var(--muted); }
+  @media (max-width: 560px) { .links { margin-left: 0; width: 100%; } h1 { font-size: 1.25rem; } .hero { font-size: 2.6rem; } }
 </style>
 </head>
 <body>
@@ -112,28 +143,29 @@
   <div class="wrap">
     <div class="top">
       <div>
-        <h1>Gem Hunter Tracker</h1>
-        <p class="sub">Solana meme-coin wallets that keep turning $100–$500 into $100k+ · हर ट्रेड में 20x, कोई scam coin नहीं</p>
+        <h1>Solana Leaderboard Tracker</h1>
+        <p class="sub">Goal: Pump.fun daily top 5 · लक्ष्य: $100 से 4–5 महीने में daily top 5</p>
       </div>
       <button class="icon-btn" id="theme" type="button" aria-label="Toggle colour theme">Theme</button>
     </div>
-    <div class="chips" id="rules"></div>
     <p class="meta" id="meta"></p>
   </div>
 </header>
 
 <main class="wrap">
-  <section class="tiles" id="tiles" aria-label="Summary"></section>
-
   <nav class="tabs" role="tablist">
-    <button class="tab" role="tab" data-tab="matches" aria-selected="true">Matches</button>
-    <button class="tab" role="tab" data-tab="live" aria-selected="false">Live buys</button>
+    <button class="tab" role="tab" data-tab="goal" aria-selected="true">Goal</button>
+    <button class="tab" role="tab" data-tab="paper" aria-selected="false">Paper trading</button>
+    <button class="tab" role="tab" data-tab="live" aria-selected="false">Live trades</button>
+    <button class="tab" role="tab" data-tab="matches" aria-selected="false">Gem hunters</button>
     <button class="tab" role="tab" data-tab="all" aria-selected="false">All scanned</button>
     <button class="tab" role="tab" data-tab="sources" aria-selected="false">Sources</button>
   </nav>
 
-  <section id="tab-matches"></section>
+  <section id="tab-goal"></section>
+  <section id="tab-paper" hidden></section>
   <section id="tab-live" hidden></section>
+  <section id="tab-matches" hidden></section>
   <section id="tab-all" hidden>
     <input class="search" id="search" type="search" placeholder="Filter by address, label, reason…" aria-label="Filter wallets">
     <div id="all-table"></div>
@@ -143,12 +175,15 @@
 
 <footer>
   <div class="wrap">
-    Public on-chain data only. Past wins do not predict future ones: wallets that hit 200x+ again and again
-    are often insiders, snipers or dev-linked, and by the time you copy a buy the price may already have moved.
-    Not financial advice.
+    Public on-chain and leaderboard data only. Past wins do not predict future ones: wallets that win big again and
+    again are often insiders, snipers or bots, and by the time you copy a buy the price may already have moved.
+    Paper trading moves no money. Not financial advice.
   </div>
 </footer>
 
+<div class="tooltip" id="tooltip" hidden></div>
+<script src="data/leaderboard.js"></script>
+<script src="data/paper.js"></script>
 <script src="data/wallets.js"></script>
 <script src="data/activity.js"></script>
 <script>
@@ -156,6 +191,9 @@
   "use strict";
   var W = window.GEM_WALLETS || null;
   var A = window.GEM_ACTIVITY || null;
+  var L = window.GEM_LEADERBOARD || null;
+  var P = window.GEM_PAPER || null;
+  var SVGNS = "http://www.w3.org/2000/svg";
 
   function esc(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
@@ -169,10 +207,12 @@
     if (a >= 1e4) return s + "$" + (a / 1e3).toFixed(1) + "k";
     return s + "$" + Math.round(a).toLocaleString("en-US");
   }
+  function usdFull(n) { return n == null || isNaN(n) ? "–" : "$" + Math.round(n).toLocaleString("en-US"); }
   function mult(n) {
     if (n == null || isNaN(n)) return "–";
     return n >= 100 ? Math.round(n).toLocaleString("en-US") + "x" : n.toFixed(1) + "x";
   }
+  function pct(n) { return n == null || isNaN(n) ? "–" : (n > 0 ? "+" : "") + n.toFixed(1) + "%"; }
   function short(a) { return a && a.length > 10 ? a.slice(0, 4) + "…" + a.slice(-4) : (a || ""); }
   function date(ts) { return ts ? new Date(ts * 1000).toISOString().slice(0, 10) : "–"; }
   function ago(ts) {
@@ -187,65 +227,295 @@
     var e = encodeURIComponent(w);
     return '<a href="https://gmgn.ai/sol/address/' + e + '" target="_blank" rel="noopener">GMGN</a>' +
       '<a href="https://solscan.io/account/' + e + '" target="_blank" rel="noopener">Solscan</a>' +
-      '<a href="https://kolscan.io/account/' + e + '" target="_blank" rel="noopener">Kolscan</a>';
+      '<a href="https://pump.fun/profile/' + e + '" target="_blank" rel="noopener">Pump.fun</a>';
+  }
+  function walletCell(w, name) {
+    return '<a class="mono" href="https://gmgn.ai/sol/address/' + encodeURIComponent(w) + '" target="_blank" rel="noopener">' +
+      esc(name || short(w)) + "</a>";
   }
   function coinLink(mint, symbol) {
     return '<a href="https://dexscreener.com/solana/' + encodeURIComponent(mint) + '" target="_blank" rel="noopener">' +
       esc(symbol || short(mint)) + "</a>";
   }
   function badge(tier) {
-    var names = { STRICT: "STRICT", GEM_HUNTER: "GEM HUNTER", REJECTED: "REJECTED", ERROR: "ERROR", WATCHLIST: "WATCHLIST" };
+    var names = { STRICT: "STRICT", GEM_HUNTER: "GEM HUNTER", REJECTED: "REJECTED", ERROR: "ERROR", WATCHLIST: "WATCHLIST", BOARD: "LEADER" };
     return '<span class="badge b-' + esc(tier) + '">' + esc(names[tier] || tier) + "</span>";
+  }
+  function table(head, rows) {
+    return '<div class="table-wrap"><table><thead><tr>' + head.map(function (h) {
+      return "<th" + (h.num ? ' class="num"' : "") + ">" + esc(h.t) + "</th>";
+    }).join("") + "</tr></thead><tbody>" + rows.join("") + "</tbody></table></div>";
+  }
+  function td(html, num, cls) { return "<td" + (num || cls ? ' class="' + (num ? "num " : "") + (cls || "") + '"' : "") + ">" + html + "</td>"; }
+
+  // ---- tooltip (labels come from APIs: textContent only)
+  var tip = document.getElementById("tooltip");
+  function showTip(evt, value, label) {
+    tip.textContent = "";
+    var v = document.createElement("div"); v.className = "tv"; v.textContent = value;
+    var l = document.createElement("div"); l.className = "tl"; l.textContent = label;
+    tip.appendChild(v); tip.appendChild(l);
+    tip.hidden = false;
+    var x = evt.pageX, y = evt.pageY;
+    if (evt.type === "focus") {
+      var r = evt.target.getBoundingClientRect();
+      x = r.left + r.width / 2 + window.scrollX; y = r.top + window.scrollY;
+    }
+    tip.style.left = x + "px"; tip.style.top = y + "px";
+  }
+  function hideTip() { tip.hidden = true; }
+  function svgEl(name, attrs) {
+    var el = document.createElementNS(SVGNS, name);
+    for (var k in attrs) el.setAttribute(k, attrs[k]);
+    return el;
+  }
+  function niceMax(v) {
+    if (!v || v <= 0) return 1;
+    var p = Math.pow(10, Math.floor(Math.log10(v))), m = v / p;
+    return (m <= 1 ? 1 : m <= 2 ? 2 : m <= 2.5 ? 2.5 : m <= 5 ? 5 : 10) * p;
+  }
+
+  // Horizontal bar chart: rank -> profit needed (magnitude, one hue)
+  // Charts are drawn at the box's real width so text stays at its CSS size on phones.
+  function boxWidth(box) { return Math.max(260, Math.round(box.getBoundingClientRect().width || 640)); }
+
+  function ladderChart(box, entries) {
+    box.textContent = "";
+    var width = boxWidth(box), rowH = 34, left = 46, right = 64, top = 6, bottom = 26;
+    var height = top + bottom + rowH * entries.length;
+    var max = niceMax(Math.max.apply(null, entries.map(function (e) { return e[1]; })));
+    var x = function (v) { return left + (width - left - right) * v / max; };
+    var svg = svgEl("svg", { viewBox: "0 0 " + width + " " + height, role: "img",
+      "aria-label": "Profit needed for each rank on the Pump.fun daily leaderboard" });
+    var grid = svgEl("g", { "class": "grid" });
+    var ticks = width < 420 ? 2 : 4;
+    for (var i = 0; i <= ticks; i++) {
+      var gx = x(max * i / ticks);
+      grid.appendChild(svgEl("line", { x1: gx, x2: gx, y1: top, y2: height - bottom }));
+      var t = svgEl("text", { x: gx, y: height - 8, "text-anchor": "middle" });
+      t.textContent = usd(max * i / ticks); grid.appendChild(t);
+    }
+    svg.appendChild(grid);
+    entries.forEach(function (e, idx) {
+      var y = top + idx * rowH, barH = 18, by = y + (rowH - barH) / 2, x1 = x(e[1]), r = Math.min(4, x1 - left);
+      var cat = svgEl("text", { x: left - 10, y: by + barH / 2 + 4, "text-anchor": "end", "class": "cat" });
+      cat.textContent = "#" + e[0]; svg.appendChild(cat);
+      var hit = svgEl("rect", { x: left, y: y, width: width - left - right, height: rowH, "class": "hit", tabindex: "0",
+        "aria-label": "Rank " + e[0] + ": " + usdFull(e[1]) });
+      var tipText = function (evt) { showTip(evt, usdFull(e[1]), "needed for rank #" + e[0] + " (last 24h)"); };
+      hit.addEventListener("pointermove", tipText); hit.addEventListener("focus", tipText);
+      hit.addEventListener("pointerleave", hideTip); hit.addEventListener("blur", hideTip);
+      svg.appendChild(hit);
+      var d = "M" + left + "," + by + " H" + (x1 - r) + " Q" + x1 + "," + by + " " + x1 + "," + (by + r) +
+              " V" + (by + barH - r) + " Q" + x1 + "," + (by + barH) + " " + (x1 - r) + "," + (by + barH) + " H" + left + " Z";
+      svg.appendChild(svgEl("path", { d: d, "class": "bar" }));
+      var val = svgEl("text", { x: x1 + 8, y: by + barH / 2 + 4, "class": "value" });
+      val.textContent = usd(e[1]); svg.appendChild(val);
+    });
+    svg.appendChild(svgEl("line", { x1: left, x2: left, y1: top, y2: height - bottom, stroke: "var(--axis)" }));
+    box.appendChild(svg);
+  }
+
+  // Single-series line: the top-5 cut-off over time, with crosshair tooltip
+  function trendChart(box, points) {
+    box.textContent = "";
+    var width = boxWidth(box), height = 220, left = 52, right = 16, top = 12, bottom = 28;
+    var t0 = points[0][0], t1 = points[points.length - 1][0];
+    if (t1 === t0) t1 = t0 + 1;
+    var vmax = niceMax(Math.max.apply(null, points.map(function (p) { return p[1]; })));
+    var x = function (t) { return left + (width - left - right) * (t - t0) / (t1 - t0); };
+    var y = function (v) { return top + (height - top - bottom) * (1 - v / vmax); };
+    var svg = svgEl("svg", { viewBox: "0 0 " + width + " " + height, role: "img",
+      "aria-label": "Pump.fun daily top-5 cut-off over time" });
+    var grid = svgEl("g", { "class": "grid" });
+    for (var i = 0; i <= 4; i++) {
+      var gy = y(vmax * i / 4);
+      grid.appendChild(svgEl("line", { x1: left, x2: width - right, y1: gy, y2: gy }));
+      var t = svgEl("text", { x: left - 8, y: gy + 4, "text-anchor": "end" });
+      t.textContent = usd(vmax * i / 4); grid.appendChild(t);
+    }
+    svg.appendChild(grid);
+    [t0, t1].forEach(function (ts, k) {
+      var lbl = svgEl("text", { x: x(ts), y: height - 8, "text-anchor": k ? "end" : "start" });
+      lbl.textContent = new Date(ts * 1000).toISOString().slice(5, 16).replace("T", " ") + " UTC";
+      svg.appendChild(lbl);
+    });
+    var d = points.map(function (p, idx) { return (idx ? "L" : "M") + x(p[0]).toFixed(1) + "," + y(p[1]).toFixed(1); }).join(" ");
+    svg.appendChild(svgEl("path", { d: d + " L" + x(t1) + "," + y(0) + " L" + x(t0) + "," + y(0) + " Z", "class": "area" }));
+    svg.appendChild(svgEl("path", { d: d, "class": "line" }));
+    var last = points[points.length - 1];
+    svg.appendChild(svgEl("circle", { cx: x(last[0]), cy: y(last[1]), r: 4, "class": "dot" }));
+    var cross = svgEl("line", { y1: top, y2: height - bottom, "class": "crosshair", visibility: "hidden" });
+    var marker = svgEl("circle", { r: 4, "class": "dot", visibility: "hidden" });
+    svg.appendChild(cross); svg.appendChild(marker);
+    var hit = svgEl("rect", { x: left, y: top, width: width - left - right, height: height - top - bottom, "class": "hit" });
+    hit.addEventListener("pointermove", function (evt) {
+      var rect = svg.getBoundingClientRect(), px = (evt.clientX - rect.left) * width / rect.width;
+      var best = points[0];
+      points.forEach(function (p) { if (Math.abs(x(p[0]) - px) < Math.abs(x(best[0]) - px)) best = p; });
+      cross.setAttribute("x1", x(best[0])); cross.setAttribute("x2", x(best[0])); cross.setAttribute("visibility", "visible");
+      marker.setAttribute("cx", x(best[0])); marker.setAttribute("cy", y(best[1])); marker.setAttribute("visibility", "visible");
+      showTip(evt, usdFull(best[1]), "top-5 cut-off · " + new Date(best[0] * 1000).toISOString().slice(0, 16).replace("T", " ") + " UTC");
+    });
+    hit.addEventListener("pointerleave", function () {
+      hideTip(); cross.setAttribute("visibility", "hidden"); marker.setAttribute("visibility", "hidden");
+    });
+    svg.appendChild(hit);
+    box.appendChild(svg);
   }
 
   // ---- header
+  document.getElementById("meta").textContent =
+    (L ? "Leaderboards " + ago(L.updated_at) : "No leaderboard snapshot yet") +
+    (A && A.updated_at ? " · live feed " + ago(A.updated_at) : "") +
+    (P && P.updated_at ? " · paper trading " + ago(P.updated_at) : "") +
+    (W ? " · wallet scan " + ago(W.generated_at) : "");
+
+  // ---- Goal tab
+  function goalTab() {
+    var box = document.getElementById("tab-goal");
+    if (!L || !L.ladders) {
+      box.innerHTML = '<div class="empty"><b>No leaderboard snapshot yet.</b><br>Run <code>python -m gemtracker board</code> or the “Leaderboard snapshot” workflow.</div>';
+      return;
+    }
+    var daily = L.ladders["pump.fun daily"] || {}, kol = L.ladders["kolscan daily"] || {}, weekly = L.ladders["pump.fun weekly"] || {};
+    var html = '<div class="card hero-card"><div class="hero-label">Profit you need in 24 hours to be in Pump.fun’s daily top 5 right now</div>' +
+      '<div class="hero">' + esc(usdFull(daily["5"])) + '</div>' +
+      '<div class="muted">From $100 that is ' + (daily["5"] ? Math.round(daily["5"] / 100).toLocaleString("en-US") + "x in one day" : "–") +
+      ' · updated ' + esc(ago(L.updated_at)) + "</div></div>";
+    html += '<div class="tiles" style="margin-top:12px">' + [
+      [usd(daily["1"]), "#1 on Pump.fun, 24h"], [usd(daily["20"]), "#20 on Pump.fun, 24h"],
+      [usd(daily["100"]), "#100 on Pump.fun, 24h"], [usd(kol["5"]), "#5 on Kolscan (KOLs), 24h"],
+      [usd(weekly["5"]), "#5 on Pump.fun, 7 days"]
+    ].map(function (t) { return '<div class="tile"><div class="n">' + esc(t[0]) + '</div><div class="l">' + esc(t[1]) + "</div></div>"; }).join("") + "</div>";
+    html += '<div class="grid2"><div class="card"><h3>Profit needed per rank</h3><p class="note">Pump.fun daily board (rolling 24h)</p><div class="chart" id="ladder-chart"></div></div>' +
+      '<div class="card"><h3>Top-5 cut-off over time</h3><p class="note">One snapshot every few hours</p><div class="chart" id="trend-chart"></div></div></div>';
+
+    var top = (L.boards && L.boards["pump.fun daily"]) || [];
+    html += "<h3>Pump.fun top 10 · last 24h</h3>" + table(
+      [{ t: "#" }, { t: "Trader" }, { t: "Profit 24h", num: 1 }, { t: "Bought (SOL)", num: 1 }, { t: "Coins", num: 1 }],
+      top.slice(0, 10).map(function (r) {
+        return "<tr>" + td(esc(r.rank)) + td(walletCell(r.wallet, r.name)) + td(usd(r.pnl_usd), 1) +
+          td(r.spent_sol != null ? Math.round(r.spent_sol).toLocaleString("en-US") : "–", 1) + td(r.positions ? esc(r.positions) : "–", 1) + "</tr>";
+      }));
+    var rl = L.repeat_leaders || [];
+    html += "<h3>Most consistent wallets</h3><p class=\"muted\" style=\"margin:0 0 6px;font-size:.85rem\">On several boards (24h / 7d / 30d / Kolscan) and days. These are tracked and paper-traded.</p>" +
+      (rl.length ? table([{ t: "Trader" }, { t: "Score", num: 1 }, { t: "Best rank", num: 1 }, { t: "Profit 24h", num: 1 }, { t: "Profit 30d", num: 1 }, { t: "On boards" }],
+        rl.slice(0, 15).map(function (r) {
+          return "<tr>" + td(walletCell(r.wallet, r.name)) + td(esc(r.score), 1) + td("#" + esc(r.best_rank), 1) +
+            td(usd(r.pnl_24h_usd), 1) + td(usd(r.pnl_30d_usd), 1) + td(esc((r.boards_now || []).join(", "))) + "</tr>";
+        })) : '<div class="empty">Builds up as snapshots are taken.</div>');
+    var ew = L.efficient_winners || [];
+    html += "<h3>Big returns on small money</h3><p class=\"muted\" style=\"margin:0 0 6px;font-size:.85rem\">≤ 25 SOL bought in the window and Pump.fun ROI ≥ 300%: the closest thing to a small starting balance.</p>" +
+      (ew.length ? table([{ t: "Trader" }, { t: "Board" }, { t: "Rank", num: 1 }, { t: "Profit", num: 1 }, { t: "Bought (SOL)", num: 1 }, { t: "ROI", num: 1 }],
+        ew.slice(0, 12).map(function (r) {
+          return "<tr>" + td(walletCell(r.wallet, r.name)) + td(esc(r.board)) + td("#" + esc(r.rank), 1) + td(usd(r.pnl_usd), 1) +
+            td(r.spent_sol != null ? r.spent_sol.toFixed(1) : "–", 1) + td(r.roi_pct != null ? Math.round(r.roi_pct).toLocaleString("en-US") + "%" : "–", 1) + "</tr>";
+        })) : '<div class="empty">None right now.</div>');
+    box.innerHTML = html;
+
+    var ladder = ["1", "5", "10", "20", "50", "100"].filter(function (k) { return daily[k] != null; })
+      .map(function (k) { return [k, daily[k]]; });
+    var pts = (L.history || []).filter(function (h) { return h.pump_daily_5 != null; }).map(function (h) { return [h.ts, h.pump_daily_5]; });
+    function drawCharts() {
+      if (ladder.length) ladderChart(document.getElementById("ladder-chart"), ladder);
+      var trendBox = document.getElementById("trend-chart");
+      if (pts.length >= 2) trendChart(trendBox, pts);
+      else trendBox.innerHTML = '<div class="empty">History builds up with each snapshot (' + pts.length + " so far).</div>";
+    }
+    drawCharts();
+    var lastWidth = window.innerWidth, timer = null;
+    window.addEventListener("resize", function () {
+      if (window.innerWidth === lastWidth) return;
+      lastWidth = window.innerWidth;
+      clearTimeout(timer); timer = setTimeout(drawCharts, 150);
+    });
+  }
+
+  // ---- Paper trading tab
+  function paperTab() {
+    var box = document.getElementById("tab-paper");
+    var intro = '<p class="muted" style="margin-top:0">Every buy a tracked wallet makes becomes a <b>$' + esc(P ? P.stake_usd : 20) +
+      '</b> paper trade at the price when we noticed it, with ' + esc(P ? P.fee_pct_per_side : 2) +
+      '% fees + slippage on each side. No real money. If copying does not make money here, it will not with real money either.</p>';
+    if (!P) { box.innerHTML = intro + '<div class="empty"><b>No paper trades yet.</b><br>They start once the watcher runs.</div>'; return; }
+    var o = P.summary.overall, names = { mirror: "Sell when they sell", tp2x_half: "Half off at 2x", hold_24h: "Sell after 24h" };
+    var html = intro + '<div class="tiles">' + ["mirror", "tp2x_half", "hold_24h"].map(function (k) {
+      var r = o[k] || {};
+      return '<div class="tile"><div class="n ' + (r.pnl_usd > 0 ? "good" : r.pnl_usd < 0 ? "bad" : "") + '">' + esc(usd(r.pnl_usd)) +
+        '</div><div class="l">' + esc(names[k]) + " · " + (r.win_rate != null ? Math.round(r.win_rate * 100) + "% wins" : "no closed trades") + "</div></div>";
+    }).join("") + '<div class="tile"><div class="n">' + esc(o.trades) + " / " + esc((P.open || []).length) + '</div><div class="l">closed / open paper trades</div></div></div>';
+    var ws = P.summary.wallets || [];
+    html += "<h3>By wallet (sell when they sell)</h3>" + (ws.length ? table(
+      [{ t: "Wallet" }, { t: "Trades", num: 1 }, { t: "PnL", num: 1 }, { t: "Wins", num: 1 }, { t: "Avg trade", num: 1 }, { t: "Best", num: 1 }],
+      ws.map(function (w) {
+        var m = w.mirror;
+        return "<tr>" + td(walletCell(w.wallet, w.label)) + td(esc(w.trades), 1) + td(usd(m.pnl_usd), 1, m.pnl_usd > 0 ? "good" : m.pnl_usd < 0 ? "bad" : "") +
+          td(m.win_rate != null ? Math.round(m.win_rate * 100) + "%" : "–", 1) + td(pct(m.avg_return_pct), 1) + td(mult(m.best_x), 1) + "</tr>";
+      })) : '<div class="empty">No closed trades yet: a position closes when the wallet sells or after ' + esc(P.max_hold_hours) + " hours.</div>");
+    var open = P.open || [];
+    html += "<h3>Open paper trades</h3>" + (open.length ? table(
+      [{ t: "Coin" }, { t: "Copied" }, { t: "Opened" }, { t: "Now", num: 1 }, { t: "Peak", num: 1 }],
+      open.slice(0, 50).map(function (p) {
+        var now = p.entry ? p.last / p.entry : null, peak = p.entry ? p.peak / p.entry : null;
+        return "<tr>" + td(coinLink(p.mint, p.symbol)) + td(walletCell(p.wallet, p.label)) + td(esc(ago(p.opened_at))) +
+          td(mult(now), 1, now > 1 ? "good" : now < 1 ? "bad" : "") + td(mult(peak), 1) + "</tr>";
+      })) : '<div class="empty">None open.</div>');
+    var closed = P.closed || [];
+    if (closed.length) {
+      html += "<h3>Recently closed</h3>" + table(
+        [{ t: "Coin" }, { t: "Copied" }, { t: "Why" }, { t: "Sell when they sell", num: 1 }, { t: "Half at 2x", num: 1 }, { t: "24h", num: 1 }],
+        closed.slice(0, 50).map(function (p) {
+          var r = p.returns || {};
+          return "<tr>" + td(coinLink(p.mint, p.symbol)) + td(walletCell(p.wallet, p.label)) + td(esc(p.reason)) +
+            td(mult(r.mirror), 1) + td(mult(r.tp2x_half), 1) + td(mult(r.hold_24h), 1) + "</tr>";
+        }));
+    }
+    box.innerHTML = html;
+  }
+
+  // ---- Live trades tab
+  function liveTab() {
+    var events = (A && A.events) || [];
+    var hot = (A && A.consensus) || [];
+    var html = "";
+    if (hot.length) {
+      html += '<div class="hot">' + hot.map(function (h) {
+        return '<div class="card">🔥 <b>' + coinLink(h.mint, h.symbol) + "</b> bought by " + h.wallets.length +
+          " tracked wallets in 24h · last " + esc(ago(h.last_ts)) + "</div>";
+      }).join("") + "</div>";
+    }
+    if (!events.length) {
+      var n = ((A && A.tracked) || []).length;
+      return html + '<div class="empty"><b>No tracked trades yet.</b><br>' +
+        (n ? "Watching " + n + " wallet(s); new buys and sells appear here." : "Nothing to watch yet: take a leaderboard snapshot or add wallets/watchlist.txt.") + "</div>";
+    }
+    return html + table([{ t: "When" }, { t: "Side" }, { t: "Coin" }, { t: "Size", num: 1 }, { t: "MC", num: 1 }, { t: "Wallet" }, { t: "Tx" }],
+      events.map(function (e) {
+        var tx = e.signature ? '<a href="https://solscan.io/tx/' + encodeURIComponent(e.signature) + '" target="_blank" rel="noopener">view</a>' : "–";
+        return "<tr>" + td(esc(ago(e.ts))) + td(esc(String(e.side).toUpperCase()), 0, e.side === "buy" ? "good" : "bad") +
+          td(coinLink(e.mint, e.symbol)) + td(usd(e.usd), 1) + td(usd(e.market_cap), 1) +
+          td(walletCell(e.wallet, e.label) + " " + badge(e.tier)) + td(tx) + "</tr>";
+      }));
+  }
+
+  // ---- Gem hunters (strict scan) tab
   var c = (W && W.criteria) || { entry_min_usd: 100, entry_max_usd: 500, gem_profit_usd: 100000, min_gems: 4, min_multiple: 20, all_entries_in_range: true };
-  var rules = [
-    "Entry " + usd(c.entry_min_usd) + "–" + usd(c.entry_max_usd),
-    "Profit ≥ " + usd(c.gem_profit_usd) + (c.count_unrealized ? " (incl. holdings)" : " (cashed out)"),
-    "≥ " + c.min_gems + " gems",
-    "Every trade ≥ " + c.min_multiple + "x"
-  ];
-  if (c.all_entries_in_range) rules.push("No other kind of trade");
-  document.getElementById("rules").innerHTML = rules.map(function (r) { return '<span class="chip">' + esc(r) + "</span>"; }).join("");
-  document.getElementById("meta").textContent = W
-    ? "Last scan " + ago(W.generated_at) + " (" + date(W.generated_at) + ") · data: " + (W.provider || "–") +
-      (A && A.updated_at ? " · live feed updated " + ago(A.updated_at) : "")
-    : "No scan yet: run  python -m gemtracker run  or the “Gem hunter scan” GitHub Action.";
-
-  // ---- tiles
+  var wallets = (W && W.wallets) || [];
   var counts = (W && W.counts) || {};
-  var events = (A && A.events) || [];
-  var dayAgo = Date.now() / 1000 - 86400;
-  var tiles = [
-    [counts.scanned || 0, "wallets scanned"],
-    [counts.strict || 0, "STRICT matches"],
-    [counts.gem_hunter || 0, "gem hunters (enough gems, broke another rule)"],
-    [events.filter(function (e) { return e.ts >= dayAgo; }).length, "tracked trades, 24h"]
-  ];
-  document.getElementById("tiles").innerHTML = tiles.map(function (t) {
-    return '<div class="tile"><div class="n">' + esc(t[0]) + '</div><div class="l">' + esc(t[1]) + "</div></div>";
-  }).join("");
-
-  // ---- wallet cards
   function tradeTable(rows) {
     if (!rows || !rows.length) return '<p class="muted">None.</p>';
-    return '<div class="table-wrap"><table><thead><tr><th>Coin</th><th class="num">In</th><th class="num">Out</th>' +
-      '<th class="num">Held</th><th class="num">Multiple</th><th>First buy</th></tr></thead><tbody>' +
+    return table([{ t: "Coin" }, { t: "In", num: 1 }, { t: "Out", num: 1 }, { t: "Held", num: 1 }, { t: "Multiple", num: 1 }, { t: "First buy" }],
       rows.map(function (p) {
         var cls = p.multiple == null ? "" : (p.multiple >= c.min_multiple ? "good" : (p.multiple < 1 ? "bad" : "warn"));
-        return "<tr><td>" + coinLink(p.mint, p.symbol) + '</td><td class="num">' + usd(p.cost_usd) +
-          '</td><td class="num">' + usd(p.proceeds_usd) + '</td><td class="num">' + usd(p.value_usd) +
-          '</td><td class="num ' + cls + '">' + mult(p.multiple) + "</td><td>" + date(p.first_buy_ts) + "</td></tr>";
-      }).join("") + "</tbody></table></div>";
+        return "<tr>" + td(coinLink(p.mint, p.symbol)) + td(usd(p.cost_usd), 1) + td(usd(p.proceeds_usd), 1) + td(usd(p.value_usd), 1) +
+          td(mult(p.multiple), 1, cls) + td(esc(date(p.first_buy_ts))) + "</tr>";
+      }));
   }
   function card(r) {
     var s = r.stats || {};
-    var stats = [
-      [s.gems, "gems"], [s.trades, "trades"], [mult(s.min_multiple), "worst trade"],
-      [mult(s.median_multiple), "median trade"], [usd(s.realized_usd), "realized"],
-      [s.hit_rate != null ? Math.round(s.hit_rate * 100) + "%" : "–", "gem hit rate"]
-    ];
+    var stats = [[s.gems, "gems"], [s.trades, "trades"], [mult(s.min_multiple), "worst trade"], [mult(s.median_multiple), "median trade"],
+                 [usd(s.realized_usd), "realized"], [s.hit_rate != null ? Math.round(s.hit_rate * 100) + "%" : "–", "gem hit rate"]];
     return '<article class="card"><div class="card-head">' + badge(r.tier) +
       '<code class="addr" title="' + esc(r.wallet) + '">' + esc(r.wallet) + "</code>" +
       '<button class="copy" type="button" data-copy="' + esc(r.wallet) + '">copy</button>' +
@@ -260,80 +530,59 @@
         (r.notes || []).map(function (t) { return '<li class="muted">• ' + esc(t) + "</li>"; }).join("") +
       "</ul>" +
       "<details open><summary>Gems (" + (r.gems || []).length + ")</summary>" + tradeTable(r.gems) + "</details>" +
-      "<details><summary>Recent trades (" + (r.trades || []).length + ")</summary>" + tradeTable(r.trades) + "</details>" +
-      "</article>";
+      "<details><summary>Recent trades (" + (r.trades || []).length + ")</summary>" + tradeTable(r.trades) + "</details></article>";
   }
-
-  var wallets = (W && W.wallets) || [];
-  var matches = wallets.filter(function (r) { return r.tier === "STRICT" || r.tier === "GEM_HUNTER"; });
-  document.getElementById("tab-matches").innerHTML = matches.length
-    ? '<div class="cards">' + matches.map(card).join("") + "</div>"
-    : '<div class="empty"><b>' + (W ? "No wallet passes the rules yet." : "No scan has run yet.") + "</b><br>" +
-      (W ? "Scanned " + (counts.scanned || 0) + " wallet(s); see “All scanned” for why each one failed. " +
-           "Add more candidates (API keys, wallets/seeds.txt) or loosen a rule, e.g. <code>--min-gems 3</code> or <code>--min-multiple 10</code>."
-         : "Run <code>python -m gemtracker run</code> locally or start the “Gem hunter scan” workflow on GitHub.") + "</div>";
-
-  // ---- live feed
-  function liveTab() {
-    var hot = (A && A.consensus) || [];
-    var html = "";
-    if (hot.length) {
-      html += '<div class="hot">' + hot.map(function (h) {
-        return '<div class="card">🔥 <b>' + coinLink(h.mint, h.symbol) + "</b> bought by " + h.wallets.length +
-          " tracked wallets in 24h · last " + ago(h.last_ts) + "</div>";
-      }).join("") + "</div>";
-    }
-    if (!events.length) {
-      var n = ((A && A.tracked) || []).length;
-      return html + '<div class="empty"><b>No tracked trades yet.</b><br>' +
-        (n ? "Watching " + n + " wallet(s); new buys appear here." : "Nothing to watch yet: run a scan, or add addresses to <code>wallets/watchlist.txt</code>.") +
-        "</div>";
-    }
-    return html + '<div class="table-wrap"><table><thead><tr><th>When</th><th>Side</th><th>Coin</th><th class="num">Size</th>' +
-      '<th class="num">MC</th><th>Wallet</th><th>Tx</th></tr></thead><tbody>' +
-      events.map(function (e) {
-        return "<tr><td>" + ago(e.ts) + '</td><td class="' + (e.side === "buy" ? "good" : "bad") + '">' + esc(e.side.toUpperCase()) +
-          "</td><td>" + coinLink(e.mint, e.symbol) + '</td><td class="num">' + usd(e.usd) + (e.sol ? ' <span class="muted">(' + esc(e.sol) + " SOL)</span>" : "") +
-          '</td><td class="num">' + usd(e.market_cap) + '</td><td><a href="https://gmgn.ai/sol/address/' + encodeURIComponent(e.wallet) +
-          '" target="_blank" rel="noopener" class="mono">' + esc(short(e.wallet)) + "</a> " + badge(e.tier) +
-          '</td><td><a href="https://solscan.io/tx/' + encodeURIComponent(e.signature) + '" target="_blank" rel="noopener">view</a></td></tr>';
-      }).join("") + "</tbody></table></div>";
+  function matchesTab() {
+    var rules = ["Entry " + usd(c.entry_min_usd) + "–" + usd(c.entry_max_usd), "Profit ≥ " + usd(c.gem_profit_usd) + (c.count_unrealized ? " (incl. holdings)" : " (cashed out)"),
+                 "≥ " + c.min_gems + " gems", "Every trade ≥ " + c.min_multiple + "x"];
+    if (c.all_entries_in_range) rules.push("No other kind of trade");
+    var html = '<div class="chips">' + rules.map(function (r) { return '<span class="chip">' + esc(r) + "</span>"; }).join("") + "</div>" +
+      '<div class="tiles">' + [[counts.scanned || 0, "wallets scanned"], [counts.strict || 0, "STRICT matches"], [counts.gem_hunter || 0, "gem hunters (enough gems, broke another rule)"]]
+        .map(function (t) { return '<div class="tile"><div class="n">' + esc(t[0]) + '</div><div class="l">' + esc(t[1]) + "</div></div>"; }).join("") + "</div><div style=\"height:12px\"></div>";
+    var matches = wallets.filter(function (r) { return r.tier === "STRICT" || r.tier === "GEM_HUNTER"; });
+    html += matches.length ? '<div class="cards">' + matches.map(card).join("") + "</div>"
+      : '<div class="empty"><b>' + (W ? "No wallet passes the rules yet." : "No wallet scan has run yet.") + "</b><br>" +
+        (W ? "Scanned " + (counts.scanned || 0) + " wallet(s); see “All scanned” for why each one failed." : "Run <code>python -m gemtracker run</code> or the “Gem hunter scan” workflow.") + "</div>";
+    document.getElementById("tab-matches").innerHTML = html;
   }
-  document.getElementById("tab-live").innerHTML = liveTab();
-
-  // ---- all scanned
   function allTable(filter) {
     var f = (filter || "").toLowerCase();
     var rows = wallets.filter(function (r) {
       return !f || [r.wallet, (r.labels || []).join(" "), (r.reasons || []).join(" "), r.tier].join(" ").toLowerCase().indexOf(f) >= 0;
     });
     if (!rows.length) return '<div class="empty">' + (wallets.length ? "No wallet matches the filter." : "Nothing scanned yet.") + "</div>";
-    return '<div class="table-wrap"><table><thead><tr><th>Tier</th><th>Wallet</th><th>Found on</th><th class="num">Gems</th>' +
-      '<th class="num">Trades</th><th class="num">Worst</th><th class="num">Realized</th><th>Why</th></tr></thead><tbody>' +
+    return table([{ t: "Tier" }, { t: "Wallet" }, { t: "Found on" }, { t: "Gems", num: 1 }, { t: "Trades", num: 1 }, { t: "Worst", num: 1 }, { t: "Realized", num: 1 }, { t: "Why" }],
       rows.map(function (r) {
         var s = r.stats || {};
-        return "<tr><td>" + badge(r.tier) + '</td><td><a class="mono" href="https://gmgn.ai/sol/address/' + encodeURIComponent(r.wallet) +
-          '" target="_blank" rel="noopener">' + esc(short(r.wallet)) + "</a></td><td>" + esc((r.labels || [])[0] || (r.sources || []).join(", ")) +
-          '</td><td class="num">' + esc(s.gems == null ? "–" : s.gems) + '</td><td class="num">' + esc(s.trades == null ? "–" : s.trades) +
-          '</td><td class="num">' + mult(s.min_multiple) + '</td><td class="num">' + usd(s.realized_usd) +
-          "</td><td>" + esc((r.reasons || [])[0] || "passes every rule") + "</td></tr>";
-      }).join("") + "</tbody></table></div>";
+        return "<tr>" + td(badge(r.tier)) + td(walletCell(r.wallet)) + td(esc((r.labels || [])[0] || (r.sources || []).join(", "))) +
+          td(esc(s.gems == null ? "–" : s.gems), 1) + td(esc(s.trades == null ? "–" : s.trades), 1) + td(mult(s.min_multiple), 1) +
+          td(usd(s.realized_usd), 1) + td(esc((r.reasons || [])[0] || "passes every rule")) + "</tr>";
+      }));
   }
+  function sourcesTab() {
+    var src = (W && W.sources) || {};
+    var names = Object.keys(src);
+    var lbErr = (L && L.errors) || {};
+    var html = "<h3 style=\"margin-top:0\">Leaderboards</h3>" + (L ? '<div class="src">' + Object.keys(L.ladders).concat(Object.keys(lbErr)).map(function (n) {
+      return '<div class="row"><span class="name">' + esc(n) + "</span>" + (lbErr[n] ? '<span class="bad">✘ ' + esc(lbErr[n]) + "</span>" : '<span class="good">✔ ok</span>') + "</div>";
+    }).join("") + "</div>" : '<div class="empty">No snapshot yet.</div>');
+    html += "<h3>Wallet scan sources</h3>" + (names.length ? '<div class="src">' + names.map(function (n) {
+      var s = src[n];
+      return '<div class="row"><span class="name">' + esc(n) + "</span>" +
+        (s.ok ? '<span class="good">✔ ' + esc(s.wallets || 0) + " wallet(s)" + (s.coins ? " from " + esc(s.coins) + " coins" : "") + "</span>"
+              : '<span class="bad">✘ ' + esc(s.error || "failed") + "</span>") + "</div>";
+    }).join("") + "</div>" : '<div class="empty">No discovery run yet.</div>');
+    document.getElementById("tab-sources").innerHTML = html;
+  }
+
+  goalTab();
+  paperTab();
+  document.getElementById("tab-live").innerHTML = liveTab();
+  matchesTab();
   var allBox = document.getElementById("all-table");
   allBox.innerHTML = allTable("");
   document.getElementById("search").addEventListener("input", function (e) { allBox.innerHTML = allTable(e.target.value); });
-
-  // ---- sources
-  var src = (W && W.sources) || {};
-  var names = Object.keys(src);
-  document.getElementById("tab-sources").innerHTML = names.length
-    ? '<div class="src">' + names.map(function (n) {
-        var s = src[n];
-        return '<div class="row"><span class="name">' + esc(n) + "</span>" +
-          (s.ok ? '<span class="good">✔ ' + esc(s.wallets || 0) + " wallet(s)" + (s.coins ? " from " + esc(s.coins) + " coins" : "") + "</span>"
-                : '<span class="bad">✘ ' + esc(s.error || "failed") + "</span>") + "</div>";
-      }).join("") + "</div>"
-    : '<div class="empty">No discovery run yet.</div>';
+  sourcesTab();
 
   // ---- tabs, copy, theme
   var tabs = document.querySelectorAll(".tab");
@@ -344,6 +593,7 @@
         o.setAttribute("aria-selected", on ? "true" : "false");
         document.getElementById("tab-" + o.getAttribute("data-tab")).hidden = !on;
       });
+      hideTip();
     });
   });
   document.addEventListener("click", function (e) {
