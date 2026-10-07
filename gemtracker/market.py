@@ -10,7 +10,7 @@ from __future__ import annotations
 from collections import deque
 from dataclasses import dataclass, field
 
-from .chain_events import PUMP_SUPPLY
+from .chain_events import PUMP_SUPPLY, WSOL
 
 WINDOW_MS = 600_000       # keep 10 minutes of individual trades per coin
 MAX_HOLDERS = 5_000
@@ -41,6 +41,7 @@ class TokenState:
     pool: str = ""
     migrated: bool = False
     price: float = 0.0           # SOL per whole token after the last trade
+    quote_mint: str = WSOL       # non-WSOL: reserves and price are in that token, not SOL
     progress: float = 0.0
     reserve_quote: int = 0
     reserve_base: int = 0
@@ -147,6 +148,7 @@ class Market:
         if ev.kind != "trade":
             return st
         st.venue = ev.venue
+        st.quote_mint = getattr(ev, "quote_mint", "") or WSOL
         if ev.pool:
             st.pool = ev.pool
         if ev.venue == "pumpswap":

@@ -36,7 +36,10 @@ from .solana import SolanaRpc
 from .strategy import Strategy
 from .tape import TapeWriter, event_row
 
-WS_URL = "wss://api.mainnet-beta.solana.com"
+# Two free public endpoints raced on every stream, deduplicated by signature. Measured
+# 2026-10-07: each wins about half the races, and racing them cuts p90 by ~0.5 s and covers
+# each other's 1002 drops. (publicnode lags ~8 s; dRPC free has no logsSubscribe.)
+WS_URLS = {"mb": "wss://api.mainnet-beta.solana.com", "sc": "wss://api.mainnet.solana.com"}
 HTTP_URL = "https://api.mainnet-beta.solana.com"
 PAPER_DIR = DATA_DIR / "paper"
 POOL_CACHE = DATA_DIR / "pool_mints.json"
@@ -167,12 +170,12 @@ class Runner:
         return self._sol_usd
 
     # ----- feeds -----
-    async def feed(self, label: str, mentions: list[str]) -> None:
+    async def feed(self, label: str, mentions: list[str], url: str) -> None:
         import websockets
         backoff = 1
         while True:
             try:
-                async with websockets.connect(WS_URL, max_size=2 ** 24, ping_interval=20,
+                async with websockets.connect(url, max_size=2 ** 24, ping_interval=20,
                                               open_timeout=20) as ws:
                     subs = {}
                     for i, key in enumerate(mentions):
@@ -283,6 +286,7 @@ class Runner:
         sig = value.get("signature", "")
         if value.get("err") or not self.seen.add(sig):
             return
+        self.stats["first_" + label.rpartition("@")[2]] += 1
         for ev in ce.parse_logs(sig, value.get("logs") or [], slot):
             if ev.ts and len(self.lag[ev.venue]) < 20_000:
                 self.lag[ev.venue].append(rx - ev.ts * 1000)
@@ -339,7 +343,8 @@ class Runner:
         self.q = asyncio.Queue()
         self.resolver.start()
         # One connection per program so the PumpSwap firehose cannot delay Pump.fun launches.
-        tasks = [asyncio.create_task(self.feed(name, [prog])) for prog, name in ce.PROGRAMS.items()]
+        tasks = [asyncio.create_task(self.feed(f"{name}@{ep}", [prog], url))
+                 for prog, name in ce.PROGRAMS.items() for ep, url in WS_URLS.items()]
         tasks += [asyncio.create_task(self.gecko()), asyncio.create_task(self.consume())]
         try:
             await self.clock(hours)
@@ -388,7 +393,7 @@ def main(argv=None) -> int:
     run_dir.mkdir(parents=True, exist_ok=True)
     (run_dir / "config.json").write_text(json.dumps({
         "commit": _git_commit(), "started": now_ms(), "sim": vars(cfg),
-        "algos": [s.name for s in strategies], "feeds": ["rpc-logs", "geckoterminal"],
+        "algos": [s.name for s in strategies], "feeds": ["rpc-logs:" + ",".join(WS_URLS), "geckoterminal"],
         "paper_only": True}, indent=1), encoding="utf-8")
     runner = Runner(strategies, cfg, run_dir, tape=not args.no_tape)
     print(f"paper run {run}: {len(strategies)} algos, latency {cfg.latency_ms} ms -> {run_dir}",

@@ -194,6 +194,14 @@ class PaperSimTest(unittest.TestCase):
         self.assertAlmostEqual(book.closed[0]["pnl_sol"], sell.sol - sell.tx_fee_sol - buy.sol - buy.tx_fee_sol,
                                places=12)
 
+    def test_coin_quoted_in_another_token_is_never_bought(self):
+        s = OneShot()
+        usdc = trade_ev()
+        usdc.quote_mint = "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+        sim, market = run([(1_000, usdc), (3_000, trade_ev())], s)
+        self.assertEqual((s.fills, sim.books["oneshot"].positions), ([], {}))
+        self.assertEqual(market.get("M").quote_mint, ce.WSOL)  # a later SOL-quoted trade resets it
+
     def test_one_broken_algo_does_not_stop_others(self):
         class Broken(Strategy):
             name = "broken"

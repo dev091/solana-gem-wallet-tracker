@@ -17,6 +17,7 @@ import time
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
 
+from .chain_events import WSOL
 from .strategy import Buy, Sell
 
 LAMPORTS = 1e9
@@ -156,6 +157,8 @@ class PaperSim:
             if st is None or not st.reserve_quote:
                 continue
             if isinstance(it, Buy):
+                if st.quote_mint != WSOL:
+                    continue  # quoted in another token: our SOL book cannot price it
                 if it.mint in book.positions or book.has(it.mint):
                     continue  # one entry at a time per coin; adds come after the fill
                 if len(book.positions) >= self.cfg.max_open_positions:
