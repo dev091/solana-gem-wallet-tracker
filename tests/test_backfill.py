@@ -118,6 +118,23 @@ class SlinkyTest(TmpDir):
         self.assertEqual([r["sig"] for r in out if r["k"] == "trade"], ["s0", "s1", "s2", "s3"])
         self.assertEqual(man["dropped"]["duplicate_trade"], 2)
 
+    def test_files_with_different_int_widths_are_read_together(self):
+        t = ms(2026, 8, 20, 12)
+        c = Curve()
+        rows = [c.trade("buy", 10 ** 12, t + i * 1000, 100 + 3 * i, i, f"s{i}") for i in range(4)]
+        base = self.dir / "src"
+        write_parquet(base / "p" / "a" / "create" / "c1.parquet", [create_row(t, 99, 0, "z")])
+        write_parquet(base / "p" / "a" / "trade" / "t0.parquet", rows[:2])
+        table = pq.read_table(base / "p" / "a" / "trade" / "t0.parquet")
+        write_parquet(base / "p" / "a" / "trade" / "t1.parquet", rows[2:])
+        t1 = pq.read_table(base / "p" / "a" / "trade" / "t1.parquet")
+        i = t1.schema.get_field_index("tx_index")
+        pq.write_table(t1.set_column(i, "tx_index", t1.column(i).cast(pa.int32())),
+                       base / "p" / "a" / "trade" / "t1.parquet")
+        self.assertEqual(table.schema.field("tx_index").type, pa.int64())
+        man = bf.convert_slinky_day(self.day, bf.SlinkyIndex(base, stable_s=0), self.dir / "out")
+        self.assertEqual(man["rows_by_kind"]["trade"], 4)
+
     def test_side_comes_from_ix_name(self):
         t = ms(2026, 8, 20, 12)
         c = Curve()

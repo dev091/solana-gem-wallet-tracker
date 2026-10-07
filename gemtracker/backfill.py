@@ -259,7 +259,9 @@ class SlinkyIndex:
                     parts.append(batch.filter(mask))
         if not parts:
             return pd.DataFrame(columns=SLINKY_COLS[kind] + ["seq"]), files
-        table = pa.Table.from_batches(parts)
+        # files differ in int widths (tx_index int32 in some, int64 in others)
+        table = pa.concat_tables([pa.Table.from_batches([b]) for b in parts],
+                                 promote_options="permissive")
         table = table.set_column(0, "block_time", table.column("block_time").cast(pa.int64()))
         df = table.to_pandas()
         df["seq"] = range(len(df))
