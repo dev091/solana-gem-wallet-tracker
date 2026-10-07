@@ -82,7 +82,12 @@ def read_tape(root: Path = TAPE_DIR, start: str = "", end: str = ""):
         try:
             with gzip.open(path, "rt", encoding="utf-8") as fh:
                 for line in fh:
-                    if line.strip():
-                        yield json.loads(line)
+                    if not line.strip():
+                        continue
+                    try:
+                        row = json.loads(line)
+                    except json.JSONDecodeError:  # half-written last line of the live hour
+                        break
+                    yield row
         except (EOFError, OSError):  # the hour being written right now ends mid-block
             continue

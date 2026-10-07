@@ -9,6 +9,7 @@ import unittest
 from pathlib import Path
 
 from gemtracker import chain_events as ce
+from gemtracker.live import pick_recycle
 from gemtracker.market import Market
 from gemtracker.papersim import PaperSim, SimConfig, buy_out, sell_out
 from gemtracker.replay import replay, row_to_event
@@ -241,6 +242,24 @@ class TapeTest(unittest.TestCase):
         for f in ("kind", "venue", "mint", "side", "quote", "reserve_quote", "reserve_base", "fee_bps",
                   "price", "ts"):
             self.assertEqual(getattr(back, f), getattr(ev, f), f)
+
+    def test_half_written_last_line_is_skipped(self):
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "20261007").mkdir()
+            with gzip.open(Path(d) / "20261007" / "18.jsonl.gz", "wt", encoding="utf-8") as fh:
+                fh.write('{"a": 1}\n{"a": 2}\n{"a": ')
+            self.assertEqual(list(read_tape(Path(d))), [{"a": 1}, {"a": 2}])
+
+
+class RecycleTest(unittest.TestCase):
+    def test_slowest_connection_per_stream_is_recycled(self):
+        wins = {"pump@mb0": 300, "pump@mb1": 90, "pump@mb2": 10, "pump@sc3": 100,
+                "pumpswap@mb0": 500, "pumpswap@mb1": 400,     # both pull their weight
+                "launchlab@mb0": 30, "launchlab@sc1": 0}       # too few tx to judge
+        self.assertEqual(pick_recycle(wins), ["pump@mb2"])
+
+    def test_missing_connection_is_not_judged(self):
+        self.assertEqual(pick_recycle({"pumpswap@mb0": 900}), [])
 
 
 if __name__ == "__main__":

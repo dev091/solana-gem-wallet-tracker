@@ -36,12 +36,30 @@ from .solana import SolanaRpc
 from .strategy import Strategy
 from .tape import TapeWriter, event_row
 
-# Two free public endpoints, deduplicated by signature. The launch streams (pump, launchlab) are
-# raced on both: one covers the other's 1002 drops. PumpSwap is ~10x the bytes; racing it too
-# took the link to ~4 MB/s and pushed feed lag p90 from ~2.6 s to ~6 s (2026-10-07), so it
-# streams from the first endpoint only. (publicnode lags ~8 s; dRPC free has no logsSubscribe.)
+# Two free public endpoints. (publicnode lags ~8 s; dRPC free has no logsSubscribe.)
 WS_URLS = {"mb": "wss://api.mainnet-beta.solana.com", "sc": "wss://api.mainnet.solana.com"}
-RACED = {"pump", "launchlab"}
+# Several connections per stream, deduplicated by signature. Each connection lands on its own
+# backend node and nodes differ by seconds: four parallel pump connections to mainnet-beta had
+# p50 lag 2.6 / 4.0 / 4.6 / 5.1 s (2026-10-07). Extra copies also cover each other's 1002 drops.
+# PumpSwap is ~10x the bytes of the launch streams, so it gets only two.
+STREAMS = {"pump": ("mb", "mb", "mb", "sc"), "launchlab": ("mb", "sc"), "pumpswap": ("mb", "mb")}
+RECYCLE_SHARE = 0.10  # each minute, a connection first on fewer of its stream's tx reconnects
+RECYCLE_MIN_TX = 50
+
+
+def pick_recycle(wins: dict) -> list[str]:
+    """Per stream, the connection that was first least often, when its share is under RECYCLE_SHARE.
+    wins: {"<stream>@<endpoint><n>": first arrivals in the last minute}."""
+    by_stream = defaultdict(dict)
+    for label, n in wins.items():
+        by_stream[label.partition("@")[0]][label] = n
+    out = []
+    for stream, labels in by_stream.items():
+        total = sum(labels.values())
+        worst = min(labels, key=labels.get)
+        if len(labels) == len(STREAMS.get(stream, ())) > 1 and total >= RECYCLE_MIN_TX                 and labels[worst] < RECYCLE_SHARE * total:
+            out.append(worst)
+    return out
 HTTP_URL = "https://api.mainnet-beta.solana.com"
 PAPER_DIR = DATA_DIR / "paper"
 POOL_CACHE = DATA_DIR / "pool_mints.json"
@@ -154,6 +172,9 @@ class Runner:
         self.stats = defaultdict(int)
         self.lag = defaultdict(list)  # venue -> receive minus chain time, ms (latency realism)
         self.loop = defaultdict(list)  # our own delays, ms: queue wait, tick cost, sleep overshoot
+        self.wins = defaultdict(int)  # connection label -> tx it delivered first, this minute
+        self.recycle = set()  # connection labels to reconnect on their next message
+        self.labels = []
         self.started = now_ms()
 
     # ----- prices -----
@@ -189,6 +210,10 @@ class Runner:
                     self.stats[f"connect_{label}"] += 1
                     while True:
                         msg = json.loads(await asyncio.wait_for(ws.recv(), 60))
+                        if label in self.recycle:  # a slow node: reconnect to draw another
+                            self.recycle.discard(label)
+                            self.stats[f"recycle_{label}"] += 1
+                            break
                         if "id" in msg and "result" in msg:
                             subs[msg["result"]] = mentions[msg["id"]]
                             continue
@@ -291,7 +316,8 @@ class Runner:
         sig = value.get("signature", "")
         if value.get("err") or not self.seen.add(sig):
             return
-        self.stats["first_" + label.rpartition("@")[2]] += 1
+        self.stats["first_" + label.rpartition("@")[2].rstrip("0123456789")] += 1
+        self.wins[label] += 1
         for ev in ce.parse_logs(sig, value.get("logs") or [], slot):
             if ev.ts and len(self.lag[ev.venue]) < 20_000:
                 self.lag[ev.venue].append(rx - ev.ts * 1000)
@@ -341,6 +367,10 @@ class Runner:
             xs.sort()
             loop[k] = {"p50": xs[len(xs) // 2], "p90": xs[int(0.9 * (len(xs) - 1))], "max": xs[-1]} if xs else {}
         self.loop.clear()
+        # Every connection appears, so a live connection with no wins counts as the slowest.
+        wins = {label: self.wins.get(label, 0) for label in self.labels}
+        self.recycle.update(pick_recycle(wins))
+        self.wins.clear()
         POOL_CACHE.parent.mkdir(parents=True, exist_ok=True)
         POOL_CACHE.write_text(json.dumps(self.pool_cache), encoding="utf-8")
         status = {"t": t, "uptime_min": round((t - self.started) / 60000, 1),
@@ -353,12 +383,14 @@ class Runner:
         (self.run_dir / "status.json").write_text(json.dumps(status, indent=1), encoding="utf-8")
 
     async def main(self, hours: float) -> None:
+        import websockets  # noqa: F401  fail here; inside a feed task a missing module dies silently
         self.q = asyncio.Queue()
         self.resolver.start()
-        # One connection per program so the PumpSwap firehose cannot delay Pump.fun launches.
-        tasks = [asyncio.create_task(self.feed(f"{name}@{ep}", [prog], url))
-                 for prog, name in ce.PROGRAMS.items() for ep, url in WS_URLS.items()
-                 if name in RACED or ep == "mb"]
+        # Separate connections per program so the PumpSwap firehose cannot delay Pump.fun launches.
+        conns = [(f"{name}@{ep}{i}", prog, WS_URLS[ep]) for prog, name in ce.PROGRAMS.items()
+                 for i, ep in enumerate(STREAMS[name])]
+        self.labels = [label for label, _, _ in conns]
+        tasks = [asyncio.create_task(self.feed(label, [prog], url)) for label, prog, url in conns]
         tasks += [asyncio.create_task(self.gecko()), asyncio.create_task(self.consume())]
         try:
             await self.clock(hours)
@@ -407,7 +439,7 @@ def main(argv=None) -> int:
     run_dir.mkdir(parents=True, exist_ok=True)
     (run_dir / "config.json").write_text(json.dumps({
         "commit": _git_commit(), "started": now_ms(), "sim": vars(cfg),
-        "algos": [s.name for s in strategies], "feeds": ["rpc-logs:" + ",".join(WS_URLS), "geckoterminal"],
+        "algos": [s.name for s in strategies], "feeds": ["rpc-logs:" + json.dumps(STREAMS), "geckoterminal"],
         "paper_only": True}, indent=1), encoding="utf-8")
     runner = Runner(strategies, cfg, run_dir, tape=not args.no_tape)
     print(f"paper run {run}: {len(strategies)} algos, latency {cfg.latency_ms} ms -> {run_dir}",
