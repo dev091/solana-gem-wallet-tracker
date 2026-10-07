@@ -317,16 +317,16 @@ class DayRollTest(unittest.TestCase):
     """7: the kill switch measures from the day start, not from the first candidate."""
 
     def test_scalp_a_loss_before_first_candidate_counts(self):
-        s = A.rec(Decu, daily_kill_dd=0.03)
-        rows, rq, rb = A.launch("K1", rx0=DAY - 10_000)
+        s = A.rec(Decu, daily_kill_dd=0.03, min_entry_gap_s=0.0)
+        rows, rq, rb = A.launch("K1", n=16, rx0=DAY - 10_000)
         k = rq * rb
         rq2 = int(rq * 0.5)
         rows.append((DAY + 2_000, A.trade("K1", "whale", "sell", 10, rq2, k // rq2)))
         rows.append((DAY + 7_000, A.trade("K1", "late", "buy", 0.001, rq2, k // rq2)))
-        r2, rq, rb = A.launch("K2", rx0=DAY + 60_000)
+        r2, rq, rb = A.launch("K2", n=16, rx0=DAY + 60_000)
         rows += r2
         rows.append((DAY + 90_000, A.trade("K2", "late", "buy", 0.001, rq, rb)))
-        r3, rq, rb = A.launch("K3", rx0=2 * DAY + 60_000)
+        r3, rq, rb = A.launch("K3", n=16, rx0=2 * DAY + 60_000)
         rows += r3
         rows.append((2 * DAY + 90_000, A.trade("K3", "late", "buy", 0.001, rq, rb)))
         A.run(rows, s)

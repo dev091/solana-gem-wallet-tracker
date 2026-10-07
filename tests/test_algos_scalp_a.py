@@ -76,7 +76,7 @@ def rec(cls, **over):
 class EntryTest(unittest.TestCase):
     def test_hot_launch_buys_quiet_launch_does_not(self):
         for cls in ALGOS:
-            hot, rq, rb = launch("H")
+            hot, rq, rb = launch("H", n=16)
             hot.append((RX0 + 60_000, trade("H", "late", "buy", 0.01, rq, rb)))
             s = rec(cls)
             run(hot, s)
@@ -93,11 +93,28 @@ class EntryTest(unittest.TestCase):
         for cls in ALGOS:
             rows, rq, rb = launch("D", n=4)
             rows.append((RX0 + 4 * 300, trade("D", "devD", "sell", 0.1, rq, rb)))
-            more, rq2, rb2 = launch("D", n=8, rx0=RX0 + 5 * 300, rq0=rq)
+            more, rq2, rb2 = launch("D", n=16, rx0=RX0 + 5 * 300, rq0=rq)
             rows += more[1:]
             s = rec(cls)
             run(rows, s)
-            self.assertEqual([f for f, _, _ in s.seen if f.side == "buy"], [], cls.__name__)
+            buys = [f for f, _, _ in s.seen if f.side == "buy"]
+            if cls.dev_sold_blocks:
+                self.assertEqual(buys, [], cls.__name__)
+            else:   # Decu: the dev had already sold before 68 % of his measured entries
+                self.assertEqual(len(buys), 1, cls.__name__)
+
+    def test_min_entry_gap_throttles_entries(self):
+        """Two hot launches 20 s apart: with a 100 s global gap only the first is bought,
+        without it both are (the gap never blocks exits)."""
+        rows, _, _ = launch("A", n=16)
+        later, _, _ = launch("B", n=16, rx0=RX0 + 20_000)
+        rows += later
+        s = rec(Decu, min_entry_gap_s=100.0, max_positions=4)
+        run(rows, s)
+        self.assertEqual([f.mint for f, _, _ in s.seen if f.side == "buy"], ["A"])
+        s = rec(Decu, min_entry_gap_s=0.0, max_positions=4)
+        run(rows, s)
+        self.assertEqual([f.mint for f, _, _ in s.seen if f.side == "buy"], ["A", "B"])
 
     def test_target_wallet_is_never_a_signal(self):
         for cls in ALGOS:
@@ -140,7 +157,7 @@ class ExitTest(unittest.TestCase):
 
     def test_take_profit_fires_on_pump(self):
         for cls in ALGOS:
-            rows, rq, rb = launch("P")
+            rows, rq, rb = launch("P", n=16)
             # two seconds after the fill the price jumps well past tp1
             k = rq * rb
             rq2 = int(rq * 1.5)
@@ -154,7 +171,7 @@ class ExitTest(unittest.TestCase):
 
     def test_hard_stop_fires_on_dump(self):
         for cls in ALGOS:
-            rows, rq, rb = launch("S")
+            rows, rq, rb = launch("S", n=16)
             k = rq * rb
             rq2 = int(rq * 0.6)
             rows.append((RX0 + 12 * 300 + 3_000, trade("S", "whale", "sell", 10, rq2, k // rq2)))
@@ -170,10 +187,10 @@ class RiskTest(unittest.TestCase):
         for cls in ALGOS:
             rows = []
             for j in range(8):  # eight hot launches at once, tiny book
-                r, rq, rb = launch(f"C{j}", rx0=RX0 + j * 50)
+                r, rq, rb = launch(f"C{j}", n=16, rx0=RX0 + j * 50)
                 rows += r
                 rows.append((RX0 + 30_000, trade(f"C{j}", "late", "buy", 0.001, rq, rb)))
-            s = rec(cls)
+            s = rec(cls, min_entry_gap_s=0.0)
             sim, _ = run(rows, s, start_usd=20.0)   # 0.2 SOL book
             self.assertTrue(s.seen, cls.__name__)
             for f, cash, n_open in s.seen:
@@ -182,7 +199,7 @@ class RiskTest(unittest.TestCase):
 
     def test_size_is_a_fraction_of_equity(self):
         s = rec(Decu)
-        rows, rq, rb = launch("F")
+        rows, rq, rb = launch("F", n=16)
         rows.append((RX0 + 30_000, trade("F", "late", "buy", 0.001, rq, rb)))
         run(rows, s, start_usd=100.0)           # 1 SOL book at 100 $/SOL
         buy = [f for f, _, _ in s.seen if f.side == "buy"][0]
@@ -203,17 +220,17 @@ class RiskTest(unittest.TestCase):
         self.assertLessEqual(price_after_buy(buy.sol, 100, rq, rb) / pre, 1.05 + 1e-6)
 
     def test_daily_kill_switch_blocks_entries_until_next_day(self):
-        s = rec(Decu, daily_kill_dd=0.03)
-        rows, rq, rb = launch("K1")
+        s = rec(Decu, daily_kill_dd=0.03, min_entry_gap_s=0.0)
+        rows, rq, rb = launch("K1", n=16)
         k = rq * rb
         rq2 = int(rq * 0.5)
         rows.append((RX0 + 12 * 300 + 3_000, trade("K1", "whale", "sell", 10, rq2, k // rq2)))
         rows.append((RX0 + 12 * 300 + 8_000, trade("K1", "late", "buy", 0.001, rq2, k // rq2)))
-        r2, rq, rb = launch("K2", rx0=RX0 + 60_000)
+        r2, rq, rb = launch("K2", n=16, rx0=RX0 + 60_000)
         rows += r2
         rows.append((RX0 + 90_000, trade("K2", "late", "buy", 0.001, rq, rb)))
         day = 86_400_000
-        r3, rq, rb = launch("K3", rx0=RX0 + day)
+        r3, rq, rb = launch("K3", n=16, rx0=RX0 + day)
         rows += r3
         rows.append((RX0 + day + 30_000, trade("K3", "late", "buy", 0.001, rq, rb)))
         run(rows, s)

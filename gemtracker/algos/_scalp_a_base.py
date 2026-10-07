@@ -90,6 +90,7 @@ class ScalpBase(Strategy):
     hard_stop = 0.15              # sell all when price <= entry * (1 - hard_stop)
     daily_kill_dd = 0.20          # no new entries after losing this share of day-start equity
     cooldown_s = 120.0            # per coin, after a trip or a rejected buy
+    min_entry_gap_s = 0.0         # global: no new entry this soon after the last Buy (elite cadence)
     max_entries_per_coin = 2
 
     # ----- exits -----
@@ -111,6 +112,7 @@ class ScalpBase(Strategy):
         self.tried = {}     # mint -> (count, last_rx)
         self.day_start = None   # (utc day, equity)
         self.killed_day = None
+        self.last_entry_ms = -10 ** 12
         self.rng = random.Random(self.random_seed)
         self.decisions = deque(maxlen=1000)  # (now_ms, side, mint) for tests
         self.sell_timeout_x = 3  # give up waiting for a Sell fill after this many latencies
@@ -234,6 +236,8 @@ class ScalpBase(Strategy):
         n, last = self.tried.get(st.mint, (0, -10 ** 12))
         if n >= self.max_entries_per_coin or now_ms - last < self.cooldown_s * 1000:
             return []
+        if now_ms - self.last_entry_ms < self.min_entry_gap_s * 1000:
+            return []
         reason = self.entry_reason(st, now_ms)
         if not reason:
             return []
@@ -245,6 +249,7 @@ class ScalpBase(Strategy):
         if sol < 0.005:
             return []
         self.tried[st.mint] = (n + 1, now_ms)
+        self.last_entry_ms = now_ms
         self.decisions.append((now_ms, "buy", st.mint))
         return [Buy(st.mint, sol, f"{self.target}: {reason}", max_slippage=self.max_slippage)]
 

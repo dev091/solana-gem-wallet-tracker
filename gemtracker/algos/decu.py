@@ -1,42 +1,52 @@
-"""Decu reconstruction (paper). Dossier: docs/algos/decu.md.
+"""Decu reconstruction (paper). Dossier: docs/algos/decu.md; measured behaviour:
+data/history/elite_trades/dossiers/Decu.md (3,529 real DEV round trips, 2026-08-08..09-04).
 
 public: scalper, median hold 14 s, median entry mcap ~$8.2K (~70 SOL at $116), WR 0.64.
-observed (fit span, n=6 trades): all on PumpSwap, buying migrated coins 44-58 % below ATH
-    into heavy selling (net60 ~ -41 SOL), holding ~16 s, one sell per trip.
-our adaptation: fresh-launch flow entry on the pump curve at his published mcap band plus
-    a half-size "post-migration flush" branch for the observed behaviour; 30 s time stop
-    instead of 14 s because our fill arrives 2.5 s (pump) / 5.5 s (pumpswap) late.
+measured (DEV, Slinky21 + Kaggle, n=3,510 closed trips): pump curve only (no PumpSwap buys
+    at all), entry mcap p25-p75 49-107 SOL, coin age p50 12 s (82 % <= 120 s), progress
+    p50 0.56, one position at a time, 126 trips/day, hold p50 34 s (p75 75 s), realised
+    mult p50 1.06, WR 0.60, exits ~0.64 of the hold's peak. Enters into a live buyer burst:
+    10 s before the buy p25 13 unique buyers / 14 buys / net +0.4 SOL; the dev has already
+    sold in 68 % of entries, so a dev sale is not a veto.
+our adaptation: same universe and flow gates at ~p25 of what he saw (our fill arrives
+    2.5 s late); hard stop 0.28 (his p10 realised mult 0.73), partial take-profit at 1.5x
+    with a 0.30 trail (he gives back a third of the peak), 75 s time stop (his p75 hold).
+    The old post-migration "dip" branch was built on 6 trades and is dropped: he never
+    buys on PumpSwap in the data.
 """
 from ._scalp_a_base import ScalpBase
 
 
 class Decu(ScalpBase):
     name = "decu"
-    description = "Decu: fresh-launch flow scalp at ~70 SOL mcap; half-size post-migration flush buys"
+    description = "Decu: fresh-launch buyer-burst scalp at 35-150 SOL mcap, one position, ~1 min hold"
     target = "Decu"
     target_wallet = "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9"
-    venues = ("pump", "pumpswap")
+    venues = ("pump",)
 
-    age_min_s = 3.0
-    age_max_s = 45.0
-    progress_max = 0.6
+    age_min_s = 2.0
+    age_max_s = 120.0
+    progress_max = 0.85
     mcap_min_sol = 35.0
     mcap_max_sol = 150.0
-    min_unique_buyers_10s = 6
-    min_buys_10s = 6
-    min_net_sol_10s = 0.3
-    min_price_change_10s = 0.10
-    max_top10_share = 0.35
+    min_unique_buyers_10s = 14
+    min_buys_10s = 14
+    min_net_sol_10s = 2.0
+    min_price_change_10s = 0.0
+    min_buy_sell_ratio_10s = 1.2
+    min_holders = 10
+    max_top10_share = 0.50
+    dev_sold_blocks = False
 
-    dip_mode = True
-    dip_from_ath = 0.40
-    dip_min_sell_sol_60s = 10.0
-    dip_max_age_s = 1800.0
+    dip_mode = False
 
     size_frac = 0.15
-    dip_size_frac = 0.07
-    hard_stop = 0.15
-    tp1_mult = 1.25
-    tp1_frac = 1.0
-    flow_exit_after_s = 5.0
-    time_stop_s = 30.0
+    max_positions = 1
+    max_exposure_frac = 0.30
+    min_entry_gap_s = 100.0
+    hard_stop = 0.28
+    tp1_mult = 1.50
+    tp1_frac = 0.5
+    trail_dd = 0.30
+    flow_exit_after_s = 10.0
+    time_stop_s = 75.0
