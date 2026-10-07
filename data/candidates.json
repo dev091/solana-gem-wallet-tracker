@@ -1,0 +1,1459 @@
+{
+ "generated_at": 1791385608,
+ "sources": {
+  "pump-board": {
+   "ok": true,
+   "wallets": 25
+  },
+  "kolscan": {
+   "ok": true,
+   "wallets": 10
+  },
+  "fomo-top50": {
+   "ok": true,
+   "wallets": 96
+  },
+  "verified-early": {
+   "ok": true,
+   "wallets": 1,
+   "coins": 25
+  }
+ },
+ "candidates": [
+  {
+   "wallet": "GRevWsvJCmmZ6cF6GdAkpKNW6TCLm5MBKyBc3XtUeMmB",
+   "labels": [
+    "early buyer on 2 big coins: OTC early $56, Jimothy early $43"
+   ],
+   "sources": [
+    "verified-early"
+   ],
+   "gem_hits": 0,
+   "early_hits": 2
+  },
+  {
+   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
+   "labels": [
+    "Pump.fun weekly #1 ogantd ($325.5k)",
+    "Pump.fun monthly #3 ogantd ($431.5k)",
+    "Kolscan daily #3 OGAntD ($41.1k)"
+   ],
+   "sources": [
+    "pump.fun weekly",
+    "pump.fun monthly",
+    "kolscan"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "B3wagQZiZU2hKa5pUCj6rrdhWsX3Q6WfTTnki9PjwzMh",
+   "labels": [
+    "Pump.fun daily #1 xander ($80.0k)",
+    "Kolscan daily #1 xander ($84.2k)"
+   ],
+   "sources": [
+    "pump.fun daily",
+    "kolscan"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "4cXnf2z85UiZ5cyKsPMEULq1yufAtpkatmX4j4DBZqj2",
+   "labels": [
+    "Pump.fun daily #6 waiterg_ ($46.2k)",
+    "Kolscan daily #2 WaiterG ($42.3k)"
+   ],
+   "sources": [
+    "pump.fun daily",
+    "kolscan"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "catK9v3gp2dd32bkUxDEst4BarwDoCL3pkFfVoVjcgi",
+   "labels": [
+    "Pump.fun daily #7 bulkytuna85591 ($41.4k)",
+    "Pump.fun weekly #9 bulkytuna85591 ($83.3k)"
+   ],
+   "sources": [
+    "pump.fun daily",
+    "pump.fun weekly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "29yFzeBZgxf5zqrAkKXwgZtQehRf4pL8WbV2nRJikbw8",
+   "labels": [
+    "Pump.fun weekly #4 throatycrab1008 ($117.0k)",
+    "Pump.fun monthly #2 throatycrab1008 ($495.0k)"
+   ],
+   "sources": [
+    "pump.fun weekly",
+    "pump.fun monthly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "ACTbvbNm5qTLuofNRPxFPMtHAAtdH1CtzhCZatYHy831",
+   "labels": [
+    "Pump.fun weekly #5 slidrrz ($116.2k)",
+    "Pump.fun monthly #9 slidrrz ($314.9k)"
+   ],
+   "sources": [
+    "pump.fun weekly",
+    "pump.fun monthly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "labels": [
+    "Pump.fun weekly #6 notdecu ($108.6k)",
+    "Pump.fun monthly #10 notdecu ($311.5k)"
+   ],
+   "sources": [
+    "pump.fun weekly",
+    "pump.fun monthly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "95ddWCEqs7bX1vAPFXgAxNKmYkCvpQFiurCk4KWg2AST",
+   "labels": [
+    "Pump.fun daily #2 olddolphin41264 ($69.7k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "G3sYJ99sqZy39m98qSP9De543Ae2zHy8B6we7tb7z3jT",
+   "labels": [
+    "Pump.fun daily #3 roovera ($59.2k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "6AhH7XGofKCU3NGrYNGA8DFmFdw7CtY34CzfTs3u99sm",
+   "labels": [
+    "Pump.fun daily #4 pallets ($54.2k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "aKmaJt9FWsQB3TqgR4sCJo5XksrkE7JDb7renvns816",
+   "labels": [
+    "Pump.fun daily #5 chopped_remus ($47.6k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "8bWe7V8J5fyizory2irysXCSaDUg6ytcWwpvpe8iY1Yt",
+   "labels": [
+    "Pump.fun daily #8 venom ($26.6k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "3sCJX5jC7PQCBHbWg7eUcoJdCy9D5r76k3dTDQXUeGg9",
+   "labels": [
+    "Pump.fun daily #9 DustArrowLan ($26.2k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "FRa5xvWrvgYBHEukozdhJPCJRuJZcTn2WKj2u6L75Rmj",
+   "labels": [
+    "Pump.fun daily #10 dante ($22.6k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "EqBQhoU88ty3a3aDphDRCBuiRirjUsFSFi4UHGY64qvv",
+   "labels": [
+    "Pump.fun weekly #2 sadcrissy ($161.4k)"
+   ],
+   "sources": [
+    "pump.fun weekly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "EnPjBjzy6zaufzpZ2m3Q8nPS3KpyiRxNLKtcSiMYwWCa",
+   "labels": [
+    "Pump.fun weekly #3 collectible ($123.9k)"
+   ],
+   "sources": [
+    "pump.fun weekly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "4y2T1ghykCTq4EddoXjptZamk4qAsqcZw6eKxS8jdvE1",
+   "labels": [
+    "Pump.fun weekly #7 hdegroot ($102.1k)"
+   ],
+   "sources": [
+    "pump.fun weekly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
+   "labels": [
+    "Pump.fun weekly #8 limfork ($85.4k)"
+   ],
+   "sources": [
+    "pump.fun weekly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "3VUNtVtjjx5ckUojT7UocJ5fbuAJRsNUXNfTBnPte9vC",
+   "labels": [
+    "Pump.fun weekly #10 buddhaaaaa ($83.3k)"
+   ],
+   "sources": [
+    "pump.fun weekly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "4ugDhHJ8XDXAeABmrNmGffFaLbJb9BkPyiFGVSV9ocwo",
+   "labels": [
+    "Pump.fun monthly #1 The__Solstice ($1.50M)"
+   ],
+   "sources": [
+    "pump.fun monthly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "2M2vLX34LXMg24dMEnjWHvRXS1tshpEDRWzmXgV8ENNZ",
+   "labels": [
+    "Pump.fun monthly #4 SossaDotKek ($403.1k)"
+   ],
+   "sources": [
+    "pump.fun monthly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "ESVPiw89EPDawTyqXWmot6nJ8D92MMNHH5fmDmficY32",
+   "labels": [
+    "Pump.fun monthly #5 glassyotter6054 ($351.3k)"
+   ],
+   "sources": [
+    "pump.fun monthly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "21rgbFW6sujQovCw3qt6R2EdE97Yzzvk8sSc37Bb72Cm",
+   "labels": [
+    "Pump.fun monthly #6 hexiecs ($327.4k)"
+   ],
+   "sources": [
+    "pump.fun monthly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "24L6uekgvsQRgT41DZRhahEAAVnkseTT7x4qyigC3HvH",
+   "labels": [
+    "Pump.fun monthly #7 Nexybtw ($326.1k)"
+   ],
+   "sources": [
+    "pump.fun monthly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "2GtmuqG31LuuWQmKzeK72YjH5iALPkJycuQaEQGsFzLw",
+   "labels": [
+    "Pump.fun monthly #8 sadkris ($318.0k)"
+   ],
+   "sources": [
+    "pump.fun monthly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "AuPp4YTMTyqxYXQnHc5KUc6pUuCSsHQpBJhgnD45yqrf",
+   "labels": [
+    "Kolscan daily #4 Dani ($36.1k)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "DemfvB4iwd3NmVquvWqWbB92yVZWFFqybqBeJGdyEeM6",
+   "labels": [
+    "Kolscan daily #5 japbitch ($18.7k)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "FsG3BaPmRTdSrPaivbgJsFNCCa8cPfkUtk8VLWXkHpHP",
+   "labels": [
+    "Kolscan daily #6 Reljoo ($17.0k)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC",
+   "labels": [
+    "Kolscan daily #7 Nyhrox ($17.0k)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "BHREKFkPQgAtDs8Vb1UfLkUpjG6ScidTjHaCWFuG2AtX",
+   "labels": [
+    "Kolscan daily #8 Risk ($16.0k)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "GvTXquDAJbfrFrEGTPRPUj3WM5Bzub5yeTFzkLVHpjfD",
+   "labels": [
+    "Kolscan daily #9 brunowsky ($14.7k)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "H31vEBxSJk1nQdUN11qZgZyhScyShhscKhvhZZU3dQoU",
+   "labels": [
+    "Kolscan daily #10 Megga ($14.1k)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "J9WiAZKf8JnCkHFL8fLCCXdEgdoLjLRqU2EGsDjdqYga",
+   "labels": [
+    "Fomo top-50 #1 @change ($1.94M PnL, 486 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "5ECuREzbvnxfrmo9cnvrcfKLgMJ7zd2ZP1C3XbPKbHhd",
+   "labels": [
+    "Fomo top-50 #1 @change ($1.94M PnL, 486 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "498g1rVnFcnjBjpfw1xyqA1WvgQXUU8RWuELjxkjAayQ",
+   "labels": [
+    "Fomo top-50 #2 @frankdegods ($1.21M PnL, 1849 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "A5SEXYJY4jTEi6sjMLfZs5KAP8SVFvLDPDV67GgSSZSk",
+   "labels": [
+    "Fomo top-50 #2 @frankdegods ($1.21M PnL, 1849 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "5fkAwNVpT8A1UHEnY62VEFpqgagdoP8FYrv5ideiQp5c",
+   "labels": [
+    "Fomo top-50 #3 @_logjam ($1.06M PnL, 587 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "ExxadAeGwmrfS3NnHxEqWX3qmVTFNXhk7DmSScUpp1t3",
+   "labels": [
+    "Fomo top-50 #3 @_logjam ($1.06M PnL, 587 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "DrxBsUd3ufx9Q8kc8Zts1SAavMccrAJcwrFzLf77d9o1",
+   "labels": [
+    "Fomo top-50 #4 @XVentures ($409.2k PnL, 18 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "DNnsNPYz1zj8hhc7amqGz3nKqRufurUEv7j4aYXB5zWH",
+   "labels": [
+    "Fomo top-50 #4 @XVentures ($409.2k PnL, 18 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "BJVdVGjEGiGeC96iKWhBHTQP6Qdm4ADVVSPMzHa62ZvG",
+   "labels": [
+    "Fomo top-50 #5 @lesabre ($408.0k PnL, 651 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "H3jGitWGsrMnuvsQcCJoDfS6spJGS4AKguagaa6EnfQX",
+   "labels": [
+    "Fomo top-50 #5 @lesabre ($408.0k PnL, 651 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "DxM1hfY8FQ8dNGrucuJzhJcF8KRbjk8WBwrgKvQ9spPv",
+   "labels": [
+    "Fomo top-50 #6 @ResellCalendar ($335.1k PnL, 2016 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "7TAMgUTRR2J8iUpPVuevFRFq8oX1kmhKTx4Y4BUNF9Eb",
+   "labels": [
+    "Fomo top-50 #6 @ResellCalendar ($335.1k PnL, 2016 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "F1a7cR49s7VsKz8XGanFBfsbNE2M91hgKkkDhDjv44w6",
+   "labels": [
+    "Fomo top-50 #7 @airtightfish ($305.6k PnL, 216 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "CQS9RZZvrBLC5uX5NhxwYEu7wvLtBpojvHbDgGFDu4bY",
+   "labels": [
+    "Fomo top-50 #7 @airtightfish ($305.6k PnL, 216 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "F2hA2zDVnHyDUiMQ6b3K9Gx9A2JAxJn66ASH9xZ9LqbG",
+   "labels": [
+    "Fomo top-50 #8 @collectible ($295.7k PnL, 948 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "3YECsvhnPBRJtWcPZgTQkczufpXdcAuHgZEDmH8vyRyS",
+   "labels": [
+    "Fomo top-50 #8 @collectible ($295.7k PnL, 948 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "5Vx9yHpQrNDoM3YPPYAbGHtHThQaYb713QuzP5oonLmd",
+   "labels": [
+    "Fomo top-50 #9 @ThePrimeGreek ($283.0k PnL, 514 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "G2wabvFiiUBEAV4rxt5anZXhrTam2pet6Rok22Sm6TYF",
+   "labels": [
+    "Fomo top-50 #9 @ThePrimeGreek ($283.0k PnL, 514 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "mDR91ufq4S2uSHa9E2PYL7xg4LwcQXaQFP7YK864a1z",
+   "labels": [
+    "Fomo top-50 #10 @smol_intern ($280.2k PnL, 651 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "CJDjRAjigb3UdsjxaV7AiMchhJV6qAcc3SjrSLFyytE3",
+   "labels": [
+    "Fomo top-50 #10 @smol_intern ($280.2k PnL, 651 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "BXNGvVv4g8XrQCgskm4J18UBMxxT9Dyo38gjFZhWESTU",
+   "labels": [
+    "Fomo top-50 #11 @WaterySimpleBobolink ($275.6k PnL, 77 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "BCrTEXmWutwPz8qv6w1S5gDbaLnSLpXKM5kSGVWyyfxu",
+   "labels": [
+    "Fomo top-50 #12 @remusofmars ($267.9k PnL, 1399 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "4WhFtDKcJGLoLAYbQm7iByw5h2sNQTTZF99v4y21T28L",
+   "labels": [
+    "Fomo top-50 #12 @remusofmars ($267.9k PnL, 1399 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "CDL22EuTKoWeXpiStMWu9pLqLNSn5NkMG3nKoz1YRVUf",
+   "labels": [
+    "Fomo top-50 #13 @Thokani ($262.8k PnL, 1980 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "CqKkAfaWHuMnszqBLcpN64VoifsEYQFFjjhj2PHnaG7d",
+   "labels": [
+    "Fomo top-50 #13 @Thokani ($262.8k PnL, 1980 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "4WH9bN3VDzUa4kHAXxMCUvsqdpprvYXP3DejZdunTCKw",
+   "labels": [
+    "Fomo top-50 #14 @BreakingBad ($225.5k PnL, 605 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "B4xaT8adLqGgRE2Tm6WpNPme3dJFapckgmufADMa1Exg",
+   "labels": [
+    "Fomo top-50 #14 @BreakingBad ($225.5k PnL, 605 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "ENkZtLj1onzQRGnEeRkQfFzBeeY2dCeiQMXDzh8XbQbj",
+   "labels": [
+    "Fomo top-50 #15 @game_for_one ($216.9k PnL, 542 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "DATMkmVrFbZt7isGoxyDSpAuF9vJycpkDKwhbf978eUw",
+   "labels": [
+    "Fomo top-50 #15 @game_for_one ($216.9k PnL, 542 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "FY919jJnaRo55UZ3H9cnm1xKi9pyEG2m2oSakBifx5PN",
+   "labels": [
+    "Fomo top-50 #16 @Notepad_H ($212.0k PnL, 238 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "2rTpGAwaZ5o5UvKT4En4L2Q56JsuNBk5GWGhV3upW8q4",
+   "labels": [
+    "Fomo top-50 #16 @Notepad_H ($212.0k PnL, 238 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "G2vhbPCG5jAbBjFCJnLBbGJco93r3iw1WuvmL8csvJMD",
+   "labels": [
+    "Fomo top-50 #17 @surveillor ($210.9k PnL, 313 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "87LAffDgoMt6z48jk4ziPj1TSzULxcrannvuP18Y89mo",
+   "labels": [
+    "Fomo top-50 #17 @surveillor ($210.9k PnL, 313 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "6bxz5E93NJBXqubkT72nLzkkz9j2PMBbfPKi6qxGYXdW",
+   "labels": [
+    "Fomo top-50 #18 @thebtcgoose ($201.3k PnL, 692 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "8MrpW1p1qwszV5KnAAdGdcXZvH9yibXz5jEGREdPiVyT",
+   "labels": [
+    "Fomo top-50 #18 @thebtcgoose ($201.3k PnL, 692 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "Cf7qEdZzJg7uC4B3wV93UaabRXkaFrtdVjsiDTJhetNf",
+   "labels": [
+    "Fomo top-50 #19 @jeetergriffin ($192.9k PnL, 358 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "ApPou4mC9jDrsidNRfgvQ5pLyVP2eQQhzvZdb8voKwHz",
+   "labels": [
+    "Fomo top-50 #19 @jeetergriffin ($192.9k PnL, 358 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "BvoCFJSmrUKn37nYiEMW6CJxb9ogPRmS4fqVbuhinWQq",
+   "labels": [
+    "Fomo top-50 #20 @nfd ($190.8k PnL, 197 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "6v9F7uyrpUFFAAbbFFgAkRPMv3UbakxvTWMaRvHsqdKk",
+   "labels": [
+    "Fomo top-50 #20 @nfd ($190.8k PnL, 197 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "C481ZKiw4TZGs4EjNkhm6TB7s17swzmqAmCcNm73vGnW",
+   "labels": [
+    "Fomo top-50 #21 @GuavaGuy2001 ($188.8k PnL, 85 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "Exk5RKp92du872nSU88frnnDprf8Efz9BPVdAfZvUxdy",
+   "labels": [
+    "Fomo top-50 #21 @GuavaGuy2001 ($188.8k PnL, 85 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "FhsbQzAJWVDNwaH61cTo6XkkfEsmSYMZKs9VJHH32bVG",
+   "labels": [
+    "Fomo top-50 #22 @fibs ($171.0k PnL, 681 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "GJcMxxQf27cYv2KLA26H6VTZdPfrneZ2HmvCdvMxxZfi",
+   "labels": [
+    "Fomo top-50 #22 @fibs ($171.0k PnL, 681 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "AABkfEfGRJQ1bVYC6J62BuND3vMVAQr5kCiZzUV4bY9R",
+   "labels": [
+    "Fomo top-50 #23 @C1phervoyager ($170.7k PnL, 1123 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "EmFaYsznEzQ1awoTyNxU9bi7wH9z2Xp2ufTRdY8pbYYQ",
+   "labels": [
+    "Fomo top-50 #23 @C1phervoyager ($170.7k PnL, 1123 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "8tphd2joV1ssioBwjExKdvP2mXPKX4GD4nks6RPM3gVD",
+   "labels": [
+    "Fomo top-50 #24 @quakerrz ($170.0k PnL, 194 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "BncpJ3BZFqLLYp84QrzJykrLYQhDmx77vzWbv9asccnR",
+   "labels": [
+    "Fomo top-50 #24 @quakerrz ($170.0k PnL, 194 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "EMeBywiv1H4V6fPjgWo78VRxZCrPtDAyf4nvF71LJvvp",
+   "labels": [
+    "Fomo top-50 #25 @nosanityxbt ($156.9k PnL, 3025 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "BaserSFmRTAh24rMb6vxcwYHwXc4pQkspY12fkSuXVTA",
+   "labels": [
+    "Fomo top-50 #25 @nosanityxbt ($156.9k PnL, 3025 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "HpFQLQcHuH4roUx8jEAJNUUPAJwqUAZVodGMvdSrW3Y1",
+   "labels": [
+    "Fomo top-50 #26 @notwashed ($154.7k PnL, 288 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "6H8A751gYi8TCrHTGCyEvGeW66ymhCzir2ATuutQFsK8",
+   "labels": [
+    "Fomo top-50 #26 @notwashed ($154.7k PnL, 288 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "H2QSGECp13sFLJgdTsDtayX3dk18Dm6sQMSQKcew7Xzk",
+   "labels": [
+    "Fomo top-50 #27 @AvgJoesCrypto ($154.0k PnL, 191 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "5zVedvk9ffJKwaoueQWKEAAAa1nutXKhaqmFxzwmvVkW",
+   "labels": [
+    "Fomo top-50 #27 @AvgJoesCrypto ($154.0k PnL, 191 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "DPAN2Vig8BokpQCCu4mtV1mTWYLS7ktKe1hHKVBcsayL",
+   "labels": [
+    "Fomo top-50 #28 @OinkersRUs ($152.8k PnL, 740 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "6pVvYMQgSUETvtUc4mBFZPxKW43k7R46jszFidbCKmWP",
+   "labels": [
+    "Fomo top-50 #28 @OinkersRUs ($152.8k PnL, 740 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "A2vZY74JHBBwfjo3F1Bo5iiLXpABfAhmgdyfUGzABY9F",
+   "labels": [
+    "Fomo top-50 #29 @pxblocito ($145.0k PnL, 245 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "4adD9hwgveKsfM4zHgLkEBbuPHAZetJDoigzZ6XSi8tk",
+   "labels": [
+    "Fomo top-50 #29 @pxblocito ($145.0k PnL, 245 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "6PHHrdzSesr3FM9EuP2q9p2tDrCFyGHM3LZLbdpGthGa",
+   "labels": [
+    "Fomo top-50 #30 @atom_xyz ($144.7k PnL, 560 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "8TxELMcavVS8rpL8YutRDeuFyjNq7Z73RjuMC3nrY1b5",
+   "labels": [
+    "Fomo top-50 #30 @atom_xyz ($144.7k PnL, 560 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "E1ba6cLZx5WftsJiXiEjpGTozort94GvFDy7MzL9Ns6j",
+   "labels": [
+    "Fomo top-50 #31 @llonchain ($144.4k PnL, 1379 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "3ycQs8LWVVB4DeDe26qbaifECNVefMhQKuqMv4h97L2a",
+   "labels": [
+    "Fomo top-50 #31 @llonchain ($144.4k PnL, 1379 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "6bQSN4d6anoTwnE6XDPGLA9RV8cqZPeNJro4iQUsWmso",
+   "labels": [
+    "Fomo top-50 #32 @wrld_sol ($142.2k PnL, 163 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "L1ZbujFMUoWLnA6zLzsRy2gdaNw4JEZMda4epGBBBVt",
+   "labels": [
+    "Fomo top-50 #32 @wrld_sol ($142.2k PnL, 163 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "CEKh3LFALbngujZkoxb7DcND1K9xL7sPzs78ArKJNimn",
+   "labels": [
+    "Fomo top-50 #33 @Greed ($141.8k PnL, 218 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "9KD1LxEXnJn4HyXZ57KdBxBzYvvRKkMXgarptz3cBzhg",
+   "labels": [
+    "Fomo top-50 #33 @Greed ($141.8k PnL, 218 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "AhEpzb56KhW5EUbYKdV6A4MAC6hu6mptX6haRXkpeuNV",
+   "labels": [
+    "Fomo top-50 #34 @letsdance ($141.0k PnL, 273 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "G94HLn9SuvSjyW3KEWfPJZQFCy33J59FGDASgFDVjRjV",
+   "labels": [
+    "Fomo top-50 #34 @letsdance ($141.0k PnL, 273 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "6XkGZFbSusrc7uUEQFTpbkjLpzQ5Q1JovPaZQTeBzZHz",
+   "labels": [
+    "Fomo top-50 #35 @Roveryaps ($137.5k PnL, 643 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "GgDAijkjPdaXNdiPQyqKZuTDE6DeTXSYxrfvCjBorZst",
+   "labels": [
+    "Fomo top-50 #36 @hihi33 ($135.1k PnL, 685 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "Bhkhub5XjRTjcoG4FnCgfNvymdhan8ZXTTbQYXfhf9rv",
+   "labels": [
+    "Fomo top-50 #36 @hihi33 ($135.1k PnL, 685 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "3qBVJLMAWXCbW3nhz99T99in82zZeUHkbDeSDJThbN4Z",
+   "labels": [
+    "Fomo top-50 #37 @0xleo ($132.9k PnL, 156 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "DXEt2s1HjB9xYNyfCgRBoyombgtPmS21qS8YRDhP5RN7",
+   "labels": [
+    "Fomo top-50 #37 @0xleo ($132.9k PnL, 156 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "GFDVVq2e1JUqHquzX6z8pm34iXz2pE2K9WaDcZKuDSqC",
+   "labels": [
+    "Fomo top-50 #38 @scalps ($123.3k PnL, 788 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "8Z29CzwUewr5YQgANfDBXjPo87BqphbtTU5Xu3TywyX",
+   "labels": [
+    "Fomo top-50 #38 @scalps ($123.3k PnL, 788 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "CxNbb41BpnvDKLWkDs3aiSZT7Q2wCpCC3eYHV62Ko8Up",
+   "labels": [
+    "Fomo top-50 #39 @ArtofConviction ($116.4k PnL, 25 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "DcbxVEezcXbCPiZKhCU3ZHeYXBfKeQxnDfCMPJ6vhUoo",
+   "labels": [
+    "Fomo top-50 #40 @clewguo ($115.6k PnL, 89 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "CbfECPomSocQGCEdghcq1zkYEDSVUVP761QMnRXwvyD9",
+   "labels": [
+    "Fomo top-50 #40 @clewguo ($115.6k PnL, 89 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "BFhpehgAFUcJPyM6kTY6VtWp3PQ4rcSG31cbNrew3aeq",
+   "labels": [
+    "Fomo top-50 #41 @rawrxd ($115.6k PnL, 4 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "6qX4Sqi4jDJpDC95ZA6URGSuasv1ef1btAKgF6h38YfH",
+   "labels": [
+    "Fomo top-50 #42 @VexRex23 ($115.4k PnL, 124 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "1MZHGYQysPw3qaLX8GGFUZw9x9VKhKmnYBow1ZKLN9D",
+   "labels": [
+    "Fomo top-50 #42 @VexRex23 ($115.4k PnL, 124 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "4HQJjSG8dUTYBud71fjW4rNBoUJDTPfnMCxsMoLyyHk8",
+   "labels": [
+    "Fomo top-50 #43 @Gragas ($114.6k PnL, 133 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "5y6xrp3fjyZw2gfWMKPBLgeDuSPjiRXffmiaCdLYpYs9",
+   "labels": [
+    "Fomo top-50 #43 @Gragas ($114.6k PnL, 133 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "4jXuYZRUUCWtxy5cYwx4oTBJmF73FywyAhVoPnBpmTBN",
+   "labels": [
+    "Fomo top-50 #44 @real_y22 ($112.2k PnL, 277 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "FQVVU1zM6kj7uQcLGD3h6Afetc7NnrZg8knvJmoLLfq2",
+   "labels": [
+    "Fomo top-50 #44 @real_y22 ($112.2k PnL, 277 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "HBMKgEgpLJicda1gpjBiQ2sTNs7NApZvMpuxiUuXUxSM",
+   "labels": [
+    "Fomo top-50 #45 @_traderjay ($109.2k PnL, 233 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "G9kNVrM2Pk3CvVzne8JUEhWBTKbfXANJ6SstU7Wb9fnK",
+   "labels": [
+    "Fomo top-50 #45 @_traderjay ($109.2k PnL, 233 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "9dbcLC76Cr32kkSt2ayEzkYxxptwtkyAnSYNUsnnzK8A",
+   "labels": [
+    "Fomo top-50 #46 @xxxfomoxxx ($108.8k PnL, 1138 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "6bYPH9U4mHq6KJHvwxzRfMGFQEXBRaF3TQkkqcpmo5ve",
+   "labels": [
+    "Fomo top-50 #46 @xxxfomoxxx ($108.8k PnL, 1138 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "GX9tvBC9NQTErzdQajY7xYf4mBtwmYFZiPTQ8iJjpMtF",
+   "labels": [
+    "Fomo top-50 #47 @tayk4777777 ($108.1k PnL, 180 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "FYjYdpBi4pEJquQieBXNxGJriniv8sQT1TGRXJwAyzEc",
+   "labels": [
+    "Fomo top-50 #47 @tayk4777777 ($108.1k PnL, 180 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "CSuQB2tUK9aEhvU4WgnSB5am3f2R7DP73iLMPMYssWSQ",
+   "labels": [
+    "Fomo top-50 #48 @hehe ($106.5k PnL, 286 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "wDmcw4NRXtbNJKnDgekzYRWT8298US1MvTwejpxQSco",
+   "labels": [
+    "Fomo top-50 #48 @hehe ($106.5k PnL, 286 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "DPUq1bDoAzHoapLaFAhH7Z3n8w8GqD4a1BwNCyivf5jc",
+   "labels": [
+    "Fomo top-50 #49 @astaso1 ($103.1k PnL, 376 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "3FyBTtWvhzG5p1HuTDYUEFGu7eNCZAHvvRPweXWcZsiw",
+   "labels": [
+    "Fomo top-50 #49 @astaso1 ($103.1k PnL, 376 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "316WvHCXTDJSH6PA1BQw4w4Zizky1J73hSRVCFL6U1im",
+   "labels": [
+    "Fomo top-50 #50 @ZeMirch ($102.9k PnL, 400 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "yxkweHEpJgAacQq7vNuU9WaC1SgV26ywAwrBZo5Qzik",
+   "labels": [
+    "Fomo top-50 #50 @ZeMirch ($102.9k PnL, 400 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  }
+ ]
+}

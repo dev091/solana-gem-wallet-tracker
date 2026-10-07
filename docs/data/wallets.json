@@ -1,0 +1,1201 @@
+{
+ "generated_at": 1791385625,
+ "provider": "rpc",
+ "criteria": {
+  "entry_min_usd": 100.0,
+  "entry_max_usd": 500.0,
+  "gem_profit_usd": 100000.0,
+  "min_gems": 0,
+  "min_multiple": 5.0,
+  "min_trades": 5,
+  "verified_only": true,
+  "grace_hours": 72.0,
+  "count_unrealized": false,
+  "all_entries_in_range": false,
+  "max_tokens": 300
+ },
+ "sources": {
+  "pump-board": {
+   "ok": true,
+   "wallets": 25
+  },
+  "kolscan": {
+   "ok": true,
+   "wallets": 10
+  },
+  "fomo-top50": {
+   "ok": true,
+   "wallets": 96
+  },
+  "verified-early": {
+   "ok": true,
+   "wallets": 1,
+   "coins": 25
+  }
+ },
+ "counts": {
+  "scanned": 30,
+  "strict": 0,
+  "gem_hunter": 0,
+  "rejected": 30,
+  "error": 0
+ },
+ "wallets": [
+  {
+   "wallet": "GRevWsvJCmmZ6cF6GdAkpKNW6TCLm5MBKyBc3XtUeMmB",
+   "tier": "REJECTED",
+   "labels": [
+    "early buyer on 2 big coins: OTC early $56, Jimothy early $43"
+   ],
+   "sources": [
+    "verified-early"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 2,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun weekly #1 ogantd ($325.5k)",
+    "Pump.fun monthly #3 ogantd ($431.5k)",
+    "Kolscan daily #3 OGAntD ($41.1k)"
+   ],
+   "sources": [
+    "pump.fun weekly",
+    "pump.fun monthly",
+    "kolscan"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "B3wagQZiZU2hKa5pUCj6rrdhWsX3Q6WfTTnki9PjwzMh",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun daily #1 xander ($80.0k)",
+    "Kolscan daily #1 xander ($84.2k)"
+   ],
+   "sources": [
+    "pump.fun daily",
+    "kolscan"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "4cXnf2z85UiZ5cyKsPMEULq1yufAtpkatmX4j4DBZqj2",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun daily #6 waiterg_ ($46.2k)",
+    "Kolscan daily #2 WaiterG ($42.3k)"
+   ],
+   "sources": [
+    "pump.fun daily",
+    "kolscan"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "catK9v3gp2dd32bkUxDEst4BarwDoCL3pkFfVoVjcgi",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun daily #7 bulkytuna85591 ($41.4k)",
+    "Pump.fun weekly #9 bulkytuna85591 ($83.3k)"
+   ],
+   "sources": [
+    "pump.fun daily",
+    "pump.fun weekly"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "29yFzeBZgxf5zqrAkKXwgZtQehRf4pL8WbV2nRJikbw8",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun weekly #4 throatycrab1008 ($117.0k)",
+    "Pump.fun monthly #2 throatycrab1008 ($495.0k)"
+   ],
+   "sources": [
+    "pump.fun weekly",
+    "pump.fun monthly"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "ACTbvbNm5qTLuofNRPxFPMtHAAtdH1CtzhCZatYHy831",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun weekly #5 slidrrz ($116.2k)",
+    "Pump.fun monthly #9 slidrrz ($314.9k)"
+   ],
+   "sources": [
+    "pump.fun weekly",
+    "pump.fun monthly"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun weekly #6 notdecu ($108.6k)",
+    "Pump.fun monthly #10 notdecu ($311.5k)"
+   ],
+   "sources": [
+    "pump.fun weekly",
+    "pump.fun monthly"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "95ddWCEqs7bX1vAPFXgAxNKmYkCvpQFiurCk4KWg2AST",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun daily #2 olddolphin41264 ($69.7k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "G3sYJ99sqZy39m98qSP9De543Ae2zHy8B6we7tb7z3jT",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun daily #3 roovera ($59.2k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "6AhH7XGofKCU3NGrYNGA8DFmFdw7CtY34CzfTs3u99sm",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun daily #4 pallets ($54.2k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "aKmaJt9FWsQB3TqgR4sCJo5XksrkE7JDb7renvns816",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun daily #5 chopped_remus ($47.6k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "8bWe7V8J5fyizory2irysXCSaDUg6ytcWwpvpe8iY1Yt",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun daily #8 venom ($26.6k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "3sCJX5jC7PQCBHbWg7eUcoJdCy9D5r76k3dTDQXUeGg9",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun daily #9 DustArrowLan ($26.2k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "FRa5xvWrvgYBHEukozdhJPCJRuJZcTn2WKj2u6L75Rmj",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun daily #10 dante ($22.6k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "EqBQhoU88ty3a3aDphDRCBuiRirjUsFSFi4UHGY64qvv",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun weekly #2 sadcrissy ($161.4k)"
+   ],
+   "sources": [
+    "pump.fun weekly"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "EnPjBjzy6zaufzpZ2m3Q8nPS3KpyiRxNLKtcSiMYwWCa",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun weekly #3 collectible ($123.9k)"
+   ],
+   "sources": [
+    "pump.fun weekly"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "4y2T1ghykCTq4EddoXjptZamk4qAsqcZw6eKxS8jdvE1",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun weekly #7 hdegroot ($102.1k)"
+   ],
+   "sources": [
+    "pump.fun weekly"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun weekly #8 limfork ($85.4k)"
+   ],
+   "sources": [
+    "pump.fun weekly"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "3VUNtVtjjx5ckUojT7UocJ5fbuAJRsNUXNfTBnPte9vC",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun weekly #10 buddhaaaaa ($83.3k)"
+   ],
+   "sources": [
+    "pump.fun weekly"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "4ugDhHJ8XDXAeABmrNmGffFaLbJb9BkPyiFGVSV9ocwo",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun monthly #1 The__Solstice ($1.50M)"
+   ],
+   "sources": [
+    "pump.fun monthly"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "2M2vLX34LXMg24dMEnjWHvRXS1tshpEDRWzmXgV8ENNZ",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun monthly #4 SossaDotKek ($403.1k)"
+   ],
+   "sources": [
+    "pump.fun monthly"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "ESVPiw89EPDawTyqXWmot6nJ8D92MMNHH5fmDmficY32",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun monthly #5 glassyotter6054 ($351.3k)"
+   ],
+   "sources": [
+    "pump.fun monthly"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "21rgbFW6sujQovCw3qt6R2EdE97Yzzvk8sSc37Bb72Cm",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun monthly #6 hexiecs ($327.4k)"
+   ],
+   "sources": [
+    "pump.fun monthly"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "24L6uekgvsQRgT41DZRhahEAAVnkseTT7x4qyigC3HvH",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun monthly #7 Nexybtw ($326.1k)"
+   ],
+   "sources": [
+    "pump.fun monthly"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "2GtmuqG31LuuWQmKzeK72YjH5iALPkJycuQaEQGsFzLw",
+   "tier": "REJECTED",
+   "labels": [
+    "Pump.fun monthly #8 sadkris ($318.0k)"
+   ],
+   "sources": [
+    "pump.fun monthly"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "AuPp4YTMTyqxYXQnHc5KUc6pUuCSsHQpBJhgnD45yqrf",
+   "tier": "REJECTED",
+   "labels": [
+    "Kolscan daily #4 Dani ($36.1k)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "DemfvB4iwd3NmVquvWqWbB92yVZWFFqybqBeJGdyEeM6",
+   "tier": "REJECTED",
+   "labels": [
+    "Kolscan daily #5 japbitch ($18.7k)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "FsG3BaPmRTdSrPaivbgJsFNCCa8cPfkUtk8VLWXkHpHP",
+   "tier": "REJECTED",
+   "labels": [
+    "Kolscan daily #6 Reljoo ($17.0k)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC",
+   "tier": "REJECTED",
+   "labels": [
+    "Kolscan daily #7 Nyhrox ($17.0k)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 600
+   },
+   "reasons": [
+    "too active (600+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "rpc",
+   "gems": [],
+   "trades": []
+  }
+ ]
+}
