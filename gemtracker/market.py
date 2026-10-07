@@ -60,6 +60,7 @@ class TokenState:
     holders: dict = field(default_factory=dict)   # user -> net tokens seen
     elite_buys: list = field(default_factory=list)  # (rx, name, sol)
     elite_sells: list = field(default_factory=list)
+    _wcache: dict = field(default_factory=dict, repr=False, compare=False)
 
     @property
     def mcap(self) -> float:
@@ -72,17 +73,22 @@ class TokenState:
         return (now_ms - self.first_rx) / 1000
 
     def window(self, now_ms: int, secs: float) -> dict:
-        """Flow over the last `secs` seconds."""
+        """Flow over the last `secs` seconds (cached: many algos ask the same window per event)."""
+        key = (now_ms, secs, len(self.trades), self.trades[-1].rx if self.trades else 0, self.price)
+        hit = self._wcache.get(key)
+        if hit is not None:
+            return dict(hit)
+        if len(self._wcache) > 16:
+            self._wcache.clear()
         cut = now_ms - secs * 1000
         buys = sells = 0
         bsol = ssol = 0.0
         buyers = set()
         first_price = None
-        for t in self.trades:
+        for t in reversed(self.trades):  # kept sorted by rx, so stop at the first older trade
             if t.rx < cut:
-                continue
-            if first_price is None:
-                first_price = t.price
+                break
+            first_price = t.price
             if t.side == "buy":
                 buys += 1
                 bsol += t.sol
@@ -91,8 +97,10 @@ class TokenState:
                 sells += 1
                 ssol += t.sol
         change = (self.price / first_price - 1) if first_price else 0.0
-        return {"buys": buys, "sells": sells, "buy_sol": bsol, "sell_sol": ssol,
-                "net_sol": bsol - ssol, "unique_buyers": len(buyers), "price_change": change}
+        out = {"buys": buys, "sells": sells, "buy_sol": bsol, "sell_sol": ssol,
+               "net_sol": bsol - ssol, "unique_buyers": len(buyers), "price_change": change}
+        self._wcache[key] = out
+        return dict(out)
 
     def holder_count(self) -> int:
         return sum(1 for v in self.holders.values() if v > 0)
@@ -181,7 +189,14 @@ class Market:
             name = self.elite_names.get(ev.user)
             if name:
                 (st.elite_buys if buy else st.elite_sells).append((rx, name, sol))
-        st.trades.append(Trade(rx, ev.side, sol, tokens, ev.user, ev.price))
+        trade = Trade(rx, ev.side, sol, tokens, ev.user, ev.price)
+        if st.trades and rx < st.trades[-1].rx:  # a late (parked) event: keep rx order
+            i = len(st.trades)
+            while i and st.trades[i - 1].rx > rx:
+                i -= 1
+            st.trades.insert(i, trade)
+        else:
+            st.trades.append(trade)
         while st.trades and st.trades[0].rx < rx - WINDOW_MS:
             st.trades.popleft()
         return st

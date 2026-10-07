@@ -119,6 +119,16 @@ class MarketTest(unittest.TestCase):
         self.assertEqual((w["buys"], w["sells"], w["unique_buyers"]), (1, 1, 1))
         self.assertAlmostEqual(w["net_sol"], 0.5)
 
+    def test_late_trade_keeps_window_in_time_order(self):
+        m = Market()
+        m.apply(trade_ev(user="a", sol=1.0), 10_000)
+        m.apply(trade_ev(user="b", sol=2.0), 30_000)
+        m.apply(trade_ev(user="c", sol=4.0), 26_000)  # parked event applied late
+        self.assertEqual([t.rx for t in m.get("M").trades], [10_000, 26_000, 30_000])
+        w = m.get("M").window(30_000, 5)
+        self.assertEqual((w["buys"], w["unique_buyers"]), (2, 2))
+        self.assertAlmostEqual(w["buy_sol"], 6.0)
+
     def test_create_makes_coin_tradable(self):
         m = Market()
         ev = ce.ChainEvent("create", "pump", "s", 0, ts=1, mint="N", user="d", price=1e-7,

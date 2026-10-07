@@ -36,10 +36,12 @@ from .solana import SolanaRpc
 from .strategy import Strategy
 from .tape import TapeWriter, event_row
 
-# Two free public endpoints raced on every stream, deduplicated by signature. Measured
-# 2026-10-07: each wins about half the races, and racing them cuts p90 by ~0.5 s and covers
-# each other's 1002 drops. (publicnode lags ~8 s; dRPC free has no logsSubscribe.)
+# Two free public endpoints, deduplicated by signature. The launch streams (pump, launchlab) are
+# raced on both: one covers the other's 1002 drops. PumpSwap is ~10x the bytes; racing it too
+# took the link to ~4 MB/s and pushed feed lag p90 from ~2.6 s to ~6 s (2026-10-07), so it
+# streams from the first endpoint only. (publicnode lags ~8 s; dRPC free has no logsSubscribe.)
 WS_URLS = {"mb": "wss://api.mainnet-beta.solana.com", "sc": "wss://api.mainnet.solana.com"}
+RACED = {"pump", "launchlab"}
 HTTP_URL = "https://api.mainnet-beta.solana.com"
 PAPER_DIR = DATA_DIR / "paper"
 POOL_CACHE = DATA_DIR / "pool_mints.json"
@@ -151,6 +153,7 @@ class Runner:
         self.sim = PaperSim(strategies, cfg, self.sol_usd, run_dir)
         self.stats = defaultdict(int)
         self.lag = defaultdict(list)  # venue -> receive minus chain time, ms (latency realism)
+        self.loop = defaultdict(list)  # our own delays, ms: queue wait, tick cost, sleep overshoot
         self.started = now_ms()
 
     # ----- prices -----
@@ -283,6 +286,8 @@ class Runner:
 
     def process(self, item) -> None:
         rx, label, key, slot, value = item
+        if len(self.loop["queue_wait"]) < 20_000:
+            self.loop["queue_wait"].append(now_ms() - rx)
         sig = value.get("signature", "")
         if value.get("err") or not self.seen.add(sig):
             return
@@ -304,11 +309,14 @@ class Runner:
         last_status = last_summary = time.time()
         end = time.time() + hours * 3600 if hours else None
         while end is None or time.time() < end:
+            before = time.perf_counter()
             await asyncio.sleep(1)
             t = now_ms()
+            self.loop["sleep_overshoot"].append(int((time.perf_counter() - before - 1) * 1000))
             self.drain_threads()
             self.sim.settle(None, t, self.market)
             self.sim.dispatch("on_tick", self.market, t)
+            self.loop["tick_cost"].append(now_ms() - t)
             if time.time() - last_status >= 60:
                 last_status = time.time()
                 self.status(t)
@@ -328,13 +336,18 @@ class Runner:
             xs.sort()
             lag[venue] = {f"p{int(p * 100)}": xs[int(p * (len(xs) - 1))] for p in (0.5, 0.9, 0.99)}
         self.lag.clear()
+        loop = {}
+        for k, xs in self.loop.items():
+            xs.sort()
+            loop[k] = {"p50": xs[len(xs) // 2], "p90": xs[int(0.9 * (len(xs) - 1))], "max": xs[-1]} if xs else {}
+        self.loop.clear()
         POOL_CACHE.parent.mkdir(parents=True, exist_ok=True)
         POOL_CACHE.write_text(json.dumps(self.pool_cache), encoding="utf-8")
         status = {"t": t, "uptime_min": round((t - self.started) / 60000, 1),
                   "queue": self.q.qsize(), "tokens": len(self.market.tokens),
                   "pools_known": len(self.market.pool_mint), "parked": sum(map(len, self.parked.values())),
                   "resolver_failures": self.resolver.failures,
-                  "feed_lag_ms": lag,
+                  "feed_lag_ms": lag, "loop_ms": loop,
                   "sol_usd": self._sol_usd, "stats": dict(self.stats),
                   "algos": self.sim.summary(self.market)}
         (self.run_dir / "status.json").write_text(json.dumps(status, indent=1), encoding="utf-8")
@@ -344,7 +357,8 @@ class Runner:
         self.resolver.start()
         # One connection per program so the PumpSwap firehose cannot delay Pump.fun launches.
         tasks = [asyncio.create_task(self.feed(f"{name}@{ep}", [prog], url))
-                 for prog, name in ce.PROGRAMS.items() for ep, url in WS_URLS.items()]
+                 for prog, name in ce.PROGRAMS.items() for ep, url in WS_URLS.items()
+                 if name in RACED or ep == "mb"]
         tasks += [asyncio.create_task(self.gecko()), asyncio.create_task(self.consume())]
         try:
             await self.clock(hours)
