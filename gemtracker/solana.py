@@ -166,8 +166,10 @@ class SolanaRpc:
         return infos[:max_count], False
 
     def transaction(self, signature: str):
+        # Version 1 transactions exist since 2026 (the Fomo app sends them); asking for
+        # version 0 only makes the RPC refuse them.
         return self.call("getTransaction", [signature, {"encoding": "jsonParsed",
-                                                        "maxSupportedTransactionVersion": 0,
+                                                        "maxSupportedTransactionVersion": 1,
                                                         "commitment": "confirmed"}])
 
     def transactions(self, signatures: list, workers: int = 6, on_progress=None) -> list:

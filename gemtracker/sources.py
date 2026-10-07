@@ -1,6 +1,7 @@
 """Where candidate wallets come from.
 
 Leaderboards (top N each):
+  pump-board - Pump.fun's official PnL leaderboard, rolling 24h / 7d / 30d (no key)
   kolscan    - Kolscan, the KOL leaderboard Pump.fun bought and uses (no key, page scrape)
   fomo       - Fomo app leaderboard 24h / 7d / 30d via the unofficial fomoapi.io (FOMOAPI_KEY)
   st-kols    - Solana Tracker KOL leaderboard, all-time / 7d / 30d (SOLANATRACKER_API_KEY)
@@ -28,8 +29,8 @@ from dataclasses import asdict, dataclass, field
 from . import config, net, util
 from .config import Criteria
 
-ALL_SOURCES = ["seeds", "fomo-top50", "kolscan", "pump-early", "fomo", "st-kols", "st-top", "gmgn",
-               "pump-gems"]
+ALL_SOURCES = ["seeds", "pump-board", "kolscan", "fomo-top50", "pump-early", "fomo", "st-kols", "st-top",
+               "gmgn", "pump-gems"]
 # Labels on traders that are infrastructure, not people picking coins.
 NOT_A_TRADER = {"bot", "pool", "exchange", "sandwich_bot", "dex_bot", "bundler"}
 
@@ -107,14 +108,30 @@ def fomo_top50(top: int = 50) -> list:
 
 
 def kolscan(top: int) -> list:
-    html = net.get_text("https://kolscan.io/leaderboard", headers={"Accept": "text/html"})
-    wallets = []
-    for match in re.finditer(r"/account/(" + util.ADDRESS_PATTERN + ")", html):
+    from .leaderboard import parse_kolscan
+    page = net.get_text("https://kolscan.io/leaderboard", headers={"Accept": "text/html"})
+    rows = parse_kolscan(page)
+    if rows:
+        return [(r.wallet, f"Kolscan daily #{r.rank} {r.name} ({util.usd(r.pnl_usd)})") for r in rows[:top]]
+    wallets = []  # layout changed: fall back to bare account links
+    for match in re.finditer(r"/account/(" + util.ADDRESS_PATTERN + ")", page):
         if util.is_address(match.group(1)) and match.group(1) not in wallets:
             wallets.append(match.group(1))
     if not wallets:
         raise SourceError("no wallets found on kolscan.io/leaderboard (page layout changed?)")
     return [(w, f"Kolscan/Pump.fun leaderboard #{i}") for i, w in enumerate(wallets[:top], 1)]
+
+
+def pump_board(top: int) -> list:
+    """Pump.fun's official PnL leaderboard (rolling 24h / 7d / 30d). Each window counts as its
+    own source, so wallets on several windows rank higher as candidates."""
+    from .leaderboard import PERIODS, pump_board as fetch
+    out = []
+    for period in PERIODS:
+        for r in fetch(period, limit=max(top, 20))[:top]:
+            out.append((r.wallet, f"Pump.fun {period} #{r.rank} {r.name} ({util.usd(r.pnl_usd)})",
+                        f"pump.fun {period}"))
+    return out
 
 
 def _first_list(data):
@@ -397,6 +414,7 @@ def discover(sources: list, top: int, gem_coins: int, crit: Criteria, log=print,
         "seeds": lambda: seeds(),
         "fomo-top50": lambda: fomo_top50(),
         "kolscan": lambda: kolscan(top),
+        "pump-board": lambda: pump_board(top),
         "fomo": lambda: fomo(top, fomo_key),
         "st-kols": lambda: solanatracker_kols(top, st_key),
         "st-top": lambda: solanatracker_top(top, st_key),
@@ -410,7 +428,9 @@ def discover(sources: list, top: int, gem_coins: int, crit: Criteria, log=print,
             continue
         try:
             rows = boards[source]()
-            added = len({wallet for wallet, label in rows if book.add(wallet, source, label)})
+            # a row may name its own source (e.g. "pump.fun weekly"), else the source key is used
+            added = len({row[0] for row in rows
+                         if book.add(row[0], row[2] if len(row) > 2 else source, row[1])})
             status[source] = {"ok": True, "wallets": added}
             log(f"✔ {source}: {added} wallet(s)")
         except Exception as exc:

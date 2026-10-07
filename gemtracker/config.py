@@ -12,6 +12,7 @@ CACHE_DIR = ROOT / ".cache"
 SEEDS_FILE = ROOT / "wallets" / "seeds.txt"
 WATCHLIST_FILE = ROOT / "wallets" / "watchlist.txt"
 GEM_TOKENS_FILE = ROOT / "wallets" / "gem_tokens.txt"
+MY_WALLET_FILE = ROOT / "wallets" / "me.txt"   # your own wallet, to track your rank
 
 SOL_MINT = "So11111111111111111111111111111111111111112"  # wrapped SOL
 # The Fomo app signs and pays gas for every trade its users make (per Bitquery's Fomo API docs),

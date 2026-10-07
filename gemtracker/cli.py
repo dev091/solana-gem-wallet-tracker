@@ -17,6 +17,7 @@ Find Solana meme-coin wallets that keep turning $100-$500 into $100k+ and track 
   python -m gemtracker analyze <WALLET>    full trade-by-trade check of one wallet
   python -m gemtracker watch [--loop]      alert when tracked wallets buy a coin
   python -m gemtracker doctor              check that every data source answers
+  python -m gemtracker board               leaderboard snapshot: top-5 target, consistent winners
 
 Keys are read from environment variables (all optional, see .env.example):
   HELIUS_API_KEY / SOLANA_RPC_URL, SOLANATRACKER_API_KEY, GMGN_API_KEY, FOMOAPI_KEY,
@@ -97,6 +98,9 @@ def build_parser() -> argparse.ArgumentParser:
     _provider_args(p)
 
     sub.add_parser("doctor", help="check every data source (takes a minute or two)")
+
+    p = sub.add_parser("board", help="snapshot Pump.fun + Kolscan leaderboards: top-5 target, consistent winners")
+    p.add_argument("--wallet", help="also show where this wallet stands (default: wallets/me.txt or MY_WALLET)")
 
     p = sub.add_parser("watch", help="alert on new buys by tracked wallets")
     p.add_argument("--loop", action="store_true", help="keep running (otherwise check once)")
@@ -208,6 +212,49 @@ def cmd_analyze(a, log=print) -> int:
     return 0
 
 
+def my_wallet(explicit: str | None = None) -> str | None:
+    for candidate in (explicit, config.env("MY_WALLET"),
+                      *[w for w, _ in util.read_wallet_list(config.MY_WALLET_FILE)][:1]):
+        if candidate and util.is_address(candidate):
+            return candidate
+    return None
+
+
+def cmd_board(a, log=print) -> int:
+    from . import leaderboard as lb
+    snap = lb.take_snapshot(log)
+    if not snap["boards"]:
+        return 1
+    history, seen = lb.record(snap)
+    payload = lb.save_dashboard(snap, history, seen)
+    log("\nProfit needed per rank (USD):")
+    for name, steps in payload["ladders"].items():
+        log(f"  {name:<17} " + "  ".join(f"#{rank} {util.usd(v)}" for rank, v in steps.items()))
+    daily = snap["boards"].get("pump.fun daily") or []
+    if daily:
+        log("\nPump.fun top 5, last 24h:")
+        for r in daily[:5]:
+            coins = f" on {r.positions} coins" if r.positions else ""
+            log(f"  #{r.rank} {r.name or util.short(r.wallet):<18} {util.usd(r.pnl_usd):>9}  "
+                f"bought {r.spent_sol or 0:,.0f} SOL{coins}")
+    log("\nMost consistent wallets (several boards / days):")
+    for r in payload["repeat_leaders"][:10]:
+        log(f"  {r['name'] or util.short(r['wallet']):<18} score {r['score']:>2}  best #{r['best_rank']:<3} "
+            f"on: {', '.join(r['boards_now']) or '-'}")
+    log("\nBig returns on small money (<= 25 SOL bought in the window, Pump.fun ROI >= 300%):")
+    for r in payload["efficient_winners"][:10]:
+        log(f"  {r['name'] or util.short(r['wallet']):<18} {r['board']:<16} #{r['rank']:<3} "
+            f"{util.usd(r['pnl_usd']):>9}, bought {r['spent_sol']:.1f} SOL, ROI {r['roi_pct']:,.0f}%")
+    wallet = my_wallet(getattr(a, "wallet", None))
+    if wallet:
+        log(f"\nYour wallet {util.short(wallet)}:")
+        for name, rank, pnl, cutoff5, cutoff_last in lb.wallet_standing(snap, wallet):
+            where = f"#{rank} ({util.usd(pnl)})" if rank else f"not in the list (last place {util.usd(cutoff_last)})"
+            log(f"  {name:<17} {where}; top 5 needs {util.usd(cutoff5)}")
+    log("\nSaved: data/leaderboards/ and docs/data/leaderboard.json")
+    return 0
+
+
 def main(argv=None) -> int:
     config.load_dotenv()
     parser = build_parser()
@@ -225,6 +272,8 @@ def main(argv=None) -> int:
             return cmd_scan(a, fresh=True)
         if a.command == "analyze":
             return cmd_analyze(a)
+        if a.command == "board":
+            return cmd_board(a)
         if a.command == "doctor":
             from .doctor import run as doctor
             return doctor()
