@@ -130,6 +130,24 @@ class MarketTest(unittest.TestCase):
         self.assertEqual((w["buys"], w["unique_buyers"]), (2, 2))
         self.assertAlmostEqual(w["buy_sol"], 6.0)
 
+    def test_window_can_leave_out_named_wallets(self):
+        m = Market()
+        m.apply(trade_ev(user="decu", sol=5.0), 10_000)
+        m.apply(trade_ev(user="b", sol=1.0), 11_000)
+        w = m.get("M").window(11_000, 5, exclude=frozenset({"decu"}))
+        self.assertEqual((w["buys"], w["unique_buyers"], w["buy_sol"]), (1, 1, 1.0))
+        self.assertEqual(m.get("M").window(11_000, 5)["buys"], 2)  # the cache keeps them apart
+
+    def test_holder_stats_follow_new_trades(self):
+        m = Market()
+        m.apply(trade_ev(user="a"), 1_000)
+        st = m.get("M")
+        self.assertEqual(st.holder_count(), 1)
+        m.apply(trade_ev(user="b"), 2_000)
+        self.assertEqual(st.holder_count(), 2)
+        m.apply(trade_ev(user="a", side="sell"), 3_000)
+        self.assertEqual(st.holder_count(), 1)
+
     def test_create_makes_coin_tradable(self):
         m = Market()
         ev = ce.ChainEvent("create", "pump", "s", 0, ts=1, mint="N", user="d", price=1e-7,
@@ -212,6 +230,30 @@ class PaperSimTest(unittest.TestCase):
         sim, market = run([(1_000, usdc), (3_000, trade_ev())], s)
         self.assertEqual((s.fills, sim.books["oneshot"].positions), ([], {}))
         self.assertEqual(market.get("M").quote_mint, ce.WSOL)  # a later SOL-quoted trade resets it
+
+    def test_adds_only_when_asked_and_one_buy_in_flight(self):
+        class Adder(OneShot):
+            name = "oneshot"
+
+            def __init__(self, add):
+                super().__init__()
+                self.add, self.n = add, 0
+
+            def on_trade(self, st, ev, now_ms, book):
+                self.n += 1
+                self.equity = book.equity()
+                return [Buy(st.mint, 0.1, add=self.add)]   # asks on every trade
+        for add, buys in ((False, 1), (True, 2)):
+            s = Adder(add)
+            # trades at 1000 and 1500: the second buy is dropped while the first is in flight;
+            # at 3000 the first has filled, so only an add can go in
+            sim, _ = run([(1_000, trade_ev()), (1_500, trade_ev()), (3_000, trade_ev()), (3_100, trade_ev())], s)
+            self.assertEqual([f.side for f in s.fills], ["buy"] * buys, add)
+            self.assertEqual(sim.books["oneshot"].positions["M"].buys, buys)
+        f = s.fills[0]
+        self.assertGreater(f.exec_price, f.price)  # average paid includes fee and price impact
+        self.assertAlmostEqual(f.exec_price, f.sol / f.tokens)
+        self.assertLess(s.equity, sim.books["oneshot"].start_sol)  # liquidation value after costs
 
     def test_one_broken_algo_does_not_stop_others(self):
         class Broken(Strategy):

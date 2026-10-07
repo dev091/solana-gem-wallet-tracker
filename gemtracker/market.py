@@ -61,6 +61,7 @@ class TokenState:
     elite_buys: list = field(default_factory=list)  # (rx, name, sol)
     elite_sells: list = field(default_factory=list)
     _wcache: dict = field(default_factory=dict, repr=False, compare=False)
+    _hcache: dict = field(default_factory=dict, repr=False, compare=False)
 
     @property
     def mcap(self) -> float:
@@ -72,9 +73,11 @@ class TokenState:
             return max(0.0, now_ms / 1000 - self.created_ts)
         return (now_ms - self.first_rx) / 1000
 
-    def window(self, now_ms: int, secs: float) -> dict:
-        """Flow over the last `secs` seconds (cached: many algos ask the same window per event)."""
-        key = (now_ms, secs, len(self.trades), self.trades[-1].rx if self.trades else 0, self.price)
+    def window(self, now_ms: int, secs: float, exclude: frozenset = frozenset()) -> dict:
+        """Flow over the last `secs` seconds (cached: many algos ask the same window per event).
+        Trades by wallets in `exclude` (e.g. the elite an algo imitates) are left out of the
+        counts; price_change still spans every trade."""
+        key = (now_ms, secs, exclude, len(self.trades), self.trades[-1].rx if self.trades else 0, self.price)
         hit = self._wcache.get(key)
         if hit is not None:
             return dict(hit)
@@ -89,6 +92,8 @@ class TokenState:
             if t.rx < cut:
                 break
             first_price = t.price
+            if exclude and t.user in exclude:
+                continue
             if t.side == "buy":
                 buys += 1
                 bsol += t.sol
@@ -102,13 +107,20 @@ class TokenState:
         self._wcache[key] = out
         return dict(out)
 
+    def _positive_holders(self) -> list:
+        """Positive balances, largest first; recomputed only after a new trade."""
+        key = self.n_buys + self.n_sells
+        if self._hcache.get("key") != key:
+            self._hcache = {"key": key, "pos": sorted((v for v in self.holders.values() if v > 0),
+                                                      reverse=True)}
+        return self._hcache["pos"]
+
     def holder_count(self) -> int:
-        return sum(1 for v in self.holders.values() if v > 0)
+        return len(self._positive_holders())
 
     def top_holder_share(self, n: int = 10) -> float:
         """Share of supply held by the top `n` wallets seen (curve itself excluded)."""
-        pos = sorted((v for v in self.holders.values() if v > 0), reverse=True)[:n]
-        return sum(pos) / self.supply if self.supply else 0.0
+        return sum(self._positive_holders()[:n]) / self.supply if self.supply else 0.0
 
 
 class Market:

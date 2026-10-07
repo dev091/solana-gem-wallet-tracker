@@ -12,7 +12,7 @@ simulator decides later, at arrival time, whether and at what price an intent fi
             return []
 
 Positions in `book` change only on simulated fills; a pending order shows in
-`book.pending` until then.
+`book.pending` until then. `book.equity()` is the liquidation value of cash plus positions.
 """
 from __future__ import annotations
 
@@ -25,6 +25,7 @@ class Buy:
     sol: float                 # SOL to spend, venue fee included
     reason: str = ""
     max_slippage: float = 0.25  # fail (fee still paid) if the price rose more by arrival
+    add: bool = False          # True: may add to a coin already held (never while a buy is pending)
 
 
 @dataclass

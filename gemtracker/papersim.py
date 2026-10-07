@@ -49,7 +49,8 @@ class Fill:
     venue_fee_sol: float = 0.0
     tx_fee_sol: float = 0.0
     tokens: float = 0.0
-    price: float = 0.0         # SOL per token at the fill
+    price: float = 0.0         # spot SOL per token when the order arrived
+    exec_price: float = 0.0    # average SOL per token actually paid / received, venue fee included
     decision_price: float = 0.0
     mcap_sol: float = 0.0
     sol_usd: float = 0.0
@@ -111,6 +112,7 @@ class Book:
         self.fees_tx = 0.0
         self.realized_usd = 0.0
         self.ledger = ledger
+        self.market = None  # set by PaperSim before each callback
         if ledger:
             ledger.parent.mkdir(parents=True, exist_ok=True)
 
@@ -130,6 +132,10 @@ class Book:
             if st:
                 total += sell_out(pos.tokens, st.fee_bps, st.reserve_quote, st.reserve_base)[0]
         return total
+
+    def equity(self) -> float:
+        """Cash plus what every position would sell for now, in SOL."""
+        return self.equity_sol(self.market) if self.market is not None else self.cash_sol
 
     def _log(self, fill: Fill) -> None:
         if self.ledger:
@@ -159,9 +165,11 @@ class PaperSim:
             if isinstance(it, Buy):
                 if st.quote_mint != WSOL:
                     continue  # quoted in another token: our SOL book cannot price it
-                if it.mint in book.positions or book.has(it.mint):
-                    continue  # one entry at a time per coin; adds come after the fill
-                if len(book.positions) >= self.cfg.max_open_positions:
+                if any(isinstance(p.intent, Buy) and p.intent.mint == it.mint for p in book.pending):
+                    continue  # one buy in flight per coin
+                if it.mint in book.positions and not it.add:
+                    continue  # adds must say so
+                if it.mint not in book.positions and len(book.positions) >= self.cfg.max_open_positions:
                     continue
                 it.sol = min(it.sol, book.free_sol() - self.cfg.tx_fee_sol)
                 if it.sol < self.cfg.min_order_sol:
@@ -188,6 +196,7 @@ class PaperSim:
                    if p.arrival_ms <= now_ms and (mint is None or p.intent.mint == mint)]
             for p in due:
                 book.pending.remove(p)
+                book.market = market
                 fill = self._fill(book, p, market)
                 strat.on_fill(fill, book)
 
@@ -220,7 +229,7 @@ class PaperSim:
             pos.cost_usd += (spend + tx) * f.sol_usd
             pos.buys += 1
             book.positions[it.mint] = pos
-            f.sol, f.tokens = spend, tokens
+            f.sol, f.tokens, f.exec_price = spend, tokens, spend / tokens
         else:
             pos = book.positions[it.mint]
             frac = 1.0 if it.fraction >= 0.999 else max(0.0, it.fraction)
@@ -237,6 +246,7 @@ class PaperSim:
             pos.realized_sol += pnl
             book.realized_usd += (out - tx) * f.sol_usd - cost_usd
             f.sol, f.tokens, f.pnl_sol = out, tokens, pnl
+            f.exec_price = out / tokens if tokens else 0.0
             if frac == 1.0 or pos.tokens * st.price < 1e-6:
                 book.closed.append({"mint": it.mint, "opened_ms": pos.opened_ms,
                                     "closed_ms": p.arrival_ms, "pnl_sol": pos.realized_sol,
@@ -277,6 +287,7 @@ class PaperSim:
     def dispatch(self, hook: str, market, now_ms: int, *args) -> None:
         for strat in self.strategies:
             book = self.books[strat.name]
+            book.market = market
             try:
                 intents = getattr(strat, hook)(*args, now_ms, book) if hook != "on_tick" \
                     else strat.on_tick(market, now_ms, book)
