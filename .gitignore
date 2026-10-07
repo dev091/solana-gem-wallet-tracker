@@ -4,3 +4,6 @@ __pycache__/
 .env
 data/watch_state.json
 data/watch_holdings.json
+data/tape/
+data/paper/
+data/pool_mints.json
