@@ -9,3 +9,6 @@ data/paper/
 data/pool_mints.json
 data/profiles/
 data/history/
+data/secrets/
+data/pool_quotes.json
+data/tapes/
