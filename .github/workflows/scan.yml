@@ -1,0 +1,79 @@
+name: Gem hunter scan
+
+# Finds candidate wallets (leaderboards + gem search), checks every trade of each,
+# and commits the results to docs/data (dashboard) and data/tracked.json (watch list).
+on:
+  workflow_dispatch:
+    inputs:
+      min_gems:
+        description: "Gems needed ($100-$500 in, $100k+ out)"
+        default: "4"
+      min_multiple:
+        description: "Every trade must reach at least this many x"
+        default: "20"
+      max_wallets:
+        description: "Scan at most this many candidate wallets"
+        default: "40"
+  schedule:
+    - cron: "23 2 * * *"  # every day, 02:23 UTC
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gemtracker-scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Restore SOL price cache
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: gemtracker-prices-${{ github.run_id }}
+          restore-keys: gemtracker-prices-
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -t .
+
+      - name: Discover and scan wallets
+        env:
+          SOLANA_RPC_URL: ${{ secrets.SOLANA_RPC_URL }}
+          HELIUS_API_KEY: ${{ secrets.HELIUS_API_KEY }}
+          SOLANATRACKER_API_KEY: ${{ secrets.SOLANATRACKER_API_KEY }}
+          GMGN_API_KEY: ${{ secrets.GMGN_API_KEY }}
+          FOMOAPI_KEY: ${{ secrets.FOMOAPI_KEY }}
+          MIN_GEMS: ${{ inputs.min_gems || '4' }}
+          MIN_MULTIPLE: ${{ inputs.min_multiple || '20' }}
+          MAX_WALLETS: ${{ inputs.max_wallets || '40' }}
+        run: |
+          python -m gemtracker run \
+            --min-gems "$MIN_GEMS" \
+            --min-multiple "$MIN_MULTIPLE" \
+            --max-wallets "$MAX_WALLETS" \
+            --time-budget 280
+
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data data
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "data: gem hunter scan $(date -u +%Y-%m-%d)"
+          for attempt in 1 2 3; do
+            git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME" && exit 0
+            sleep $((attempt * 5))
+          done
+          exit 1

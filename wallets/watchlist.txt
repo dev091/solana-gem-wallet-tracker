@@ -1,0 +1,4 @@
+# Wallets to ALWAYS track for new buys, whatever the scan says:   ADDRESS   optional label
+# (Wallets that pass a scan as STRICT or GEM_HUNTER are tracked automatically.)
+#
+# <WALLET_ADDRESS>   my favourite caller

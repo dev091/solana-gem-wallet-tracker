@@ -1,0 +1,7 @@
+# Candidate wallets to check, one per line:   ADDRESS   optional label
+#
+# Paste wallets from the Fomo app leaderboard (top 10), the Pump.fun / Kolscan
+# leaderboard, GMGN, X posts, anywhere. Every scan checks each one against the rules.
+# Lines starting with # are ignored. Example (replace with a real address):
+#
+# <WALLET_ADDRESS>   Fomo 7d #1 @handle

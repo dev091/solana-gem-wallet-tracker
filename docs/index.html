@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gem Hunter Tracker</title>
+<meta name="description" content="Solana meme-coin wallets that keep turning $100-$500 into $100k+, and what they are buying now.">
+<style>
+  :root {
+    --bg: #f6f7f9; --surface: #ffffff; --surface-2: #f1f3f6; --text: #111827; --muted: #5b6472;
+    --border: #e3e6eb; --accent: #6d28d9; --accent-soft: #ede9fe; --good: #047857; --good-soft: #d1fae5;
+    --warn: #a16207; --warn-soft: #fef3c7; --bad: #b91c1c; --bad-soft: #fee2e2; --chip: #eef0f4;
+    --shadow: 0 1px 2px rgba(17, 24, 39, .06), 0 4px 16px rgba(17, 24, 39, .04);
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0b0d12; --surface: #131720; --surface-2: #1a1f2a; --text: #e6e8ee; --muted: #9aa3b2;
+      --border: #262c38; --accent: #a78bfa; --accent-soft: #2a2140; --good: #34d399; --good-soft: #0f2e25;
+      --warn: #fbbf24; --warn-soft: #33270b; --bad: #f87171; --bad-soft: #3a1717; --chip: #1e2430;
+      --shadow: none; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0b0d12; --surface: #131720; --surface-2: #1a1f2a; --text: #e6e8ee; --muted: #9aa3b2;
+    --border: #262c38; --accent: #a78bfa; --accent-soft: #2a2140; --good: #34d399; --good-soft: #0f2e25;
+    --warn: #fbbf24; --warn-soft: #33270b; --bad: #f87171; --bad-soft: #3a1717; --chip: #1e2430;
+    --shadow: none; color-scheme: dark;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", "Noto Sans Devanagari", sans-serif;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9em; }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+  header { border-bottom: 1px solid var(--border); background: var(--surface); }
+  header .wrap { padding-top: 22px; padding-bottom: 18px; }
+  .top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+  h1 { margin: 0; font-size: 1.5rem; letter-spacing: -.01em; }
+  .sub { margin: 4px 0 12px; color: var(--muted); }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { background: var(--chip); border-radius: 999px; padding: 3px 10px; font-size: .82rem; white-space: nowrap; }
+  .meta { margin: 10px 0 0; color: var(--muted); font-size: .85rem; }
+  .icon-btn {
+    border: 1px solid var(--border); background: var(--surface-2); color: var(--text); border-radius: 8px;
+    padding: 6px 10px; cursor: pointer; font: inherit; font-size: .85rem;
+  }
+  main.wrap { padding-top: 18px; padding-bottom: 40px; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+  .tile { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 12px 14px; box-shadow: var(--shadow); }
+  .tile .n { font-size: 1.6rem; font-weight: 650; font-variant-numeric: tabular-nums; }
+  .tile .l { color: var(--muted); font-size: .82rem; }
+  .tabs { display: flex; gap: 4px; margin: 20px 0 14px; border-bottom: 1px solid var(--border); overflow-x: auto; }
+  .tab {
+    border: 0; background: none; color: var(--muted); font: inherit; font-weight: 550; padding: 9px 12px;
+    border-bottom: 2px solid transparent; cursor: pointer; white-space: nowrap;
+  }
+  .tab[aria-selected="true"] { color: var(--text); border-bottom-color: var(--accent); }
+  .empty {
+    background: var(--surface); border: 1px dashed var(--border); border-radius: 12px; padding: 18px;
+    color: var(--muted);
+  }
+  .empty b { color: var(--text); }
+  .cards { display: grid; gap: 12px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 14px 16px; box-shadow: var(--shadow); min-width: 0; }
+  .card-head { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; }
+  .badge { font-size: .72rem; font-weight: 700; letter-spacing: .04em; border-radius: 6px; padding: 2px 8px; }
+  .b-STRICT { background: var(--good-soft); color: var(--good); }
+  .b-GEM_HUNTER { background: var(--accent-soft); color: var(--accent); }
+  .b-REJECTED { background: var(--chip); color: var(--muted); }
+  .b-ERROR { background: var(--bad-soft); color: var(--bad); }
+  .b-WATCHLIST { background: var(--warn-soft); color: var(--warn); }
+  .addr { overflow-wrap: anywhere; }
+  .links { margin-left: auto; display: flex; gap: 10px; font-size: .85rem; }
+  .labels { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 4px; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 8px; margin: 10px 0; }
+  .stat { background: var(--surface-2); border-radius: 10px; padding: 8px 10px; }
+  .stat .v { font-weight: 650; font-variant-numeric: tabular-nums; }
+  .stat .k { color: var(--muted); font-size: .78rem; }
+  ul.notes { margin: 6px 0; padding-left: 0; list-style: none; font-size: .88rem; }
+  ul.notes li { margin: 3px 0; }
+  .bad { color: var(--bad); }
+  .warn { color: var(--warn); }
+  .good { color: var(--good); }
+  .muted { color: var(--muted); }
+  details { margin-top: 8px; }
+  summary { cursor: pointer; font-weight: 550; font-size: .9rem; }
+  .table-wrap { overflow-x: auto; margin-top: 8px; border: 1px solid var(--border); border-radius: 10px; }
+  table { border-collapse: collapse; width: 100%; font-size: .86rem; }
+  th, td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  th { color: var(--muted); font-weight: 550; background: var(--surface-2); }
+  tr:last-child td { border-bottom: 0; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .search { width: 100%; max-width: 360px; padding: 8px 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font: inherit; margin-bottom: 10px; }
+  .hot { display: grid; gap: 8px; margin-bottom: 12px; }
+  .hot .card { border-color: var(--warn); }
+  .src { display: grid; gap: 8px; }
+  .src .row { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+  .src .name { font-weight: 600; min-width: 90px; }
+  footer { color: var(--muted); font-size: .8rem; border-top: 1px solid var(--border); }
+  footer .wrap { padding-top: 14px; padding-bottom: 24px; }
+  button.copy { border: 0; background: none; color: var(--accent); cursor: pointer; font: inherit; font-size: .8rem; padding: 0; }
+  @media (max-width: 560px) { .links { margin-left: 0; width: 100%; } h1 { font-size: 1.25rem; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <h1>Gem Hunter Tracker</h1>
+        <p class="sub">Solana meme-coin wallets that keep turning $100–$500 into $100k+ · हर ट्रेड में 20x, कोई scam coin नहीं</p>
+      </div>
+      <button class="icon-btn" id="theme" type="button" aria-label="Toggle colour theme">Theme</button>
+    </div>
+    <div class="chips" id="rules"></div>
+    <p class="meta" id="meta"></p>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="tiles" id="tiles" aria-label="Summary"></section>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab" role="tab" data-tab="matches" aria-selected="true">Matches</button>
+    <button class="tab" role="tab" data-tab="live" aria-selected="false">Live buys</button>
+    <button class="tab" role="tab" data-tab="all" aria-selected="false">All scanned</button>
+    <button class="tab" role="tab" data-tab="sources" aria-selected="false">Sources</button>
+  </nav>
+
+  <section id="tab-matches"></section>
+  <section id="tab-live" hidden></section>
+  <section id="tab-all" hidden>
+    <input class="search" id="search" type="search" placeholder="Filter by address, label, reason…" aria-label="Filter wallets">
+    <div id="all-table"></div>
+  </section>
+  <section id="tab-sources" hidden></section>
+</main>
+
+<footer>
+  <div class="wrap">
+    Public on-chain data only. Past wins do not predict future ones: wallets that hit 200x+ again and again
+    are often insiders, snipers or dev-linked, and by the time you copy a buy the price may already have moved.
+    Not financial advice.
+  </div>
+</footer>
+
+<script src="data/wallets.js"></script>
+<script src="data/activity.js"></script>
+<script>
+(function () {
+  "use strict";
+  var W = window.GEM_WALLETS || null;
+  var A = window.GEM_ACTIVITY || null;
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function usd(n) {
+    if (n == null || isNaN(n)) return "–";
+    var a = Math.abs(n), s = n < 0 ? "-" : "";
+    if (a >= 1e6) return s + "$" + (a / 1e6).toFixed(2) + "M";
+    if (a >= 1e4) return s + "$" + (a / 1e3).toFixed(1) + "k";
+    return s + "$" + Math.round(a).toLocaleString("en-US");
+  }
+  function mult(n) {
+    if (n == null || isNaN(n)) return "–";
+    return n >= 100 ? Math.round(n).toLocaleString("en-US") + "x" : n.toFixed(1) + "x";
+  }
+  function short(a) { return a && a.length > 10 ? a.slice(0, 4) + "…" + a.slice(-4) : (a || ""); }
+  function date(ts) { return ts ? new Date(ts * 1000).toISOString().slice(0, 10) : "–"; }
+  function ago(ts) {
+    if (!ts) return "–";
+    var s = Math.max(0, Date.now() / 1000 - ts);
+    if (s < 90) return Math.round(s) + "s ago";
+    if (s < 5400) return Math.round(s / 60) + "m ago";
+    if (s < 129600) return Math.round(s / 3600) + "h ago";
+    return Math.round(s / 86400) + "d ago";
+  }
+  function walletLinks(w) {
+    var e = encodeURIComponent(w);
+    return '<a href="https://gmgn.ai/sol/address/' + e + '" target="_blank" rel="noopener">GMGN</a>' +
+      '<a href="https://solscan.io/account/' + e + '" target="_blank" rel="noopener">Solscan</a>' +
+      '<a href="https://kolscan.io/account/' + e + '" target="_blank" rel="noopener">Kolscan</a>';
+  }
+  function coinLink(mint, symbol) {
+    return '<a href="https://dexscreener.com/solana/' + encodeURIComponent(mint) + '" target="_blank" rel="noopener">' +
+      esc(symbol || short(mint)) + "</a>";
+  }
+  function badge(tier) {
+    var names = { STRICT: "STRICT", GEM_HUNTER: "GEM HUNTER", REJECTED: "REJECTED", ERROR: "ERROR", WATCHLIST: "WATCHLIST" };
+    return '<span class="badge b-' + esc(tier) + '">' + esc(names[tier] || tier) + "</span>";
+  }
+
+  // ---- header
+  var c = (W && W.criteria) || { entry_min_usd: 100, entry_max_usd: 500, gem_profit_usd: 100000, min_gems: 4, min_multiple: 20, all_entries_in_range: true };
+  var rules = [
+    "Entry " + usd(c.entry_min_usd) + "–" + usd(c.entry_max_usd),
+    "Profit ≥ " + usd(c.gem_profit_usd) + (c.count_unrealized ? " (incl. holdings)" : " (cashed out)"),
+    "≥ " + c.min_gems + " gems",
+    "Every trade ≥ " + c.min_multiple + "x"
+  ];
+  if (c.all_entries_in_range) rules.push("No other kind of trade");
+  document.getElementById("rules").innerHTML = rules.map(function (r) { return '<span class="chip">' + esc(r) + "</span>"; }).join("");
+  document.getElementById("meta").textContent = W
+    ? "Last scan " + ago(W.generated_at) + " (" + date(W.generated_at) + ") · data: " + (W.provider || "–") +
+      (A && A.updated_at ? " · live feed updated " + ago(A.updated_at) : "")
+    : "No scan yet: run  python -m gemtracker run  or the “Gem hunter scan” GitHub Action.";
+
+  // ---- tiles
+  var counts = (W && W.counts) || {};
+  var events = (A && A.events) || [];
+  var dayAgo = Date.now() / 1000 - 86400;
+  var tiles = [
+    [counts.scanned || 0, "wallets scanned"],
+    [counts.strict || 0, "STRICT matches"],
+    [counts.gem_hunter || 0, "gem hunters (enough gems, broke another rule)"],
+    [events.filter(function (e) { return e.ts >= dayAgo; }).length, "tracked trades, 24h"]
+  ];
+  document.getElementById("tiles").innerHTML = tiles.map(function (t) {
+    return '<div class="tile"><div class="n">' + esc(t[0]) + '</div><div class="l">' + esc(t[1]) + "</div></div>";
+  }).join("");
+
+  // ---- wallet cards
+  function tradeTable(rows) {
+    if (!rows || !rows.length) return '<p class="muted">None.</p>';
+    return '<div class="table-wrap"><table><thead><tr><th>Coin</th><th class="num">In</th><th class="num">Out</th>' +
+      '<th class="num">Held</th><th class="num">Multiple</th><th>First buy</th></tr></thead><tbody>' +
+      rows.map(function (p) {
+        var cls = p.multiple == null ? "" : (p.multiple >= c.min_multiple ? "good" : (p.multiple < 1 ? "bad" : "warn"));
+        return "<tr><td>" + coinLink(p.mint, p.symbol) + '</td><td class="num">' + usd(p.cost_usd) +
+          '</td><td class="num">' + usd(p.proceeds_usd) + '</td><td class="num">' + usd(p.value_usd) +
+          '</td><td class="num ' + cls + '">' + mult(p.multiple) + "</td><td>" + date(p.first_buy_ts) + "</td></tr>";
+      }).join("") + "</tbody></table></div>";
+  }
+  function card(r) {
+    var s = r.stats || {};
+    var stats = [
+      [s.gems, "gems"], [s.trades, "trades"], [mult(s.min_multiple), "worst trade"],
+      [mult(s.median_multiple), "median trade"], [usd(s.realized_usd), "realized"],
+      [s.hit_rate != null ? Math.round(s.hit_rate * 100) + "%" : "–", "gem hit rate"]
+    ];
+    return '<article class="card"><div class="card-head">' + badge(r.tier) +
+      '<code class="addr" title="' + esc(r.wallet) + '">' + esc(r.wallet) + "</code>" +
+      '<button class="copy" type="button" data-copy="' + esc(r.wallet) + '">copy</button>' +
+      '<span class="links">' + walletLinks(r.wallet) + "</span></div>" +
+      '<div class="labels">' + (r.labels || []).map(function (l) { return '<span class="chip">' + esc(l) + "</span>"; }).join("") + "</div>" +
+      '<div class="stats">' + stats.map(function (x) {
+        return '<div class="stat"><div class="v">' + esc(x[0] == null ? "–" : x[0]) + '</div><div class="k">' + esc(x[1]) + "</div></div>";
+      }).join("") + "</div>" +
+      '<ul class="notes">' +
+        (r.reasons || []).map(function (t) { return '<li class="bad">✘ ' + esc(t) + "</li>"; }).join("") +
+        (r.flags || []).map(function (t) { return '<li class="warn">⚠ ' + esc(t) + "</li>"; }).join("") +
+        (r.notes || []).map(function (t) { return '<li class="muted">• ' + esc(t) + "</li>"; }).join("") +
+      "</ul>" +
+      "<details open><summary>Gems (" + (r.gems || []).length + ")</summary>" + tradeTable(r.gems) + "</details>" +
+      "<details><summary>Recent trades (" + (r.trades || []).length + ")</summary>" + tradeTable(r.trades) + "</details>" +
+      "</article>";
+  }
+
+  var wallets = (W && W.wallets) || [];
+  var matches = wallets.filter(function (r) { return r.tier === "STRICT" || r.tier === "GEM_HUNTER"; });
+  document.getElementById("tab-matches").innerHTML = matches.length
+    ? '<div class="cards">' + matches.map(card).join("") + "</div>"
+    : '<div class="empty"><b>' + (W ? "No wallet passes the rules yet." : "No scan has run yet.") + "</b><br>" +
+      (W ? "Scanned " + (counts.scanned || 0) + " wallet(s); see “All scanned” for why each one failed. " +
+           "Add more candidates (API keys, wallets/seeds.txt) or loosen a rule, e.g. <code>--min-gems 3</code> or <code>--min-multiple 10</code>."
+         : "Run <code>python -m gemtracker run</code> locally or start the “Gem hunter scan” workflow on GitHub.") + "</div>";
+
+  // ---- live feed
+  function liveTab() {
+    var hot = (A && A.consensus) || [];
+    var html = "";
+    if (hot.length) {
+      html += '<div class="hot">' + hot.map(function (h) {
+        return '<div class="card">🔥 <b>' + coinLink(h.mint, h.symbol) + "</b> bought by " + h.wallets.length +
+          " tracked wallets in 24h · last " + ago(h.last_ts) + "</div>";
+      }).join("") + "</div>";
+    }
+    if (!events.length) {
+      var n = ((A && A.tracked) || []).length;
+      return html + '<div class="empty"><b>No tracked trades yet.</b><br>' +
+        (n ? "Watching " + n + " wallet(s); new buys appear here." : "Nothing to watch yet: run a scan, or add addresses to <code>wallets/watchlist.txt</code>.") +
+        "</div>";
+    }
+    return html + '<div class="table-wrap"><table><thead><tr><th>When</th><th>Side</th><th>Coin</th><th class="num">Size</th>' +
+      '<th class="num">MC</th><th>Wallet</th><th>Tx</th></tr></thead><tbody>' +
+      events.map(function (e) {
+        return "<tr><td>" + ago(e.ts) + '</td><td class="' + (e.side === "buy" ? "good" : "bad") + '">' + esc(e.side.toUpperCase()) +
+          "</td><td>" + coinLink(e.mint, e.symbol) + '</td><td class="num">' + usd(e.usd) + (e.sol ? ' <span class="muted">(' + esc(e.sol) + " SOL)</span>" : "") +
+          '</td><td class="num">' + usd(e.market_cap) + '</td><td><a href="https://gmgn.ai/sol/address/' + encodeURIComponent(e.wallet) +
+          '" target="_blank" rel="noopener" class="mono">' + esc(short(e.wallet)) + "</a> " + badge(e.tier) +
+          '</td><td><a href="https://solscan.io/tx/' + encodeURIComponent(e.signature) + '" target="_blank" rel="noopener">view</a></td></tr>';
+      }).join("") + "</tbody></table></div>";
+  }
+  document.getElementById("tab-live").innerHTML = liveTab();
+
+  // ---- all scanned
+  function allTable(filter) {
+    var f = (filter || "").toLowerCase();
+    var rows = wallets.filter(function (r) {
+      return !f || [r.wallet, (r.labels || []).join(" "), (r.reasons || []).join(" "), r.tier].join(" ").toLowerCase().indexOf(f) >= 0;
+    });
+    if (!rows.length) return '<div class="empty">' + (wallets.length ? "No wallet matches the filter." : "Nothing scanned yet.") + "</div>";
+    return '<div class="table-wrap"><table><thead><tr><th>Tier</th><th>Wallet</th><th>Found on</th><th class="num">Gems</th>' +
+      '<th class="num">Trades</th><th class="num">Worst</th><th class="num">Realized</th><th>Why</th></tr></thead><tbody>' +
+      rows.map(function (r) {
+        var s = r.stats || {};
+        return "<tr><td>" + badge(r.tier) + '</td><td><a class="mono" href="https://gmgn.ai/sol/address/' + encodeURIComponent(r.wallet) +
+          '" target="_blank" rel="noopener">' + esc(short(r.wallet)) + "</a></td><td>" + esc((r.labels || [])[0] || (r.sources || []).join(", ")) +
+          '</td><td class="num">' + esc(s.gems == null ? "–" : s.gems) + '</td><td class="num">' + esc(s.trades == null ? "–" : s.trades) +
+          '</td><td class="num">' + mult(s.min_multiple) + '</td><td class="num">' + usd(s.realized_usd) +
+          "</td><td>" + esc((r.reasons || [])[0] || "passes every rule") + "</td></tr>";
+      }).join("") + "</tbody></table></div>";
+  }
+  var allBox = document.getElementById("all-table");
+  allBox.innerHTML = allTable("");
+  document.getElementById("search").addEventListener("input", function (e) { allBox.innerHTML = allTable(e.target.value); });
+
+  // ---- sources
+  var src = (W && W.sources) || {};
+  var names = Object.keys(src);
+  document.getElementById("tab-sources").innerHTML = names.length
+    ? '<div class="src">' + names.map(function (n) {
+        var s = src[n];
+        return '<div class="row"><span class="name">' + esc(n) + "</span>" +
+          (s.ok ? '<span class="good">✔ ' + esc(s.wallets || 0) + " wallet(s)" + (s.coins ? " from " + esc(s.coins) + " coins" : "") + "</span>"
+                : '<span class="bad">✘ ' + esc(s.error || "failed") + "</span>") + "</div>";
+      }).join("") + "</div>"
+    : '<div class="empty">No discovery run yet.</div>';
+
+  // ---- tabs, copy, theme
+  var tabs = document.querySelectorAll(".tab");
+  Array.prototype.forEach.call(tabs, function (t) {
+    t.addEventListener("click", function () {
+      Array.prototype.forEach.call(tabs, function (o) {
+        var on = o === t;
+        o.setAttribute("aria-selected", on ? "true" : "false");
+        document.getElementById("tab-" + o.getAttribute("data-tab")).hidden = !on;
+      });
+    });
+  });
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest && e.target.closest("button[data-copy]");
+    if (!b) return;
+    var text = b.getAttribute("data-copy");
+    var done = function () { b.textContent = "copied"; setTimeout(function () { b.textContent = "copy"; }, 1200); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, function () {});
+  });
+  var root = document.documentElement;
+  try { var saved = localStorage.getItem("gem-theme"); if (saved) root.setAttribute("data-theme", saved); } catch (err) {}
+  document.getElementById("theme").addEventListener("click", function () {
+    var dark = root.getAttribute("data-theme") ? root.getAttribute("data-theme") === "dark"
+      : window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    var next = dark ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("gem-theme", next); } catch (err) {}
+  });
+})();
+</script>
+</body>
+</html>

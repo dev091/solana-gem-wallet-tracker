@@ -1,0 +1,8 @@
+# Coins that did 100x+ (token mint addresses), one per line:   MINT   optional name
+#
+# Gem search lists each coin's traders who put in $100-$500 and took out $100k+,
+# then ranks wallets by how many of these coins they did that on.
+# Pump.fun's biggest coins are added automatically; put older or non-Pump.fun gems here.
+# Get the mint from the coin's page on DexScreener / Pump.fun / GMGN.
+#
+# <TOKEN_MINT>   EXAMPLE
