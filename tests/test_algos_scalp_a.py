@@ -238,6 +238,28 @@ class RiskTest(unittest.TestCase):
         self.assertEqual(buys, ["K1", "K3"])
 
 
+    def test_daily_kill_switch_keys_on_et_day_not_utc(self):
+        """A kill at 23:00 UTC still blocks at 00:30 UTC (same ET day) and clears at 05:30 UTC
+        (next ET day): the kill switch rolls with the scoreboard's US-Eastern day."""
+        s = rec(Decu, daily_kill_dd=0.03, min_entry_gap_s=0.0)
+        day = 86_400_000
+        base = 10 * day - 3_600_000                      # 23:00 UTC = 7 pm ET
+        rows, rq, rb = launch("K1", n=16, rx0=base)
+        k = rq * rb
+        rq2 = int(rq * 0.5)
+        rows.append((base + 12 * 300 + 3_000, trade("K1", "whale", "sell", 10, rq2, k // rq2)))
+        rows.append((base + 12 * 300 + 8_000, trade("K1", "late", "buy", 0.001, rq2, k // rq2)))
+        r2, rq, rb = launch("K2", n=16, rx0=base + 5_400_000)       # 00:30 UTC, same ET day
+        rows += r2
+        rows.append((base + 5_400_000 + 30_000, trade("K2", "late", "buy", 0.001, rq, rb)))
+        r3, rq, rb = launch("K3", n=16, rx0=base + 6 * 3_600_000 + 1_800_000)  # 05:30 UTC, next ET day
+        rows += r3
+        rows.append((base + 6 * 3_600_000 + 1_800_000 + 30_000, trade("K3", "late", "buy", 0.001, rq, rb)))
+        run(rows, s)
+        buys = [f.mint for f, _, _ in s.seen if f.side == "buy" and f.status == "filled"]
+        self.assertEqual(buys, ["K1", "K3"])
+
+
 class LookAheadTest(unittest.TestCase):
     def test_decisions_are_suffix_invariant(self):
         for cls in ALGOS:

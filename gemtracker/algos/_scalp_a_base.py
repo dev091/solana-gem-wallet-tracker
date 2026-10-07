@@ -8,7 +8,7 @@ State machine (per coin):
     idle -> [entry filter on a trade we did not make] -> pending buy -> held
     held -> [take-profit tranche | flow reversal | trailing stop | hard stop | time stop] -> flat
 Risk rules (class attributes): hard stop per trade, daily drawdown kill switch (no new
-entries for the rest of the UTC day), max concurrent positions and max exposure share.
+entries for the rest of the US-Eastern day), max concurrent positions and max exposure share.
 Sizing: a fraction of current equity (cash + marked positions), capped so the buy moves
 the curve price by at most `max_impact` (exact constant-product maths, see impact_cap).
 
@@ -22,6 +22,7 @@ import random
 from collections import deque
 
 from ..papersim import buy_out
+from ..scoreboard import et_day
 from ..strategy import Buy, Sell, Strategy
 
 DAY_MS = 86_400_000
@@ -130,7 +131,7 @@ class ScalpBase(Strategy):
     def _day_guard(self, book, market, now_ms) -> bool:
         """True when new entries are allowed today. Rolled from on_tick every second so the
         day-start equity is the equity at the day boundary, not at the first candidate."""
-        day = now_ms // DAY_MS
+        day = et_day(now_ms)  # ET calendar day, same clock as the scoreboard
         if self.day_start is None or self.day_start[0] != day:
             self.day_start = (day, self._equity(book, market))
         if self.killed_day == day:
