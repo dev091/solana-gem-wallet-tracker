@@ -49,11 +49,12 @@ def load(log=print) -> dict:
     return tokens
 
 
-def recent_gems(tokens: dict, min_mcap: float = 2e6, max_age_days: float = 120, min_organic: float = 40,
+def recent_gems(tokens: dict, min_mcap: float = 2e6, max_age_days: float | None = 365, min_organic: float = 40,
                 limit: int = 40) -> list:
-    """Verified coins launched in the last `max_age_days` that are now worth `min_mcap`+:
-    from a launch price, that is a 50x-1000x run. [(mint, symbol, info)], biggest first."""
-    cutoff = util.now() - max_age_days * 86400
+    """Verified coins of every kind (DeFi, AI, infra, memes; any DEX or launchpad) launched in the
+    last `max_age_days` (None = any age) that are now worth `min_mcap`+: from a launch price,
+    that is a 50x-1000x run. [(mint, symbol, info)], biggest first."""
+    cutoff = util.now() - max_age_days * 86400 if max_age_days else 0
     out = []
     for mint, t in tokens.items():
         text = " ".join([t.get("symbol") or ""] + [str(x) for x in t.get("tags") or []]).lower()

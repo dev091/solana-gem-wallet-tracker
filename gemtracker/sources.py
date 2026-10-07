@@ -365,7 +365,10 @@ def early_search(book: CandidateBook, coins: list, crit: Criteria, early_txs: in
     from .pumpfun import early_buyers
     from .prices import SolPrice
     from .solana import SolanaRpc
-    rpc, sol = SolanaRpc(config.rpc_url()), SolPrice()
+    url = config.rpc_url()
+    rpc, sol = SolanaRpc(url), SolPrice()
+    # The free endpoint can only page ~150k trades back; a paid RPC can reach big coins' launches.
+    max_pages = 150 if "api.mainnet-beta" in url else 2000
     seen: dict = {}
     for i, coin in enumerate(coins, 1):
         if _out_of_time(deadline, "early search", i - 1, len(coins), log):
@@ -373,7 +376,8 @@ def early_search(book: CandidateBook, coins: list, crit: Criteria, early_txs: in
         mint, symbol, pool = coin[0], coin[1], (coin[2] if len(coin) > 2 else None)
         name = symbol or util.short(mint)
         try:
-            buyers, note = early_buyers(rpc, mint, sol.at, crit, early_txs=early_txs, pool=pool)
+            buyers, note = early_buyers(rpc, mint, sol.at, crit, early_txs=early_txs, pool=pool,
+                                         max_pages=max_pages)
         except Exception as exc:
             log(f"   [{i}/{len(coins)}] {name}: failed ({exc})")
             continue
@@ -410,7 +414,8 @@ def gem_coins_list(gem_coins: int, log=print) -> list:
 # ---------------------------------------------------------------- all together
 
 def discover(sources: list, top: int, gem_coins: int, crit: Criteria, log=print,
-             early_txs: int = 250, min_early_hits: int = 2, deadline: float | None = None):
+             early_txs: int = 250, min_early_hits: int = 2, deadline: float | None = None,
+             max_age_days: float | None = 365):
     """Collect candidates from every requested source. Returns (book, status per source)."""
     st_key, gmgn_key, fomo_key = (config.env("SOLANATRACKER_API_KEY"), config.env("GMGN_API_KEY"),
                                   config.env("FOMOAPI_KEY"))
@@ -446,7 +451,7 @@ def discover(sources: list, top: int, gem_coins: int, crit: Criteria, log=print,
         try:
             from . import verified
             from .pumpfun import bonding_curve
-            gems = verified.recent_gems(verified.load(log), limit=gem_coins)
+            gems = verified.recent_gems(verified.load(log), max_age_days=max_age_days, limit=gem_coins)
             # Pump.fun coins start on their bonding curve, older than any pool Jupiter lists.
             vcoins = [(m, sym, bonding_curve(m) if t.get("launchpad") == "pump.fun" else t.get("first_pool"))
                       for m, sym, t in gems if t.get("first_pool") or t.get("launchpad") == "pump.fun"]

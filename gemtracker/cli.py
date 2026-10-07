@@ -75,6 +75,8 @@ def _discover_args(p: argparse.ArgumentParser) -> None:
     g.add_argument("--top", type=int, default=10, help="top N wallets from each leaderboard")
     g.add_argument("--gem-coins", type=int, default=30,
                    help="how many of Pump.fun's biggest coins to search for gem hunters")
+    g.add_argument("--max-age-days", type=float, default=365,
+                   help="verified-early: coin launch window in days, 0 = any age (default 365)")
     g.add_argument("--early-txs", type=int, default=250,
                    help="pump-early: how many of each coin's first trades to read")
     g.add_argument("--min-early-hits", type=int, default=2,
@@ -144,7 +146,8 @@ def cmd_discover(a, log=print):
     budget = getattr(a, "time_budget", 0) or 0
     deadline = _STARTED + budget * 60 * DISCOVERY_SHARE if budget else None
     book, status = discover(_sources(a), a.top, a.gem_coins, _criteria(a), log,
-                            early_txs=a.early_txs, min_early_hits=a.min_early_hits, deadline=deadline)
+                            early_txs=a.early_txs, min_early_hits=a.min_early_hits, deadline=deadline,
+                            max_age_days=a.max_age_days or None)
     util.save_json(config.DATA_DIR / "candidates.json",
                    {"generated_at": util.now(), "sources": status, "candidates": book.to_list()})
     log(f"\n{len(book.by_wallet)} candidate wallet(s) saved to data/candidates.json")
