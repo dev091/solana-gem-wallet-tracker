@@ -17,8 +17,11 @@ Two ways to list a wallet's transactions:
           (copy bots; Decu ~8.6M signatures/day, 80% failed, measured 2026-10-07), which no free RPC
           can page. Instead page the wallet's own Pump.fun and PumpSwap user_volume_accumulator PDAs
           (one write per buy, nobody else touches them), then page the wallet's token account of every
-          mint found, which holds all its buys and sells of that mint on any venue. Mints traded only
-          outside Pump.fun / PumpSwap, or before the accumulators existed, are not seen.
+          mint found, which holds all its buys and sells of that mint on any venue. Token accounts of
+          hot coins are spammed too (one had 58k signatures in 3 days, 99.6% failed bot copies), so each
+          is paged only from the buy to --sell-window-h after it (a later feed signature serves as the
+          `before` cursor); sells after that window are missed and the trip stays an open bag. Mints
+          traded only outside Pump.fun / PumpSwap, or before the accumulators existed, are not seen.
   auto    (default) picks via when the newest 1000 signatures span less than a day.
 
 Swaps are venue-agnostic, read from balance changes: SOL = the wallet's lamport change plus the lamport
@@ -33,6 +36,7 @@ only; no keys, proxies or header games.
 from __future__ import annotations
 
 import argparse
+import bisect
 import json
 import os
 import random
@@ -75,6 +79,7 @@ MIN_SWAP_SOL = 1e-5        # smaller SOL moves next to a token change are transf
 DUST_FRAC = 0.001          # a trip closes when under 0.1% of its peak tokens is left
 REPORT_EVERY_S = 1800      # rebuild trips.jsonl / monthly.json while fetching
 NOISY_PAGE_SPAN_S = 86_400 # 1000 newest signatures within a day = address spammed by others
+SELL_WINDOW_S = 86_400     # via mode: look for sells up to this long after each buy
 
 # RPC pacing
 RPS = 2.0
@@ -414,15 +419,19 @@ def accumulators(wallet: str) -> list:
 
 class Fetcher:
     def __init__(self, name: str, wallet: str, rpc, out_dir: Path, mode: str = "auto",
-                 until_slot: int = 0, log=print, clock=time.time, status_every_s: float = 60.0):
+                 until_slot: int = 0, log=print, clock=time.time, status_every_s: float = 60.0,
+                 sell_window_s: float = SELL_WINDOW_S):
         self.name, self.wallet, self.rpc, self.dir = name, wallet, rpc, out_dir
         self.until_slot, self.log, self.clock = until_slot, log, clock
         self.status_every_s = status_every_s
+        self.sell_window_s = sell_window_s
+        self.anchors = []
         self.dir.mkdir(parents=True, exist_ok=True)
         self.state_path = self.dir / "state.json"
         self.state = self._load_state(mode)
         self.processed = self._load_lines("processed.txt")
-        self.atas_done = self._load_lines("atas_done.txt")
+        self.expanded = self._load_lines("expanded.txt")  # feed signatures whose token accounts were paged
+        self.cover = self._load_cover()                   # token account -> lowest slot paged down to
         self._last_status = self.clock()
         self._started = self.clock()
         self._last_report = self.clock()
@@ -442,6 +451,17 @@ class Fetcher:
     def _load_lines(self, fname: str) -> set:
         path = self.dir / fname
         return set(path.read_text(encoding="utf-8").split()) if path.exists() else set()
+
+    def _load_cover(self) -> dict:
+        path, out = self.dir / "cover.jsonl", {}
+        if path.exists():
+            for line in path.read_text(encoding="utf-8").splitlines():
+                try:
+                    row = json.loads(line)
+                except ValueError:
+                    continue
+                out[row["account"]] = row
+        return out
 
     def _append(self, fname: str, lines: list) -> None:
         if lines:
@@ -478,12 +498,16 @@ class Fetcher:
 
     # -- phase 1: signatures
     def page_signatures(self, address: str, cursor: dict, tag: str) -> list:
-        """Fetch one page older than cursor['before']; appends it to sigs.jsonl. Returns ok infos."""
+        """Fetch one page older than cursor['before'] and newer than cursor['until'] (slot >=
+        cursor['floor']); appends it to sigs.jsonl. Returns ok infos."""
         cfg = {"limit": 1000, "commitment": "finalized"}
         if cursor.get("before"):
             cfg["before"] = cursor["before"]
+        if cursor.get("until"):
+            cfg["until"] = cursor["until"]
         page = self.rpc.call("getSignaturesForAddress", [address, cfg]) or []
-        keep = [s for s in page if (s.get("slot") or 0) >= self.until_slot]
+        floor = max(self.until_slot, cursor.get("floor", 0))
+        keep = [s for s in page if (s.get("slot") or 0) >= floor and s["signature"] != cursor.get("until")]
         self._append("sigs.jsonl", [json.dumps({"feed": address, "tag": tag, "before": cursor.get("before"),
                                                 "sigs": keep}, separators=(",", ":"))])
         if len(page) < 1000 or len(keep) < len(page):
@@ -512,8 +536,10 @@ class Fetcher:
         return True
 
     def feed_signatures(self) -> list:
-        """Successful feed signatures, newest first, deduplicated: (slot, tx_index, sig)."""
+        """Successful feed signatures, newest first, deduplicated: (slot, tx_index, sig, block_time).
+        Also sets self.anchors: every feed signature as (block_time, slot, sig), oldest first."""
         feeds, seen, out = set(self.state["feeds"]), set(), []
+        self.anchors = []
         path = self.dir / "sigs.jsonl"
         if not path.exists():
             return out
@@ -526,10 +552,16 @@ class Fetcher:
                 if page.get("tag") != "feed" or page.get("feed") not in feeds:
                     continue
                 for s in page["sigs"]:
-                    if s.get("err") is None and s["signature"] not in seen:
-                        seen.add(s["signature"])
-                        out.append((s.get("slot") or 0, s.get("transactionIndex") or 0, s["signature"]))
+                    if s["signature"] in seen:
+                        continue
+                    seen.add(s["signature"])
+                    if s.get("blockTime"):
+                        self.anchors.append((s["blockTime"], s.get("slot") or 0, s["signature"]))
+                    if s.get("err") is None:
+                        out.append((s.get("slot") or 0, s.get("transactionIndex") or 0, s["signature"],
+                                    s.get("blockTime")))
         out.sort(reverse=True)
+        self.anchors.sort()
         return out
 
     # -- phase 2: transactions
@@ -553,9 +585,21 @@ class Fetcher:
         self.processed.add(sig)
         return owned
 
-    def expand(self, account: str) -> bool:
-        """All transactions of one of the wallet's token accounts (its buys and sells of that coin)."""
-        cursor = {"before": None, "done": False}
+    def expand(self, account: str, buy_sig: str, buy_slot: int, buy_bt: int | None) -> bool:
+        """Page one of the wallet's token accounts from a buy up to sell_window_s after it and process
+        its successful transactions (the sells of that coin, on any venue). Feed signatures are
+        processed newest first, so a newer buy's window that already reached down here is reused."""
+        top_slot, top_sig = None, None  # None = up to the newest signature
+        if buy_bt is not None:
+            i = bisect.bisect_left(self.anchors, (buy_bt + self.sell_window_s,))
+            if i < len(self.anchors):
+                _, top_slot, top_sig = self.anchors[i]
+        cov = self.cover.get(account)
+        if cov and cov["lo_slot"] <= buy_slot:
+            return True  # already paged down past this buy
+        if cov and (top_slot is None or cov["lo_slot"] <= top_slot):
+            top_sig = cov["lo_sig"]  # continue below the part already paged
+        cursor = {"before": top_sig, "until": buy_sig, "floor": buy_slot, "done": False}
         while not cursor["done"]:
             if self.stop_requested():
                 return False
@@ -565,8 +609,9 @@ class Fetcher:
                 if s["signature"] not in self.processed:
                     self.process(s["signature"])
                     self.maybe_status()
-        self._append("atas_done.txt", [account])
-        self.atas_done.add(account)
+        row = {"account": account, "lo_slot": buy_slot, "lo_sig": buy_sig}
+        self._append("cover.jsonl", [json.dumps(row, separators=(",", ":"))])
+        self.cover[account] = row
         return True
 
     def phase_transactions(self) -> bool:
@@ -574,19 +619,21 @@ class Fetcher:
         self.state["feed_ok_total"] = len(todo)
         self.log(f"{self.name}: {len(todo)} successful feed signatures, "
                  f"{sum(1 for t in todo if t[2] in self.processed)} already processed")
-        for n, (_, _, sig) in enumerate(todo):
-            if sig in self.processed:
+        via = self.state["mode"] == "via"
+        for n, (slot, _, sig, bt) in enumerate(todo):
+            if sig in self.processed and (not via or sig in self.expanded):
                 continue
             if self.stop_requested():
                 return False
-            owned = self.process(sig)
+            owned = self.process(sig)  # re-fetched after a stop mid-expansion; rows are de-duplicated later
             self.count("feed_done")
             self.state["feed_index"] = n + 1
-            if self.state["mode"] == "via":
+            if via:
                 for account, mint in owned.items():
-                    if mint != WSOL and mint not in STABLES and account not in self.atas_done:
-                        if not self.expand(account):
-                            return False
+                    if mint != WSOL and mint not in STABLES and not self.expand(account, sig, slot, bt):
+                        return False
+                self._append("expanded.txt", [sig])
+                self.expanded.add(sig)
             self.maybe_status()
         return True
 
@@ -608,7 +655,7 @@ class Fetcher:
         self.log(f"[{datetime.now().strftime('%H:%M:%S')}] {self.name} {st['mode']} phase={st['phase']} "
                  f"sigs={sum(f.get('sigs', 0) for f in st['feeds'].values())} "
                  f"tx={len(self.processed)} swaps={c.get('swap_rows', 0)} nonswap={c.get('nonswap', 0)} "
-                 f"missing={c.get('missing', 0)} atas={len(self.atas_done)} "
+                 f"missing={c.get('missing', 0)} accounts={len(self.cover)} "
                  f"sig_earliest={bt(st['sig_earliest_bt'])}Z tx_earliest={bt(st['tx_earliest_bt'])}Z "
                  f"req={stats['requests']} rate={rate:.2f}/s 429={stats['429']} 413={stats['413']} "
                  f"5xx={stats['5xx']} eta={eta}")
@@ -696,6 +743,8 @@ def main(argv=None) -> int:
     ap.add_argument("--wallet", default="decu", help="elite name (any case) or wallet address")
     ap.add_argument("--all", action="store_true", help="every elite in turn")
     ap.add_argument("--until-slot", type=int, default=0, help="do not go older than this slot")
+    ap.add_argument("--sell-window-h", type=float, default=SELL_WINDOW_S / 3600,
+                    help="via mode: look for sells this many hours after each buy")
     ap.add_argument("--mode", choices=("auto", "wallet", "via"), default="auto")
     ap.add_argument("--rpc", default=DEFAULT_RPC, help="free public RPC endpoint")
     ap.add_argument("--rps", type=float, default=RPS)
@@ -721,7 +770,8 @@ def main(argv=None) -> int:
             print(f"{name}: {s['totals']}")
             continue
         rpc = PacedRpc(args.rpc, args.rps, log=log)
-        fetcher = Fetcher(name, wallet, rpc, out_dir, args.mode, args.until_slot, log=log)
+        fetcher = Fetcher(name, wallet, rpc, out_dir, args.mode, args.until_slot, log=log,
+                          sell_window_s=args.sell_window_h * 3600)
         log(f"== {name} {wallet} start {datetime.now(timezone.utc).isoformat(timespec='seconds')} "
             f"rpc={args.rpc} rps={args.rps}")
         finished = fetcher.run()

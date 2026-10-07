@@ -261,8 +261,11 @@ class FakeChain:
             return self.txs.get(params[0])
         address, cfg = params
         infos = self.sigs.get(address, [])
-        if cfg.get("before"):
-            infos = infos[[s["signature"] for s in infos].index(cfg["before"]) + 1:]
+        slot_of = {s["signature"]: s["slot"] for rows in self.sigs.values() for s in rows}
+        if cfg.get("before"):  # like the real RPC, any signature works as a cursor
+            infos = [s for s in infos if s["slot"] < slot_of[cfg["before"]]]
+        if cfg.get("until"):
+            infos = [s for s in infos if s["slot"] > slot_of[cfg["until"]]]
         return infos[:cfg["limit"]]
 
 
@@ -348,6 +351,35 @@ class FetcherTest(unittest.TestCase):
         self.assertEqual(fetched, ["b1", "s1"])  # the buy once, the sell found via the token account
         trips = [json.loads(x) for x in (self.dir / "trips.jsonl").read_text().splitlines()]
         self.assertEqual([(t["pnl_sol"], t["venue"]) for t in trips], [(0.5, "pump")])
+
+    def test_via_pages_token_accounts_only_inside_the_sell_window(self):
+        pump_uva, amm_uva = history.accumulators(W)
+        day = 86_400
+        info = lambda sig, slot, bt, err=None: {"signature": sig, "slot": slot, "blockTime": bt,
+                                                "transactionIndex": 0, "err": err}
+        t0 = 1_790_000_000
+        b1, s1 = info("b1", 100, t0), info("s1", 110, t0 + 50)
+        b2, s2 = info("b2", 200, t0 + 1000), info("s2", 210, t0 + 1100)
+        b3 = info("b3", 300, t0 + 3 * day)                 # a later buy of another coin: the window cursor
+        spam = [info(f"x{i}", 205, t0 + 1050, err={"x": 1}) for i in range(5)]
+        late = info("late", 400, t0 + 4 * day)             # sold after the window: left as an open bag
+        ata2 = addr("other-ata")
+        txs = {"b1": pump_buy("b1", slot=100, block_time=t0), "s1": pump_sell("s1", slot=110, block_time=t0 + 50),
+               "b2": pump_buy("b2", slot=200, block_time=t0 + 1000),
+               "s2": pump_sell("s2", slot=210, block_time=t0 + 1100),
+               "b3": json_tx("b3", wallet_delta=-SOL, slot=300, block_time=t0 + 3 * day,
+                             accounts=[(ata2, W, COIN2, None, 10, 0, 0)]),
+               "late": pump_sell("late", slot=400, block_time=t0 + 4 * day)}
+        chain = FakeChain({pump_uva: [b3, b2, b1], amm_uva: [], ATA: [late, s2] + spam + [b2, s1, b1],
+                           ata2: [b3]}, txs)
+        f = history.Fetcher("Decu", W, chain, self.dir, mode="via", log=lambda m: None)
+        self.assertTrue(f.run())
+        fetched = [p[0] for m, p in chain.calls if m == "getTransaction"]
+        self.assertEqual(fetched, ["b3", "b2", "s2", "b1", "s1"])
+        ata_pages = [p[1] for m, p in chain.calls if m == "getSignaturesForAddress" and p[0] == ATA]
+        self.assertEqual([(c.get("before"), c.get("until")) for c in ata_pages],
+                         [("b3", "b2"), ("b2", "b1")])  # second window starts where the first stopped
+        self.assertEqual(sorted(f.cover), sorted([ATA, ata2]))
 
 
 if __name__ == "__main__":
