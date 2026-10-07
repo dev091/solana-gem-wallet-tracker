@@ -80,6 +80,15 @@ def run_day(path: Path, sol_usd: float, algos: str = "all", cfg: SimConfig | Non
     return rows
 
 
+def trades_in(path: Path) -> int:
+    """Trade rows in a day tape, from its manifest."""
+    try:
+        m = json.loads((path.parent / "manifest.json").read_text("utf-8"))
+        return int(m["rows_by_kind"].get("trade", 0))
+    except (OSError, ValueError, KeyError, TypeError, AttributeError):
+        return 0
+
+
 def summarize(rows: list[dict]) -> dict:
     """Per algo over all days: summed daily PnL, compounded and median daily return, and
     each algo's median day minus base_random's median day."""
@@ -137,7 +146,7 @@ def main(argv=None) -> int:
     b = date.fromisoformat(args.end) if args.end else None
     jl = out / "days.jsonl"
     done = set()
-    rows = []
+    rows, skipped = [], []
     if jl.exists():  # resume: keep finished days
         for line in jl.read_text("utf-8").splitlines():
             r = json.loads(line)
@@ -146,6 +155,10 @@ def main(argv=None) -> int:
     for source in args.source or ["jocry", "slinky21"]:
         for day, path in day_tapes(root, source, a, b):
             if (source, day.isoformat()) in done:
+                continue
+            if not trades_in(path):  # a gap in the source, not a flat day
+                skipped.append(f"{source} {day}")
+                print(f"{source} {day} has no trades, skipped", flush=True)
                 continue
             t = time.time()
             day_rows = [dict(day=day.isoformat(), source=source, **r)
@@ -165,7 +178,7 @@ def main(argv=None) -> int:
     summary = {"sol_usd": sol_usd, "sim": asdict(SimConfig()),
                "days": len({(r["source"], r["day"]) for r in rows}),
                "note": "each day from a fresh start_usd; tapes have no post-migration PumpSwap "
-                       "trades", "algos": summarize(rows)}
+                       "trades", "skipped": skipped, "algos": summarize(rows)}
     (out / "summary.json").write_text(json.dumps(summary, indent=1), encoding="utf-8")
     for algo, v in summary["algos"].items():
         print(f"{algo:16s} pnl ${v['pnl_usd_sum']:>9.2f} median {v['median_day']:+.4f} "

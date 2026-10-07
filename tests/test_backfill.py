@@ -313,3 +313,18 @@ class HistRunTest(TmpDir):
         for r in res:
             self.assertGreaterEqual(r["max_drawdown"], 0.0)
             self.assertEqual(r["errors"], 0)
+
+    def test_skips_days_without_trades(self):
+        from gemtracker import histrun
+        root = self.dir / "hist"
+        for day, kinds in (("20260712", {}), ("20260713", {"create": 1})):
+            d = root / "jocry" / day
+            d.mkdir(parents=True)
+            (d / "day.jsonl.gz").write_bytes(gzip.compress(b""))
+            (d / "manifest.json").write_text(json.dumps({"rows_by_kind": kinds}), encoding="utf-8")
+        out = self.dir / "res"
+        histrun.main(["--root", str(root), "--out", str(out), "--algos", "base_random",
+                      "--sol-usd", "150"])
+        self.assertEqual(json.loads((out / "summary.json").read_text("utf-8"))["days"], 0)
+        self.assertEqual(sorted(json.loads((out / "summary.json").read_text("utf-8"))["skipped"]),
+                         ["jocry 2026-07-12", "jocry 2026-07-13"])
