@@ -56,12 +56,22 @@ def is_gem(pos, crit: Criteria) -> bool:
 def evaluate(report: WalletReport, crit: Criteria, now: float | None = None) -> Verdict:
     now = now if now is not None else time.time()
     trades = [p for p in report.positions if p.cost_usd > 0]  # coins actually bought
-    gems = [p for p in trades if is_gem(p, crit)]
     young_cutoff = now - crit.grace_hours * 3600
     judged = [p for p in trades if not (p.first_buy_ts and p.first_buy_ts > young_cutoff)]
     still_open = [p for p in trades if p.first_buy_ts and p.first_buy_ts > young_cutoff]
     weak = [p for p in judged if (p.multiple or 0.0) < crit.min_multiple]
     off_range = [p for p in trades if not in_entry_range(p, crit)]
+    unverified = [p for p in trades if crit.verified_only and p.verified is False]
+    ok_coin = (lambda p: p.verified is not False) if crit.verified_only else (lambda p: True)
+    if crit.min_gems:
+        hits, needed = [p for p in trades if is_gem(p, crit) and ok_coin(p)], crit.min_gems
+        hit_text = (f"{util.usd(crit.entry_min_usd)}-{util.usd(crit.entry_max_usd)} in, "
+                    f"+{util.usd(crit.gem_profit_usd)} out")
+    else:
+        hits = [p for p in judged if (p.multiple or 0.0) >= crit.min_multiple and ok_coin(p)]
+        needed = crit.min_trades
+        hit_text = f"{crit.min_multiple:g}x+" + (" on verified coins" if crit.verified_only else "")
+    gems = hits
     lr, hr = util.usd(crit.entry_min_usd), util.usd(crit.entry_max_usd)
 
     reasons = []
@@ -71,12 +81,13 @@ def evaluate(report: WalletReport, crit: Criteria, now: float | None = None) -> 
         reasons.append("trade history incomplete, every trade could not be checked")
     if len(trades) > crit.max_tokens:
         reasons.append(f"traded {len(trades)} coins (> {crit.max_tokens}): bot / scalper")
-    if len(gems) < crit.min_gems:
-        reasons.append(f"{len(gems)} gem(s) ({lr}-{hr} in, +{util.usd(crit.gem_profit_usd)} out); "
-                       f"needs {crit.min_gems}")
+    if len(hits) < needed:
+        reasons.append(f"{len(hits)} winning trade(s) ({hit_text}); needs {needed}")
     if weak:
         worst = min((p.multiple or 0.0) for p in weak)
         reasons.append(f"{len(weak)} trade(s) under {crit.min_multiple:g}x (worst {worst:.2f}x)")
+    if unverified:
+        reasons.append(f"{len(unverified)} trade(s) in coins Jupiter has not verified")
     if crit.all_entries_in_range and off_range:
         reasons.append(f"{len(off_range)} trade(s) with entry outside {lr}-{hr}")
 
@@ -113,13 +124,14 @@ def evaluate(report: WalletReport, crit: Criteria, now: float | None = None) -> 
         "realized_usd": round(sum(p.realized_usd for p in trades), 2),
         "gem_profit_usd": round(sum(gem_profit(p, crit) for p in gems), 2),
         "hit_rate": round(len(gems) / len(trades), 3) if trades else None,
+        "unverified": len(unverified),
         "tx_count": report.tx_count,
     }
 
     if not reasons:
         tier = STRICT
-    elif len(gems) >= crit.min_gems:
-        tier = GEM_HUNTER
+    elif len(hits) >= needed:
+        tier = GEM_HUNTER  # enough wins, but broke another rule (a near miss)
     else:
         tier = REJECTED
     return Verdict(tier, reasons, flags, stats, gems, trades)

@@ -43,23 +43,35 @@ IGNORED_MINTS = {
 class Criteria:
     """The rules a wallet must pass. All money values are in USD.
 
-    Defaults are exactly the brief: put in $100-$500 per coin, take out $100k+
-    profit, at least 4 times, never a scam/loss (every trade 20x or better),
-    and no other kind of trade.
+    Default ("solana" preset): every trade on any Solana coin returns 5x or more, zero losing
+    trades, verified coins only, and at least 5 such trades. The "gems" preset is the earlier
+    meme-coin brief: $100-$500 in, $100k+ out, 4+ times, every trade 20x+.
     """
 
     entry_min_usd: float = 100.0       # smallest allowed entry per coin
     entry_max_usd: float = 500.0       # largest allowed entry per coin
     gem_profit_usd: float = 100_000.0  # profit on a single coin to call it a "gem"
-    min_gems: int = 4                  # gems needed (4-5 times minimum)
-    min_multiple: float = 20.0         # EVERY trade must return at least this many x
+    min_gems: int = 0                  # gems needed (0 = not required)
+    min_multiple: float = 5.0          # EVERY trade must return at least this many x
+    min_trades: int = 5                # qualifying trades needed (when min_gems is 0)
+    verified_only: bool = True         # every coin traded must be on Jupiter's verified list
     grace_hours: float = 72.0          # trades younger than this are still open, not judged yet
     count_unrealized: bool = False     # gem profit = cash taken out (False) or incl. holdings (True)
-    all_entries_in_range: bool = True  # every trade must be a $100-$500 entry ("only such trades")
-    max_tokens: int = 300              # more coins than this = bot / scalper, not a gem hunter
+    all_entries_in_range: bool = False # every trade must be an entry_min-entry_max entry
+    max_tokens: int = 300              # more coins than this = bot / scalper
 
     def as_dict(self) -> dict:
         return asdict(self)
+
+    @classmethod
+    def preset(cls, name: str = "solana", **overrides) -> "Criteria":
+        return cls(**{**PRESETS[name], **overrides})
+
+
+PRESETS = {
+    "solana": {},
+    "gems": {"min_gems": 4, "min_multiple": 20.0, "verified_only": False, "all_entries_in_range": True},
+}
 
 
 def load_dotenv(path: Path = ROOT / ".env") -> None:

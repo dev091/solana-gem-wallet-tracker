@@ -87,7 +87,7 @@ def gems(n):
 
 class CriteriaTest(unittest.TestCase):
     def check(self, positions, crit=None, **kw):
-        return evaluate(WalletReport(addr("w"), positions, **kw), crit or Criteria(), now=NOW)
+        return evaluate(WalletReport(addr("w"), positions, **kw), crit or Criteria.preset("gems"), now=NOW)
 
     def test_perfect_gem_hunter_is_strict(self):
         v = self.check(gems(5))
@@ -109,14 +109,14 @@ class CriteriaTest(unittest.TestCase):
     def test_entry_size_rules(self):
         whale = pos("big", 2_000, 2_000 * 60)
         self.assertEqual(self.check(gems(4) + [whale]).tier, GEM_HUNTER)
-        self.assertEqual(self.check(gems(4) + [whale], Criteria(all_entries_in_range=False)).tier, STRICT)
+        self.assertEqual(self.check(gems(4) + [whale], Criteria.preset("gems", all_entries_in_range=False)).tier, STRICT)
         # $600 in -> $200k out is a great trade but not a $100-$500 gem.
-        self.assertEqual(self.check(gems(3) + [pos("x", 600, 200_000)], Criteria(all_entries_in_range=False)).stats["gems"], 3)
+        self.assertEqual(self.check(gems(3) + [pos("x", 600, 200_000)], Criteria.preset("gems", all_entries_in_range=False)).stats["gems"], 3)
 
     def test_needs_minimum_number_of_gems(self):
         v = self.check(gems(3))
         self.assertEqual(v.tier, REJECTED)
-        self.assertEqual(self.check(gems(4), Criteria(min_gems=5)).tier, REJECTED)
+        self.assertEqual(self.check(gems(4), Criteria.preset("gems", min_gems=5)).tier, REJECTED)
 
     def test_fresh_trades_are_not_judged_yet(self):
         v = self.check(gems(4) + [pos("new", 300, 0, held=310, age_days=1)])
@@ -126,12 +126,12 @@ class CriteriaTest(unittest.TestCase):
     def test_unrealized_only_counts_when_asked(self):
         paper = pos("paper", 300, 40_000, held=90_000)
         self.assertEqual(self.check(gems(3) + [paper]).tier, REJECTED)
-        self.assertEqual(self.check(gems(3) + [paper], Criteria(count_unrealized=True)).tier, STRICT)
+        self.assertEqual(self.check(gems(3) + [paper], Criteria.preset("gems", count_unrealized=True)).tier, STRICT)
 
     def test_bots_and_incomplete_history_never_strict(self):
         self.assertEqual(self.check([], too_active=True, history_complete=False, tx_count=3000).tier, REJECTED)
         self.assertEqual(self.check(gems(5), history_complete=False).tier, GEM_HUNTER)
-        self.assertEqual(self.check(gems(5), Criteria(max_tokens=3)).tier, GEM_HUNTER)
+        self.assertEqual(self.check(gems(5), Criteria.preset("gems", max_tokens=3)).tier, GEM_HUNTER)
 
     def test_insider_flags(self):
         sniped = gems(4)
@@ -167,3 +167,40 @@ class QuotesTest(unittest.TestCase):
         positions = build_positions([d("b", 1, -1, **{curve: 1000})], price)
         apply_quotes(positions, q)
         self.assertAlmostEqual(positions[0].value_usd, 0.01)  # unknown liquidity: still valued
+
+
+class SolanaPresetTest(unittest.TestCase):
+    """Default rules: every trade 5x+, zero losses, verified coins only, at least 5 such trades."""
+
+    def check(self, positions, **crit):
+        return evaluate(WalletReport(addr("w"), positions), Criteria(**crit), now=NOW)
+
+    def wins(self, n, mult=6.0, verified=True):
+        out = [pos(f"w{i}", 1000, 1000 * mult) for i in range(n)]
+        for p in out:
+            p.verified = verified
+        return out
+
+    def test_five_verified_5x_trades_pass(self):
+        v = self.check(self.wins(5))
+        self.assertEqual(v.tier, STRICT, v.reasons)
+        self.assertEqual(v.stats["gems"], 5)
+
+    def test_one_loss_or_one_4x_fails(self):
+        loss = pos("loss", 1000, 900)
+        loss.verified = True
+        v = self.check(self.wins(5) + [loss])
+        self.assertEqual(v.tier, GEM_HUNTER)
+        self.assertTrue(any("under 5x" in r for r in v.reasons))
+        self.assertEqual(self.check(self.wins(4) + self.wins(1, mult=4.0)).tier, REJECTED)
+
+    def test_unverified_coin_breaks_the_rule(self):
+        v = self.check(self.wins(5) + self.wins(1, verified=False))
+        self.assertTrue(any("not verified" in r for r in v.reasons))
+        self.assertEqual(self.check(self.wins(5, verified=False)).tier, REJECTED)
+        self.assertEqual(self.check(self.wins(5, verified=False), verified_only=False).tier, STRICT)
+        self.assertEqual(self.check(self.wins(5, verified=None)).tier, STRICT)  # list unavailable: rule skipped
+
+    def test_too_few_trades(self):
+        self.assertEqual(self.check(self.wins(4)).tier, REJECTED)
+        self.assertEqual(self.check(self.wins(4), min_trades=4).tier, STRICT)

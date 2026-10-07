@@ -6,7 +6,7 @@
 """
 from __future__ import annotations
 
-from . import config, net, util
+from . import config, net, util, verified
 from .criteria import WalletReport
 from .prices import SolPrice, token_quotes
 from .solana import HeliusHistory, SolanaRpc, fetch_history
@@ -15,6 +15,20 @@ from .trades import Position, apply_quotes, build_positions
 
 class ProviderError(Exception):
     pass
+
+
+_VERIFIED: dict = {}
+
+
+def _verified_tokens(log) -> dict | None:
+    """Jupiter's verified list, loaded once per run (None if it cannot be had)."""
+    if "tokens" not in _VERIFIED:
+        try:
+            _VERIFIED["tokens"] = verified.load(log)
+        except Exception as exc:
+            log(f"   verified-coin list unavailable ({exc}); the verified rule is skipped")
+            _VERIFIED["tokens"] = None
+    return _VERIFIED["tokens"]
 
 
 class RpcProvider:
@@ -44,6 +58,7 @@ class RpcProvider:
         positions = build_positions(history.deltas, self.sol.at)
         traded = [p.mint for p in positions if p.cost_usd > 0 or p.balance > 0]
         apply_quotes(positions, token_quotes(traded, log=self.log))
+        verified.mark(positions, _verified_tokens(self.log))
         notes = []
         via_fomo = sum(1 for d in history.deltas if d.fee_payer == config.FOMO_SIGNER and d.tokens)
         if via_fomo:
@@ -134,6 +149,7 @@ class SolanaTrackerProvider:
             cursor = page.get("nextCursor")
             if not page.get("hasMore") or not cursor:
                 break
+        verified.mark(positions, _verified_tokens(self.log))
         return WalletReport(wallet, positions, source=self.name, identity=identity,
                             tx_count=sum(p.buys + p.sells for p in positions))
 

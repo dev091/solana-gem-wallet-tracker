@@ -157,7 +157,7 @@
     <button class="tab" role="tab" data-tab="goal" aria-selected="true">Goal</button>
     <button class="tab" role="tab" data-tab="paper" aria-selected="false">Paper trading</button>
     <button class="tab" role="tab" data-tab="live" aria-selected="false">Live trades</button>
-    <button class="tab" role="tab" data-tab="matches" aria-selected="false">Gem hunters</button>
+    <button class="tab" role="tab" data-tab="matches" aria-selected="false">Wallet scan</button>
     <button class="tab" role="tab" data-tab="all" aria-selected="false">All scanned</button>
     <button class="tab" role="tab" data-tab="sources" aria-selected="false">Sources</button>
   </nav>
@@ -238,7 +238,7 @@
       esc(symbol || short(mint)) + "</a>";
   }
   function badge(tier) {
-    var names = { STRICT: "STRICT", GEM_HUNTER: "GEM HUNTER", REJECTED: "REJECTED", ERROR: "ERROR", WATCHLIST: "WATCHLIST", BOARD: "LEADER" };
+    var names = { STRICT: "STRICT", GEM_HUNTER: "NEAR MISS", REJECTED: "REJECTED", ERROR: "ERROR", WATCHLIST: "WATCHLIST", BOARD: "LEADER" };
     return '<span class="badge b-' + esc(tier) + '">' + esc(names[tier] || tier) + "</span>";
   }
   function table(head, rows) {
@@ -500,7 +500,7 @@
   }
 
   // ---- Gem hunters (strict scan) tab
-  var c = (W && W.criteria) || { entry_min_usd: 100, entry_max_usd: 500, gem_profit_usd: 100000, min_gems: 4, min_multiple: 20, all_entries_in_range: true };
+  var c = (W && W.criteria) || { min_multiple: 5, min_trades: 5, min_gems: 0, verified_only: true, all_entries_in_range: false };
   var wallets = (W && W.wallets) || [];
   var counts = (W && W.counts) || {};
   function tradeTable(rows) {
@@ -533,11 +533,13 @@
       "<details><summary>Recent trades (" + (r.trades || []).length + ")</summary>" + tradeTable(r.trades) + "</details></article>";
   }
   function matchesTab() {
-    var rules = ["Entry " + usd(c.entry_min_usd) + "–" + usd(c.entry_max_usd), "Profit ≥ " + usd(c.gem_profit_usd) + (c.count_unrealized ? " (incl. holdings)" : " (cashed out)"),
-                 "≥ " + c.min_gems + " gems", "Every trade ≥ " + c.min_multiple + "x"];
-    if (c.all_entries_in_range) rules.push("No other kind of trade");
+    var rules = ["Every trade ≥ " + c.min_multiple + "x", "Zero losses"];
+    if (c.min_gems) rules.push("≥ " + c.min_gems + " gems: " + usd(c.entry_min_usd) + "–" + usd(c.entry_max_usd) + " in, +" + usd(c.gem_profit_usd) + " out");
+    else rules.push("≥ " + c.min_trades + " such trades");
+    if (c.verified_only) rules.push("Verified coins only");
+    if (c.all_entries_in_range) rules.push("Every entry " + usd(c.entry_min_usd) + "–" + usd(c.entry_max_usd));
     var html = '<div class="chips">' + rules.map(function (r) { return '<span class="chip">' + esc(r) + "</span>"; }).join("") + "</div>" +
-      '<div class="tiles">' + [[counts.scanned || 0, "wallets scanned"], [counts.strict || 0, "STRICT matches"], [counts.gem_hunter || 0, "gem hunters (enough gems, broke another rule)"]]
+      '<div class="tiles">' + [[counts.scanned || 0, "wallets scanned"], [counts.strict || 0, "STRICT matches"], [counts.gem_hunter || 0, "near misses (enough wins, broke another rule)"]]
         .map(function (t) { return '<div class="tile"><div class="n">' + esc(t[0]) + '</div><div class="l">' + esc(t[1]) + "</div></div>"; }).join("") + "</div><div style=\"height:12px\"></div>";
     var matches = wallets.filter(function (r) { return r.tier === "STRICT" || r.tier === "GEM_HUNTER"; });
     html += matches.length ? '<div class="cards">' + matches.map(card).join("") + "</div>"

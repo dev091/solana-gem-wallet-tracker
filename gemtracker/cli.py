@@ -27,27 +27,35 @@ Keys are read from environment variables (all optional, see .env.example):
 
 
 def _criteria_args(p: argparse.ArgumentParser) -> None:
-    d = Criteria()
-    g = p.add_argument_group("rules (defaults = $100-$500 in, $100k+ out, 4+ times, every trade 20x+)")
-    g.add_argument("--entry-min", type=float, default=d.entry_min_usd, help="min USD entry per coin")
-    g.add_argument("--entry-max", type=float, default=d.entry_max_usd, help="max USD entry per coin")
-    g.add_argument("--gem-profit", type=float, default=d.gem_profit_usd, help="USD profit that makes a gem")
-    g.add_argument("--min-gems", type=int, default=d.min_gems, help="gems needed (4 or 5)")
-    g.add_argument("--min-multiple", type=float, default=d.min_multiple, help="every trade must reach this x")
-    g.add_argument("--grace-hours", type=float, default=d.grace_hours,
-                   help="trades younger than this are not judged yet")
-    g.add_argument("--include-unrealized", action="store_true",
-                   help="count coins still held (at today's price) toward gem profit")
-    g.add_argument("--allow-other-entries", action="store_true",
-                   help="do not require every trade to be a $100-$500 entry")
-    g.add_argument("--max-tokens", type=int, default=d.max_tokens, help="more coins than this = bot")
+    from .config import PRESETS
+    g = p.add_argument_group("rules (default preset 'solana': every trade 5x+, zero losses, verified coins, "
+                             "5+ trades; preset 'gems': $100-$500 -> $100k+ 4 times, every trade 20x+)")
+    g.add_argument("--preset", default="solana", choices=sorted(PRESETS), help="starting set of rules")
+    g.add_argument("--min-multiple", type=float, help="every trade must reach this x")
+    g.add_argument("--min-trades", type=int, help="qualifying trades needed")
+    g.add_argument("--min-gems", type=int, help="gems needed ($100-$500 in, $100k+ out); 0 = off")
+    g.add_argument("--entry-min", type=float, help="min USD entry per coin")
+    g.add_argument("--entry-max", type=float, help="max USD entry per coin")
+    g.add_argument("--gem-profit", type=float, help="USD profit that makes a gem")
+    g.add_argument("--grace-hours", type=float, help="trades younger than this are not judged yet")
+    g.add_argument("--max-tokens", type=int, help="more coins than this = bot")
+    g.add_argument("--include-unrealized", action="store_true", help="count holdings toward gem profit")
+    g.add_argument("--allow-other-entries", action="store_true", help="do not require every entry in range")
+    g.add_argument("--allow-unverified", action="store_true", help="do not require Jupiter-verified coins")
 
 
 def _criteria(a) -> Criteria:
-    return Criteria(entry_min_usd=a.entry_min, entry_max_usd=a.entry_max, gem_profit_usd=a.gem_profit,
-                    min_gems=a.min_gems, min_multiple=a.min_multiple, grace_hours=a.grace_hours,
-                    count_unrealized=a.include_unrealized, all_entries_in_range=not a.allow_other_entries,
-                    max_tokens=a.max_tokens)
+    overrides = {field: getattr(a, arg) for field, arg in (
+        ("min_multiple", "min_multiple"), ("min_trades", "min_trades"), ("min_gems", "min_gems"),
+        ("entry_min_usd", "entry_min"), ("entry_max_usd", "entry_max"), ("gem_profit_usd", "gem_profit"),
+        ("grace_hours", "grace_hours"), ("max_tokens", "max_tokens")) if getattr(a, arg, None) is not None}
+    if a.include_unrealized:
+        overrides["count_unrealized"] = True
+    if a.allow_other_entries:
+        overrides["all_entries_in_range"] = False
+    if a.allow_unverified:
+        overrides["verified_only"] = False
+    return Criteria.preset(a.preset, **overrides)
 
 
 def _provider_args(p: argparse.ArgumentParser) -> None:
@@ -174,13 +182,17 @@ def cmd_scan(a, fresh: bool, log=print) -> int:
 
 
 def _rules_line(crit: Criteria) -> str:
-    profit = "incl. holdings" if crit.count_unrealized else "cash taken out"
-    parts = [f"entry {util.usd(crit.entry_min_usd)}-{util.usd(crit.entry_max_usd)}",
-             f"profit ≥ {util.usd(crit.gem_profit_usd)} ({profit})",
-             f"≥ {crit.min_gems} gems",
-             f"every trade ≥ {crit.min_multiple:g}x"]
+    parts = [f"every trade ≥ {crit.min_multiple:g}x (zero losses)"]
+    if crit.min_gems:
+        profit = "incl. holdings" if crit.count_unrealized else "cash taken out"
+        parts.append(f"≥ {crit.min_gems} gems of {util.usd(crit.entry_min_usd)}-{util.usd(crit.entry_max_usd)} in, "
+                     f"+{util.usd(crit.gem_profit_usd)} out ({profit})")
+    else:
+        parts.append(f"≥ {crit.min_trades} such trades")
+    if crit.verified_only:
+        parts.append("verified coins only")
     if crit.all_entries_in_range:
-        parts.append("no other kind of trade")
+        parts.append(f"every entry {util.usd(crit.entry_min_usd)}-{util.usd(crit.entry_max_usd)}")
     return "Rules: " + ", ".join(parts)
 
 
@@ -200,8 +212,10 @@ def cmd_analyze(a, log=print) -> int:
     if trades:
         log(f"\n{'date':<10}  {'coin':<12} {'in':>9} {'out':>9} {'held':>9} {'x':>8}  note")
         for p in trades:
-            note = "GEM" if is_gem(p, crit) else ("< {:g}x".format(crit.min_multiple)
-                                                   if (p.multiple or 0) < crit.min_multiple else "")
+            note = ("GEM" if crit.min_gems and is_gem(p, crit) else
+                    "< {:g}x".format(crit.min_multiple) if (p.multiple or 0) < crit.min_multiple else "ok")
+            if crit.verified_only and p.verified is False:
+                note += " (unverified)"
             log(f"{util.date(p.first_buy_ts):<10}  {(p.symbol or util.short(p.mint))[:12]:<12} "
                 f"{util.usd(p.cost_usd):>9} {util.usd(p.proceeds_usd):>9} {util.usd(p.value_usd):>9} "
                 f"{util.mult(p.multiple):>8}  {note}")

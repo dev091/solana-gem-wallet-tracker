@@ -5,12 +5,12 @@ name: Gem hunter scan
 on:
   workflow_dispatch:
     inputs:
-      min_gems:
-        description: "Gems needed ($100-$500 in, $100k+ out)"
-        default: "4"
+      preset:
+        description: "Rules: solana (every trade 5x+, verified coins) or gems ($100-$500 -> $100k+)"
+        default: "solana"
       min_multiple:
         description: "Every trade must reach at least this many x"
-        default: "20"
+        default: "5"
       max_wallets:
         description: "Scan at most this many candidate wallets"
         default: "150"
@@ -52,12 +52,12 @@ jobs:
           SOLANATRACKER_API_KEY: ${{ secrets.SOLANATRACKER_API_KEY }}
           GMGN_API_KEY: ${{ secrets.GMGN_API_KEY }}
           FOMOAPI_KEY: ${{ secrets.FOMOAPI_KEY }}
-          MIN_GEMS: ${{ inputs.min_gems || '4' }}
-          MIN_MULTIPLE: ${{ inputs.min_multiple || '20' }}
+          PRESET: ${{ inputs.preset || 'solana' }}
+          MIN_MULTIPLE: ${{ inputs.min_multiple || '5' }}
           MAX_WALLETS: ${{ inputs.max_wallets || '150' }}
         run: |
           python -m gemtracker run \
-            --min-gems "$MIN_GEMS" \
+            --preset "$PRESET" \
             --min-multiple "$MIN_MULTIPLE" \
             --max-wallets "$MAX_WALLETS" \
             --time-budget 280

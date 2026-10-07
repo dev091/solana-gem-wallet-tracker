@@ -72,17 +72,21 @@ def oldest_signatures(rpc, address: str, count: int, max_pages: int = 150) -> tu
 
 
 def early_buyers(rpc, mint: str, sol_usd, crit, early_txs: int = 250, workers: int = 6,
-                 max_pages: int = 150) -> tuple:
-    """Wallets that bought `mint` in its first `early_txs` trades with a $min-$max entry.
+                 max_pages: int = 150, pool: str | None = None) -> tuple:
+    """Wallets that bought `mint` in its first `early_txs` trades.
 
-    Returns ([(wallet, usd_paid, ts)], note).
+    `pool` is the coin's first pool on any DEX or launchpad; without it the Pump.fun bonding
+    curve is used. Entries are kept within crit's $min-$max when that rule is on, else any
+    buy of $20 or more. Returns ([(wallet, usd_paid, ts)], note).
     """
-    curve = bonding_curve(mint)
+    curve = pool or bonding_curve(mint)
+    low, high = ((crit.entry_min_usd, crit.entry_max_usd) if crit.all_entries_in_range
+                 else (20.0, float("inf")))
     signatures, reached = oldest_signatures(rpc, curve, early_txs, max_pages)
     if not reached:
-        return [], f"more than {max_pages}k bonding-curve trades, launch not reached"
+        return [], f"more than {max_pages}k pool trades, launch not reached"
     if not signatures:
-        return [], "no bonding-curve history (not a Pump.fun coin?)"
+        return [], "no pool history"
     buyers = {}
     for tx in rpc.transactions(signatures, workers=workers):
         if not tx:
@@ -93,7 +97,7 @@ def early_buyers(rpc, mint: str, sol_usd, crit, early_txs: int = 250, workers: i
         holders = [b.get("owner") for b in (tx.get("meta") or {}).get("postTokenBalances") or []
                    if b.get("mint") == mint and b.get("owner")]
         for wallet in dict.fromkeys(signers + holders):
-            if wallet == curve:  # the curve itself "buys" back whatever sellers dump
+            if wallet == curve:  # the pool itself "buys" back whatever sellers dump
                 continue
             delta = delta_from_rpc_tx(tx, wallet)
             if not delta:
@@ -102,6 +106,5 @@ def early_buyers(rpc, mint: str, sol_usd, crit, early_txs: int = 250, workers: i
                 if ev.kind == "buy" and ev.mint == mint:
                     paid, first_ts = buyers.get(wallet, (0.0, ev.ts))
                     buyers[wallet] = (paid + ev.usd, min(first_ts, ev.ts))
-    in_range = [(w, usd, ts) for w, (usd, ts) in buyers.items()
-                if crit.entry_min_usd <= usd <= crit.entry_max_usd]
+    in_range = [(w, usd, ts) for w, (usd, ts) in buyers.items() if low <= usd <= high]
     return in_range, f"{len(buyers)} early buyer(s), {len(in_range)} in range"

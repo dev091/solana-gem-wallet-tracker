@@ -68,9 +68,12 @@ class EarlyBuyersTest(unittest.TestCase):
                               post_tokens=[(USDC, 100_000_000, 6, c), (mint, 10 ** 11, 6, c)])
         oldest.insert(0, {"signature": "buy-c", "err": None})
         rpc = FakeRpc([newest, oldest], txs)
-        buyers, note = pumpfun.early_buyers(rpc, mint, lambda ts: 150.0, Criteria(), early_txs=10)
+        buyers, note = pumpfun.early_buyers(rpc, mint, lambda ts: 150.0, Criteria.preset("gems"), early_txs=10)
         found = {w: round(usd) for w, usd, _ in buyers}
         self.assertEqual(found, {a: 225, c: 300})  # b paid $1,500; the curve and the seller are not buyers
+        rpc.sig_pages = [newest, oldest]
+        wide, _ = pumpfun.early_buyers(rpc, mint, lambda ts: 150.0, Criteria(), early_txs=10)
+        self.assertEqual({w for w, _, _ in wide}, {a, b, c})  # default rules: any buy of $20+
         self.assertIn("in range", note)
         first_call = rpc.calls[0]
         self.assertEqual(first_call[1][0], curve)
@@ -112,10 +115,12 @@ class FomoTest(unittest.TestCase):
         provider.max_txs, provider.workers, provider.log = 100, 1, lambda *_: None
         provider.sol = mock.Mock(at=lambda ts: 150.0)
         with mock.patch("gemtracker.providers.fetch_history", return_value=History([delta], 1, True, "rpc")), \
-                mock.patch("gemtracker.providers.token_quotes", return_value={}):
+                mock.patch("gemtracker.providers.token_quotes", return_value={}), \
+                mock.patch("gemtracker.providers._verified_tokens", return_value={mint: {}}):
             report = provider.report(wallet)
         self.assertEqual(report.notes, ["1 trade(s) placed through the Fomo app"])
         self.assertEqual(report.positions[0].cost_usd, 300.0)
+        self.assertTrue(report.positions[0].verified)
 
 
 class CoinListTest(unittest.TestCase):
@@ -161,3 +166,25 @@ class EarlySearchTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class VerifiedTest(unittest.TestCase):
+    def test_recent_gems_filter_and_mark(self):
+        from gemtracker import verified, util
+        from gemtracker.trades import Position
+        now = util.now()
+        tokens = {
+            addr("gem"): {"symbol": "GEM", "mcap": 9e6, "launched_ts": now - 10 * 86400, "organic": 80, "tags": [],
+                          "first_pool": addr("pool"), "launchpad": "met-dbc"},
+            addr("old"): {"symbol": "OLD", "mcap": 9e9, "launched_ts": now - 900 * 86400, "organic": 90, "tags": []},
+            addr("tiny"): {"symbol": "TINY", "mcap": 5e5, "launched_ts": now - 5 * 86400, "organic": 80, "tags": []},
+            addr("usd"): {"symbol": "sUSDx", "mcap": 6e7, "launched_ts": now - 5 * 86400, "organic": 80, "tags": []},
+            addr("lst"): {"symbol": "xSOL", "mcap": 6e7, "launched_ts": now - 5 * 86400, "organic": 80, "tags": ["lst"]},
+        }
+        self.assertEqual([m for m, _, _ in verified.recent_gems(tokens)], [addr("gem")])
+        a, b = Position(addr("gem")), Position(addr("unknown"))
+        verified.mark([a, b], tokens)
+        self.assertEqual((a.verified, b.verified), (True, False))
+        c = Position(addr("x"))
+        verified.mark([c], None)
+        self.assertIsNone(c.verified)

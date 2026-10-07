@@ -75,6 +75,7 @@ class Position:
     price_usd: float | None = None
     liquidity_usd: float | None = None
     launched_ts: int | None = None
+    verified: bool | None = None  # on Jupiter's verified list (None = unknown)
     flags: list = field(default_factory=list)
 
     @property
@@ -130,6 +131,7 @@ class Position:
             "buys": self.buys, "sells": self.sells,
             "first_buy_ts": self.first_buy_ts or None, "last_trade_ts": self.last_trade_ts or None,
             "launched_ts": self.launched_ts, "first_buy_sig": self.first_buy_sig or None,
+            "verified": self.verified,
             "flags": list(self.flags),
         }
 

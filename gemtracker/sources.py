@@ -13,6 +13,9 @@ Gem search (the most direct way to find repeat gem hunters):
                coins they did that on (needs SOLANATRACKER_API_KEY or GMGN_API_KEY)
   pump-early - no key: read each of those coins' bonding curve on-chain and list who bought
                in the first trades with a $100-$500 entry; wallets that did it on 2+ coins
+  verified-early - no key, whole Solana: Jupiter-verified coins from any launchpad or DEX that
+               went from launch to $2M+ in the last 120 days; reads each one's first pool on-chain
+               and keeps wallets that bought 2+ of them in their first trades
 Fomo without a key:
   fomo-top50 - snapshot of the Fomo app's top-50 profit leaderboard with Solana wallets
                (wallets/fomo_top50.json); both the main and the in-app Fomo wallet are checked
@@ -29,7 +32,7 @@ from dataclasses import asdict, dataclass, field
 from . import config, net, util
 from .config import Criteria
 
-ALL_SOURCES = ["seeds", "pump-board", "kolscan", "fomo-top50", "pump-early", "fomo", "st-kols", "st-top",
+ALL_SOURCES = ["seeds", "verified-early", "pump-board", "kolscan", "fomo-top50", "fomo", "st-kols", "st-top",
                "gmgn", "pump-gems"]
 # Labels on traders that are infrastructure, not people picking coins.
 NOT_A_TRADER = {"bot", "pool", "exchange", "sandwich_bot", "dex_bot", "bundler"}
@@ -356,19 +359,21 @@ def _out_of_time(deadline, what: str, done: int, total: int, log) -> bool:
 
 
 def early_search(book: CandidateBook, coins: list, crit: Criteria, early_txs: int, min_hits: int,
-                 log=print, deadline: float | None = None) -> int:
-    """No-key gem search: early $100-$500 buyers of big Pump.fun coins, read from the chain."""
+                 log=print, deadline: float | None = None, source: str = "pump-early") -> int:
+    """No-key gem search: early buyers of coins that became big, read from the chain.
+    `coins` rows are (mint, symbol) or (mint, symbol, first_pool)."""
     from .pumpfun import early_buyers
     from .prices import SolPrice
     from .solana import SolanaRpc
     rpc, sol = SolanaRpc(config.rpc_url()), SolPrice()
     seen: dict = {}
-    for i, (mint, symbol) in enumerate(coins, 1):
+    for i, coin in enumerate(coins, 1):
         if _out_of_time(deadline, "early search", i - 1, len(coins), log):
             break
+        mint, symbol, pool = coin[0], coin[1], (coin[2] if len(coin) > 2 else None)
         name = symbol or util.short(mint)
         try:
-            buyers, note = early_buyers(rpc, mint, sol.at, crit, early_txs=early_txs)
+            buyers, note = early_buyers(rpc, mint, sol.at, crit, early_txs=early_txs, pool=pool)
         except Exception as exc:
             log(f"   [{i}/{len(coins)}] {name}: failed ({exc})")
             continue
@@ -378,7 +383,7 @@ def early_search(book: CandidateBook, coins: list, crit: Criteria, early_txs: in
     added = 0
     for wallet, hits in seen.items():
         if len(hits) >= min_hits:
-            cand = book.add(wallet, "pump-early", f"early buyer on {len(hits)} big coins: " + ", ".join(hits[:3]))
+            cand = book.add(wallet, source, f"early buyer on {len(hits)} big coins: " + ", ".join(hits[:3]))
             if cand:
                 cand.early_hits = max(cand.early_hits, len(hits))
                 added += 1
@@ -421,7 +426,7 @@ def discover(sources: list, top: int, gem_coins: int, crit: Criteria, log=print,
         "gmgn": lambda: gmgn(top, gmgn_key),
     }
     for source in sources:
-        if source in ("pump-gems", "pump-early"):
+        if source in ("pump-gems", "pump-early", "verified-early"):
             continue
         if source not in boards:
             status[source] = {"ok": False, "error": "unknown source"}
@@ -436,6 +441,22 @@ def discover(sources: list, top: int, gem_coins: int, crit: Criteria, log=print,
         except Exception as exc:
             status[source] = {"ok": False, "error": str(exc)}
             log(f"✘ {source}: {exc}")
+
+    if "verified-early" in sources:
+        try:
+            from . import verified
+            from .pumpfun import bonding_curve
+            gems = verified.recent_gems(verified.load(log), limit=gem_coins)
+            # Pump.fun coins start on their bonding curve, older than any pool Jupiter lists.
+            vcoins = [(m, sym, bonding_curve(m) if t.get("launchpad") == "pump.fun" else t.get("first_pool"))
+                      for m, sym, t in gems if t.get("first_pool") or t.get("launchpad") == "pump.fun"]
+            log(f"… on-chain early-buyer search over {len(vcoins)} verified coin(s) from every launchpad")
+            added = early_search(book, vcoins, crit, early_txs, min_early_hits, log, deadline, "verified-early")
+            status["verified-early"] = {"ok": True, "wallets": added, "coins": len(vcoins)}
+            log(f"✔ verified-early: {added} wallet(s) bought {min_early_hits}+ verified gems early")
+        except Exception as exc:
+            status["verified-early"] = {"ok": False, "error": str(exc)}
+            log(f"✘ verified-early: {exc}")
 
     coins = None
     if "pump-early" in sources:
