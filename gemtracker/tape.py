@@ -12,6 +12,7 @@ import gzip
 import hashlib
 import json
 import time
+import zlib
 from pathlib import Path
 
 from .config import DATA_DIR
@@ -73,6 +74,34 @@ class TapeWriter:
         self._fh = None
 
 
+GZIP_MAGIC = b"\x1f\x8b\x08"
+CHUNK = 1 << 20
+
+
+def _gzip_lines(data: bytes):
+    """Lines of every gzip member in data. A member cut off by a killed writer keeps its whole
+    lines, and reading resumes at the next member (plain gzip stops at the damage)."""
+    view, n, pos = memoryview(data), len(data), 0
+    while pos < n:
+        d, i, carry = zlib.decompressobj(31), pos, b""
+        try:
+            while not d.eof and i < n:
+                chunk = d.decompress(view[i:i + CHUNK])
+                i = min(i + CHUNK, n)
+                lines = (carry + chunk).split(b"\n")
+                carry = lines.pop()
+                yield from lines
+        except zlib.error:
+            pass
+        if d.eof:
+            if carry:
+                yield carry
+            pos = i - len(d.unused_data)
+        else:  # damaged or still being written: drop the partial line, look for the next member
+            nxt = data.find(GZIP_MAGIC, pos + 1)
+            pos = n if nxt < 0 else nxt
+
+
 def read_tape(root: Path = TAPE_DIR, start: str = "", end: str = ""):
     """Yield rows from every hour file in order; start/end are 'YYYYMMDD/HH' bounds."""
     for path in sorted(Path(root).glob("*/*.jsonl.gz")):
@@ -80,14 +109,13 @@ def read_tape(root: Path = TAPE_DIR, start: str = "", end: str = ""):
         if (start and key < start) or (end and key > end):
             continue
         try:
-            with gzip.open(path, "rt", encoding="utf-8") as fh:
-                for line in fh:
-                    if not line.strip():
-                        continue
-                    try:
-                        row = json.loads(line)
-                    except json.JSONDecodeError:  # half-written last line of the live hour
-                        break
-                    yield row
-        except (EOFError, OSError):  # the hour being written right now ends mid-block
+            data = path.read_bytes()
+        except OSError:
             continue
+        for line in _gzip_lines(data):
+            if not line.strip():
+                continue
+            try:
+                yield json.loads(line)
+            except ValueError:  # half-written line, or garbage from a false member start
+                continue

@@ -14,6 +14,7 @@ from .chain_events import PUMP_SUPPLY, WSOL
 
 WINDOW_MS = 600_000       # keep 10 minutes of individual trades per coin
 MAX_HOLDERS = 5_000
+MAX_SOL_RESERVE = 1e15       # lamports (1M SOL): more than any meme pool holds
 
 
 @dataclass
@@ -167,20 +168,25 @@ class Market:
             return st
         if ev.kind != "trade":
             return st
-        st.venue = ev.venue
-        st.quote_mint = getattr(ev, "quote_mint", "") or WSOL
-        if ev.pool:
-            st.pool = ev.pool
+        qm = getattr(ev, "quote_mint", "") or WSOL
+        if qm == WSOL and ev.reserve_quote > MAX_SOL_RESERVE:
+            qm = "?"  # no pool holds that much SOL: quoted in another token (tape from before qm)
+        if self._sets_price(st, ev, qm):
+            st.venue, st.quote_mint = ev.venue, qm
+            if ev.pool:
+                st.pool = ev.pool
+            st.price, st.progress = ev.price, ev.progress
+            st.reserve_quote, st.reserve_base, st.fee_bps = ev.reserve_quote, ev.reserve_base, ev.fee_bps
+            self.venue_fee[ev.venue] = ev.fee_bps
+            if st.mcap > st.ath_mcap:
+                st.ath_mcap, st.ath_rx = st.mcap, rx
+        elif qm != WSOL:
+            return st  # amounts are in another token: not SOL flow either
         if ev.venue == "pumpswap":
             st.migrated = True
         if not st.creator and ev.extra.get("creator"):
             st.creator = ev.extra["creator"]
-        st.price, st.progress = ev.price, ev.progress
-        st.reserve_quote, st.reserve_base, st.fee_bps = ev.reserve_quote, ev.reserve_base, ev.fee_bps
-        self.venue_fee[ev.venue] = ev.fee_bps
         st.last_rx, st.last_ts = rx, ev.ts or st.last_ts
-        if st.mcap > st.ath_mcap:
-            st.ath_mcap, st.ath_rx = st.mcap, rx
         sol = ev.quote / 1e9
         tokens = ev.tokens / 1e6
         buy = ev.side == "buy"
@@ -201,7 +207,7 @@ class Market:
             name = self.elite_names.get(ev.user)
             if name:
                 (st.elite_buys if buy else st.elite_sells).append((rx, name, sol))
-        trade = Trade(rx, ev.side, sol, tokens, ev.user, ev.price)
+        trade = Trade(rx, ev.side, sol, tokens, ev.user, st.price)
         if st.trades and rx < st.trades[-1].rx:  # a late (parked) event: keep rx order
             i = len(st.trades)
             while i and st.trades[i - 1].rx > rx:
@@ -212,6 +218,19 @@ class Market:
         while st.trades and st.trades[0].rx < rx - WINDOW_MS:
             st.trades.popleft()
         return st
+
+    @staticmethod
+    def _sets_price(st, ev, qm: str) -> bool:
+        """Does this trade's pool define the coin's price? A coin can trade in several pools;
+        it is priced from its main SOL pool, and a pool quoted in another token never sets it."""
+        if not st.reserve_quote or st.quote_mint != WSOL:
+            return True  # no SOL price yet
+        if qm != WSOL:
+            return False
+        if not ev.pool or ev.pool == st.pool or ev.venue != st.venue:
+            return True  # the same pool, or a move to a new venue (migration)
+        # another SOL pool takes over only if deeper and at a sane price
+        return ev.reserve_quote > st.reserve_quote and st.price / 3 <= ev.price <= st.price * 3
 
     def prune(self, now_ms: int, keep: set, idle_ms: int = 1_800_000) -> int:
         """Forget coins idle for `idle_ms` unless listed in `keep` (open positions)."""

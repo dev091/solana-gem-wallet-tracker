@@ -63,6 +63,7 @@ def pick_recycle(wins: dict) -> list[str]:
 HTTP_URL = "https://api.mainnet-beta.solana.com"
 PAPER_DIR = DATA_DIR / "paper"
 POOL_CACHE = DATA_DIR / "pool_mints.json"
+POOL_QUOTES = DATA_DIR / "pool_quotes.json"  # PumpSwap pool -> quote mint (some pools are not SOL)
 GT_NEW_POOLS = "https://api.geckoterminal.com/api/v2/networks/solana/new_pools"
 TAPE_MIN_SOL = 1.0    # PumpSwap trades below this on coins launched before the run are not taped
 
@@ -106,7 +107,8 @@ class SeenSet:
 
 
 class PoolResolver(threading.Thread):
-    """Maps PumpSwap pools and LaunchLab pool states to coin mints (getMultipleAccounts)."""
+    """Maps PumpSwap pools and LaunchLab pool states to coin mints (getMultipleAccounts).
+    PumpSwap pools also give their quote mint (stored right after the base mint)."""
 
     def __init__(self, rpc: SolanaRpc, cache: dict):
         super().__init__(daemon=True)
@@ -137,9 +139,10 @@ class PoolResolver(threading.Thread):
 
     def _resolve(self, pools: list, venue: str) -> None:
         off = ce.PUMP_AMM_POOL_BASE_MINT if venue == "pumpswap" else ce.LAUNCHLAB_POOL_BASE_MINT
+        size = 64 if venue == "pumpswap" else 32
         try:
             res = self.rpc.call("getMultipleAccounts", [pools, {
-                "encoding": "base64", "dataSlice": {"offset": off, "length": 32},
+                "encoding": "base64", "dataSlice": {"offset": off, "length": size},
                 "commitment": "confirmed"}]) or {}
         except Exception:
             self.failures += 1
@@ -149,8 +152,9 @@ class PoolResolver(threading.Thread):
         for pool, acc in zip(pools, res.get("value") or []):
             if acc and acc.get("data"):
                 raw = base64.b64decode(acc["data"][0])
-                if len(raw) == 32:
-                    self.done.put((pool, ce.b58encode(raw)))
+                if len(raw) == size:
+                    self.done.put((pool, ce.b58encode(raw[:32]),
+                                   ce.b58encode(raw[32:]) if size == 64 else None))
 
 
 class Runner:
@@ -160,6 +164,7 @@ class Runner:
         self.rpc = SolanaRpc(HTTP_URL)
         self.pool_cache = json.loads(POOL_CACHE.read_text(encoding="utf-8")) if POOL_CACHE.exists() else {}
         self.market.pool_mint.update(self.pool_cache)
+        self.pool_quotes = json.loads(POOL_QUOTES.read_text(encoding="utf-8")) if POOL_QUOTES.exists() else {}
         self.resolver = PoolResolver(self.rpc, self.pool_cache)
         self.parked: dict[str, list] = defaultdict(list)  # pool -> events awaiting its mint
         self.q: asyncio.Queue | None = None
@@ -281,9 +286,20 @@ class Runner:
                     self.stats["parked"] += 1
                     return
             ev.mint = mint
+        if ev.kind == "trade" and ev.venue == "pumpswap" and ev.pool:
+            quote = self.pool_quotes.get(ev.pool)
+            if not quote:  # cached before quotes were kept: price nothing until we know
+                if len(self.parked[ev.pool]) < 50:
+                    self.parked[ev.pool].append((ev, rx))
+                self.resolver.want(ev.pool, ev.venue)
+                self.stats["parked"] += 1
+                return
+            ev.quote_mint = quote
         if ev.kind == "pool" and ev.pool:
             self.market.pool_mint[ev.pool] = ev.mint
             self.pool_cache[ev.pool] = ev.mint
+            if ev.venue == "pumpswap":
+                self.pool_quotes[ev.pool] = ev.quote_mint
         if live:
             self.sim.settle(ev.mint, rx, self.market)
         st = self.market.apply(ev, rx)
@@ -302,9 +318,11 @@ class Runner:
 
     def drain_threads(self) -> None:
         while not self.resolver.done.empty():
-            pool, mint = self.resolver.done.get()
+            pool, mint, quote = self.resolver.done.get()
             self.market.pool_mint[pool] = mint
             self.pool_cache[pool] = mint
+            if quote:
+                self.pool_quotes[pool] = quote
             for ev, rx in sorted(self.parked.pop(pool, []), key=lambda x: x[1]):
                 ev.mint = mint
                 self.handle_event(ev, rx, live=False)  # late: market state only, no decisions
@@ -334,7 +352,12 @@ class Runner:
     async def clock(self, hours: float) -> None:
         last_status = last_summary = time.time()
         end = time.time() + hours * 3600 if hours else None
+        stop = self.run_dir / "STOP"  # touch to stop cleanly; killing the process cuts the tape member
         while end is None or time.time() < end:
+            if stop.exists():
+                stop.unlink(missing_ok=True)
+                print("STOP file: shutting down", flush=True)
+                return
             before = time.perf_counter()
             await asyncio.sleep(1)
             t = now_ms()
@@ -373,6 +396,7 @@ class Runner:
         self.wins.clear()
         POOL_CACHE.parent.mkdir(parents=True, exist_ok=True)
         POOL_CACHE.write_text(json.dumps(self.pool_cache), encoding="utf-8")
+        POOL_QUOTES.write_text(json.dumps(self.pool_quotes), encoding="utf-8")
         status = {"t": t, "uptime_min": round((t - self.started) / 60000, 1),
                   "queue": self.q.qsize(), "tokens": len(self.market.tokens),
                   "pools_known": len(self.market.pool_mint), "parked": sum(map(len, self.parked.values())),

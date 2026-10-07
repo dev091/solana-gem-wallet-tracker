@@ -9,7 +9,7 @@ import unittest
 from pathlib import Path
 
 from gemtracker import chain_events as ce
-from gemtracker.live import pick_recycle
+from gemtracker.live import PoolResolver, pick_recycle
 from gemtracker.market import Market
 from gemtracker.papersim import PaperSim, SimConfig, buy_out, sell_out
 from gemtracker.replay import replay, row_to_event
@@ -137,6 +137,38 @@ class MarketTest(unittest.TestCase):
         w = m.get("M").window(11_000, 5, exclude=frozenset({"decu"}))
         self.assertEqual((w["buys"], w["unique_buyers"], w["buy_sol"]), (1, 1, 1.0))
         self.assertEqual(m.get("M").window(11_000, 5)["buys"], 2)  # the cache keeps them apart
+
+    def test_coin_is_priced_from_its_main_sol_pool(self):
+        def pooled(pool, rq, rb, qm=ce.WSOL, user="x"):
+            ev = trade_ev(rq=rq, rb=rb, venue="pumpswap", user=user)
+            ev.pool, ev.quote_mint = pool, qm
+            return ev
+        m = Market()
+        m.apply(pooled("main", 100e9, 500e12), 1_000)
+        price = m.get("M").price
+        # a pool quoted in another token never sets the SOL price
+        m.apply(pooled("other", 5e16, 1.4e10, qm="OtherToken111"), 2_000)
+        # a pool logged with no quote mint but impossible SOL reserves (old tape): same
+        m.apply(pooled("other", 5e16, 1.4e10), 3_000)
+        # a shallower SOL pool counts as flow but does not move the price
+        m.apply(pooled("small", 1e9, 1e12, user="y"), 4_000)
+        st = m.get("M")
+        self.assertEqual((st.price, st.pool, st.quote_mint), (price, "main", ce.WSOL))
+        self.assertEqual(st.n_buys, 2)
+        self.assertAlmostEqual(st.trades[-1].price, price)
+        # a deeper SOL pool at a sane price takes over
+        m.apply(pooled("deep", 300e9, 1500e12), 5_000)
+        self.assertEqual(m.get("M").pool, "deep")
+
+    def test_a_sol_pool_replaces_a_foreign_quote(self):
+        ev = trade_ev(venue="pumpswap")
+        ev.pool, ev.quote_mint = "other", "OtherToken111"
+        m = Market()
+        m.apply(ev, 1_000)
+        ev2 = trade_ev(venue="pumpswap")
+        ev2.pool = "main"
+        m.apply(ev2, 2_000)
+        self.assertEqual((m.get("M").pool, m.get("M").quote_mint), ("main", ce.WSOL))
 
     def test_holder_stats_follow_new_trades(self):
         m = Market()
@@ -291,6 +323,32 @@ class TapeTest(unittest.TestCase):
             with gzip.open(Path(d) / "20261007" / "18.jsonl.gz", "wt", encoding="utf-8") as fh:
                 fh.write('{"a": 1}\n{"a": 2}\n{"a": ')
             self.assertEqual(list(read_tape(Path(d))), [{"a": 1}, {"a": 2}])
+
+    def test_rows_after_a_cut_off_gzip_member_are_kept(self):
+        whole = gzip.compress(b'{"a": 1}\n{"a": 2}\n' + b''.join(b'{"x": %d}\n' % i for i in range(5000)))
+        cut = whole[: len(whole) // 2]  # writer killed mid-member
+        tail = gzip.compress(b'{"a": 3}\n') + gzip.compress(b'{"a": 4}\n{"a": ')[:-8]  # no trailer yet
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "20261007").mkdir()
+            (Path(d) / "20261007" / "18.jsonl.gz").write_bytes(cut + tail)
+            rows = [r for r in read_tape(Path(d)) if "a" in r]
+        self.assertEqual(rows, [{"a": 1}, {"a": 2}, {"a": 3}, {"a": 4}])
+
+
+class ResolverTest(unittest.TestCase):
+    def test_pumpswap_pool_gives_base_and_quote_mint(self):
+        base, quote = bytes(range(32)), bytes(range(32, 64))
+        asked = []
+
+        class Rpc:
+            def call(self, method, params):
+                asked.append(params[1]["dataSlice"])
+                return {"value": [{"data": [base64.b64encode(base + quote).decode(), "base64"]}]}
+
+        r = PoolResolver(Rpc(), {})
+        r._resolve(["P"], "pumpswap")
+        self.assertEqual(r.done.get_nowait(), ("P", ce.b58encode(base), ce.b58encode(quote)))
+        self.assertEqual(asked, [{"offset": ce.PUMP_AMM_POOL_BASE_MINT, "length": 64}])
 
 
 class RecycleTest(unittest.TestCase):
