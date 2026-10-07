@@ -10,6 +10,11 @@ Gem search (the most direct way to find repeat gem hunters):
   pump-gems  - take Pump.fun's biggest coins (+ wallets/gem_tokens.txt), list each coin's
                traders who put in $100-$500 and took out $100k+, rank wallets by how many
                coins they did that on (needs SOLANATRACKER_API_KEY or GMGN_API_KEY)
+  pump-early - no key: read each of those coins' bonding curve on-chain and list who bought
+               in the first trades with a $100-$500 entry; wallets that did it on 2+ coins
+Fomo without a key:
+  fomo-top50 - snapshot of the Fomo app's top-50 profit leaderboard with Solana wallets
+               (wallets/fomo_top50.json); both the main and the in-app Fomo wallet are checked
 Manual:
   seeds      - wallets/seeds.txt (paste addresses from the Fomo app, Pump.fun, X, anywhere)
 """
@@ -23,7 +28,8 @@ from dataclasses import asdict, dataclass, field
 from . import config, net, util
 from .config import Criteria
 
-ALL_SOURCES = ["seeds", "kolscan", "fomo", "st-kols", "st-top", "gmgn", "pump-gems"]
+ALL_SOURCES = ["seeds", "fomo-top50", "kolscan", "pump-early", "fomo", "st-kols", "st-top", "gmgn",
+               "pump-gems"]
 # Labels on traders that are infrastructure, not people picking coins.
 NOT_A_TRADER = {"bot", "pool", "exchange", "sandwich_bot", "dex_bot", "bundler"}
 
@@ -37,7 +43,8 @@ class Candidate:
     wallet: str
     labels: list = field(default_factory=list)
     sources: list = field(default_factory=list)
-    gem_hits: int = 0  # coins (from gem search) where this wallet did $100-500 -> $100k+
+    gem_hits: int = 0    # coins (from gem search) where this wallet did $100-500 -> $100k+
+    early_hits: int = 0  # big Pump.fun coins this wallet bought early with a $100-500 entry
 
 
 class CandidateBook:
@@ -58,7 +65,7 @@ class CandidateBook:
         """Gem-search hits first, then hand-picked seeds, then wallets on several boards."""
         order = list(self.by_wallet.values())
         index = {c.wallet: i for i, c in enumerate(order)}
-        return sorted(order, key=lambda c: (-c.gem_hits, "seeds" not in c.sources,
+        return sorted(order, key=lambda c: (-c.gem_hits, -c.early_hits, "seeds" not in c.sources,
                                             -len(c.sources), index[c.wallet]))
 
     def to_list(self) -> list:
@@ -71,7 +78,8 @@ class CandidateBook:
             if util.is_address(row.get("wallet")):
                 book.by_wallet[row["wallet"]] = Candidate(row["wallet"], list(row.get("labels") or []),
                                                           list(row.get("sources") or []),
-                                                          int(row.get("gem_hits") or 0))
+                                                          int(row.get("gem_hits") or 0),
+                                                          int(row.get("early_hits") or 0))
         return book
 
 
@@ -79,6 +87,23 @@ class CandidateBook:
 
 def seeds() -> list:
     return [(w, label or "seed") for w, label in util.read_wallet_list(config.SEEDS_FILE)]
+
+
+def fomo_top50(top: int = 50) -> list:
+    """Fomo app top-50 profit leaderboard snapshot: main wallet + in-app Fomo wallet per trader."""
+    data = util.load_json(config.FOMO_TOP50_FILE, {})
+    rows = sorted(data.get("wallets") or [], key=lambda r: r.get("rank") or 999)
+    if not rows:
+        raise SourceError(f"{config.FOMO_TOP50_FILE.name} missing or empty")
+    out = []
+    for row in rows[:top]:
+        who = (f"Fomo top-50 #{row.get('rank')} @{row.get('handle')} "
+               f"({util.usd(row.get('pnl_usd'))} PnL, {row.get('trades')} trades)")
+        if util.is_address(row.get("solana")):
+            out.append((row["solana"], who))
+        if util.is_address(row.get("fomo_solana")):
+            out.append((row["fomo_solana"], who + " · in-app wallet"))
+    return out
 
 
 def kolscan(top: int) -> list:
@@ -282,15 +307,58 @@ def gem_search(book: CandidateBook, coins: list, crit: Criteria, st_key: str, gm
     return added
 
 
+def early_search(book: CandidateBook, coins: list, crit: Criteria, early_txs: int, min_hits: int,
+                 log=print) -> int:
+    """No-key gem search: early $100-$500 buyers of big Pump.fun coins, read from the chain."""
+    from .pumpfun import early_buyers
+    from .prices import SolPrice
+    from .solana import SolanaRpc
+    rpc, sol = SolanaRpc(config.rpc_url()), SolPrice()
+    seen: dict = {}
+    for i, (mint, symbol) in enumerate(coins, 1):
+        name = symbol or util.short(mint)
+        try:
+            buyers, note = early_buyers(rpc, mint, sol.at, crit, early_txs=early_txs)
+        except Exception as exc:
+            log(f"   [{i}/{len(coins)}] {name}: failed ({exc})")
+            continue
+        log(f"   [{i}/{len(coins)}] {name}: {note}")
+        for wallet, paid, _ts in buyers:
+            seen.setdefault(wallet, []).append(f"{name} early {util.usd(paid)}")
+    added = 0
+    for wallet, hits in seen.items():
+        if len(hits) >= min_hits:
+            cand = book.add(wallet, "pump-early", f"early buyer on {len(hits)} big coins: " + ", ".join(hits[:3]))
+            if cand:
+                cand.early_hits = max(cand.early_hits, len(hits))
+                added += 1
+    return added
+
+
+def gem_coins_list(gem_coins: int, log=print) -> list:
+    coins = [(mint, label) for mint, label in util.read_wallet_list(config.GEM_TOKENS_FILE)]
+    if gem_coins > 0:
+        try:
+            coins += pumpfun_top_coins(gem_coins)
+        except Exception as exc:
+            log(f"   pump.fun top coins unavailable ({exc}); using wallets/gem_tokens.txt only")
+    coins = list(dict(coins).items())  # de-duplicate, keep order
+    if not coins:
+        raise SourceError("no coins to search (pump.fun unreachable and wallets/gem_tokens.txt empty)")
+    return coins
+
+
 # ---------------------------------------------------------------- all together
 
-def discover(sources: list, top: int, gem_coins: int, crit: Criteria, log=print):
+def discover(sources: list, top: int, gem_coins: int, crit: Criteria, log=print,
+             early_txs: int = 250, min_early_hits: int = 2):
     """Collect candidates from every requested source. Returns (book, status per source)."""
     st_key, gmgn_key, fomo_key = (config.env("SOLANATRACKER_API_KEY"), config.env("GMGN_API_KEY"),
                                   config.env("FOMOAPI_KEY"))
     book, status = CandidateBook(), {}
     boards = {
         "seeds": lambda: seeds(),
+        "fomo-top50": lambda: fomo_top50(),
         "kolscan": lambda: kolscan(top),
         "fomo": lambda: fomo(top, fomo_key),
         "st-kols": lambda: solanatracker_kols(top, st_key),
@@ -298,7 +366,7 @@ def discover(sources: list, top: int, gem_coins: int, crit: Criteria, log=print)
         "gmgn": lambda: gmgn(top, gmgn_key),
     }
     for source in sources:
-        if source == "pump-gems":
+        if source in ("pump-gems", "pump-early"):
             continue
         if source not in boards:
             status[source] = {"ok": False, "error": "unknown source"}
@@ -312,20 +380,24 @@ def discover(sources: list, top: int, gem_coins: int, crit: Criteria, log=print)
             status[source] = {"ok": False, "error": str(exc)}
             log(f"✘ {source}: {exc}")
 
+    coins = None
+    if "pump-early" in sources:
+        try:
+            coins = gem_coins_list(gem_coins, log)
+            log(f"… on-chain early-buyer search over {len(coins)} coin(s) (no key needed)")
+            added = early_search(book, coins, crit, early_txs, min_early_hits, log)
+            status["pump-early"] = {"ok": True, "wallets": added, "coins": len(coins)}
+            log(f"✔ pump-early: {added} wallet(s) bought {min_early_hits}+ big coins early")
+        except Exception as exc:
+            status["pump-early"] = {"ok": False, "error": str(exc)}
+            log(f"✘ pump-early: {exc}")
+
     if "pump-gems" in sources:
         try:
             if not st_key and not gmgn_key:
                 raise SourceError("gem search needs SOLANATRACKER_API_KEY or GMGN_API_KEY "
                                   "(to see who made money on each coin)")
-            coins = [(mint, label) for mint, label in util.read_wallet_list(config.GEM_TOKENS_FILE)]
-            if gem_coins > 0:
-                try:
-                    coins += pumpfun_top_coins(gem_coins)
-                except Exception as exc:
-                    log(f"   pump.fun top coins unavailable ({exc}); using wallets/gem_tokens.txt only")
-            coins = list(dict(coins).items())  # de-duplicate, keep order
-            if not coins:
-                raise SourceError("no coins to search (pump.fun unreachable and wallets/gem_tokens.txt empty)")
+            coins = coins or gem_coins_list(gem_coins, log)
             log(f"… gem search over {len(coins)} coin(s)")
             added = gem_search(book, coins, crit, st_key, gmgn_key, log)
             status["pump-gems"] = {"ok": True, "wallets": added, "coins": len(coins)}

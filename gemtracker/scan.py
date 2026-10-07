@@ -17,6 +17,7 @@ def wallet_result(cand, report, verdict: Verdict) -> dict:
         "labels": list(cand.labels),
         "sources": list(cand.sources),
         "gem_hits_in_search": cand.gem_hits,
+        "early_hits_in_search": cand.early_hits,
         "stats": verdict.stats,
         "reasons": verdict.reasons,
         "flags": verdict.flags,

@@ -44,7 +44,11 @@ class RpcProvider:
         positions = build_positions(history.deltas, self.sol.at)
         traded = [p.mint for p in positions if p.cost_usd > 0 or p.balance > 0]
         apply_quotes(positions, token_quotes(traded, log=self.log))
-        return WalletReport(wallet, positions, tx_count=history.tx_count, source=history.source)
+        notes = []
+        via_fomo = sum(1 for d in history.deltas if d.fee_payer == config.FOMO_SIGNER and d.tokens)
+        if via_fomo:
+            notes.append(f"{via_fomo} trade(s) placed through the Fomo app")
+        return WalletReport(wallet, positions, tx_count=history.tx_count, source=history.source, notes=notes)
 
 
 def position_from_solanatracker(row: dict) -> Position:

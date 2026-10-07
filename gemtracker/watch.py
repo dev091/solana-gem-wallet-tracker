@@ -67,6 +67,7 @@ class Watcher:
                         "ts": ev.ts or util.now(), "wallet": wallet, "label": info.get("label") or "",
                         "tier": info.get("tier") or "", "gems": info.get("gems") or 0,
                         "side": ev.kind, "mint": ev.mint, "tokens": ev.amount,
+                        "via_fomo": delta.fee_payer == config.FOMO_SIGNER,
                         "usd": round(ev.usd, 2), "sol": round(ev.usd / sol_price, 4) if sol_price else None,
                         "signature": ev.signature,
                     })
@@ -144,8 +145,9 @@ def trade_alert(e: dict) -> list:
         market.append(f"Liq {util.usd(e['liquidity'])}")
     who = " · ".join(x for x in (e.get("tier"), f"{e['gems']} gems" if e.get("gems") else "",
                                  e.get("label")) if x)
+    via = " via Fomo app" if e.get("via_fomo") else ""
     return [
-        (f"{side} {e['symbol']} — {util.usd(e['usd'])}{sol}", None),
+        (f"{side} {e['symbol']} — {util.usd(e['usd'])}{sol}{via}", None),
         (f"Wallet {util.short(e['wallet'])} ({who})", f"https://gmgn.ai/sol/address/{e['wallet']}"),
         (" · ".join(market) or "no market data yet", None),
         ("Chart (DexScreener)", f"https://dexscreener.com/solana/{e['mint']}"),

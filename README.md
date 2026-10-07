@@ -25,15 +25,19 @@ $100–$500 लगाकर $100k+ बनाते हैं** — और कभ
 
 | Source | क्या है | Key |
 |---|---|---|
+| `fomo-top50` | Fomo app के top-50 profit leaderboard का snapshot (9 Aug 2026) — हर trader का main wallet और Fomo in-app wallet, दोनों check होते हैं (`wallets/fomo_top50.json`) | नहीं |
 | `kolscan` | Kolscan leaderboard — Pump.fun ने Kolscan ख़रीदा है, यही उसका traders leaderboard है | नहीं |
-| `fomo` | Fomo app leaderboard (24h / 7d / 30d), unofficial [fomoapi.io](https://fomoapi.io) से | `FOMOAPI_KEY` |
+| `pump-early` | **On-chain gem search** — Pump.fun के सबसे बड़े coins का bonding curve सीधे blockchain से पढ़कर, शुरुआती trades में $100–$500 लगाने वाले wallets; जो 2+ बड़े coins में जल्दी घुसे | नहीं |
+| `fomo` | Fomo app leaderboard live (24h / 7d / 30d), unofficial [fomoapi.io](https://fomoapi.io) से | `FOMOAPI_KEY` |
 | `st-kols`, `st-top` | Solana Tracker KOL leaderboard + सबसे ज़्यादा ROI वाले traders (4+ closed coins) | `SOLANATRACKER_API_KEY` |
 | `gmgn` | GMGN smart-money + KOL wallets | `GMGN_API_KEY` |
 | `pump-gems` | **Gem search** — Pump.fun के सबसे बड़े coins (+ `wallets/gem_tokens.txt`) में किसने $100–$500 लगाकर $100k+ निकाला, और कितने coins पर। यह सबसे सीधा तरीका है | Solana Tracker या GMGN key |
 | `seeds` | `wallets/seeds.txt` — Fomo app, Pump.fun, X, कहीं से भी address ख़ुद paste करो | नहीं |
 
 फिर हर candidate का **हर trade** check होता है: on-chain transactions से ख़ुद हिसाब (Solana RPC),
-या Solana Tracker की PnL API से (key हो तो, बहुत तेज़)।
+या Solana Tracker की PnL API से (key हो तो, बहुत तेज़)। Fomo app हर trade एक ही wallet
+(`AgmLJBMD…zN51`) से sign करवाता है, इसलिए tool बताता है कि किसी wallet के कितने trades Fomo app से हुए।
+**बिना किसी key के भी** `fomo-top50`, `kolscan`, `pump-early` और `seeds` चलते हैं।
 
 ## GitHub पर चलाना (कुछ install नहीं करना)
 

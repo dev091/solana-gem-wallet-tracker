@@ -1,0 +1,512 @@
+{
+ "source": "FOMO app profit leaderboard, top 50 (snapshot)",
+ "collected_at": "2026-08-09",
+ "via": "npm package fomo-smart-money 1.0.0 by lianqiujun (0xcii), MIT License; handles mapped to addresses with Arkham 'fomo-user' labels",
+ "fields": {
+  "solana": "main Solana wallet linked to the trader",
+  "fomo_solana": "the trader's in-app Fomo wallet"
+ },
+ "note": "Third-party snapshot: unverified until the scanner checks each wallet on-chain.",
+ "wallets": [
+  {
+   "rank": 1,
+   "handle": "change",
+   "name": "change",
+   "pnl_usd": 1939742.33,
+   "volume_usd": 17419994.3,
+   "trades": 486,
+   "solana": "J9WiAZKf8JnCkHFL8fLCCXdEgdoLjLRqU2EGsDjdqYga",
+   "fomo_solana": "5ECuREzbvnxfrmo9cnvrcfKLgMJ7zd2ZP1C3XbPKbHhd"
+  },
+  {
+   "rank": 2,
+   "handle": "frankdegods",
+   "name": "frank",
+   "pnl_usd": 1209143.2,
+   "volume_usd": 32092388.3,
+   "trades": 1849,
+   "solana": "498g1rVnFcnjBjpfw1xyqA1WvgQXUU8RWuELjxkjAayQ",
+   "fomo_solana": "A5SEXYJY4jTEi6sjMLfZs5KAP8SVFvLDPDV67GgSSZSk"
+  },
+  {
+   "rank": 3,
+   "handle": "_logjam",
+   "name": "logjam",
+   "pnl_usd": 1059717.43,
+   "volume_usd": 2481484.91,
+   "trades": 587,
+   "solana": "5fkAwNVpT8A1UHEnY62VEFpqgagdoP8FYrv5ideiQp5c",
+   "fomo_solana": "ExxadAeGwmrfS3NnHxEqWX3qmVTFNXhk7DmSScUpp1t3"
+  },
+  {
+   "rank": 4,
+   "handle": "XVentures",
+   "name": "X Ventures",
+   "pnl_usd": 409222.59,
+   "volume_usd": 497174.77,
+   "trades": 18,
+   "solana": "DrxBsUd3ufx9Q8kc8Zts1SAavMccrAJcwrFzLf77d9o1",
+   "fomo_solana": "DNnsNPYz1zj8hhc7amqGz3nKqRufurUEv7j4aYXB5zWH"
+  },
+  {
+   "rank": 5,
+   "handle": "lesabre",
+   "name": "lesabre",
+   "pnl_usd": 407961.69,
+   "volume_usd": 7505968.54,
+   "trades": 651,
+   "solana": "BJVdVGjEGiGeC96iKWhBHTQP6Qdm4ADVVSPMzHa62ZvG",
+   "fomo_solana": "H3jGitWGsrMnuvsQcCJoDfS6spJGS4AKguagaa6EnfQX"
+  },
+  {
+   "rank": 6,
+   "handle": "ResellCalendar",
+   "name": "RC",
+   "pnl_usd": 335094.13,
+   "volume_usd": 7417081.54,
+   "trades": 2016,
+   "solana": "DxM1hfY8FQ8dNGrucuJzhJcF8KRbjk8WBwrgKvQ9spPv",
+   "fomo_solana": "7TAMgUTRR2J8iUpPVuevFRFq8oX1kmhKTx4Y4BUNF9Eb"
+  },
+  {
+   "rank": 7,
+   "handle": "airtightfish",
+   "name": "Squid",
+   "pnl_usd": 305635.52,
+   "volume_usd": 3126048.7,
+   "trades": 216,
+   "solana": "F1a7cR49s7VsKz8XGanFBfsbNE2M91hgKkkDhDjv44w6",
+   "fomo_solana": "CQS9RZZvrBLC5uX5NhxwYEu7wvLtBpojvHbDgGFDu4bY"
+  },
+  {
+   "rank": 8,
+   "handle": "collectible",
+   "name": "Collectible",
+   "pnl_usd": 295723.65,
+   "volume_usd": 3966801.99,
+   "trades": 948,
+   "solana": "F2hA2zDVnHyDUiMQ6b3K9Gx9A2JAxJn66ASH9xZ9LqbG",
+   "fomo_solana": "3YECsvhnPBRJtWcPZgTQkczufpXdcAuHgZEDmH8vyRyS"
+  },
+  {
+   "rank": 9,
+   "handle": "ThePrimeGreek",
+   "name": "TheGreek",
+   "pnl_usd": 283036.13,
+   "volume_usd": 5334136.92,
+   "trades": 514,
+   "solana": "5Vx9yHpQrNDoM3YPPYAbGHtHThQaYb713QuzP5oonLmd",
+   "fomo_solana": "G2wabvFiiUBEAV4rxt5anZXhrTam2pet6Rok22Sm6TYF"
+  },
+  {
+   "rank": 10,
+   "handle": "smol_intern",
+   "name": "ₛₘₒₗ intern 💡",
+   "pnl_usd": 280170.94,
+   "volume_usd": 3558571.21,
+   "trades": 651,
+   "solana": "mDR91ufq4S2uSHa9E2PYL7xg4LwcQXaQFP7YK864a1z",
+   "fomo_solana": "CJDjRAjigb3UdsjxaV7AiMchhJV6qAcc3SjrSLFyytE3"
+  },
+  {
+   "rank": 11,
+   "handle": "WaterySimpleBobolink",
+   "name": "ipsoFomo",
+   "pnl_usd": 275617.37,
+   "volume_usd": 86697.81,
+   "trades": 77,
+   "solana": null,
+   "fomo_solana": "BXNGvVv4g8XrQCgskm4J18UBMxxT9Dyo38gjFZhWESTU"
+  },
+  {
+   "rank": 12,
+   "handle": "remusofmars",
+   "name": "remus (rtrd/acc)",
+   "pnl_usd": 267925.31,
+   "volume_usd": 3576564.24,
+   "trades": 1399,
+   "solana": "BCrTEXmWutwPz8qv6w1S5gDbaLnSLpXKM5kSGVWyyfxu",
+   "fomo_solana": "4WhFtDKcJGLoLAYbQm7iByw5h2sNQTTZF99v4y21T28L"
+  },
+  {
+   "rank": 13,
+   "handle": "Thokani",
+   "name": "Thokani 🕊️",
+   "pnl_usd": 262846.97,
+   "volume_usd": 12604196.4,
+   "trades": 1980,
+   "solana": "CDL22EuTKoWeXpiStMWu9pLqLNSn5NkMG3nKoz1YRVUf",
+   "fomo_solana": "CqKkAfaWHuMnszqBLcpN64VoifsEYQFFjjhj2PHnaG7d"
+  },
+  {
+   "rank": 14,
+   "handle": "BreakingBad",
+   "name": "heisenberg",
+   "pnl_usd": 225450.05,
+   "volume_usd": 8450528.61,
+   "trades": 605,
+   "solana": "4WH9bN3VDzUa4kHAXxMCUvsqdpprvYXP3DejZdunTCKw",
+   "fomo_solana": "B4xaT8adLqGgRE2Tm6WpNPme3dJFapckgmufADMa1Exg"
+  },
+  {
+   "rank": 15,
+   "handle": "game_for_one",
+   "name": "game",
+   "pnl_usd": 216854.12,
+   "volume_usd": 2488491.66,
+   "trades": 542,
+   "solana": "ENkZtLj1onzQRGnEeRkQfFzBeeY2dCeiQMXDzh8XbQbj",
+   "fomo_solana": "DATMkmVrFbZt7isGoxyDSpAuF9vJycpkDKwhbf978eUw"
+  },
+  {
+   "rank": 16,
+   "handle": "Notepad_H",
+   "name": "Notepad",
+   "pnl_usd": 212012.88,
+   "volume_usd": 10721058.51,
+   "trades": 238,
+   "solana": "FY919jJnaRo55UZ3H9cnm1xKi9pyEG2m2oSakBifx5PN",
+   "fomo_solana": "2rTpGAwaZ5o5UvKT4En4L2Q56JsuNBk5GWGhV3upW8q4"
+  },
+  {
+   "rank": 17,
+   "handle": "surveillor",
+   "name": "surveillor",
+   "pnl_usd": 210884.82,
+   "volume_usd": 2243588.03,
+   "trades": 313,
+   "solana": "G2vhbPCG5jAbBjFCJnLBbGJco93r3iw1WuvmL8csvJMD",
+   "fomo_solana": "87LAffDgoMt6z48jk4ziPj1TSzULxcrannvuP18Y89mo"
+  },
+  {
+   "rank": 18,
+   "handle": "thebtcgoose",
+   "name": "BTC Goose",
+   "pnl_usd": 201326.69,
+   "volume_usd": 16866528.22,
+   "trades": 692,
+   "solana": "6bxz5E93NJBXqubkT72nLzkkz9j2PMBbfPKi6qxGYXdW",
+   "fomo_solana": "8MrpW1p1qwszV5KnAAdGdcXZvH9yibXz5jEGREdPiVyT"
+  },
+  {
+   "rank": 19,
+   "handle": "jeetergriffin",
+   "name": "jeetergriffin (hodlr arc)",
+   "pnl_usd": 192852.82,
+   "volume_usd": 1824777.58,
+   "trades": 358,
+   "solana": "Cf7qEdZzJg7uC4B3wV93UaabRXkaFrtdVjsiDTJhetNf",
+   "fomo_solana": "ApPou4mC9jDrsidNRfgvQ5pLyVP2eQQhzvZdb8voKwHz"
+  },
+  {
+   "rank": 20,
+   "handle": "nfd",
+   "name": "nfd",
+   "pnl_usd": 190834.5,
+   "volume_usd": 362840.03,
+   "trades": 197,
+   "solana": "BvoCFJSmrUKn37nYiEMW6CJxb9ogPRmS4fqVbuhinWQq",
+   "fomo_solana": "6v9F7uyrpUFFAAbbFFgAkRPMv3UbakxvTWMaRvHsqdKk"
+  },
+  {
+   "rank": 21,
+   "handle": "GuavaGuy2001",
+   "name": "Guava Guy 🎀",
+   "pnl_usd": 188799.79,
+   "volume_usd": 532076.42,
+   "trades": 85,
+   "solana": "C481ZKiw4TZGs4EjNkhm6TB7s17swzmqAmCcNm73vGnW",
+   "fomo_solana": "Exk5RKp92du872nSU88frnnDprf8Efz9BPVdAfZvUxdy"
+  },
+  {
+   "rank": 22,
+   "handle": "fibs",
+   "name": "fibs",
+   "pnl_usd": 171041.44,
+   "volume_usd": 2029346.76,
+   "trades": 681,
+   "solana": "FhsbQzAJWVDNwaH61cTo6XkkfEsmSYMZKs9VJHH32bVG",
+   "fomo_solana": "GJcMxxQf27cYv2KLA26H6VTZdPfrneZ2HmvCdvMxxZfi"
+  },
+  {
+   "rank": 23,
+   "handle": "C1phervoyager",
+   "name": "cipher",
+   "pnl_usd": 170671.04,
+   "volume_usd": 2918433.46,
+   "trades": 1123,
+   "solana": "AABkfEfGRJQ1bVYC6J62BuND3vMVAQr5kCiZzUV4bY9R",
+   "fomo_solana": "EmFaYsznEzQ1awoTyNxU9bi7wH9z2Xp2ufTRdY8pbYYQ"
+  },
+  {
+   "rank": 24,
+   "handle": "quakerrz",
+   "name": "quaker",
+   "pnl_usd": 169971.79,
+   "volume_usd": 1174563.44,
+   "trades": 194,
+   "solana": "8tphd2joV1ssioBwjExKdvP2mXPKX4GD4nks6RPM3gVD",
+   "fomo_solana": "BncpJ3BZFqLLYp84QrzJykrLYQhDmx77vzWbv9asccnR"
+  },
+  {
+   "rank": 25,
+   "handle": "nosanityxbt",
+   "name": "nosanity",
+   "pnl_usd": 156926.68,
+   "volume_usd": 25801875.13,
+   "trades": 3025,
+   "solana": "EMeBywiv1H4V6fPjgWo78VRxZCrPtDAyf4nvF71LJvvp",
+   "fomo_solana": "BaserSFmRTAh24rMb6vxcwYHwXc4pQkspY12fkSuXVTA"
+  },
+  {
+   "rank": 26,
+   "handle": "notwashed",
+   "name": "washed",
+   "pnl_usd": 154679.99,
+   "volume_usd": 3848901.12,
+   "trades": 288,
+   "solana": "HpFQLQcHuH4roUx8jEAJNUUPAJwqUAZVodGMvdSrW3Y1",
+   "fomo_solana": "6H8A751gYi8TCrHTGCyEvGeW66ymhCzir2ATuutQFsK8"
+  },
+  {
+   "rank": 27,
+   "handle": "AvgJoesCrypto",
+   "name": "AJC",
+   "pnl_usd": 154040.54,
+   "volume_usd": 825906.49,
+   "trades": 191,
+   "solana": "H2QSGECp13sFLJgdTsDtayX3dk18Dm6sQMSQKcew7Xzk",
+   "fomo_solana": "5zVedvk9ffJKwaoueQWKEAAAa1nutXKhaqmFxzwmvVkW"
+  },
+  {
+   "rank": 28,
+   "handle": "OinkersRUs",
+   "name": "Oinker",
+   "pnl_usd": 152761.8,
+   "volume_usd": 1272496.39,
+   "trades": 740,
+   "solana": "DPAN2Vig8BokpQCCu4mtV1mTWYLS7ktKe1hHKVBcsayL",
+   "fomo_solana": "6pVvYMQgSUETvtUc4mBFZPxKW43k7R46jszFidbCKmWP"
+  },
+  {
+   "rank": 29,
+   "handle": "pxblocito",
+   "name": "pablo",
+   "pnl_usd": 145031.32,
+   "volume_usd": 217443.39,
+   "trades": 245,
+   "solana": "A2vZY74JHBBwfjo3F1Bo5iiLXpABfAhmgdyfUGzABY9F",
+   "fomo_solana": "4adD9hwgveKsfM4zHgLkEBbuPHAZetJDoigzZ6XSi8tk"
+  },
+  {
+   "rank": 30,
+   "handle": "atom_xyz",
+   "name": "atom",
+   "pnl_usd": 144748.25,
+   "volume_usd": 9110057.0,
+   "trades": 560,
+   "solana": "6PHHrdzSesr3FM9EuP2q9p2tDrCFyGHM3LZLbdpGthGa",
+   "fomo_solana": "8TxELMcavVS8rpL8YutRDeuFyjNq7Z73RjuMC3nrY1b5"
+  },
+  {
+   "rank": 31,
+   "handle": "llonchain",
+   "name": "Leo 🕊️",
+   "pnl_usd": 144423.65,
+   "volume_usd": 5861257.28,
+   "trades": 1379,
+   "solana": "E1ba6cLZx5WftsJiXiEjpGTozort94GvFDy7MzL9Ns6j",
+   "fomo_solana": "3ycQs8LWVVB4DeDe26qbaifECNVefMhQKuqMv4h97L2a"
+  },
+  {
+   "rank": 32,
+   "handle": "wrld_sol",
+   "name": "wrld",
+   "pnl_usd": 142192.47,
+   "volume_usd": 300026.88,
+   "trades": 163,
+   "solana": "6bQSN4d6anoTwnE6XDPGLA9RV8cqZPeNJro4iQUsWmso",
+   "fomo_solana": "L1ZbujFMUoWLnA6zLzsRy2gdaNw4JEZMda4epGBBBVt"
+  },
+  {
+   "rank": 33,
+   "handle": "Greed",
+   "name": "‎ ‎ ‎",
+   "pnl_usd": 141756.7,
+   "volume_usd": 963334.83,
+   "trades": 218,
+   "solana": "CEKh3LFALbngujZkoxb7DcND1K9xL7sPzs78ArKJNimn",
+   "fomo_solana": "9KD1LxEXnJn4HyXZ57KdBxBzYvvRKkMXgarptz3cBzhg"
+  },
+  {
+   "rank": 34,
+   "handle": "letsdance",
+   "name": "letsdance",
+   "pnl_usd": 141004.33,
+   "volume_usd": 410060.49,
+   "trades": 273,
+   "solana": "AhEpzb56KhW5EUbYKdV6A4MAC6hu6mptX6haRXkpeuNV",
+   "fomo_solana": "G94HLn9SuvSjyW3KEWfPJZQFCy33J59FGDASgFDVjRjV"
+  },
+  {
+   "rank": 35,
+   "handle": "Roveryaps",
+   "name": "Rova",
+   "pnl_usd": 137523.56,
+   "volume_usd": 987390.18,
+   "trades": 643,
+   "solana": null,
+   "fomo_solana": "6XkGZFbSusrc7uUEQFTpbkjLpzQ5Q1JovPaZQTeBzZHz"
+  },
+  {
+   "rank": 36,
+   "handle": "hihi33",
+   "name": "hihi33",
+   "pnl_usd": 135095.52,
+   "volume_usd": 1814970.09,
+   "trades": 685,
+   "solana": "GgDAijkjPdaXNdiPQyqKZuTDE6DeTXSYxrfvCjBorZst",
+   "fomo_solana": "Bhkhub5XjRTjcoG4FnCgfNvymdhan8ZXTTbQYXfhf9rv"
+  },
+  {
+   "rank": 37,
+   "handle": "0xleo",
+   "name": "leo",
+   "pnl_usd": 132914.16,
+   "volume_usd": 18215943.32,
+   "trades": 156,
+   "solana": "3qBVJLMAWXCbW3nhz99T99in82zZeUHkbDeSDJThbN4Z",
+   "fomo_solana": "DXEt2s1HjB9xYNyfCgRBoyombgtPmS21qS8YRDhP5RN7"
+  },
+  {
+   "rank": 38,
+   "handle": "scalps",
+   "name": "DW⚡️",
+   "pnl_usd": 123338.05,
+   "volume_usd": 3589100.37,
+   "trades": 788,
+   "solana": "GFDVVq2e1JUqHquzX6z8pm34iXz2pE2K9WaDcZKuDSqC",
+   "fomo_solana": "8Z29CzwUewr5YQgANfDBXjPo87BqphbtTU5Xu3TywyX"
+  },
+  {
+   "rank": 39,
+   "handle": "ArtofConviction",
+   "name": "Conviction",
+   "pnl_usd": 116446.4,
+   "volume_usd": 1602501.99,
+   "trades": 25,
+   "solana": null,
+   "fomo_solana": "CxNbb41BpnvDKLWkDs3aiSZT7Q2wCpCC3eYHV62Ko8Up"
+  },
+  {
+   "rank": 40,
+   "handle": "clewguo",
+   "name": "Clewguo",
+   "pnl_usd": 115614.12,
+   "volume_usd": 34718.23,
+   "trades": 89,
+   "solana": "DcbxVEezcXbCPiZKhCU3ZHeYXBfKeQxnDfCMPJ6vhUoo",
+   "fomo_solana": "CbfECPomSocQGCEdghcq1zkYEDSVUVP761QMnRXwvyD9"
+  },
+  {
+   "rank": 41,
+   "handle": "rawrxd",
+   "name": "rawrxd",
+   "pnl_usd": 115565.62,
+   "volume_usd": 204955.93,
+   "trades": 4,
+   "solana": null,
+   "fomo_solana": "BFhpehgAFUcJPyM6kTY6VtWp3PQ4rcSG31cbNrew3aeq"
+  },
+  {
+   "rank": 42,
+   "handle": "VexRex23",
+   "name": "Ayovex🦕",
+   "pnl_usd": 115352.29,
+   "volume_usd": 1967648.49,
+   "trades": 124,
+   "solana": "6qX4Sqi4jDJpDC95ZA6URGSuasv1ef1btAKgF6h38YfH",
+   "fomo_solana": "1MZHGYQysPw3qaLX8GGFUZw9x9VKhKmnYBow1ZKLN9D"
+  },
+  {
+   "rank": 43,
+   "handle": "Gragas",
+   "name": "gragas",
+   "pnl_usd": 114562.58,
+   "volume_usd": 846694.08,
+   "trades": 133,
+   "solana": "4HQJjSG8dUTYBud71fjW4rNBoUJDTPfnMCxsMoLyyHk8",
+   "fomo_solana": "5y6xrp3fjyZw2gfWMKPBLgeDuSPjiRXffmiaCdLYpYs9"
+  },
+  {
+   "rank": 44,
+   "handle": "real_y22",
+   "name": "Y22",
+   "pnl_usd": 112154.59,
+   "volume_usd": 5355944.18,
+   "trades": 277,
+   "solana": "4jXuYZRUUCWtxy5cYwx4oTBJmF73FywyAhVoPnBpmTBN",
+   "fomo_solana": "FQVVU1zM6kj7uQcLGD3h6Afetc7NnrZg8knvJmoLLfq2"
+  },
+  {
+   "rank": 45,
+   "handle": "_traderjay",
+   "name": "jay",
+   "pnl_usd": 109249.38,
+   "volume_usd": 1197841.83,
+   "trades": 233,
+   "solana": "HBMKgEgpLJicda1gpjBiQ2sTNs7NApZvMpuxiUuXUxSM",
+   "fomo_solana": "G9kNVrM2Pk3CvVzne8JUEhWBTKbfXANJ6SstU7Wb9fnK"
+  },
+  {
+   "rank": 46,
+   "handle": "xxxfomoxxx",
+   "name": "XXX",
+   "pnl_usd": 108789.42,
+   "volume_usd": 6297595.43,
+   "trades": 1138,
+   "solana": "9dbcLC76Cr32kkSt2ayEzkYxxptwtkyAnSYNUsnnzK8A",
+   "fomo_solana": "6bYPH9U4mHq6KJHvwxzRfMGFQEXBRaF3TQkkqcpmo5ve"
+  },
+  {
+   "rank": 47,
+   "handle": "tayk4777777",
+   "name": "Tayk",
+   "pnl_usd": 108132.85,
+   "volume_usd": 1460638.71,
+   "trades": 180,
+   "solana": "GX9tvBC9NQTErzdQajY7xYf4mBtwmYFZiPTQ8iJjpMtF",
+   "fomo_solana": "FYjYdpBi4pEJquQieBXNxGJriniv8sQT1TGRXJwAyzEc"
+  },
+  {
+   "rank": 48,
+   "handle": "hehe",
+   "name": "Hehe",
+   "pnl_usd": 106496.8,
+   "volume_usd": 1827322.57,
+   "trades": 286,
+   "solana": "CSuQB2tUK9aEhvU4WgnSB5am3f2R7DP73iLMPMYssWSQ",
+   "fomo_solana": "wDmcw4NRXtbNJKnDgekzYRWT8298US1MvTwejpxQSco"
+  },
+  {
+   "rank": 49,
+   "handle": "astaso1",
+   "name": "asta",
+   "pnl_usd": 103075.04,
+   "volume_usd": 3860415.97,
+   "trades": 376,
+   "solana": "DPUq1bDoAzHoapLaFAhH7Z3n8w8GqD4a1BwNCyivf5jc",
+   "fomo_solana": "3FyBTtWvhzG5p1HuTDYUEFGu7eNCZAHvvRPweXWcZsiw"
+  },
+  {
+   "rank": 50,
+   "handle": "ZeMirch",
+   "name": "Pepper",
+   "pnl_usd": 102921.37,
+   "volume_usd": 6878311.5,
+   "trades": 400,
+   "solana": "316WvHCXTDJSH6PA1BQw4w4Zizky1J73hSRVCFL6U1im",
+   "fomo_solana": "yxkweHEpJgAacQq7vNuU9WaC1SgV26ywAwrBZo5Qzik"
+  }
+ ]
+}

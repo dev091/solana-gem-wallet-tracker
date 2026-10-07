@@ -35,6 +35,7 @@ class TxDelta:
     slot: int
     sol: float                                  # SOL + wrapped-SOL change, fees included
     tokens: dict = field(default_factory=dict)  # mint -> signed token amount change
+    fee_payer: str = ""
 
 
 @dataclass
@@ -52,10 +53,11 @@ def _to_int(value) -> int:
         return int(float(value))
 
 
-def _make_delta(signature, ts, slot, lamports: int, raw: dict, decimals: dict) -> TxDelta:
+def _make_delta(signature, ts, slot, lamports: int, raw: dict, decimals: dict, fee_payer: str = "") -> TxDelta:
     wsol = raw.pop(SOL_MINT, 0)  # wrapped SOL (9 decimals) is just SOL
     tokens = {mint: amount / 10 ** decimals.get(mint, 0) for mint, amount in raw.items() if amount}
-    return TxDelta(signature or "", _to_int(ts), _to_int(slot), (lamports + wsol) / LAMPORTS, tokens)
+    return TxDelta(signature or "", _to_int(ts), _to_int(slot), (lamports + wsol) / LAMPORTS, tokens,
+                   fee_payer or "")
 
 
 def delta_from_rpc_tx(tx: dict | None, wallet: str) -> TxDelta | None:
@@ -91,7 +93,8 @@ def delta_from_rpc_tx(tx: dict | None, wallet: str) -> TxDelta | None:
             decimals[mint] = _to_int(amount.get("decimals"))
 
     signatures = (tx.get("transaction") or {}).get("signatures") or [""]
-    return _make_delta(signatures[0], tx.get("blockTime"), tx.get("slot"), lamports, raw, decimals)
+    return _make_delta(signatures[0], tx.get("blockTime"), tx.get("slot"), lamports, raw, decimals,
+                       keys[0] if keys else "")
 
 
 def delta_from_helius_tx(tx: dict, wallet: str) -> TxDelta | None:
@@ -109,7 +112,8 @@ def delta_from_helius_tx(tx: dict, wallet: str) -> TxDelta | None:
             mint = change["mint"]
             raw[mint] = raw.get(mint, 0) + _to_int(amount.get("tokenAmount"))
             decimals[mint] = _to_int(amount.get("decimals"))
-    return _make_delta(tx.get("signature"), tx.get("timestamp"), tx.get("slot"), lamports, raw, decimals)
+    return _make_delta(tx.get("signature"), tx.get("timestamp"), tx.get("slot"), lamports, raw, decimals,
+                       tx.get("feePayer"))
 
 
 class SolanaRpc:

@@ -14,6 +14,10 @@ WATCHLIST_FILE = ROOT / "wallets" / "watchlist.txt"
 GEM_TOKENS_FILE = ROOT / "wallets" / "gem_tokens.txt"
 
 SOL_MINT = "So11111111111111111111111111111111111111112"  # wrapped SOL
+# The Fomo app signs and pays gas for every trade its users make (per Bitquery's Fomo API docs),
+# so a transaction paid by this wallet is a trade placed through Fomo.
+FOMO_SIGNER = "AgmLJBMDCqWynYnQiPCuj9ewsNNsBJXyzoUhD9LJzN51"
+FOMO_TOP50_FILE = ROOT / "wallets" / "fomo_top50.json"
 
 # Stablecoins count as cash (1 token = $1) when a coin is bought or sold with them.
 STABLES = {

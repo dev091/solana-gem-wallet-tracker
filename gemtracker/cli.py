@@ -61,8 +61,12 @@ def _discover_args(p: argparse.ArgumentParser) -> None:
     g.add_argument("--sources", default=",".join(ALL_SOURCES),
                    help=f"comma list from: {', '.join(ALL_SOURCES)}")
     g.add_argument("--top", type=int, default=10, help="top N wallets from each leaderboard")
-    g.add_argument("--gem-coins", type=int, default=50,
+    g.add_argument("--gem-coins", type=int, default=30,
                    help="how many of Pump.fun's biggest coins to search for gem hunters")
+    g.add_argument("--early-txs", type=int, default=250,
+                   help="pump-early: how many of each coin's first trades to read")
+    g.add_argument("--min-early-hits", type=int, default=2,
+                   help="pump-early: keep wallets that bought this many big coins early")
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -105,7 +109,8 @@ def _sources(a) -> list:
 
 def cmd_discover(a, log=print):
     from .sources import discover
-    book, status = discover(_sources(a), a.top, a.gem_coins, _criteria(a), log)
+    book, status = discover(_sources(a), a.top, a.gem_coins, _criteria(a), log,
+                            early_txs=a.early_txs, min_early_hits=a.min_early_hits)
     util.save_json(config.DATA_DIR / "candidates.json",
                    {"generated_at": util.now(), "sources": status, "candidates": book.to_list()})
     log(f"\n{len(book.by_wallet)} candidate wallet(s) saved to data/candidates.json")

@@ -13,7 +13,7 @@ on:
         default: "20"
       max_wallets:
         description: "Scan at most this many candidate wallets"
-        default: "40"
+        default: "150"
   schedule:
     - cron: "23 2 * * *"  # every day, 02:23 UTC
 
@@ -54,7 +54,7 @@ jobs:
           FOMOAPI_KEY: ${{ secrets.FOMOAPI_KEY }}
           MIN_GEMS: ${{ inputs.min_gems || '4' }}
           MIN_MULTIPLE: ${{ inputs.min_multiple || '20' }}
-          MAX_WALLETS: ${{ inputs.max_wallets || '40' }}
+          MAX_WALLETS: ${{ inputs.max_wallets || '150' }}
         run: |
           python -m gemtracker run \
             --min-gems "$MIN_GEMS" \
