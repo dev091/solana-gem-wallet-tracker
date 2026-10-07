@@ -118,6 +118,25 @@ class FomoTest(unittest.TestCase):
         self.assertEqual(report.positions[0].cost_usd, 300.0)
 
 
+class CoinListTest(unittest.TestCase):
+    def test_geckoterminal_fallback(self):
+        m1, m2 = addr("pool-coin-1"), addr("pool-coin-2")
+        pages = [{"data": [
+            {"attributes": {"name": "AAA / SOL"}, "relationships": {"base_token": {"data": {"id": "solana_" + m1}}}},
+            {"attributes": {"name": "BBB / SOL"}, "relationships": {"base_token": {"data": {"id": "solana_" + m2}}}},
+            {"attributes": {"name": "AAA / USDC"}, "relationships": {"base_token": {"data": {"id": "solana_" + m1}}}},
+        ]}, {"data": []}]
+
+        def fake(url, params=None, headers=None):
+            if "pump.fun" in url:
+                raise sources.net.HttpError(403, url, "blocked")
+            return pages[params["page"] - 1]
+        with mock.patch.object(sources.net, "get_json", side_effect=fake), \
+                mock.patch.object(config, "GEM_TOKENS_FILE", pathlib.Path("/nonexistent")):
+            coins = sources.gem_coins_list(5, log=lambda *_: None)
+        self.assertEqual(coins, [(m1, "AAA"), (m2, "BBB")])
+
+
 class EarlySearchTest(unittest.TestCase):
     def test_only_wallets_early_on_several_coins_are_kept(self):
         w1, w2 = addr("w1"), addr("w2")
@@ -130,6 +149,14 @@ class EarlySearchTest(unittest.TestCase):
         self.assertEqual(added, 1)
         self.assertEqual(book.by_wallet[w1].early_hits, 2)
         self.assertNotIn(w2, book.by_wallet)
+
+    def test_stops_when_out_of_time(self):
+        with mock.patch("gemtracker.pumpfun.early_buyers") as early, \
+                mock.patch("gemtracker.prices.SolPrice"), mock.patch("gemtracker.solana.SolanaRpc"):
+            added = sources.early_search(CandidateBook(), [("A", "AAA")], Criteria(), 100, 2,
+                                         log=lambda *_: None, deadline=0.0)
+        self.assertEqual(added, 0)
+        early.assert_not_called()
 
 
 if __name__ == "__main__":

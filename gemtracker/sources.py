@@ -245,6 +245,27 @@ def pumpfun_top_coins(limit: int) -> list:
     return coins[:limit]
 
 
+def geckoterminal_pump_coins(limit: int) -> list:
+    """Fallback coin list: busiest PumpSwap pools (graduated Pump.fun coins) on GeckoTerminal."""
+    coins, seen = [], set()
+    for page in range(1, 11):
+        data = net.get_json("https://api.geckoterminal.com/api/v2/networks/solana/dexes/pumpswap/pools",
+                            params={"page": page, "sort": "h24_volume_usd_desc"})
+        pools = (data or {}).get("data") or []
+        for pool in pools:
+            base = ((pool.get("relationships") or {}).get("base_token") or {}).get("data") or {}
+            mint = str(base.get("id") or "").split("_", 1)[-1]
+            name = str((pool.get("attributes") or {}).get("name") or "").split(" / ")[0]
+            if util.is_address(mint) and mint not in seen:
+                seen.add(mint)
+                coins.append((mint, name))
+        if not pools or len(coins) >= limit:
+            break
+    if not coins:
+        raise SourceError("GeckoTerminal returned no PumpSwap pools")
+    return coins[:limit]
+
+
 def _gem_traders_solanatracker(key: str, mint: str, crit: Criteria) -> list:
     data = _st_get(key, f"/v2/pnl/tokens/{mint}/traders",
                    {"sort": "realized", "direction": "desc", "limit": 100})
@@ -283,13 +304,16 @@ def _gem_traders_gmgn(key: str, mint: str, crit: Criteria) -> list:
     return out
 
 
-def gem_search(book: CandidateBook, coins: list, crit: Criteria, st_key: str, gmgn_key: str, log=print) -> int:
+def gem_search(book: CandidateBook, coins: list, crit: Criteria, st_key: str, gmgn_key: str, log=print,
+               deadline: float | None = None) -> int:
     """For each coin, add every wallet that turned $100-$500 into $100k+ on it. Returns wallets added."""
     if not st_key and not gmgn_key:
         raise SourceError("gem search needs SOLANATRACKER_API_KEY or GMGN_API_KEY "
                           "(to see who made money on each coin)")
     added = 0
     for i, (mint, symbol) in enumerate(coins, 1):
+        if _out_of_time(deadline, "gem search", i - 1, len(coins), log):
+            break
         name = symbol or util.short(mint)
         try:
             hits = (_gem_traders_solanatracker(st_key, mint, crit) if st_key
@@ -307,8 +331,15 @@ def gem_search(book: CandidateBook, coins: list, crit: Criteria, st_key: str, gm
     return added
 
 
+def _out_of_time(deadline, what: str, done: int, total: int, log) -> bool:
+    if deadline is not None and time.monotonic() > deadline:
+        log(f"   time budget for {what} used up after {done}/{total} coin(s)")
+        return True
+    return False
+
+
 def early_search(book: CandidateBook, coins: list, crit: Criteria, early_txs: int, min_hits: int,
-                 log=print) -> int:
+                 log=print, deadline: float | None = None) -> int:
     """No-key gem search: early $100-$500 buyers of big Pump.fun coins, read from the chain."""
     from .pumpfun import early_buyers
     from .prices import SolPrice
@@ -316,6 +347,8 @@ def early_search(book: CandidateBook, coins: list, crit: Criteria, early_txs: in
     rpc, sol = SolanaRpc(config.rpc_url()), SolPrice()
     seen: dict = {}
     for i, (mint, symbol) in enumerate(coins, 1):
+        if _out_of_time(deadline, "early search", i - 1, len(coins), log):
+            break
         name = symbol or util.short(mint)
         try:
             buyers, note = early_buyers(rpc, mint, sol.at, crit, early_txs=early_txs)
@@ -341,7 +374,11 @@ def gem_coins_list(gem_coins: int, log=print) -> list:
         try:
             coins += pumpfun_top_coins(gem_coins)
         except Exception as exc:
-            log(f"   pump.fun top coins unavailable ({exc}); using wallets/gem_tokens.txt only")
+            log(f"   pump.fun top coins unavailable ({exc}); trying GeckoTerminal")
+            try:
+                coins += geckoterminal_pump_coins(gem_coins)
+            except Exception as exc2:
+                log(f"   GeckoTerminal unavailable too ({exc2}); using wallets/gem_tokens.txt only")
     coins = list(dict(coins).items())  # de-duplicate, keep order
     if not coins:
         raise SourceError("no coins to search (pump.fun unreachable and wallets/gem_tokens.txt empty)")
@@ -351,7 +388,7 @@ def gem_coins_list(gem_coins: int, log=print) -> list:
 # ---------------------------------------------------------------- all together
 
 def discover(sources: list, top: int, gem_coins: int, crit: Criteria, log=print,
-             early_txs: int = 250, min_early_hits: int = 2):
+             early_txs: int = 250, min_early_hits: int = 2, deadline: float | None = None):
     """Collect candidates from every requested source. Returns (book, status per source)."""
     st_key, gmgn_key, fomo_key = (config.env("SOLANATRACKER_API_KEY"), config.env("GMGN_API_KEY"),
                                   config.env("FOMOAPI_KEY"))
@@ -385,7 +422,7 @@ def discover(sources: list, top: int, gem_coins: int, crit: Criteria, log=print,
         try:
             coins = gem_coins_list(gem_coins, log)
             log(f"… on-chain early-buyer search over {len(coins)} coin(s) (no key needed)")
-            added = early_search(book, coins, crit, early_txs, min_early_hits, log)
+            added = early_search(book, coins, crit, early_txs, min_early_hits, log, deadline)
             status["pump-early"] = {"ok": True, "wallets": added, "coins": len(coins)}
             log(f"✔ pump-early: {added} wallet(s) bought {min_early_hits}+ big coins early")
         except Exception as exc:
@@ -399,7 +436,7 @@ def discover(sources: list, top: int, gem_coins: int, crit: Criteria, log=print,
                                   "(to see who made money on each coin)")
             coins = coins or gem_coins_list(gem_coins, log)
             log(f"… gem search over {len(coins)} coin(s)")
-            added = gem_search(book, coins, crit, st_key, gmgn_key, log)
+            added = gem_search(book, coins, crit, st_key, gmgn_key, log, deadline)
             status["pump-gems"] = {"ok": True, "wallets": added, "coins": len(coins)}
             log(f"✔ pump-gems: {added} gem hit(s)")
         except Exception as exc:

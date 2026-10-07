@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import sys
+import time
 
 from . import config, util
 from .config import Criteria
@@ -107,10 +108,21 @@ def _sources(a) -> list:
     return [s.strip() for s in a.sources.split(",") if s.strip()]
 
 
+_STARTED = time.monotonic()
+DISCOVERY_SHARE = 0.4  # with --time-budget, discovery may use up to 40% of it, scanning the rest
+
+
+def _minutes_left(a) -> float:
+    budget = getattr(a, "time_budget", 0) or 0
+    return budget - (time.monotonic() - _STARTED) / 60 if budget else 0
+
+
 def cmd_discover(a, log=print):
     from .sources import discover
+    budget = getattr(a, "time_budget", 0) or 0
+    deadline = _STARTED + budget * 60 * DISCOVERY_SHARE if budget else None
     book, status = discover(_sources(a), a.top, a.gem_coins, _criteria(a), log,
-                            early_txs=a.early_txs, min_early_hits=a.min_early_hits)
+                            early_txs=a.early_txs, min_early_hits=a.min_early_hits, deadline=deadline)
     util.save_json(config.DATA_DIR / "candidates.json",
                    {"generated_at": util.now(), "sources": status, "candidates": book.to_list()})
     log(f"\n{len(book.by_wallet)} candidate wallet(s) saved to data/candidates.json")
@@ -137,7 +149,8 @@ def cmd_scan(a, fresh: bool, log=print) -> int:
                              log=log)
     log(f"\nScanning up to {a.max_wallets} wallet(s) with {provider.describe()}")
     log(_rules_line(crit) + "\n")
-    results = scan(candidates, provider, crit, a.max_wallets, log, time_budget_min=a.time_budget)
+    minutes = max(_minutes_left(a), 1.0) if a.time_budget else 0
+    results = scan(candidates, provider, crit, a.max_wallets, log, time_budget_min=minutes)
     payload = save_results(results, crit, provider.name, status)
     c = payload["counts"]
     log(f"\nDone: {c['scanned']} scanned · {c['strict']} STRICT · {c['gem_hunter']} GEM_HUNTER · "
