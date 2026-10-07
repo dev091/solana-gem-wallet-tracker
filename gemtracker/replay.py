@@ -32,8 +32,10 @@ def row_to_event(row: dict) -> ChainEvent:
 
 
 def replay(strategies, cfg: SimConfig, rows, sol_usd: float, elite_names: dict | None = None,
-           out_dir=None):
-    """Run strategies over tape rows (an iterable in rx order). Returns (sim, market)."""
+           out_dir=None, probe=None):
+    """Run strategies over tape rows (an iterable in rx order). Returns (sim, market).
+    `probe(sim, market, now_ms)`, if given, runs after every one-second tick (for sampling
+    equity or pruning the market the way the live runner does)."""
     market = Market()
     market.elite_names = dict(elite_names or {})
     sim = PaperSim(strategies, cfg, lambda: sol_usd, out_dir)
@@ -47,6 +49,8 @@ def replay(strategies, cfg: SimConfig, rows, sol_usd: float, elite_names: dict |
         while next_tick <= rx:  # the live clock ticks once a second
             sim.settle(None, next_tick, market)
             sim.dispatch("on_tick", market, next_tick)
+            if probe is not None:
+                probe(sim, market, next_tick)
             next_tick += 1000
         ev = row_to_event(row)
         sim.settle(ev.mint, rx, market)
