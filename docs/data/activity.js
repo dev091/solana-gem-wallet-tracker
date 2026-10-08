@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1791480651,
+ "updated_at": 1791498544,
  "mode": "holdings",
  "tracked": [
   {
@@ -69,8 +69,8 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "2QrfK8gf3vBcFfuaCJbFxGk3w1JxwjamGE9aGwdQHFas",
-   "label": "consistent Thokani (score 6)",
+   "wallet": "6CpipySaXTAiUKDyyhWeCfYSMQLCiHrbCN1WvRv5s8kF",
+   "label": "consistent ronaldcarter (score 6)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -81,25 +81,181 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
+   "wallet": "2QrfK8gf3vBcFfuaCJbFxGk3w1JxwjamGE9aGwdQHFas",
+   "label": "consistent Thokani (score 6)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
    "wallet": "9LXWa7V3AE15VfBupcx5gDts2ix3Y9NzbcKZKjkkq6hV",
    "label": "consistent rikz_ (score 6)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "4DdrfiDHpmx55i4SPssxVzS9ZaKLb8qr45NKY9Er9nNh",
-   "label": "consistent Mr. Frog (score 6)",
+   "wallet": "8mZ3cEZhHu2eBVt4TyPaKs655FmAggVjZkg4jhGDVqG9",
+   "label": "small-money winner DikusMaximus",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "DiDwVJDo3ze1Tq9qvYJmQqy7PCAHpNjw8mN2WaRtXkQx",
-   "label": "small-money winner leynine",
+   "wallet": "Dvbv5TdAyPpJk16X9mUxWFVicYtCUxTLhuof8TGuUaRv",
+   "label": "small-money winner CookDoc93",
    "tier": "BOARD",
    "gems": 0
   }
  ],
  "events": [
+  {
+   "ts": 1791498541,
+   "wallet": "6CpipySaXTAiUKDyyhWeCfYSMQLCiHrbCN1WvRv5s8kF",
+   "label": "consistent ronaldcarter (score 6)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+   "tokens": 15765.226250000002,
+   "usd": 88.88,
+   "symbol": "PUMP",
+   "price": 0.005638,
+   "market_cap": 2614889815.0,
+   "liquidity": 1912815.43
+  },
+  {
+   "ts": 1791498541,
+   "wallet": "3VUNtVtjjx5ckUojT7UocJ5fbuAJRsNUXNfTBnPte9vC",
+   "label": "consistent buddhaaaaa (score 6)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "FFSqDFGHtZVP4gu5iYh9pH7emxyS6VtyJageTzv8DESK",
+   "tokens": 38125243.719615,
+   "usd": 121.96,
+   "symbol": "DESK95",
+   "price": 3.199e-06,
+   "market_cap": 3199.63,
+   "liquidity": null
+  },
+  {
+   "ts": 1791498541,
+   "wallet": "3VUNtVtjjx5ckUojT7UocJ5fbuAJRsNUXNfTBnPte9vC",
+   "label": "consistent buddhaaaaa (score 6)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "6QcKMSssEu1Mdn31BAVZiQ8co9YVKRS2bQTGnCwypump",
+   "tokens": 26856587.506111,
+   "usd": 1203.18,
+   "symbol": "PUMPCOIN",
+   "price": 4.48e-05,
+   "market_cap": 44806.0,
+   "liquidity": 16745.7
+  },
+  {
+   "ts": 1791498540,
+   "wallet": "catK9v3gp2dd32bkUxDEst4BarwDoCL3pkFfVoVjcgi",
+   "label": "consistent bulkytuna85591 (score 6)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "29aF6EWpTTMs5H1AVz84b6GKXC6oR39nLYvvPW72pump",
+   "tokens": 33121079.280989,
+   "usd": 668.71,
+   "symbol": "NOODL",
+   "price": 2.019e-05,
+   "market_cap": 19403.0,
+   "liquidity": 10702.63
+  },
+  {
+   "ts": 1791498540,
+   "wallet": "EqBQhoU88ty3a3aDphDRCBuiRirjUsFSFi4UHGY64qvv",
+   "label": "consistent sadcrissy (score 6)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "48Fx5EWQ2RSUshqiNzx1VfWSvFwNgMft2nxbqwbXpump",
+   "tokens": 29908113.916381,
+   "usd": 1365.31,
+   "symbol": "BABYBATON",
+   "price": 4.565e-05,
+   "market_cap": 43518.0,
+   "liquidity": 19231.95
+  },
+  {
+   "ts": 1791498540,
+   "wallet": "EqBQhoU88ty3a3aDphDRCBuiRirjUsFSFi4UHGY64qvv",
+   "label": "consistent sadcrissy (score 6)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+   "tokens": 41739.57297599991,
+   "usd": 235.33,
+   "symbol": "PUMP",
+   "price": 0.005638,
+   "market_cap": 2614889815.0,
+   "liquidity": 1912815.43
+  },
+  {
+   "ts": 1791498540,
+   "wallet": "EqBQhoU88ty3a3aDphDRCBuiRirjUsFSFi4UHGY64qvv",
+   "label": "consistent sadcrissy (score 6)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "Ew8KqgSitYucieR5KnSAL2SUFspcwA8AgSuZ5xWspump",
+   "tokens": 803090.4177630022,
+   "usd": 492.29,
+   "symbol": "Kurumi",
+   "price": 0.000613,
+   "market_cap": 613045.0,
+   "liquidity": 126186.13
+  },
+  {
+   "ts": 1791498538,
+   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
+   "label": "consistent ogantd (score 7)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "4zHofAZWJxqB5zrQrPZ8yh4FWxi7TCXQTM9gLv9STUK4",
+   "tokens": 15935176.975221,
+   "usd": 331.93,
+   "symbol": "C3PO",
+   "price": 2.083e-05,
+   "market_cap": 20208.0,
+   "liquidity": 11275.77
+  },
+  {
+   "ts": 1791498538,
+   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
+   "label": "consistent ogantd (score 7)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "CARDSccUMFKoPRZxt5vt3ksUbxEFEcnZ3H2pd3dKxYjp",
+   "tokens": 5532.55164900003,
+   "usd": 1382.03,
+   "symbol": "CARDS",
+   "price": 0.2498,
+   "market_cap": 223542552.0,
+   "liquidity": 3907531.91
+  },
+  {
+   "ts": 1791498537,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 8)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "3K2vx7ww6dNcHViJStztSJvTQZWaMkYrYnTop5178iR2",
+   "tokens": 21638156.567757,
+   "usd": 855.36,
+   "symbol": "Pao",
+   "price": 3.953e-05,
+   "market_cap": 39532.32,
+   "liquidity": null
+  },
   {
    "ts": 1791480648,
    "wallet": "9LXWa7V3AE15VfBupcx5gDts2ix3Y9NzbcKZKjkkq6hV",
@@ -1513,23 +1669,15 @@ window.GEM_ACTIVITY = {
  ],
  "consensus": [
   {
-   "mint": "7HPbJN9yCiMLbp7ewzeRYPAqjtniYw7Xmv6tiTkRpump",
-   "symbol": "XPAD",
-   "wallets": [
-    "ACTbvbNm5qTLuofNRPxFPMtHAAtdH1CtzhCZatYHy831",
-    "B3wagQZiZU2hKa5pUCj6rrdhWsX3Q6WfTTnki9PjwzMh"
-   ],
-   "last_ts": 1791416520
-  },
-  {
    "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
    "symbol": "PUMP",
    "wallets": [
+    "6CpipySaXTAiUKDyyhWeCfYSMQLCiHrbCN1WvRv5s8kF",
     "ACTbvbNm5qTLuofNRPxFPMtHAAtdH1CtzhCZatYHy831",
     "EqBQhoU88ty3a3aDphDRCBuiRirjUsFSFi4UHGY64qvv",
     "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT"
    ],
-   "last_ts": 1791480646
+   "last_ts": 1791498541
   },
   {
    "mint": "Uuv34iFW1S3S3X7K2A5B7fYaNNt1DjGE9kqrCUj8yum",
