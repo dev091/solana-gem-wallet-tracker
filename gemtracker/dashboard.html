@@ -47,6 +47,8 @@ tr.sel{background:#17222f !important;box-shadow:inset 3px 0 0 var(--accent)}
 tr.base td{color:var(--muted)}
 .up{color:var(--up)} .down{color:var(--down)} .muted{color:var(--muted)}
 .tag{font:10px var(--sans);padding:1px 5px;border-radius:3px;margin-left:6px;border:1px solid var(--line);color:var(--muted)}
+.tag.up{color:var(--up);border-color:var(--up)}.tag.down{color:var(--down);border-color:var(--down)}
+td .tag:first-child{margin-left:0}
 .sw{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:7px;vertical-align:baseline}
 .bar{position:relative;width:150px;height:8px;background:#0b1118;border-radius:4px;display:inline-block;vertical-align:middle}
 .bar i{position:absolute;top:0;height:8px;border-radius:4px}
@@ -88,6 +90,9 @@ a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
         <thead><tr>
           <th>#</th><th class="l">Algo</th><th>Equity</th><th>Total</th><th>Today $</th><th>Today %</th>
           <th class="l">Today vs needed <span style="color:var(--warn)">|</span></th>
+          <th title="frozen result on the unseen VAL days 08-25..09-04, live latency, fees in">VAL net</th>
+          <th title="geometric mean daily return on VAL">VAL /day</th><th>VAL green</th><th>VAL max DD</th>
+          <th class="l" title="floor: allowed live · target: met the needed daily return on VAL">Gate</th>
           <th>Realized today</th><th>Trips W/T</th><th>Open</th><th>Closed</th><th>Win</th><th>Fills</th><th>Rej</th><th>Fees $</th>
         </tr></thead>
         <tbody></tbody>
@@ -175,6 +180,7 @@ function renderKpis(d) {
     best ? card('Best algo today', esc(best.algo), `${usd(best.day_pnl_usd, true)} · ${pct(best.day_return)} today · equity ${usd(best.equity_usd)}`, cls(best.day_pnl_usd)) : card('Best algo today', '–', ''),
     card('Green today', `${green} / ${real.length}`, 'algos above their ET-day open (baselines excluded)', green ? 'up' : 'down'),
     top ? card('Top equity', usd(top.equity_usd), `${esc(top.algo)} · ${pct(top.return)} since start`, cls(top.return)) : card('Top equity', '–', ''),
+    card('Validated on unseen days', `${d.validated} / ${real.length}`, 'passed the VAL floor before going live (08-25..09-04)', d.validated ? 'up' : 'muted'),
     rnd ? card('Beat random baseline', `${beat} / ${real.length}`, `base_random ${pct(rnd.return)} since start`, beat ? 'up' : 'down') : '',
   ].join('');
 }
@@ -185,6 +191,12 @@ function bar(r, need) {
   const nx = need != null ? half + Math.min(1, need / BAR_SPAN) * half - 1 : null;
   return `<span class="bar"><i style="left:${left}px;width:${w}px;background:${r >= 0 ? 'var(--up)' : 'var(--down)'}"></i>` +
     `<span class="zero"></span>${nx != null ? `<span class="need" style="left:${nx}px" title="needed ${pct(need)}/day"></span>` : ''}</span>`;
+}
+
+function gate(v) {
+  if (!v) return '<span class="muted">no card</span>';
+  return v.target_pass ? '<span class="tag up">target</span>' : v.floor_pass ? '<span class="tag">floor</span>'
+    : '<span class="tag down">fail</span>';
 }
 
 function renderAlgos(d) {
@@ -200,6 +212,11 @@ function renderAlgos(d) {
       <td class="${cls(a.day_pnl_usd)}">${usd(a.day_pnl_usd, true)}</td>
       <td class="${cls(a.day_return)}">${pct(a.day_return)}</td>
       <td class="l">${bar(a.day_return, d.need_daily_return)}</td>
+      <td class="${a.val ? cls(a.val.net_return) : 'muted'}">${a.val ? pct(a.val.net_return) : '–'}</td>
+      <td class="${a.val ? cls(a.val.geo_daily) : 'muted'}">${a.val ? pct(a.val.geo_daily, 2) : '–'}</td>
+      <td>${a.val && a.val.green_days != null ? a.val.green_days + '/' + (a.val.days ?? '–') : '–'}</td>
+      <td class="muted">${a.val && a.val.max_dd != null ? pct(-Math.abs(a.val.max_dd)) : '–'}</td>
+      <td class="l">${a.baseline ? '' : gate(a.val)}</td>
       <td class="${cls(a.day_realized_usd)}">${usd(a.day_realized_usd, true)}</td>
       <td>${a.day_wins}/${a.day_trips}</td>
       <td>${a.open ?? '–'}${a.pending ? `<span class="muted">+${a.pending}</span>` : ''}</td>

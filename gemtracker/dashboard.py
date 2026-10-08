@@ -5,7 +5,8 @@
 Touch data/paper/<run>/DASHBOARD_STOP to shut it down cleanly (it deletes the file on exit).
 
 Serves the page at http://127.0.0.1:<port>/ and its data at /api. Reads only
-data/paper/<run>/{config.json,status.json,summary.jsonl,<algo>.jsonl}. Ledgers are tailed
+data/paper/<run>/{config.json,status.json,summary.jsonl,<algo>.jsonl} and the frozen
+validation cards in data/research/elite20/cards/<algo>.json. Ledgers are tailed
 incrementally, so a poll costs only the lines written since the last one. Binds to localhost
 and places nothing: paper only.
 """
@@ -20,6 +21,7 @@ from datetime import date
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 
+from .config import DATA_DIR
 from .scoreboard import PAPER_DIR, START_USD, TARGET_DAY_USD, add_fill, et_day
 
 DEADLINE = date(2026, 12, 7)        # beat Decu within 2 months (Rahul, 2026-10-07)
@@ -28,6 +30,8 @@ RECENT_FILLS = 40
 LIVE_SAMPLE_MS = 60_000             # in-memory equity points between the summary.jsonl snapshots
 PAGE = Path(__file__).with_name("dashboard.html")
 STOP_FILE = "DASHBOARD_STOP"
+CARDS_DIR = DATA_DIR / "research" / "elite20" / "cards"
+VAL_KEYS = ("days", "trips", "net_return", "geo_daily", "green_days", "max_dd", "win_rate", "latency_ms")
 
 
 def need_daily_return(start_usd: float, target_day_usd: float, days: int) -> float | None:
@@ -40,6 +44,23 @@ def need_daily_return(start_usd: float, target_day_usd: float, days: int) -> flo
         mid = (lo + hi) / 2
         lo, hi = (lo, mid) if start_usd * (1 + mid) ** days * mid >= target_day_usd else (mid, hi)
     return hi
+
+
+def load_cards(cards_dir: Path) -> dict:
+    """Each algo's frozen VAL result (unseen days, live latency, fees in) by algo name."""
+    out = {}
+    for path in sorted(cards_dir.glob("*.json")):
+        try:
+            card = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, ValueError):              # caught mid-write: picked up on the next poll
+            continue
+        val = card.get("val") or {}
+        row = {k: val.get(k) for k in VAL_KEYS}
+        if isinstance(row["days"], list):
+            row["days"] = len(row["days"])
+        out[card.get("name") or path.stem] = {**row, "floor_pass": bool(card.get("floor_pass")),
+                                              "target_pass": bool(card.get("target_pass"))}
+    return out
 
 
 class Tail:
@@ -75,8 +96,8 @@ class Tail:
 class Board:
     """Everything the page shows, brought up to date from the run directory on each poll."""
 
-    def __init__(self, run_dir: Path):
-        self.run_dir = run_dir
+    def __init__(self, run_dir: Path, cards_dir: Path = CARDS_DIR):
+        self.run_dir, self.cards_dir = run_dir, cards_dir
         self.lock = threading.Lock()
         self._reset(None)
 
@@ -154,6 +175,7 @@ class Board:
         for t, eq in points:
             if et_day(t) < today:
                 day_open.update(eq)
+        cards = load_cards(self.cards_dir)
         algos = []
         for a in st.get("algos", []):
             name = a["algo"]
@@ -165,7 +187,8 @@ class Board:
                           "day_return": round(day_pnl / eq0, 4) if eq0 else None,
                           "day_realized_usd": round(d.get("pnl_usd", 0.0), 2),
                           "day_trips": d.get("trips", 0), "day_wins": d.get("wins", 0),
-                          "fees_usd": round((a.get("venue_fees_sol", 0.0) + a.get("tx_fees_sol", 0.0)) * sol_usd, 2)})
+                          "fees_usd": round((a.get("venue_fees_sol", 0.0) + a.get("tx_fees_sol", 0.0)) * sol_usd, 2),
+                          "val": cards.get(name)})
         algos.sort(key=lambda r: -r["equity_usd"])
         fills = []
         for base in (False, True):                 # the busy baselines must not crowd out the algos
@@ -188,6 +211,7 @@ class Board:
                 "health": {k: st.get(k) for k in ("t", "uptime_min", "queue", "tokens", "pools_known", "parked",
                                                   "resolver_failures", "feed_lag_ms", "loop_ms", "sol_usd")},
                 "algos": algos,
+                "validated": sum(1 for a in algos if not a["baseline"] and (a["val"] or {}).get("floor_pass")),
                 "curve": {"t": [t for t, _ in points],
                           "series": {a["algo"]: [eq.get(a["algo"]) for _, eq in points] for a in algos}},
                 "recent": recent}

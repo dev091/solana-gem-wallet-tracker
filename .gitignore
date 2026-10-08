@@ -12,3 +12,4 @@ data/history/
 data/secrets/
 data/pool_quotes.json
 data/tapes/
+.playwright-mcp/

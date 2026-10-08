@@ -41,7 +41,7 @@ class Dashboard(unittest.TestCase):
         self.write("config.json", {"started": START, "commit": "abc", "paper_only": True,
                                    "sim": {"start_usd": 100.0, "latency_ms": 2500}, "algos": ["a", "base_random"]})
         self.write("status.json", status(START + 3 * MIN, a=105.0, base_random=90.0))
-        self.board = D.Board(self.dir)
+        self.board = D.Board(self.dir, cards_dir=self.dir / "cards")
 
     def tearDown(self):
         self.tmp.cleanup()
@@ -142,6 +142,20 @@ class Dashboard(unittest.TestCase):
         recent = self.board.snapshot(START + 4 * MIN)["recent"]
         self.assertEqual(len(recent), D.RECENT_FILLS + 1)
         self.assertEqual([(f["algo"], f["baseline"]) for f in recent if not f["baseline"]], [("a", False)])
+
+    def test_val_cards_join_the_algo_rows(self):
+        cards = self.dir / "cards"
+        cards.mkdir()
+        (cards / "a.json").write_text(json.dumps({"name": "a", "val": {"days": ["2026-08-25"] * 11, "trips": 40,
+                                      "net_return": 0.8, "geo_daily": 0.055, "green_days": 8, "max_dd": 0.2},
+                                      "floor_pass": True, "target_pass": False}), encoding="utf-8")
+        (cards / "half.json").write_text("{", encoding="utf-8")       # caught mid-write: skipped
+        snap = self.board.snapshot(START + 4 * MIN)
+        v = self.row(snap)["val"]
+        self.assertEqual((v["days"], v["trips"], v["green_days"], v["floor_pass"], v["target_pass"]),
+                         (11, 40, 8, True, False))
+        self.assertIsNone(self.row(snap, "base_random")["val"])
+        self.assertEqual(snap["validated"], 1)
 
 
 if __name__ == "__main__":
