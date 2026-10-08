@@ -14,6 +14,7 @@ from .chain_events import PUMP_SUPPLY, WSOL
 
 WINDOW_MS = 600_000       # keep 10 minutes of individual trades per coin
 MAX_HOLDERS = 5_000
+SNIPE_S = 2                  # a buy this soon after the create is a snipe or a bundle
 MAX_SOL_RESERVE = 1e15       # lamports (1M SOL): more than any meme pool holds
 
 
@@ -59,6 +60,7 @@ class TokenState:
     dev_sold: float = 0.0
     trades: deque = field(default_factory=deque)
     holders: dict = field(default_factory=dict)   # user -> net tokens seen
+    snipers: set = field(default_factory=set)     # wallets that bought within SNIPE_S of the create
     elite_buys: list = field(default_factory=list)  # (rx, name, sol)
     elite_sells: list = field(default_factory=list)
     _wcache: dict = field(default_factory=dict, repr=False, compare=False)
@@ -123,6 +125,11 @@ class TokenState:
         """Share of supply held by the top `n` wallets seen (curve itself excluded)."""
         return sum(self._positive_holders()[:n]) / self.supply if self.supply else 0.0
 
+    def sniper_share(self) -> float:
+        """Share of supply still held by the launch snipers and bundle wallets."""
+        held = sum(max(0.0, self.holders.get(u, 0.0)) for u in self.snipers)
+        return held / self.supply if self.supply else 0.0
+
 
 class Market:
     def __init__(self):
@@ -153,6 +160,7 @@ class Market:
             st.name, st.symbol = ev.extra.get("name", ""), ev.extra.get("symbol", "")
             st.supply = ev.extra.get("supply") or st.supply
             st.mayhem = bool(ev.extra.get("mayhem"))
+            st.snipers.update(u for u, v in st.holders.items() if v > 0 and u != st.creator)  # bought first
             st.venue = ev.venue
             if ev.price and not st.last_rx:  # the dev's first buy may have arrived already
                 st.price = ev.price
@@ -199,6 +207,10 @@ class Market:
         if ev.user:
             if ev.user in st.holders or len(st.holders) < MAX_HOLDERS:
                 st.holders[ev.user] = st.holders.get(ev.user, 0.0) + (tokens if buy else -tokens)
+            if buy and st.seen_create and ev.user != st.creator:
+                since = ev.ts - st.created_ts if ev.ts and st.created_ts else (rx - st.first_rx) / 1000
+                if since <= SNIPE_S:
+                    st.snipers.add(ev.user)
             if ev.user == st.creator:
                 if buy:
                     st.dev_bought += tokens
