@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paper Desk</title>
+<link rel="icon" href="data:,">
+<style>
+:root{
+  --bg:#0a0e13; --panel:#10161e; --line:#1c2632; --row:#151d27; --hover:#141c26;
+  --text:#d7dee7; --muted:#7f8c9b; --dim:#56626f;
+  --up:#2ecc8f; --down:#ff5d6c; --warn:#f0b54a; --accent:#6ea8fe;
+  --mono:"Cascadia Mono","JetBrains Mono",Consolas,ui-monospace,monospace;
+  --sans:"Segoe UI",system-ui,-apple-system,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 var(--sans)}
+.wrap{max-width:1440px;margin:0 auto;padding:18px 20px 40px}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-bottom:14px}
+h1{font-size:17px;margin:0;font-weight:600;letter-spacing:.2px}
+.badge{font:600 11px var(--mono);padding:3px 7px;border-radius:4px;color:var(--warn);border:1px solid #4a3a17;background:#1d170b}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--dim);display:inline-block;margin-right:7px}
+.dot.ok{background:var(--up)}
+.dot.lag{background:var(--warn)}
+.dot.dead{background:var(--down)}
+.meta{color:var(--muted);font:12px var(--mono);display:flex;flex-wrap:wrap;align-items:center;gap:4px 14px}
+.meta b{color:var(--text);font-weight:500}
+.spacer{flex:1}
+#err{display:none;background:#2b1418;color:#ffb3bb;border:1px solid #5a2028;padding:8px 12px;border-radius:6px;margin-bottom:12px;font:12px var(--mono)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin-bottom:14px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+.kpi .k{color:var(--muted);font-size:12px}
+.kpi .v{font:600 22px var(--mono);margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kpi .s{color:var(--muted);font:12px var(--mono);margin-top:3px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:8px;margin-bottom:14px;min-width:0}
+.panel h2{font-size:13px;font-weight:600;margin:0;padding:10px 14px;border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline}
+.panel h2 small{color:var(--muted);font-weight:400;font-size:12px}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font:12.5px var(--mono);font-variant-numeric:tabular-nums}
+th{color:var(--muted);font:500 12px var(--sans);text-align:right;padding:7px 10px;white-space:nowrap;border-bottom:1px solid var(--line)}
+td{text-align:right;padding:6px 10px;white-space:nowrap;border-bottom:1px solid var(--row)}
+th.l,td.l{text-align:left}
+#algos tbody tr{cursor:pointer}
+tbody tr:hover{background:var(--hover)}
+tr.sel{background:#17222f !important;box-shadow:inset 3px 0 0 var(--accent)}
+tr.base td{color:var(--muted)}
+.up{color:var(--up)} .down{color:var(--down)} .muted{color:var(--muted)}
+.tag{font:10px var(--sans);padding:1px 5px;border-radius:3px;margin-left:6px;border:1px solid var(--line);color:var(--muted)}
+.sw{display:inline-block;width:8px;height:8px;border-radius:2px;margin-right:7px;vertical-align:baseline}
+.bar{position:relative;width:150px;height:8px;background:#0b1118;border-radius:4px;display:inline-block;vertical-align:middle}
+.bar i{position:absolute;top:0;height:8px;border-radius:4px}
+.bar .zero{position:absolute;left:50%;top:-2px;width:1px;height:12px;background:var(--dim)}
+.bar .need{position:absolute;top:-3px;width:2px;height:14px;background:var(--warn)}
+.chip{font:600 10.5px var(--mono);padding:1px 6px;border-radius:3px}
+.chip.buy{background:#10291f;color:var(--up)}
+.chip.sell{background:#2b1418;color:var(--down)}
+.grid2{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:14px}
+@media (max-width:980px){.grid2{grid-template-columns:minmax(0,1fr)}}
+.chartbox{padding:8px 6px 0}
+canvas{display:block;width:100%;height:330px}
+.legend{display:flex;flex-wrap:wrap;gap:4px 14px;padding:8px 14px 12px;font:11.5px var(--mono);color:var(--muted)}
+.legend span{cursor:pointer}
+.legend i{display:inline-block;width:12px;height:3px;margin-right:6px;vertical-align:middle;border-radius:2px}
+a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+.opt{margin-left:auto;color:var(--muted);font:400 12px var(--sans);cursor:pointer;user-select:none}
+.opt input{vertical-align:-2px;margin:0 5px 0 0;accent-color:var(--accent)}
+#health td:last-child{white-space:normal}
+.foot{color:var(--dim);font:11.5px var(--mono);margin-top:4px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Solana Paper Desk</h1>
+    <span class="badge">PAPER ONLY</span>
+    <span class="meta"><span><span class="dot" id="dot"></span><span id="liveTxt">connecting…</span></span></span>
+    <span class="spacer"></span>
+    <div class="meta" id="meta"></div>
+  </header>
+  <div id="err"></div>
+  <div class="kpis" id="kpis"></div>
+
+  <div class="panel">
+    <h2>Algos <small id="algoNote"></small></h2>
+    <div class="scroll">
+      <table id="algos">
+        <thead><tr>
+          <th>#</th><th class="l">Algo</th><th>Equity</th><th>Total</th><th>Today $</th><th>Today %</th>
+          <th class="l">Today vs needed <span style="color:var(--warn)">|</span></th>
+          <th>Realized today</th><th>Trips W/T</th><th>Open</th><th>Closed</th><th>Win</th><th>Fills</th><th>Rej</th><th>Fees $</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="grid2">
+    <div class="panel">
+      <h2>Equity, USD <small>click a row or a name to highlight it</small></h2>
+      <div class="chartbox"><canvas id="chart"></canvas></div>
+      <div class="legend" id="legend"></div>
+    </div>
+    <div class="panel">
+      <h2>Feed health <small>arrival lag at the recorder</small></h2>
+      <div class="scroll"><table id="health"><tbody></tbody></table></div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Recent fills <small>newest first</small><label class="opt"><input type="checkbox" id="showBase"> include baselines</label></h2>
+    <div class="scroll">
+      <table id="fills">
+        <thead><tr>
+          <th class="l">Time ET</th><th class="l">Algo</th><th class="l">Side</th><th class="l">Status</th>
+          <th>SOL</th><th>Mcap SOL</th><th>P&amp;L $</th><th>P&amp;L SOL</th><th class="l">Venue</th><th class="l">Reason</th><th class="l">Coin</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <div class="foot" id="foot"></div>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+const PALETTE = ['#6ea8fe','#2ecc8f','#f0b54a','#c58af9','#4dd0e1','#ff8a65'];
+const BAR_SPAN = 0.25;                      // the today bar spans -25% .. +25%
+let data = null, selected = null, colors = {};
+
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const sign = v => v > 0 ? '+' : v < 0 ? '−' : '';
+const usd = (v, signed) => v == null ? '–' : (signed ? sign(v) : (v < 0 ? '−' : '')) + '$' +
+  Math.abs(v).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+const pct = (v, dp = 1) => v == null ? '–' : sign(v) + Math.abs(v * 100).toFixed(dp) + '%';
+const num = (v, dp = 3) => v == null ? '–' : Number(v).toFixed(dp);
+const cls = v => v > 0 ? 'up' : v < 0 ? 'down' : 'muted';
+const ET = {timeZone: 'America/New_York'};
+const etTime = (ms, sec) => new Date(ms).toLocaleTimeString('en-US', {...ET, hour: 'numeric', minute: '2-digit', ...(sec ? {second: '2-digit'} : {})});
+const ago = ms => { const s = Math.max(0, Math.round(ms / 1000)); return s < 90 ? s + ' s' : Math.round(s / 60) + ' min'; };
+
+function assignColors(algos) {
+  colors = {};
+  algos.filter(a => !a.baseline).slice(0, PALETTE.length).forEach((a, i) => colors[a.algo] = PALETTE[i]);
+}
+
+function renderHeader(d) {
+  const h = d.health, age = h.t ? d.now - h.t : null;
+  const state = age == null ? 'dead' : age < 150e3 ? 'ok' : age < 300e3 ? 'lag' : 'dead';
+  $('dot').className = 'dot ' + state;
+  $('liveTxt').textContent = age == null ? 'recorder: no status yet'
+    : state === 'ok' ? 'recorder live · updated ' + ago(age) + ' ago'
+    : 'recorder silent for ' + ago(age) + ' (stopped or stalled?)';
+  const r = d.run, vl = Object.entries(r.venue_latency_ms || {}).map(([k, v]) => `${k} ${v / 1000} s`).join(', ');
+  $('meta').innerHTML = [
+    `ET <b>${etTime(d.now, true)}</b>`,
+    `uptime <b>${h.uptime_min != null ? (h.uptime_min >= 90 ? (h.uptime_min / 60).toFixed(1) + ' h' : Math.round(h.uptime_min) + ' min') : '–'}</b>`,
+    `SOL <b>${h.sol_usd ? '$' + h.sol_usd.toFixed(2) : '–'}</b>`,
+    `latency <b>${r.latency_ms != null ? r.latency_ms / 1000 + ' s' : '–'}</b>${vl ? ' (' + esc(vl) + ')' : ''}`,
+    `commit <b>${esc(r.commit || '–')}</b>`,
+  ].map(x => `<span>${x}</span>`).join('');
+}
+
+function renderKpis(d) {
+  const real = d.algos.filter(a => !a.baseline);
+  const best = [...real].sort((a, b) => b.day_pnl_usd - a.day_pnl_usd)[0];
+  const green = real.filter(a => a.day_pnl_usd > 0).length;
+  const rnd = d.algos.find(a => a.algo === 'base_random');
+  const top = real[0];
+  const beat = rnd ? real.filter(a => a.return > rnd.return).length : null;
+  const card = (k, v, s, c = '') => `<div class="kpi"><div class="k">${k}</div><div class="v ${c}">${v}</div><div class="s">${s}</div></div>`;
+  $('kpis').innerHTML = [
+    card('Daily target', usd(d.target_day_usd).replace('.00', '') + ' / day',
+      `needs ${pct(d.need_daily_return)}/day compounding from ${usd(d.start_usd).replace('.00', '')} · ${d.days_left} days to Dec 7`),
+    best ? card('Best algo today', esc(best.algo), `${usd(best.day_pnl_usd, true)} · ${pct(best.day_return)} today · equity ${usd(best.equity_usd)}`, cls(best.day_pnl_usd)) : card('Best algo today', '–', ''),
+    card('Green today', `${green} / ${real.length}`, 'algos above their ET-day open (baselines excluded)', green ? 'up' : 'down'),
+    top ? card('Top equity', usd(top.equity_usd), `${esc(top.algo)} · ${pct(top.return)} since start`, cls(top.return)) : card('Top equity', '–', ''),
+    rnd ? card('Beat random baseline', `${beat} / ${real.length}`, `base_random ${pct(rnd.return)} since start`, beat ? 'up' : 'down') : '',
+  ].join('');
+}
+
+function bar(r, need) {
+  const half = 75, w = Math.min(1, Math.abs(r || 0) / BAR_SPAN) * half;
+  const left = r >= 0 ? half : half - w;
+  const nx = need != null ? half + Math.min(1, need / BAR_SPAN) * half - 1 : null;
+  return `<span class="bar"><i style="left:${left}px;width:${w}px;background:${r >= 0 ? 'var(--up)' : 'var(--down)'}"></i>` +
+    `<span class="zero"></span>${nx != null ? `<span class="need" style="left:${nx}px" title="needed ${pct(need)}/day"></span>` : ''}</span>`;
+}
+
+function renderAlgos(d) {
+  const real = d.algos.filter(a => !a.baseline).length;
+  $('algoNote').textContent = `${real} algos + ${d.algos.length - real} baselines · sorted by equity · started ${d.run.started ? etTime(d.run.started) + ' ET' : '–'} with ${usd(d.start_usd)} each`;
+  $('algos').tBodies[0].innerHTML = d.algos.map((a, i) => {
+    const sw = colors[a.algo] ? `<span class="sw" style="background:${colors[a.algo]}"></span>` : `<span class="sw" style="background:var(--line)"></span>`;
+    return `<tr data-algo="${esc(a.algo)}" class="${a.baseline ? 'base' : ''} ${a.algo === selected ? 'sel' : ''}">
+      <td class="muted">${i + 1}</td>
+      <td class="l">${sw}${esc(a.algo)}${a.baseline ? '<span class="tag">baseline</span>' : ''}</td>
+      <td>${usd(a.equity_usd)}</td>
+      <td class="${cls(a.return)}">${pct(a.return)}</td>
+      <td class="${cls(a.day_pnl_usd)}">${usd(a.day_pnl_usd, true)}</td>
+      <td class="${cls(a.day_return)}">${pct(a.day_return)}</td>
+      <td class="l">${bar(a.day_return, d.need_daily_return)}</td>
+      <td class="${cls(a.day_realized_usd)}">${usd(a.day_realized_usd, true)}</td>
+      <td>${a.day_wins}/${a.day_trips}</td>
+      <td>${a.open ?? '–'}${a.pending ? `<span class="muted">+${a.pending}</span>` : ''}</td>
+      <td>${a.closed ?? '–'}</td>
+      <td>${a.win_rate != null ? Math.round(a.win_rate * 100) + '%' : '–'}</td>
+      <td>${a.fills ?? '–'}</td>
+      <td class="${a.rejects ? 'down' : 'muted'}">${a.rejects ?? 0}</td>
+      <td class="muted">${usd(a.fees_usd)}</td></tr>`;
+  }).join('');
+}
+
+function renderHealth(d) {
+  const h = d.health, rows = [];
+  for (const [venue, q] of Object.entries(h.feed_lag_ms || {}))
+    rows.push([`${venue} lag p50 / p90 / p99`, ['p50', 'p90', 'p99'].map(k => q[k] != null ? (q[k] / 1000).toFixed(1) : '–').join(' / ') + ' s']);
+  rows.push(['coins tracked', h.tokens ?? '–'], ['pools known', h.pools_known ?? '–'], ['queue', h.queue ?? '–'],
+    ['parked events', h.parked ?? '–'], ['resolver failures', h.resolver_failures ?? '–']);
+  const loop = h.loop_ms;
+  if (loop && typeof loop === 'object')
+    for (const [k, q] of Object.entries(loop))
+      rows.push([`${k.replace(/_/g, ' ')} ms p50 / p90 / max`, typeof q === 'object' ? ['p50', 'p90', 'max'].map(z => q[z] ?? '–').join(' / ') : q]);
+  else if (loop != null) rows.push(['loop ms', loop]);
+  $('health').tBodies[0].innerHTML = rows.map(([k, v]) => `<tr><td class="l muted">${esc(k)}</td><td>${esc(v)}</td></tr>`).join('');
+}
+
+function renderFills(d) {
+  const all = $('showBase').checked;
+  $('fills').tBodies[0].innerHTML = d.recent.filter(f => all || !f.baseline).slice(0, 40).map(f => {
+    const sell = f.side === 'sell', ok = f.status === 'filled';
+    const m = f.mint || '';
+    return `<tr><td class="l">${etTime(f.t, true)}</td><td class="l">${esc(f.algo)}</td>
+      <td class="l"><span class="chip ${sell ? 'sell' : 'buy'}">${esc((f.side || '').toUpperCase())}</span></td>
+      <td class="l ${ok ? 'muted' : 'down'}">${esc(f.status)}${f.why ? ' · ' + esc(f.why) : ''}</td>
+      <td>${num(f.sol)}</td><td class="muted">${f.mcap_sol != null ? Number(f.mcap_sol).toFixed(1) : '–'}</td>
+      <td class="${sell && ok ? cls(f.pnl_usd) : 'muted'}">${sell && ok ? usd(f.pnl_usd, true) : ''}</td>
+      <td class="${sell && ok ? cls(f.pnl_sol) : 'muted'}">${sell && ok ? sign(f.pnl_sol) + Math.abs(f.pnl_sol).toFixed(4) : ''}</td>
+      <td class="l muted">${esc(f.venue)}</td><td class="l muted">${esc(f.reason)}</td>
+      <td class="l">${m ? `<a href="https://pump.fun/coin/${encodeURIComponent(m)}" target="_blank" rel="noopener noreferrer">${esc(m.slice(0, 4) + '…' + m.slice(-4))}</a>` : ''}</td></tr>`;
+  }).join('') || '<tr><td class="l muted" colspan="11">no fills yet</td></tr>';
+}
+
+function renderLegend(d) {
+  const named = d.algos.filter(a => colors[a.algo]);
+  $('legend').innerHTML = named.map(a => `<span data-algo="${esc(a.algo)}"><i style="background:${colors[a.algo]}"></i>${esc(a.algo)}</span>`).join('') +
+    `<span class="muted"><i style="background:#3a4552"></i>other algos</span><span class="muted"><i style="background:repeating-linear-gradient(90deg,#56626f 0 4px,transparent 4px 7px)"></i>baselines</span>`;
+}
+
+function drawChart() {
+  const d = data, cv = $('chart'), dpr = window.devicePixelRatio || 1;
+  const W = cv.clientWidth, H = cv.clientHeight;
+  cv.width = W * dpr; cv.height = H * dpr;
+  const g = cv.getContext('2d');
+  g.scale(dpr, dpr); g.clearRect(0, 0, W, H);
+  g.font = '11px Cascadia Mono, Consolas, monospace'; g.fillStyle = '#7f8c9b';
+  if (!d || d.curve.t.length < 2) { g.fillText('waiting for the first equity points…', 16, 28); return; }
+  const T = d.curve.t, S = d.curve.series, pad = {l: 56, r: 104, t: 12, b: 24};
+  let lo = d.start_usd, hi = d.start_usd;
+  for (const s of Object.values(S)) for (const v of s) if (v != null) { lo = Math.min(lo, v); hi = Math.max(hi, v); }
+  const span = (hi - lo) || 1; lo = Math.max(0, lo - span * 0.05); hi += span * 0.05;
+  const t0 = T[0], t1 = T[T.length - 1];
+  const x = t => pad.l + (t - t0) / ((t1 - t0) || 1) * (W - pad.l - pad.r);
+  const y = v => pad.t + (hi - v) / (hi - lo) * (H - pad.t - pad.b);
+  g.strokeStyle = '#1c2632'; g.lineWidth = 1;
+  for (let i = 0; i <= 4; i++) {
+    const v = lo + (hi - lo) * i / 4, yy = Math.round(y(v)) + .5;
+    g.beginPath(); g.moveTo(pad.l, yy); g.lineTo(W - pad.r, yy); g.stroke();
+    g.textAlign = 'right'; g.fillText('$' + v.toFixed(v < 10 ? 2 : 0), pad.l - 8, yy + 4);
+  }
+  for (let i = 0; i <= 4; i++) {
+    const t = t0 + (t1 - t0) * i / 4;
+    g.textAlign = i === 0 ? 'left' : i === 4 ? 'right' : 'center';
+    g.fillText(etTime(t), x(t), H - 6);
+  }
+  g.setLineDash([4, 4]); g.strokeStyle = '#56626f';
+  g.beginPath(); g.moveTo(pad.l, y(d.start_usd)); g.lineTo(W - pad.r, y(d.start_usd)); g.stroke(); g.setLineDash([]);
+  const line = (name, color, width, dash) => {
+    const s = S[name]; if (!s) return;
+    g.strokeStyle = color; g.lineWidth = width; g.setLineDash(dash || []);
+    g.beginPath(); let on = false;
+    s.forEach((v, i) => { if (v == null) { on = false; return; } on ? g.lineTo(x(T[i]), y(v)) : g.moveTo(x(T[i]), y(v)); on = true; });
+    g.stroke(); g.setLineDash([]);
+  };
+  const algos = d.algos;
+  for (const a of algos) if (!colors[a.algo] && a.algo !== selected) line(a.algo, a.baseline ? '#56626f' : '#3a4552', 1, a.baseline ? [4, 3] : null);
+  for (const a of algos) if (colors[a.algo] && a.algo !== selected) line(a.algo, colors[a.algo], 1.6);
+  if (selected) line(selected, colors[selected] || '#e6edf5', 3);
+  const labels = algos.filter(a => colors[a.algo] || a.algo === selected).map(a => {
+    const s = S[a.algo] || [], v = [...s].reverse().find(z => z != null);
+    return v == null ? null : {name: a.algo, y: y(v), c: colors[a.algo] || '#e6edf5'};
+  }).filter(Boolean).sort((a, b) => a.y - b.y);
+  for (let i = 1; i < labels.length; i++) labels[i].y = Math.max(labels[i].y, labels[i - 1].y + 12);
+  g.textAlign = 'left';
+  for (const l of labels) { g.fillStyle = l.c; g.fillText(l.name.slice(0, 14), W - pad.r + 6, Math.min(l.y + 4, H - pad.b)); }
+}
+
+function render() {
+  const d = data;
+  assignColors(d.algos);
+  renderHeader(d); renderKpis(d); renderAlgos(d); renderHealth(d); renderFills(d); renderLegend(d); drawChart();
+  $('foot').textContent = `run ${d.run.name} · paper only, nothing is sent to any chain · page refreshes every 5 s · ET day ${d.today}`;
+}
+
+async function poll() {
+  try {
+    const r = await fetch('/api', {cache: 'no-store'});
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    data = await r.json();
+    $('err').style.display = 'none';
+    render();
+  } catch (e) {
+    $('err').style.display = 'block';
+    $('err').textContent = 'dashboard server not reachable (' + e.message + '); retrying every 5 s';
+    $('dot').className = 'dot dead';
+  }
+}
+
+function toggle(name) { selected = selected === name ? null : name; if (data) render(); }
+$('algos').addEventListener('click', e => { const tr = e.target.closest('tr[data-algo]'); if (tr) toggle(tr.dataset.algo); });
+$('legend').addEventListener('click', e => { const s = e.target.closest('span[data-algo]'); if (s) toggle(s.dataset.algo); });
+$('showBase').addEventListener('change', () => data && renderFills(data));
+window.addEventListener('resize', () => data && drawChart());
+document.addEventListener('visibilitychange', () => { if (!document.hidden) poll(); });
+setInterval(() => { if (!document.hidden) poll(); }, 5000);
+poll();
+</script>
+</body>
+</html>

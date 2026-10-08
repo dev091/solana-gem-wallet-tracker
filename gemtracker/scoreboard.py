@@ -23,7 +23,7 @@ from .config import DATA_DIR
 
 PROFILE_DIR = DATA_DIR / "profiles"
 PAPER_DIR = DATA_DIR / "paper"
-TARGET_DAY_USD = 5_000          # Rahul's daily target per algo
+TARGET_DAY_USD = 1_500          # Rahul's daily target per algo (from 2026-10-07 7:25 PM ET)
 DECU_BEST_MONTH_USD = 277_000   # Decu's best month (Rahul, 2026-10-07)
 ELITE_MONTH_USD = 1_000_000     # top elite tier per month
 START_USD = 100.0
@@ -77,20 +77,24 @@ def algo_days(run_dir: Path) -> dict:
             continue
         algo = path.stem
         for line in path.read_text(encoding="utf-8").splitlines():
-            f = json.loads(line)
-            r = out.setdefault((algo, et_day(f["arrival_ms"])), _row(algo, "algo"))
-            usd = f.get("sol_usd") or 0.0
-            if f["status"] != "filled":
-                r["pnl_sol"] -= f.get("tx_fee_sol", 0.0)
-                r["pnl_usd"] -= f.get("tx_fee_sol", 0.0) * usd
-            elif f["side"] == "buy":
-                r["deployed_sol"] += f["sol"]
-            else:
-                r["pnl_sol"] += f["pnl_sol"]
-                r["pnl_usd"] += f["pnl_sol"] * usd
-                r["trips"] += 1
-                r["wins"] += f["pnl_sol"] > 0
+            add_fill(out, algo, json.loads(line))
     return out
+
+
+def add_fill(out: dict, algo: str, f: dict) -> None:
+    """Book one ledger line into {(algo, et_day): row}."""
+    r = out.setdefault((algo, et_day(f["arrival_ms"])), _row(algo, "algo"))
+    usd = f.get("sol_usd") or 0.0
+    if f["status"] != "filled":
+        r["pnl_sol"] -= f.get("tx_fee_sol", 0.0)
+        r["pnl_usd"] -= f.get("tx_fee_sol", 0.0) * usd
+    elif f["side"] == "buy":
+        r["deployed_sol"] += f["sol"]
+    else:
+        r["pnl_sol"] += f["pnl_sol"]
+        r["pnl_usd"] += f["pnl_sol"] * usd
+        r["trips"] += 1
+        r["wins"] += f["pnl_sol"] > 0
 
 
 def board(rows: dict, days: int, today: date | None = None) -> list[dict]:

@@ -57,7 +57,7 @@ class BoardTest(unittest.TestCase):
                 ("a", date(2026, 10, 7)): {"entity": "a", "kind": "algo", "pnl_sol": 1.0, "pnl_usd": 100.0,
                                            "deployed_sol": 1.0, "trips": 1, "wins": 1}}
         (r,) = board(rows, 30, today=date(2026, 10, 7))
-        self.assertEqual((r["window_usd"], r["today_usd"], r["gap_today_usd"]), (100.0, 100.0, 4900.0))
+        self.assertEqual((r["window_usd"], r["today_usd"], r["gap_today_usd"]), (100.0, 100.0, 1400.0))   # $1.5k target - $100
 
 
 if __name__ == "__main__":
