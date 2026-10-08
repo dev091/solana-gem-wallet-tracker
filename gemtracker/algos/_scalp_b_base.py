@@ -9,7 +9,7 @@ Risk rules common to the group (Rahul's addendum, labelled "our adaptation"):
   sizing      every entry is `size_frac` of current equity (cash + marked positions), so
               profits compound; capped so the buy moves the curve price <= `max_impact`
   hard stop   `max_loss_per_trade` below the fill price -> sell everything
-  kill switch no new entries for the rest of the UTC day once equity is `daily_kill_dd`
+  kill switch no new entries for the rest of the ET day once equity is `daily_kill_dd`
               below the day-start equity; exits keep running
   exposure    open cost + pending buys <= `max_exposure_frac` of equity, `max_positions` coins
   target      the reconstruction never acts on its own target wallet's trades
@@ -22,6 +22,7 @@ from dataclasses import dataclass
 
 from ..chain_events import WSOL
 from ..papersim import buy_out
+from ..scoreboard import et_day
 from ..strategy import Buy, Sell, Strategy
 
 DAY_MS = 86_400_000
@@ -213,7 +214,7 @@ class ScalpBase(Strategy):
         return book.cash_sol + sum(p.cost_sol for p in book.positions.values())
 
     def _roll_day(self, now_ms, book):
-        day = now_ms // DAY_MS
+        day = et_day(now_ms)       # ET calendar day, same clock as the scoreboard
         eq = self.equity(book)
         if day != self.day:
             self.day, self.day_eq, self.killed = day, eq, False
