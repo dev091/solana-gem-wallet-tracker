@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1791640084,
+ "updated_at": 1791655726,
  "mode": "holdings",
  "tracked": [
   {
@@ -10,7 +10,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
-   "label": "consistent trunoest (score 15)",
+   "label": "consistent trunoest (score 16)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -87,20 +87,14 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "GDpqhJgwzg8zcoEmVvGDiVRVnaa797ryvPnNqQVBjQrN",
-   "label": "consistent luckycat737 (score 11)",
+   "wallet": "GeUnv1jmtviRbR7Gu1JnXSGkUMUgFVBHuEVQVpTaUX1W",
+   "label": "consistent Gladey (score 11)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "DJQwtiowTJmAvAu4vhCaFgPiS3nnKD5r5agZgBQEdHK2",
-   "label": "small-money winner bymotionnn",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "2pV7sJn5PcZW89qHCB7849ut65tNKT4MwW5grwGsaCYU",
-   "label": "small-money winner hotmeltedsalmon",
+   "wallet": "6gERpWNKQnta98NW1et2im3LxGMmihByrz1aShZBhz2T",
+   "label": "small-money winner SolMuddySparrow",
    "tier": "BOARD",
    "gems": 0
   }
