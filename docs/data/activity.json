@@ -1,5 +1,5 @@
 {
- "updated_at": 1791655726,
+ "updated_at": 1791669040,
  "mode": "holdings",
  "tracked": [
   {
@@ -39,8 +39,20 @@
    "gems": 0
   },
   {
+   "wallet": "EqBQhoU88ty3a3aDphDRCBuiRirjUsFSFi4UHGY64qvv",
+   "label": "consistent sadcrissy (score 12)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
    "wallet": "3VUNtVtjjx5ckUojT7UocJ5fbuAJRsNUXNfTBnPte9vC",
    "label": "consistent buddhaaaaa (score 12)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "6CpipySaXTAiUKDyyhWeCfYSMQLCiHrbCN1WvRv5s8kF",
+   "label": "consistent ronaldcarter (score 12)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -75,26 +87,20 @@
    "gems": 0
   },
   {
-   "wallet": "EqBQhoU88ty3a3aDphDRCBuiRirjUsFSFi4UHGY64qvv",
-   "label": "consistent sadcrissy (score 11)",
+   "wallet": "ACTbvbNm5qTLuofNRPxFPMtHAAtdH1CtzhCZatYHy831",
+   "label": "consistent slidrrz (score 11)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "6CpipySaXTAiUKDyyhWeCfYSMQLCiHrbCN1WvRv5s8kF",
-   "label": "consistent ronaldcarter (score 11)",
+   "wallet": "EgNcLphxsfZNUQqxfTWDjdk47cVU3GT7jDFCLBuqU6qY",
+   "label": "small-money winner HillZincHelper",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "GeUnv1jmtviRbR7Gu1JnXSGkUMUgFVBHuEVQVpTaUX1W",
-   "label": "consistent Gladey (score 11)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "6gERpWNKQnta98NW1et2im3LxGMmihByrz1aShZBhz2T",
-   "label": "small-money winner SolMuddySparrow",
+   "wallet": "2pV7sJn5PcZW89qHCB7849ut65tNKT4MwW5grwGsaCYU",
+   "label": "small-money winner hotmeltedsalmon",
    "tier": "BOARD",
    "gems": 0
   }
