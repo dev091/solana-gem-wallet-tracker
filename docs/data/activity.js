@@ -1,94 +1,94 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1791679074,
+ "updated_at": 1791700549,
  "mode": "holdings",
  "tracked": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 16)",
+   "label": "consistent decu (score 20)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
-   "label": "consistent trunoest (score 16)",
+   "label": "consistent trunoest (score 19)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 13)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "FqamE7xrahg7FEWoByrx1o8SeyHt44rpmE6ZQfT7zrve",
-   "label": "consistent EustazZ (score 13)",
+   "label": "consistent Limfork.eth (score 16)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "29yFzeBZgxf5zqrAkKXwgZtQehRf4pL8WbV2nRJikbw8",
-   "label": "consistent throatycrab1008 (score 12)",
+   "label": "consistent throatycrab1008 (score 15)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent ogantd (score 12)",
+   "label": "consistent OGAntD (score 15)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "EqBQhoU88ty3a3aDphDRCBuiRirjUsFSFi4UHGY64qvv",
-   "label": "consistent sadcrissy (score 12)",
+   "label": "consistent sadcrissy (score 15)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "3VUNtVtjjx5ckUojT7UocJ5fbuAJRsNUXNfTBnPte9vC",
-   "label": "consistent buddhaaaaa (score 12)",
+   "label": "consistent buddhaaaaa (score 15)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "6CpipySaXTAiUKDyyhWeCfYSMQLCiHrbCN1WvRv5s8kF",
-   "label": "consistent ronaldcarter (score 12)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "9LXWa7V3AE15VfBupcx5gDts2ix3Y9NzbcKZKjkkq6hV",
-   "label": "consistent rikz_ (score 12)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "2QrfK8gf3vBcFfuaCJbFxGk3w1JxwjamGE9aGwdQHFas",
-   "label": "consistent Thokani (score 12)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 12)",
+   "label": "consistent ronaldcarter (score 15)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent banval (score 12)",
+   "label": "consistent ban (score 15)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "BSzpGGB3AMwtW126RT3Z27STSBrVjKV5A96H4BsUKdtD",
-   "label": "consistent ferre (score 12)",
+   "wallet": "FqamE7xrahg7FEWoByrx1o8SeyHt44rpmE6ZQfT7zrve",
+   "label": "consistent EustazZ (score 15)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "ACTbvbNm5qTLuofNRPxFPMtHAAtdH1CtzhCZatYHy831",
-   "label": "consistent slidrrz (score 11)",
+   "label": "consistent slidrrz (score 14)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "GeUnv1jmtviRbR7Gu1JnXSGkUMUgFVBHuEVQVpTaUX1W",
+   "label": "consistent Gladey (score 14)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "9LXWa7V3AE15VfBupcx5gDts2ix3Y9NzbcKZKjkkq6hV",
+   "label": "consistent rikz_ (score 14)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "GDpqhJgwzg8zcoEmVvGDiVRVnaa797ryvPnNqQVBjQrN",
+   "label": "consistent luckycat737 (score 14)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "2QrfK8gf3vBcFfuaCJbFxGk3w1JxwjamGE9aGwdQHFas",
+   "label": "consistent Thokani (score 14)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -99,8 +99,14 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "2pV7sJn5PcZW89qHCB7849ut65tNKT4MwW5grwGsaCYU",
-   "label": "small-money winner hotmeltedsalmon",
+   "wallet": "DYAn4XpAkN5mhiXkRB7dGq4Jadnx6XYgu8L5b3WGhbrt",
+   "label": "small-money winner KayThedoc",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "5ZBQgjAsRYuk1eQTzJQSLCg7WBQndjQgou2ZMVMaaZBe",
+   "label": "small-money winner EdVodkaQuant",
    "tier": "BOARD",
    "gems": 0
   }
