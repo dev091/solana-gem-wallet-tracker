@@ -1,5 +1,5 @@
 {
- "updated_at": 1791700549,
+ "updated_at": 1791725437,
  "mode": "holdings",
  "tracked": [
   {
@@ -10,13 +10,13 @@
   },
   {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
-   "label": "consistent trunoest (score 19)",
+   "label": "consistent trunoest (score 20)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 16)",
+   "label": "consistent limfork (score 16)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -28,7 +28,7 @@
   },
   {
    "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent OGAntD (score 15)",
+   "label": "consistent ogantd (score 15)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -75,14 +75,14 @@
    "gems": 0
   },
   {
-   "wallet": "9LXWa7V3AE15VfBupcx5gDts2ix3Y9NzbcKZKjkkq6hV",
-   "label": "consistent rikz_ (score 14)",
+   "wallet": "GDpqhJgwzg8zcoEmVvGDiVRVnaa797ryvPnNqQVBjQrN",
+   "label": "consistent luckycat737 (score 14)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "GDpqhJgwzg8zcoEmVvGDiVRVnaa797ryvPnNqQVBjQrN",
-   "label": "consistent luckycat737 (score 14)",
+   "wallet": "9LXWa7V3AE15VfBupcx5gDts2ix3Y9NzbcKZKjkkq6hV",
+   "label": "consistent rikz_ (score 14)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -99,14 +99,14 @@
    "gems": 0
   },
   {
-   "wallet": "DYAn4XpAkN5mhiXkRB7dGq4Jadnx6XYgu8L5b3WGhbrt",
-   "label": "small-money winner KayThedoc",
+   "wallet": "2U8tL3mBZCy5NJWTGfxtxntMidsSwjksNF9B45Cfrr17",
+   "label": "small-money winner ZenHighlyZenith",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "5ZBQgjAsRYuk1eQTzJQSLCg7WBQndjQgou2ZMVMaaZBe",
-   "label": "small-money winner EdVodkaQuant",
+   "wallet": "2pV7sJn5PcZW89qHCB7849ut65tNKT4MwW5grwGsaCYU",
+   "label": "small-money winner hotmeltedsalmon",
    "tier": "BOARD",
    "gems": 0
   }
