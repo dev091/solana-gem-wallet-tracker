@@ -1,5 +1,5 @@
 {
- "updated_at": 1791669040,
+ "updated_at": 1791679074,
  "mode": "holdings",
  "tracked": [
   {
@@ -106,6 +106,36 @@
   }
  ],
  "events": [
+  {
+   "ts": 1791678706,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 16)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "5xy3G4rPu9kuiXvFDngCQrETUo6nFpzZD6BpW46Vpump",
+   "tokens": 8888560.782427,
+   "usd": 31.77,
+   "symbol": "ZION",
+   "price": 3.574e-06,
+   "market_cap": 3574.8,
+   "liquidity": null
+  },
+  {
+   "ts": 1791678706,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 16)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
+   "tokens": 0.1967797,
+   "usd": 45.43,
+   "symbol": "NVDAx",
+   "price": 230.88,
+   "market_cap": 44706838.0,
+   "liquidity": 3303944.73
+  },
   {
    "ts": 1791639719,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4574,36 +4604,6 @@
    "symbol": "PRIVATLY",
    "price": 3.895e-06,
    "market_cap": 3895.86,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "buy",
-   "mint": "GRm1Lbzb6xa9nKd7sxpK5XTehE3au5vY1qKGKcAaMDQB",
-   "tokens": 35752652.638902,
-   "usd": 221.77,
-   "symbol": "CIRCUITCAT",
-   "price": 6.203e-06,
-   "market_cap": 6203.83,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "buy",
-   "mint": "6KBDqTzgRPpa6xWeS5nPCxPwZHCRu1C51mV3S9r3pump",
-   "tokens": 35922529.379093,
-   "usd": 390.12,
-   "symbol": "CAT",
-   "price": 1.086e-05,
-   "market_cap": 10864.6,
    "liquidity": null
   }
  ],
