@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1791725437,
+ "updated_at": 1791757362,
  "mode": "holdings",
  "tracked": [
   {
@@ -17,6 +17,12 @@ window.GEM_ACTIVITY = {
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
    "label": "consistent limfork (score 16)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
+   "label": "consistent ban (score 16)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -51,8 +57,8 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 15)",
+   "wallet": "9LXWa7V3AE15VfBupcx5gDts2ix3Y9NzbcKZKjkkq6hV",
+   "label": "consistent rikz_ (score 15)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -81,32 +87,8 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "9LXWa7V3AE15VfBupcx5gDts2ix3Y9NzbcKZKjkkq6hV",
-   "label": "consistent rikz_ (score 14)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
    "wallet": "2QrfK8gf3vBcFfuaCJbFxGk3w1JxwjamGE9aGwdQHFas",
    "label": "consistent Thokani (score 14)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "EgNcLphxsfZNUQqxfTWDjdk47cVU3GT7jDFCLBuqU6qY",
-   "label": "small-money winner HillZincHelper",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "2U8tL3mBZCy5NJWTGfxtxntMidsSwjksNF9B45Cfrr17",
-   "label": "small-money winner ZenHighlyZenith",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "2pV7sJn5PcZW89qHCB7849ut65tNKT4MwW5grwGsaCYU",
-   "label": "small-money winner hotmeltedsalmon",
    "tier": "BOARD",
    "gems": 0
   }
