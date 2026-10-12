@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1791769171,
+ "updated_at": 1791828010,
  "mode": "holdings",
  "tracked": [
   {
@@ -21,14 +21,20 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "29yFzeBZgxf5zqrAkKXwgZtQehRf4pL8WbV2nRJikbw8",
-   "label": "consistent throatycrab1008 (score 18)",
+   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
+   "label": "consistent OGAntD (score 19)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent ogantd (score 18)",
+   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
+   "label": "consistent Limfork.eth (score 19)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "29yFzeBZgxf5zqrAkKXwgZtQehRf4pL8WbV2nRJikbw8",
+   "label": "consistent throatycrab1008 (score 18)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -39,8 +45,8 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent limfork (score 18)",
+   "wallet": "6CpipySaXTAiUKDyyhWeCfYSMQLCiHrbCN1WvRv5s8kF",
+   "label": "consistent ronaldcarter (score 18)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -59,12 +65,6 @@ window.GEM_ACTIVITY = {
   {
    "wallet": "ACTbvbNm5qTLuofNRPxFPMtHAAtdH1CtzhCZatYHy831",
    "label": "consistent slidrrz (score 17)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "6CpipySaXTAiUKDyyhWeCfYSMQLCiHrbCN1WvRv5s8kF",
-   "label": "consistent ronaldcarter (score 17)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -89,12 +89,6 @@ window.GEM_ACTIVITY = {
   {
    "wallet": "FqamE7xrahg7FEWoByrx1o8SeyHt44rpmE6ZQfT7zrve",
    "label": "consistent EustazZ (score 16)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "8NVkytV1CtoNBXGFtwXwh4KQdbgVcA6hFmym1gMuRHru",
-   "label": "small-money winner Icefreezer",
    "tier": "BOARD",
    "gems": 0
   }

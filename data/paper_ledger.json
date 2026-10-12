@@ -4,25 +4,12 @@
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 16)",
    "tier": "BOARD",
-   "mint": "2fzxzUEbm6u73FycPRjhhmTst7A84L3FWEsaYKagzgHW",
-   "symbol": "UNKNOWN",
-   "opened_at": 1791640084,
-   "entry": 3.078e-05,
-   "peak": 3.194e-05,
-   "last": 3.194e-05,
-   "price_24h": 3.092e-05,
-   "wallet_buy_usd": 106.71
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 16)",
-   "tier": "BOARD",
    "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
    "symbol": "NVDAx",
    "opened_at": 1791679074,
    "entry": 230.88,
    "peak": 231.69,
-   "last": 230.16,
+   "last": 226.7,
    "price_24h": 230.21,
    "wallet_buy_usd": 45.43
   }
@@ -6536,6 +6523,27 @@
     "mirror": 0.87,
     "tp2x_half": 0.87,
     "hold_24h": 0.8129
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 16)",
+   "tier": "BOARD",
+   "mint": "2fzxzUEbm6u73FycPRjhhmTst7A84L3FWEsaYKagzgHW",
+   "symbol": "UNKNOWN",
+   "opened_at": 1791640084,
+   "entry": 3.078e-05,
+   "peak": 3.194e-05,
+   "last": 3.194e-05,
+   "price_24h": 3.092e-05,
+   "wallet_buy_usd": 106.71,
+   "closed_at": 1791828010,
+   "exit": 3.194e-05,
+   "reason": "48h limit",
+   "returns": {
+    "mirror": 0.9966,
+    "tp2x_half": 0.9966,
+    "hold_24h": 0.9648
    }
   }
  ]
