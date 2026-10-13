@@ -1,16 +1,22 @@
 {
- "updated_at": 1791828010,
+ "updated_at": 1791850804,
  "mode": "holdings",
  "tracked": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 23)",
+   "label": "consistent decu (score 24)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
-   "label": "consistent trunoest (score 23)",
+   "label": "consistent trunoest (score 24)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
+   "label": "consistent Limfork.eth (score 20)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -23,12 +29,6 @@
   {
    "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
    "label": "consistent OGAntD (score 19)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 19)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -81,14 +81,44 @@
    "gems": 0
   },
   {
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 16)",
+   "wallet": "BSzpGGB3AMwtW126RT3Z27STSBrVjKV5A96H4BsUKdtD",
+   "label": "consistent ferre (score 17)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "FqamE7xrahg7FEWoByrx1o8SeyHt44rpmE6ZQfT7zrve",
-   "label": "consistent EustazZ (score 16)",
+   "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
+   "label": "consistent daddychilllll (score 16)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "FJrpxa3hFdAZgoV13HbLyAdxg5SFvpx7KVZ6Tcwy7mAJ",
+   "label": "small-money winner dilawks",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "BN73buQDU4WLMmRkRSjV4qKkEvFVYNC8g1YNfuPe95Aj",
+   "label": "small-money winner moonkraken626",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "91p7G7unBy2s4wHgnh1dercAtaRphh6HX6oCyc41xGLb",
+   "label": "small-money winner alphatunainters",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "34vuV8TzHTDW235H4yrEjF1BMPqEm3wvtuhWFLXkojas",
+   "label": "small-money winner grownftb",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "5gB3BqzQ2AiyB5ackz5kwuc2iU2aj9AZmShBgJftWvR4",
+   "label": "small-money winner Brickstoflip",
    "tier": "BOARD",
    "gems": 0
   }
