@@ -1,5 +1,5 @@
 {
- "updated_at": 1791874607,
+ "updated_at": 1791903417,
  "mode": "holdings",
  "tracked": [
   {
@@ -34,7 +34,7 @@
   },
   {
    "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent OGAntD (score 21)",
+   "label": "consistent ogantd (score 21)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -93,8 +93,8 @@
    "gems": 0
   },
   {
-   "wallet": "BN73buQDU4WLMmRkRSjV4qKkEvFVYNC8g1YNfuPe95Aj",
-   "label": "small-money winner moonkraken626",
+   "wallet": "91p7G7unBy2s4wHgnh1dercAtaRphh6HX6oCyc41xGLb",
+   "label": "small-money winner alphatunainters",
    "tier": "BOARD",
    "gems": 0
   },
@@ -105,14 +105,20 @@
    "gems": 0
   },
   {
-   "wallet": "6PLEJea6ZhU9HgWFYtN7qmhbvmoL1RCY9MGyJSp7DtZk",
-   "label": "small-money winner onlymooner_",
+   "wallet": "CGF5pKQip5XNXKvYJJcQw5JTS3jrS7TppcJwMxftBYVE",
+   "label": "small-money winner MazeCookin",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "FJG2gxtH3t46g5wEjp4SCtGAbvzVQMPuNTQeTRzpmDvW",
    "label": "small-money winner suspend",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "C8AkvtNf8jwowb8VR8jkyHPVKVE4m3JMwdVefinBKWTr",
+   "label": "small-money winner TheFirstTurd",
    "tier": "BOARD",
    "gems": 0
   }
