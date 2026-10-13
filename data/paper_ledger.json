@@ -2,16 +2,55 @@
  "open": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 16)",
+   "label": "consistent decu (score 28)",
    "tier": "BOARD",
-   "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
-   "symbol": "NVDAx",
-   "opened_at": 1791679074,
-   "entry": 230.88,
-   "peak": 231.69,
-   "last": 224.49,
-   "price_24h": 230.21,
-   "wallet_buy_usd": 45.43
+   "mint": "4fNFLSotJrS41D43zCe6AGFGonwrNej17yop6VLpBKCK",
+   "symbol": "UNKNOWN",
+   "opened_at": 1791874607,
+   "entry": 2.98e-05,
+   "peak": 2.98e-05,
+   "last": 2.98e-05,
+   "price_24h": null,
+   "wallet_buy_usd": 141.06
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 28)",
+   "tier": "BOARD",
+   "mint": "HPPhXzFeXB7WghvwzFSUcdNL5C1bEAirMVfvDE3oVNck",
+   "symbol": "UNKNOWN",
+   "opened_at": 1791874607,
+   "entry": 2.978e-05,
+   "peak": 2.978e-05,
+   "last": 2.978e-05,
+   "price_24h": null,
+   "wallet_buy_usd": 131.03
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 28)",
+   "tier": "BOARD",
+   "mint": "HJcrx7gM6p3Tum3Cn9WLFnAKp58Vx3Fa9cakPvTQiNX9",
+   "symbol": "UNKNOWN",
+   "opened_at": 1791874607,
+   "entry": 2.851e-05,
+   "peak": 2.851e-05,
+   "last": 2.851e-05,
+   "price_24h": null,
+   "wallet_buy_usd": 81.15
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 28)",
+   "tier": "BOARD",
+   "mint": "3zPKUGABncyx7hgY31C3Vnv4APJR41cge8E624MNrdoX",
+   "symbol": "UNKNOWN",
+   "opened_at": 1791874607,
+   "entry": 3.083e-05,
+   "peak": 3.083e-05,
+   "last": 3.083e-05,
+   "price_24h": null,
+   "wallet_buy_usd": 112.19
   }
  ],
  "closed": [
@@ -6544,6 +6583,27 @@
     "mirror": 0.9966,
     "tp2x_half": 0.9966,
     "hold_24h": 0.9648
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 16)",
+   "tier": "BOARD",
+   "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
+   "symbol": "NVDAx",
+   "opened_at": 1791679074,
+   "entry": 230.88,
+   "peak": 231.69,
+   "last": 224.49,
+   "price_24h": 230.21,
+   "wallet_buy_usd": 45.43,
+   "closed_at": 1791874607,
+   "exit": 224.56,
+   "reason": "wallet sold",
+   "returns": {
+    "mirror": 0.9341,
+    "tp2x_half": 0.9341,
+    "hold_24h": 0.9576
    }
   }
  ]
