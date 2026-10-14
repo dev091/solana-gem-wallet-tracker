@@ -1,5 +1,5 @@
 {
- "updated_at": 1791950256,
+ "updated_at": 1791970025,
  "mode": "holdings",
  "tracked": [
   {
@@ -16,7 +16,7 @@
   },
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 27)",
+   "label": "consistent limfork (score 27)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -105,8 +105,8 @@
    "gems": 0
   },
   {
-   "wallet": "6WiWtSudLV7npagPHNQCYXuKN6odQT36ijJvVbGEg8nc",
-   "label": "small-money winner omnibauss",
+   "wallet": "Hu71EYfmaruBs49mYhva7EwKSwK4rmX8XA4nFcLBK6oW",
+   "label": "small-money winner mr__j",
    "tier": "BOARD",
    "gems": 0
   },
@@ -117,8 +117,8 @@
    "gems": 0
   },
   {
-   "wallet": "Hu71EYfmaruBs49mYhva7EwKSwK4rmX8XA4nFcLBK6oW",
-   "label": "small-money winner mr__j",
+   "wallet": "EmjZNfDvRjHqW3EvGnfakPbFQgLwtspVNKApggw3YrJq",
+   "label": "small-money winner YakuzamotoSan",
    "tier": "BOARD",
    "gems": 0
   }
