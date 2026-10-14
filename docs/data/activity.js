@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1791970025,
+ "updated_at": 1791989028,
  "mode": "holdings",
  "tracked": [
   {
@@ -82,7 +82,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "GDpqhJgwzg8zcoEmVvGDiVRVnaa797ryvPnNqQVBjQrN",
-   "label": "consistent luckycat737 (score 21)",
+   "label": "consistent rook74 (score 21)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -99,26 +99,20 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "91p7G7unBy2s4wHgnh1dercAtaRphh6HX6oCyc41xGLb",
-   "label": "small-money winner alphatunainters",
+   "wallet": "7e8uGXtpMW8bpcukFuwRVttn4a6DZtgHrQXF5C99VboW",
+   "label": "small-money winner ForEnglandJames",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "Hu71EYfmaruBs49mYhva7EwKSwK4rmX8XA4nFcLBK6oW",
-   "label": "small-money winner mr__j",
+   "wallet": "6WiWtSudLV7npagPHNQCYXuKN6odQT36ijJvVbGEg8nc",
+   "label": "small-money winner omnibauss",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "ERKtEqQiUsBD4S1WX6qRQUXgsxvw4vGDaqXDLtztQQT7",
-   "label": "small-money winner FastFishRomano",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "EmjZNfDvRjHqW3EvGnfakPbFQgLwtspVNKApggw3YrJq",
-   "label": "small-money winner YakuzamotoSan",
+   "wallet": "7NmvnaCtK2fVf94pep5D8wNPfqRUwwdUohWmSa21gTw",
+   "label": "small-money winner BoldAlphaShark",
    "tier": "BOARD",
    "gems": 0
   }
