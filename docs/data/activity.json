@@ -1,5 +1,5 @@
 {
- "updated_at": 1792004511,
+ "updated_at": 1792015822,
  "mode": "holdings",
  "tracked": [
   {
@@ -16,7 +16,7 @@
   },
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent limfork (score 27)",
+   "label": "consistent Limfork.eth (score 27)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -45,14 +45,14 @@
    "gems": 0
   },
   {
-   "wallet": "GeUnv1jmtviRbR7Gu1JnXSGkUMUgFVBHuEVQVpTaUX1W",
-   "label": "consistent Gladey (score 23)",
+   "wallet": "9LXWa7V3AE15VfBupcx5gDts2ix3Y9NzbcKZKjkkq6hV",
+   "label": "consistent rikz_ (score 24)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "9LXWa7V3AE15VfBupcx5gDts2ix3Y9NzbcKZKjkkq6hV",
-   "label": "consistent rikz_ (score 23)",
+   "wallet": "GeUnv1jmtviRbR7Gu1JnXSGkUMUgFVBHuEVQVpTaUX1W",
+   "label": "consistent Gladey (score 23)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -99,25 +99,70 @@
    "gems": 0
   },
   {
-   "wallet": "7e8uGXtpMW8bpcukFuwRVttn4a6DZtgHrQXF5C99VboW",
-   "label": "small-money winner ForEnglandJames",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
    "wallet": "6WiWtSudLV7npagPHNQCYXuKN6odQT36ijJvVbGEg8nc",
    "label": "small-money winner omnibauss",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "7NmvnaCtK2fVf94pep5D8wNPfqRUwwdUohWmSa21gTw",
-   "label": "small-money winner BoldAlphaShark",
+   "wallet": "AejpAVZaECmaA6rjcWUhrhETCszHD3oy5PqYQ5GASML4",
+   "label": "small-money winner Panda_calls",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "Hu71EYfmaruBs49mYhva7EwKSwK4rmX8XA4nFcLBK6oW",
+   "label": "small-money winner mr__j",
    "tier": "BOARD",
    "gems": 0
   }
  ],
  "events": [
+  {
+   "ts": 1792015412,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 32)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "G1RCJFfkEBamjy8syLQLyg52XCryjxDa5t3KVvYGpump",
+   "tokens": 26086669.877173,
+   "usd": 98.32,
+   "symbol": "Pedro",
+   "price": 3.769e-06,
+   "market_cap": 3769.04,
+   "liquidity": null
+  },
+  {
+   "ts": 1792015412,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 32)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "BootkYnPtuE9xywAqNvm5WQaso1XEEAevg6DQ1Dv9ett",
+   "tokens": 15799400.09515,
+   "usd": 1207.23,
+   "symbol": "BOOT",
+   "price": 7.641e-05,
+   "market_cap": 76415.0,
+   "liquidity": 23207.73
+  },
+  {
+   "ts": 1792015412,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 32)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
+   "tokens": 0.14512766,
+   "usd": 32.11,
+   "symbol": "NVDAx",
+   "price": 221.22,
+   "market_cap": 44159404.0,
+   "liquidity": 3138657.33
+  },
   {
    "ts": 1792004097,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4570,51 +4615,6 @@
    "usd": 107.7,
    "symbol": "3kLb…6n5k",
    "price": 3.2289598474544434e-06,
-   "market_cap": null,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "3iDzTSysnYjVgnbCwRPCRDg7UpQvEXatHhQbvyFgpump",
-   "tokens": 34411025.392772,
-   "usd": 140.43,
-   "symbol": "SHIBAMOE",
-   "price": 4.081e-06,
-   "market_cap": 4081.84,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "3aqM8mkm9HbEr16NNZY2PMZLMuhtTMzDnqPhSV8PyevU",
-   "tokens": 34495063.704432,
-   "usd": 107.28,
-   "symbol": "DEX",
-   "price": 3.11e-06,
-   "market_cap": 3110.3,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "2xpi7CK87YnAWABaSiWvcbGYAT4LwH7dD8fJvcSXanJa",
-   "tokens": 27449953.760981,
-   "usd": 90.28,
-   "symbol": "2xpi…anJa",
-   "price": 3.2889592968348513e-06,
    "market_cap": null,
    "liquidity": null
   }

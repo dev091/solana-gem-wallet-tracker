@@ -35,7 +35,7 @@
    "opened_at": 1791874607,
    "entry": 2.851e-05,
    "peak": 2.918e-05,
-   "last": 2.899e-05,
+   "last": 2.823e-05,
    "price_24h": 2.906e-05,
    "wallet_buy_usd": 81.15
   },
@@ -60,9 +60,9 @@
    "symbol": "UNKNOWN",
    "opened_at": 1791923839,
    "entry": 3.085e-05,
-   "peak": 3.085e-05,
-   "last": 3.068e-05,
-   "price_24h": null,
+   "peak": 3.103e-05,
+   "last": 3.103e-05,
+   "price_24h": 3.103e-05,
    "wallet_buy_usd": 139.73
   },
   {
@@ -75,7 +75,7 @@
    "entry": 2.987e-05,
    "peak": 3.032e-05,
    "last": 3.032e-05,
-   "price_24h": null,
+   "price_24h": 3.032e-05,
    "wallet_buy_usd": 144.44
   },
   {
@@ -88,7 +88,7 @@
    "entry": 3.152e-05,
    "peak": 3.152e-05,
    "last": 3.148466964638307e-05,
-   "price_24h": null,
+   "price_24h": 3.148466964638307e-05,
    "wallet_buy_usd": 161.68
   },
   {
@@ -112,10 +112,49 @@
    "symbol": "METAx",
    "opened_at": 1792004511,
    "entry": 738.74,
-   "peak": 738.74,
-   "last": 738.74,
+   "peak": 739.82,
+   "last": 739.82,
    "price_24h": null,
    "wallet_buy_usd": 33.82
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 32)",
+   "tier": "BOARD",
+   "mint": "Xsc9qvGR1efVDFGLrVsmkzv3qi45LTBjeUKSPmx9qEh",
+   "symbol": "NVDAx",
+   "opened_at": 1792015822,
+   "entry": 221.22,
+   "peak": 221.22,
+   "last": 221.22,
+   "price_24h": null,
+   "wallet_buy_usd": 32.11
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 32)",
+   "tier": "BOARD",
+   "mint": "BootkYnPtuE9xywAqNvm5WQaso1XEEAevg6DQ1Dv9ett",
+   "symbol": "BOOT",
+   "opened_at": 1792015822,
+   "entry": 7.641e-05,
+   "peak": 7.641e-05,
+   "last": 7.641e-05,
+   "price_24h": null,
+   "wallet_buy_usd": 1207.23
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 32)",
+   "tier": "BOARD",
+   "mint": "G1RCJFfkEBamjy8syLQLyg52XCryjxDa5t3KVvYGpump",
+   "symbol": "Pedro",
+   "opened_at": 1792015822,
+   "entry": 3.769e-06,
+   "peak": 3.769e-06,
+   "last": 3.769e-06,
+   "price_24h": null,
+   "wallet_buy_usd": 98.32
   }
  ],
  "closed": [
