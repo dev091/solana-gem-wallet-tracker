@@ -1,5 +1,5 @@
 {
- "updated_at": 1791989028,
+ "updated_at": 1792004511,
  "mode": "holdings",
  "tracked": [
   {
@@ -118,6 +118,51 @@
   }
  ],
  "events": [
+  {
+   "ts": 1792004097,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 32)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "EB1GGAWcciC1EDLhjCcQt8HsiHWhdi91DZhKKdcCpump",
+   "tokens": 37305032.388537,
+   "usd": 107.21,
+   "symbol": "SLOPNALD",
+   "price": 2.874e-06,
+   "market_cap": 2874.42,
+   "liquidity": null
+  },
+  {
+   "ts": 1792004097,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 32)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "Xsa62P5mvPszXL1krVUnU5ar38bBSVcWAB6fmPCo5Zu",
+   "tokens": 0.045781720000000005,
+   "usd": 33.82,
+   "symbol": "METAx",
+   "price": 738.74,
+   "market_cap": 738749.0,
+   "liquidity": 1011046.9
+  },
+  {
+   "ts": 1792004097,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 32)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "H3oigkMQK1p51cXtnQcJCd2qHhx7AqLEUDHK6BPKu7M4",
+   "tokens": 5052095.838643,
+   "usd": 165.15,
+   "symbol": "UNKNOWN",
+   "price": 3.269e-05,
+   "market_cap": 32698.0,
+   "liquidity": 27658.6
+  },
   {
    "ts": 1791949824,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4571,51 +4616,6 @@
    "symbol": "2xpi…anJa",
    "price": 3.2889592968348513e-06,
    "market_cap": null,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "2nPYnYExQwRKKUHU4mkYtQZj4gaZzERLLXFc2CPMpump",
-   "tokens": 35725797.639834,
-   "usd": 206.17,
-   "symbol": "PHOENIX",
-   "price": 5.771e-06,
-   "market_cap": 5771.5,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "2mU1NrQzQL8HE3EgxydD8CWWp34h15TVUECuqyRRpump",
-   "tokens": 28245116.892244,
-   "usd": 459.55,
-   "symbol": "GROKIPEDIA",
-   "price": 1.627e-05,
-   "market_cap": 15559.0,
-   "liquidity": 9303.0
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "2PYWDCJvwWJTyFUhaRQ7NDkKwDyJnT5J3bEQex7xb2jP",
-   "tokens": 35211073.267446,
-   "usd": 111.62,
-   "symbol": "STASHCAT",
-   "price": 3.17e-06,
-   "market_cap": 3170.23,
    "liquidity": null
   }
  ],
