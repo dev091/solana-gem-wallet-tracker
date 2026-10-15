@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1792041663,
+ "updated_at": 1792076975,
  "mode": "holdings",
  "tracked": [
   {
@@ -34,7 +34,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent OGAntD (score 27)",
+   "label": "consistent ogantd (score 27)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -93,19 +93,64 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
+   "wallet": "CLTqXG31YPyLtaXwZXsVP4inf4zSLo38W8wrKAfxfkgd",
+   "label": "small-money winner MC_Escher",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "3dasx37yyhjME6wYCYvmW9egBGyGmLwBUFekPa5yd6eR",
+   "label": "small-money winner GEMHUNTERV1",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "5U6sifD2aWd1y38XqaWNm256zjyrCUpXFwqgShS5r4nG",
+   "label": "small-money winner pikachu1",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
    "wallet": "Ev4dxwYVG7vkP6zsTAuJrqSRwDjFmyXudakq3P2HSQet",
    "label": "small-money winner ZypherHQ",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "3vhdQzvkK6gceaKGQcCcFamFy7veWhHz3JPkHGE8kqbt",
-   "label": "small-money winner DaniWorldwide",
+   "wallet": "BhH9v2hW8L75dZsmoDdhRoWhJ2PwQviw1SCL9ArMGpVo",
+   "label": "small-money winner rocode",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "7Qn6PfEDJKsoXDyHLQUZrjX6fpXmK9ACnTQyw1Wq2hha",
+   "label": "small-money winner athihn",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "A1NRonobpzz48sqPCdLYB81pi3yMsuy7brqUgEhwyq16",
+   "label": "small-money winner mrstaff",
    "tier": "BOARD",
    "gems": 0
   }
  ],
  "events": [
+  {
+   "ts": 1792076497,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 36)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "9mLSKxkG9M7QYPXy3ogKnauytSoZ1v8A6NhRfD51em6X",
+   "tokens": 5574543.102859,
+   "usd": 170.3,
+   "symbol": "UNKNOWN",
+   "price": 3.055e-05,
+   "market_cap": 30558.0,
+   "liquidity": 25982.18
+  },
   {
    "ts": 1792041295,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4589,21 +4634,6 @@ window.GEM_ACTIVITY = {
    "symbol": "BUCKBANDIT",
    "price": 3.332e-06,
    "market_cap": 3332.22,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "3wSBg1f934pw297X8DtvgTizxasfsaEgZKEprpEJpump",
-   "tokens": 38556323.490486,
-   "usd": 135.64,
-   "symbol": "SICZAR",
-   "price": 3.518e-06,
-   "market_cap": 3518.12,
    "liquidity": null
   }
  ],
