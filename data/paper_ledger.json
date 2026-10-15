@@ -34,8 +34,8 @@
    "symbol": "UNKNOWN",
    "opened_at": 1791923839,
    "entry": 3.152e-05,
-   "peak": 3.152e-05,
-   "last": 3.142e-05,
+   "peak": 3.188e-05,
+   "last": 3.188e-05,
    "price_24h": 3.148466964638307e-05,
    "wallet_buy_usd": 161.68
   },
@@ -49,7 +49,7 @@
    "entry": 3.269e-05,
    "peak": 3.269e-05,
    "last": 3.152e-05,
-   "price_24h": null,
+   "price_24h": 3.152e-05,
    "wallet_buy_usd": 165.15
   },
   {
@@ -60,9 +60,9 @@
    "symbol": "METAx",
    "opened_at": 1792004511,
    "entry": 738.74,
-   "peak": 739.82,
-   "last": 734.44,
-   "price_24h": null,
+   "peak": 741.31,
+   "last": 741.31,
+   "price_24h": 741.31,
    "wallet_buy_usd": 33.82
   },
   {
@@ -74,7 +74,7 @@
    "opened_at": 1792015822,
    "entry": 221.22,
    "peak": 221.22,
-   "last": 216.85,
+   "last": 218.29,
    "price_24h": null,
    "wallet_buy_usd": 32.11
   },
@@ -99,8 +99,8 @@
    "symbol": "UNKNOWN",
    "opened_at": 1792076975,
    "entry": 3.055e-05,
-   "peak": 3.055e-05,
-   "last": 3.055e-05,
+   "peak": 3.213e-05,
+   "last": 3.213e-05,
    "price_24h": null,
    "wallet_buy_usd": 170.3
   }

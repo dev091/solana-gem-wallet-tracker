@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1792076975,
+ "updated_at": 1792091666,
  "mode": "holdings",
  "tracked": [
   {
@@ -27,14 +27,14 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "29yFzeBZgxf5zqrAkKXwgZtQehRf4pL8WbV2nRJikbw8",
-   "label": "consistent throatycrab1008 (score 27)",
+   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
+   "label": "consistent OGAntD (score 28)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent ogantd (score 27)",
+   "wallet": "29yFzeBZgxf5zqrAkKXwgZtQehRf4pL8WbV2nRJikbw8",
+   "label": "consistent throatycrab1008 (score 27)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -63,6 +63,12 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
+   "wallet": "EqBQhoU88ty3a3aDphDRCBuiRirjUsFSFi4UHGY64qvv",
+   "label": "consistent sadcrissy (score 24)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
    "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
    "label": "consistent daddychilllll (score 24)",
    "tier": "BOARD",
@@ -81,32 +87,8 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "EqBQhoU88ty3a3aDphDRCBuiRirjUsFSFi4UHGY64qvv",
-   "label": "consistent sadcrissy (score 23)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
    "wallet": "6CpipySaXTAiUKDyyhWeCfYSMQLCiHrbCN1WvRv5s8kF",
    "label": "consistent ronaldcarter (score 23)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "CLTqXG31YPyLtaXwZXsVP4inf4zSLo38W8wrKAfxfkgd",
-   "label": "small-money winner MC_Escher",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "3dasx37yyhjME6wYCYvmW9egBGyGmLwBUFekPa5yd6eR",
-   "label": "small-money winner GEMHUNTERV1",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "5U6sifD2aWd1y38XqaWNm256zjyrCUpXFwqgShS5r4nG",
-   "label": "small-money winner pikachu1",
    "tier": "BOARD",
    "gems": 0
   },
@@ -117,20 +99,14 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "BhH9v2hW8L75dZsmoDdhRoWhJ2PwQviw1SCL9ArMGpVo",
-   "label": "small-money winner rocode",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "7Qn6PfEDJKsoXDyHLQUZrjX6fpXmK9ACnTQyw1Wq2hha",
-   "label": "small-money winner athihn",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
    "wallet": "A1NRonobpzz48sqPCdLYB81pi3yMsuy7brqUgEhwyq16",
    "label": "small-money winner mrstaff",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "4Bc4Ue2G37zoQCiksAvwMgXQQJFKcYQThnoHPKizAmWB",
+   "label": "small-money winner vvvvvvvvvv1",
    "tier": "BOARD",
    "gems": 0
   }
