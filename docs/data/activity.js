@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1792091666,
+ "updated_at": 1792103031,
  "mode": "holdings",
  "tracked": [
   {
@@ -22,13 +22,13 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 30)",
+   "label": "consistent banval (score 30)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent OGAntD (score 28)",
+   "label": "consistent OGAntD (score 29)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -64,7 +64,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "EqBQhoU88ty3a3aDphDRCBuiRirjUsFSFi4UHGY64qvv",
-   "label": "consistent sadcrissy (score 24)",
+   "label": "consistent sadcrissy (score 25)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -87,8 +87,8 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "6CpipySaXTAiUKDyyhWeCfYSMQLCiHrbCN1WvRv5s8kF",
-   "label": "consistent ronaldcarter (score 23)",
+   "wallet": "ACTbvbNm5qTLuofNRPxFPMtHAAtdH1CtzhCZatYHy831",
+   "label": "consistent slidrrz (score 23)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -97,21 +97,39 @@ window.GEM_ACTIVITY = {
    "label": "small-money winner ZypherHQ",
    "tier": "BOARD",
    "gems": 0
-  },
-  {
-   "wallet": "A1NRonobpzz48sqPCdLYB81pi3yMsuy7brqUgEhwyq16",
-   "label": "small-money winner mrstaff",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "4Bc4Ue2G37zoQCiksAvwMgXQQJFKcYQThnoHPKizAmWB",
-   "label": "small-money winner vvvvvvvvvv1",
-   "tier": "BOARD",
-   "gems": 0
   }
  ],
  "events": [
+  {
+   "ts": 1792102689,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 36)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "BBkR3pBwxKiKHaVnMmWJFa5QUuqbeAhi14jLidP6pump",
+   "tokens": 20697696.797919,
+   "usd": 266.17,
+   "symbol": "STR",
+   "price": 1.286e-05,
+   "market_cap": 12867.33,
+   "liquidity": null
+  },
+  {
+   "ts": 1792102689,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 36)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "AaeAxZPAZEeaui2nRUyfDAv1VgtweHRpRNUtGj8MBcVT",
+   "tokens": 0.1947309999999991,
+   "usd": 154.88,
+   "symbol": "ZEC",
+   "price": 795.35,
+   "market_cap": null,
+   "liquidity": null
+  },
   {
    "ts": 1792076497,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4580,36 +4598,6 @@ window.GEM_ACTIVITY = {
    "symbol": "BRRR",
    "price": 3.178e-06,
    "market_cap": 3178.08,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "4AP3n12pxyPHWrFCTKWv5mEJNoyKqy7orLMh4eznpump",
-   "tokens": 33381022.087059,
-   "usd": 150.31,
-   "symbol": "Fable 5.5 ",
-   "price": 4.503e-06,
-   "market_cap": 4503.43,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "45U7XgYq9SbyGS943iEmtG3tjaArk3KmTNtiasEfpump",
-   "tokens": 35913551.750869,
-   "usd": 119.66,
-   "symbol": "BUCKBANDIT",
-   "price": 3.332e-06,
-   "market_cap": 3332.22,
    "liquidity": null
   }
  ],
