@@ -1,5 +1,5 @@
 {
- "updated_at": 1792111242,
+ "updated_at": 1792127395,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
@@ -614,7 +614,7 @@
    "opened_at": 1792111242,
    "entry": 8.778e-05,
    "peak": 8.778e-05,
-   "last": 8.778e-05,
+   "last": 8.832e-06,
    "price_24h": null,
    "wallet_buy_usd": 1940.17
   },
@@ -627,7 +627,7 @@
    "opened_at": 1792111242,
    "entry": 3.402e-05,
    "peak": 3.402e-05,
-   "last": 3.402e-05,
+   "last": 2.866e-06,
    "price_24h": null,
    "wallet_buy_usd": 390.13
   },
@@ -666,7 +666,7 @@
    "opened_at": 1792015822,
    "entry": 221.22,
    "peak": 221.22,
-   "last": 217.22,
+   "last": 219.78,
    "price_24h": 217.96,
    "wallet_buy_usd": 32.11
   },
@@ -692,7 +692,7 @@
    "opened_at": 1792004511,
    "entry": 738.74,
    "peak": 741.31,
-   "last": 736.024,
+   "last": 739.18,
    "price_24h": 741.31,
    "wallet_buy_usd": 33.82
   }
