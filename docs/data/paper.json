@@ -1,27 +1,27 @@
 {
- "updated_at": 1792103031,
+ "updated_at": 1792111242,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
  "summary": {
   "overall": {
-   "trades": 324,
+   "trades": 325,
    "mirror": {
-    "pnl_usd": -302.42,
-    "win_rate": 0.167,
-    "avg_return_pct": -4.7,
+    "pnl_usd": -299.72,
+    "win_rate": 0.169,
+    "avg_return_pct": -4.6,
     "best_x": 20.33
    },
    "tp2x_half": {
-    "pnl_usd": -512.12,
-    "win_rate": 0.173,
-    "avg_return_pct": -7.9,
+    "pnl_usd": -509.41,
+    "win_rate": 0.175,
+    "avg_return_pct": -7.8,
     "best_x": 11.13
    },
    "hold_24h": {
-    "pnl_usd": -583.22,
-    "win_rate": 0.17,
-    "avg_return_pct": -9.0,
+    "pnl_usd": -580.51,
+    "win_rate": 0.172,
+    "avg_return_pct": -8.9,
     "best_x": 9.67
    }
   },
@@ -579,27 +579,27 @@
     "tier": "BOARD"
    },
    {
-    "trades": 32,
+    "trades": 33,
     "mirror": {
-     "pnl_usd": -100.33,
-     "win_rate": 0.125,
-     "avg_return_pct": -15.7,
+     "pnl_usd": -97.63,
+     "win_rate": 0.152,
+     "avg_return_pct": -14.8,
      "best_x": 1.88
     },
     "tp2x_half": {
-     "pnl_usd": -100.33,
-     "win_rate": 0.125,
-     "avg_return_pct": -15.7,
+     "pnl_usd": -97.63,
+     "win_rate": 0.152,
+     "avg_return_pct": -14.8,
      "best_x": 1.88
     },
     "hold_24h": {
-     "pnl_usd": -99.41,
-     "win_rate": 0.125,
-     "avg_return_pct": -15.5,
+     "pnl_usd": -96.7,
+     "win_rate": 0.152,
+     "avg_return_pct": -14.7,
      "best_x": 1.88
     },
     "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-    "label": "consistent decu (score 28)",
+    "label": "consistent decu (score 36)",
     "tier": "BOARD"
    }
   ]
@@ -609,14 +609,27 @@
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 36)",
    "tier": "BOARD",
-   "mint": "BBkR3pBwxKiKHaVnMmWJFa5QUuqbeAhi14jLidP6pump",
-   "symbol": "STR",
-   "opened_at": 1792103031,
-   "entry": 1.286e-05,
-   "peak": 1.286e-05,
-   "last": 1.286e-05,
+   "mint": "C8pQdKTQqCLCJgMyWwqPeS1hbedyjELuhUnCADt5kB7M",
+   "symbol": "BATONMAN",
+   "opened_at": 1792111242,
+   "entry": 8.778e-05,
+   "peak": 8.778e-05,
+   "last": 8.778e-05,
    "price_24h": null,
-   "wallet_buy_usd": 266.17
+   "wallet_buy_usd": 1940.17
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 36)",
+   "tier": "BOARD",
+   "mint": "HLSh9nsmPnNNmGau97z3uwsuFPS6sXBpdkYiHYJcpump",
+   "symbol": "AKITA",
+   "opened_at": 1792111242,
+   "entry": 3.402e-05,
+   "peak": 3.402e-05,
+   "last": 3.402e-05,
+   "price_24h": null,
+   "wallet_buy_usd": 390.13
   },
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -653,7 +666,7 @@
    "opened_at": 1792015822,
    "entry": 221.22,
    "peak": 221.22,
-   "last": 217.96,
+   "last": 217.22,
    "price_24h": 217.96,
    "wallet_buy_usd": 32.11
   },
@@ -679,12 +692,33 @@
    "opened_at": 1792004511,
    "entry": 738.74,
    "peak": 741.31,
-   "last": 735.88,
+   "last": 736.024,
    "price_24h": 741.31,
    "wallet_buy_usd": 33.82
   }
  ],
  "closed": [
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 36)",
+   "tier": "BOARD",
+   "mint": "BBkR3pBwxKiKHaVnMmWJFa5QUuqbeAhi14jLidP6pump",
+   "symbol": "STR",
+   "opened_at": 1792103031,
+   "entry": 1.286e-05,
+   "peak": 1.286e-05,
+   "last": 1.286e-05,
+   "price_24h": 1.52e-05,
+   "wallet_buy_usd": 266.17,
+   "closed_at": 1792111242,
+   "exit": 1.52e-05,
+   "reason": "wallet sold",
+   "returns": {
+    "mirror": 1.1352,
+    "tp2x_half": 1.1352,
+    "hold_24h": 1.1352
+   }
+  },
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 28)",
@@ -6962,27 +6996,6 @@
     "mirror": 0.1814,
     "tp2x_half": 0.1814,
     "hold_24h": 0.1814
-   }
-  },
-  {
-   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 9)",
-   "tier": "BOARD",
-   "mint": "AccxGjtmWb7A3rELptBk2KCog4nB1ixKc8n5Jpnhpump",
-   "symbol": "Dembow",
-   "opened_at": 1791538356,
-   "entry": 3.512e-05,
-   "peak": 3.512e-05,
-   "last": 3.512e-05,
-   "price_24h": 8.93e-06,
-   "wallet_buy_usd": 1114.4,
-   "closed_at": 1791563797,
-   "exit": 8.93e-06,
-   "reason": "wallet sold",
-   "returns": {
-    "mirror": 0.2442,
-    "tp2x_half": 0.2442,
-    "hold_24h": 0.2442
    }
   }
  ]
