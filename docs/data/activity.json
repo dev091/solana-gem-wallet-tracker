@@ -1,5 +1,5 @@
 {
- "updated_at": 1792127395,
+ "updated_at": 1792144592,
  "mode": "holdings",
  "tracked": [
   {
@@ -118,6 +118,36 @@
   }
  ],
  "events": [
+  {
+   "ts": 1792144178,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 39)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "C8pQdKTQqCLCJgMyWwqPeS1hbedyjELuhUnCADt5kB7M",
+   "tokens": 22102690.627505,
+   "usd": 166.68,
+   "symbol": "BATONMAN",
+   "price": 7.541e-06,
+   "market_cap": 7161.0,
+   "liquidity": 5820.91
+  },
+  {
+   "ts": 1792144178,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 39)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "45K5traUHVTLpDeKKfFX63MYsBmNdSHcpek2arn6jSdb",
+   "tokens": 3895373.904215,
+   "usd": 117.64,
+   "symbol": "UNKNOWN",
+   "price": 3.02e-05,
+   "market_cap": 30202.0,
+   "liquidity": 26280.84
+  },
   {
    "ts": 1792110892,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4586,36 +4616,6 @@
    "symbol": "JTEK",
    "price": 7.983e-06,
    "market_cap": 7983.68,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "5ovqL94fgwSJXiv6Kk29Y3UgYGaVxqbtFeeGx5hupump",
-   "tokens": 35917125.334151,
-   "usd": 114.54,
-   "symbol": "PLAGUE",
-   "price": 3.189e-06,
-   "market_cap": 3189.62,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "5ZQp68kozZ51xjPVJfqpj3SGrJ1Tq8qaMxz2v2jCeLY8",
-   "tokens": 35395199.222098,
-   "usd": 143.77,
-   "symbol": "5ZQp…eLY8",
-   "price": 4.061716769303507e-06,
-   "market_cap": null,
    "liquidity": null
   }
  ],
