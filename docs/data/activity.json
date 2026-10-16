@@ -1,5 +1,5 @@
 {
- "updated_at": 1792144592,
+ "updated_at": 1792161673,
  "mode": "holdings",
  "tracked": [
   {
@@ -22,13 +22,13 @@
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent banval (score 32)",
+   "label": "consistent ban (score 33)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent ogantd (score 31)",
+   "label": "consistent ogantd (score 32)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -99,12 +99,6 @@
    "gems": 0
   },
   {
-   "wallet": "A1NRonobpzz48sqPCdLYB81pi3yMsuy7brqUgEhwyq16",
-   "label": "small-money winner mrstaff",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
    "wallet": "F3A8rvsdawvrnM9bXRSyhzas1Jw1TNmigRkzPjrMuDxC",
    "label": "small-money winner epicdolphingibb",
    "tier": "BOARD",
@@ -115,9 +109,75 @@
    "label": "small-money winner vvvvvvvvvv1",
    "tier": "BOARD",
    "gems": 0
+  },
+  {
+   "wallet": "6s1H4NEejNCfd7AkgW6S2r9nGadE4q7AXQDCWKXM36Jg",
+   "label": "small-money winner GoldStarCapital",
+   "tier": "BOARD",
+   "gems": 0
   }
  ],
  "events": [
+  {
+   "ts": 1792161260,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 39)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "CxfYrXCKE1FJnn4XtHiF1F7bWyB1J2b3M8xZTBeNpump",
+   "tokens": 5000000.0,
+   "usd": 30.89,
+   "symbol": "UP",
+   "price": 6.179e-06,
+   "market_cap": 6179.39,
+   "liquidity": null
+  },
+  {
+   "ts": 1792161260,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 39)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "3CfLGaFJsmCACYgf5kpS7mPB9FWZwu27fgotjS8EP7tz",
+   "tokens": 19727182.803871,
+   "usd": 69.34,
+   "symbol": "Elooong",
+   "price": 3.515e-06,
+   "market_cap": 3515.19,
+   "liquidity": null
+  },
+  {
+   "ts": 1792161260,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 39)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "GP4PE3No3XmdvGgV5uNbmdwefp3z9asQ87TUrGwQ23ac",
+   "tokens": 3206262.111747,
+   "usd": 100.77,
+   "symbol": "UNKNOWN",
+   "price": 3.143e-05,
+   "market_cap": 31433.0,
+   "liquidity": 26971.1
+  },
+  {
+   "ts": 1792161260,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 39)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "324JHsTKPuUtBwHasDbPnQ9W9zAs4k1WN1xBo2CT197E",
+   "tokens": 5561295.17701,
+   "usd": 174.24,
+   "symbol": "UNKNOWN",
+   "price": 3.133e-05,
+   "market_cap": 31331.0,
+   "liquidity": 26878.56
+  },
   {
    "ts": 1792144178,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4556,66 +4616,6 @@
    "symbol": "RCAT",
    "price": 3.39e-06,
    "market_cap": 3390.02,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "6MCgfL8xSJKinCYY9MHHcpNnVmQ57gzULF64mH34pump",
-   "tokens": 27655324.518607,
-   "usd": 94.26,
-   "symbol": "6MCg…pump",
-   "price": 3.4082723331889688e-06,
-   "market_cap": null,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "6ChhBBqifjqMmViY5EmdGSuEYAnS5G2Ri9XqkVux6FGe",
-   "tokens": 35409189.88145,
-   "usd": 108.28,
-   "symbol": "MENTOR",
-   "price": 3.058e-06,
-   "market_cap": 3058.8,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "6A2EZ1w6paCh7XBYqiXNqsfj4Jao6PR6HekbQQiCpump",
-   "tokens": 35876715.463626,
-   "usd": 178.34,
-   "symbol": "CHICO",
-   "price": 4.971e-06,
-   "market_cap": 4971.09,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "67f7Rm8i5cvVhXEv6Us4stvqBaC5s5P4d4x3hzD4pump",
-   "tokens": 35260887.023183,
-   "usd": 281.49,
-   "symbol": "JTEK",
-   "price": 7.983e-06,
-   "market_cap": 7983.68,
    "liquidity": null
   }
  ],
