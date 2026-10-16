@@ -1,10 +1,10 @@
 {
- "updated_at": 1792175460,
+ "updated_at": 1792186656,
  "mode": "holdings",
  "tracked": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 39)",
+   "label": "consistent notdecu (score 39)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -75,14 +75,14 @@
    "gems": 0
   },
   {
-   "wallet": "GDpqhJgwzg8zcoEmVvGDiVRVnaa797ryvPnNqQVBjQrN",
-   "label": "consistent rook74 (score 26)",
+   "wallet": "7g5CJ754NboeY6D44MDdGwQmVX4Fvu59Q47c9ZKLPMkE",
+   "label": "consistent bestcook (score 27)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "7g5CJ754NboeY6D44MDdGwQmVX4Fvu59Q47c9ZKLPMkE",
-   "label": "consistent bestcook (score 26)",
+   "wallet": "GDpqhJgwzg8zcoEmVvGDiVRVnaa797ryvPnNqQVBjQrN",
+   "label": "consistent rook74 (score 26)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -99,25 +99,43 @@
    "gems": 0
   },
   {
-   "wallet": "5He5nrTeAKw4VjnUYuKgiLpFZpc1NgQB78Hw4onpF6nk",
-   "label": "small-money winner 0xTurboToad",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "6jCRN7bmi7ZyjRbUymBVMmBJL6yLg7wWS9kAyzCK88EA",
-   "label": "small-money winner fatih05",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "FH8xnCwgoQgk3nXuePEdxYB5SZDTWSZav27smVcHjN1q",
-   "label": "small-money winner dweedify",
+   "wallet": "2vxDwiGmTnHqBFXX4KQEZEPLyKYpGDnEuZDfx9tpdpmC",
+   "label": "small-money winner huskycrab19183",
    "tier": "BOARD",
    "gems": 0
   }
  ],
  "events": [
+  {
+   "ts": 1792186291,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent notdecu (score 39)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "3CfLGaFJsmCACYgf5kpS7mPB9FWZwu27fgotjS8EP7tz",
+   "tokens": 19727182.803871,
+   "usd": 59.73,
+   "symbol": "Elooong",
+   "price": 3.028e-06,
+   "market_cap": 3028.64,
+   "liquidity": null
+  },
+  {
+   "ts": 1792186291,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent notdecu (score 39)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "D7zhDt3EWD7S7CTkRSjSgUbrPkg5ayvHx5j6edjZA2ky",
+   "tokens": 3184184.01439,
+   "usd": 97.05,
+   "symbol": "UNKNOWN",
+   "price": 3.048e-05,
+   "market_cap": 30483.0,
+   "liquidity": 26147.49
+  },
   {
    "ts": 1792161260,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4586,36 +4604,6 @@
    "symbol": "AION",
    "price": 3.68e-06,
    "market_cap": 3680.28,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "6SQegUvkkjarTpRxPyyVwZp24oxkC66h3gZwu79NoAMH",
-   "tokens": 35086520.044761,
-   "usd": 113.18,
-   "symbol": "6SQe…oAMH",
-   "price": 3.2258465850586418e-06,
-   "market_cap": null,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "6R3U9WKDLJ6twtxpWNUPUAUp9Pvub99RpAwyp4hB8z4f",
-   "tokens": 39011614.124068,
-   "usd": 132.25,
-   "symbol": "RCAT",
-   "price": 3.39e-06,
-   "market_cap": 3390.02,
    "liquidity": null
   }
  ],
