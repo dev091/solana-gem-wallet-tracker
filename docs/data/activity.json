@@ -1,10 +1,10 @@
 {
- "updated_at": 1792268334,
+ "updated_at": 1792276165,
  "mode": "holdings",
  "tracked": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 42)",
+   "label": "consistent decu (score 43)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -16,7 +16,7 @@
   },
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent limfork (score 37)",
+   "label": "consistent Limfork.eth (score 37)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -99,13 +99,34 @@
    "gems": 0
   },
   {
-   "wallet": "GBNJqsEdYsngZ3CK6kwcmMfK3Ls4228HXu5286uxHV4L",
-   "label": "small-money winner astroboy_55",
+   "wallet": "DxZVqprBcgZUuMwkTYLTUrTb5aFKzMMZD5otUB3oq4de",
+   "label": "small-money winner FOMOD",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "5UZMpyPMv8AuewpG8zx8t1Q2iSUeB7LETf8yhQHJcFud",
+   "label": "small-money winner hambabi",
    "tier": "BOARD",
    "gems": 0
   }
  ],
  "events": [
+  {
+   "ts": 1792275777,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 43)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "FksBRFXTLyi9zjhy6hwhMH2ZrdUqjaA7hEDgny4Rpump",
+   "tokens": 32597864.585689,
+   "usd": 95.9,
+   "symbol": "Pissandshit",
+   "price": 2.942e-06,
+   "market_cap": 2942.75,
+   "liquidity": null
+  },
   {
    "ts": 1792267970,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4588,21 +4609,6 @@
    "usd": 109.97,
    "symbol": "6hx3…pump",
    "price": 3.056546128150259e-06,
-   "market_cap": null,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "6asvF1oPPxjPEW846Bq46PgvXn9xiCSE1fq66Ht986Hu",
-   "tokens": 32567227.73336,
-   "usd": 101.56,
-   "symbol": "6asv…86Hu",
-   "price": 3.118555531970598e-06,
    "market_cap": null,
    "liquidity": null
   }
