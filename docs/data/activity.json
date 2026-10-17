@@ -1,5 +1,5 @@
 {
- "updated_at": 1792260027,
+ "updated_at": 1792268334,
  "mode": "holdings",
  "tracked": [
   {
@@ -106,6 +106,21 @@
   }
  ],
  "events": [
+  {
+   "ts": 1792267970,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 42)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "FksBRFXTLyi9zjhy6hwhMH2ZrdUqjaA7hEDgny4Rpump",
+   "tokens": 32597864.585689,
+   "usd": 131.47,
+   "symbol": "Pissandshit",
+   "price": 4.033e-06,
+   "market_cap": 4033.75,
+   "liquidity": null
+  },
   {
    "ts": 1792259662,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4589,21 +4604,6 @@
    "symbol": "6asv…86Hu",
    "price": 3.118555531970598e-06,
    "market_cap": null,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "6aktZWaJLQpe3sey13uCwAn7s977mhuKdbVHP8t7ttZX",
-   "tokens": 40771036.127608,
-   "usd": 219.72,
-   "symbol": "BPROOF",
-   "price": 5.389e-06,
-   "market_cap": 5389.51,
    "liquidity": null
   }
  ],
