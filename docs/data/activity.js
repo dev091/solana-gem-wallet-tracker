@@ -1,10 +1,10 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1792186656,
+ "updated_at": 1792195277,
  "mode": "holdings",
  "tracked": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent notdecu (score 39)",
+   "label": "consistent decu (score 39)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -16,7 +16,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 33)",
+   "label": "consistent Limfork.eth (score 34)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -99,8 +99,26 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "2vxDwiGmTnHqBFXX4KQEZEPLyKYpGDnEuZDfx9tpdpmC",
-   "label": "small-money winner huskycrab19183",
+   "wallet": "G2B45WGoTyissw6hH1bqKFjERs9wnfFpxRaeueUp8krL",
+   "label": "small-money winner zenlobster63284",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "GBNJqsEdYsngZ3CK6kwcmMfK3Ls4228HXu5286uxHV4L",
+   "label": "small-money winner astroboy_55",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "BZmxuXQ68QeZABbDFSzveHyrXCv5EG6Ut1ATw5qZgm2Q",
+   "label": "small-money winner blackjew432",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "Fz9hrvo2r95yzLVvt6GvvLUdPwpg4Zf58fegHXryH4su",
+   "label": "small-money winner zenor",
    "tier": "BOARD",
    "gems": 0
   }
