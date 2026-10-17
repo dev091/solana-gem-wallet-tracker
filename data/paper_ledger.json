@@ -61,7 +61,7 @@
    "opened_at": 1792161673,
    "entry": 6.179e-06,
    "peak": 6.316e-06,
-   "last": 6.311e-06,
+   "last": 5.9e-06,
    "price_24h": 6.311e-06,
    "wallet_buy_usd": 30.89
   },
@@ -77,6 +77,19 @@
    "last": 3.165e-05,
    "price_24h": null,
    "wallet_buy_usd": 97.05
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 42)",
+   "tier": "BOARD",
+   "mint": "6TCoRoHuQGY2c9gAoaCEqC2ieMC6h29uGjb5xbbXNbnT",
+   "symbol": "MET",
+   "opened_at": 1792260027,
+   "entry": 0.2109,
+   "peak": 0.2109,
+   "last": 0.2109,
+   "price_24h": null,
+   "wallet_buy_usd": 347.84
   }
  ],
  "closed": [

@@ -1,7 +1,13 @@
 {
- "updated_at": 1792238791,
+ "updated_at": 1792260027,
  "mode": "holdings",
  "tracked": [
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 42)",
+   "tier": "BOARD",
+   "gems": 0
+  },
   {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
    "label": "consistent trunoest (score 42)",
@@ -9,20 +15,14 @@
    "gems": 0
   },
   {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent notdecu (score 41)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 37)",
+   "label": "consistent limfork (score 37)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 36)",
+   "label": "consistent ban (score 37)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -103,15 +103,24 @@
    "label": "small-money winner astroboy_55",
    "tier": "BOARD",
    "gems": 0
-  },
-  {
-   "wallet": "D1ZtgHoyRoy27acqb9WTFJTW2bLhecnhHKuQgkzs3asa",
-   "label": "small-money winner TheBigDomain",
-   "tier": "BOARD",
-   "gems": 0
   }
  ],
  "events": [
+  {
+   "ts": 1792259662,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 42)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "6TCoRoHuQGY2c9gAoaCEqC2ieMC6h29uGjb5xbbXNbnT",
+   "tokens": 1649.2916820000028,
+   "usd": 347.84,
+   "symbol": "MET",
+   "price": 0.2109,
+   "market_cap": 2109735913495.0,
+   "liquidity": 843894365.9
+  },
   {
    "ts": 1792186291,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4595,21 +4604,6 @@
    "symbol": "BPROOF",
    "price": 5.389e-06,
    "market_cap": 5389.51,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "6TWvGcqQt5jmN46D1iHTAf8yQapuM7rPQTuxdQEApump",
-   "tokens": 35661224.031766,
-   "usd": 131.23,
-   "symbol": "AION",
-   "price": 3.68e-06,
-   "market_cap": 3680.28,
    "liquidity": null
   }
  ],
