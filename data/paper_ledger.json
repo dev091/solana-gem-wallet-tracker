@@ -35,8 +35,8 @@
    "opened_at": 1792111242,
    "entry": 3.402e-05,
    "peak": 3.402e-05,
-   "last": 2.627e-06,
-   "price_24h": null,
+   "last": 2.624e-06,
+   "price_24h": 2.624e-06,
    "wallet_buy_usd": 390.13
   },
   {
@@ -47,8 +47,8 @@
    "symbol": "UNKNOWN",
    "opened_at": 1792144592,
    "entry": 3.02e-05,
-   "peak": 3.02e-05,
-   "last": 3.02e-05,
+   "peak": 3.065e-05,
+   "last": 3.065e-05,
    "price_24h": null,
    "wallet_buy_usd": 117.64
   },
@@ -60,8 +60,8 @@
    "symbol": "UNKNOWN",
    "opened_at": 1792161673,
    "entry": 3.133e-05,
-   "peak": 3.133e-05,
-   "last": 3.118e-05,
+   "peak": 3.169e-05,
+   "last": 3.169e-05,
    "price_24h": null,
    "wallet_buy_usd": 174.24
   },
@@ -73,8 +73,8 @@
    "symbol": "UNKNOWN",
    "opened_at": 1792161673,
    "entry": 3.143e-05,
-   "peak": 3.143e-05,
-   "last": 3.108e-05,
+   "peak": 3.161e-05,
+   "last": 3.161e-05,
    "price_24h": null,
    "wallet_buy_usd": 100.77
   },
@@ -86,8 +86,8 @@
    "symbol": "UP",
    "opened_at": 1792161673,
    "entry": 6.179e-06,
-   "peak": 6.2e-06,
-   "last": 6.167e-06,
+   "peak": 6.228e-06,
+   "last": 6.228e-06,
    "price_24h": null,
    "wallet_buy_usd": 30.89
   },
@@ -99,8 +99,8 @@
    "symbol": "UNKNOWN",
    "opened_at": 1792186656,
    "entry": 3.048e-05,
-   "peak": 3.12e-05,
-   "last": 3.12e-05,
+   "peak": 3.165e-05,
+   "last": 3.165e-05,
    "price_24h": null,
    "wallet_buy_usd": 97.05
   }
