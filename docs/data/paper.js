@@ -1,5 +1,5 @@
 window.GEM_PAPER = {
- "updated_at": 1792224000,
+ "updated_at": 1792238791,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
@@ -639,8 +639,8 @@ window.GEM_PAPER = {
    "symbol": "UNKNOWN",
    "opened_at": 1792161673,
    "entry": 3.143e-05,
-   "peak": 3.161e-05,
-   "last": 3.161e-05,
+   "peak": 3.194e-05,
+   "last": 3.194e-05,
    "price_24h": null,
    "wallet_buy_usd": 100.77
   },
@@ -652,8 +652,8 @@ window.GEM_PAPER = {
    "symbol": "UP",
    "opened_at": 1792161673,
    "entry": 6.179e-06,
-   "peak": 6.228e-06,
-   "last": 6.214e-06,
+   "peak": 6.316e-06,
+   "last": 6.316e-06,
    "price_24h": null,
    "wallet_buy_usd": 30.89
   },
@@ -667,7 +667,7 @@ window.GEM_PAPER = {
    "entry": 3.02e-05,
    "peak": 3.092e-05,
    "last": 3.092e-05,
-   "price_24h": null,
+   "price_24h": 3.092e-05,
    "wallet_buy_usd": 117.64
   },
   {
@@ -679,7 +679,7 @@ window.GEM_PAPER = {
    "opened_at": 1792111242,
    "entry": 3.402e-05,
    "peak": 3.402e-05,
-   "last": 2.682e-06,
+   "last": 2.625e-06,
    "price_24h": 2.624e-06,
    "wallet_buy_usd": 390.13
   },

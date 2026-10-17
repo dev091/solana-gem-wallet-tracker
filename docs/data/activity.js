@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1792224000,
+ "updated_at": 1792238791,
  "mode": "holdings",
  "tracked": [
   {
@@ -63,14 +63,14 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "7g5CJ754NboeY6D44MDdGwQmVX4Fvu59Q47c9ZKLPMkE",
-   "label": "consistent bestcook (score 30)",
+   "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
+   "label": "consistent daddychilllll (score 30)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
-   "label": "consistent daddychilllll (score 29)",
+   "wallet": "7g5CJ754NboeY6D44MDdGwQmVX4Fvu59Q47c9ZKLPMkE",
+   "label": "consistent bestcook (score 30)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -87,8 +87,8 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "CAvvAFNRfXDWTTDqwgxb9qSyYT8fTuTXWSFwL7Jsz8vT",
-   "label": "consistent binaryshark2861 (score 28)",
+   "wallet": "6qudAN2kV8mtCcYJxb5QQ6Vr15itdHHdeVbYm99NKMhy",
+   "label": "consistent thedetective (score 28)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -99,26 +99,14 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "G2B45WGoTyissw6hH1bqKFjERs9wnfFpxRaeueUp8krL",
-   "label": "small-money winner zenlobster63284",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
    "wallet": "GBNJqsEdYsngZ3CK6kwcmMfK3Ls4228HXu5286uxHV4L",
    "label": "small-money winner astroboy_55",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "88y4qUChRATKVbjXDs5KRwfyaqE9n3onzCsDFCgTmGQr",
-   "label": "small-money winner Bizzinness",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "FTUU6Rc612Sxp3SS3bn8KVns42wZpqf5ExmyLyPGEuCY",
-   "label": "small-money winner SardinhaPobre",
+   "wallet": "D1ZtgHoyRoy27acqb9WTFJTW2bLhecnhHKuQgkzs3asa",
+   "label": "small-money winner TheBigDomain",
    "tier": "BOARD",
    "gems": 0
   }
