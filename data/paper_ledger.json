@@ -2,19 +2,6 @@
  "open": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent notdecu (score 39)",
-   "tier": "BOARD",
-   "mint": "D7zhDt3EWD7S7CTkRSjSgUbrPkg5ayvHx5j6edjZA2ky",
-   "symbol": "UNKNOWN",
-   "opened_at": 1792186656,
-   "entry": 3.048e-05,
-   "peak": 3.165762959441711e-05,
-   "last": 3.165762959441711e-05,
-   "price_24h": 3.165e-05,
-   "wallet_buy_usd": 97.05
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 42)",
    "tier": "BOARD",
    "mint": "6TCoRoHuQGY2c9gAoaCEqC2ieMC6h29uGjb5xbbXNbnT",
@@ -51,6 +38,32 @@
    "last": 2.955e-05,
    "price_24h": null,
    "wallet_buy_usd": 140.68
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 47)",
+   "tier": "BOARD",
+   "mint": "7g32WbhysZCJTmJBdg4sfEd8CfeDkH6PfgPvaoEwh6AX",
+   "symbol": "UNKNOWN",
+   "opened_at": 1792366660,
+   "entry": 3.07e-05,
+   "peak": 3.07e-05,
+   "last": 3.07e-05,
+   "price_24h": null,
+   "wallet_buy_usd": 125.86
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 47)",
+   "tier": "BOARD",
+   "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+   "symbol": "PUMP",
+   "opened_at": 1792366660,
+   "entry": 0.004148,
+   "peak": 0.004148,
+   "last": 0.004148,
+   "price_24h": null,
+   "wallet_buy_usd": 30.01
   }
  ],
  "closed": [
@@ -7150,6 +7163,27 @@
     "mirror": 0.906,
     "tp2x_half": 0.906,
     "hold_24h": 0.9809
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent notdecu (score 39)",
+   "tier": "BOARD",
+   "mint": "D7zhDt3EWD7S7CTkRSjSgUbrPkg5ayvHx5j6edjZA2ky",
+   "symbol": "UNKNOWN",
+   "opened_at": 1792186656,
+   "entry": 3.048e-05,
+   "peak": 3.165762959441711e-05,
+   "last": 3.165762959441711e-05,
+   "price_24h": 3.165e-05,
+   "wallet_buy_usd": 97.05,
+   "closed_at": 1792366660,
+   "exit": 3.165762959441711e-05,
+   "reason": "48h limit",
+   "returns": {
+    "mirror": 0.9975,
+    "tp2x_half": 0.9975,
+    "hold_24h": 0.9973
    }
   }
  ]
