@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1792342235,
+ "updated_at": 1792358982,
  "mode": "holdings",
  "tracked": [
   {
@@ -10,7 +10,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
-   "label": "consistent trunoest (score 45)",
+   "label": "consistent trunoest (score 46)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -52,7 +52,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "9LXWa7V3AE15VfBupcx5gDts2ix3Y9NzbcKZKjkkq6hV",
-   "label": "consistent rikz_ (score 34)",
+   "label": "consistent rikz_ (score 35)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -76,7 +76,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "GDpqhJgwzg8zcoEmVvGDiVRVnaa797ryvPnNqQVBjQrN",
-   "label": "consistent k34k (score 30)",
+   "label": "consistent k34k (score 31)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -87,32 +87,14 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "CAvvAFNRfXDWTTDqwgxb9qSyYT8fTuTXWSFwL7Jsz8vT",
-   "label": "consistent binaryshark2861 (score 30)",
+   "wallet": "F9zT1F46HAoPanR4NC1Yw7TyP8Z9tCavTe48mrzK7aN4",
+   "label": "consistent BraveSmallCub (score 30)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "Ev4dxwYVG7vkP6zsTAuJrqSRwDjFmyXudakq3P2HSQet",
    "label": "small-money winner ZypherHQ",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "EoAtirJLQeoPXZx6FQwgUAm5gqMndRqV9hLhzuWZz33Q",
-   "label": "small-money winner RoundTripCptl",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "3XVUMiwxMqraBsBCVaM1TChbsBhXMjjVp6FjhDErHzkX",
-   "label": "small-money winner Twinxx",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "DpjHAoVEryHyrq1rLweqFeooS6XwuapFY8jL1nz8dUv5",
-   "label": "small-money winner GIGATIP",
    "tier": "BOARD",
    "gems": 0
   },
