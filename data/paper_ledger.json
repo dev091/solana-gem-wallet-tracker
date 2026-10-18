@@ -2,19 +2,6 @@
  "open": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 36)",
-   "tier": "BOARD",
-   "mint": "HLSh9nsmPnNNmGau97z3uwsuFPS6sXBpdkYiHYJcpump",
-   "symbol": "AKITA",
-   "opened_at": 1792111242,
-   "entry": 3.402e-05,
-   "peak": 3.402e-05,
-   "last": 2.583e-06,
-   "price_24h": 2.624e-06,
-   "wallet_buy_usd": 390.13
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 39)",
    "tier": "BOARD",
    "mint": "45K5traUHVTLpDeKKfFX63MYsBmNdSHcpek2arn6jSdb",
@@ -22,7 +9,7 @@
    "opened_at": 1792144592,
    "entry": 3.02e-05,
    "peak": 3.092e-05,
-   "last": 3.092e-05,
+   "last": 3.089034493424251e-05,
    "price_24h": 3.092e-05,
    "wallet_buy_usd": 117.64
   },
@@ -35,7 +22,7 @@
    "opened_at": 1792161673,
    "entry": 3.133e-05,
    "peak": 3.169e-05,
-   "last": 3.169e-05,
+   "last": 3.165121330994703e-05,
    "price_24h": 3.169e-05,
    "wallet_buy_usd": 174.24
   },
@@ -61,7 +48,7 @@
    "opened_at": 1792161673,
    "entry": 6.179e-06,
    "peak": 6.316e-06,
-   "last": 5.87e-06,
+   "last": 5.86e-06,
    "price_24h": 6.311e-06,
    "wallet_buy_usd": 30.89
   },
@@ -73,8 +60,8 @@
    "symbol": "UNKNOWN",
    "opened_at": 1792186656,
    "entry": 3.048e-05,
-   "peak": 3.165e-05,
-   "last": 3.165e-05,
+   "peak": 3.165762959441711e-05,
+   "last": 3.165762959441711e-05,
    "price_24h": 3.165e-05,
    "wallet_buy_usd": 97.05
   },
@@ -7084,6 +7071,27 @@
     "mirror": 0.7006,
     "tp2x_half": 0.7006,
     "hold_24h": 0.7006
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 36)",
+   "tier": "BOARD",
+   "mint": "HLSh9nsmPnNNmGau97z3uwsuFPS6sXBpdkYiHYJcpump",
+   "symbol": "AKITA",
+   "opened_at": 1792111242,
+   "entry": 3.402e-05,
+   "peak": 3.402e-05,
+   "last": 2.583e-06,
+   "price_24h": 2.624e-06,
+   "wallet_buy_usd": 390.13,
+   "closed_at": 1792298498,
+   "exit": 2.583e-06,
+   "reason": "48h limit",
+   "returns": {
+    "mirror": 0.0729,
+    "tp2x_half": 0.0729,
+    "hold_24h": 0.0741
    }
   }
  ]
