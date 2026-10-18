@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1792276165,
+ "updated_at": 1792282666,
  "mode": "holdings",
  "tracked": [
   {
@@ -16,7 +16,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 37)",
+   "label": "consistent limfork (score 37)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -28,7 +28,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent ogantd (score 34)",
+   "label": "consistent OGAntD (score 36)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -46,7 +46,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
-   "label": "consistent allglorybetogod (score 32)",
+   "label": "consistent milito (score 33)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -99,14 +99,26 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
+   "wallet": "ETnARZn82ri9oDp5aQ9pc4XwJiMdtEj6GcjQfnm5Kj1j",
+   "label": "small-money winner AmishDegen",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
    "wallet": "DxZVqprBcgZUuMwkTYLTUrTb5aFKzMMZD5otUB3oq4de",
    "label": "small-money winner FOMOD",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "5UZMpyPMv8AuewpG8zx8t1Q2iSUeB7LETf8yhQHJcFud",
-   "label": "small-money winner hambabi",
+   "wallet": "7NPLMWgrFWEADvHu4BwzgpAKcyD42TWdgJAHWW2iYTJS",
+   "label": "small-money winner Arango",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "G4ufZvEShynePQH4t5HVQu91q6kgn1eZ6q9GYkSLeYuk",
+   "label": "small-money winner prezthedegen",
    "tier": "BOARD",
    "gems": 0
   }
