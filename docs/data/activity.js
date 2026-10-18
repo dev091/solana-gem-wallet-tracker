@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1792329894,
+ "updated_at": 1792342235,
  "mode": "holdings",
  "tracked": [
   {
@@ -105,14 +105,20 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
+   "wallet": "3XVUMiwxMqraBsBCVaM1TChbsBhXMjjVp6FjhDErHzkX",
+   "label": "small-money winner Twinxx",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
    "wallet": "DpjHAoVEryHyrq1rLweqFeooS6XwuapFY8jL1nz8dUv5",
    "label": "small-money winner GIGATIP",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "3XVUMiwxMqraBsBCVaM1TChbsBhXMjjVp6FjhDErHzkX",
-   "label": "small-money winner Twinxx",
+   "wallet": "2TNHJ1KeCwfMDoaanAr4xPkp9p7P5naVg3BQbkpQs9AM",
+   "label": "small-money winner chillrandy",
    "tier": "BOARD",
    "gems": 0
   }
