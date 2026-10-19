@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1792440753,
+ "updated_at": 1792453757,
  "mode": "holdings",
  "tracked": [
   {
@@ -15,14 +15,20 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
+   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
+   "label": "consistent OGAntD (score 44)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
    "label": "consistent ban (score 44)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent OGAntD (score 43)",
+   "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
+   "label": "consistent milito (score 40)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -41,12 +47,6 @@ window.GEM_ACTIVITY = {
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
    "label": "consistent limfork (score 39)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
-   "label": "consistent allglorybetogod (score 39)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -93,14 +93,14 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "Ev4dxwYVG7vkP6zsTAuJrqSRwDjFmyXudakq3P2HSQet",
-   "label": "small-money winner ZypherHQ",
+   "wallet": "7qm5UAcsSCjPUdLbG6oj8Z3ZsuGJJgSWM64CNFAXqxc",
+   "label": "small-money winner LillyOnPump",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "8xyReC3YxHiW9nxuSdRWGuBoQ22SLwBa6A1CQXxqxQYj",
-   "label": "small-money winner Prop_Joe",
+   "wallet": "Ev4dxwYVG7vkP6zsTAuJrqSRwDjFmyXudakq3P2HSQet",
+   "label": "small-money winner ZypherHQ",
    "tier": "BOARD",
    "gems": 0
   },
@@ -109,9 +109,30 @@ window.GEM_ACTIVITY = {
    "label": "small-money winner sadstarfish0105",
    "tier": "BOARD",
    "gems": 0
+  },
+  {
+   "wallet": "H19cRLRAcvXpRaeWyAhDhPsk3iCRVES8T56wAUJYE6BG",
+   "label": "small-money winner santygzzsol",
+   "tier": "BOARD",
+   "gems": 0
   }
  ],
  "events": [
+  {
+   "ts": 1792453346,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 51)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "8F94qzmWfrBMFW4yzQFDqQmnntRUkcFqEwJpZ26tpump",
+   "tokens": 25445855.330695,
+   "usd": 82.9,
+   "symbol": "DOGETTE",
+   "price": 3.258e-06,
+   "market_cap": 3258.07,
+   "liquidity": null
+  },
   {
    "ts": 1792440365,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4595,21 +4616,6 @@ window.GEM_ACTIVITY = {
    "symbol": "Doomer",
    "price": 4.161e-06,
    "market_cap": 4161.56,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "7xFiq2jGJtafjinpdPtA37LVhDknUPFiXqsLYeG1pump",
-   "tokens": 33704516.65663,
-   "usd": 127.0,
-   "symbol": "MOODMAXX",
-   "price": 3.768e-06,
-   "market_cap": 3768.39,
    "liquidity": null
   }
  ],

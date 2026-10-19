@@ -8,8 +8,8 @@
    "symbol": "UNKNOWN",
    "opened_at": 1792329894,
    "entry": 2.997e-05,
-   "peak": 3.058e-05,
-   "last": 3.058e-05,
+   "peak": 3.092e-05,
+   "last": 3.092e-05,
    "price_24h": 3.055e-05,
    "wallet_buy_usd": 137.03
   },
@@ -35,8 +35,8 @@
    "opened_at": 1792366660,
    "entry": 3.07e-05,
    "peak": 3.171e-05,
-   "last": 3.126e-05,
-   "price_24h": null,
+   "last": 3.157e-05,
+   "price_24h": 3.157e-05,
    "wallet_buy_usd": 125.86
   },
   {
@@ -47,9 +47,9 @@
    "symbol": "PUMP",
    "opened_at": 1792366660,
    "entry": 0.004148,
-   "peak": 0.00448,
-   "last": 0.004355,
-   "price_24h": null,
+   "peak": 0.004485,
+   "last": 0.004485,
+   "price_24h": 0.004485,
    "wallet_buy_usd": 30.01
   },
   {
@@ -60,23 +60,10 @@
    "symbol": "UNKNOWN",
    "opened_at": 1792440753,
    "entry": 2.941e-05,
-   "peak": 2.941e-05,
-   "last": 2.941e-05,
+   "peak": 2.968e-05,
+   "last": 2.968e-05,
    "price_24h": null,
    "wallet_buy_usd": 108.35
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 51)",
-   "tier": "BOARD",
-   "mint": "8F94qzmWfrBMFW4yzQFDqQmnntRUkcFqEwJpZ26tpump",
-   "symbol": "DOGETTE",
-   "opened_at": 1792440753,
-   "entry": 7.563e-06,
-   "peak": 7.563e-06,
-   "last": 7.563e-06,
-   "price_24h": null,
-   "wallet_buy_usd": 192.45
   }
  ],
  "closed": [
@@ -7239,6 +7226,27 @@
     "mirror": 0.9604,
     "tp2x_half": 0.9604,
     "hold_24h": 0.9604
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 51)",
+   "tier": "BOARD",
+   "mint": "8F94qzmWfrBMFW4yzQFDqQmnntRUkcFqEwJpZ26tpump",
+   "symbol": "DOGETTE",
+   "opened_at": 1792440753,
+   "entry": 7.563e-06,
+   "peak": 7.563e-06,
+   "last": 7.563e-06,
+   "price_24h": 3.258e-06,
+   "wallet_buy_usd": 192.45,
+   "closed_at": 1792453757,
+   "exit": 3.258e-06,
+   "reason": "wallet sold",
+   "returns": {
+    "mirror": 0.4137,
+    "tp2x_half": 0.4137,
+    "hold_24h": 0.4137
    }
   }
  ]
