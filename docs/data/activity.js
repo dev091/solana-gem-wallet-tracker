@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1792393350,
+ "updated_at": 1792420363,
  "mode": "holdings",
  "tracked": [
   {
@@ -15,14 +15,14 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent OGAntD (score 43)",
+   "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
+   "label": "consistent ban (score 44)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent banval (score 43)",
+   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
+   "label": "consistent OGAntD (score 43)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -112,6 +112,21 @@ window.GEM_ACTIVITY = {
   }
  ],
  "events": [
+  {
+   "ts": 1792419975,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 51)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "GUWnKqXBwYq4FisAhKsgQUz3HyQHTd8H3NS9Pgdspump",
+   "tokens": 30890018.070458,
+   "usd": 105.52,
+   "symbol": "Shitter",
+   "price": 3.416e-06,
+   "market_cap": 3416.43,
+   "liquidity": null
+  },
   {
    "ts": 1792366224,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4595,21 +4610,6 @@ window.GEM_ACTIVITY = {
    "symbol": "ODIN",
    "price": 4.499e-06,
    "market_cap": 4499.32,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "7TEGNtT1ZEr1xTqQntzuBpTskg81DLrLr9PmTKdSWdnm",
-   "tokens": 32277103.775551,
-   "usd": 105.06,
-   "symbol": "7TEG…Wdnm",
-   "price": 3.254986614274246e-06,
-   "market_cap": null,
    "liquidity": null
   }
  ],
