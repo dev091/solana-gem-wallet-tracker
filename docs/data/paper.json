@@ -1,5 +1,5 @@
 {
- "updated_at": 1792366660,
+ "updated_at": 1792374697,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
@@ -626,8 +626,8 @@
    "symbol": "PUMP",
    "opened_at": 1792366660,
    "entry": 0.004148,
-   "peak": 0.004148,
-   "last": 0.004148,
+   "peak": 0.004272,
+   "last": 0.004272,
    "price_24h": null,
    "wallet_buy_usd": 30.01
   },
