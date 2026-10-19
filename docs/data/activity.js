@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1792420363,
+ "updated_at": 1792440753,
  "mode": "holdings",
  "tracked": [
   {
@@ -112,6 +112,51 @@ window.GEM_ACTIVITY = {
   }
  ],
  "events": [
+  {
+   "ts": 1792440365,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 51)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "GUWnKqXBwYq4FisAhKsgQUz3HyQHTd8H3NS9Pgdspump",
+   "tokens": 30890018.070458,
+   "usd": 90.01,
+   "symbol": "Shitter",
+   "price": 2.914e-06,
+   "market_cap": 2914.72,
+   "liquidity": null
+  },
+  {
+   "ts": 1792440365,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 51)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "8F94qzmWfrBMFW4yzQFDqQmnntRUkcFqEwJpZ26tpump",
+   "tokens": 25445855.330695,
+   "usd": 192.45,
+   "symbol": "DOGETTE",
+   "price": 7.563e-06,
+   "market_cap": 7563.35,
+   "liquidity": null
+  },
+  {
+   "ts": 1792440365,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 51)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "GL2EP6zA8QeF36PBFmyXYzjZKuqpCGqv2f72ygdam3T6",
+   "tokens": 3684275.225867,
+   "usd": 108.35,
+   "symbol": "UNKNOWN",
+   "price": 2.941e-05,
+   "market_cap": 29414.0,
+   "liquidity": 25819.93
+  },
   {
    "ts": 1792419975,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4565,51 +4610,6 @@ window.GEM_ACTIVITY = {
    "symbol": "MOODMAXX",
    "price": 3.768e-06,
    "market_cap": 3768.39,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "7x5XyANnwMzCSdvLsDW5j3TzALwmnTcX9nQPC48MudQq",
-   "tokens": 30341707.44278,
-   "usd": 114.54,
-   "symbol": "EVOLVE",
-   "price": 3.775e-06,
-   "market_cap": 3775.31,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "7gCkpkVahPaVSSu5ULeDBhe3zPXHgcms1exTTLRC1mbK",
-   "tokens": 34092078.443263,
-   "usd": 125.66,
-   "symbol": "ANSEM",
-   "price": 3.686e-06,
-   "market_cap": 3686.81,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "7eeMxtZmYGaEkxQnXrjsuXuFy2NzDk9Y3xjXG1ByJMjd",
-   "tokens": 37417434.549655,
-   "usd": 168.34,
-   "symbol": "ODIN",
-   "price": 4.499e-06,
-   "market_cap": 4499.32,
    "liquidity": null
   }
  ],
