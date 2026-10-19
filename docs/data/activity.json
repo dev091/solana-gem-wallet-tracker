@@ -1,94 +1,94 @@
 {
- "updated_at": 1792366660,
+ "updated_at": 1792393350,
  "mode": "holdings",
  "tracked": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 47)",
+   "label": "consistent decu (score 51)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
-   "label": "consistent trunoest (score 46)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 41)",
+   "label": "consistent trunoest (score 50)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent OGAntD (score 40)",
+   "label": "consistent OGAntD (score 43)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent limfork (score 38)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
-   "label": "consistent milito (score 37)",
+   "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
+   "label": "consistent banval (score 43)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "29yFzeBZgxf5zqrAkKXwgZtQehRf4pL8WbV2nRJikbw8",
-   "label": "consistent throatycrab1008 (score 36)",
+   "label": "consistent throatycrab1008 (score 39)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "3VUNtVtjjx5ckUojT7UocJ5fbuAJRsNUXNfTBnPte9vC",
-   "label": "consistent buddhaaaaa (score 36)",
+   "label": "consistent buddhaaaaa (score 39)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
+   "label": "consistent limfork (score 39)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
+   "label": "consistent allglorybetogod (score 39)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "9LXWa7V3AE15VfBupcx5gDts2ix3Y9NzbcKZKjkkq6hV",
-   "label": "consistent rikz_ (score 35)",
+   "label": "consistent rikz_ (score 37)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "GeUnv1jmtviRbR7Gu1JnXSGkUMUgFVBHuEVQVpTaUX1W",
-   "label": "consistent Gladey (score 33)",
+   "label": "consistent Gladey (score 36)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "7g5CJ754NboeY6D44MDdGwQmVX4Fvu59Q47c9ZKLPMkE",
-   "label": "consistent bestcook (score 33)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
-   "label": "consistent daddychilllll (score 32)",
+   "label": "consistent bestcook (score 35)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "GDpqhJgwzg8zcoEmVvGDiVRVnaa797ryvPnNqQVBjQrN",
-   "label": "consistent k34k (score 31)",
+   "label": "consistent k34k (score 34)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "6qudAN2kV8mtCcYJxb5QQ6Vr15itdHHdeVbYm99NKMhy",
-   "label": "consistent thedetective (score 30)",
+   "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
+   "label": "consistent daddychilllll (score 34)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "F9zT1F46HAoPanR4NC1Yw7TyP8Z9tCavTe48mrzK7aN4",
-   "label": "consistent BraveSmallCub (score 30)",
+   "label": "consistent BraveSmallCub (score 33)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "2QrfK8gf3vBcFfuaCJbFxGk3w1JxwjamGE9aGwdQHFas",
+   "label": "consistent Thokani (score 32)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -105,20 +105,8 @@
    "gems": 0
   },
   {
-   "wallet": "8acB11B1i2rzL8wwkKAaVQ1BBk1o6DR8Pk4eMxHL2Rsf",
-   "label": "small-money winner Bunk_Moreland",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
    "wallet": "5vwrSC7TWPAm1dn5mYwqWxNaGkJgLPaeKvtZ9VdfMRbZ",
    "label": "small-money winner sadstarfish0105",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "ACLXhxhsgRkZ17eL49U9ZVyakaR2Teu8wA8Xc9KKJBs8",
-   "label": "small-money winner Specter7",
    "tier": "BOARD",
    "gems": 0
   }
