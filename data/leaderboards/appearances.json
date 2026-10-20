@@ -150,7 +150,8 @@
     "2026-10-07",
     "2026-10-08",
     "2026-10-12",
-    "2026-10-13"
+    "2026-10-13",
+    "2026-10-20"
    ],
    "pump.fun weekly": [
     "2026-10-07",
@@ -181,7 +182,7 @@
    "pump.fun weekly": 7,
    "pump.fun monthly": 23
   },
-  "last_seen": 1792455579
+  "last_seen": 1792540321
  },
  "8bWe7V8J5fyizory2irysXCSaDUg6ytcWwpvpe8iY1Yt": {
   "name": "venom",
@@ -308,7 +309,7 @@
    "kolscan daily": 2,
    "pump.fun weekly": 28
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "8Ltv5royXzxVG3tAhVhRnfXrzapS5Dwqt1ocxprgu6YP": {
   "name": "blu7k",
@@ -357,7 +358,7 @@
    "pump.fun weekly": 11,
    "pump.fun monthly": 26
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC": {
   "name": "Nyhrox",
@@ -636,7 +637,7 @@
    "pump.fun weekly": 9,
    "pump.fun monthly": 5
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "29yFzeBZgxf5zqrAkKXwgZtQehRf4pL8WbV2nRJikbw8": {
   "name": "throatycrab1008",
@@ -695,7 +696,7 @@
    "pump.fun weekly": 2,
    "pump.fun monthly": 1
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6": {
   "name": "Gasp",
@@ -795,7 +796,7 @@
    "pump.fun monthly": 7,
    "kolscan daily": 2
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "831yhv67QpKqLBJjbmw2xoDUeeFHGUx8RnuRj9imeoEs": {
   "name": "Trey",
@@ -978,9 +979,9 @@
   "best": {
    "pump.fun daily": 14,
    "kolscan daily": 1,
-   "pump.fun weekly": 29
+   "pump.fun weekly": 28
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "3JD7zrZVXfGozgaSrnn3GzAcGsHCM5ATazX8EqwJqZWY": {
   "name": "solpropp",
@@ -1028,7 +1029,7 @@
    "pump.fun weekly": 28,
    "pump.fun monthly": 49
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "3CPHk5b7SRvAsTsocehAu1bA5YKMXJYMr3qc2SuMFkWY": {
   "name": "runecrypto_",
@@ -1099,7 +1100,7 @@
    "pump.fun weekly": 4,
    "pump.fun monthly": 2
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "9sCTLsLFfhvHpEwyftEYsvejn3CGKj8p8KvdXEn62mT5": {
   "name": "doubleseal24141",
@@ -1163,7 +1164,7 @@
    "pump.fun monthly": 15,
    "pump.fun weekly": 9
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "H31vEBxSJk1nQdUN11qZgZyhScyShhscKhvhZZU3dQoU": {
   "name": "Megga",
@@ -1200,24 +1201,27 @@
   "days": {
    "pump.fun daily": [
     "2026-10-07",
-    "2026-10-08"
+    "2026-10-08",
+    "2026-10-20"
    ],
    "pump.fun weekly": [
     "2026-10-07",
     "2026-10-08",
-    "2026-10-09"
+    "2026-10-09",
+    "2026-10-20"
    ],
    "pump.fun monthly": [
     "2026-10-07",
-    "2026-10-08"
+    "2026-10-08",
+    "2026-10-20"
    ]
   },
   "best": {
-   "pump.fun daily": 46,
-   "pump.fun weekly": 80,
-   "pump.fun monthly": 75
+   "pump.fun daily": 28,
+   "pump.fun weekly": 63,
+   "pump.fun monthly": 67
   },
-  "last_seen": 1791508402
+  "last_seen": 1792540321
  },
  "AGq77pfqHyyJ7hiLdw6CRwgWRJwcZUmTfVuXd5GJV4XY": {
   "name": "opportunist_",
@@ -1368,7 +1372,7 @@
    "pump.fun weekly": 29,
    "pump.fun monthly": 38
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "HFGiUYGvaAAorLn1Rjyugt8uaXDhTRnEtpdrrwdrPpws": {
   "name": "Bilngineer",
@@ -1491,7 +1495,7 @@
    "pump.fun monthly": 4,
    "pump.fun weekly": 8
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "UDuxGmpRGSRWVay9s5Yh6iZ5CgQs2JGUgyQSiqL5jxX": {
   "name": "HamsterBandit",
@@ -1564,7 +1568,7 @@
    "pump.fun weekly": 14,
    "pump.fun monthly": 12
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "MobS6L5HhVJtxpeafDgREsweWFh53xFoUeP9pgbaDSf": {
   "name": "ttunaa",
@@ -1696,7 +1700,7 @@
    "pump.fun monthly": 2,
    "kolscan daily": 1
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "86AEJExyjeNNgcp7GrAvCXTDicf5aGWgoERbXFiG1EdD": {
   "name": "Publix",
@@ -1719,7 +1723,7 @@
    "pump.fun daily": 51,
    "kolscan daily": 11
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "G6fUXjMKPJzCY1rveAE6Qm7wy5U3vZgKDJmN1VPAdiZC": {
   "name": "clukz",
@@ -1877,7 +1881,7 @@
    "pump.fun monthly": 29,
    "pump.fun weekly": 33
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "684CvPPziJCNSkzhAq4AxAWS3LU782fKoDMRGJhmPGSf": {
   "name": "SimpleWinterDog",
@@ -1945,7 +1949,7 @@
    "pump.fun weekly": 12,
    "pump.fun monthly": 9
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "7BVsMqCRoeEtvVeasYGrRhy83gHr5ZSJBnpV7QeCFQs4": {
   "name": "nevets7x",
@@ -2004,7 +2008,7 @@
    "pump.fun monthly": 50,
    "pump.fun weekly": 39
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "7ci54Ni32rbXdLWwywe1MmLpGgwq58BFoHZ1oYZFWfbK": {
   "name": "0xSt0rm",
@@ -2078,7 +2082,7 @@
    "pump.fun monthly": 52,
    "kolscan daily": 11
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "8MaVa9kdt3NW4Q5HyNAm1X5LbR8PQRVDc1W8NMVK88D5": {
   "name": "Daumen",
@@ -2124,7 +2128,7 @@
    "kolscan daily": 14,
    "pump.fun monthly": 76
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "5NquBKkVm8UKZF3KZnZeXByuh4ULAAPYrBe6hYnsZ1PV": {
   "name": "lunacat6969",
@@ -2221,7 +2225,7 @@
    "pump.fun weekly": 23,
    "pump.fun monthly": 15
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "AopYHZfQbEij1v1dxzmoXHksiYRH52xhTu5auXZjdVQb": {
   "name": "solanatwencher",
@@ -2283,7 +2287,7 @@
    "pump.fun weekly": 19,
    "pump.fun monthly": 17
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "BnfiHRDpHQ5yQevvwnzTmxtaB1Ek276fV5oTY9bi71EA": {
   "name": "mambatrades_",
@@ -2326,7 +2330,7 @@
    "pump.fun weekly": 24,
    "pump.fun monthly": 60
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "H5yCFHBPNycF7xqnHkHJUHvVbk2anz7MzXzRzSo8eaJZ": {
   "name": "DonCryptonium",
@@ -2426,7 +2430,7 @@
    "pump.fun weekly": 24,
    "pump.fun monthly": 21
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "8mrP2irGGzjfCLywd4dFfbnmMxBNjwXA3WYux893ZdqB": {
   "name": "dirtyintentions",
@@ -2611,7 +2615,7 @@
    "pump.fun monthly": 29,
    "kolscan daily": 16
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "HZXdwRRw27kfpYtTqc7bMfrRgK3LSUaiKDFtqoEihik8": {
   "name": "acridtuna55943",
@@ -2707,7 +2711,7 @@
    "kolscan daily": 1,
    "pump.fun daily": 2
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "EqBQhoU88ty3a3aDphDRCBuiRirjUsFSFi4UHGY64qvv": {
   "name": "sadcrissy",
@@ -2748,7 +2752,8 @@
     "2026-10-12",
     "2026-10-15",
     "2026-10-16",
-    "2026-10-19"
+    "2026-10-19",
+    "2026-10-20"
    ]
   },
   "best": {
@@ -2756,7 +2761,7 @@
    "pump.fun monthly": 3,
    "pump.fun daily": 1
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "EnPjBjzy6zaufzpZ2m3Q8nPS3KpyiRxNLKtcSiMYwWCa": {
   "name": "collectible",
@@ -2788,7 +2793,7 @@
    "pump.fun monthly": 17,
    "pump.fun daily": 1
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "6i2aHtxfqkC2biTo98FSkP59FVHPKFRLZWDbdghN6WKK": {
   "name": "sapijiju",
@@ -2823,7 +2828,7 @@
    "pump.fun monthly": 18,
    "pump.fun daily": 13
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "f4CMmXJCRu4fzyqZPkDiFhGKAeCo1s7sxUtPKQp9SDy": {
   "name": "Cirrus",
@@ -2862,7 +2867,7 @@
    "pump.fun monthly": 14,
    "pump.fun daily": 7
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "ACTbvbNm5qTLuofNRPxFPMtHAAtdH1CtzhCZatYHy831": {
   "name": "slidrrz",
@@ -2910,7 +2915,7 @@
    "pump.fun monthly": 2,
    "pump.fun daily": 3
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB": {
   "name": "Limfork.eth",
@@ -2971,7 +2976,7 @@
    "kolscan daily": 4,
    "pump.fun daily": 56
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "AimUs5AnmPfyCzDdUhvz4BTvb2fGsNonAb8uuSyHByw9": {
   "name": "JuubCooks",
@@ -3034,7 +3039,7 @@
    "pump.fun monthly": 35,
    "pump.fun daily": 30
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "4b3ZctHLzPBQt3biFbDWp12hf6ADkaruQx4aj9kiDQKh": {
   "name": "organoid",
@@ -3069,7 +3074,7 @@
    "pump.fun monthly": 46,
    "pump.fun daily": 34
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "EwJYY4q2rcrdEH26doRbYX9JxbpYPSNZvRLgzhPKi418": {
   "name": "heat",
@@ -3110,7 +3115,7 @@
    "pump.fun daily": 2,
    "pump.fun monthly": 1
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "4y2T1ghykCTq4EddoXjptZamk4qAsqcZw6eKxS8jdvE1": {
   "name": "hugo",
@@ -3168,7 +3173,7 @@
    "pump.fun weekly": 21,
    "pump.fun monthly": 83
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "F6mEJf6reUh6nUy6pFajWHSz4aKVwMs4BwpsMqs97839": {
   "name": "0xSun",
@@ -3273,7 +3278,7 @@
    "pump.fun daily": 56,
    "pump.fun monthly": 74
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "GDpqhJgwzg8zcoEmVvGDiVRVnaa797ryvPnNqQVBjQrN": {
   "name": "k34k",
@@ -3327,7 +3332,7 @@
    "pump.fun monthly": 16,
    "pump.fun daily": 4
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "45oN2tCsfzG325wEPnJPvMYpuY2tgASYHmgRPdnMZB5a": {
   "name": "Royalchestnut",
@@ -3356,7 +3361,7 @@
    "pump.fun weekly": 33,
    "pump.fun monthly": 80
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "HB3GebzspXg5PBpeqewkjHPxugf4Uhx8xdZWGPC9q5ks": {
   "name": "snacky14",
@@ -3391,7 +3396,7 @@
    "pump.fun daily": 8,
    "pump.fun monthly": 65
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "DkjBeKvadAtE3d8ZBvhp1AhmqBdzTM6URUUXgKKjGeQQ": {
   "name": "connortrenches",
@@ -3486,7 +3491,7 @@
    "pump.fun monthly": 1,
    "pump.fun daily": 1
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "8MoW9mtbEz6z3gPuAdYb1yWhjCAxQSYqpcTb1CQgN5qb": {
   "name": "Ashtoshiiii",
@@ -3688,7 +3693,7 @@
    "pump.fun monthly": 7,
    "pump.fun daily": 1
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "CAvvAFNRfXDWTTDqwgxb9qSyYT8fTuTXWSFwL7Jsz8vT": {
   "name": "binaryshark2861",
@@ -3738,7 +3743,7 @@
    "pump.fun monthly": 20,
    "pump.fun daily": 58
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "Fpf2DJPM3n7LB9RWKaZ2zQ3KRcVWACHXpjngBNS99Q2H": {
   "name": "kainrtd",
@@ -3814,7 +3819,7 @@
    "pump.fun monthly": 14,
    "pump.fun daily": 32
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "8FE8iX3cgrc5x6eXgar2YJ7EAhASk4ymcbRh5oe1W65A": {
   "name": "LuckyXBT",
@@ -3849,7 +3854,7 @@
    "pump.fun daily": 18,
    "pump.fun monthly": 77
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "HmBmSYwYEgEZuBUYuDs9xofyqBAkw4ywugB1d7R7sTGh": {
   "name": "tobx",
@@ -3906,7 +3911,7 @@
    "pump.fun weekly": 45,
    "pump.fun monthly": 43
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "sea1BTw9iCNV5TwQkqWPZW2GP1zqwFAqd5R5i5dhmcU": {
   "name": "uncleibbra",
@@ -3952,7 +3957,8 @@
     "2026-10-08",
     "2026-10-10",
     "2026-10-11",
-    "2026-10-12"
+    "2026-10-12",
+    "2026-10-20"
    ],
    "pump.fun monthly": [
     "2026-10-07",
@@ -3983,7 +3989,7 @@
    "pump.fun monthly": 32,
    "pump.fun daily": 18
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "7kGAXsa7n1qN2FuNoJAGmzebmN9KqqLAHcwj7gvoekKk": {
   "name": "rarewhaleenforc",
@@ -4021,7 +4027,7 @@
    "pump.fun monthly": 33,
    "pump.fun daily": 36
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "FFdBLYqL9rs5fUT38ArE8GV2L3BziEgG5LJUu6sshfkF": {
   "name": "alphaprophet",
@@ -4062,7 +4068,7 @@
    "pump.fun monthly": 5,
    "pump.fun daily": 1
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "5QQ5Xi9iyY29th4bt5q9GEA1QFSVprMDk6FRadupE7Aj": {
   "name": "jaswal",
@@ -4099,7 +4105,7 @@
    "pump.fun daily": 45,
    "pump.fun monthly": 66
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "DNio5ketGczp2dsB3jJCm3XNsRETaAM87q3YVMPA5F9z": {
   "name": "amenableorca741",
@@ -4135,7 +4141,7 @@
    "pump.fun monthly": 35,
    "pump.fun daily": 66
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "88ptYxT15D5AJUZMrau6ZhZBwkFxU43R7tmbTwuPusbW": {
   "name": "xyztrader1",
@@ -4192,7 +4198,7 @@
    "pump.fun monthly": 37,
    "pump.fun daily": 73
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "3qFD7tnVLqQXvakXUec2jmvQb5D6Tvtbo62vFyfFvVax": {
   "name": "water_sol",
@@ -4243,10 +4249,10 @@
    "pump.fun monthly": 21,
    "pump.fun daily": 16
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "387FRwow6MKDhSwuMULhKjqeXuxoBY4BbbaSntdk9LaH": {
-  "name": "sh4vwty",
+  "name": "Shawty",
   "days": {
    "pump.fun weekly": [
     "2026-10-07",
@@ -4284,14 +4290,18 @@
     "2026-10-12",
     "2026-10-13",
     "2026-10-15"
+   ],
+   "kolscan daily": [
+    "2026-10-20"
    ]
   },
   "best": {
    "pump.fun weekly": 55,
    "pump.fun monthly": 22,
-   "pump.fun daily": 50
+   "pump.fun daily": 50,
+   "kolscan daily": 29
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "BtHnhjh8Ta2vGZkrL76AmXMur1ADo3tpRo2kQMe2BCSU": {
   "name": "stricttuna77011",
@@ -4331,7 +4341,7 @@
    "pump.fun monthly": 36,
    "pump.fun daily": 75
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "93kk52HkrH5pHEPyb2KM62mP4cWA1N5DaSgBgDzA2uT9": {
   "name": "DotFlaxenFact",
@@ -4376,7 +4386,7 @@
    "pump.fun monthly": 54,
    "pump.fun daily": 38
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "3BLjRcxWGtR7WRshJ3hL25U3RjWr5Ud98wMcczQqk4Ei": {
   "name": "Sebastian",
@@ -4465,7 +4475,7 @@
    "pump.fun daily": 17,
    "pump.fun monthly": 36
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "DJQwtiowTJmAvAu4vhCaFgPiS3nnKD5r5agZgBQEdHK2": {
   "name": "bymotionnn",
@@ -4506,7 +4516,7 @@
    "pump.fun monthly": 48,
    "pump.fun daily": 94
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "3pfqebV65sHMbF5z86HsPKSiTxwpNhCzjK5X7GUqCbtK": {
   "name": "Rem",
@@ -4632,7 +4642,7 @@
    "pump.fun weekly": 12,
    "pump.fun daily": 5
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "67Nwfi9hgwqhxGoovT2JGLU67uxfomLwQAWncjXXzU6U": {
   "name": "0xsilver",
@@ -4666,9 +4676,9 @@
    "pump.fun weekly": 71,
    "kolscan daily": 5,
    "pump.fun daily": 43,
-   "pump.fun monthly": 97
+   "pump.fun monthly": 88
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "A2XqEiR18CMSk5CQwt6gsKwCnw1Xduyn4BDLnRmWZ18s": {
   "name": "goingmanta59770",
@@ -4703,7 +4713,7 @@
    "pump.fun monthly": 47,
    "pump.fun daily": 78
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "HQLeWLJRfhnzq4Ucdn3V1vgSw5ZLxRXT6QQa5bASXSdu": {
   "name": "markvsol",
@@ -4773,14 +4783,15 @@
     "2026-10-12"
    ],
    "pump.fun daily": [
-    "2026-10-10"
+    "2026-10-10",
+    "2026-10-20"
    ]
   },
   "best": {
    "pump.fun weekly": 63,
-   "pump.fun daily": 82
+   "pump.fun daily": 47
   },
-  "last_seen": 1791765128
+  "last_seen": 1792540321
  },
  "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb": {
   "name": "ban",
@@ -4848,7 +4859,7 @@
    "kolscan daily": 5,
    "pump.fun daily": 43
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "36YdEpphGT1P7WCNFa5XxPfLP5b8gJFr7Jtck5UYpB6N": {
   "name": "kanpai",
@@ -4870,7 +4881,7 @@
    "pump.fun weekly": 80,
    "pump.fun daily": 29
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "4ugDhHJ8XDXAeABmrNmGffFaLbJb9BkPyiFGVSV9ocwo": {
   "name": "The__Solstice",
@@ -4883,14 +4894,19 @@
     "2026-10-10",
     "2026-10-11",
     "2026-10-12",
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-20"
+   ],
+   "pump.fun weekly": [
+    "2026-10-20"
    ]
   },
   "best": {
    "pump.fun monthly": 1,
-   "pump.fun daily": 1
+   "pump.fun daily": 1,
+   "pump.fun weekly": 10
   },
-  "last_seen": 1792168736
+  "last_seen": 1792540321
  },
  "2M2vLX34LXMg24dMEnjWHvRXS1tshpEDRWzmXgV8ENNZ": {
   "name": "SossaDotKek",
@@ -4930,7 +4946,7 @@
    "pump.fun daily": 1,
    "pump.fun weekly": 1
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "ESVPiw89EPDawTyqXWmot6nJ8D92MMNHH5fmDmficY32": {
   "name": "glassyotter6054",
@@ -4968,7 +4984,7 @@
    "pump.fun daily": 2,
    "pump.fun weekly": 5
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "24L6uekgvsQRgT41DZRhahEAAVnkseTT7x4qyigC3HvH": {
   "name": "Nexybtw",
@@ -5027,7 +5043,7 @@
    "pump.fun daily": 16,
    "pump.fun weekly": 48
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "21rgbFW6sujQovCw3qt6R2EdE97Yzzvk8sSc37Bb72Cm": {
   "name": "hexiecs",
@@ -5085,7 +5101,7 @@
    "kolscan daily": 2,
    "pump.fun daily": 22
   },
-  "last_seen": 1792455579
+  "last_seen": 1792540321
  },
  "EVqxB3F6iUBeWsTpBFQqWwxpqUS8s4NrzgxBvQ2VRbTq": {
   "name": "faposhi__",
@@ -5122,7 +5138,7 @@
    "pump.fun daily": 2,
    "pump.fun weekly": 5
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "CP8EA1BnR2bnHa7BJps9c53zZwxaubrBtQCbREaZVibe": {
   "name": "lvvpumpy",
@@ -5185,7 +5201,7 @@
    "pump.fun daily": 1,
    "pump.fun weekly": 5
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "Fzz2amRoCCpEvxtwdurs8qLVLSdrd3dcraJVpNjE4rp4": {
   "name": "glowingseal9825",
@@ -5246,9 +5262,9 @@
   "best": {
    "pump.fun monthly": 12,
    "pump.fun daily": 1,
-   "pump.fun weekly": 28
+   "pump.fun weekly": 26
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "5CYEcx88NhdRaFw3pc5YNBXoiKa3EseD8BM7Bvs8NkaU": {
   "name": "Loshmi",
@@ -5302,7 +5318,7 @@
    "pump.fun monthly": 34,
    "pump.fun daily": 12
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "DNsh1UfJdxmze6T6GV9QK5SoFm7HsM5TRNxVuwVgo8Zj": {
   "name": "Hash",
@@ -5378,7 +5394,7 @@
    "kolscan daily": 7,
    "pump.fun weekly": 81
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "4UwK5AE6Djdf3MfwtPGE8pFYD47MhU9fiStDVmSHJVMB": {
   "name": "CottagePvP",
@@ -5475,7 +5491,7 @@
    "pump.fun daily": 13,
    "pump.fun weekly": 18
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "sAdNbe1cKNMDqDsa4npB3TfL62T14uAo2MsUQfLvzLT": {
   "name": "Ethan Prosper",
@@ -5555,7 +5571,7 @@
    "pump.fun daily": 91,
    "pump.fun weekly": 76
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "6AeqrhqsmUtRE1V1FQvwetjCFFnXazqZLM9PUrzPLiGy": {
   "name": "bobdotjpg",
@@ -5613,7 +5629,7 @@
    "pump.fun daily": 63,
    "pump.fun weekly": 68
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "4EsYuWFZAt1PfNJq8Jr7monip43gNqrQ7k2Kne1npqJx": {
   "name": "Guywhobuys",
@@ -5651,7 +5667,7 @@
   "best": {
    "pump.fun monthly": 45
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "2PYV6pHDEC4Bry9VMAL4FEVC3bSRsqGqSeiW9us9ibo2": {
   "name": "RisitasEngineer",
@@ -5703,7 +5719,7 @@
    "pump.fun monthly": 53,
    "kolscan daily": 11
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "FdSShBiR1nBtxQzhwNMszyRdcvMVLiAeVraJLvERERZL": {
   "name": "element69420",
@@ -5735,7 +5751,7 @@
    "pump.fun monthly": 35,
    "pump.fun weekly": 82
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "D9UiteKBjbVp8UYGRSKi4fJRsXYp8Csk7zcrnaCvq6LS": {
   "name": "hillyshark15640",
@@ -5768,7 +5784,7 @@
    "pump.fun monthly": 53,
    "pump.fun weekly": 80
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "uDYvqwgSxNDMKGPaMJ7JqyadEg1EhxkuCx9hbLSanHA": {
   "name": "passthedutcher",
@@ -5858,7 +5874,7 @@
    "pump.fun weekly": 63,
    "pump.fun daily": 94
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH": {
   "name": "allglorybetogod",
@@ -5920,7 +5936,7 @@
    "kolscan daily": 4,
    "pump.fun weekly": 27
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "4XVFYAg8fHinxnNTjicpq2Xti5JGz5oJx3ZNbCvR9eTB": {
   "name": "0xElyy",
@@ -6039,7 +6055,7 @@
    "pump.fun daily": 62,
    "pump.fun weekly": 54
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "Bmi9zf27MNN5pjCtyv2Y15TDQoYgcbcmPTxvEoQ6UwWs": {
   "name": "Crypto_Keys",
@@ -6060,7 +6076,7 @@
    "pump.fun monthly": 82,
    "pump.fun daily": 2
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "47mWG2nceU3CgNnqcFnqvWPGyT8EJwaVwkaRgcm5L9Ft": {
   "name": "CoupDeGrace",
@@ -6089,7 +6105,7 @@
    "pump.fun monthly": 56,
    "pump.fun daily": 35
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "CzbN6T1gKkKutvuPXcxNmV8FLqzjsDWebWmg9o8e2ZbU": {
   "name": "Clowntrenchdev",
@@ -6153,7 +6169,8 @@
     "2026-10-16",
     "2026-10-17",
     "2026-10-18",
-    "2026-10-19"
+    "2026-10-19",
+    "2026-10-20"
    ],
    "pump.fun daily": [
     "2026-10-13",
@@ -6171,7 +6188,7 @@
    "pump.fun daily": 42,
    "pump.fun weekly": 68
   },
-  "last_seen": 1792415622
+  "last_seen": 1792540321
  },
  "2X4H5Y9C4Fy6Pf3wpq8Q4gMvLcWvfrrwDv2bdR8AAwQv": {
   "name": "orange",
@@ -6217,7 +6234,7 @@
    "kolscan daily": 16,
    "pump.fun weekly": 14
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "ArkdCAPErAo6KdVDTFA32YKnqaD7jfXsESFoyxQzDgnu": {
   "name": "normalseal38782",
@@ -6265,7 +6282,7 @@
    "pump.fun daily": 24,
    "pump.fun weekly": 24
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "HEBov96RdNZC7vrH9taLXwJ3b7MTHBemSee8nuvwDz3P": {
   "name": "develepoor1",
@@ -6308,12 +6325,16 @@
    "pump.fun monthly": [
     "2026-10-07",
     "2026-10-08"
+   ],
+   "pump.fun weekly": [
+    "2026-10-20"
    ]
   },
   "best": {
-   "pump.fun monthly": 95
+   "pump.fun monthly": 95,
+   "pump.fun weekly": 87
   },
-  "last_seen": 1791485447
+  "last_seen": 1792540321
  },
  "8NVkytV1CtoNBXGFtwXwh4KQdbgVcA6hFmym1gMuRHru": {
   "name": "Icefreezer",
@@ -6352,7 +6373,7 @@
    "pump.fun daily": 13,
    "pump.fun weekly": 26
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "DXbZugG3hkX6o2cbNuKnUtDTQdjRRUx9uvtoE9FQCc3i": {
   "name": "boapranois",
@@ -6410,7 +6431,7 @@
    "pump.fun weekly": 70,
    "pump.fun daily": 98
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "AuPp4YTMTyqxYXQnHc5KUc6pUuCSsHQpBJhgnD45yqrf": {
   "name": "Dani",
@@ -6461,7 +6482,8 @@
     "2026-10-12",
     "2026-10-14",
     "2026-10-15",
-    "2026-10-18"
+    "2026-10-18",
+    "2026-10-20"
    ],
    "pump.fun daily": [
     "2026-10-18"
@@ -6471,7 +6493,7 @@
    "kolscan daily": 8,
    "pump.fun daily": 89
   },
-  "last_seen": 1792365087
+  "last_seen": 1792540321
  },
  "23Ltopfensg1rSsCdoc1M8rcp5cB5bkqbmogMGmH63yW": {
   "name": "Snatcher",
@@ -6566,7 +6588,7 @@
   "best": {
    "kolscan daily": 20
   },
-  "last_seen": 1792505885
+  "last_seen": 1792540321
  },
  "AUEQxhkAVz71w2WBa9BYSoZrydhYNJaKmfNomoNs9E4t": {
   "name": "rise_crypt",
@@ -6673,7 +6695,7 @@
    "kolscan daily": 7,
    "pump.fun daily": 70
   },
-  "last_seen": 1792505885
+  "last_seen": 1792540321
  },
  "7Js5gmq57y9jG2sseKrAeJt3vbncSWSFFHDEsyJDnyVm": {
   "name": "Yami 𓃵",
@@ -6744,7 +6766,8 @@
     "2026-10-14",
     "2026-10-15",
     "2026-10-18",
-    "2026-10-19"
+    "2026-10-19",
+    "2026-10-20"
    ],
    "pump.fun daily": [
     "2026-10-15"
@@ -6754,7 +6777,7 @@
    "kolscan daily": 7,
    "pump.fun daily": 40
   },
-  "last_seen": 1792442109
+  "last_seen": 1792540321
  },
  "Cxe1d5zFifK4a4UZoHQaCK7sfqd84XjcKy1qtjnz3bge": {
   "name": "DJ.Σn",
@@ -6935,9 +6958,9 @@
   "best": {
    "pump.fun monthly": 96,
    "pump.fun daily": 5,
-   "pump.fun weekly": 52
+   "pump.fun weekly": 31
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "3Ps5KnpG8nxeeKXmag427GYzwB2hUWjNorMQqbi1JWpx": {
   "name": "GrokuC",
@@ -6971,12 +6994,16 @@
     "2026-10-08",
     "2026-10-18",
     "2026-10-20"
+   ],
+   "pump.fun weekly": [
+    "2026-10-20"
    ]
   },
   "best": {
-   "pump.fun daily": 48
+   "pump.fun daily": 48,
+   "pump.fun weekly": 89
   },
-  "last_seen": 1792485126
+  "last_seen": 1792540321
  },
  "9aztChMYbsF5HRFG2ECkjfEdHHZChB1b3tRHQ2TPgKjv": {
   "name": "sp0ngey",
@@ -7053,7 +7080,7 @@
    "pump.fun weekly": 22,
    "pump.fun monthly": 45
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "DB6CM2Jrf6bjySHJH91BmCrRjzWPq3aQeJ6SiLLEmjJN": {
   "name": "iskibits",
@@ -7120,7 +7147,7 @@
    "pump.fun weekly": 8,
    "pump.fun monthly": 49
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "B9K2wTQcRDLRLhMKFyRh2hPqHrr6VKiCC9yNGpkMUXrh": {
   "name": "Xanse.",
@@ -7183,7 +7210,7 @@
    "pump.fun weekly": 15,
    "pump.fun monthly": 82
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "AgytU4H5KZHwPE8qWuXYSJY3FYuWPQ9dsESEpvAZTwwi": {
   "name": "rebelwithsnacks",
@@ -7276,14 +7303,19 @@
     "2026-10-15",
     "2026-10-16",
     "2026-10-17",
-    "2026-10-18"
+    "2026-10-18",
+    "2026-10-20"
+   ],
+   "pump.fun monthly": [
+    "2026-10-20"
    ]
   },
   "best": {
    "pump.fun daily": 12,
-   "pump.fun weekly": 13
+   "pump.fun weekly": 13,
+   "pump.fun monthly": 83
   },
-  "last_seen": 1792365087
+  "last_seen": 1792540321
  },
  "8UfkYXd2cSE8CXmcfnbtF7DcgUeJJoQpt2TmSHrkCvD6": {
   "name": "payki_flip",
@@ -7381,7 +7413,7 @@
    "pump.fun weekly": 5,
    "pump.fun monthly": 19
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "EwfZY9YvNA1XUjDnicQMkNPw61d75gn8oKfCWL1Reyxa": {
   "name": "hierux",
@@ -7502,7 +7534,7 @@
    "kolscan daily": 1,
    "pump.fun weekly": 69
   },
-  "last_seen": 1792455579
+  "last_seen": 1792540321
  },
  "2jgmHtkCkJXm3Xq4dp9DgippkQjXLK3rhaREAz7oG7s7": {
   "name": "six666888eight",
@@ -7668,7 +7700,7 @@
    "pump.fun weekly": 40,
    "pump.fun monthly": 64
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "GXr4LUofLQ4X5scrUcjaMeLJ8DXNNMdXjz9eanRwnxFf": {
   "name": "trainwreckguy",
@@ -7746,7 +7778,7 @@
    "pump.fun daily": 2,
    "pump.fun monthly": 17
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "8NWbuX6QsXf1NvLPjCyaC7wkTpKdJr36SN8PaaZQ26XZ": {
   "name": "gliblobster8297",
@@ -7888,7 +7920,7 @@
    "pump.fun daily": 8,
    "pump.fun weekly": 24
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "AMAoBmUM6LzYkRBa7GmKy6apZg5LGDakMDMPrAFsbGRo": {
   "name": "amapump",
@@ -7993,10 +8025,10 @@
    "pump.fun daily": 89,
    "pump.fun weekly": 76
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "J23qr98GjGJJqKq9CBEnyRhHbmkaVxtTJNNxKu597wsA": {
-  "name": "gr3gor14n",
+  "name": "gr3g",
   "days": {
    "kolscan daily": [
     "2026-10-07",
@@ -8005,7 +8037,8 @@
     "2026-10-12",
     "2026-10-15",
     "2026-10-18",
-    "2026-10-19"
+    "2026-10-19",
+    "2026-10-20"
    ],
    "pump.fun daily": [
     "2026-10-09",
@@ -8023,7 +8056,7 @@
    "kolscan daily": 5,
    "pump.fun daily": 2
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "4BdKaxN8G6ka4GYtQQWk4G4dZRUTX2vQH9GcXdBREFUk": {
   "name": "Jijo",
@@ -8106,7 +8139,7 @@
   "best": {
    "kolscan daily": 37
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "862TYSvRYoiHAK3F3WwTRYAfuGiQaGdxedN9AGvRGWo2": {
   "name": "Wugi",
@@ -8131,7 +8164,7 @@
   "best": {
    "kolscan daily": 7
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "BtMBMPkoNbnLF9Xn552guQq528KKXcsNBNNBre3oaQtr": {
   "name": "Letterbomb",
@@ -8349,13 +8382,18 @@
    "pump.fun daily": [
     "2026-10-08",
     "2026-10-11",
-    "2026-10-12"
+    "2026-10-12",
+    "2026-10-20"
+   ],
+   "pump.fun weekly": [
+    "2026-10-20"
    ]
   },
   "best": {
-   "pump.fun daily": 63
+   "pump.fun daily": 12,
+   "pump.fun weekly": 94
   },
-  "last_seen": 1791802105
+  "last_seen": 1792540321
  },
  "BF6GFz4xJHXzvPXMzawRQ9DK1CgXhnXNeqiC9jTnfPKx": {
   "name": "hasimax",
@@ -8619,7 +8657,7 @@
    "kolscan daily": 1,
    "pump.fun daily": 8
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij": {
   "name": "slingoor",
@@ -8652,7 +8690,7 @@
    "kolscan daily": 1,
    "pump.fun daily": 7
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "4Be9CvxqHW6BYiRAxW9Q3xu1ycTMWaL5z8NX4HR3ha7t": {
   "name": "Mitch",
@@ -8685,7 +8723,7 @@
    "pump.fun daily": 8,
    "pump.fun monthly": 72
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "Hw5UKBU5k3YudnGwaykj5E8cYUidNMPuEewRRar5Xoc7": {
   "name": "Trenchman",
@@ -8727,7 +8765,7 @@
   "best": {
    "kolscan daily": 15
   },
-  "last_seen": 1792505885
+  "last_seen": 1792540321
  },
  "AstaWuJuQiAS3AfqmM3xZxrJhkkZNXtW4VyaGQfqV6JL": {
   "name": "asta",
@@ -8749,7 +8787,7 @@
   "best": {
    "kolscan daily": 1
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "69z4qTgQ5DBRTJvnQzx2h8jZhNsv5UgADotEwwKUm2JS": {
   "name": "King",
@@ -8769,7 +8807,7 @@
   "best": {
    "kolscan daily": 1
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "EDXHdSFdadFbYFFjxPXBqMe1kCEDFqpPu552uvp48HR8": {
   "name": "Clown",
@@ -8975,7 +9013,7 @@
    "pump.fun weekly": 2,
    "pump.fun monthly": 33
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "49MHZz9c1mE1ePTcLxBWPjf7KKzt3Ntd25JnspKvV8vL": {
   "name": "OldManPervert",
@@ -9046,13 +9084,14 @@
    "pump.fun daily": [
     "2026-10-08",
     "2026-10-11",
-    "2026-10-12"
+    "2026-10-12",
+    "2026-10-20"
    ]
   },
   "best": {
    "pump.fun daily": 29
   },
-  "last_seen": 1791802105
+  "last_seen": 1792540321
  },
  "95CwNd3p9TtUmNesnri1Tf5KzS58SzgDZJCDHmTiwgE2": {
   "name": "DecentralizeDie",
@@ -9614,7 +9653,7 @@
    "pump.fun daily": 9,
    "pump.fun weekly": 21
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "DGma4Uxm9JS6yLNdgYaxsZhwk2nxrRGMfMt5buXbiFCm": {
   "name": "gutssay",
@@ -9646,7 +9685,7 @@
    "pump.fun monthly": 61,
    "pump.fun weekly": 81
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "CUHBzSPSaNS3tArEtM3maSV6pNdJhHJFYZpurPPK9P7H": {
   "name": "samsrep",
@@ -9765,7 +9804,7 @@
    "pump.fun daily": 87,
    "pump.fun weekly": 37
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "DU323DieHUGPmYamp6A4Ai1V4YSYgRi35mGpzJGrjf7k": {
   "name": "Toxic weast",
@@ -9780,7 +9819,7 @@
   "best": {
    "kolscan daily": 24
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "8rvAsDKeAcEjEkiZMug9k8v1y8mW6gQQiMobd89Uy7qR": {
   "name": "Casino",
@@ -9957,7 +9996,7 @@
    "pump.fun daily": 10,
    "pump.fun weekly": 98
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "F78fUfVKkhcMjtmqxofe2nNfHAZ4JFNXweEZbuHThSi": {
   "name": "kior",
@@ -10172,7 +10211,8 @@
     "2026-10-13",
     "2026-10-14",
     "2026-10-15",
-    "2026-10-18"
+    "2026-10-18",
+    "2026-10-20"
    ],
    "pump.fun weekly": [
     "2026-10-14",
@@ -10188,7 +10228,7 @@
    "pump.fun daily": 8,
    "pump.fun weekly": 30
   },
-  "last_seen": 1792485126
+  "last_seen": 1792540321
  },
  "8deJ9xeUvXSJwicYptA9mHsU2rN2pDx37KWzkDkEXhU6": {
   "name": "cooker",
@@ -10326,7 +10366,7 @@
    "pump.fun monthly": 81,
    "pump.fun daily": 99
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "65paNEG8m7mCVoASVF2KbRdU21aKXdASSB9G3NjCSQuE": {
   "name": "Pullup 🗡️🧣✨",
@@ -10438,7 +10478,7 @@
    "pump.fun monthly": 99,
    "pump.fun weekly": 65
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "CvNiezB8hofusHCKqu8irJ6t2FKY7VjzpSckofMzk5mB": {
   "name": "Dali",
@@ -10454,7 +10494,7 @@
   "best": {
    "kolscan daily": 12
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "4ESzFZUWUdr2GsgHBVeQKuzAmBWS5sRSaXw6PZH2EAau": {
   "name": "dash",
@@ -10574,7 +10614,7 @@
    "pump.fun monthly": 17,
    "pump.fun weekly": 8
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "3yTahCwhuYTrqWsVqHavYxZ9eknMRvNZF117HHEzpn9X": {
   "name": "Tittyfag",
@@ -10889,7 +10929,7 @@
    "pump.fun daily": 20,
    "pump.fun weekly": 35
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "AAz8hgrU9AX87a4m7d38gSGShh2ZD7svSqrXfNWYSTbk": {
   "name": "oguser110010101",
@@ -11267,7 +11307,7 @@
    "pump.fun daily": 75,
    "pump.fun monthly": 86
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "DCRSAhR9Q4RVSKX19oc2Zq7j8qCw3V4X632etRRX8Lr4": {
   "name": "Cheiff",
@@ -11778,7 +11818,7 @@
    "pump.fun weekly": 5,
    "pump.fun monthly": 27
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "8w13dqaMfMmGCfKBf1cuw7bSL3ojrGP5C28jTgYAecbi": {
   "name": "honestcallouts",
@@ -11968,7 +12008,7 @@
    "pump.fun daily": 2,
    "pump.fun weekly": 3
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "AH39BneW9UeWxQysUcwogQrYFdPvJuRVZ5w4ccq9SKfL": {
   "name": "_logjam",
@@ -11999,7 +12039,7 @@
    "pump.fun daily": 1,
    "pump.fun weekly": 4
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "5hh7UE6i2BtyCvaMMadS71wFwK88JRmtRTfXkjZ3CHvF": {
   "name": "curb1",
@@ -12024,7 +12064,7 @@
    "pump.fun daily": 10,
    "pump.fun weekly": 17
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "9oqcX4mTVdLP7MDs7ZTL7jueW5EMjXTx7bwqy57cEuww": {
   "name": "mirage",
@@ -12056,7 +12096,7 @@
    "pump.fun daily": 2,
    "pump.fun weekly": 8
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "9qpucJgTkTVSbMPksG4fequu9STgFxr9AQmLN25MwiBV": {
   "name": "FrostxXBT",
@@ -12077,10 +12117,10 @@
    ]
   },
   "best": {
-   "pump.fun daily": 11,
+   "pump.fun daily": 8,
    "pump.fun weekly": 27
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "6vbrTLsWy76TxDQAUKLqZrPohQuq6EVaJgfGzR82paFa": {
   "name": "marcell",
@@ -12109,7 +12149,7 @@
    "pump.fun daily": 1,
    "pump.fun weekly": 2
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "FaCDoRVWSGtr24Eg5rwxMd7LNjTkfBTSCQEjX6TnbzAt": {
   "name": "DJ_trader",
@@ -12135,7 +12175,7 @@
    "pump.fun daily": 14,
    "pump.fun weekly": 34
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "B5TrL7PsRUwCTL5bVcueieht5QchTw4TWLQDKqEaxEzi": {
   "name": "sapphy",
@@ -12151,9 +12191,9 @@
    ]
   },
   "best": {
-   "pump.fun daily": 8
+   "pump.fun daily": 5
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "BQ4KBzzXXk6ZMxVQb4mePuUbJfe85MerzYj53eatzUWd": {
   "name": "brc20niubi",
@@ -12201,7 +12241,7 @@
    "pump.fun daily": 6,
    "pump.fun weekly": 12
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "82m59BvGrbCSKUXhuqdNXP7pSnYQEasLhWCek7zsbXpT": {
   "name": "Dimi",
@@ -12246,7 +12286,7 @@
    "pump.fun daily": 9,
    "pump.fun weekly": 18
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "BM4z8XWwCJNM7nkeLE7hjVe3sYhkaLqavLbaZxaiQ8Rm": {
   "name": "_opensecret",
@@ -12273,7 +12313,7 @@
    "pump.fun daily": 15,
    "pump.fun weekly": 24
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "DFqdZtjk7p6k88HihENe3VfwFRC7MuEm9sWgQo7tz586": {
   "name": "zachvierr",
@@ -12371,9 +12411,9 @@
   },
   "best": {
    "pump.fun daily": 32,
-   "pump.fun weekly": 74
+   "pump.fun weekly": 69
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "4DVVsMKXT3qPpEYDusxSswF1uciwu1Pxhp2X6dUTyxGj": {
   "name": "fitsquid13447",
@@ -12400,7 +12440,7 @@
    "pump.fun daily": 19,
    "pump.fun weekly": 52
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "2wGvJFgAXYghGT1ZySYZHxEppJX8jY9RpH4qGD6dvj4f": {
   "name": "adiosdavid",
@@ -12415,9 +12455,9 @@
    ]
   },
   "best": {
-   "pump.fun daily": 54
+   "pump.fun daily": 34
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "9E9xEwxxmfBy4edHySzy5kyaUjrafiWa9mKsYnA8Yaq1": {
   "name": "tradeslop",
@@ -12441,7 +12481,7 @@
    "pump.fun daily": 34,
    "pump.fun weekly": 54
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "3BEZBkBx8XjQgLJ46UMNvcRbXaPvZqPWR46Qnh5ZQszv": {
   "name": "1sonick1",
@@ -12581,7 +12621,7 @@
    "pump.fun daily": 16,
    "pump.fun weekly": 25
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "GkXGLRmXPhvD4jSoYwE8cMX17Ew1Wi9YsraPUH1CHZna": {
   "name": "cudo",
@@ -12739,7 +12779,7 @@
    "pump.fun daily": 26,
    "pump.fun monthly": 44
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "GQ1ujeFQnVmvbnEZ89tT8qwzjc3HmcyEjn9Rv417zopJ": {
   "name": "SLURB",
@@ -12793,7 +12833,7 @@
   "best": {
    "kolscan daily": 4
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "9iaawVBEsFG35PSwd4PahwT8fYNQe9XYuRdWm872dUqY": {
   "name": "Meechie",
@@ -13037,7 +13077,7 @@
    "pump.fun weekly": 12,
    "pump.fun monthly": 72
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "HVCHn1PfP1HFt6o2YLg2s1MUXQzKLPs1ccVUSBHQ7Ssx": {
   "name": "MantisToboban",
@@ -13402,7 +13442,7 @@
    "pump.fun daily": 4,
    "pump.fun weekly": 9
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "8R8q7Hp4T6mjypuFRGwc1mPaiEEbBq1Ri4nmskoHq2XA": {
   "name": "turbosealdiagon",
@@ -13509,7 +13549,7 @@
   "best": {
    "pump.fun daily": 27
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "GbLFZoD9Zpr8RFtDURpGMswvRfmEZbiGbkJwfWXtDLeu": {
   "name": "ibuyfear",
@@ -13655,7 +13695,7 @@
    "pump.fun weekly": 14,
    "pump.fun monthly": 91
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "AVHR6Zedgq5qGPaAZYf9dfS4hHXed17NSh3t5ShNPkzA": {
   "name": "CatoshiNakameme",
@@ -14022,14 +14062,15 @@
     "2026-10-16",
     "2026-10-17",
     "2026-10-18",
-    "2026-10-19"
+    "2026-10-19",
+    "2026-10-20"
    ]
   },
   "best": {
    "pump.fun daily": 9,
    "pump.fun weekly": 34
   },
-  "last_seen": 1792384774
+  "last_seen": 1792540321
  },
  "4qMpTuriauYx2KMDGN3uNGcd4REjm8m1fjnwVf8aTVUH": {
   "name": "ShooterG",
@@ -14053,7 +14094,7 @@
    "pump.fun daily": 10,
    "pump.fun weekly": 32
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "AJmsheJmLXsQwaYr1Zu6wK8WeA2uDXUaVJcVArje5Xsy": {
   "name": "ultrao",
@@ -14249,7 +14290,7 @@
    "pump.fun daily": 83,
    "pump.fun weekly": 96
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "DrkWK9ew2NneZMLvX8vfVsYRunk9hb6SHcKr11RJphEB": {
   "name": "foreskin",
@@ -14448,7 +14489,7 @@
   "best": {
    "pump.fun daily": 6
   },
-  "last_seen": 1792505885
+  "last_seen": 1792540321
  },
  "t4nU62VWQKwYEdouZ5ZowryUpNMZaeLyxFcmJpVWfhY": {
   "name": "Tikihakamiki",
@@ -14468,7 +14509,7 @@
    "pump.fun daily": 43,
    "pump.fun weekly": 57
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "EgNcLphxsfZNUQqxfTWDjdk47cVU3GT7jDFCLBuqU6qY": {
   "name": "HillZincHelper",
@@ -14528,7 +14569,7 @@
    "pump.fun daily": 16,
    "pump.fun monthly": 53
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "5FqUo9aBjsp7QeeyN6Vi2ZmF2fjS4H5EU7wnAQwPy17z": {
   "name": "17z",
@@ -15058,7 +15099,7 @@
    "pump.fun weekly": 18,
    "pump.fun monthly": 85
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "D1H83ueSw5Nxy5okxH7VBfV4jRnqAK5Mm1tm3JAj3m5t": {
   "name": "Jeets",
@@ -15095,7 +15136,7 @@
   "best": {
    "kolscan daily": 13
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "5d3jQcuUvsuHyZkhdp78FFqc7WogrzZpTtec1X9VNkuE": {
   "name": "tech",
@@ -15125,7 +15166,7 @@
   "best": {
    "pump.fun daily": 24
   },
-  "last_seen": 1792455579
+  "last_seen": 1792540321
  },
  "6rc9at7PvNuEL3q69iTpfVGUDJ1QAnpd3cQwD28ZaC2P": {
   "name": "tentaclepapi",
@@ -15304,7 +15345,7 @@
    "pump.fun monthly": 13,
    "pump.fun daily": 9
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "DbG7RyLFBWXpEWgfKUA8qByvBZEZ3chqGh9TLkpjpF3b": {
   "name": "Qu4nt",
@@ -15426,7 +15467,7 @@
   "best": {
    "kolscan daily": 27
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "9rSmaSya7pUuyq2JHhcbq6rkuXCvLR3wteC5p7eta6Y8": {
   "name": "AliAnsar",
@@ -15867,7 +15908,7 @@
    "pump.fun weekly": 1,
    "pump.fun monthly": 18
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "BN73buQDU4WLMmRkRSjV4qKkEvFVYNC8g1YNfuPe95Aj": {
   "name": "moonkraken626",
@@ -15913,9 +15954,9 @@
   "best": {
    "pump.fun daily": 4,
    "pump.fun weekly": 15,
-   "pump.fun monthly": 36
+   "pump.fun monthly": 35
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "5dQiBMK9xyrsqYD7P43U1pugo9HCgypk4Pjqfo8HNmJ": {
   "name": "SlickNinja17",
@@ -16000,7 +16041,7 @@
    "kolscan daily": 5,
    "pump.fun weekly": 54
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "7QmA5YeQc41urgzUnUXP6novqGY6nWZJjMaTB1FqLY6P": {
   "name": "infinite_acc88",
@@ -16123,10 +16164,10 @@
   },
   "best": {
    "pump.fun daily": 11,
-   "pump.fun weekly": 35,
-   "pump.fun monthly": 86
+   "pump.fun weekly": 30,
+   "pump.fun monthly": 81
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "9kjPgXnktNt1nDxShDhb9kDqPy6S9rKZUPZJGfkSvkdu": {
   "name": "braundefi",
@@ -16316,9 +16357,9 @@
   },
   "best": {
    "pump.fun daily": 17,
-   "pump.fun weekly": 56
+   "pump.fun weekly": 49
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "2PVjizb4hSZcAT4gMbEa6oe8iXkSuVQqrLmhEPM3p2TW": {
   "name": "peeeachyy",
@@ -16619,9 +16660,9 @@
   "best": {
    "pump.fun weekly": 50,
    "pump.fun daily": 55,
-   "pump.fun monthly": 87
+   "pump.fun monthly": 79
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "2SbcdgYR8Mp1e5bVMham6CkuKcPpJ93XxQ139D6dCGp4": {
   "name": "Incorruptible",
@@ -16664,7 +16705,7 @@
    "pump.fun daily": 99,
    "pump.fun weekly": 89
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "3uz65G8e463MA5FxcSu1rTUyWRtrRLRZYskKtEHHj7qn": {
   "name": "Felix",
@@ -17057,7 +17098,7 @@
   "best": {
    "kolscan daily": 5
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "95TWoKkvv2z85EXBzd2z6NwbxH2f54AvwuCA9x3NoKep": {
   "name": "killuacooks",
@@ -17125,7 +17166,7 @@
    "kolscan daily": 8,
    "pump.fun daily": 86
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "E7gozEiAPNhpJsdS52amhhN2XCAqLZa7WPrhyR6C8o4S": {
   "name": "evening",
@@ -17207,9 +17248,9 @@
   },
   "best": {
    "pump.fun daily": 15,
-   "pump.fun weekly": 47
+   "pump.fun weekly": 38
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "79hk97UEUorqtEf3gUPQo2gU3a1x3AurreozssAZLuJF": {
   "name": "oldlee",
@@ -17265,12 +17306,16 @@
     "2026-10-17",
     "2026-10-18",
     "2026-10-20"
+   ],
+   "pump.fun weekly": [
+    "2026-10-20"
    ]
   },
   "best": {
-   "pump.fun daily": 48
+   "pump.fun daily": 48,
+   "pump.fun weekly": 86
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "7E997dbAwy6DUCvYSyTuwuYndKUqokVVaqVB2LDQCYgW": {
   "name": "darkchoco",
@@ -17307,7 +17352,7 @@
    "pump.fun weekly": 30,
    "pump.fun monthly": 65
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "6QhYigCTsBbGZyA8xmkPGCjxBo6n5CMexGgzoH72FYYR": {
   "name": "levigem",
@@ -17498,7 +17543,7 @@
   "best": {
    "kolscan daily": 2
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "5sNnKuWKUtZkdC1eFNyqz3XHpNoCRQ1D1DfHcNHMV7gn": {
   "name": "cryptovillain26",
@@ -17907,7 +17952,7 @@
    "pump.fun daily": 14,
    "pump.fun weekly": 46
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "7cy2QeEsNPfq7zVXPdZMpbMrXNYZKQY9bBQoJXHhdEuJ": {
   "name": "Anonknight",
@@ -18004,7 +18049,7 @@
   "best": {
    "kolscan daily": 6
   },
-  "last_seen": 1792485126
+  "last_seen": 1792540321
  },
  "B799XD2RtgkxYRvv5Q9CFnSpVifrsJErWz6MpvBdYFdR": {
   "name": "guidusty",
@@ -18018,9 +18063,9 @@
   },
   "best": {
    "kolscan daily": 38,
-   "pump.fun daily": 99
+   "pump.fun daily": 98
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "7nB56jAXaU6qdQcDCH4MvPbztoemeZvAGpworbEHnPKW": {
   "name": "livingsquid2565",
@@ -18254,13 +18299,14 @@
     "2026-10-14",
     "2026-10-15",
     "2026-10-17",
-    "2026-10-18"
+    "2026-10-18",
+    "2026-10-20"
    ]
   },
   "best": {
    "kolscan daily": 8
   },
-  "last_seen": 1792356145
+  "last_seen": 1792540321
  },
  "4sAUSQFdvWRBxR8UoLBYbw8CcXuwXWxnN8pXa4mtm5nU": {
   "name": "Scharo",
@@ -18507,7 +18553,7 @@
    "pump.fun daily": 12,
    "pump.fun weekly": 48
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "8VS8M7og1NEL4rDLzqMRfMeMbDti1XZ8AaF8uWNzb3Y1": {
   "name": "zeusxbt",
@@ -18700,7 +18746,7 @@
    "pump.fun monthly": 49,
    "pump.fun daily": 81
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "239rMT5K9nZEWde5WPnGqFjwxTqq3TMVukh6TnFJ8umb": {
   "name": "Myoshka",
@@ -18764,7 +18810,7 @@
    "pump.fun weekly": 44,
    "pump.fun monthly": 96
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "2YBhBMhZxKTaN2VemU2AYBvZC57fcE4bhkdhZfj9zeiV": {
   "name": "MonetPushy",
@@ -18885,7 +18931,7 @@
    "pump.fun daily": 7,
    "pump.fun weekly": 17
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "EcJqpapu6SBdo76nP5Zt1SkR3HeVjxkvUwNaory4x9Xg": {
   "name": "rektcapital187",
@@ -18942,7 +18988,7 @@
    "pump.fun daily": 21,
    "pump.fun weekly": 49
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "E1icorNRLQMDr1C8qWBtA9aadRK2uT2daRYQjtkWUQL1": {
   "name": "batsol",
@@ -18964,7 +19010,7 @@
    "pump.fun daily": 38,
    "pump.fun weekly": 56
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "8ybq43319tjVSv3EWcHWsNJ4Tdn56Tx7ymqqm7WUT64w": {
   "name": "waklu",
@@ -19422,7 +19468,7 @@
    "pump.fun daily": 28,
    "pump.fun weekly": 28
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "E6tvipohEWXq2r7UkNtvZD4rvL7kPmUdvLkaaepm4Pz3": {
   "name": "MontySterling",
@@ -19549,7 +19595,7 @@
    "pump.fun daily": 17,
    "pump.fun weekly": 100
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "944q8jiyLsHoYaVieiz96zGcATUHuMj3G47H1RAQunH6": {
   "name": "hoeleeshiet",
@@ -19596,9 +19642,9 @@
   "best": {
    "kolscan daily": 40,
    "pump.fun daily": 10,
-   "pump.fun weekly": 27
+   "pump.fun weekly": 24
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "J1XAE4onKYG1kTghgaytnyFgR3otQs1xEnJRRWM3djSQ": {
   "name": "yode",
@@ -19768,12 +19814,16 @@
    "pump.fun daily": [
     "2026-10-16",
     "2026-10-17"
+   ],
+   "pump.fun weekly": [
+    "2026-10-20"
    ]
   },
   "best": {
-   "pump.fun daily": 18
+   "pump.fun daily": 18,
+   "pump.fun weekly": 84
   },
-  "last_seen": 1792211094
+  "last_seen": 1792540321
  },
  "7d5AwbNNp54CivcYLcpEFNJo762c8Z6Bfnf9ut69uEWs": {
   "name": "iknowtoomuch",
@@ -19928,7 +19978,7 @@
   "best": {
    "pump.fun daily": 51
   },
-  "last_seen": 1792455579
+  "last_seen": 1792540321
  },
  "AVBuWDChNCacYCXBaXTmrNqJ9WUYg1W7mQ5hucP68c1n": {
   "name": "HyperFirstGas",
@@ -20204,13 +20254,14 @@
   "name": "ishotweed",
   "days": {
    "pump.fun daily": [
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-20"
    ]
   },
   "best": {
    "pump.fun daily": 79
   },
-  "last_seen": 1792193704
+  "last_seen": 1792540321
  },
  "HuUUWN812oTUkM4ZFSBXigv9a5Pu1ELiNewFp4Vu1sLi": {
   "name": "azuriel",
@@ -20263,7 +20314,7 @@
    "pump.fun daily": 9,
    "pump.fun weekly": 61
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "F7PBKCHgHj2kGsPXWCPxnvi2S4cxP2fnENb3Y1yu9auK": {
   "name": "Anonymous0N3",
@@ -20330,13 +20381,14 @@
   "name": "umbreon",
   "days": {
    "pump.fun daily": [
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-20"
    ]
   },
   "best": {
-   "pump.fun daily": 95
+   "pump.fun daily": 80
   },
-  "last_seen": 1792184830
+  "last_seen": 1792540321
  },
  "FpD6n8gfoZNxyAN6QqNH4TFQdV9vZEgcv5W4H2YL8k4X": {
   "name": "Hesi",
@@ -20350,7 +20402,7 @@
   "best": {
    "kolscan daily": 9
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "5t9xBNuDdGTGpjaPTx6hKd7sdRJbvtKS8Mhq6qVbo8Qz": {
   "name": "Smokez",
@@ -20359,12 +20411,16 @@
     "2026-10-16",
     "2026-10-17",
     "2026-10-20"
+   ],
+   "pump.fun daily": [
+    "2026-10-20"
    ]
   },
   "best": {
-   "kolscan daily": 10
+   "kolscan daily": 3,
+   "pump.fun daily": 62
   },
-  "last_seen": 1792505885
+  "last_seen": 1792540321
  },
  "DKgvpfttzmJqZXdavDwTxwSVkajibjzJnN2FA99dyciK": {
   "name": "R💫WDY",
@@ -20946,7 +21002,7 @@
    "pump.fun daily": 22,
    "pump.fun weekly": 71
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "DxZVqprBcgZUuMwkTYLTUrTb5aFKzMMZD5otUB3oq4de": {
   "name": "FOMOD",
@@ -21040,7 +21096,7 @@
   "best": {
    "kolscan daily": 18
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "5UZMpyPMv8AuewpG8zx8t1Q2iSUeB7LETf8yhQHJcFud": {
   "name": "hambabi",
@@ -21084,13 +21140,14 @@
   "name": "TBONEPOKER",
   "days": {
    "pump.fun daily": [
-    "2026-10-17"
+    "2026-10-17",
+    "2026-10-20"
    ]
   },
   "best": {
    "pump.fun daily": 66
   },
-  "last_seen": 1792251258
+  "last_seen": 1792540321
  },
  "6zsxTXY7TKnNwAwSqTdZbUnWXdbkWa7tmNAKns9a5MZS": {
   "name": "sr9211",
@@ -21140,7 +21197,7 @@
   "best": {
    "kolscan daily": 30
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "C4Svaa7djC8d3CVxaohrsedccaKqimNoJrWe9iNPdix5": {
   "name": "edward",
@@ -21315,7 +21372,7 @@
    "pump.fun weekly": 9,
    "pump.fun monthly": 44
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "BNahnx13rLru9zxuWNGBD7vVv1pGQXB11Q7qeTyupdWf": {
   "name": "rayan",
@@ -21497,10 +21554,10 @@
   },
   "best": {
    "pump.fun daily": 5,
-   "pump.fun weekly": 10,
-   "pump.fun monthly": 55
+   "pump.fun weekly": 9,
+   "pump.fun monthly": 40
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "5f6Gu2sErjj7iyitf1D3i9xDAYhUM4gHtvpFxKoCqM5i": {
   "name": "bananas6942069",
@@ -21566,9 +21623,9 @@
   },
   "best": {
    "pump.fun daily": 8,
-   "pump.fun weekly": 28
+   "pump.fun weekly": 16
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "DVMkhiQe1D8yenuEgsW44NjRn9LfVQjGEpZcez5x7Mff": {
   "name": "noticeman",
@@ -21668,7 +21725,7 @@
    "pump.fun daily": 2,
    "pump.fun weekly": 37
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "EoAtirJLQeoPXZx6FQwgUAm5gqMndRqV9hLhzuWZz33Q": {
   "name": "RoundTripCptl",
@@ -21967,7 +22024,7 @@
    "pump.fun daily": 12,
    "pump.fun weekly": 23
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "82JkzsyLnaS7V8qipcNuyX7UGw949mwgrLaK12Wt55Bn": {
   "name": "jiggy",
@@ -21989,9 +22046,9 @@
   "best": {
    "pump.fun daily": 11,
    "pump.fun weekly": 19,
-   "pump.fun monthly": 72
+   "pump.fun monthly": 54
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "G5Zud5ZxVThQEaHvUxUZa76bZxbuZC2rHs1iPkoiJsc2": {
   "name": "Issy100X",
@@ -22024,7 +22081,7 @@
    "pump.fun daily": 19,
    "pump.fun weekly": 32
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "8CKGeH2ChMwnukvJkCxxpPi4Fpy4gerA1TBFaNKE6kEU": {
   "name": "AwareMixedRiver",
@@ -22099,7 +22156,8 @@
   "days": {
    "pump.fun daily": [
     "2026-10-18",
-    "2026-10-19"
+    "2026-10-19",
+    "2026-10-20"
    ],
    "pump.fun weekly": [
     "2026-10-20"
@@ -22107,9 +22165,9 @@
   },
   "best": {
    "pump.fun daily": 37,
-   "pump.fun weekly": 86
+   "pump.fun weekly": 80
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "CdMwojkmWAopG8yN2wMUzKSzfftnSnvLhXtrXmzMG1iw": {
   "name": "naglysimoo",
@@ -22127,14 +22185,15 @@
    "pump.fun daily": 29,
    "pump.fun weekly": 64
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "GjEFh87khycTvL2b1Vt9wSju4bFodpfLLeWU1MQwwy1B": {
   "name": "chinesefiat",
   "days": {
    "pump.fun daily": [
     "2026-10-18",
-    "2026-10-19"
+    "2026-10-19",
+    "2026-10-20"
    ],
    "pump.fun weekly": [
     "2026-10-20"
@@ -22142,9 +22201,9 @@
   },
   "best": {
    "pump.fun daily": 30,
-   "pump.fun weekly": 77
+   "pump.fun weekly": 76
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "HiG8jaMBnQ7Twt8MNaox4gNo6tyvM4EnovbDHgtwVwJo": {
   "name": "sneav",
@@ -22161,9 +22220,9 @@
   },
   "best": {
    "pump.fun daily": 20,
-   "pump.fun weekly": 68
+   "pump.fun weekly": 64
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "D7tF3tMpeGp6TzgCDU9F3zAGnwfK4bWQYTSStqrGrkZp": {
   "name": "moonshark17",
@@ -22204,7 +22263,7 @@
    "pump.fun daily": 28,
    "pump.fun weekly": 54
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "41BGcULsZnVrYfCmDAiN11GzriRs53NLpLZDm7LYJEUe": {
   "name": "goypump",
@@ -22246,7 +22305,7 @@
    "pump.fun daily": 34,
    "pump.fun weekly": 70
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "bozo8DPprqrU6N3y5cUDMDBCA61wGrk7qfy24Wm5rLB": {
   "name": "floppa__tv",
@@ -22301,21 +22360,25 @@
   },
   "best": {
    "pump.fun daily": 35,
-   "pump.fun weekly": 62
+   "pump.fun weekly": 60
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "2Ec7546mqCuq1PPGSWTaQZ6DdTGWhpPhEuVicJ3sTQnr": {
   "name": "chadhonestdev",
   "days": {
    "pump.fun daily": [
     "2026-10-18"
+   ],
+   "pump.fun weekly": [
+    "2026-10-20"
    ]
   },
   "best": {
-   "pump.fun daily": 50
+   "pump.fun daily": 50,
+   "pump.fun weekly": 99
   },
-  "last_seen": 1792365087
+  "last_seen": 1792540321
  },
  "GV3xVMBcrHoUaq9daSkff9byhq1eiHjbC5z6dbdTEUpA": {
   "name": "stayZen",
@@ -22342,9 +22405,9 @@
   },
   "best": {
    "pump.fun daily": 57,
-   "pump.fun weekly": 98
+   "pump.fun weekly": 90
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "FhaYN5TDH6JGdkAU1q3vvVeWa7Snbz4dAk53g2XMv9go": {
   "name": "notlockedin",
@@ -22373,7 +22436,7 @@
    "pump.fun daily": 60,
    "pump.fun weekly": 89
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "ELseopE8dGKGTBBBXGZJMcMTeCdNRyq59Lu5NmBtaPxs": {
   "name": "TheBrownBull",
@@ -22486,9 +22549,9 @@
   },
   "best": {
    "pump.fun daily": 43,
-   "pump.fun weekly": 45
+   "pump.fun weekly": 43
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "FL4j8EEMAPUjrvASnqX7VdpWZJji1LFsAxwojhpueUYt": {
   "name": "bizzy",
@@ -22597,7 +22660,7 @@
    "pump.fun daily": 36,
    "pump.fun weekly": 87
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "B3ZSJaxg3fmrZJaphu5D1PjzMJH9dKP25AJNjgY3uzTv": {
   "name": "haddenouf",
@@ -22652,7 +22715,7 @@
   "best": {
    "kolscan daily": 18
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "G3CaEuingKVjqsoHf7SpSQuLvRAJA69dikaQYxBqvwEr": {
   "name": "✶",
@@ -22680,7 +22743,7 @@
    "pump.fun daily": 1,
    "pump.fun weekly": 14
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "4GECRE2bm45JxvhaiJYDBYfjb9byq31ahj5CwhMQGq3H": {
   "name": "RobLicht",
@@ -22732,7 +22795,7 @@
    "pump.fun daily": 5,
    "pump.fun weekly": 34
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "LeenseyyUU3ccdBPCFCrrZ8oKU2B3T2uToGGZ7eVABY": {
   "name": "leensfun",
@@ -22844,7 +22907,7 @@
   "best": {
    "kolscan daily": 6
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "RaSSH7hMwLKtMT96xZyY4JwHRCCNYvvNeBh6AaFMqdA": {
   "name": "Rasta",
@@ -22868,7 +22931,7 @@
   "best": {
    "kolscan daily": 30
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "CXBxh3RfwkNwEtD1nizGx3mrDyz6M2M1b5kuk7QmyPPZ": {
   "name": "ceightkju",
@@ -22880,7 +22943,7 @@
   "best": {
    "pump.fun daily": 20
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "7amAoVMC5LfKJ1MRdhZrGxhExtvM2sGPfjSdzvehSJq2": {
   "name": "Arunner4sho",
@@ -22906,9 +22969,9 @@
   },
   "best": {
    "pump.fun daily": 31,
-   "pump.fun weekly": 51
+   "pump.fun weekly": 40
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "F8Atrfuc1qZs5G3HvGyF9UriwXmGbgGVEfqScDSCz8Nv": {
   "name": "ggzz_10",
@@ -22920,7 +22983,7 @@
   "best": {
    "pump.fun daily": 44
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "9W8fdvbYqBY7SGB6AvUzY1AXsChGthPNQN93CEVFGAoT": {
   "name": "RayTrapani",
@@ -23074,9 +23137,9 @@
    ]
   },
   "best": {
-   "kolscan daily": 23
+   "kolscan daily": 8
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "EJa8hKLxkSBvxT5ipKPyTfAvQCoSVUP87YoicTeuZ5xp": {
   "name": "soby0x",
@@ -23093,10 +23156,10 @@
   },
   "best": {
    "pump.fun daily": 1,
-   "pump.fun weekly": 7,
-   "pump.fun monthly": 24
+   "pump.fun weekly": 5,
+   "pump.fun monthly": 20
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "GDYv3kPV2UhdNsZpaBFNWVtsDUjGphv3jtj55wvdHswm": {
   "name": "wispycrab86396",
@@ -23115,12 +23178,16 @@
   "days": {
    "pump.fun daily": [
     "2026-10-20"
+   ],
+   "pump.fun weekly": [
+    "2026-10-20"
    ]
   },
   "best": {
-   "pump.fun daily": 98
+   "pump.fun daily": 15,
+   "pump.fun weekly": 52
   },
-  "last_seen": 1792505885
+  "last_seen": 1792540321
  },
  "2omDzbAVzdT6FjccNtd3rBbSoa6b4bVmidyCyR77swQd": {
   "name": "Clawdius",
@@ -23139,12 +23206,16 @@
   "days": {
    "pump.fun weekly": [
     "2026-10-20"
+   ],
+   "pump.fun daily": [
+    "2026-10-20"
    ]
   },
   "best": {
-   "pump.fun weekly": 79
+   "pump.fun weekly": 79,
+   "pump.fun daily": 100
   },
-  "last_seen": 1792523781
+  "last_seen": 1792540321
  },
  "GfMV3MkoFJewQFM2RZvpL3k7Nx8CNRtjY7NFgNqjbWiJ": {
   "name": "TheLastCowboy",
@@ -23157,5 +23228,137 @@
    "pump.fun weekly": 85
   },
   "last_seen": 1792523781
+ },
+ "DunJJpDPLKHFeuVBc81TphGrquEfbZApXb9eC71rrd32": {
+  "name": "LuhaXbt",
+  "days": {
+   "pump.fun daily": [
+    "2026-10-20"
+   ],
+   "pump.fun weekly": [
+    "2026-10-20"
+   ],
+   "pump.fun monthly": [
+    "2026-10-20"
+   ]
+  },
+  "best": {
+   "pump.fun daily": 23,
+   "pump.fun weekly": 19,
+   "pump.fun monthly": 78
+  },
+  "last_seen": 1792540321
+ },
+ "3LUfv2u5yzsDtUzPdsSJ7ygPBuqwfycMkjpNreRR2Yww": {
+  "name": "Domy",
+  "days": {
+   "pump.fun daily": [
+    "2026-10-20"
+   ],
+   "kolscan daily": [
+    "2026-10-20"
+   ]
+  },
+  "best": {
+   "pump.fun daily": 38,
+   "kolscan daily": 4
+  },
+  "last_seen": 1792540321
+ },
+ "HVaeUPbAwFhZnY8T3MrUzTWqpHiAbTU1NACmCQdJrqZp": {
+  "name": "RoaringKitty",
+  "days": {
+   "pump.fun daily": [
+    "2026-10-20"
+   ]
+  },
+  "best": {
+   "pump.fun daily": 42
+  },
+  "last_seen": 1792540321
+ },
+ "H2KAvWycyqeHhqkMC1f83Pwju3B2MztLYdXVpNMcDs2V": {
+  "name": "jeremy_lin",
+  "days": {
+   "pump.fun daily": [
+    "2026-10-20"
+   ]
+  },
+  "best": {
+   "pump.fun daily": 51
+  },
+  "last_seen": 1792540321
+ },
+ "WPwTsbeGukuqos65dGyB4R5KYv6btVSSLyi5ECLXtzf": {
+  "name": "Mertrade",
+  "days": {
+   "pump.fun daily": [
+    "2026-10-20"
+   ]
+  },
+  "best": {
+   "pump.fun daily": 78
+  },
+  "last_seen": 1792540321
+ },
+ "FX5ZuhknQmKNMpTnLKTJPNsbaNDsmgVRYFW296FvpuJo": {
+  "name": "BranchBusyBoss",
+  "days": {
+   "pump.fun daily": [
+    "2026-10-20"
+   ]
+  },
+  "best": {
+   "pump.fun daily": 85
+  },
+  "last_seen": 1792540321
+ },
+ "8ULTo1cuiwo5dnB1S8MEZqPSmmFcMskEJemnqVLprEsA": {
+  "name": "Magni1",
+  "days": {
+   "pump.fun daily": [
+    "2026-10-20"
+   ]
+  },
+  "best": {
+   "pump.fun daily": 88
+  },
+  "last_seen": 1792540321
+ },
+ "8xEb5Ty6TzM1xZqe2GPHGmP7b4dsXVRJ7FPGn36xU6er": {
+  "name": "JSXAW",
+  "days": {
+   "pump.fun daily": [
+    "2026-10-20"
+   ]
+  },
+  "best": {
+   "pump.fun daily": 94
+  },
+  "last_seen": 1792540321
+ },
+ "4bfteWeXxH7KZhGUmowiMZZ1xr94N3DURwQmcJzzQWDq": {
+  "name": "Tenders",
+  "days": {
+   "pump.fun daily": [
+    "2026-10-20"
+   ]
+  },
+  "best": {
+   "pump.fun daily": 95
+  },
+  "last_seen": 1792540321
+ },
+ "DJ78WYDTkU5Fo5oJDMyqD7KmXJKQUQMiqsuxvokUdxmh": {
+  "name": "that1618guy",
+  "days": {
+   "pump.fun weekly": [
+    "2026-10-20"
+   ]
+  },
+  "best": {
+   "pump.fun weekly": 83
+  },
+  "last_seen": 1792540321
  }
 }
