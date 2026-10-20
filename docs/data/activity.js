@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1792501754,
+ "updated_at": 1792519599,
  "mode": "holdings",
  "tracked": [
   {
@@ -16,7 +16,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent OGAntD (score 48)",
+   "label": "consistent ogantd (score 48)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -93,32 +93,8 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "2caPWYeSYr1p1BTYz2bCFiRjBUF8niQCGKTVN4GA6njB",
-   "label": "small-money winner PlainPaleFedora",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "Ev4dxwYVG7vkP6zsTAuJrqSRwDjFmyXudakq3P2HSQet",
-   "label": "small-money winner ZypherHQ",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "8w7BBD9aDmTYaCEMP9oVpPhWECBCo9pwZnTDvg9trRGk",
-   "label": "small-money winner SenkuX",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
    "wallet": "7amAoVMC5LfKJ1MRdhZrGxhExtvM2sGPfjSdzvehSJq2",
    "label": "small-money winner Arunner4sho",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "5i8MRhUYxV9qFN3NAiacwBr4udrp2WTBZqTGc6XinW14",
-   "label": "small-money winner HumanoidTyphoon",
    "tier": "BOARD",
    "gems": 0
   },
@@ -131,6 +107,24 @@ window.GEM_ACTIVITY = {
   {
    "wallet": "9RcXF5UFut8R2dYYcqAFvcrFgrCdV6uuJQwAeAmFDJ7M",
    "label": "small-money winner Pauly_Walnuts",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "5i8MRhUYxV9qFN3NAiacwBr4udrp2WTBZqTGc6XinW14",
+   "label": "small-money winner HumanoidTyphoon",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "5vwrSC7TWPAm1dn5mYwqWxNaGkJgLPaeKvtZ9VdfMRbZ",
+   "label": "small-money winner sadstarfish0105",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "A1LtK6Mw5QWSb9hkUkhMW2efiZcZ8F6NogRYMLiP2qp5",
+   "label": "small-money winner TurboSkyPetunia",
    "tier": "BOARD",
    "gems": 0
   }
