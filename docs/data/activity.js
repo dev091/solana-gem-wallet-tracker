@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1792462486,
+ "updated_at": 1792501754,
  "mode": "holdings",
  "tracked": [
   {
@@ -16,13 +16,13 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent OGAntD (score 47)",
+   "label": "consistent OGAntD (score 48)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 47)",
+   "label": "consistent ban (score 48)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -63,14 +63,14 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "7g5CJ754NboeY6D44MDdGwQmVX4Fvu59Q47c9ZKLPMkE",
-   "label": "consistent bestcook (score 37)",
+   "wallet": "GDpqhJgwzg8zcoEmVvGDiVRVnaa797ryvPnNqQVBjQrN",
+   "label": "consistent k34k (score 37)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "GDpqhJgwzg8zcoEmVvGDiVRVnaa797ryvPnNqQVBjQrN",
-   "label": "consistent k34k (score 36)",
+   "wallet": "7g5CJ754NboeY6D44MDdGwQmVX4Fvu59Q47c9ZKLPMkE",
+   "label": "consistent bestcook (score 37)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -81,20 +81,20 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
+   "wallet": "F9zT1F46HAoPanR4NC1Yw7TyP8Z9tCavTe48mrzK7aN4",
+   "label": "consistent BraveSmallCub (score 36)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
    "wallet": "2QrfK8gf3vBcFfuaCJbFxGk3w1JxwjamGE9aGwdQHFas",
    "label": "consistent Thokani (score 35)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "F9zT1F46HAoPanR4NC1Yw7TyP8Z9tCavTe48mrzK7aN4",
-   "label": "consistent BraveSmallCub (score 35)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "7qm5UAcsSCjPUdLbG6oj8Z3ZsuGJJgSWM64CNFAXqxc",
-   "label": "small-money winner LillyOnPump",
+   "wallet": "2caPWYeSYr1p1BTYz2bCFiRjBUF8niQCGKTVN4GA6njB",
+   "label": "small-money winner PlainPaleFedora",
    "tier": "BOARD",
    "gems": 0
   },
@@ -105,19 +105,112 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "EAaB5brLcXvFZkinwqHFMJ8RiAwA5h5bAB39ftgfdfBw",
-   "label": "small-money winner epicshark",
+   "wallet": "8w7BBD9aDmTYaCEMP9oVpPhWECBCo9pwZnTDvg9trRGk",
+   "label": "small-money winner SenkuX",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "5vwrSC7TWPAm1dn5mYwqWxNaGkJgLPaeKvtZ9VdfMRbZ",
-   "label": "small-money winner sadstarfish0105",
+   "wallet": "7amAoVMC5LfKJ1MRdhZrGxhExtvM2sGPfjSdzvehSJq2",
+   "label": "small-money winner Arunner4sho",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "5i8MRhUYxV9qFN3NAiacwBr4udrp2WTBZqTGc6XinW14",
+   "label": "small-money winner HumanoidTyphoon",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "CXBxh3RfwkNwEtD1nizGx3mrDyz6M2M1b5kuk7QmyPPZ",
+   "label": "small-money winner ceightkju",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "9RcXF5UFut8R2dYYcqAFvcrFgrCdV6uuJQwAeAmFDJ7M",
+   "label": "small-money winner Pauly_Walnuts",
    "tier": "BOARD",
    "gems": 0
   }
  ],
  "events": [
+  {
+   "ts": 1792501271,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 54)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "FV2cYAhdwju6Q6fhEbkqvatX3BaRGBzGYhWiES6PC4B1",
+   "tokens": 4543373.282494,
+   "usd": 138.44,
+   "symbol": "MPCYAI",
+   "price": 3.047e-05,
+   "market_cap": 30472.0,
+   "liquidity": 26255.21
+  },
+  {
+   "ts": 1792501271,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 54)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "6TCoRoHuQGY2c9gAoaCEqC2ieMC6h29uGjb5xbbXNbnT",
+   "tokens": 665.038244000003,
+   "usd": 140.26,
+   "symbol": "MET",
+   "price": 0.2109,
+   "market_cap": 2109735247748.0,
+   "liquidity": 843894099.61
+  },
+  {
+   "ts": 1792501271,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 54)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "EFKVGYSsRJwZHV48NBRrutaCp5SY3UtD2FVBqYWSrBAe",
+   "tokens": 4375951.218509,
+   "usd": 138.11,
+   "symbol": "UNKNOWN",
+   "price": 3.156e-05,
+   "market_cap": 31568.0,
+   "liquidity": 26834.52
+  },
+  {
+   "ts": 1792501271,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 54)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "82KfAxX13cm7Xq62tpvh8KoEwhJEhNXLihAPxHBSTEEF",
+   "tokens": 4599054.551795,
+   "usd": 134.11,
+   "symbol": "UNKNOWN",
+   "price": 2.916e-05,
+   "market_cap": 29162.0,
+   "liquidity": 25721.42
+  },
+  {
+   "ts": 1792501271,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 54)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "Evuh8qb3WwVkKfPRtY5v3riv62CYDi5AXGT5tKzuwGJH",
+   "tokens": 4936586.935351,
+   "usd": 148.05,
+   "symbol": "UNKNOWN",
+   "price": 2.999e-05,
+   "market_cap": 29995.0,
+   "liquidity": 26022.26
+  },
   {
    "ts": 1792453346,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4542,81 +4635,6 @@ window.GEM_ACTIVITY = {
    "price": 1.032e-05,
    "market_cap": 9919.0,
    "liquidity": 7001.97
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "8dzwBK7QTzryCKosHttPStTr5pof5G6vMAWUSVfjpump",
-   "tokens": 35898964.534598,
-   "usd": 127.94,
-   "symbol": "K9 INU",
-   "price": 3.564e-06,
-   "market_cap": 3564.11,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "8aZwJWJ6suUtagNwgerFMmReNWkwp92XrbDK8xdCsBQ5",
-   "tokens": 34312277.895432,
-   "usd": 115.24,
-   "symbol": "8aZw…sBQ5",
-   "price": 3.3586185415379266e-06,
-   "market_cap": null,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "8KNxSzjy11b7b2fm6985T8hWpZCwjjYTQG68LpivVsMY",
-   "tokens": 35423438.633256,
-   "usd": 114.34,
-   "symbol": "8KNx…VsMY",
-   "price": 3.2278408139481835e-06,
-   "market_cap": null,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "8Jni7PZpvZrubPxQu7KBLNSeeAyPUHPS9crB2VEEpump",
-   "tokens": 35866405.328951,
-   "usd": 113.93,
-   "symbol": "8Jni…pump",
-   "price": 3.1766139139973815e-06,
-   "market_cap": null,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "8CNiG2vFsr4BcvJKSLTp8FU23ViXo2TXFK3kbxhbpump",
-   "tokens": 18730905.789309,
-   "usd": 77.94,
-   "symbol": "Doomer",
-   "price": 4.161e-06,
-   "market_cap": 4161.56,
-   "liquidity": null
   }
  ],
  "consensus": []
