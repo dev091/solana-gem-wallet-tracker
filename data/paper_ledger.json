@@ -22,7 +22,7 @@
    "opened_at": 1792501754,
    "entry": 2.999e-05,
    "peak": 3.18e-05,
-   "last": 3.162e-05,
+   "last": 3.165e-05,
    "price_24h": null,
    "wallet_buy_usd": 148.05
   },
@@ -47,8 +47,8 @@
    "symbol": "UNKNOWN",
    "opened_at": 1792501754,
    "entry": 3.156e-05,
-   "peak": 3.305e-05,
-   "last": 3.305e-05,
+   "peak": 3.307e-05,
+   "last": 3.307e-05,
    "price_24h": null,
    "wallet_buy_usd": 138.11
   },
@@ -86,8 +86,8 @@
    "symbol": "$WIF",
    "opened_at": 1792532283,
    "entry": 0.2054,
-   "peak": 0.2058,
-   "last": 0.2058,
+   "peak": 0.2086,
+   "last": 0.2086,
    "price_24h": null,
    "wallet_buy_usd": 28.46
   },
@@ -100,7 +100,7 @@
    "opened_at": 1792532283,
    "entry": 377.75,
    "peak": 381.96,
-   "last": 379.54,
+   "last": 379.21,
    "price_24h": null,
    "wallet_buy_usd": 27.1
   },
@@ -113,7 +113,7 @@
    "opened_at": 1792558442,
    "entry": 9.85e-05,
    "peak": 9.85e-05,
-   "last": 9.85e-05,
+   "last": 1.395e-05,
    "price_24h": null,
    "wallet_buy_usd": 210.59
   },
@@ -125,8 +125,8 @@
    "symbol": "PUMP",
    "opened_at": 1792558442,
    "entry": 0.004732,
-   "peak": 0.004732,
-   "last": 0.004732,
+   "peak": 0.004795,
+   "last": 0.004795,
    "price_24h": null,
    "wallet_buy_usd": 57.18
   }
