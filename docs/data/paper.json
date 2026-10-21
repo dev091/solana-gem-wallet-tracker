@@ -1,5 +1,5 @@
 {
- "updated_at": 1792541737,
+ "updated_at": 1792558442,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
@@ -607,14 +607,40 @@
  "open": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 58)",
+   "tier": "BOARD",
+   "mint": "8bBQP9ngcjyr7g1ytggodjaaQSHSyNcnxCrm8YN9pump",
+   "symbol": "smol",
+   "opened_at": 1792558442,
+   "entry": 9.85e-05,
+   "peak": 9.85e-05,
+   "last": 9.85e-05,
+   "price_24h": null,
+   "wallet_buy_usd": 210.59
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 58)",
+   "tier": "BOARD",
+   "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+   "symbol": "PUMP",
+   "opened_at": 1792558442,
+   "entry": 0.004732,
+   "peak": 0.004732,
+   "last": 0.004732,
+   "price_24h": null,
+   "wallet_buy_usd": 57.18
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 54)",
    "tier": "BOARD",
    "mint": "EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm",
    "symbol": "$WIF",
    "opened_at": 1792532283,
    "entry": 0.2054,
-   "peak": 0.2055,
-   "last": 0.2055,
+   "peak": 0.2058,
+   "last": 0.2058,
    "price_24h": null,
    "wallet_buy_usd": 28.46
   },
@@ -627,7 +653,7 @@
    "opened_at": 1792532283,
    "entry": 377.75,
    "peak": 381.96,
-   "last": 381.96,
+   "last": 379.54,
    "price_24h": null,
    "wallet_buy_usd": 27.1
   },
@@ -640,7 +666,7 @@
    "opened_at": 1792501754,
    "entry": 2.999e-05,
    "peak": 3.18e-05,
-   "last": 3.18e-05,
+   "last": 3.162e-05,
    "price_24h": null,
    "wallet_buy_usd": 148.05
   },
@@ -665,8 +691,8 @@
    "symbol": "UNKNOWN",
    "opened_at": 1792501754,
    "entry": 3.156e-05,
-   "peak": 3.302e-05,
-   "last": 3.302e-05,
+   "peak": 3.305e-05,
+   "last": 3.305e-05,
    "price_24h": null,
    "wallet_buy_usd": 138.11
   },
@@ -704,8 +730,8 @@
    "symbol": "UNKNOWN",
    "opened_at": 1792440753,
    "entry": 2.941e-05,
-   "peak": 3.07e-05,
-   "last": 3.07e-05,
+   "peak": 3.096e-05,
+   "last": 3.096e-05,
    "price_24h": 3.035e-05,
    "wallet_buy_usd": 108.35
   }
