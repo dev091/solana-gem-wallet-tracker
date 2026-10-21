@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1792532283,
+ "updated_at": 1792541737,
  "mode": "holdings",
  "tracked": [
   {
@@ -93,18 +93,6 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "Ev4dxwYVG7vkP6zsTAuJrqSRwDjFmyXudakq3P2HSQet",
-   "label": "small-money winner ZypherHQ",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "7amAoVMC5LfKJ1MRdhZrGxhExtvM2sGPfjSdzvehSJq2",
-   "label": "small-money winner Arunner4sho",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
    "wallet": "CXBxh3RfwkNwEtD1nizGx3mrDyz6M2M1b5kuk7QmyPPZ",
    "label": "small-money winner ceightkju",
    "tier": "BOARD",
@@ -117,8 +105,8 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "D9FLrqnoFpZmsP5hrHmnqoG6GJu3Lw6a4gfcLYxcQQLk",
-   "label": "small-money winner maxpain999",
+   "wallet": "91p7G7unBy2s4wHgnh1dercAtaRphh6HX6oCyc41xGLb",
+   "label": "small-money winner alphatunainters",
    "tier": "BOARD",
    "gems": 0
   }
