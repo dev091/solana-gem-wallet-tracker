@@ -1,5 +1,5 @@
 {
- "updated_at": 1792610027,
+ "updated_at": 1792621715,
  "mode": "holdings",
  "tracked": [
   {
@@ -33,14 +33,14 @@
    "gems": 0
   },
   {
-   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 44)",
+   "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
+   "label": "consistent milito (score 45)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
-   "label": "consistent allglorybetogod (score 44)",
+   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
+   "label": "consistent limfork (score 44)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -52,7 +52,7 @@
   },
   {
    "wallet": "GeUnv1jmtviRbR7Gu1JnXSGkUMUgFVBHuEVQVpTaUX1W",
-   "label": "consistent Gladey (score 41)",
+   "label": "consistent Gladey (score 42)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -95,6 +95,18 @@
   {
    "wallet": "Ev4dxwYVG7vkP6zsTAuJrqSRwDjFmyXudakq3P2HSQet",
    "label": "small-money winner ZypherHQ",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "A5mQ2qwLAA3sF4MxTXTJEiMoGgtz6US1bTEDdoEVsPRx",
+   "label": "small-money winner antazn",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "Dtvoyzz9cQdJE1ztSrbZDJoxfY2b9JvBcu9Ki8assa14",
+   "label": "small-money winner MispriceDegen",
    "tier": "BOARD",
    "gems": 0
   }

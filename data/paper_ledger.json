@@ -2,19 +2,6 @@
  "open": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 51)",
-   "tier": "BOARD",
-   "mint": "GL2EP6zA8QeF36PBFmyXYzjZKuqpCGqv2f72ygdam3T6",
-   "symbol": "UNKNOWN",
-   "opened_at": 1792440753,
-   "entry": 2.941e-05,
-   "peak": 3.096e-05,
-   "last": 3.096e-05,
-   "price_24h": 3.035e-05,
-   "wallet_buy_usd": 108.35
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 54)",
    "tier": "BOARD",
    "mint": "Evuh8qb3WwVkKfPRtY5v3riv62CYDi5AXGT5tKzuwGJH",
@@ -88,7 +75,7 @@
    "entry": 0.2054,
    "peak": 0.2115,
    "last": 0.2115,
-   "price_24h": null,
+   "price_24h": 0.2115,
    "wallet_buy_usd": 28.46
   },
   {
@@ -100,8 +87,8 @@
    "opened_at": 1792532283,
    "entry": 377.75,
    "peak": 385.22,
-   "last": 385.22,
-   "price_24h": null,
+   "last": 377.33,
+   "price_24h": 377.33,
    "wallet_buy_usd": 27.1
   },
   {
@@ -113,7 +100,7 @@
    "opened_at": 1792558442,
    "entry": 9.85e-05,
    "peak": 9.85e-05,
-   "last": 5.132e-06,
+   "last": 4.839e-06,
    "price_24h": null,
    "wallet_buy_usd": 210.59
   },
@@ -125,8 +112,8 @@
    "symbol": "PUMP",
    "opened_at": 1792558442,
    "entry": 0.004732,
-   "peak": 0.004966,
-   "last": 0.004966,
+   "peak": 0.005106,
+   "last": 0.005106,
    "price_24h": null,
    "wallet_buy_usd": 57.18
   }
@@ -7396,6 +7383,27 @@
     "mirror": 1.1477,
     "tp2x_half": 1.1477,
     "hold_24h": 1.0384
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 51)",
+   "tier": "BOARD",
+   "mint": "GL2EP6zA8QeF36PBFmyXYzjZKuqpCGqv2f72ygdam3T6",
+   "symbol": "UNKNOWN",
+   "opened_at": 1792440753,
+   "entry": 2.941e-05,
+   "peak": 3.096e-05,
+   "last": 3.096e-05,
+   "price_24h": 3.035e-05,
+   "wallet_buy_usd": 108.35,
+   "closed_at": 1792621715,
+   "exit": 3.096e-05,
+   "reason": "48h limit",
+   "returns": {
+    "mirror": 1.011,
+    "tp2x_half": 1.011,
+    "hold_24h": 0.9911
    }
   }
  ]
