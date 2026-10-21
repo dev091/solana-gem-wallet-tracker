@@ -1,5 +1,5 @@
 {
- "updated_at": 1792558442,
+ "updated_at": 1792594739,
  "mode": "holdings",
  "tracked": [
   {
@@ -89,30 +89,6 @@
   {
    "wallet": "F9zT1F46HAoPanR4NC1Yw7TyP8Z9tCavTe48mrzK7aN4",
    "label": "consistent BraveSmallCub (score 38)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "CXBxh3RfwkNwEtD1nizGx3mrDyz6M2M1b5kuk7QmyPPZ",
-   "label": "small-money winner ceightkju",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "91p7G7unBy2s4wHgnh1dercAtaRphh6HX6oCyc41xGLb",
-   "label": "small-money winner alphatunainters",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "Ew4LgceEDETLWrukY4bCnoam7CTBHDD6jFgrNWV9nbRY",
-   "label": "small-money winner neetsickle",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "D1ZtgHoyRoy27acqb9WTFJTW2bLhecnhHKuQgkzs3asa",
-   "label": "small-money winner TheBigDomain",
    "tier": "BOARD",
    "gems": 0
   }
