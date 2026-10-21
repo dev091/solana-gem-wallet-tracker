@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1792594739,
+ "updated_at": 1792610027,
  "mode": "holdings",
  "tracked": [
   {
@@ -22,7 +22,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 51)",
+   "label": "consistent banval (score 51)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -91,9 +91,45 @@ window.GEM_ACTIVITY = {
    "label": "consistent BraveSmallCub (score 38)",
    "tier": "BOARD",
    "gems": 0
+  },
+  {
+   "wallet": "Ev4dxwYVG7vkP6zsTAuJrqSRwDjFmyXudakq3P2HSQet",
+   "label": "small-money winner ZypherHQ",
+   "tier": "BOARD",
+   "gems": 0
   }
  ],
  "events": [
+  {
+   "ts": 1792609683,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 58)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "PreweJYECqtQwBtpxHL171nL2K6umo692gTm7Q3rpgF",
+   "tokens": 0.015658541,
+   "usd": 36.64,
+   "symbol": "OPENAI",
+   "price": 2340.24,
+   "market_cap": 2684081.0,
+   "liquidity": 103043.59
+  },
+  {
+   "ts": 1792609683,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 58)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "6TCoRoHuQGY2c9gAoaCEqC2ieMC6h29uGjb5xbbXNbnT",
+   "tokens": 542.5643760000021,
+   "usd": 114.48,
+   "symbol": "MET",
+   "price": 0.211,
+   "market_cap": 2110161794119.0,
+   "liquidity": 844064718.16
+  },
   {
    "ts": 1792558028,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4562,36 +4598,6 @@ window.GEM_ACTIVITY = {
    "symbol": "BritBlue",
    "price": 6.143e-06,
    "market_cap": 6143.53,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "9sVJwhNTEtoq8PWeZJigJKNbRMZW7CoByosnxV2Cpump",
-   "tokens": 35728435.898483,
-   "usd": 117.48,
-   "symbol": "BAYOU ",
-   "price": 3.288e-06,
-   "market_cap": 3288.36,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "9ny1Hp2VrrbokT6jjanqxWFTkaw7zwGocgdtETATCpNn",
-   "tokens": 28225189.752691,
-   "usd": 87.3,
-   "symbol": "LARP",
-   "price": 3.093e-06,
-   "market_cap": 3093.21,
    "liquidity": null
   }
  ],

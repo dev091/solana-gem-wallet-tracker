@@ -86,8 +86,8 @@
    "symbol": "$WIF",
    "opened_at": 1792532283,
    "entry": 0.2054,
-   "peak": 0.2112,
-   "last": 0.2112,
+   "peak": 0.2115,
+   "last": 0.2115,
    "price_24h": null,
    "wallet_buy_usd": 28.46
   },
@@ -99,8 +99,8 @@
    "symbol": "TSLAx",
    "opened_at": 1792532283,
    "entry": 377.75,
-   "peak": 384.87,
-   "last": 384.87,
+   "peak": 385.22,
+   "last": 385.22,
    "price_24h": null,
    "wallet_buy_usd": 27.1
   },
@@ -113,7 +113,7 @@
    "opened_at": 1792558442,
    "entry": 9.85e-05,
    "peak": 9.85e-05,
-   "last": 5.738e-06,
+   "last": 5.132e-06,
    "price_24h": null,
    "wallet_buy_usd": 210.59
   },
@@ -125,8 +125,8 @@
    "symbol": "PUMP",
    "opened_at": 1792558442,
    "entry": 0.004732,
-   "peak": 0.004876,
-   "last": 0.004876,
+   "peak": 0.004966,
+   "last": 0.004966,
    "price_24h": null,
    "wallet_buy_usd": 57.18
   }
