@@ -1,5 +1,5 @@
 {
- "updated_at": 1792684941,
+ "updated_at": 1792698853,
  "mode": "holdings",
  "tracked": [
   {
@@ -10,7 +10,7 @@
   },
   {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
-   "label": "consistent trunoest (score 60)",
+   "label": "consistent trunoest (score 61)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -88,7 +88,7 @@
   },
   {
    "wallet": "GDpqhJgwzg8zcoEmVvGDiVRVnaa797ryvPnNqQVBjQrN",
-   "label": "consistent k34k (score 39)",
+   "label": "consistent thedog36 (score 39)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -105,6 +105,12 @@
    "gems": 0
   },
   {
+   "wallet": "7qFB5H9LSrVqty3kNL2y6Msqy3BVhCDshxP9QvkdaViy",
+   "label": "small-money winner moso",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
    "wallet": "5vwrSC7TWPAm1dn5mYwqWxNaGkJgLPaeKvtZ9VdfMRbZ",
    "label": "small-money winner notakol69",
    "tier": "BOARD",
@@ -117,8 +123,8 @@
    "gems": 0
   },
   {
-   "wallet": "6S6BXx5m3zRMyQZZ9vEroK49aWMqES2VVHsZN5vn2S4J",
-   "label": "small-money winner MOBAMBO",
+   "wallet": "URekUXMb73e9GkKkS4YN3SWegDwdmMrRB8LHqrPch1E",
+   "label": "small-money winner JPEGXBT",
    "tier": "BOARD",
    "gems": 0
   }
