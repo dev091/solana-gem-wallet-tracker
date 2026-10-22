@@ -2,32 +2,6 @@
  "open": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 54)",
-   "tier": "BOARD",
-   "mint": "EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm",
-   "symbol": "$WIF",
-   "opened_at": 1792532283,
-   "entry": 0.2054,
-   "peak": 0.2115,
-   "last": 0.196,
-   "price_24h": 0.2115,
-   "wallet_buy_usd": 28.46
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 54)",
-   "tier": "BOARD",
-   "mint": "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB",
-   "symbol": "TSLAx",
-   "opened_at": 1792532283,
-   "entry": 377.75,
-   "peak": 385.22,
-   "last": 379.87,
-   "price_24h": 377.33,
-   "wallet_buy_usd": 27.1
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 58)",
    "tier": "BOARD",
    "mint": "8bBQP9ngcjyr7g1ytggodjaaQSHSyNcnxCrm8YN9pump",
@@ -35,7 +9,7 @@
    "opened_at": 1792558442,
    "entry": 9.85e-05,
    "peak": 9.85e-05,
-   "last": 3.346e-06,
+   "last": 3.358e-06,
    "price_24h": 3.929e-06,
    "wallet_buy_usd": 210.59
   },
@@ -48,7 +22,7 @@
    "opened_at": 1792558442,
    "entry": 0.004732,
    "peak": 0.005192,
-   "last": 0.00464,
+   "last": 0.004552,
    "price_24h": 0.004866,
    "wallet_buy_usd": 57.18
   },
@@ -61,7 +35,7 @@
    "opened_at": 1792648448,
    "entry": 78.59,
    "peak": 78.59,
-   "last": 77.29,
+   "last": 77.2,
    "price_24h": null,
    "wallet_buy_usd": 34.09
   },
@@ -7483,6 +7457,48 @@
     "mirror": 1.0134,
     "tp2x_half": 1.0134,
     "hold_24h": 1.0134
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 54)",
+   "tier": "BOARD",
+   "mint": "EKpQGSJtjMFqKZ9KQanSqYXRcF8fBopzLHYxdM65zcjm",
+   "symbol": "$WIF",
+   "opened_at": 1792532283,
+   "entry": 0.2054,
+   "peak": 0.2115,
+   "last": 0.1959,
+   "price_24h": 0.2115,
+   "wallet_buy_usd": 28.46,
+   "closed_at": 1792710433,
+   "exit": 0.1959,
+   "reason": "48h limit",
+   "returns": {
+    "mirror": 0.916,
+    "tp2x_half": 0.916,
+    "hold_24h": 0.9889
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 54)",
+   "tier": "BOARD",
+   "mint": "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB",
+   "symbol": "TSLAx",
+   "opened_at": 1792532283,
+   "entry": 377.75,
+   "peak": 385.22,
+   "last": 373.43,
+   "price_24h": 377.33,
+   "wallet_buy_usd": 27.1,
+   "closed_at": 1792710433,
+   "exit": 373.43,
+   "reason": "48h limit",
+   "returns": {
+    "mirror": 0.9494,
+    "tp2x_half": 0.9494,
+    "hold_24h": 0.9593
    }
   }
  ]
