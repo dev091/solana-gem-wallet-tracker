@@ -1,5 +1,5 @@
 {
- "updated_at": 1792736783,
+ "updated_at": 1792757074,
  "mode": "holdings",
  "tracked": [
   {
@@ -16,7 +16,7 @@
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 58)",
+   "label": "consistent banval (score 58)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -40,7 +40,7 @@
   },
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 49)",
+   "label": "consistent Limfork.eth (score 50)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -93,26 +93,38 @@
    "gems": 0
   },
   {
+   "wallet": "Crg4yePLW6aRb7vpbo6tTQx8q8T5Myfjf9xokzXU8i1s",
+   "label": "small-money winner MoonBoulderTarp",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "JD8ET3unTf4sCzQQsyKxL9ZKDawRnE6GbH1RZvw2YfRb",
+   "label": "small-money winner riskanonymous",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
    "wallet": "5vwrSC7TWPAm1dn5mYwqWxNaGkJgLPaeKvtZ9VdfMRbZ",
    "label": "small-money winner notakol69",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "BwBsoGeqN2St2vcurGBSUKXbC2WTZ73eKRcfAYhfgQtK",
-   "label": "small-money winner tullytubs",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "5RT3pEAJgn15osD4whsVWfH9UEyMcgAA2TYETiTMv3jM",
-   "label": "small-money winner panndaa",
+   "wallet": "G7rqjHxGnmBJuJc4EMf8GsuMT1n7fzC6EJmK5S7wXcXn",
+   "label": "small-money winner johnnystarr",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "FpVmtZLdMyfZvA2rcgTHJeiAeqEVCjYARsREcLRMPmwz",
    "label": "small-money winner MrTcooks",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "5RT3pEAJgn15osD4whsVWfH9UEyMcgAA2TYETiTMv3jM",
+   "label": "small-money winner panndaa",
    "tier": "BOARD",
    "gems": 0
   },
