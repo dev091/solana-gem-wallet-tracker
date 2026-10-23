@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1792757074,
+ "updated_at": 1792774199,
  "mode": "holdings",
  "tracked": [
   {
@@ -136,6 +136,36 @@ window.GEM_ACTIVITY = {
   }
  ],
  "events": [
+  {
+   "ts": 1792773716,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 65)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "G24WoaCPFBQG7GUtE79TxRV3WpKiy7HJisVmykbKpump",
+   "tokens": 11367560.065859,
+   "usd": 283.28,
+   "symbol": "Badass ",
+   "price": 2.492e-05,
+   "market_cap": 24925.53,
+   "liquidity": null
+  },
+  {
+   "ts": 1792773716,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 65)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "98sMhvDwXj1RQi5c5Mndm3vPe9cBqPrbLaufMXFNMh5g",
+   "tokens": 0.347837478,
+   "usd": 27.38,
+   "symbol": "HYPE",
+   "price": 78.72,
+   "market_cap": 86851.0,
+   "liquidity": 842173.64
+  },
   {
    "ts": 1792684503,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4604,36 +4634,6 @@ window.GEM_ACTIVITY = {
    "symbol": "SLOPCORE",
    "price": 3.107e-06,
    "market_cap": 3107.22,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "ACygC91LcmJyJx2P9BfWxdwCCBZJzh8vmKkGP9hWpaid",
-   "tokens": 33996445.055733,
-   "usd": 111.9,
-   "symbol": "ACyg…paid",
-   "price": 3.291541586123973e-06,
-   "market_cap": null,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "A5atbyvLmfW35hXynKTYc9t1cW5yFACux4bpZiFopump",
-   "tokens": 30822169.230987,
-   "usd": 224.76,
-   "symbol": "Hustle",
-   "price": 7.292e-06,
-   "market_cap": 7292.17,
    "liquidity": null
   }
  ],
