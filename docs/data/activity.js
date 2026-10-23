@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1792774199,
+ "updated_at": 1792786426,
  "mode": "holdings",
  "tracked": [
   {
@@ -22,7 +22,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent ogantd (score 53)",
+   "label": "consistent ogantd (score 54)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -99,6 +99,12 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
+   "wallet": "2caPWYeSYr1p1BTYz2bCFiRjBUF8niQCGKTVN4GA6njB",
+   "label": "small-money winner PlainPaleFedora",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
    "wallet": "JD8ET3unTf4sCzQQsyKxL9ZKDawRnE6GbH1RZvw2YfRb",
    "label": "small-money winner riskanonymous",
    "tier": "BOARD",
@@ -111,31 +117,58 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "G7rqjHxGnmBJuJc4EMf8GsuMT1n7fzC6EJmK5S7wXcXn",
-   "label": "small-money winner johnnystarr",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
    "wallet": "FpVmtZLdMyfZvA2rcgTHJeiAeqEVCjYARsREcLRMPmwz",
    "label": "small-money winner MrTcooks",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "5RT3pEAJgn15osD4whsVWfH9UEyMcgAA2TYETiTMv3jM",
-   "label": "small-money winner panndaa",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "DszdVmXqsJh1fgbY3kKZpTBuYBCBBsigHgjutps3uBQd",
-   "label": "small-money winner japital_nihao",
    "tier": "BOARD",
    "gems": 0
   }
  ],
  "events": [
+  {
+   "ts": 1792785989,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 65)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "DJTu7vi8norVzdVAffgvb39VP7wjKeTsgaMBJrzfxvoF",
+   "tokens": 6.015677,
+   "usd": 38.26,
+   "symbol": "DJT",
+   "price": 6.36,
+   "market_cap": 121483.0,
+   "liquidity": 1011847.46
+  },
+  {
+   "ts": 1792785989,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 65)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "G24WoaCPFBQG7GUtE79TxRV3WpKiy7HJisVmykbKpump",
+   "tokens": 11367560.065859,
+   "usd": 42.11,
+   "symbol": "Badass ",
+   "price": 3.704e-06,
+   "market_cap": 3704.03,
+   "liquidity": null
+  },
+  {
+   "ts": 1792785989,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 65)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "AVKYgzccwrWTNtW2ejz3VRthG3UYsVMmJ5piVEhzpump",
+   "tokens": 10577958.062481,
+   "usd": 740.67,
+   "symbol": "pilled",
+   "price": 7.002e-05,
+   "market_cap": 69914.0,
+   "liquidity": 21920.25
+  },
   {
    "ts": 1792773716,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4589,51 +4622,6 @@ window.GEM_ACTIVITY = {
    "symbol": "AdoL…pump",
    "price": 4.518780317798684e-06,
    "market_cap": null,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "AWN8ssmkDmQyxUvdnvPDjizjYttguM3XFE5ZQz3bY5Ja",
-   "tokens": 30405460.899084,
-   "usd": 95.75,
-   "symbol": "AWN8…Y5Ja",
-   "price": 3.1491094728456003e-06,
-   "market_cap": null,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "AVBUr8gyhyXG72uhvQDUFEbRJSJbtR66LGDs8XWYpump",
-   "tokens": 33156485.595581,
-   "usd": 104.91,
-   "symbol": "KIRILA",
-   "price": 3.164e-06,
-   "market_cap": 3164.31,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "AMZG19REE6ox6amFWVE7iSzei1oZzHVF49xNopWBfBKo",
-   "tokens": 35927359.858685,
-   "usd": 111.63,
-   "symbol": "SLOPCORE",
-   "price": 3.107e-06,
-   "market_cap": 3107.22,
    "liquidity": null
   }
  ],

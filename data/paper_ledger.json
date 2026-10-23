@@ -9,7 +9,7 @@
    "opened_at": 1792648448,
    "entry": 78.59,
    "peak": 78.72,
-   "last": 78.72,
+   "last": 77.0083,
    "price_24h": 78.23,
    "wallet_buy_usd": 34.09
   },
@@ -43,14 +43,14 @@
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 65)",
    "tier": "BOARD",
-   "mint": "G24WoaCPFBQG7GUtE79TxRV3WpKiy7HJisVmykbKpump",
-   "symbol": "Badass ",
-   "opened_at": 1792774199,
-   "entry": 2.492e-05,
-   "peak": 2.492e-05,
-   "last": 2.492e-05,
+   "mint": "AVKYgzccwrWTNtW2ejz3VRthG3UYsVMmJ5piVEhzpump",
+   "symbol": "pilled",
+   "opened_at": 1792786426,
+   "entry": 7.002e-05,
+   "peak": 7.002e-05,
+   "last": 7.002e-05,
    "price_24h": null,
-   "wallet_buy_usd": 283.28
+   "wallet_buy_usd": 740.67
   }
  ],
  "closed": [
@@ -7528,6 +7528,27 @@
     "mirror": 0.9421,
     "tp2x_half": 0.9421,
     "hold_24h": 0.9876
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 65)",
+   "tier": "BOARD",
+   "mint": "G24WoaCPFBQG7GUtE79TxRV3WpKiy7HJisVmykbKpump",
+   "symbol": "Badass ",
+   "opened_at": 1792774199,
+   "entry": 2.492e-05,
+   "peak": 2.492e-05,
+   "last": 2.492e-05,
+   "price_24h": 3.704e-06,
+   "wallet_buy_usd": 283.28,
+   "closed_at": 1792786426,
+   "exit": 3.704e-06,
+   "reason": "wallet sold",
+   "returns": {
+    "mirror": 0.1427,
+    "tp2x_half": 0.1427,
+    "hold_24h": 0.1427
    }
   }
  ]
