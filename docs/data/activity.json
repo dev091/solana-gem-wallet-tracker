@@ -1,10 +1,10 @@
 {
- "updated_at": 1792786426,
+ "updated_at": 1792797297,
  "mode": "holdings",
  "tracked": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 65)",
+   "label": "consistent decu (score 66)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -16,7 +16,7 @@
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent banval (score 58)",
+   "label": "consistent ban (score 58)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -99,31 +99,28 @@
    "gems": 0
   },
   {
-   "wallet": "2caPWYeSYr1p1BTYz2bCFiRjBUF8niQCGKTVN4GA6njB",
-   "label": "small-money winner PlainPaleFedora",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
    "wallet": "JD8ET3unTf4sCzQQsyKxL9ZKDawRnE6GbH1RZvw2YfRb",
    "label": "small-money winner riskanonymous",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "5vwrSC7TWPAm1dn5mYwqWxNaGkJgLPaeKvtZ9VdfMRbZ",
-   "label": "small-money winner notakol69",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "FpVmtZLdMyfZvA2rcgTHJeiAeqEVCjYARsREcLRMPmwz",
-   "label": "small-money winner MrTcooks",
    "tier": "BOARD",
    "gems": 0
   }
  ],
  "events": [
+  {
+   "ts": 1792796933,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 66)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "AVKYgzccwrWTNtW2ejz3VRthG3UYsVMmJ5piVEhzpump",
+   "tokens": 10577958.062481,
+   "usd": 410.85,
+   "symbol": "pilled",
+   "price": 3.884e-05,
+   "market_cap": 37580.0,
+   "liquidity": 16533.38
+  },
   {
    "ts": 1792785989,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4608,21 +4605,6 @@
    "price": 3.408e-05,
    "market_cap": 32635.0,
    "liquidity": 14496.7
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "AdoLEvXDvR1ckJBTTHxLeHkcxWvTNq6Fm3ogrzespump",
-   "tokens": 35119648.703715,
-   "usd": 158.7,
-   "symbol": "AdoL…pump",
-   "price": 4.518780317798684e-06,
-   "market_cap": null,
-   "liquidity": null
   }
  ],
  "consensus": []

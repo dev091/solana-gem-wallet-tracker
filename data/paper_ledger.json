@@ -9,7 +9,7 @@
    "opened_at": 1792648448,
    "entry": 78.59,
    "peak": 78.72,
-   "last": 77.0083,
+   "last": 76.32,
    "price_24h": 78.23,
    "wallet_buy_usd": 34.09
   },
@@ -38,19 +38,6 @@
    "last": 3.037e-05,
    "price_24h": 3.037e-05,
    "wallet_buy_usd": 122.68
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 65)",
-   "tier": "BOARD",
-   "mint": "AVKYgzccwrWTNtW2ejz3VRthG3UYsVMmJ5piVEhzpump",
-   "symbol": "pilled",
-   "opened_at": 1792786426,
-   "entry": 7.002e-05,
-   "peak": 7.002e-05,
-   "last": 7.002e-05,
-   "price_24h": null,
-   "wallet_buy_usd": 740.67
   }
  ],
  "closed": [
@@ -7549,6 +7536,27 @@
     "mirror": 0.1427,
     "tp2x_half": 0.1427,
     "hold_24h": 0.1427
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 65)",
+   "tier": "BOARD",
+   "mint": "AVKYgzccwrWTNtW2ejz3VRthG3UYsVMmJ5piVEhzpump",
+   "symbol": "pilled",
+   "opened_at": 1792786426,
+   "entry": 7.002e-05,
+   "peak": 7.002e-05,
+   "last": 7.002e-05,
+   "price_24h": 3.884e-05,
+   "wallet_buy_usd": 740.67,
+   "closed_at": 1792797297,
+   "exit": 3.884e-05,
+   "reason": "wallet sold",
+   "returns": {
+    "mirror": 0.5327,
+    "tp2x_half": 0.5327,
+    "hold_24h": 0.5327
    }
   }
  ]
