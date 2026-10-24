@@ -9,7 +9,7 @@
    "opened_at": 1792648448,
    "entry": 78.59,
    "peak": 78.72,
-   "last": 76.32,
+   "last": 76.58,
    "price_24h": 78.23,
    "wallet_buy_usd": 34.09
   },
@@ -38,6 +38,19 @@
    "last": 3.037e-05,
    "price_24h": 3.037e-05,
    "wallet_buy_usd": 122.68
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 66)",
+   "tier": "BOARD",
+   "mint": "2sWHDhWzmSMVHKw8qZYmuUdvJN9BVWJdWJ8i1ZsEpump",
+   "symbol": "Scream",
+   "opened_at": 1792806061,
+   "entry": 1.278e-05,
+   "peak": 1.278e-05,
+   "last": 1.278e-05,
+   "price_24h": null,
+   "wallet_buy_usd": 204.82
   }
  ],
  "closed": [

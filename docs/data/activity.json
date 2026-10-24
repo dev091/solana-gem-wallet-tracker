@@ -1,5 +1,5 @@
 {
- "updated_at": 1792797297,
+ "updated_at": 1792806061,
  "mode": "holdings",
  "tracked": [
   {
@@ -106,6 +106,21 @@
   }
  ],
  "events": [
+  {
+   "ts": 1792805692,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 66)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "2sWHDhWzmSMVHKw8qZYmuUdvJN9BVWJdWJ8i1ZsEpump",
+   "tokens": 16026796.422507,
+   "usd": 204.82,
+   "symbol": "Scream",
+   "price": 1.278e-05,
+   "market_cap": 12781.03,
+   "liquidity": null
+  },
   {
    "ts": 1792796933,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4590,21 +4605,6 @@
    "price": 3.796e-06,
    "market_cap": 3796.14,
    "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "Aov3BtQvrGXM5V9oiHu8PKJWeV8a2rFnr24fwWcNpump",
-   "tokens": 39701105.522439,
-   "usd": 1353.01,
-   "symbol": "HNET",
-   "price": 3.408e-05,
-   "market_cap": 32635.0,
-   "liquidity": 14496.7
   }
  ],
  "consensus": []
