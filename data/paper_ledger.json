@@ -4,27 +4,27 @@
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 70)",
    "tier": "BOARD",
-   "mint": "98sMhvDwXj1RQi5c5Mndm3vPe9cBqPrbLaufMXFNMh5g",
-   "symbol": "HYPE",
-   "opened_at": 1792864831,
-   "entry": 75.55,
-   "peak": 76.29,
-   "last": 76.29,
-   "price_24h": null,
-   "wallet_buy_usd": 50.42
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 70)",
-   "tier": "BOARD",
    "mint": "2sdwsnPizUaYLJSnLq6XeAa3bMSw5STboKmrYEpWpump",
    "symbol": "zPEPE",
    "opened_at": 1792864831,
    "entry": 1.092e-05,
    "peak": 1.264e-05,
-   "last": 1.264e-05,
+   "last": 6.346e-06,
    "price_24h": null,
    "wallet_buy_usd": 366.48
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 70)",
+   "tier": "BOARD",
+   "mint": "2xnpG8hDdAmyD7qVHRRcim2rH6QFCdCyFKfqJD3Kpump",
+   "symbol": "Surili",
+   "opened_at": 1792882023,
+   "entry": 6.056e-06,
+   "peak": 6.056e-06,
+   "last": 6.056e-06,
+   "price_24h": null,
+   "wallet_buy_usd": 187.35
   }
  ],
  "closed": [
@@ -7628,6 +7628,27 @@
     "mirror": 0.9655,
     "tp2x_half": 0.9655,
     "hold_24h": 0.9655
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 70)",
+   "tier": "BOARD",
+   "mint": "98sMhvDwXj1RQi5c5Mndm3vPe9cBqPrbLaufMXFNMh5g",
+   "symbol": "HYPE",
+   "opened_at": 1792864831,
+   "entry": 75.55,
+   "peak": 76.29,
+   "last": 76.29,
+   "price_24h": 76.39,
+   "wallet_buy_usd": 50.42,
+   "closed_at": 1792882023,
+   "exit": 76.39,
+   "reason": "wallet sold",
+   "returns": {
+    "mirror": 0.9711,
+    "tp2x_half": 0.9711,
+    "hold_24h": 0.9711
    }
   }
  ]
