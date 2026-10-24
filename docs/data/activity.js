@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1792823792,
+ "updated_at": 1792841844,
  "mode": "holdings",
  "tracked": [
   {
@@ -64,7 +64,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
-   "label": "consistent daddychilllll (score 45)",
+   "label": "consistent daddychilllll (score 46)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -117,14 +117,20 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "BN73buQDU4WLMmRkRSjV4qKkEvFVYNC8g1YNfuPe95Aj",
-   "label": "small-money winner moonkraken626",
+   "wallet": "B32QbbdDAyhvUQzjcaM5j6ZVKwjCxAwGH5Xgvb9SJqnC",
+   "label": "small-money winner KADENOX1",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "927nX6EMGwKqVAveUvwyBVHyVB7ckA6gZJo5J7gTAhCt",
-   "label": "small-money winner 0xyx",
+   "wallet": "FpVmtZLdMyfZvA2rcgTHJeiAeqEVCjYARsREcLRMPmwz",
+   "label": "small-money winner MrTcooks",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "BN73buQDU4WLMmRkRSjV4qKkEvFVYNC8g1YNfuPe95Aj",
+   "label": "small-money winner moonkraken626",
    "tier": "BOARD",
    "gems": 0
   }
