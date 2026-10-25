@@ -1,5 +1,5 @@
 window.GEM_PAPER = {
- "updated_at": 1792950811,
+ "updated_at": 1792960511,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
@@ -627,7 +627,7 @@ window.GEM_PAPER = {
    "opened_at": 1792882023,
    "entry": 6.056e-06,
    "peak": 6.056e-06,
-   "last": 2.6e-06,
+   "last": 2.597e-06,
    "price_24h": null,
    "wallet_buy_usd": 187.35
   },
@@ -640,8 +640,8 @@ window.GEM_PAPER = {
    "opened_at": 1792864831,
    "entry": 1.092e-05,
    "peak": 1.264e-05,
-   "last": 2.505e-06,
-   "price_24h": null,
+   "last": 2.469e-06,
+   "price_24h": 2.469e-06,
    "wallet_buy_usd": 366.48
   }
  ],
