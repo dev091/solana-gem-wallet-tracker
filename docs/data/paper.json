@@ -1,5 +1,5 @@
 {
- "updated_at": 1792922926,
+ "updated_at": 1792938621,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
@@ -607,6 +607,19 @@
  "open": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 73)",
+   "tier": "BOARD",
+   "mint": "6TCoRoHuQGY2c9gAoaCEqC2ieMC6h29uGjb5xbbXNbnT",
+   "symbol": "MET",
+   "opened_at": 1792938620,
+   "entry": 0.2109,
+   "peak": 0.2109,
+   "last": 0.2109,
+   "price_24h": null,
+   "wallet_buy_usd": 164.18
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 70)",
    "tier": "BOARD",
    "mint": "2xnpG8hDdAmyD7qVHRRcim2rH6QFCdCyFKfqJD3Kpump",
@@ -614,7 +627,7 @@
    "opened_at": 1792882023,
    "entry": 6.056e-06,
    "peak": 6.056e-06,
-   "last": 2.638e-06,
+   "last": 2.604e-06,
    "price_24h": null,
    "wallet_buy_usd": 187.35
   },
@@ -627,7 +640,7 @@
    "opened_at": 1792864831,
    "entry": 1.092e-05,
    "peak": 1.264e-05,
-   "last": 2.727e-06,
+   "last": 2.673e-06,
    "price_24h": null,
    "wallet_buy_usd": 366.48
   }
