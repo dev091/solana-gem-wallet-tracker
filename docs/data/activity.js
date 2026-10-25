@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1792882023,
+ "updated_at": 1792888844,
  "mode": "holdings",
  "tracked": [
   {
@@ -40,7 +40,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 53)",
+   "label": "consistent limfork (score 53)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -88,19 +88,13 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
-   "label": "consistent schoen (score 43)",
+   "label": "consistent Schoen (score 43)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "Crg4yePLW6aRb7vpbo6tTQx8q8T5Myfjf9xokzXU8i1s",
    "label": "small-money winner MoonBoulderTarp",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "52JKs8hs5GDZFfyHpw9kLtuNSpEuweFz5CS1feRdZCeo",
-   "label": "small-money winner Izbk17",
    "tier": "BOARD",
    "gems": 0
   },
@@ -123,14 +117,20 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
+   "wallet": "5vwrSC7TWPAm1dn5mYwqWxNaGkJgLPaeKvtZ9VdfMRbZ",
+   "label": "small-money winner notakol69",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
    "wallet": "DzhcmvejwnUFobuG8yWzzY4ZpfmASyPhzzkpU3uivfqD",
    "label": "small-money winner Ho_oDL",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "5vwrSC7TWPAm1dn5mYwqWxNaGkJgLPaeKvtZ9VdfMRbZ",
-   "label": "small-money winner notakol69",
+   "wallet": "E6NUnShVZDb3NeDDY13V2pU9AtP5pc3NSm84PfoMe9Hc",
+   "label": "small-money winner ultraoctopuslog",
    "tier": "BOARD",
    "gems": 0
   }
