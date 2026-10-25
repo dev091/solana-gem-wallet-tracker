@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1792938620,
+ "updated_at": 1792950811,
  "mode": "holdings",
  "tracked": [
   {
@@ -28,7 +28,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
-   "label": "consistent milito (score 57)",
+   "label": "consistent allglorybetogod (score 57)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -105,26 +105,8 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "4SLEQgEpGvPHo3Q1ui5Ng4P9rD1byFjHaBUASip5idRt",
-   "label": "small-money winner Sirsavage111",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "9Hzn1UBizDV62psvzcCEFpXj9qoRALPeU9nmu7XrUd3F",
-   "label": "small-money winner chiefdom",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
    "wallet": "H2mGyn2A9Mat4bmhtAoQ9QWKowQKTwgGuW8sv1CC3eG7",
    "label": "small-money winner teddymcdonald22",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "6HxwKuMmcHtQVxEEeDKohkn6Q2kYhrCqVm1AYpU7afhN",
-   "label": "small-money winner SmokeyJs",
    "tier": "BOARD",
    "gems": 0
   },
@@ -133,9 +115,42 @@ window.GEM_ACTIVITY = {
    "label": "small-money winner B_Naughty",
    "tier": "BOARD",
    "gems": 0
+  },
+  {
+   "wallet": "3kYukWCDZGs1Qj7REdv77rNVw6XSCXY34DoUhXxfR5zS",
+   "label": "small-money winner SleepyInwa",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "4SLEQgEpGvPHo3Q1ui5Ng4P9rD1byFjHaBUASip5idRt",
+   "label": "small-money winner Sirsavage111",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "6x4w7SNJSpoHDA3maeArC6dLAEoVRThkg2KvM1jh17x",
+   "label": "small-money winner CuteCarrotTop",
+   "tier": "BOARD",
+   "gems": 0
   }
  ],
  "events": [
+  {
+   "ts": 1792950333,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 73)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "6TCoRoHuQGY2c9gAoaCEqC2ieMC6h29uGjb5xbbXNbnT",
+   "tokens": 694.141991000004,
+   "usd": 146.39,
+   "symbol": "MET",
+   "price": 0.2109,
+   "market_cap": 2109559415749.0,
+   "liquidity": 843823766.81
+  },
   {
    "ts": 1792938141,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4619,21 +4634,6 @@ window.GEM_ACTIVITY = {
    "symbol": "ICAT",
    "price": 3.776e-06,
    "market_cap": 3776.22,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "Da4jh1uN2VHKMt1W52EifGwiJrSJEVgwAEiDfBvrNTrV",
-   "tokens": 34247258.808072,
-   "usd": 111.98,
-   "symbol": "Da4j…NTrV",
-   "price": 3.2697924019736786e-06,
-   "market_cap": null,
    "liquidity": null
   }
  ],
