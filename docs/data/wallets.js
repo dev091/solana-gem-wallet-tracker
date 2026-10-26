@@ -1,5 +1,5 @@
 window.GEM_WALLETS = {
- "generated_at": 1792920512,
+ "generated_at": 1793007908,
  "provider": "rpc",
  "criteria": {
   "entry_min_usd": 100.0,
@@ -21,7 +21,7 @@ window.GEM_WALLETS = {
   },
   "pump-board": {
    "ok": true,
-   "wallets": 24
+   "wallets": 25
   },
   "kolscan": {
    "ok": true,
@@ -58,19 +58,19 @@ window.GEM_WALLETS = {
   }
  },
  "counts": {
-  "scanned": 127,
+  "scanned": 129,
   "strict": 0,
   "gem_hunter": 0,
   "rejected": 0,
-  "error": 127
+  "error": 129
  },
  "wallets": [
   {
-   "wallet": "3vXNqvraYSMQmyu4m3FskT3hYAXbCn8j4LgJ8epBqDXm",
+   "wallet": "4ugDhHJ8XDXAeABmrNmGffFaLbJb9BkPyiFGVSV9ocwo",
    "tier": "ERROR",
    "labels": [
-    "Pump.fun daily #1 oldmarlin26724 ($124.3k)",
-    "Pump.fun weekly #3 oldmarlin26724 ($176.6k)"
+    "Pump.fun daily #1 The__Solstice ($333.4k)",
+    "Pump.fun weekly #1 The__Solstice ($220.6k)"
    ],
    "sources": [
     "pump.fun daily",
@@ -87,11 +87,11 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "8whS3YkNkFi84yRUpb1anp9QESUDg7p7dLML1PVno5LR",
+   "wallet": "4UrFSCrGxgoCtCUBAEZq7ZmPK3Pczkxx7PwYnkBMi1KR",
    "tier": "ERROR",
    "labels": [
-    "Pump.fun daily #2 pumpmqster ($120.8k)",
-    "Pump.fun weekly #5 pumpmqster ($169.3k)"
+    "Pump.fun daily #2 J777Crypto ($119.5k)",
+    "Pump.fun weekly #3 J777Crypto ($161.5k)"
    ],
    "sources": [
     "pump.fun daily",
@@ -108,11 +108,11 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "2VpmFNarKqGyRrzkXxNQmh4yTFkdr7ojcM7F7squa11H",
+   "wallet": "Bmi9zf27MNN5pjCtyv2Y15TDQoYgcbcmPTxvEoQ6UwWs",
    "tier": "ERROR",
    "labels": [
-    "Pump.fun daily #3 DiosFalso ($120.1k)",
-    "Pump.fun weekly #6 DiosFalso ($157.3k)"
+    "Pump.fun daily #3 Crypto_Keys ($100.7k)",
+    "Pump.fun weekly #4 Crypto_Keys ($138.8k)"
    ],
    "sources": [
     "pump.fun daily",
@@ -129,15 +129,15 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "DQMqCjCiRS8BAkZ2xrJ7QJPqUjoHnRDoPtcXMiEPtSus",
+   "wallet": "Crg4yePLW6aRb7vpbo6tTQx8q8T5Myfjf9xokzXU8i1s",
    "tier": "ERROR",
    "labels": [
-    "Pump.fun daily #4 AestheticGoat ($112.2k)",
-    "Pump.fun weekly #2 AestheticGoat ($184.8k)"
+    "Pump.fun weekly #2 MoonBoulderTarp ($200.0k)",
+    "Pump.fun monthly #9 MoonBoulderTarp ($200.0k)"
    ],
    "sources": [
-    "pump.fun daily",
-    "pump.fun weekly"
+    "pump.fun weekly",
+    "pump.fun monthly"
    ],
    "gem_hits_in_search": 0,
    "stats": {},
@@ -150,57 +150,15 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "8VS8M7og1NEL4rDLzqMRfMeMbDti1XZ8AaF8uWNzb3Y1",
+   "wallet": "29yFzeBZgxf5zqrAkKXwgZtQehRf4pL8WbV2nRJikbw8",
    "tier": "ERROR",
    "labels": [
-    "Pump.fun daily #5 zeusxbt ($108.0k)",
-    "Pump.fun weekly #7 zeusxbt ($150.3k)"
+    "Pump.fun weekly #6 throatycrab1008 ($105.2k)",
+    "Pump.fun monthly #1 throatycrab1008 ($464.7k)"
    ],
    "sources": [
-    "pump.fun daily",
-    "pump.fun weekly"
-   ],
-   "gem_hits_in_search": 0,
-   "stats": {},
-   "reasons": [
-    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
-   ],
-   "flags": [],
-   "notes": [],
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "4BYjXY3RS1wKVo89g9rJQF76TWiwVxZBHRhdzCed563R",
-   "tier": "ERROR",
-   "labels": [
-    "Pump.fun daily #7 B_Naughty ($84.9k)",
-    "Pump.fun weekly #10 B_Naughty ($118.5k)"
-   ],
-   "sources": [
-    "pump.fun daily",
-    "pump.fun weekly"
-   ],
-   "gem_hits_in_search": 0,
-   "stats": {},
-   "reasons": [
-    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
-   ],
-   "flags": [],
-   "notes": [],
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
-   "tier": "ERROR",
-   "labels": [
-    "Pump.fun daily #10 slingoor ($66.2k)",
-    "Kolscan daily #1 slingoor ($363.0k)"
-   ],
-   "sources": [
-    "pump.fun daily",
-    "kolscan"
+    "pump.fun weekly",
+    "pump.fun monthly"
    ],
    "gem_hits_in_search": 0,
    "stats": {},
@@ -216,8 +174,8 @@ window.GEM_WALLETS = {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "tier": "ERROR",
    "labels": [
-    "Pump.fun monthly #3 notdecu ($281.5k)",
-    "Kolscan daily #3 decu ($9,649)"
+    "Pump.fun monthly #3 notdecu ($276.0k)",
+    "Kolscan daily #10 decu ($3,923)"
    ],
    "sources": [
     "pump.fun monthly",
@@ -237,8 +195,8 @@ window.GEM_WALLETS = {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
    "tier": "ERROR",
    "labels": [
-    "Pump.fun monthly #6 trunoest ($229.7k)",
-    "Kolscan daily #8 trunoest ($4,666)"
+    "Pump.fun monthly #6 trunoest ($213.0k)",
+    "Kolscan daily #9 trunoest ($4,232)"
    ],
    "sources": [
     "pump.fun monthly",
@@ -255,10 +213,10 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "4ugDhHJ8XDXAeABmrNmGffFaLbJb9BkPyiFGVSV9ocwo",
+   "wallet": "8tU3fy9cUEsnpnFZ86nvPmD7hkppsVnQbjHyLV2YC7DW",
    "tier": "ERROR",
    "labels": [
-    "Pump.fun daily #6 The__Solstice ($85.7k)"
+    "Pump.fun daily #4 pyro ($59.8k)"
    ],
    "sources": [
     "pump.fun daily"
@@ -274,10 +232,10 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "3kYukWCDZGs1Qj7REdv77rNVw6XSCXY34DoUhXxfR5zS",
+   "wallet": "J23qr98GjGJJqKq9CBEnyRhHbmkaVxtTJNNxKu597wsA",
    "tier": "ERROR",
    "labels": [
-    "Pump.fun daily #8 SleepyInwa ($77.3k)"
+    "Pump.fun daily #5 gr3gor14n ($39.2k)"
    ],
    "sources": [
     "pump.fun daily"
@@ -293,10 +251,10 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "2xHVdUu6NZKi9hVeBmmrj9jwAYSPCaoHSE2njCGH6CeE",
+   "wallet": "Hzvs4kQ3pSeVpPqFgiQLfgKS4tpTDyk3GmKT1k8BQPBm",
    "tier": "ERROR",
    "labels": [
-    "Pump.fun daily #9 nullstrat ($73.9k)"
+    "Pump.fun daily #6 TradeRansoze ($38.9k)"
    ],
    "sources": [
     "pump.fun daily"
@@ -312,10 +270,86 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "Crg4yePLW6aRb7vpbo6tTQx8q8T5Myfjf9xokzXU8i1s",
+   "wallet": "2M2vLX34LXMg24dMEnjWHvRXS1tshpEDRWzmXgV8ENNZ",
    "tier": "ERROR",
    "labels": [
-    "Pump.fun weekly #1 MoonBoulderTarp ($200.0k)"
+    "Pump.fun daily #7 SossaDotKek ($38.8k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "CC3VHiS7u4i4E7vDWwdYDPTJjopPnuhsxVqstPwDSY33",
+   "tier": "ERROR",
+   "labels": [
+    "Pump.fun daily #8 ChadSableWar ($37.4k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "HsQnUgdVVUJNTTEe5mzpQFFi55oXq4UwcjByEFb3Rd52",
+   "tier": "ERROR",
+   "labels": [
+    "Pump.fun daily #9 counter17 ($36.0k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "EVqxB3F6iUBeWsTpBFQqWwxpqUS8s4NrzgxBvQ2VRbTq",
+   "tier": "ERROR",
+   "labels": [
+    "Pump.fun daily #10 faposhi__ ($35.6k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "DQMqCjCiRS8BAkZ2xrJ7QJPqUjoHnRDoPtcXMiEPtSus",
+   "tier": "ERROR",
+   "labels": [
+    "Pump.fun weekly #5 AestheticGoat ($121.6k)"
    ],
    "sources": [
     "pump.fun weekly"
@@ -331,10 +365,48 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "4UrFSCrGxgoCtCUBAEZq7ZmPK3Pczkxx7PwYnkBMi1KR",
+   "wallet": "BSWzqnWrir5s54Fa94GEwBi1CSAR1q6Nio9JGsPGFcy1",
    "tier": "ERROR",
    "labels": [
-    "Pump.fun weekly #4 J777Crypto ($170.8k)"
+    "Pump.fun weekly #7 gtsby ($101.5k)"
+   ],
+   "sources": [
+    "pump.fun weekly"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "2xHVdUu6NZKi9hVeBmmrj9jwAYSPCaoHSE2njCGH6CeE",
+   "tier": "ERROR",
+   "labels": [
+    "Pump.fun weekly #8 nullstrat ($100.1k)"
+   ],
+   "sources": [
+    "pump.fun weekly"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "3vXNqvraYSMQmyu4m3FskT3hYAXbCn8j4LgJ8epBqDXm",
+   "tier": "ERROR",
+   "labels": [
+    "Pump.fun weekly #9 oldmarlin26724 ($100.0k)"
    ],
    "sources": [
     "pump.fun weekly"
@@ -353,48 +425,10 @@ window.GEM_WALLETS = {
    "wallet": "EnPjBjzy6zaufzpZ2m3Q8nPS3KpyiRxNLKtcSiMYwWCa",
    "tier": "ERROR",
    "labels": [
-    "Pump.fun weekly #8 collectible ($133.0k)"
+    "Pump.fun weekly #10 collectible ($99.5k)"
    ],
    "sources": [
     "pump.fun weekly"
-   ],
-   "gem_hits_in_search": 0,
-   "stats": {},
-   "reasons": [
-    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
-   ],
-   "flags": [],
-   "notes": [],
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "Bmi9zf27MNN5pjCtyv2Y15TDQoYgcbcmPTxvEoQ6UwWs",
-   "tier": "ERROR",
-   "labels": [
-    "Pump.fun weekly #9 Crypto_Keys ($125.5k)"
-   ],
-   "sources": [
-    "pump.fun weekly"
-   ],
-   "gem_hits_in_search": 0,
-   "stats": {},
-   "reasons": [
-    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
-   ],
-   "flags": [],
-   "notes": [],
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "29yFzeBZgxf5zqrAkKXwgZtQehRf4pL8WbV2nRJikbw8",
-   "tier": "ERROR",
-   "labels": [
-    "Pump.fun monthly #1 throatycrab1008 ($462.4k)"
-   ],
-   "sources": [
-    "pump.fun monthly"
    ],
    "gem_hits_in_search": 0,
    "stats": {},
@@ -410,26 +444,7 @@ window.GEM_WALLETS = {
    "wallet": "3VUNtVtjjx5ckUojT7UocJ5fbuAJRsNUXNfTBnPte9vC",
    "tier": "ERROR",
    "labels": [
-    "Pump.fun monthly #2 buddhaaaaa ($298.1k)"
-   ],
-   "sources": [
-    "pump.fun monthly"
-   ],
-   "gem_hits_in_search": 0,
-   "stats": {},
-   "reasons": [
-    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
-   ],
-   "flags": [],
-   "notes": [],
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "3bzaJd5yZG73EVDz8xosQb7gfZm2LN5auFGh6wnP1n1f",
-   "tier": "ERROR",
-   "labels": [
-    "Pump.fun monthly #4 MattFws ($260.7k)"
+    "Pump.fun monthly #2 buddhaaaaa ($282.9k)"
    ],
    "sources": [
     "pump.fun monthly"
@@ -448,7 +463,26 @@ window.GEM_WALLETS = {
    "wallet": "GeUnv1jmtviRbR7Gu1JnXSGkUMUgFVBHuEVQVpTaUX1W",
    "tier": "ERROR",
    "labels": [
-    "Pump.fun monthly #5 Gladey ($250.1k)"
+    "Pump.fun monthly #4 Gladey ($263.0k)"
+   ],
+   "sources": [
+    "pump.fun monthly"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "3bzaJd5yZG73EVDz8xosQb7gfZm2LN5auFGh6wnP1n1f",
+   "tier": "ERROR",
+   "labels": [
+    "Pump.fun monthly #5 MattFws ($229.3k)"
    ],
    "sources": [
     "pump.fun monthly"
@@ -467,26 +501,7 @@ window.GEM_WALLETS = {
    "wallet": "FFdBLYqL9rs5fUT38ArE8GV2L3BziEgG5LJUu6sshfkF",
    "tier": "ERROR",
    "labels": [
-    "Pump.fun monthly #7 alphaprophet ($211.3k)"
-   ],
-   "sources": [
-    "pump.fun monthly"
-   ],
-   "gem_hits_in_search": 0,
-   "stats": {},
-   "reasons": [
-    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
-   ],
-   "flags": [],
-   "notes": [],
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "9LXWa7V3AE15VfBupcx5gDts2ix3Y9NzbcKZKjkkq6hV",
-   "tier": "ERROR",
-   "labels": [
-    "Pump.fun monthly #8 rikz_ ($205.7k)"
+    "Pump.fun monthly #7 alphaprophet ($205.7k)"
    ],
    "sources": [
     "pump.fun monthly"
@@ -505,7 +520,7 @@ window.GEM_WALLETS = {
    "wallet": "4Bc4Ue2G37zoQCiksAvwMgXQQJFKcYQThnoHPKizAmWB",
    "tier": "ERROR",
    "labels": [
-    "Pump.fun monthly #9 vvvvvvvvvv1 ($204.5k)"
+    "Pump.fun monthly #8 vvvvvvvvvv1 ($202.4k)"
    ],
    "sources": [
     "pump.fun monthly"
@@ -521,13 +536,51 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "6CpipySaXTAiUKDyyhWeCfYSMQLCiHrbCN1WvRv5s8kF",
+   "wallet": "9LXWa7V3AE15VfBupcx5gDts2ix3Y9NzbcKZKjkkq6hV",
    "tier": "ERROR",
    "labels": [
-    "Pump.fun monthly #10 ronaldcarter ($202.5k)"
+    "Pump.fun monthly #10 rikz_ ($191.1k)"
    ],
    "sources": [
     "pump.fun monthly"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+   "tier": "ERROR",
+   "labels": [
+    "Kolscan daily #1 slingoor ($67.1k)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "DAEdBmTPEKM6xkwfzC3d411QUe6coKpkND6UURa4CvHC",
+   "tier": "ERROR",
+   "labels": [
+    "Kolscan daily #2 Fox 🦊 ($30.4k)"
+   ],
+   "sources": [
+    "kolscan"
    ],
    "gem_hits_in_search": 0,
    "stats": {},
@@ -543,7 +596,64 @@ window.GEM_WALLETS = {
    "wallet": "4xY9T1Q7foJzJsJ6YZDSsfp9zkzeZsXnxd45SixduMmr",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #2 zeropnl ($36.0k)"
+    "Kolscan daily #3 zeropnl ($8,376)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "CEUA7zVoDRqRYoeHTP58UHU6TR8yvtVbeLrX1dppqoXJ",
+   "tier": "ERROR",
+   "labels": [
+    "Kolscan daily #4 Tom ($7,054)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "ALauG4FwEYDgSXd5Hen6kvuWSCdUi2fYNSNqM1Ci31wE",
+   "tier": "ERROR",
+   "labels": [
+    "Kolscan daily #5 Thurston (zapped arc) ($6,553)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "DEdEW3SMPU2dCfXEcgj2YppmX9H3bnMDJaU4ctn2BQDQ",
+   "tier": "ERROR",
+   "labels": [
+    "Kolscan daily #6 King Solomon ($6,198)"
    ],
    "sources": [
     "kolscan"
@@ -562,7 +672,7 @@ window.GEM_WALLETS = {
    "wallet": "CyaE1VxvBrahnPWkqm5VsdCvyS2QmNht2UFrKJHga54o",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #4 Cented ($8,283)"
+    "Kolscan daily #7 Cented ($5,888)"
    ],
    "sources": [
     "kolscan"
@@ -578,86 +688,10 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "xyzfhxfy8NhfeNG3Um3WaUvFXzNuHkrhrZMD8dsStB6",
+   "wallet": "5t9xBNuDdGTGpjaPTx6hKd7sdRJbvtKS8Mhq6qVbo8Qz",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #5 Gasp ($5,797)"
-   ],
-   "sources": [
-    "kolscan"
-   ],
-   "gem_hits_in_search": 0,
-   "stats": {},
-   "reasons": [
-    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
-   ],
-   "flags": [],
-   "notes": [],
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "4yo9CUuTBbds9NFhZd4MzPiZZkUvveXdTnAH8qMsE8ku",
-   "tier": "ERROR",
-   "labels": [
-    "Kolscan daily #6 Gfree ($5,553)"
-   ],
-   "sources": [
-    "kolscan"
-   ],
-   "gem_hits_in_search": 0,
-   "stats": {},
-   "reasons": [
-    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
-   ],
-   "flags": [],
-   "notes": [],
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "GJA1HEbxGnqBhBifH9uQauzXSB53to5rhDrzmKxhSU65",
-   "tier": "ERROR",
-   "labels": [
-    "Kolscan daily #7 Latuche ($5,141)"
-   ],
-   "sources": [
-    "kolscan"
-   ],
-   "gem_hits_in_search": 0,
-   "stats": {},
-   "reasons": [
-    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
-   ],
-   "flags": [],
-   "notes": [],
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "B32QbbdDAyhvUQzjcaM5j6ZVKwjCxAwGH5Xgvb9SJqnC",
-   "tier": "ERROR",
-   "labels": [
-    "Kolscan daily #9 Kadenox ($3,635)"
-   ],
-   "sources": [
-    "kolscan"
-   ],
-   "gem_hits_in_search": 0,
-   "stats": {},
-   "reasons": [
-    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
-   ],
-   "flags": [],
-   "notes": [],
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "DYmsQudNqJyyDvq86XmzAvrU9T7xwfQEwh6gPQw9TPNF",
-   "tier": "ERROR",
-   "labels": [
-    "Kolscan daily #10 unprofitable ($3,544)"
+    "Kolscan daily #8 Smokez ($4,791)"
    ],
    "sources": [
     "kolscan"
