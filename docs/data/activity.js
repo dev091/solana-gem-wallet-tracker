@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1792994111,
+ "updated_at": 1793040976,
  "mode": "holdings",
  "tracked": [
   {
@@ -16,7 +16,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent banval (score 65)",
+   "label": "consistent ban (score 66)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -28,13 +28,13 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
-   "label": "consistent allglorybetogod (score 59)",
+   "label": "consistent milito (score 60)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent ogantd (score 57)",
+   "label": "consistent OGAntD (score 58)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -99,20 +99,32 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
+   "wallet": "9oZ8EiqmiqVWr2e4J3p6JqVZwtrEJDAXpUWKj7rZyBg5",
+   "label": "small-money winner RuneArcMiley",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "ENTQj6oYkvR2Ghn3HC7aMbqazJwmkyYhjbWQWbH7GmuR",
+   "label": "small-money winner sigmafishweaken",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "ALauG4FwEYDgSXd5Hen6kvuWSCdUi2fYNSNqM1Ci31wE",
+   "label": "small-money winner Thurstxn",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "BWBuaCHdcTecdoZYqcV4qZHwnpMPP8FjYYS1Fkj63wZC",
+   "label": "small-money winner Xuuusider",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
    "wallet": "JDomNchA9FguguCPnLhGVkiVtGCf72JrmxhugCjSDess",
    "label": "small-money winner AyooLinq",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "5JX2RPTeqhCHhVpie4oKKDayzQN7NMxe9bMJwppwQCPC",
-   "label": "small-money winner BTCAU",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "6Z5udwZJfVe9ikA8ob3bDbyhtWwQ2DBZG4PWxNdzp3UN",
-   "label": "small-money winner basednarwhal487",
    "tier": "BOARD",
    "gems": 0
   },
