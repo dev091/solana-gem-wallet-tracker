@@ -1,5 +1,5 @@
 {
- "updated_at": 1793040976,
+ "updated_at": 1793056217,
  "mode": "holdings",
  "tracked": [
   {
@@ -16,7 +16,7 @@
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 66)",
+   "label": "consistent ban (score 67)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -39,14 +39,14 @@
    "gems": 0
   },
   {
-   "wallet": "GeUnv1jmtviRbR7Gu1JnXSGkUMUgFVBHuEVQVpTaUX1W",
-   "label": "consistent Gladey (score 55)",
+   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
+   "label": "consistent Limfork.eth (score 57)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent limfork (score 55)",
+   "wallet": "GeUnv1jmtviRbR7Gu1JnXSGkUMUgFVBHuEVQVpTaUX1W",
+   "label": "consistent Gladey (score 55)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -70,7 +70,7 @@
   },
   {
    "wallet": "F9zT1F46HAoPanR4NC1Yw7TyP8Z9tCavTe48mrzK7aN4",
-   "label": "consistent BraveSmallCub (score 49)",
+   "label": "consistent BraveSmallCub (score 50)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -94,7 +94,19 @@
   },
   {
    "wallet": "Crg4yePLW6aRb7vpbo6tTQx8q8T5Myfjf9xokzXU8i1s",
-   "label": "small-money winner MoonBoulderTarp",
+   "label": "small-money winner Sska71",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "DTUnwJeA6Sw9F28oWAJCopSXazjj33Gq5gZQ3KZFJAtH",
+   "label": "small-money winner YNGBNNY",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "3iNpHZrcE45FPR8pKhz7g4KXEZNHoiic7eG9bRwrBJ8b",
+   "label": "small-money winner b69",
    "tier": "BOARD",
    "gems": 0
   },
@@ -105,32 +117,20 @@
    "gems": 0
   },
   {
-   "wallet": "ENTQj6oYkvR2Ghn3HC7aMbqazJwmkyYhjbWQWbH7GmuR",
-   "label": "small-money winner sigmafishweaken",
+   "wallet": "5DYk6WUDN33fuZiRTAbPeNqYb3DE8aB6uKG5BojpzQxs",
+   "label": "small-money winner endbosss",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "ALauG4FwEYDgSXd5Hen6kvuWSCdUi2fYNSNqM1Ci31wE",
-   "label": "small-money winner Thurstxn",
+   "wallet": "8rHXXSfvYtwKcto1FiRYJDJ4FpeC5bXhaZ93csTKLuaf",
+   "label": "small-money winner Dtrain22k",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "BWBuaCHdcTecdoZYqcV4qZHwnpMPP8FjYYS1Fkj63wZC",
-   "label": "small-money winner Xuuusider",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "JDomNchA9FguguCPnLhGVkiVtGCf72JrmxhugCjSDess",
-   "label": "small-money winner AyooLinq",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "E4WuDtSt39GpUacPoFnaqU1jSni8LMG3nGt2mWL331NA",
-   "label": "small-money winner drkwyd",
+   "wallet": "Ap4TExZ16BWdq37pFP19aoaMwB93BdLwom38poVgtnfv",
+   "label": "small-money winner OnlyProfits11",
    "tier": "BOARD",
    "gems": 0
   }
