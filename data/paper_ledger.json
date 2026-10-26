@@ -9,7 +9,7 @@
    "opened_at": 1792864831,
    "entry": 1.092e-05,
    "peak": 1.264e-05,
-   "last": 2.373e-06,
+   "last": 2.404e-06,
    "price_24h": 2.469e-06,
    "wallet_buy_usd": 366.48
   },
@@ -22,7 +22,7 @@
    "opened_at": 1792882023,
    "entry": 6.056e-06,
    "peak": 6.056e-06,
-   "last": 2.569e-06,
+   "last": 2.631e-06,
    "price_24h": 2.586e-06,
    "wallet_buy_usd": 187.35
   },
@@ -74,7 +74,7 @@
    "opened_at": 1792968670,
    "entry": 3.217e-05,
    "peak": 3.217e-05,
-   "last": 3.217e-05,
+   "last": 3.164e-05,
    "price_24h": null,
    "wallet_buy_usd": 112.83
   },
