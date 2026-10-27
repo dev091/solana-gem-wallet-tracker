@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1793110155,
+ "updated_at": 1793129637,
  "mode": "holdings",
  "tracked": [
   {
@@ -40,7 +40,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent OGAntD (score 58)",
+   "label": "consistent OGAntD (score 59)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -76,19 +76,19 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "2QrfK8gf3vBcFfuaCJbFxGk3w1JxwjamGE9aGwdQHFas",
-   "label": "consistent Thokani (score 49)",
+   "label": "consistent Thokani (score 50)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
+   "label": "consistent Schoen (score 49)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "ArkdCAPErAo6KdVDTFA32YKnqaD7jfXsESFoyxQzDgnu",
    "label": "consistent normalseal38782 (score 49)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
-   "label": "consistent schoen (score 48)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -123,14 +123,8 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "Ap4TExZ16BWdq37pFP19aoaMwB93BdLwom38poVgtnfv",
-   "label": "small-money winner OnlyProfits11",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "FGwSrgbb9NCMs6CkvV4mV9B7emqLadhYvtqnncWXqhHK",
-   "label": "small-money winner skla",
+   "wallet": "2DG4vs36XHf3V9czMopZufUn8ton4tuf6atuRpP4Kowr",
+   "label": "small-money winner dnsbort",
    "tier": "BOARD",
    "gems": 0
   }
