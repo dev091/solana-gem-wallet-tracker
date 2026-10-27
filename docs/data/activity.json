@@ -1,5 +1,5 @@
 {
- "updated_at": 1793087979,
+ "updated_at": 1793110155,
  "mode": "holdings",
  "tracked": [
   {
@@ -34,7 +34,7 @@
   },
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 59)",
+   "label": "consistent Limfork.eth (score 60)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -46,7 +46,7 @@
   },
   {
    "wallet": "GeUnv1jmtviRbR7Gu1JnXSGkUMUgFVBHuEVQVpTaUX1W",
-   "label": "consistent Gladey (score 57)",
+   "label": "consistent Gladey (score 58)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -63,14 +63,14 @@
    "gems": 0
   },
   {
-   "wallet": "F9zT1F46HAoPanR4NC1Yw7TyP8Z9tCavTe48mrzK7aN4",
-   "label": "consistent BraveSmallCub (score 53)",
+   "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
+   "label": "consistent daddychilllll (score 53)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
-   "label": "consistent daddychilllll (score 52)",
+   "wallet": "F9zT1F46HAoPanR4NC1Yw7TyP8Z9tCavTe48mrzK7aN4",
+   "label": "consistent BraveSmallCub (score 53)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -123,19 +123,34 @@
    "gems": 0
   },
   {
-   "wallet": "8rHXXSfvYtwKcto1FiRYJDJ4FpeC5bXhaZ93csTKLuaf",
-   "label": "small-money winner Dtrain22k",
+   "wallet": "Ap4TExZ16BWdq37pFP19aoaMwB93BdLwom38poVgtnfv",
+   "label": "small-money winner OnlyProfits11",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "BcusBxq4bb8SSWXs5d3GyJbqWSmVndauJwMTjDvhkv3o",
-   "label": "small-money winner chubbicorn33",
+   "wallet": "FGwSrgbb9NCMs6CkvV4mV9B7emqLadhYvtqnncWXqhHK",
+   "label": "small-money winner skla",
    "tier": "BOARD",
    "gems": 0
   }
  ],
  "events": [
+  {
+   "ts": 1793109675,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 79)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "DKevw7JSworJw946BFqrJdifpDiiukcPMgXnw5uhpump",
+   "tokens": 36006858.616613,
+   "usd": 111.01,
+   "symbol": "熊",
+   "price": 3.083e-06,
+   "market_cap": 3083.17,
+   "liquidity": null
+  },
   {
    "ts": 1793087501,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4618,21 +4633,6 @@
    "usd": 111.94,
    "symbol": "FBvF…qcPS",
    "price": 3.258748353764014e-06,
-   "market_cap": null,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "Ez2xcpy4MM85yaZhpZgbAanN8f5KEofvdYaj5Rwepump",
-   "tokens": 34665812.53756,
-   "usd": 125.47,
-   "symbol": "Ez2x…pump",
-   "price": 3.619449510758524e-06,
    "market_cap": null,
    "liquidity": null
   }
