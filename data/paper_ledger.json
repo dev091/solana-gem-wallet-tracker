@@ -90,6 +90,19 @@
    "last": 418.56,
    "price_24h": null,
    "wallet_buy_usd": 40.41
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 79)",
+   "tier": "BOARD",
+   "mint": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+   "symbol": "STONK",
+   "opened_at": 1793087979,
+   "entry": 0.1293,
+   "peak": 0.1293,
+   "last": 0.1293,
+   "price_24h": null,
+   "wallet_buy_usd": 50.66
   }
  ],
  "closed": [

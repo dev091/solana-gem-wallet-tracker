@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1793067168,
+ "updated_at": 1793087979,
  "mode": "holdings",
  "tracked": [
   {
@@ -136,6 +136,36 @@ window.GEM_ACTIVITY = {
   }
  ],
  "events": [
+  {
+   "ts": 1793087501,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 79)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+   "tokens": 391.808582861,
+   "usd": 50.66,
+   "symbol": "STONK",
+   "price": 0.1293,
+   "market_cap": 101421916.0,
+   "liquidity": 2504167.81
+  },
+  {
+   "ts": 1793087501,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 79)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "G1huxQGFiWA6TBU2oqVBvxUVQEb5SskLTt9Zb14dYRk1",
+   "tokens": 537902.701172,
+   "usd": 151.1,
+   "symbol": "PARALOOM",
+   "price": 0.0002809,
+   "market_cap": 280946814.0,
+   "liquidity": 1123848.73
+  },
   {
    "ts": 1793066685,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4604,36 +4634,6 @@ window.GEM_ACTIVITY = {
    "symbol": "Ez2x…pump",
    "price": 3.619449510758524e-06,
    "market_cap": null,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "ErU1AH8EBRZroAuunTjuvz6fAxgC6HRL7zrPPiFVpump",
-   "tokens": 26009002.134496,
-   "usd": 159.36,
-   "symbol": "LOVE",
-   "price": 6.127e-06,
-   "market_cap": 6127.83,
-   "liquidity": null
-  },
-  {
-   "ts": 1791563793,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "EkT16fU5akqDcxMFJW4Paib3CaCWJrEx1HhqMoEApump",
-   "tokens": 33899405.514663,
-   "usd": 117.5,
-   "symbol": "VIZTO",
-   "price": 3.466e-06,
-   "market_cap": 3466.75,
    "liquidity": null
   }
  ],
