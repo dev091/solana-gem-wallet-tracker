@@ -1,5 +1,5 @@
 window.GEM_PAPER = {
- "updated_at": 1793056217,
+ "updated_at": 1793067168,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
@@ -607,6 +607,32 @@ window.GEM_PAPER = {
  "open": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 79)",
+   "tier": "BOARD",
+   "mint": "G1huxQGFiWA6TBU2oqVBvxUVQEb5SskLTt9Zb14dYRk1",
+   "symbol": "PARALOOM",
+   "opened_at": 1793067168,
+   "entry": 0.0002809,
+   "peak": 0.0002809,
+   "last": 0.0002809,
+   "price_24h": null,
+   "wallet_buy_usd": 56.18
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 79)",
+   "tier": "BOARD",
+   "mint": "PrekqLJvJ3qVdXmBGDiexvwUTF4rLFDa6HWS4HJbw9S",
+   "symbol": "NEURALINK",
+   "opened_at": 1793067168,
+   "entry": 418.56,
+   "peak": 418.56,
+   "last": 418.56,
+   "price_24h": null,
+   "wallet_buy_usd": 40.41
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 73)",
    "tier": "BOARD",
    "mint": "3e9kx4ATjPovZmQepBhdozEXyJBnUNXfYn8j3VBbgzwB",
@@ -614,7 +640,7 @@ window.GEM_PAPER = {
    "opened_at": 1792968670,
    "entry": 3.092e-05,
    "peak": 3.143e-05,
-   "last": 3.143e-05,
+   "last": 3.131e-05,
    "price_24h": 3.143e-05,
    "wallet_buy_usd": 96.38
   },
@@ -652,8 +678,8 @@ window.GEM_PAPER = {
    "symbol": "UNKNOWN",
    "opened_at": 1792968670,
    "entry": 3.105e-05,
-   "peak": 3.156e-05,
-   "last": 3.156e-05,
+   "peak": 3.175e-05,
+   "last": 3.175e-05,
    "price_24h": 3.156e-05,
    "wallet_buy_usd": 122.2
   },
