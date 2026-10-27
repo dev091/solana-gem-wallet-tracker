@@ -1,5 +1,5 @@
 {
- "updated_at": 1793129637,
+ "updated_at": 1793142614,
  "mode": "holdings",
  "tracked": [
   {
@@ -33,14 +33,14 @@
    "gems": 0
   },
   {
-   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 60)",
+   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
+   "label": "consistent OGAntD (score 60)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent OGAntD (score 59)",
+   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
+   "label": "consistent Limfork.eth (score 60)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -82,7 +82,7 @@
   },
   {
    "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
-   "label": "consistent Schoen (score 49)",
+   "label": "consistent Schoen (score 50)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -99,32 +99,8 @@
    "gems": 0
   },
   {
-   "wallet": "DTUnwJeA6Sw9F28oWAJCopSXazjj33Gq5gZQ3KZFJAtH",
-   "label": "small-money winner YNGBNNY",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "3eVNW3cBVfkmH7fjj8bbLJQVeXSiGhZTUDJvgoadNXFx",
-   "label": "small-money winner ssrrqq",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
    "wallet": "9oZ8EiqmiqVWr2e4J3p6JqVZwtrEJDAXpUWKj7rZyBg5",
    "label": "small-money winner RuneArcMiley",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "3iNpHZrcE45FPR8pKhz7g4KXEZNHoiic7eG9bRwrBJ8b",
-   "label": "small-money winner b69",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "2DG4vs36XHf3V9czMopZufUn8ton4tuf6atuRpP4Kowr",
-   "label": "small-money winner dnsbort",
    "tier": "BOARD",
    "gems": 0
   }
