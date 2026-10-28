@@ -9,22 +9,9 @@
    "opened_at": 1793067168,
    "entry": 0.0002809,
    "peak": 0.0002809,
-   "last": 5.689e-08,
+   "last": 5.349e-08,
    "price_24h": 5.689e-08,
    "wallet_buy_usd": 56.18
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 79)",
-   "tier": "BOARD",
-   "mint": "PrekqLJvJ3qVdXmBGDiexvwUTF4rLFDa6HWS4HJbw9S",
-   "symbol": "NEURALINK",
-   "opened_at": 1793067168,
-   "entry": 418.56,
-   "peak": 418.56,
-   "last": 403.19,
-   "price_24h": 403.19,
-   "wallet_buy_usd": 40.41
   },
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -35,22 +22,48 @@
    "opened_at": 1793087979,
    "entry": 0.1293,
    "peak": 0.1523,
-   "last": 0.1501,
-   "price_24h": null,
+   "last": 0.1465,
+   "price_24h": 0.1465,
    "wallet_buy_usd": 50.66
   },
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 79)",
+   "label": "consistent decu (score 82)",
    "tier": "BOARD",
-   "mint": "DKevw7JSworJw946BFqrJdifpDiiukcPMgXnw5uhpump",
-   "symbol": "熊",
-   "opened_at": 1793110155,
-   "entry": 3.083e-06,
-   "peak": 3.083e-06,
-   "last": 2.847e-06,
+   "mint": "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB",
+   "symbol": "TSLAx",
+   "opened_at": 1793177888,
+   "entry": 409.24,
+   "peak": 409.24,
+   "last": 409.24,
    "price_24h": null,
-   "wallet_buy_usd": 111.01
+   "wallet_buy_usd": 63.52
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 82)",
+   "tier": "BOARD",
+   "mint": "AqmPAcCeriGA6TAq2ZUsowAeWcktZ7VVrYsjAA1zpump",
+   "symbol": "HALLOWIN",
+   "opened_at": 1793177888,
+   "entry": 0.0001524,
+   "peak": 0.0001524,
+   "last": 0.0001524,
+   "price_24h": null,
+   "wallet_buy_usd": 33.53
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 82)",
+   "tier": "BOARD",
+   "mint": "4veRZzp7e6tT6FxKL81CZpHPVZrgjj2LUh8FFf6mpump",
+   "symbol": "Robotaxi",
+   "opened_at": 1793177888,
+   "entry": 3.584e-05,
+   "peak": 3.584e-05,
+   "last": 3.584e-05,
+   "price_24h": null,
+   "wallet_buy_usd": 55.58
   }
  ],
  "closed": [
@@ -7822,6 +7835,48 @@
     "mirror": 0.9821,
     "tp2x_half": 0.9821,
     "hold_24h": 0.9762
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 79)",
+   "tier": "BOARD",
+   "mint": "DKevw7JSworJw946BFqrJdifpDiiukcPMgXnw5uhpump",
+   "symbol": "熊",
+   "opened_at": 1793110155,
+   "entry": 3.083e-06,
+   "peak": 3.083e-06,
+   "last": 2.847e-06,
+   "price_24h": 2.862e-06,
+   "wallet_buy_usd": 111.01,
+   "closed_at": 1793177888,
+   "exit": 2.862e-06,
+   "reason": "wallet sold",
+   "returns": {
+    "mirror": 0.8916,
+    "tp2x_half": 0.8916,
+    "hold_24h": 0.8916
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 79)",
+   "tier": "BOARD",
+   "mint": "PrekqLJvJ3qVdXmBGDiexvwUTF4rLFDa6HWS4HJbw9S",
+   "symbol": "NEURALINK",
+   "opened_at": 1793067168,
+   "entry": 418.56,
+   "peak": 418.56,
+   "last": 403.19,
+   "price_24h": 403.19,
+   "wallet_buy_usd": 40.41,
+   "closed_at": 1793177888,
+   "exit": 401.26,
+   "reason": "wallet sold",
+   "returns": {
+    "mirror": 0.9207,
+    "tp2x_half": 0.9207,
+    "hold_24h": 0.9251
    }
   }
  ]
