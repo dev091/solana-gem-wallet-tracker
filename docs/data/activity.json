@@ -1,5 +1,5 @@
 {
- "updated_at": 1793281093,
+ "updated_at": 1793301662,
  "mode": "holdings",
  "tracked": [
   {
@@ -40,7 +40,7 @@
   },
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 64)",
+   "label": "consistent limfork (score 64)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -93,14 +93,14 @@
    "gems": 0
   },
   {
-   "wallet": "FPGzPRYowbLrYbPpY53wja1v6tUWKXuzztgiRiqbiQfM",
-   "label": "small-money winner Ryux_ceo",
+   "wallet": "G1yBbmrMPHSACN4xDkoX1JrCQ7M64LThMusfJouW3Ux1",
+   "label": "small-money winner EpicBoldBoss",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "G1yBbmrMPHSACN4xDkoX1JrCQ7M64LThMusfJouW3Ux1",
-   "label": "small-money winner EpicBoldBoss",
+   "wallet": "EQPSuGrSa6AQYvMd2KYp2dfzWRJ48CGmDLH2Q2jF35XR",
+   "label": "small-money winner BlockForkNewt",
    "tier": "BOARD",
    "gems": 0
   },
@@ -111,8 +111,8 @@
    "gems": 0
   },
   {
-   "wallet": "EtkiAKW8PHyan64kHnJUbc5H8VgCLVLr6d4159R7cBuT",
-   "label": "small-money winner tildag",
+   "wallet": "5RMvBAjY7wkiwHo2a2bUihueD9KaCV1bZEbX3hfdnsbV",
+   "label": "small-money winner TimeGiddyPilot",
    "tier": "BOARD",
    "gems": 0
   }
