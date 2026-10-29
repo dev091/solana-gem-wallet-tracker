@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1793254966,
+ "updated_at": 1793281093,
  "mode": "holdings",
  "tracked": [
   {
@@ -10,13 +10,13 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
-   "label": "consistent trunoest (score 83)",
+   "label": "consistent trunoest (score 84)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 74)",
+   "label": "consistent banval (score 74)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -46,7 +46,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "GeUnv1jmtviRbR7Gu1JnXSGkUMUgFVBHuEVQVpTaUX1W",
-   "label": "consistent Gladey (score 62)",
+   "label": "consistent Gladey (score 63)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -64,7 +64,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
-   "label": "consistent daddychilllll (score 57)",
+   "label": "consistent daddychilllll (score 58)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -93,14 +93,26 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "AukHiBFfmfbT828546n5r9BQeVki5Ttw7V3BSvsuVQ38",
-   "label": "small-money winner sherrsup",
+   "wallet": "FPGzPRYowbLrYbPpY53wja1v6tUWKXuzztgiRiqbiQfM",
+   "label": "small-money winner Ryux_ceo",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "G1yBbmrMPHSACN4xDkoX1JrCQ7M64LThMusfJouW3Ux1",
+   "label": "small-money winner EpicBoldBoss",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "9oZ8EiqmiqVWr2e4J3p6JqVZwtrEJDAXpUWKj7rZyBg5",
    "label": "small-money winner RuneArcMiley",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "EtkiAKW8PHyan64kHnJUbc5H8VgCLVLr6d4159R7cBuT",
+   "label": "small-money winner tildag",
    "tier": "BOARD",
    "gems": 0
   }

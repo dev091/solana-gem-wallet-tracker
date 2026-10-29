@@ -1,26 +1,26 @@
 window.GEM_PAPER = {
- "updated_at": 1793254966,
+ "updated_at": 1793281093,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
  "summary": {
   "overall": {
-   "trades": 373,
+   "trades": 374,
    "mirror": {
-    "pnl_usd": -472.46,
-    "win_rate": 0.166,
+    "pnl_usd": -471.03,
+    "win_rate": 0.168,
     "avg_return_pct": -6.3,
     "best_x": 20.33
    },
    "tp2x_half": {
-    "pnl_usd": -682.16,
-    "win_rate": 0.172,
+    "pnl_usd": -680.72,
+    "win_rate": 0.174,
     "avg_return_pct": -9.1,
     "best_x": 11.13
    },
    "hold_24h": {
-    "pnl_usd": -768.6,
-    "win_rate": 0.166,
+    "pnl_usd": -766.84,
+    "win_rate": 0.168,
     "avg_return_pct": -10.3,
     "best_x": 9.67
    }
@@ -579,23 +579,23 @@ window.GEM_PAPER = {
     "tier": "BOARD"
    },
    {
-    "trades": 81,
+    "trades": 82,
     "mirror": {
-     "pnl_usd": -270.37,
-     "win_rate": 0.148,
-     "avg_return_pct": -16.7,
+     "pnl_usd": -268.94,
+     "win_rate": 0.159,
+     "avg_return_pct": -16.4,
      "best_x": 1.88
     },
     "tp2x_half": {
-     "pnl_usd": -270.37,
-     "win_rate": 0.148,
-     "avg_return_pct": -16.7,
+     "pnl_usd": -268.94,
+     "win_rate": 0.159,
+     "avg_return_pct": -16.4,
      "best_x": 1.88
     },
     "hold_24h": {
-     "pnl_usd": -284.79,
-     "win_rate": 0.136,
-     "avg_return_pct": -17.6,
+     "pnl_usd": -283.03,
+     "win_rate": 0.146,
+     "avg_return_pct": -17.3,
      "best_x": 1.88
     },
     "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -614,7 +614,7 @@ window.GEM_PAPER = {
    "opened_at": 1793220161,
    "entry": 2351.3,
    "peak": 2356.49,
-   "last": 2312.66,
+   "last": 2321.13,
    "price_24h": null,
    "wallet_buy_usd": 96.6
   },
@@ -627,7 +627,7 @@ window.GEM_PAPER = {
    "opened_at": 1793220161,
    "entry": 6.529e-05,
    "peak": 6.529e-05,
-   "last": 2.856e-06,
+   "last": 2.807e-06,
    "price_24h": null,
    "wallet_buy_usd": 1371.82
   },
@@ -640,8 +640,8 @@ window.GEM_PAPER = {
    "opened_at": 1793177888,
    "entry": 409.24,
    "peak": 409.24,
-   "last": 401.071,
-   "price_24h": null,
+   "last": 402.045,
+   "price_24h": 402.045,
    "wallet_buy_usd": 63.52
   },
   {
@@ -653,8 +653,8 @@ window.GEM_PAPER = {
    "opened_at": 1793177888,
    "entry": 0.0001524,
    "peak": 0.0001524,
-   "last": 0.0001383,
-   "price_24h": null,
+   "last": 0.0001401,
+   "price_24h": 0.0001401,
    "wallet_buy_usd": 33.53
   },
   {
@@ -666,10 +666,12 @@ window.GEM_PAPER = {
    "opened_at": 1793177888,
    "entry": 3.584e-05,
    "peak": 3.584e-05,
-   "last": 9.896e-06,
-   "price_24h": null,
+   "last": 1.038e-05,
+   "price_24h": 1.038e-05,
    "wallet_buy_usd": 55.58
-  },
+  }
+ ],
+ "closed": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 79)",
@@ -679,12 +681,18 @@ window.GEM_PAPER = {
    "opened_at": 1793087979,
    "entry": 0.1293,
    "peak": 0.1523,
-   "last": 0.1409,
+   "last": 0.1443,
    "price_24h": 0.1465,
-   "wallet_buy_usd": 50.66
-  }
- ],
- "closed": [
+   "wallet_buy_usd": 50.66,
+   "closed_at": 1793281093,
+   "exit": 0.1443,
+   "reason": "48h limit",
+   "returns": {
+    "mirror": 1.0718,
+    "tp2x_half": 1.0718,
+    "hold_24h": 1.0882
+   }
+  },
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 79)",
@@ -6962,27 +6970,6 @@ window.GEM_PAPER = {
     "mirror": 0.7754,
     "tp2x_half": 0.7754,
     "hold_24h": 0.7754
-   }
-  },
-  {
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "mint": "3Sv8Hjxd28arfFhcgaHQAooNDCAGEi7KQn8fP38C5Pmv",
-   "symbol": "KOTH",
-   "opened_at": 1791563797,
-   "entry": 4.765e-06,
-   "peak": 4.765e-06,
-   "last": 4.718e-06,
-   "price_24h": 4.018e-06,
-   "wallet_buy_usd": 162.53,
-   "closed_at": 1791594426,
-   "exit": 4.018e-06,
-   "reason": "wallet sold",
-   "returns": {
-    "mirror": 0.8098,
-    "tp2x_half": 0.8098,
-    "hold_24h": 0.8098
    }
   }
  ]
