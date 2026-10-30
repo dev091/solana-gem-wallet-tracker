@@ -2,19 +2,6 @@
  "open": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 82)",
-   "tier": "BOARD",
-   "mint": "8rPbyMKf9aSeo3adtcL4ZDPE2HYtkjzzGdPt5G8Rpump",
-   "symbol": "Capri",
-   "opened_at": 1793220161,
-   "entry": 6.529e-05,
-   "peak": 6.529e-05,
-   "last": 2.593e-06,
-   "price_24h": 2.605e-06,
-   "wallet_buy_usd": 1371.82
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 90)",
    "tier": "BOARD",
    "mint": "7ga6rtE9qSb3wdEiDCpTu2kHqoGVfT52jD8ign1rYTvx",
@@ -22,7 +9,7 @@
    "opened_at": 1793377384,
    "entry": 2.21,
    "peak": 2.21,
-   "last": 2.21,
+   "last": 2.15,
    "price_24h": null,
    "wallet_buy_usd": 33.47
   },
@@ -35,7 +22,7 @@
    "opened_at": 1793377384,
    "entry": 0.0002809,
    "peak": 0.0002809,
-   "last": 0.0002809,
+   "last": 3.502e-08,
    "price_24h": null,
    "wallet_buy_usd": 152.15
   },
@@ -48,9 +35,22 @@
    "opened_at": 1793377384,
    "entry": 92.04,
    "peak": 92.04,
-   "last": 92.04,
+   "last": 89.66,
    "price_24h": null,
    "wallet_buy_usd": 55.44
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 90)",
+   "tier": "BOARD",
+   "mint": "8uBobWMhu6hRUn4jaA4kjcgWCjTxgHwHJtPgBePXpump",
+   "symbol": "TUSK",
+   "opened_at": 1793394034,
+   "entry": 7.293e-05,
+   "peak": 7.293e-05,
+   "last": 7.293e-05,
+   "price_24h": null,
+   "wallet_buy_usd": 1629.48
   }
  ],
  "closed": [
@@ -7990,6 +7990,27 @@
     "mirror": 0.9142,
     "tp2x_half": 0.9142,
     "hold_24h": 0.9356
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 82)",
+   "tier": "BOARD",
+   "mint": "8rPbyMKf9aSeo3adtcL4ZDPE2HYtkjzzGdPt5G8Rpump",
+   "symbol": "Capri",
+   "opened_at": 1793220161,
+   "entry": 6.529e-05,
+   "peak": 6.529e-05,
+   "last": 2.593e-06,
+   "price_24h": 2.605e-06,
+   "wallet_buy_usd": 1371.82,
+   "closed_at": 1793394034,
+   "exit": 2.593e-06,
+   "reason": "48h limit",
+   "returns": {
+    "mirror": 0.0381,
+    "tp2x_half": 0.0381,
+    "hold_24h": 0.0383
    }
   }
  ]
