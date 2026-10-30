@@ -4,51 +4,12 @@
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 82)",
    "tier": "BOARD",
-   "mint": "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB",
-   "symbol": "TSLAx",
-   "opened_at": 1793177888,
-   "entry": 409.24,
-   "peak": 409.24,
-   "last": 395.61,
-   "price_24h": 402.045,
-   "wallet_buy_usd": 63.52
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 82)",
-   "tier": "BOARD",
-   "mint": "AqmPAcCeriGA6TAq2ZUsowAeWcktZ7VVrYsjAA1zpump",
-   "symbol": "HALLOWIN",
-   "opened_at": 1793177888,
-   "entry": 0.0001524,
-   "peak": 0.0002003,
-   "last": 0.0001302,
-   "price_24h": 0.0001401,
-   "wallet_buy_usd": 33.53
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 82)",
-   "tier": "BOARD",
-   "mint": "4veRZzp7e6tT6FxKL81CZpHPVZrgjj2LUh8FFf6mpump",
-   "symbol": "Robotaxi",
-   "opened_at": 1793177888,
-   "entry": 3.584e-05,
-   "peak": 3.584e-05,
-   "last": 9.091e-06,
-   "price_24h": 1.038e-05,
-   "wallet_buy_usd": 55.58
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 82)",
-   "tier": "BOARD",
    "mint": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs",
    "symbol": "WETH",
    "opened_at": 1793220161,
    "entry": 2351.3,
    "peak": 2356.49,
-   "last": 2215.81,
+   "last": 2230.13,
    "price_24h": 2290.54,
    "wallet_buy_usd": 96.6
   },
@@ -7919,6 +7880,69 @@
     "mirror": 1.0718,
     "tp2x_half": 1.0718,
     "hold_24h": 1.0882
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 82)",
+   "tier": "BOARD",
+   "mint": "XsDoVfqeBukxuZHWhdvWHBhgEHjGNst4MLodqsJHzoB",
+   "symbol": "TSLAx",
+   "opened_at": 1793177888,
+   "entry": 409.24,
+   "peak": 409.24,
+   "last": 393.78,
+   "price_24h": 402.045,
+   "wallet_buy_usd": 63.52,
+   "closed_at": 1793353681,
+   "exit": 393.78,
+   "reason": "48h limit",
+   "returns": {
+    "mirror": 0.9241,
+    "tp2x_half": 0.9241,
+    "hold_24h": 0.9435
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 82)",
+   "tier": "BOARD",
+   "mint": "AqmPAcCeriGA6TAq2ZUsowAeWcktZ7VVrYsjAA1zpump",
+   "symbol": "HALLOWIN",
+   "opened_at": 1793177888,
+   "entry": 0.0001524,
+   "peak": 0.0002003,
+   "last": 0.0001288,
+   "price_24h": 0.0001401,
+   "wallet_buy_usd": 33.53,
+   "closed_at": 1793353681,
+   "exit": 0.0001288,
+   "reason": "48h limit",
+   "returns": {
+    "mirror": 0.8117,
+    "tp2x_half": 0.8117,
+    "hold_24h": 0.8829
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 82)",
+   "tier": "BOARD",
+   "mint": "4veRZzp7e6tT6FxKL81CZpHPVZrgjj2LUh8FFf6mpump",
+   "symbol": "Robotaxi",
+   "opened_at": 1793177888,
+   "entry": 3.584e-05,
+   "peak": 3.584e-05,
+   "last": 8.181e-06,
+   "price_24h": 1.038e-05,
+   "wallet_buy_usd": 55.58,
+   "closed_at": 1793353681,
+   "exit": 8.181e-06,
+   "reason": "48h limit",
+   "returns": {
+    "mirror": 0.2192,
+    "tp2x_half": 0.2192,
+    "hold_24h": 0.2782
    }
   }
  ]
