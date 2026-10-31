@@ -1,5 +1,5 @@
 {
- "updated_at": 1793450145,
+ "updated_at": 1793479310,
  "mode": "holdings",
  "tracked": [
   {
@@ -27,6 +27,12 @@
    "gems": 0
   },
   {
+   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
+   "label": "consistent Limfork.eth (score 69)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
    "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
    "label": "consistent allglorybetogod (score 68)",
    "tier": "BOARD",
@@ -35,12 +41,6 @@
   {
    "wallet": "GeUnv1jmtviRbR7Gu1JnXSGkUMUgFVBHuEVQVpTaUX1W",
    "label": "consistent Gladey (score 68)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 68)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -82,7 +82,7 @@
   },
   {
    "wallet": "2QrfK8gf3vBcFfuaCJbFxGk3w1JxwjamGE9aGwdQHFas",
-   "label": "consistent Thokani (score 59)",
+   "label": "consistent Thokani (score 60)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -95,18 +95,6 @@
   {
    "wallet": "9oZ8EiqmiqVWr2e4J3p6JqVZwtrEJDAXpUWKj7rZyBg5",
    "label": "small-money winner RuneArcMiley",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "35EbJGJfcHAbmNqZSLeMjhZ8Cwf1frWfhgwv2icRsDAR",
-   "label": "small-money winner kreo",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "2Rr1zZUsoRZvAxazrWW6VEx4Nj8yVozwakv4qEyov878",
-   "label": "small-money winner RubeusHagrid",
    "tier": "BOARD",
    "gems": 0
   }
