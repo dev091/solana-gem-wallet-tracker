@@ -1,27 +1,27 @@
 {
- "updated_at": 1793406812,
+ "updated_at": 1793427295,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
  "summary": {
   "overall": {
-   "trades": 379,
+   "trades": 380,
    "mirror": {
-    "pnl_usd": -512.88,
+    "pnl_usd": -518.87,
     "win_rate": 0.166,
     "avg_return_pct": -6.8,
     "best_x": 20.33
    },
    "tp2x_half": {
-    "pnl_usd": -722.58,
-    "win_rate": 0.172,
-    "avg_return_pct": -9.5,
+    "pnl_usd": -728.57,
+    "win_rate": 0.171,
+    "avg_return_pct": -9.6,
     "best_x": 11.13
    },
    "hold_24h": {
-    "pnl_usd": -805.27,
+    "pnl_usd": -811.26,
     "win_rate": 0.166,
-    "avg_return_pct": -10.6,
+    "avg_return_pct": -10.7,
     "best_x": 9.67
    }
   },
@@ -579,27 +579,27 @@
     "tier": "BOARD"
    },
    {
-    "trades": 87,
+    "trades": 88,
     "mirror": {
-     "pnl_usd": -310.79,
-     "win_rate": 0.149,
-     "avg_return_pct": -17.9,
+     "pnl_usd": -316.79,
+     "win_rate": 0.148,
+     "avg_return_pct": -18.0,
      "best_x": 1.88
     },
     "tp2x_half": {
-     "pnl_usd": -310.79,
-     "win_rate": 0.149,
-     "avg_return_pct": -17.9,
+     "pnl_usd": -316.79,
+     "win_rate": 0.148,
+     "avg_return_pct": -18.0,
      "best_x": 1.88
     },
     "hold_24h": {
-     "pnl_usd": -321.46,
-     "win_rate": 0.138,
-     "avg_return_pct": -18.5,
+     "pnl_usd": -327.45,
+     "win_rate": 0.136,
+     "avg_return_pct": -18.6,
      "best_x": 1.88
     },
     "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-    "label": "consistent decu (score 82)",
+    "label": "consistent decu (score 90)",
     "tier": "BOARD"
    }
   ]
@@ -607,16 +607,16 @@
  "open": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 90)",
+   "label": "consistent decu (score 94)",
    "tier": "BOARD",
-   "mint": "8uBobWMhu6hRUn4jaA4kjcgWCjTxgHwHJtPgBePXpump",
-   "symbol": "TUSK",
-   "opened_at": 1793394034,
-   "entry": 7.293e-05,
-   "peak": 7.293e-05,
-   "last": 7.13e-05,
+   "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+   "symbol": "PUMP",
+   "opened_at": 1793427295,
+   "entry": 0.004097,
+   "peak": 0.004097,
+   "last": 0.004097,
    "price_24h": null,
-   "wallet_buy_usd": 1629.48
+   "wallet_buy_usd": 26.99
   },
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -627,7 +627,7 @@
    "opened_at": 1793377384,
    "entry": 2.21,
    "peak": 2.21,
-   "last": 2.0061,
+   "last": 1.98,
    "price_24h": null,
    "wallet_buy_usd": 33.47
   },
@@ -640,7 +640,7 @@
    "opened_at": 1793377384,
    "entry": 0.0002809,
    "peak": 0.0002809,
-   "last": 4.601e-08,
+   "last": 2.864e-08,
    "price_24h": null,
    "wallet_buy_usd": 152.15
   },
@@ -653,12 +653,33 @@
    "opened_at": 1793377384,
    "entry": 92.04,
    "peak": 92.04,
-   "last": 89.42,
+   "last": 87.99,
    "price_24h": null,
    "wallet_buy_usd": 55.44
   }
  ],
  "closed": [
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 90)",
+   "tier": "BOARD",
+   "mint": "8uBobWMhu6hRUn4jaA4kjcgWCjTxgHwHJtPgBePXpump",
+   "symbol": "TUSK",
+   "opened_at": 1793394034,
+   "entry": 7.293e-05,
+   "peak": 7.293e-05,
+   "last": 7.13e-05,
+   "price_24h": 5.318e-05,
+   "wallet_buy_usd": 1629.48,
+   "closed_at": 1793427295,
+   "exit": 5.318e-05,
+   "reason": "wallet sold",
+   "returns": {
+    "mirror": 0.7003,
+    "tp2x_half": 0.7003,
+    "hold_24h": 0.7003
+   }
+  },
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 82)",
@@ -6936,27 +6957,6 @@
     "mirror": 0.7376,
     "tp2x_half": 0.7376,
     "hold_24h": 0.7376
-   }
-  },
-  {
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "mint": "7PfMobUVu3MV5q63JuSS8Er7SEjYoiuoKP1AdBn9pump",
-   "symbol": "Oscar",
-   "opened_at": 1791580713,
-   "entry": 3.728e-06,
-   "peak": 3.728e-06,
-   "last": 3.728e-06,
-   "price_24h": 3.147e-06,
-   "wallet_buy_usd": 129.5,
-   "closed_at": 1791594426,
-   "exit": 3.147e-06,
-   "reason": "wallet sold",
-   "returns": {
-    "mirror": 0.8107,
-    "tp2x_half": 0.8107,
-    "hold_24h": 0.8107
    }
   }
  ]
