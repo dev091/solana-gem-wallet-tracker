@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1793533069,
+ "updated_at": 1793553715,
  "mode": "holdings",
  "tracked": [
   {
@@ -28,19 +28,19 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 72)",
+   "label": "consistent Limfork.eth (score 73)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "GeUnv1jmtviRbR7Gu1JnXSGkUMUgFVBHuEVQVpTaUX1W",
-   "label": "consistent Gladey (score 70)",
+   "label": "consistent Gladey (score 71)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
-   "label": "consistent allglorybetogod (score 69)",
+   "label": "consistent milito (score 70)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -88,7 +88,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "ArkdCAPErAo6KdVDTFA32YKnqaD7jfXsESFoyxQzDgnu",
-   "label": "consistent normalseal38782 (score 61)",
+   "label": "consistent normalseal38782 (score 62)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -105,20 +105,14 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "5w2TbEmKfvTmK2qp3eDSKqtPh13LZWi7C6PyMgvbNXHY",
-   "label": "small-money winner HippyXBT",
+   "wallet": "F6zLH4NTngqkHS6RbryjvJhLdH5inkeG4zuT2qyZ84vi",
+   "label": "small-money winner Cryptoqueen_",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "BxtxDR1WyD6Q6Pgqb59Xq2BofPGQHHM1Dckg68ndLdxy",
-   "label": "small-money winner browardqenis",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "2tgpb26STzCXWJvA54VkYvuyFvcPxGN7N2Zeq3Beic4B",
-   "label": "small-money winner bsmokes",
+   "wallet": "GJ5KuGeeZzEukduhcnoLd8iy1qgFgbmuDqXzSfXcqNRT",
+   "label": "small-money winner xBigT",
    "tier": "BOARD",
    "gems": 0
   }
