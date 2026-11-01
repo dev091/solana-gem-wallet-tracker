@@ -1,46 +1,46 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1793479310,
+ "updated_at": 1793508514,
  "mode": "holdings",
  "tracked": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 94)",
+   "label": "consistent decu (score 98)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
-   "label": "consistent trunoest (score 91)",
+   "label": "consistent trunoest (score 94)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 82)",
+   "label": "consistent ban (score 86)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "29yFzeBZgxf5zqrAkKXwgZtQehRf4pL8WbV2nRJikbw8",
-   "label": "consistent throatycrab1008 (score 75)",
+   "label": "consistent throatycrab1008 (score 78)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 69)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
-   "label": "consistent allglorybetogod (score 68)",
+   "label": "consistent Limfork.eth (score 72)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "GeUnv1jmtviRbR7Gu1JnXSGkUMUgFVBHuEVQVpTaUX1W",
-   "label": "consistent Gladey (score 68)",
+   "label": "consistent Gladey (score 70)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
+   "label": "consistent allglorybetogod (score 69)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -52,49 +52,79 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "3VUNtVtjjx5ckUojT7UocJ5fbuAJRsNUXNfTBnPte9vC",
-   "label": "consistent buddhaaaaa (score 64)",
+   "label": "consistent buddhaaaaa (score 66)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
-   "label": "consistent daddychilllll (score 62)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "9LXWa7V3AE15VfBupcx5gDts2ix3Y9NzbcKZKjkkq6hV",
-   "label": "consistent rikz_ (score 62)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
-   "label": "consistent Schoen (score 61)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "F9zT1F46HAoPanR4NC1Yw7TyP8Z9tCavTe48mrzK7aN4",
-   "label": "consistent BraveSmallCub (score 61)",
+   "label": "consistent daddychilllll (score 64)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "2QrfK8gf3vBcFfuaCJbFxGk3w1JxwjamGE9aGwdQHFas",
-   "label": "consistent Thokani (score 60)",
+   "label": "consistent Thokani (score 63)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "9LXWa7V3AE15VfBupcx5gDts2ix3Y9NzbcKZKjkkq6hV",
+   "label": "consistent rikz_ (score 63)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "F9zT1F46HAoPanR4NC1Yw7TyP8Z9tCavTe48mrzK7aN4",
+   "label": "consistent BraveSmallCub (score 63)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
+   "label": "consistent Schoen (score 62)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "ArkdCAPErAo6KdVDTFA32YKnqaD7jfXsESFoyxQzDgnu",
-   "label": "consistent normalseal38782 (score 59)",
+   "label": "consistent normalseal38782 (score 61)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "9vfXDoWdZwXMqSrKzayWyAJyFTKxEkzcm5QjjdEuxfzx",
+   "label": "small-money winner SKATEii",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "9oZ8EiqmiqVWr2e4J3p6JqVZwtrEJDAXpUWKj7rZyBg5",
    "label": "small-money winner RuneArcMiley",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "5w2TbEmKfvTmK2qp3eDSKqtPh13LZWi7C6PyMgvbNXHY",
+   "label": "small-money winner HippyXBT",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "BxtxDR1WyD6Q6Pgqb59Xq2BofPGQHHM1Dckg68ndLdxy",
+   "label": "small-money winner browardqenis",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "F6zLH4NTngqkHS6RbryjvJhLdH5inkeG4zuT2qyZ84vi",
+   "label": "small-money winner Cryptoqueen_",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "2tgpb26STzCXWJvA54VkYvuyFvcPxGN7N2Zeq3Beic4B",
+   "label": "small-money winner bsmokes",
    "tier": "BOARD",
    "gems": 0
   }
