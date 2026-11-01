@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1793508514,
+ "updated_at": 1793533069,
  "mode": "holdings",
  "tracked": [
   {
@@ -45,14 +45,14 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent ogantd (score 66)",
+   "wallet": "3VUNtVtjjx5ckUojT7UocJ5fbuAJRsNUXNfTBnPte9vC",
+   "label": "consistent buddhaaaaa (score 67)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "3VUNtVtjjx5ckUojT7UocJ5fbuAJRsNUXNfTBnPte9vC",
-   "label": "consistent buddhaaaaa (score 66)",
+   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
+   "label": "consistent ogantd (score 66)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -113,12 +113,6 @@ window.GEM_ACTIVITY = {
   {
    "wallet": "BxtxDR1WyD6Q6Pgqb59Xq2BofPGQHHM1Dckg68ndLdxy",
    "label": "small-money winner browardqenis",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "F6zLH4NTngqkHS6RbryjvJhLdH5inkeG4zuT2qyZ84vi",
-   "label": "small-money winner Cryptoqueen_",
    "tier": "BOARD",
    "gems": 0
   },
