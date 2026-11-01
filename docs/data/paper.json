@@ -1,5 +1,5 @@
 {
- "updated_at": 1793553715,
+ "updated_at": 1793568162,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
@@ -614,7 +614,7 @@
    "opened_at": 1793427295,
    "entry": 0.004097,
    "peak": 0.004265,
-   "last": 0.004235,
+   "last": 0.004122,
    "price_24h": 0.004265,
    "wallet_buy_usd": 26.99
   }
