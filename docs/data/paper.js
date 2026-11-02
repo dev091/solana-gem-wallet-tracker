@@ -1,5 +1,5 @@
 window.GEM_PAPER = {
- "updated_at": 1793604385,
+ "updated_at": 1793640411,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,

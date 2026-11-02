@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1793581103,
+ "updated_at": 1793640411,
  "mode": "holdings",
  "tracked": [
   {
@@ -10,7 +10,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
-   "label": "consistent trunoest (score 97)",
+   "label": "consistent trunoest (score 98)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -70,7 +70,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "9LXWa7V3AE15VfBupcx5gDts2ix3Y9NzbcKZKjkkq6hV",
-   "label": "consistent rikz_ (score 65)",
+   "label": "consistent rikz_ (score 66)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -105,32 +105,8 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "5p3vnkpuNvwEypyGrXXLFaotS2aKhqLKRrGmGrWBxDpZ",
-   "label": "small-money winner FomoRoomyKraken",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "9oZ8EiqmiqVWr2e4J3p6JqVZwtrEJDAXpUWKj7rZyBg5",
-   "label": "small-money winner RuneArcMiley",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
    "wallet": "7QGnGgyxt9F16p2SQ7NQAkXEVPeiTyYjU69AKJ845EJB",
    "label": "small-money winner ceramicc",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "5gicj8rKbNXnoS7dJ1FxR22tcUf7ig4uviJnSJmr8G8o",
-   "label": "small-money winner tiko",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "Fz9hrvo2r95yzLVvt6GvvLUdPwpg4Zf58fegHXryH4su",
-   "label": "small-money winner zenor",
    "tier": "BOARD",
    "gems": 0
   }
