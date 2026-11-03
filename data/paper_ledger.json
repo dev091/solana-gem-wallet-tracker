@@ -9,7 +9,7 @@
    "opened_at": 1793664240,
    "entry": 0.0002809,
    "peak": 0.0002809,
-   "last": 0.0002804,
+   "last": 0.0002809,
    "price_24h": null,
    "wallet_buy_usd": 465.21
   },
@@ -21,10 +21,36 @@
    "symbol": "WBTC",
    "opened_at": 1793664240,
    "entry": 76745.017,
-   "peak": 77322.68,
-   "last": 77322.68,
+   "peak": 77727.11,
+   "last": 77727.11,
    "price_24h": null,
    "wallet_buy_usd": 36.81
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 103)",
+   "tier": "BOARD",
+   "mint": "ysPp2Bt2j2UQu2tZwtSJz7JxyrmQ8GJcNJE5NyDoS5a",
+   "symbol": "MUSK4",
+   "opened_at": 1793738658,
+   "entry": 1.013,
+   "peak": 1.013,
+   "last": 1.013,
+   "price_24h": null,
+   "wallet_buy_usd": 27.62
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 103)",
+   "tier": "BOARD",
+   "mint": "JcPLcB4WN61b2i6cZctiXW2R9AYCAKCQo6tqFVNpump",
+   "symbol": "Pog",
+   "opened_at": 1793738658,
+   "entry": 5.218e-05,
+   "peak": 5.218e-05,
+   "last": 5.218e-05,
+   "price_24h": null,
+   "wallet_buy_usd": 1111.58
   }
  ],
  "closed": [
