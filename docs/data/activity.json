@@ -1,5 +1,5 @@
 {
- "updated_at": 1793664240,
+ "updated_at": 1793687637,
  "mode": "holdings",
  "tracked": [
   {
@@ -94,6 +94,21 @@
   }
  ],
  "events": [
+  {
+   "ts": 1793687318,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 102)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "G1huxQGFiWA6TBU2oqVBvxUVQEb5SskLTt9Zb14dYRk1",
+   "tokens": 672267.2849350004,
+   "usd": 188.5,
+   "symbol": "PARALOOM",
+   "price": 0.0002804,
+   "market_cap": 280455638.0,
+   "liquidity": 1121883.93
+  },
   {
    "ts": 1793663920,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4578,21 +4593,6 @@
    "price": 3.251e-05,
    "market_cap": 30219.0,
    "liquidity": 14077.95
-  },
-  {
-   "ts": 1791580709,
-   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "Djmn3rAeTPnQnvBFsGLqCBGXyqjsqbQotUCAVRkxpump",
-   "tokens": 15064025.133122,
-   "usd": 60.18,
-   "symbol": "CryptoBilis",
-   "price": 3.995e-06,
-   "market_cap": 3995.44,
-   "liquidity": null
   }
  ],
  "consensus": []
