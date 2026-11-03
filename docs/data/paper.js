@@ -1,5 +1,5 @@
 window.GEM_PAPER = {
- "updated_at": 1793640411,
+ "updated_at": 1793664240,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
@@ -604,7 +604,34 @@ window.GEM_PAPER = {
    }
   ]
  },
- "open": [],
+ "open": [
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 102)",
+   "tier": "BOARD",
+   "mint": "G1huxQGFiWA6TBU2oqVBvxUVQEb5SskLTt9Zb14dYRk1",
+   "symbol": "PARALOOM",
+   "opened_at": 1793664240,
+   "entry": 0.0002809,
+   "peak": 0.0002809,
+   "last": 0.0002809,
+   "price_24h": null,
+   "wallet_buy_usd": 465.21
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 102)",
+   "tier": "BOARD",
+   "mint": "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh",
+   "symbol": "WBTC",
+   "opened_at": 1793664240,
+   "entry": 76745.017,
+   "peak": 76745.017,
+   "last": 76745.017,
+   "price_24h": null,
+   "wallet_buy_usd": 36.81
+  }
+ ],
  "closed": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
