@@ -1,22 +1,22 @@
 {
- "updated_at": 1793738658,
+ "updated_at": 1793807135,
  "mode": "holdings",
  "tracked": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 103)",
+   "label": "consistent decu (score 104)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
-   "label": "consistent trunoest (score 99)",
+   "label": "consistent trunoest (score 100)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 90)",
+   "label": "consistent ban (score 91)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -28,7 +28,7 @@
   },
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 76)",
+   "label": "consistent Limfork.eth (score 78)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -94,6 +94,21 @@
   }
  ],
  "events": [
+  {
+   "ts": 1793806816,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 104)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "G1huxQGFiWA6TBU2oqVBvxUVQEb5SskLTt9Zb14dYRk1",
+   "tokens": 1503618.9661949994,
+   "usd": 422.37,
+   "symbol": "PARALOOM",
+   "price": 0.0002809,
+   "market_cap": 280930610.0,
+   "liquidity": 1123783.92
+  },
   {
    "ts": 1793738339,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4578,21 +4593,6 @@
    "price": 6.344e-05,
    "market_cap": 63429.0,
    "liquidity": 41515.31
-  },
-  {
-   "ts": 1791580710,
-   "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
-   "label": "consistent daddychilllll (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "buy",
-   "mint": "BrMHuM7uRbmygmhJMPXQEJxUuJr3xJWqgFoFngvgZHdc",
-   "tokens": 34688514.62677,
-   "usd": 184.58,
-   "symbol": "QEPE",
-   "price": 5.321e-06,
-   "market_cap": 5321.84,
-   "liquidity": null
   }
  ],
  "consensus": []
