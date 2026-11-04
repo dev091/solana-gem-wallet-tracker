@@ -1,5 +1,5 @@
 window.GEM_WALLETS = {
- "generated_at": 1793704625,
+ "generated_at": 1793790167,
  "provider": "rpc",
  "criteria": {
   "entry_min_usd": 100.0,
@@ -69,7 +69,7 @@ window.GEM_WALLETS = {
    "wallet": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #1 slingoor ($81.0k)"
+    "Kolscan daily #1 slingoor ($560.2k)"
    ],
    "sources": [
     "kolscan"
@@ -85,10 +85,10 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "CAPn1yH4oSywsxGU456jfgTrSSUidf9jgeAnHceNUJdw",
+   "wallet": "87rRdssFiTJKY4MGARa4G5vQ31hmR7MxSmhzeaJ5AAxJ",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #2 cap ($13.6k)"
+    "Kolscan daily #2 Dior ($25.2k)"
    ],
    "sources": [
     "kolscan"
@@ -107,7 +107,7 @@ window.GEM_WALLETS = {
    "wallet": "4xY9T1Q7foJzJsJ6YZDSsfp9zkzeZsXnxd45SixduMmr",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #3 zeropnl ($12.5k)"
+    "Kolscan daily #3 zeropnl ($24.3k)"
    ],
    "sources": [
     "kolscan"
@@ -123,10 +123,10 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "9yYya3F5EJoLnBNKW6z4bZvyQytMXzDcpU5D6yYr4jqL",
+   "wallet": "8rvAsDKeAcEjEkiZMug9k8v1y8mW6gQQiMobd89Uy7qR",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #4 Loopierr ($9,366)"
+    "Kolscan daily #4 Casino ($20.5k)"
    ],
    "sources": [
     "kolscan"
@@ -142,10 +142,10 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "3BLjRcxWGtR7WRshJ3hL25U3RjWr5Ud98wMcczQqk4Ei",
+   "wallet": "DAEdBmTPEKM6xkwfzC3d411QUe6coKpkND6UURa4CvHC",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #5 Sebastian ($7,377)"
+    "Kolscan daily #5 Fox 🦊 ($19.9k)"
    ],
    "sources": [
     "kolscan"
@@ -161,10 +161,10 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "EHg5YkU2SZBTvuT87rUsvxArGp3HLeye1fXaSDfuMyaf",
+   "wallet": "FzVQSzj8JJr6WMGqbUHzx2XH1KkrfxRrRPv6WcbbZmND",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #6 TIL ($5,987)"
+    "Kolscan daily #6 bust ($17.8k)"
    ],
    "sources": [
     "kolscan"
@@ -180,10 +180,10 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "wallet": "CAPn1yH4oSywsxGU456jfgTrSSUidf9jgeAnHceNUJdw",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #7 decu ($5,829)"
+    "Kolscan daily #7 cap ($9,926)"
    ],
    "sources": [
     "kolscan"
@@ -199,10 +199,10 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "5B79fMkcFeRTiwm7ehsZsFiKsC7m7n1Bgv9yLxPp9q2X",
+   "wallet": "95TWoKkvv2z85EXBzd2z6NwbxH2f54AvwuCA9x3NoKep",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #8 bandit ($5,102)"
+    "Kolscan daily #8 Killua ($8,018)"
    ],
    "sources": [
     "kolscan"
@@ -218,10 +218,10 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "4cXnf2z85UiZ5cyKsPMEULq1yufAtpkatmX4j4DBZqj2",
+   "wallet": "9iaawVBEsFG35PSwd4PahwT8fYNQe9XYuRdWm872dUqY",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #9 WaiterG ($5,015)"
+    "Kolscan daily #9 Meechie ($7,490)"
    ],
    "sources": [
     "kolscan"
@@ -237,10 +237,10 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "FsG3BaPmRTdSrPaivbgJsFNCCa8cPfkUtk8VLWXkHpHP",
+   "wallet": "3LUfv2u5yzsDtUzPdsSJ7ygPBuqwfycMkjpNreRR2Yww",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #10 Reljoo ($4,367)"
+    "Kolscan daily #10 Domy ($7,070)"
    ],
    "sources": [
     "kolscan"
