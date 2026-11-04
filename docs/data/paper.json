@@ -1,5 +1,5 @@
 {
- "updated_at": 1793754022,
+ "updated_at": 1793776881,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
@@ -614,7 +614,7 @@
    "opened_at": 1793738658,
    "entry": 1.013,
    "peak": 1.013,
-   "last": 1.0027,
+   "last": 0.9854,
    "price_24h": null,
    "wallet_buy_usd": 27.62
   },
@@ -627,7 +627,7 @@
    "opened_at": 1793738658,
    "entry": 5.218e-05,
    "peak": 5.218e-05,
-   "last": 5.391e-06,
+   "last": 3.571e-06,
    "price_24h": null,
    "wallet_buy_usd": 1111.58
   },
@@ -652,8 +652,8 @@
    "symbol": "WBTC",
    "opened_at": 1793664240,
    "entry": 76745.017,
-   "peak": 77727.11,
-   "last": 77121.17,
+   "peak": 77895.38,
+   "last": 77895.38,
    "price_24h": 77121.17,
    "wallet_buy_usd": 36.81
   }
