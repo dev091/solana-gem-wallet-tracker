@@ -1,5 +1,5 @@
 window.GEM_PAPER = {
- "updated_at": 1793807135,
+ "updated_at": 1793828142,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
@@ -607,15 +607,41 @@ window.GEM_PAPER = {
  "open": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 104)",
+   "tier": "BOARD",
+   "mint": "2pdaLHt8451o3abCE8SCFgzJxn6LyT9W6gQodSi9fHnF",
+   "symbol": "2pda…fHnF",
+   "opened_at": 1793828142,
+   "entry": 1.3744206909805898e-05,
+   "peak": 1.3744206909805898e-05,
+   "last": 1.3744206909805898e-05,
+   "price_24h": null,
+   "wallet_buy_usd": 226.74
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 104)",
+   "tier": "BOARD",
+   "mint": "ERs7y4nMGLFVmHcXyDxiS7iDKpp4jWHz2VUuE2gxpump",
+   "symbol": "ABTC",
+   "opened_at": 1793828142,
+   "entry": 0.0002907,
+   "peak": 0.0002907,
+   "last": 0.0002907,
+   "price_24h": null,
+   "wallet_buy_usd": 2567.42
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 103)",
    "tier": "BOARD",
    "mint": "ysPp2Bt2j2UQu2tZwtSJz7JxyrmQ8GJcNJE5NyDoS5a",
    "symbol": "MUSK4",
    "opened_at": 1793738658,
    "entry": 1.013,
-   "peak": 1.013,
-   "last": 1.012,
-   "price_24h": null,
+   "peak": 1.016,
+   "last": 1.016,
+   "price_24h": 1.016,
    "wallet_buy_usd": 27.62
   },
   {
@@ -627,8 +653,8 @@ window.GEM_PAPER = {
    "opened_at": 1793738658,
    "entry": 5.218e-05,
    "peak": 5.218e-05,
-   "last": 2.794e-06,
-   "price_24h": null,
+   "last": 2.486e-06,
+   "price_24h": 2.486e-06,
    "wallet_buy_usd": 1111.58
   },
   {
@@ -653,7 +679,7 @@ window.GEM_PAPER = {
    "opened_at": 1793664240,
    "entry": 76745.017,
    "peak": 80680.96,
-   "last": 80680.96,
+   "last": 80025.07,
    "price_24h": 77121.17,
    "wallet_buy_usd": 36.81
   }
