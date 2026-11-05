@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1793828142,
+ "updated_at": 1793843645,
  "mode": "holdings",
  "tracked": [
   {
@@ -51,14 +51,14 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
-   "label": "consistent daddychilllll (score 68)",
+   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
+   "label": "consistent OGAntD (score 68)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent OGAntD (score 67)",
+   "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
+   "label": "consistent daddychilllll (score 68)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -94,6 +94,21 @@ window.GEM_ACTIVITY = {
   }
  ],
  "events": [
+  {
+   "ts": 1793843326,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 104)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "2pdaLHt8451o3abCE8SCFgzJxn6LyT9W6gQodSi9fHnF",
+   "tokens": 16497054.674277,
+   "usd": 164.76,
+   "symbol": "2pda…fHnF",
+   "price": 9.987301087121865e-06,
+   "market_cap": null,
+   "liquidity": null
+  },
   {
    "ts": 1793827820,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4577,21 +4592,6 @@ window.GEM_ACTIVITY = {
    "symbol": "THERION",
    "price": 5.699e-06,
    "market_cap": 5699.34,
-   "liquidity": null
-  },
-  {
-   "ts": 1791580711,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "buy",
-   "mint": "Cf8HB1HN6QpbDszgbUCpdLbBkjtfXrrU3pv6YQWYWjUW",
-   "tokens": 35757516.892388,
-   "usd": 150.9,
-   "symbol": "LCAT",
-   "price": 4.22e-06,
-   "market_cap": 4220.57,
    "liquidity": null
   }
  ],
