@@ -1,5 +1,5 @@
 window.GEM_PAPER = {
- "updated_at": 1793869595,
+ "updated_at": 1793899801,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
@@ -613,8 +613,8 @@ window.GEM_PAPER = {
    "symbol": "ABTC",
    "opened_at": 1793828142,
    "entry": 0.0002907,
-   "peak": 0.0005174,
-   "last": 0.0005174,
+   "peak": 0.0007488,
+   "last": 0.0007488,
    "price_24h": null,
    "wallet_buy_usd": 2567.42
   },
@@ -627,7 +627,7 @@ window.GEM_PAPER = {
    "opened_at": 1793738658,
    "entry": 1.013,
    "peak": 1.016,
-   "last": 1.016,
+   "last": 0.9559,
    "price_24h": 1.016,
    "wallet_buy_usd": 27.62
   },
@@ -640,7 +640,7 @@ window.GEM_PAPER = {
    "opened_at": 1793738658,
    "entry": 5.218e-05,
    "peak": 5.218e-05,
-   "last": 2.511e-06,
+   "last": 2.162e-06,
    "price_24h": 2.486e-06,
    "wallet_buy_usd": 1111.58
   }
