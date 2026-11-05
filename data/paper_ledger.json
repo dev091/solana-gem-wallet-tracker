@@ -2,32 +2,6 @@
  "open": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 103)",
-   "tier": "BOARD",
-   "mint": "ysPp2Bt2j2UQu2tZwtSJz7JxyrmQ8GJcNJE5NyDoS5a",
-   "symbol": "MUSK4",
-   "opened_at": 1793738658,
-   "entry": 1.013,
-   "peak": 1.016,
-   "last": 0.9559,
-   "price_24h": 1.016,
-   "wallet_buy_usd": 27.62
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 103)",
-   "tier": "BOARD",
-   "mint": "JcPLcB4WN61b2i6cZctiXW2R9AYCAKCQo6tqFVNpump",
-   "symbol": "Pog",
-   "opened_at": 1793738658,
-   "entry": 5.218e-05,
-   "peak": 5.218e-05,
-   "last": 2.162e-06,
-   "price_24h": 2.486e-06,
-   "wallet_buy_usd": 1111.58
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 104)",
    "tier": "BOARD",
    "mint": "ERs7y4nMGLFVmHcXyDxiS7iDKpp4jWHz2VUuE2gxpump",
@@ -35,8 +9,8 @@
    "opened_at": 1793828142,
    "entry": 0.0002907,
    "peak": 0.0007488,
-   "last": 0.0007488,
-   "price_24h": null,
+   "last": 0.0006122,
+   "price_24h": 0.0006122,
    "wallet_buy_usd": 2567.42
   }
  ],
@@ -8166,6 +8140,48 @@
     "mirror": 1.0113,
     "tp2x_half": 1.0113,
     "hold_24h": 0.9651
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 103)",
+   "tier": "BOARD",
+   "mint": "ysPp2Bt2j2UQu2tZwtSJz7JxyrmQ8GJcNJE5NyDoS5a",
+   "symbol": "MUSK4",
+   "opened_at": 1793738658,
+   "entry": 1.013,
+   "peak": 1.016,
+   "last": 0.9559,
+   "price_24h": 1.016,
+   "wallet_buy_usd": 27.62,
+   "closed_at": 1793919144,
+   "exit": 0.9559,
+   "reason": "48h limit",
+   "returns": {
+    "mirror": 0.9063,
+    "tp2x_half": 0.9063,
+    "hold_24h": 0.9632
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 103)",
+   "tier": "BOARD",
+   "mint": "JcPLcB4WN61b2i6cZctiXW2R9AYCAKCQo6tqFVNpump",
+   "symbol": "Pog",
+   "opened_at": 1793738658,
+   "entry": 5.218e-05,
+   "peak": 5.218e-05,
+   "last": 2.168e-06,
+   "price_24h": 2.486e-06,
+   "wallet_buy_usd": 1111.58,
+   "closed_at": 1793919144,
+   "exit": 2.168e-06,
+   "reason": "48h limit",
+   "returns": {
+    "mirror": 0.0399,
+    "tp2x_half": 0.0399,
+    "hold_24h": 0.0458
    }
   }
  ]
