@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1793963155,
+ "updated_at": 1793988212,
  "mode": "holdings",
  "tracked": [
   {
@@ -28,7 +28,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 79)",
+   "label": "consistent Limfork.eth (score 80)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -94,6 +94,21 @@ window.GEM_ACTIVITY = {
   }
  ],
  "events": [
+  {
+   "ts": 1793987838,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 106)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "ERs7y4nMGLFVmHcXyDxiS7iDKpp4jWHz2VUuE2gxpump",
+   "tokens": 2493018.247593,
+   "usd": 571.4,
+   "symbol": "ABTC",
+   "price": 0.0002292,
+   "market_cap": 219894.0,
+   "liquidity": 39591.7
+  },
   {
    "ts": 1793934792,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4577,21 +4592,6 @@ window.GEM_ACTIVITY = {
    "symbol": "ROUND",
    "price": 4.796e-06,
    "market_cap": 4796.64,
-   "liquidity": null
-  },
-  {
-   "ts": 1791580711,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "buy",
-   "mint": "BTHRkRtLpHZYTjKYj7EGfNDDEN2C18zid4KstzwW9BB6",
-   "tokens": 30428795.93773,
-   "usd": 126.43,
-   "symbol": "Milton",
-   "price": 4.155e-06,
-   "market_cap": 4155.62,
    "liquidity": null
   }
  ],
