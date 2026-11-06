@@ -1,5 +1,5 @@
 {
- "generated_at": 1793877231,
+ "generated_at": 1793963110,
  "provider": "rpc",
  "criteria": {
   "entry_min_usd": 100.0,
@@ -61,200 +61,15 @@
   "scanned": 106,
   "strict": 0,
   "gem_hunter": 0,
-  "rejected": 9,
-  "error": 97
+  "rejected": 1,
+  "error": 105
  },
  "wallets": [
   {
-   "wallet": "H3jGitWGsrMnuvsQcCJoDfS6spJGS4AKguagaa6EnfQX",
+   "wallet": "4adD9hwgveKsfM4zHgLkEBbuPHAZetJDoigzZ6XSi8tk",
    "tier": "REJECTED",
    "labels": [
-    "Fomo top-50 #5 @lesabre ($408.0k PnL, 651 trades) · in-app wallet"
-   ],
-   "sources": [
-    "fomo-top50"
-   ],
-   "gem_hits_in_search": 0,
-   "early_hits_in_search": 0,
-   "stats": {
-    "trades": 0,
-    "judged": 0,
-    "open": 0,
-    "gems": 0,
-    "wins_min_multiple": 0,
-    "losses": 0,
-    "min_multiple": null,
-    "median_multiple": null,
-    "best_multiple": null,
-    "invested_usd": 0,
-    "realized_usd": 0,
-    "gem_profit_usd": 0,
-    "hit_rate": null,
-    "unverified": 0,
-    "tx_count": 2
-   },
-   "reasons": [
-    "0 winning trade(s) (5x+ on verified coins); needs 5"
-   ],
-   "flags": [],
-   "notes": [],
-   "data_source": "rpc",
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "G2wabvFiiUBEAV4rxt5anZXhrTam2pet6Rok22Sm6TYF",
-   "tier": "REJECTED",
-   "labels": [
-    "Fomo top-50 #9 @ThePrimeGreek ($283.0k PnL, 514 trades) · in-app wallet"
-   ],
-   "sources": [
-    "fomo-top50"
-   ],
-   "gem_hits_in_search": 0,
-   "early_hits_in_search": 0,
-   "stats": {
-    "trades": 0,
-    "judged": 0,
-    "open": 0,
-    "gems": 0,
-    "wins_min_multiple": 0,
-    "losses": 0,
-    "min_multiple": null,
-    "median_multiple": null,
-    "best_multiple": null,
-    "invested_usd": 0,
-    "realized_usd": 0,
-    "gem_profit_usd": 0,
-    "hit_rate": null,
-    "unverified": 0,
-    "tx_count": 1
-   },
-   "reasons": [
-    "0 winning trade(s) (5x+ on verified coins); needs 5"
-   ],
-   "flags": [],
-   "notes": [],
-   "data_source": "rpc",
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "BXNGvVv4g8XrQCgskm4J18UBMxxT9Dyo38gjFZhWESTU",
-   "tier": "REJECTED",
-   "labels": [
-    "Fomo top-50 #11 @WaterySimpleBobolink ($275.6k PnL, 77 trades) · in-app wallet"
-   ],
-   "sources": [
-    "fomo-top50"
-   ],
-   "gem_hits_in_search": 0,
-   "early_hits_in_search": 0,
-   "stats": {
-    "trades": 0,
-    "judged": 0,
-    "open": 0,
-    "gems": 0,
-    "wins_min_multiple": 0,
-    "losses": 0,
-    "min_multiple": null,
-    "median_multiple": null,
-    "best_multiple": null,
-    "invested_usd": 0,
-    "realized_usd": 0,
-    "gem_profit_usd": 0,
-    "hit_rate": null,
-    "unverified": 0,
-    "tx_count": 3
-   },
-   "reasons": [
-    "0 winning trade(s) (5x+ on verified coins); needs 5"
-   ],
-   "flags": [],
-   "notes": [],
-   "data_source": "rpc",
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "4WhFtDKcJGLoLAYbQm7iByw5h2sNQTTZF99v4y21T28L",
-   "tier": "REJECTED",
-   "labels": [
-    "Fomo top-50 #12 @remusofmars ($267.9k PnL, 1399 trades) · in-app wallet"
-   ],
-   "sources": [
-    "fomo-top50"
-   ],
-   "gem_hits_in_search": 0,
-   "early_hits_in_search": 0,
-   "stats": {
-    "trades": 0,
-    "judged": 0,
-    "open": 0,
-    "gems": 0,
-    "wins_min_multiple": 0,
-    "losses": 0,
-    "min_multiple": null,
-    "median_multiple": null,
-    "best_multiple": null,
-    "invested_usd": 0,
-    "realized_usd": 0,
-    "gem_profit_usd": 0,
-    "hit_rate": null,
-    "unverified": 0,
-    "tx_count": 2
-   },
-   "reasons": [
-    "0 winning trade(s) (5x+ on verified coins); needs 5"
-   ],
-   "flags": [],
-   "notes": [],
-   "data_source": "rpc",
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "8MrpW1p1qwszV5KnAAdGdcXZvH9yibXz5jEGREdPiVyT",
-   "tier": "REJECTED",
-   "labels": [
-    "Fomo top-50 #18 @thebtcgoose ($201.3k PnL, 692 trades) · in-app wallet"
-   ],
-   "sources": [
-    "fomo-top50"
-   ],
-   "gem_hits_in_search": 0,
-   "early_hits_in_search": 0,
-   "stats": {
-    "trades": 0,
-    "judged": 0,
-    "open": 0,
-    "gems": 0,
-    "wins_min_multiple": 0,
-    "losses": 0,
-    "min_multiple": null,
-    "median_multiple": null,
-    "best_multiple": null,
-    "invested_usd": 0,
-    "realized_usd": 0,
-    "gem_profit_usd": 0,
-    "hit_rate": null,
-    "unverified": 0,
-    "tx_count": 1
-   },
-   "reasons": [
-    "0 winning trade(s) (5x+ on verified coins); needs 5"
-   ],
-   "flags": [],
-   "notes": [],
-   "data_source": "rpc",
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "6H8A751gYi8TCrHTGCyEvGeW66ymhCzir2ATuutQFsK8",
-   "tier": "REJECTED",
-   "labels": [
-    "Fomo top-50 #26 @notwashed ($154.7k PnL, 288 trades) · in-app wallet"
+    "Fomo top-50 #29 @pxblocito ($145.0k PnL, 245 trades) · in-app wallet"
    ],
    "sources": [
     "fomo-top50"
@@ -288,121 +103,10 @@
    "trades": []
   },
   {
-   "wallet": "8Z29CzwUewr5YQgANfDBXjPo87BqphbtTU5Xu3TywyX",
-   "tier": "REJECTED",
-   "labels": [
-    "Fomo top-50 #38 @scalps ($123.3k PnL, 788 trades) · in-app wallet"
-   ],
-   "sources": [
-    "fomo-top50"
-   ],
-   "gem_hits_in_search": 0,
-   "early_hits_in_search": 0,
-   "stats": {
-    "trades": 0,
-    "judged": 0,
-    "open": 0,
-    "gems": 0,
-    "wins_min_multiple": 0,
-    "losses": 0,
-    "min_multiple": null,
-    "median_multiple": null,
-    "best_multiple": null,
-    "invested_usd": 0,
-    "realized_usd": 0,
-    "gem_profit_usd": 0,
-    "hit_rate": null,
-    "unverified": 0,
-    "tx_count": 0
-   },
-   "reasons": [
-    "0 winning trade(s) (5x+ on verified coins); needs 5"
-   ],
-   "flags": [],
-   "notes": [],
-   "data_source": "rpc",
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "3FyBTtWvhzG5p1HuTDYUEFGu7eNCZAHvvRPweXWcZsiw",
-   "tier": "REJECTED",
-   "labels": [
-    "Fomo top-50 #49 @astaso1 ($103.1k PnL, 376 trades) · in-app wallet"
-   ],
-   "sources": [
-    "fomo-top50"
-   ],
-   "gem_hits_in_search": 0,
-   "early_hits_in_search": 0,
-   "stats": {
-    "trades": 0,
-    "judged": 0,
-    "open": 0,
-    "gems": 0,
-    "wins_min_multiple": 0,
-    "losses": 0,
-    "min_multiple": null,
-    "median_multiple": null,
-    "best_multiple": null,
-    "invested_usd": 0,
-    "realized_usd": 0,
-    "gem_profit_usd": 0,
-    "hit_rate": null,
-    "unverified": 0,
-    "tx_count": 0
-   },
-   "reasons": [
-    "0 winning trade(s) (5x+ on verified coins); needs 5"
-   ],
-   "flags": [],
-   "notes": [],
-   "data_source": "rpc",
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "yxkweHEpJgAacQq7vNuU9WaC1SgV26ywAwrBZo5Qzik",
-   "tier": "REJECTED",
-   "labels": [
-    "Fomo top-50 #50 @ZeMirch ($102.9k PnL, 400 trades) · in-app wallet"
-   ],
-   "sources": [
-    "fomo-top50"
-   ],
-   "gem_hits_in_search": 0,
-   "early_hits_in_search": 0,
-   "stats": {
-    "trades": 0,
-    "judged": 0,
-    "open": 0,
-    "gems": 0,
-    "wins_min_multiple": 0,
-    "losses": 0,
-    "min_multiple": null,
-    "median_multiple": null,
-    "best_multiple": null,
-    "invested_usd": 0,
-    "realized_usd": 0,
-    "gem_profit_usd": 0,
-    "hit_rate": null,
-    "unverified": 0,
-    "tx_count": 0
-   },
-   "reasons": [
-    "0 winning trade(s) (5x+ on verified coins); needs 5"
-   ],
-   "flags": [],
-   "notes": [],
-   "data_source": "rpc",
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #1 slingoor ($46.4k)"
+    "Kolscan daily #1 Schoen ($11.9k)"
    ],
    "sources": [
     "kolscan"
@@ -418,10 +122,10 @@
    "trades": []
   },
   {
-   "wallet": "4xY9T1Q7foJzJsJ6YZDSsfp9zkzeZsXnxd45SixduMmr",
+   "wallet": "G6fUXjMKPJzCY1rveAE6Qm7wy5U3vZgKDJmN1VPAdiZC",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #2 zeropnl ($17.2k)"
+    "Kolscan daily #2 clukz ($8,295)"
    ],
    "sources": [
     "kolscan"
@@ -437,10 +141,10 @@
    "trades": []
   },
   {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "wallet": "sAdNbe1cKNMDqDsa4npB3TfL62T14uAo2MsUQfLvzLT",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #3 decu ($11.6k)"
+    "Kolscan daily #3 Ethan Prosper ($5,183)"
    ],
    "sources": [
     "kolscan"
@@ -456,29 +160,10 @@
    "trades": []
   },
   {
-   "wallet": "CAPn1yH4oSywsxGU456jfgTrSSUidf9jgeAnHceNUJdw",
+   "wallet": "8AtQ4ka3dgtrH1z4Uq3Tm4YdMN3cK5RRj1eKuGNnvenm",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #4 cap ($10.7k)"
-   ],
-   "sources": [
-    "kolscan"
-   ],
-   "gem_hits_in_search": 0,
-   "stats": {},
-   "reasons": [
-    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
-   ],
-   "flags": [],
-   "notes": [],
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "CyaE1VxvBrahnPWkqm5VsdCvyS2QmNht2UFrKJHga54o",
-   "tier": "ERROR",
-   "labels": [
-    "Kolscan daily #5 Cented ($7,116)"
+    "Kolscan daily #4 peacefuldestroy ($4,880)"
    ],
    "sources": [
     "kolscan"
@@ -497,7 +182,7 @@
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #6 trunoest ($6,511)"
+    "Kolscan daily #5 trunoest ($4,807)"
    ],
    "sources": [
     "kolscan"
@@ -513,10 +198,10 @@
    "trades": []
   },
   {
-   "wallet": "j38fhfqWsJyt8hzym48P8QMsXWx1FfLUxQwuor7Ti4o",
+   "wallet": "FzVQSzj8JJr6WMGqbUHzx2XH1KkrfxRrRPv6WcbbZmND",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #7 Nilla ($5,901)"
+    "Kolscan daily #6 DustNukes ($4,683)"
    ],
    "sources": [
     "kolscan"
@@ -532,10 +217,10 @@
    "trades": []
   },
   {
-   "wallet": "ALauG4FwEYDgSXd5Hen6kvuWSCdUi2fYNSNqM1Ci31wE",
+   "wallet": "862TYSvRYoiHAK3F3WwTRYAfuGiQaGdxedN9AGvRGWo2",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #8 Thurston (zapped arc) ($5,838)"
+    "Kolscan daily #7 Wugi ($4,649)"
    ],
    "sources": [
     "kolscan"
@@ -551,10 +236,10 @@
    "trades": []
   },
   {
-   "wallet": "4BdKaxN8G6ka4GYtQQWk4G4dZRUTX2vQH9GcXdBREFUk",
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #9 Jijo ($5,798)"
+    "Kolscan daily #8 decu ($4,476)"
    ],
    "sources": [
     "kolscan"
@@ -570,10 +255,29 @@
    "trades": []
   },
   {
-   "wallet": "3wZ6MfB1DRUvtozvcptvV1qAhQ5FKj3qpZR4Db45G6jk",
+   "wallet": "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #10 B* ($5,623)"
+    "Kolscan daily #9 West ($4,272)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "78N177fzNJpp8pG49xDv1efYcTMSzo9tPTKEA9mAVkh2",
+   "tier": "ERROR",
+   "labels": [
+    "Kolscan daily #10 Sheep ($4,105)"
    ],
    "sources": [
     "kolscan"
@@ -760,6 +464,25 @@
    "trades": []
   },
   {
+   "wallet": "H3jGitWGsrMnuvsQcCJoDfS6spJGS4AKguagaa6EnfQX",
+   "tier": "ERROR",
+   "labels": [
+    "Fomo top-50 #5 @lesabre ($408.0k PnL, 651 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
    "wallet": "DxM1hfY8FQ8dNGrucuJzhJcF8KRbjk8WBwrgKvQ9spPv",
    "tier": "ERROR",
    "labels": [
@@ -893,6 +616,25 @@
    "trades": []
   },
   {
+   "wallet": "G2wabvFiiUBEAV4rxt5anZXhrTam2pet6Rok22Sm6TYF",
+   "tier": "ERROR",
+   "labels": [
+    "Fomo top-50 #9 @ThePrimeGreek ($283.0k PnL, 514 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
    "wallet": "mDR91ufq4S2uSHa9E2PYL7xg4LwcQXaQFP7YK864a1z",
    "tier": "ERROR",
    "labels": [
@@ -931,10 +673,48 @@
    "trades": []
   },
   {
+   "wallet": "BXNGvVv4g8XrQCgskm4J18UBMxxT9Dyo38gjFZhWESTU",
+   "tier": "ERROR",
+   "labels": [
+    "Fomo top-50 #11 @WaterySimpleBobolink ($275.6k PnL, 77 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
    "wallet": "BCrTEXmWutwPz8qv6w1S5gDbaLnSLpXKM5kSGVWyyfxu",
    "tier": "ERROR",
    "labels": [
     "Fomo top-50 #12 @remusofmars ($267.9k PnL, 1399 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "4WhFtDKcJGLoLAYbQm7iByw5h2sNQTTZF99v4y21T28L",
+   "tier": "ERROR",
+   "labels": [
+    "Fomo top-50 #12 @remusofmars ($267.9k PnL, 1399 trades) · in-app wallet"
    ],
    "sources": [
     "fomo-top50"
@@ -1144,6 +924,25 @@
    "tier": "ERROR",
    "labels": [
     "Fomo top-50 #18 @thebtcgoose ($201.3k PnL, 692 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "8MrpW1p1qwszV5KnAAdGdcXZvH9yibXz5jEGREdPiVyT",
+   "tier": "ERROR",
+   "labels": [
+    "Fomo top-50 #18 @thebtcgoose ($201.3k PnL, 692 trades) · in-app wallet"
    ],
    "sources": [
     "fomo-top50"
@@ -1444,6 +1243,25 @@
    "trades": []
   },
   {
+   "wallet": "6H8A751gYi8TCrHTGCyEvGeW66ymhCzir2ATuutQFsK8",
+   "tier": "ERROR",
+   "labels": [
+    "Fomo top-50 #26 @notwashed ($154.7k PnL, 288 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
    "wallet": "H2QSGECp13sFLJgdTsDtayX3dk18Dm6sQMSQKcew7Xzk",
    "tier": "ERROR",
    "labels": [
@@ -1474,7 +1292,7 @@
    "gem_hits_in_search": 0,
    "stats": {},
    "reasons": [
-    "RpcError: 16/18 getTransaction calls failed, e.g. HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
    ],
    "flags": [],
    "notes": [],
@@ -1524,25 +1342,6 @@
    "tier": "ERROR",
    "labels": [
     "Fomo top-50 #29 @pxblocito ($145.0k PnL, 245 trades)"
-   ],
-   "sources": [
-    "fomo-top50"
-   ],
-   "gem_hits_in_search": 0,
-   "stats": {},
-   "reasons": [
-    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
-   ],
-   "flags": [],
-   "notes": [],
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "4adD9hwgveKsfM4zHgLkEBbuPHAZetJDoigzZ6XSi8tk",
-   "tier": "ERROR",
-   "labels": [
-    "Fomo top-50 #29 @pxblocito ($145.0k PnL, 245 trades) · in-app wallet"
    ],
    "sources": [
     "fomo-top50"
@@ -1847,6 +1646,25 @@
    "tier": "ERROR",
    "labels": [
     "Fomo top-50 #38 @scalps ($123.3k PnL, 788 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "8Z29CzwUewr5YQgANfDBXjPo87BqphbtTU5Xu3TywyX",
+   "tier": "ERROR",
+   "labels": [
+    "Fomo top-50 #38 @scalps ($123.3k PnL, 788 trades) · in-app wallet"
    ],
    "sources": [
     "fomo-top50"
@@ -2223,10 +2041,48 @@
    "trades": []
   },
   {
+   "wallet": "3FyBTtWvhzG5p1HuTDYUEFGu7eNCZAHvvRPweXWcZsiw",
+   "tier": "ERROR",
+   "labels": [
+    "Fomo top-50 #49 @astaso1 ($103.1k PnL, 376 trades) · in-app wallet"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
    "wallet": "316WvHCXTDJSH6PA1BQw4w4Zizky1J73hSRVCFL6U1im",
    "tier": "ERROR",
    "labels": [
     "Fomo top-50 #50 @ZeMirch ($102.9k PnL, 400 trades)"
+   ],
+   "sources": [
+    "fomo-top50"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "yxkweHEpJgAacQq7vNuU9WaC1SgV26ywAwrBZo5Qzik",
+   "tier": "ERROR",
+   "labels": [
+    "Fomo top-50 #50 @ZeMirch ($102.9k PnL, 400 trades) · in-app wallet"
    ],
    "sources": [
     "fomo-top50"

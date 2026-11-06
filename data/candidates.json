@@ -1,5 +1,5 @@
 {
- "generated_at": 1793872321,
+ "generated_at": 1793958293,
  "sources": {
   "seeds": {
    "ok": true,
@@ -45,9 +45,9 @@
  },
  "candidates": [
   {
-   "wallet": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
    "labels": [
-    "Kolscan daily #1 slingoor ($46.4k)"
+    "Kolscan daily #1 Schoen ($11.9k)"
    ],
    "sources": [
     "kolscan"
@@ -56,9 +56,9 @@
    "early_hits": 0
   },
   {
-   "wallet": "4xY9T1Q7foJzJsJ6YZDSsfp9zkzeZsXnxd45SixduMmr",
+   "wallet": "G6fUXjMKPJzCY1rveAE6Qm7wy5U3vZgKDJmN1VPAdiZC",
    "labels": [
-    "Kolscan daily #2 zeropnl ($17.2k)"
+    "Kolscan daily #2 clukz ($8,295)"
    ],
    "sources": [
     "kolscan"
@@ -67,9 +67,9 @@
    "early_hits": 0
   },
   {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "wallet": "sAdNbe1cKNMDqDsa4npB3TfL62T14uAo2MsUQfLvzLT",
    "labels": [
-    "Kolscan daily #3 decu ($11.6k)"
+    "Kolscan daily #3 Ethan Prosper ($5,183)"
    ],
    "sources": [
     "kolscan"
@@ -78,20 +78,9 @@
    "early_hits": 0
   },
   {
-   "wallet": "CAPn1yH4oSywsxGU456jfgTrSSUidf9jgeAnHceNUJdw",
+   "wallet": "8AtQ4ka3dgtrH1z4Uq3Tm4YdMN3cK5RRj1eKuGNnvenm",
    "labels": [
-    "Kolscan daily #4 cap ($10.7k)"
-   ],
-   "sources": [
-    "kolscan"
-   ],
-   "gem_hits": 0,
-   "early_hits": 0
-  },
-  {
-   "wallet": "CyaE1VxvBrahnPWkqm5VsdCvyS2QmNht2UFrKJHga54o",
-   "labels": [
-    "Kolscan daily #5 Cented ($7,116)"
+    "Kolscan daily #4 peacefuldestroy ($4,880)"
    ],
    "sources": [
     "kolscan"
@@ -102,7 +91,7 @@
   {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
    "labels": [
-    "Kolscan daily #6 trunoest ($6,511)"
+    "Kolscan daily #5 trunoest ($4,807)"
    ],
    "sources": [
     "kolscan"
@@ -111,9 +100,9 @@
    "early_hits": 0
   },
   {
-   "wallet": "j38fhfqWsJyt8hzym48P8QMsXWx1FfLUxQwuor7Ti4o",
+   "wallet": "FzVQSzj8JJr6WMGqbUHzx2XH1KkrfxRrRPv6WcbbZmND",
    "labels": [
-    "Kolscan daily #7 Nilla ($5,901)"
+    "Kolscan daily #6 DustNukes ($4,683)"
    ],
    "sources": [
     "kolscan"
@@ -122,9 +111,9 @@
    "early_hits": 0
   },
   {
-   "wallet": "ALauG4FwEYDgSXd5Hen6kvuWSCdUi2fYNSNqM1Ci31wE",
+   "wallet": "862TYSvRYoiHAK3F3WwTRYAfuGiQaGdxedN9AGvRGWo2",
    "labels": [
-    "Kolscan daily #8 Thurston (zapped arc) ($5,838)"
+    "Kolscan daily #7 Wugi ($4,649)"
    ],
    "sources": [
     "kolscan"
@@ -133,9 +122,9 @@
    "early_hits": 0
   },
   {
-   "wallet": "4BdKaxN8G6ka4GYtQQWk4G4dZRUTX2vQH9GcXdBREFUk",
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "labels": [
-    "Kolscan daily #9 Jijo ($5,798)"
+    "Kolscan daily #8 decu ($4,476)"
    ],
    "sources": [
     "kolscan"
@@ -144,9 +133,20 @@
    "early_hits": 0
   },
   {
-   "wallet": "3wZ6MfB1DRUvtozvcptvV1qAhQ5FKj3qpZR4Db45G6jk",
+   "wallet": "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN",
    "labels": [
-    "Kolscan daily #10 B* ($5,623)"
+    "Kolscan daily #9 West ($4,272)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "78N177fzNJpp8pG49xDv1efYcTMSzo9tPTKEA9mAVkh2",
+   "labels": [
+    "Kolscan daily #10 Sheep ($4,105)"
    ],
    "sources": [
     "kolscan"
