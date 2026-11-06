@@ -1,19 +1,5 @@
 {
- "open": [
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 104)",
-   "tier": "BOARD",
-   "mint": "ERs7y4nMGLFVmHcXyDxiS7iDKpp4jWHz2VUuE2gxpump",
-   "symbol": "ABTC",
-   "opened_at": 1793828142,
-   "entry": 0.0002907,
-   "peak": 0.0007488,
-   "last": 0.0006122,
-   "price_24h": 0.0006122,
-   "wallet_buy_usd": 2567.42
-  }
- ],
+ "open": [],
  "closed": [
   {
    "wallet": "FqamE7xrahg7FEWoByrx1o8SeyHt44rpmE6ZQfT7zrve",
@@ -8182,6 +8168,27 @@
     "mirror": 0.0399,
     "tp2x_half": 0.0399,
     "hold_24h": 0.0458
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 104)",
+   "tier": "BOARD",
+   "mint": "ERs7y4nMGLFVmHcXyDxiS7iDKpp4jWHz2VUuE2gxpump",
+   "symbol": "ABTC",
+   "opened_at": 1793828142,
+   "entry": 0.0002907,
+   "peak": 0.0007488,
+   "last": 0.0006122,
+   "price_24h": 0.0006122,
+   "wallet_buy_usd": 2567.42,
+   "closed_at": 1793935111,
+   "exit": 0.0004924,
+   "reason": "wallet sold",
+   "returns": {
+    "mirror": 1.6268,
+    "tp2x_half": 1.7738,
+    "hold_24h": 2.0226
    }
   }
  ]

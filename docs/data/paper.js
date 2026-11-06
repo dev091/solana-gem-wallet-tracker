@@ -1,27 +1,27 @@
 window.GEM_PAPER = {
- "updated_at": 1793919144,
+ "updated_at": 1793935111,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
  "summary": {
   "overall": {
-   "trades": 389,
+   "trades": 390,
    "mirror": {
-    "pnl_usd": -571.76,
-    "win_rate": 0.165,
-    "avg_return_pct": -7.3,
+    "pnl_usd": -559.22,
+    "win_rate": 0.167,
+    "avg_return_pct": -7.2,
     "best_x": 20.33
    },
    "tp2x_half": {
-    "pnl_usd": -781.45,
-    "win_rate": 0.17,
-    "avg_return_pct": -10.0,
+    "pnl_usd": -765.98,
+    "win_rate": 0.172,
+    "avg_return_pct": -9.8,
     "best_x": 11.13
    },
    "hold_24h": {
-    "pnl_usd": -864.15,
-    "win_rate": 0.162,
-    "avg_return_pct": -11.1,
+    "pnl_usd": -843.7,
+    "win_rate": 0.164,
+    "avg_return_pct": -10.8,
     "best_x": 9.67
    }
   },
@@ -579,32 +579,33 @@ window.GEM_PAPER = {
     "tier": "BOARD"
    },
    {
-    "trades": 97,
+    "trades": 98,
     "mirror": {
-     "pnl_usd": -369.67,
-     "win_rate": 0.144,
-     "avg_return_pct": -19.1,
+     "pnl_usd": -357.13,
+     "win_rate": 0.153,
+     "avg_return_pct": -18.2,
      "best_x": 1.88
     },
     "tp2x_half": {
-     "pnl_usd": -369.67,
-     "win_rate": 0.144,
-     "avg_return_pct": -19.1,
+     "pnl_usd": -354.19,
+     "win_rate": 0.153,
+     "avg_return_pct": -18.1,
      "best_x": 1.88
     },
     "hold_24h": {
-     "pnl_usd": -380.34,
-     "win_rate": 0.124,
-     "avg_return_pct": -19.6,
-     "best_x": 1.88
+     "pnl_usd": -359.89,
+     "win_rate": 0.133,
+     "avg_return_pct": -18.4,
+     "best_x": 2.02
     },
     "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-    "label": "consistent decu (score 103)",
+    "label": "consistent decu (score 104)",
     "tier": "BOARD"
    }
   ]
  },
- "open": [
+ "open": [],
+ "closed": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 104)",
@@ -616,10 +617,16 @@ window.GEM_PAPER = {
    "peak": 0.0007488,
    "last": 0.0006122,
    "price_24h": 0.0006122,
-   "wallet_buy_usd": 2567.42
-  }
- ],
- "closed": [
+   "wallet_buy_usd": 2567.42,
+   "closed_at": 1793935111,
+   "exit": 0.0004924,
+   "reason": "wallet sold",
+   "returns": {
+    "mirror": 1.6268,
+    "tp2x_half": 1.7738,
+    "hold_24h": 2.0226
+   }
+  },
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 103)",
@@ -6897,27 +6904,6 @@ window.GEM_PAPER = {
     "mirror": 0.0566,
     "tp2x_half": 0.0566,
     "hold_24h": 0.0888
-   }
-  },
-  {
-   "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 9)",
-   "tier": "BOARD",
-   "mint": "FP3teuUvGShWqeCpTRGK64dM4dSq8Vc7RbdEouVUpump",
-   "symbol": "tidecoin",
-   "opened_at": 1791580713,
-   "entry": 2.509e-05,
-   "peak": 2.509e-05,
-   "last": 2.509e-05,
-   "price_24h": 1.483e-05,
-   "wallet_buy_usd": 255.72,
-   "closed_at": 1791594426,
-   "exit": 1.483e-05,
-   "reason": "wallet sold",
-   "returns": {
-    "mirror": 0.5677,
-    "tp2x_half": 0.5677,
-    "hold_24h": 0.5677
    }
   }
  ]

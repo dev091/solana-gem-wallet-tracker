@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1793869595,
+ "updated_at": 1793935111,
  "mode": "holdings",
  "tracked": [
   {
@@ -75,6 +75,12 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
+   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
+   "label": "consistent Schoen (score 65)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
    "wallet": "ArkdCAPErAo6KdVDTFA32YKnqaD7jfXsESFoyxQzDgnu",
    "label": "consistent normalseal38782 (score 65)",
    "tier": "BOARD",
@@ -85,15 +91,24 @@ window.GEM_ACTIVITY = {
    "label": "consistent BraveSmallCub (score 65)",
    "tier": "BOARD",
    "gems": 0
-  },
-  {
-   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
-   "label": "consistent Schoen (score 64)",
-   "tier": "BOARD",
-   "gems": 0
   }
  ],
  "events": [
+  {
+   "ts": 1793934792,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 105)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "ERs7y4nMGLFVmHcXyDxiS7iDKpp4jWHz2VUuE2gxpump",
+   "tokens": 3713603.7643730002,
+   "usd": 1828.58,
+   "symbol": "ABTC",
+   "price": 0.0004924,
+   "market_cap": 472339.0,
+   "liquidity": 58015.04
+  },
   {
    "ts": 1793843326,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4577,21 +4592,6 @@ window.GEM_ACTIVITY = {
    "symbol": "Milton",
    "price": 4.155e-06,
    "market_cap": 4155.62,
-   "liquidity": null
-  },
-  {
-   "ts": 1791580711,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 9)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "buy",
-   "mint": "DbbKdsajCbLgp1bcGfvTS2y2vMZfVih9KzHDJ3fxpump",
-   "tokens": 32027760.865563,
-   "usd": 182.53,
-   "symbol": "THERION",
-   "price": 5.699e-06,
-   "market_cap": 5699.34,
    "liquidity": null
   }
  ],
