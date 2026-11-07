@@ -1,4 +1,11 @@
 {
- "generated_at": 1793963110,
- "wallets": []
+ "generated_at": 1794048458,
+ "wallets": [
+  {
+   "wallet": "9YmQh3JniNwU4DyreS1cZDYXczS3t1cari7Eg2qePLqe",
+   "tier": "GEM_HUNTER",
+   "label": "early buyer on 2 big coins: GATO early $50, MASK early $89",
+   "gems": 6
+  }
+ ]
 }
