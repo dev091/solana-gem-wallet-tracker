@@ -1,5 +1,5 @@
 {
- "generated_at": 1794046475,
+ "generated_at": 1794133800,
  "sources": {
   "seeds": {
    "ok": true,
@@ -35,7 +35,7 @@
   },
   "verified-early": {
    "ok": true,
-   "wallets": 16,
+   "wallets": 20,
    "coins": 30
   },
   "pump-gems": {
@@ -45,9 +45,9 @@
  },
  "candidates": [
   {
-   "wallet": "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC",
+   "wallet": "omegoMAe1AMY5MFKQQr3JwXVy8F4eCvmBAfcpo8XAfq",
    "labels": [
-    "early buyer on 4 big coins: 1WIN early $52, stORE early $2,303, XFEE early $5,320"
+    "early buyer on 4 big coins: GATO early $66, JEANPHIL early $133, TripleT early $90"
    ],
    "sources": [
     "verified-early"
@@ -56,9 +56,42 @@
    "early_hits": 4
   },
   {
+   "wallet": "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC",
+   "labels": [
+    "early buyer on 3 big coins: 1WIN early $52, stORE early $2,303, RUSH early $177"
+   ],
+   "sources": [
+    "verified-early"
+   ],
+   "gem_hits": 0,
+   "early_hits": 3
+  },
+  {
+   "wallet": "nya666pQkP3PzWxi7JngU3rRMHuc7zbLK8c8wxQ4qpT",
+   "labels": [
+    "early buyer on 3 big coins: Buttcoin early $45, TripleT early $34, EXFIL early $118"
+   ],
+   "sources": [
+    "verified-early"
+   ],
+   "gem_hits": 0,
+   "early_hits": 3
+  },
+  {
    "wallet": "SF9TGdsfTPcA3ZVmPdPtYphgzRg6ZqUY4hnjPgjD1MW",
    "labels": [
-    "early buyer on 3 big coins: Buttcoin early $140, MANIFEST early $43, JEANPHIL early $34"
+    "early buyer on 3 big coins: Buttcoin early $140, JEANPHIL early $34, MANIFEST early $43"
+   ],
+   "sources": [
+    "verified-early"
+   ],
+   "gem_hits": 0,
+   "early_hits": 3
+  },
+  {
+   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
+   "labels": [
+    "early buyer on 3 big coins: JEANPHIL early $183, MANIFEST early $88, EXFIL early $190"
    ],
    "sources": [
     "verified-early"
@@ -133,17 +166,6 @@
    "early_hits": 2
   },
   {
-   "wallet": "omegoMAe1AMY5MFKQQr3JwXVy8F4eCvmBAfcpo8XAfq",
-   "labels": [
-    "early buyer on 2 big coins: GATO early $66, JEANPHIL early $133"
-   ],
-   "sources": [
-    "verified-early"
-   ],
-   "gem_hits": 0,
-   "early_hits": 2
-  },
-  {
    "wallet": "9YmQh3JniNwU4DyreS1cZDYXczS3t1cari7Eg2qePLqe",
    "labels": [
     "early buyer on 2 big coins: GATO early $50, MASK early $89"
@@ -177,9 +199,53 @@
    "early_hits": 2
   },
   {
-   "wallet": "GpMZbSM2GgvTKHJirzeGfMFoaZ8UR2X7F4v8vHTvxFbL",
+   "wallet": "FZU56d9iPqohXM5XBrYYBZLi2UoUnZT4V5Qf2631tEzb",
    "labels": [
-    "early buyer on 2 big coins: HEEBOO early $1,047, PAYAI early $42.2k"
+    "early buyer on 2 big coins: OTC early $132, EXFIL early $159"
+   ],
+   "sources": [
+    "verified-early"
+   ],
+   "gem_hits": 0,
+   "early_hits": 2
+  },
+  {
+   "wallet": "KPEF3xjDBQjdbt32n91KsEQWoL6QQRwN6sWtxdikDJR",
+   "labels": [
+    "early buyer on 2 big coins: Buttcoin early $21, TripleT early $27"
+   ],
+   "sources": [
+    "verified-early"
+   ],
+   "gem_hits": 0,
+   "early_hits": 2
+  },
+  {
+   "wallet": "AmwJToZR4YkawNquDbiUHbZnC2Myq1CLRRryUQ9FBf89",
+   "labels": [
+    "early buyer on 2 big coins: JEANPHIL early $41, EXFIL early $102"
+   ],
+   "sources": [
+    "verified-early"
+   ],
+   "gem_hits": 0,
+   "early_hits": 2
+  },
+  {
+   "wallet": "EwMndgvbgdXuTCvT7bRGX8wPKVevyq7QZNVqWvFqFVsh",
+   "labels": [
+    "early buyer on 2 big coins: JEANPHIL early $56, EXFIL early $74"
+   ],
+   "sources": [
+    "verified-early"
+   ],
+   "gem_hits": 0,
+   "early_hits": 2
+  },
+  {
+   "wallet": "9keCU8mgA23XV8LCgSCJEo4Lspmo9fRBA3MyxJmZKQSp",
+   "labels": [
+    "early buyer on 2 big coins: JEANPHIL early $223, EXFIL early $245"
    ],
    "sources": [
     "verified-early"
@@ -190,51 +256,18 @@
   {
    "wallet": "5i8rFRKn3TEWHTPC9JH7B6QQSNRmBx5TgUGiub1kAbJA",
    "labels": [
-    "early buyer on 2 big coins: MANIFEST early $43, JEANPHIL early $34"
+    "early buyer on 2 big coins: JEANPHIL early $34, MANIFEST early $43"
    ],
    "sources": [
     "verified-early"
    ],
    "gem_hits": 0,
    "early_hits": 2
-  },
-  {
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "labels": [
-    "early buyer on 2 big coins: MANIFEST early $88, JEANPHIL early $183"
-   ],
-   "sources": [
-    "verified-early"
-   ],
-   "gem_hits": 0,
-   "early_hits": 2
-  },
-  {
-   "wallet": "EpTEt8zmLVuqed5AEQMWbi6eaycQht4z8UDYrAws71cq",
-   "labels": [
-    "early buyer on 2 big coins: XFEE early $948, RUSH early $998"
-   ],
-   "sources": [
-    "verified-early"
-   ],
-   "gem_hits": 0,
-   "early_hits": 2
-  },
-  {
-   "wallet": "B9K2wTQcRDLRLhMKFyRh2hPqHrr6VKiCC9yNGpkMUXrh",
-   "labels": [
-    "Kolscan daily #1 Xanse. ($32.5k)"
-   ],
-   "sources": [
-    "kolscan"
-   ],
-   "gem_hits": 0,
-   "early_hits": 0
   },
   {
    "wallet": "G3gZWqrYkNmYFKYCyfRCNtGuxdyuE2wiYKkZpiZn4WSS",
    "labels": [
-    "Kolscan daily #2 Goyim ($28.9k)"
+    "Kolscan daily #1 Goyim ($64.2k)"
    ],
    "sources": [
     "kolscan"
@@ -245,18 +278,7 @@
   {
    "wallet": "95TWoKkvv2z85EXBzd2z6NwbxH2f54AvwuCA9x3NoKep",
    "labels": [
-    "Kolscan daily #3 Killua ($28.1k)"
-   ],
-   "sources": [
-    "kolscan"
-   ],
-   "gem_hits": 0,
-   "early_hits": 0
-  },
-  {
-   "wallet": "6HJetMbdHBuk3mLUainxAPpBpWzDgYbHGTS2TqDAUSX2",
-   "labels": [
-    "Kolscan daily #4 LJC ($15.0k)"
+    "Kolscan daily #2 Killua ($55.9k)"
    ],
    "sources": [
     "kolscan"
@@ -267,7 +289,7 @@
   {
    "wallet": "5t9xBNuDdGTGpjaPTx6hKd7sdRJbvtKS8Mhq6qVbo8Qz",
    "labels": [
-    "Kolscan daily #5 Smokez ($14.0k)"
+    "Kolscan daily #3 Smokez ($36.1k)"
    ],
    "sources": [
     "kolscan"
@@ -276,9 +298,9 @@
    "early_hits": 0
   },
   {
-   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
+   "wallet": "J23qr98GjGJJqKq9CBEnyRhHbmkaVxtTJNNxKu597wsA",
    "labels": [
-    "Kolscan daily #6 Schoen ($9,942)"
+    "Kolscan daily #4 gr3g ($24.0k)"
    ],
    "sources": [
     "kolscan"
@@ -289,7 +311,7 @@
   {
    "wallet": "DfMxre4cKmvogbLrPigxmibVTTQDuzjdXojWzjCXXhzj",
    "labels": [
-    "Kolscan daily #7 Euris ($7,561)"
+    "Kolscan daily #5 Euris ($21.0k)"
    ],
    "sources": [
     "kolscan"
@@ -298,9 +320,9 @@
    "early_hits": 0
   },
   {
-   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
+   "wallet": "4cXnf2z85UiZ5cyKsPMEULq1yufAtpkatmX4j4DBZqj2",
    "labels": [
-    "Kolscan daily #8 Limfork.eth ($6,588)"
+    "Kolscan daily #6 WaiterG ($12.5k)"
    ],
    "sources": [
     "kolscan"
@@ -309,9 +331,9 @@
    "early_hits": 0
   },
   {
-   "wallet": "EjtQrPTbcMevStBkpnjsH23NfUCMhGHusTYsHuGVQZp2",
+   "wallet": "DYAn4XpAkN5mhiXkRB7dGq4Jadnx6XYgu8L5b3WGhbrt",
    "labels": [
-    "Kolscan daily #9 Zef ($5,756)"
+    "Kolscan daily #7 The Doc ($9,024)"
    ],
    "sources": [
     "kolscan"
@@ -320,9 +342,31 @@
    "early_hits": 0
   },
   {
-   "wallet": "J9TYAsWWidbrcZybmLSfrLzryANf4CgJBLdvwdGuC8MB",
+   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
    "labels": [
-    "Kolscan daily #10 Johnson ($4,779)"
+    "Kolscan daily #8 Schoen ($7,431)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
+   "labels": [
+    "Kolscan daily #9 ban ($6,482)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "9tY7u1HgEt2RDcxym3RJ9sfvT3aZStiiUwXd44X9RUr8",
+   "labels": [
+    "Kolscan daily #10 Solana degen ($5,263)"
    ],
    "sources": [
     "kolscan"
