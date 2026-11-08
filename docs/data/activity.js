@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1794094072,
+ "updated_at": 1794105567,
  "mode": "holdings",
  "tracked": [
   {
@@ -10,19 +10,19 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 107)",
+   "label": "consistent decu (score 108)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
-   "label": "consistent trunoest (score 103)",
+   "label": "consistent trunoest (score 104)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 94)",
+   "label": "consistent ban (score 95)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -63,14 +63,14 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
-   "label": "consistent daddychilllll (score 68)",
+   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
+   "label": "consistent Schoen (score 68)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
-   "label": "consistent Schoen (score 67)",
+   "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
+   "label": "consistent daddychilllll (score 68)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -100,6 +100,66 @@ window.GEM_ACTIVITY = {
   }
  ],
  "events": [
+  {
+   "ts": 1794105565,
+   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
+   "label": "consistent Schoen (score 68)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "DXXLf6zptReh2BM46XKRAhwWkEgipqtjSH6mxHedpump",
+   "tokens": 20769478.647157,
+   "usd": 183.75,
+   "symbol": "Kirks",
+   "price": 8.847e-06,
+   "market_cap": 8514.0,
+   "liquidity": 5997.98
+  },
+  {
+   "ts": 1794105564,
+   "wallet": "3VUNtVtjjx5ckUojT7UocJ5fbuAJRsNUXNfTBnPte9vC",
+   "label": "consistent buddhaaaaa (score 69)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "2dsRSbJzMyiGSfoYKHHwP3wwkdiLSc1zzRAzvrtWzevo",
+   "tokens": 49323744.445181,
+   "usd": 235.24,
+   "symbol": "2dsR…zevo",
+   "price": 4.769257839029889e-06,
+   "market_cap": null,
+   "liquidity": null
+  },
+  {
+   "ts": 1794105563,
+   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
+   "label": "consistent Limfork.eth (score 81)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "FUqebvxLEu5WEfzGkwPnQ7rhSjxKizQVk92XF4vLpump",
+   "tokens": 21672142.863134,
+   "usd": 186.42,
+   "symbol": "Roo",
+   "price": 8.602e-06,
+   "market_cap": 8602.54,
+   "liquidity": null
+  },
+  {
+   "ts": 1794105562,
+   "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
+   "label": "consistent ban (score 95)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "8QTBDqUVWQjP6KzfrtLkBKhfaFLDenxvqFv2tDkGdMpu",
+   "tokens": 20714035.599489234,
+   "usd": 100.01,
+   "symbol": "HYMET",
+   "price": 4.8279542701929114e-06,
+   "market_cap": null,
+   "liquidity": null
+  },
   {
    "ts": 1794094071,
    "wallet": "F9zT1F46HAoPanR4NC1Yw7TyP8Z9tCavTe48mrzK7aN4",
@@ -4539,78 +4599,7 @@ window.GEM_ACTIVITY = {
    "price": 3.433e-06,
    "market_cap": 3433.75,
    "liquidity": null
-  },
-  {
-   "ts": 1791594422,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 12)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "6KBDqTzgRPpa6xWeS5nPCxPwZHCRu1C51mV3S9r3pump",
-   "tokens": 35922529.379093,
-   "usd": 2091.77,
-   "symbol": "CAT",
-   "price": 5.823e-05,
-   "market_cap": 58204.0,
-   "liquidity": 19254.64
-  },
-  {
-   "ts": 1791594422,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 12)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "6ENkoLuHjkndTW37NKE188jbcuHUPrJNGAGpcQ2tpump",
-   "tokens": 34248422.238862,
-   "usd": 108.09,
-   "symbol": "Oscar",
-   "price": 3.156e-06,
-   "market_cap": 3156.13,
-   "liquidity": null
-  },
-  {
-   "ts": 1791594422,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 12)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "6rhSyhoDFDthjjBUVyXpFkqcgqShYixDqCJ5nWCueLoN",
-   "tokens": 31399213.638948,
-   "usd": 117.72,
-   "symbol": "FLYELON",
-   "price": 3.749e-06,
-   "market_cap": 3749.02,
-   "liquidity": null
-  },
-  {
-   "ts": 1791594422,
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "label": "consistent itzmemewitz (score 12)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "CnBavRmpGS1rpYkeSn2hkHRWiK8qqjEfbUPcpJns3zn8",
-   "tokens": 16312202.510421,
-   "usd": 83.65,
-   "symbol": "Trenchbot",
-   "price": 5.128e-06,
-   "market_cap": 5128.26,
-   "liquidity": null
   }
  ],
- "consensus": [
-  {
-   "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
-   "symbol": "PUMP",
-   "wallets": [
-    "2QrfK8gf3vBcFfuaCJbFxGk3w1JxwjamGE9aGwdQHFas",
-    "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
-    "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB"
-   ],
-   "last_ts": 1794042984
-  }
- ]
+ "consensus": []
 };
