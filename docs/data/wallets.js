@@ -1,5 +1,5 @@
 window.GEM_WALLETS = {
- "generated_at": 1794135912,
+ "generated_at": 1794225037,
  "provider": "rpc",
  "criteria": {
   "entry_min_usd": 100.0,
@@ -49,7 +49,7 @@ window.GEM_WALLETS = {
   },
   "verified-early": {
    "ok": true,
-   "wallets": 20,
+   "wallets": 21,
    "coins": 30
   },
   "pump-gems": {
@@ -58,10 +58,10 @@ window.GEM_WALLETS = {
   }
  },
  "counts": {
-  "scanned": 126,
+  "scanned": 127,
   "strict": 0,
   "gem_hunter": 1,
-  "rejected": 125,
+  "rejected": 126,
   "error": 0
  },
  "wallets": [
@@ -364,7 +364,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "9ef8bbV2d7kRmCfazikYjDynznesV34DhZoTHnawpump",
-     "symbol": "",
+     "symbol": "PerpScape",
      "cost_usd": 60.36,
      "proceeds_usd": 7.74,
      "value_usd": 0.0,
@@ -374,7 +374,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1790342530,
      "last_trade_ts": 1790342538,
-     "launched_ts": null,
+     "launched_ts": 1790342067,
      "first_buy_sig": "25cNqvm6xUAL5bmSS8xaoWEutu8vX3MHqJTyGDghD3FsZyWRZLQoHTgS22u1bTcVseJmgSHi3mD19Kan5RugQ9LK",
      "verified": false,
      "flags": []
@@ -398,7 +398,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "AotFYJVM4hFQS97MWq6c2KoDgDYWFDCxLF9i8ZCfABPt",
-     "symbol": "SALLY",
+     "symbol": "",
      "cost_usd": 174.73,
      "proceeds_usd": 107.1,
      "value_usd": 0.0,
@@ -408,7 +408,7 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1790322608,
      "last_trade_ts": 1790411487,
-     "launched_ts": 1790185635,
+     "launched_ts": null,
      "first_buy_sig": "2mfqvS3oHowioH7AokszN2aopKdGMAY1McaFTixsHFLTNMr7aTfpfXpWBUHBiY18n3duPtXwp8YYx4kdeivd2pUC",
      "verified": false,
      "flags": []
@@ -1163,7 +1163,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "Pei2zjr4gvb7sPTYRMYbZXYzTE3826k28ehTXCg45EC",
-     "symbol": "SI",
+     "symbol": "",
      "cost_usd": 59.0,
      "proceeds_usd": 23.35,
      "value_usd": 0.0,
@@ -1173,7 +1173,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1790093192,
      "last_trade_ts": 1790094234,
-     "launched_ts": 1790091977,
+     "launched_ts": null,
      "first_buy_sig": "5ePfjyvaHC17mTweodRaarEPHu7iwXJGU2ABivSZfYXXzoEFdALtpczgX1p6EbXgQJdT1SQ522GqSZEr9rRmHJEw",
      "verified": false,
      "flags": []
@@ -1257,7 +1257,7 @@ window.GEM_WALLETS = {
     "gem_profit_usd": 225553.4,
     "hit_rate": 0.038,
     "unverified": 29,
-    "tx_count": 1887
+    "tx_count": 1912
    },
    "reasons": [
     "2 winning trade(s) (5x+ on verified coins); needs 5",
@@ -1313,9 +1313,9 @@ window.GEM_WALLETS = {
      "symbol": "mihao",
      "cost_usd": 2183.29,
      "proceeds_usd": 0.0,
-     "value_usd": 8129.99,
+     "value_usd": 6077.86,
      "profit_usd": -2183.29,
-     "multiple": 3.72,
+     "multiple": 2.78,
      "buys": 2,
      "sells": 0,
      "first_buy_ts": 1793337585,
@@ -1330,9 +1330,9 @@ window.GEM_WALLETS = {
      "symbol": "Pokémon",
      "cost_usd": 15000.0,
      "proceeds_usd": 0.0,
-     "value_usd": 1318.24,
+     "value_usd": 1217.61,
      "profit_usd": -15000.0,
-     "multiple": 0.09,
+     "multiple": 0.08,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1792485679,
@@ -1347,9 +1347,9 @@ window.GEM_WALLETS = {
      "symbol": "CLAWD",
      "cost_usd": 2500.0,
      "proceeds_usd": 0.0,
-     "value_usd": 731.23,
+     "value_usd": 557.83,
      "profit_usd": -2500.0,
-     "multiple": 0.29,
+     "multiple": 0.22,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1792061376,
@@ -1412,7 +1412,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "3HC5wu2PmpSEgXKgS2r7TDCDCg7xsotx32Ym7ubzN1NX",
-     "symbol": "BRAINLET",
+     "symbol": "",
      "cost_usd": 1000.0,
      "proceeds_usd": 1693.84,
      "value_usd": 0.0,
@@ -1422,7 +1422,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1788766250,
      "last_trade_ts": 1788840527,
-     "launched_ts": 1788762469,
+     "launched_ts": null,
      "first_buy_sig": "2vq8am9HKg5APCqmnJHfZAiwG5dKhz3xAZwx4HNMefaxYCshkSJ9eN1BLywcU7PufnF3P9Kn7xyNUCsxedMkLpDG",
      "verified": false,
      "flags": []
@@ -1531,7 +1531,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "C4AYNMP4Hor2fNkLSkatgN8DuLfQRepGJpAVBhHUz5Ak",
-     "symbol": "PERPAD",
+     "symbol": "",
      "cost_usd": 1500.0,
      "proceeds_usd": 1842.49,
      "value_usd": 0.0,
@@ -1541,7 +1541,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1779590733,
      "last_trade_ts": 1779593782,
-     "launched_ts": 1779337128,
+     "launched_ts": null,
      "first_buy_sig": "2v88AzHwuPBBrry9z9nQf4pbAgcvGpVjDkTW5ZLzVn2NDr7wcgHVnWD4kNjm2Jbw59B7mVCLoiKt5tT6hFJ3FBrL",
      "verified": false,
      "flags": []
@@ -1551,9 +1551,9 @@ window.GEM_WALLETS = {
      "symbol": "CJP",
      "cost_usd": 4758.53,
      "proceeds_usd": 0.0,
-     "value_usd": 730.97,
+     "value_usd": 682.79,
      "profit_usd": -4758.53,
-     "multiple": 0.15,
+     "multiple": 0.14,
      "buys": 5,
      "sells": 0,
      "first_buy_ts": 1779457474,
@@ -1602,9 +1602,9 @@ window.GEM_WALLETS = {
      "symbol": "KITTY",
      "cost_usd": 17000.0,
      "proceeds_usd": 32568.21,
-     "value_usd": 7025.79,
+     "value_usd": 6769.62,
      "profit_usd": 15568.21,
-     "multiple": 2.33,
+     "multiple": 2.31,
      "buys": 2,
      "sells": 9,
      "first_buy_ts": 1778166352,
@@ -1873,7 +1873,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "FWGC5ziwYMCT29y913WZSHmkSh7mF4MiddQwEBx5A6XA",
-     "symbol": "",
+     "symbol": "COW",
      "cost_usd": 12940.1,
      "proceeds_usd": 2040.74,
      "value_usd": 0.0,
@@ -1883,7 +1883,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1768718908,
      "last_trade_ts": 1768748214,
-     "launched_ts": null,
+     "launched_ts": 1768504147,
      "first_buy_sig": "2FXh4fZVdYdHpVqzMwUnqmUEv2723AB5B1nAo8HWquzJ8JS49N4di3xHCfykv3PqB8ZBAUvW8ZWt8ZtNRJ8cKMos",
      "verified": false,
      "flags": []
@@ -1924,7 +1924,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump",
-     "symbol": "2016",
+     "symbol": "",
      "cost_usd": 3499.89,
      "proceeds_usd": 4975.38,
      "value_usd": 0.0,
@@ -1934,14 +1934,14 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1768554949,
      "last_trade_ts": 1768653448,
-     "launched_ts": 1755735234,
+     "launched_ts": null,
      "first_buy_sig": "29uwbUw3L3G7UcHf5oVfkfoTj2VJTtYud1HTQMrVbXeUAmEsEyDSw8uwEL6WdjtEhkrEhfSTLkYh7Ka9cgPFyPBJ",
      "verified": false,
      "flags": []
     },
     {
      "mint": "DtKyu1kSzDVxPEN4X44Z34Ma69qUYBq6PD3kBKukpump",
-     "symbol": "localhost",
+     "symbol": "",
      "cost_usd": 3000.0,
      "proceeds_usd": 0.0,
      "value_usd": 0.0,
@@ -1951,7 +1951,7 @@ window.GEM_WALLETS = {
      "sells": 0,
      "first_buy_ts": 1768546444,
      "last_trade_ts": 1770180163,
-     "launched_ts": 1767623741,
+     "launched_ts": null,
      "first_buy_sig": "31kcheErwXPmKhY1dVxtMhwefxKQ5NFCri8WHj7nMKtAeLYZwpKgcNT6Ju3YZhTmzDuMFm3rNP8RrBRidhttwYPm",
      "verified": false,
      "flags": [
@@ -2241,7 +2241,7 @@ window.GEM_WALLETS = {
     "gem_profit_usd": 63703.59,
     "hit_rate": 0.008,
     "unverified": 85,
-    "tx_count": 1520
+    "tx_count": 1521
    },
    "reasons": [
     "1 winning trade(s) (5x+ on verified coins); needs 5",
@@ -2326,7 +2326,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "BXZTSaRAgDtPefLWCaVR4ersTst79FpbPoiztvGgpump",
-     "symbol": "Tschuna",
+     "symbol": "",
      "cost_usd": 800.0,
      "proceeds_usd": 265.59,
      "value_usd": 0.0,
@@ -2336,7 +2336,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1791644104,
      "last_trade_ts": 1791644564,
-     "launched_ts": 1791641280,
+     "launched_ts": null,
      "first_buy_sig": "5PNjiBXe4LjxCtnNimCgMJn4ZCPdozEC23a4kqFRsm78HThDz5RQ82P1cSUmaaaGBowb8mR2uQotTxWPyhP1zKHy",
      "verified": false,
      "flags": []
@@ -2360,7 +2360,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "HLwEJQVzs7SvjXuXpBTRHaLp5S6uWoWTUhLjJxBfy1c7",
-     "symbol": "LAPTOP",
+     "symbol": "",
      "cost_usd": 5000.0,
      "proceeds_usd": 1169.74,
      "value_usd": 0.0,
@@ -2370,7 +2370,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1788792652,
      "last_trade_ts": 1788792720,
-     "launched_ts": 1706568353,
+     "launched_ts": null,
      "first_buy_sig": "4BPTSFN919KkSB9geQ6AVD6hpcWP9w4KzajawXrMw7x37bwM1XwMu8jAFtKnj6BN6g2awo1iTo4zcYXLbva4qgc7",
      "verified": false,
      "flags": []
@@ -2649,7 +2649,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "D1BHW3Tz4ygwwfCGzje9tMAMHz5ScAWm1EZhSTmgpump",
-     "symbol": "",
+     "symbol": "TJR",
      "cost_usd": 2000.0,
      "proceeds_usd": 2473.07,
      "value_usd": 0.0,
@@ -2659,7 +2659,7 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1782669426,
      "last_trade_ts": 1782670911,
-     "launched_ts": null,
+     "launched_ts": 1782656493,
      "first_buy_sig": "3dfLDeDU6dQ4WXTt6etwy56ARFT46VdVv1qijMS6yUGfzq6bySZ25tLcq1Px7gTV9Pdj8t4AKaV6RC3M5YzEZT1r",
      "verified": false,
      "flags": []
@@ -2717,7 +2717,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "w9Fh8VWmytLKo48AbnDf3vVdzN5SzpG6gFwmxeLpump",
-     "symbol": "",
+     "symbol": "GutGenug",
      "cost_usd": 2000.0,
      "proceeds_usd": 1437.74,
      "value_usd": 0.0,
@@ -2727,7 +2727,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1781949209,
      "last_trade_ts": 1782031450,
-     "launched_ts": null,
+     "launched_ts": 1780980463,
      "first_buy_sig": "3mvFXvVsBktoqDCpRY6ap82xsaRShbSA23WsQyLfcqXP33Qvgz8o9rQ2wd1njNoWz5J9dyPNEmKrUhTM6N7jKpBx",
      "verified": false,
      "flags": []
@@ -2751,7 +2751,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "2dJniDEAGCG7zWKseCkyrML3W23WLjDf1CGxpNv3pump",
-     "symbol": "",
+     "symbol": "TURTLE",
      "cost_usd": 2000.0,
      "proceeds_usd": 1943.28,
      "value_usd": 0.0,
@@ -2761,14 +2761,14 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1781458236,
      "last_trade_ts": 1781458303,
-     "launched_ts": null,
+     "launched_ts": 1781366126,
      "first_buy_sig": "3yVNkySxwwNP9jaGhnErjpGtoP3rhu9fQJTLPPxJtnjbrvkKDbTwN4Kp6d5qDaQweGSJWL3Aa3ceHGF2utSKZnn9",
      "verified": false,
      "flags": []
     },
     {
      "mint": "DBYp1sxGP5VhEri6NHPytSTnpx7vQvDguwNxyAWEjupx",
-     "symbol": "",
+     "symbol": "GUM",
      "cost_usd": 500.0,
      "proceeds_usd": 100.86,
      "value_usd": 0.0,
@@ -2778,7 +2778,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1781017740,
      "last_trade_ts": 1781018203,
-     "launched_ts": null,
+     "launched_ts": 1781017448,
      "first_buy_sig": "5ERwEAaw3PTfhKfiPzbhRWBa9BRK8za8uCx9Qz1zVPooR5PRa5LtFDT7pfmeu5Nz11hwAHZYM1DLBtSsLdFAk4PW",
      "verified": false,
      "flags": []
@@ -2819,7 +2819,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "GmshYgy1nqUxw9ooza8UUnTw1rxDKM5t7HP4KSYVpump",
-     "symbol": "",
+     "symbol": "Odysseus\r\n",
      "cost_usd": 6000.0,
      "proceeds_usd": 3154.75,
      "value_usd": 0.0,
@@ -2829,7 +2829,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1780242702,
      "last_trade_ts": 1780245418,
-     "launched_ts": null,
+     "launched_ts": 1780240129,
      "first_buy_sig": "3QXD69LQ8JJaxDSyy9H6MGWUzK4TMJDvuvyHBuw1cXQCzeJvu2tTEK5C8GeeCQJZUHzgLjiinbRnFGiDoDxY557g",
      "verified": false,
      "flags": []
@@ -3006,7 +3006,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "4ZEzC3aX7yLv8VEBiuoT6PgEMPEoxGB7WS3Qt3iPpump",
-     "symbol": "",
+     "symbol": "AGI",
      "cost_usd": 3000.0,
      "proceeds_usd": 3304.95,
      "value_usd": 0.0,
@@ -3016,7 +3016,7 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1778355268,
      "last_trade_ts": 1778355956,
-     "launched_ts": null,
+     "launched_ts": 1778354315,
      "first_buy_sig": "2RsUBcJ7Y82hygZb35ehd1m1zX43WSDgcVMXGjQCKZQManPVwRiphD98EJFC2BEHyUNcfTxdN76pm87ktNeAA3Dk",
      "verified": false,
      "flags": []
@@ -3094,9 +3094,9 @@ window.GEM_WALLETS = {
      "symbol": "CARDS",
      "cost_usd": 122500.0,
      "proceeds_usd": 90044.3,
-     "value_usd": 25885.61,
+     "value_usd": 23712.1,
      "profit_usd": -32455.7,
-     "multiple": 0.95,
+     "multiple": 0.93,
      "buys": 11,
      "sells": 7,
      "first_buy_ts": 1777564322,
@@ -3320,13 +3320,13 @@ window.GEM_WALLETS = {
     "realized_usd": 148513.12,
     "gem_profit_usd": 46884.64,
     "hit_rate": 0.012,
-    "unverified": 50,
+    "unverified": 51,
     "tx_count": 862
    },
    "reasons": [
     "1 winning trade(s) (5x+ on verified coins); needs 5",
     "82 trade(s) under 5x (worst 0.00x)",
-    "50 trade(s) in coins Jupiter has not verified"
+    "51 trade(s) in coins Jupiter has not verified"
    ],
    "flags": [
     "sold $39.2k of coins it never bought (received by transfer): possible insider / dev-linked wallet"
@@ -3408,7 +3408,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "FfpUuXzXcZAg2Lrk9PAd9DKbvvUdPREniyHgXyR6pump",
-     "symbol": "",
+     "symbol": "HIM",
      "cost_usd": 2499.86,
      "proceeds_usd": 671.86,
      "value_usd": 0.0,
@@ -3418,7 +3418,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1782850984,
      "last_trade_ts": 1782901791,
-     "launched_ts": null,
+     "launched_ts": 1782832265,
      "first_buy_sig": "512f6MitZch2ySQhgDFRUrtjiB1tUmbUVYxaEyaB7DVC9zQ5tmYfn7fADMhiDxh4Dzm54Koz6PgJB9KoNZFk3wAd",
      "verified": false,
      "flags": []
@@ -3442,7 +3442,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "A3B7qE7cKH12WhdLCNUeLmprEsYtnFf6eQVV1tgepump",
-     "symbol": "SPONZI",
+     "symbol": "",
      "cost_usd": 699.0,
      "proceeds_usd": 16.36,
      "value_usd": 0.0,
@@ -3452,7 +3452,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1780956489,
      "last_trade_ts": 1781820775,
-     "launched_ts": 1780952114,
+     "launched_ts": null,
      "first_buy_sig": "3xiYkeJE3jyyb2jWJGT71BofYm96ZbTqNrCRiWCjWZDRkcPb9Sc7nV23PRE13S2VHuY8o7FjVzUd56r1FQbRxVcN",
      "verified": false,
      "flags": []
@@ -3476,7 +3476,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "DnnmrZnCTqQn7bYbVAiWdJLreqrhg7HaSTkmhtzu8THy",
-     "symbol": "",
+     "symbol": "GACHA",
      "cost_usd": 28804.0,
      "proceeds_usd": 28636.2,
      "value_usd": 0.0,
@@ -3486,9 +3486,9 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1780266750,
      "last_trade_ts": 1780504538,
-     "launched_ts": null,
+     "launched_ts": 1779833720,
      "first_buy_sig": "458L7AHMf8YeLZEmgEA2Td3k8eBWqgA4jZSvJKPpSPze1ZNoB4Ua9udx8aqgX1kLJtQjhD5AKkSPSfNFiSqJcv6o",
-     "verified": true,
+     "verified": false,
      "flags": []
     },
     {
@@ -3527,7 +3527,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "HxFSWTJE3SeUCgsKJUcuGQYAiH4S4BFEnSoktfKLpump",
-     "symbol": "",
+     "symbol": "ODAI",
      "cost_usd": 2500.0,
      "proceeds_usd": 409.44,
      "value_usd": 0.0,
@@ -3537,7 +3537,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1777274867,
      "last_trade_ts": 1777320245,
-     "launched_ts": null,
+     "launched_ts": 1777268643,
      "first_buy_sig": "4ocfKY5ZMHdQhuuUmN1EXgTwcmGFQcP689jbN9tMRutcmmjpTSDiURu3nYiaL3kqGZLN4kd3egp3xvhMAQfK8txg",
      "verified": false,
      "flags": []
@@ -3629,7 +3629,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "4HhWcsfjaWYKJtjaxd4EyGSAL4Ky8C3DvqAWPHnrpump",
-     "symbol": "",
+     "symbol": "SHAPE",
      "cost_usd": 11206.0,
      "proceeds_usd": 7543.99,
      "value_usd": 0.0,
@@ -3639,7 +3639,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1773098672,
      "last_trade_ts": 1773486193,
-     "launched_ts": null,
+     "launched_ts": 1772504348,
      "first_buy_sig": "3dpPEFvN8R3seGPCbDc2UTzerZ8gnhbUoEC9yTzgxkYAjMLWNZQ6wU1tWiWhP5EfV5BCWz9fvxjrExqh2c4pkfkd",
      "verified": false,
      "flags": []
@@ -3748,7 +3748,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "Ab98dbe7st4dNKHgtWsP27zJHrfLNi7Gmqvx4j42BAGS",
-     "symbol": "",
+     "symbol": "LARRY",
      "cost_usd": 1019.0,
      "proceeds_usd": 604.48,
      "value_usd": 0.0,
@@ -3758,7 +3758,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1771089514,
      "last_trade_ts": 1771113230,
-     "launched_ts": null,
+     "launched_ts": 1770498270,
      "first_buy_sig": "7JRouKpvPtYLMPQa8JvEDUM9wtfZpBLg48VmEFXZuJGtupam7vewQT1pMV6aPXgAm3qbvexnwo9y3JTvQzMEDYc",
      "verified": false,
      "flags": []
@@ -4054,7 +4054,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "HephxhDavKo6joaqQe7ELo4cu7r636f8RXFgg7evBAGS",
-     "symbol": "",
+     "symbol": "SLOPCRAFT",
      "cost_usd": 11000.0,
      "proceeds_usd": 10492.71,
      "value_usd": 0.0,
@@ -4064,7 +4064,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1768573686,
      "last_trade_ts": 1768576439,
-     "launched_ts": null,
+     "launched_ts": 1768136085,
      "first_buy_sig": "2ZP6PXypbdw1yJivv2UFyndcyaAVxRxS2ZtuYpfEs2qCU2GDvtHHwyotX7N9KohTuuSu7T99yzs5ee5f2ss1gc8i",
      "verified": false,
      "flags": []
@@ -4258,7 +4258,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "EMKP9FV5wakvyodPh8edQW4RTSbHPrhYRDEiCiz1pump",
-     "symbol": "POS",
+     "symbol": "",
      "cost_usd": 3000.0,
      "proceeds_usd": 2110.49,
      "value_usd": 0.0,
@@ -4268,7 +4268,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1766225804,
      "last_trade_ts": 1766675390,
-     "launched_ts": 1764101984,
+     "launched_ts": null,
      "first_buy_sig": "4o7VDgVp4R4Fbs97wPeceQKaE1La3NUMPUFhv7EddKSBPXoV6TGkL8Xm4TNFAVw6M3bQw1ibQPnsn38iEfXgNxHu",
      "verified": false,
      "flags": []
@@ -4421,7 +4421,7 @@ window.GEM_WALLETS = {
    "gems": [
     {
      "mint": "LYLikzBQtpa9ZgVrJsqYGQpR3cC1WMJrBHaXGrQmeta",
-     "symbol": "",
+     "symbol": "LOYAL",
      "cost_usd": 5000.0,
      "proceeds_usd": 39042.83,
      "value_usd": 0.0,
@@ -4431,7 +4431,7 @@ window.GEM_WALLETS = {
      "sells": 3,
      "first_buy_ts": 1764856390,
      "last_trade_ts": 1766952607,
-     "launched_ts": null,
+     "launched_ts": 1761174032,
      "first_buy_sig": "L9FWviDXsoUADonbYzujXGChL9dV52tHz7nBo2BV3f79inurShZbTyaNRx8vtU6XZ68MCvw4fRkMsSoEPpBGR2M",
      "verified": true,
      "flags": []
@@ -4474,7 +4474,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "AH9MBjbfDmZaQxcNjo8UkoozGb4pEkKfP2gQdcqopump",
-     "symbol": "",
+     "symbol": "ANKL",
      "cost_usd": 2500.0,
      "proceeds_usd": 2005.65,
      "value_usd": 0.0,
@@ -4484,7 +4484,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1787348525,
      "last_trade_ts": 1787348615,
-     "launched_ts": null,
+     "launched_ts": 1787309983,
      "first_buy_sig": "GAqxnJowC1oRoFzdDn1QZTdCvT6JUYKsn8kCjqMboVdkm377HyMuhRN8DtzRDGGMZCU1wMVMnd3yQwsR9JpLdwo",
      "verified": false,
      "flags": []
@@ -4562,9 +4562,9 @@ window.GEM_WALLETS = {
      "symbol": "LOOKSMAX",
      "cost_usd": 5.0,
      "proceeds_usd": 0.0,
-     "value_usd": 0.36,
+     "value_usd": 0.27,
      "profit_usd": -5.0,
-     "multiple": 0.07,
+     "multiple": 0.05,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1786803469,
@@ -4627,7 +4627,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "CoYQjWayXqM7uSbkzj7Z8ZhUqdQEiwvzaX3zukJPpump",
-     "symbol": "MOONDENG",
+     "symbol": "",
      "cost_usd": 6000.0,
      "proceeds_usd": 2838.54,
      "value_usd": 0.0,
@@ -4637,7 +4637,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1786559924,
      "last_trade_ts": 1786561828,
-     "launched_ts": 1786557271,
+     "launched_ts": null,
      "first_buy_sig": "46maCFN8Bd9mLKi4s9FNWVvepdAhxp5tUQcCFuWFvcWhqdmM2yoKxVgpRJsfXE23gNrwVTzdPyErK7srELfz4kNs",
      "verified": false,
      "flags": []
@@ -4661,7 +4661,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "DcRcBtM7XopjPnmBUTmp8eWMTztkhVJUkuXeEsqApump",
-     "symbol": "",
+     "symbol": "PGUY",
      "cost_usd": 2000.0,
      "proceeds_usd": 565.17,
      "value_usd": 0.0,
@@ -4671,7 +4671,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1786497328,
      "last_trade_ts": 1786546607,
-     "launched_ts": null,
+     "launched_ts": 1746395240,
      "first_buy_sig": "2GJfiW3JDsG2mEb8Ho4AaHXFq5tg58btcVFfjA5G8tJjyWpMUg4DMnBKqQ1cxUQpJzxYRRJWp3ds6WBPoRPmTYhH",
      "verified": false,
      "flags": []
@@ -4814,7 +4814,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "42AkFX59LK7bR974qZc7N5RcnikxrffFPQ4PQVympump",
-     "symbol": "",
+     "symbol": "ONBOARD",
      "cost_usd": 1100.0,
      "proceeds_usd": 102.01,
      "value_usd": 0.0,
@@ -4824,7 +4824,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1782778630,
      "last_trade_ts": 1786600407,
-     "launched_ts": null,
+     "launched_ts": 1782686814,
      "first_buy_sig": "3XP7j42zF44KkwF9G8FFBwy6BgQAANWgATbiFdPG3652ijfWcUKd8TYRJWX4r8uHYUfzbwRS29bYTrcoVKa6g1eR",
      "verified": false,
      "flags": []
@@ -4933,7 +4933,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "B428P1rqok8L3yfCUEV75oZ5c4au2EDrhfQmXibXpump",
-     "symbol": "Hypergamy",
+     "symbol": "",
      "cost_usd": 750.0,
      "proceeds_usd": 554.78,
      "value_usd": 0.0,
@@ -4943,7 +4943,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1780153874,
      "last_trade_ts": 1780155703,
-     "launched_ts": 1780153776,
+     "launched_ts": null,
      "first_buy_sig": "sMX8CCbGfrh378mXBimNQs7cPTK669R99o5t1vye6W8TndDityrJCXWXhd3BL4gyGMYhRzwR2SBERqJnk8JpVER",
      "verified": false,
      "flags": []
@@ -5018,7 +5018,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "22513u2QwiY6xaJn7nVFWGKy3aBdw6WfZsRPW2RRtCKj",
-     "symbol": "",
+     "symbol": "HuntBoden",
      "cost_usd": 1500.0,
      "proceeds_usd": 633.03,
      "value_usd": 0.0,
@@ -5028,7 +5028,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1779214881,
      "last_trade_ts": 1779227500,
-     "launched_ts": null,
+     "launched_ts": 1711462503,
      "first_buy_sig": "38PdDY8xKiyyEShqkTVeFAn2qx7UqPiJ9wCUaohkZMbcExCLkgxTBwsqz7saoVbJpnoRrq1Q7U5nrr8CQ5VWvTnL",
      "verified": false,
      "flags": []
@@ -5052,7 +5052,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "4pMsh7JF5wXjkx8sK6gJgv14xkBy1kUoMv4ixN8npump",
-     "symbol": "",
+     "symbol": "PIGEON",
      "cost_usd": 1500.0,
      "proceeds_usd": 1651.08,
      "value_usd": 0.0,
@@ -5062,7 +5062,7 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1779078094,
      "last_trade_ts": 1779292774,
-     "launched_ts": null,
+     "launched_ts": 1779069259,
      "first_buy_sig": "3ZaHmn382815aiYyFQXp6jGaza5tkoCEyWEqZE3zTHVep1oRCbFLDEFrsYNKDa4YG12E8aURGruXfJhMLzTP2dwu",
      "verified": false,
      "flags": []
@@ -5086,7 +5086,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "FfCht1iLfyWC8hcQDG4oZ8wp9uKshRJkzjWxn2kKocnH",
-     "symbol": "KPOP",
+     "symbol": "",
      "cost_usd": 1300.0,
      "proceeds_usd": 160.56,
      "value_usd": 0.0,
@@ -5096,7 +5096,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1778369789,
      "last_trade_ts": 1779121103,
-     "launched_ts": 1728333747,
+     "launched_ts": null,
      "first_buy_sig": "2wEHdUxM3Lb4XTAjKGX2zjTZzhEzgpcXNk3ZXp4A6Mxdd4neHbSpRDssNzwnPYYsqRJsi8N6nDraTHxQuThvi5w8",
      "verified": false,
      "flags": []
@@ -5392,7 +5392,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "8oCRS5SYaf4t5PGnCeQfpV7rjxGCcGqNDGHmHJBooPhX",
-     "symbol": "",
+     "symbol": "SNAP",
      "cost_usd": 2000.0,
      "proceeds_usd": 3817.61,
      "value_usd": 0.0,
@@ -5402,14 +5402,14 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1769802743,
      "last_trade_ts": 1769900066,
-     "launched_ts": null,
+     "launched_ts": 1769766064,
      "first_buy_sig": "5mSXnqg71241Mt5JHkshxFET3WwG2BcXYEzfVF4LQSVHfhZrQncnBtjSiLpQ6K24Qy6ocqpRndrVT3gafX1jBLjb",
      "verified": false,
      "flags": []
     },
     {
      "mint": "AnarbvjzbRxv391juRyWZiWmrAiqyLxb1LBz5FjWBAGS",
-     "symbol": "",
+     "symbol": "ORDO",
      "cost_usd": 1000.0,
      "proceeds_usd": 1421.18,
      "value_usd": 0.0,
@@ -5419,7 +5419,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1769790551,
      "last_trade_ts": 1769821076,
-     "launched_ts": null,
+     "launched_ts": 1769469871,
      "first_buy_sig": "UtENUbA7Q5b3itGpv9eBftJ7gH18WZgc3eDGTyP59D41s1L1n881EdFWgZYcs9fViie1SxPUjxSsRdVWBBU4Vjo",
      "verified": false,
      "flags": []
@@ -5429,9 +5429,9 @@ window.GEM_WALLETS = {
      "symbol": "cbBTC",
      "cost_usd": 2.0,
      "proceeds_usd": 0.0,
-     "value_usd": 0.97,
+     "value_usd": 0.95,
      "profit_usd": -2.0,
-     "multiple": 0.48,
+     "multiple": 0.47,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1769738111,
@@ -5486,7 +5486,7 @@ window.GEM_WALLETS = {
     "gem_profit_usd": 129538.07,
     "hit_rate": 0.007,
     "unverified": 106,
-    "tx_count": 1889
+    "tx_count": 1888
    },
    "reasons": [
     "1 winning trade(s) (5x+ on verified coins); needs 5",
@@ -5658,7 +5658,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "Bs5PmEnm1ugySurQCohqQP5oJyQRw83BgEArNrkzL5p4",
-     "symbol": "",
+     "symbol": "S3",
      "cost_usd": 2669.61,
      "proceeds_usd": 2322.0,
      "value_usd": 0.0,
@@ -5668,7 +5668,7 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1788862496,
      "last_trade_ts": 1788876517,
-     "launched_ts": null,
+     "launched_ts": 1788781607,
      "first_buy_sig": "55aQjXGHBJgFMafHV697kQWQjuAox5cvgdKnyvXZmfzpnuctDhAc3iZTLbM6bktqUGYG47ctkjEYsiK2Vp3uMJdT",
      "verified": false,
      "flags": []
@@ -5998,7 +5998,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "7dsAXucdbXzhT8peJVfLvc7oWBjHqBUQZfc8VBZ3pump",
-     "symbol": "",
+     "symbol": "Crashout",
      "cost_usd": 1625.0,
      "proceeds_usd": 1330.45,
      "value_usd": 0.0,
@@ -6008,14 +6008,14 @@ window.GEM_WALLETS = {
      "sells": 4,
      "first_buy_ts": 1776474452,
      "last_trade_ts": 1776539980,
-     "launched_ts": null,
+     "launched_ts": 1776449655,
      "first_buy_sig": "2n8KC42Ne25cr3QU8Rfd43FPkkQhy3nDU8cTefZsCBbTxmrabo4VcL59q3j1iPHyaRmJwjH1EQUdUyQGDMoMy6M9",
      "verified": false,
      "flags": []
     },
     {
      "mint": "6z7pG15eRGiu4ByYR4TS8hfrMs6AwRqs3ZjRpSFKTRYo",
-     "symbol": "",
+     "symbol": "DELPHAI",
      "cost_usd": 250.0,
      "proceeds_usd": 312.93,
      "value_usd": 0.0,
@@ -6025,7 +6025,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1776444081,
      "last_trade_ts": 1776444243,
-     "launched_ts": null,
+     "launched_ts": 1776443222,
      "first_buy_sig": "2mM7BkVouHnhV4RWAemnzJV3Z7aeQxucWCf1oMPiLX1q3T98Tv97xYUuSniYubCMJ4ZC5cM5bSSQhVrTWmK97igw",
      "verified": false,
      "flags": []
@@ -6202,7 +6202,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "3GJ5N2p9ZHgd4eDBBhAw4tLigyjmYY4JBex3oK5Dycuv",
-     "symbol": "",
+     "symbol": "DOT",
      "cost_usd": 250.0,
      "proceeds_usd": 255.04,
      "value_usd": 0.0,
@@ -6212,14 +6212,14 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1775059260,
      "last_trade_ts": 1775059389,
-     "launched_ts": null,
+     "launched_ts": 1775051681,
      "first_buy_sig": "3ceG6gkx1bYGxhURy5vEbkiy7Y61cmNYJA3FFBbemzN9wid1p3PuYQyKt2ngqdNQmez5VpwEAYXMnmEkXyCAUd2P",
      "verified": false,
      "flags": []
     },
     {
      "mint": "89S7oVB4hui8ceJqhHreWB7fcxdthfvoB7z2pfJtpump",
-     "symbol": "abcdefg",
+     "symbol": "",
      "cost_usd": 1375.0,
      "proceeds_usd": 1180.29,
      "value_usd": 0.0,
@@ -6229,7 +6229,7 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1775058584,
      "last_trade_ts": 1775073765,
-     "launched_ts": 1772856166,
+     "launched_ts": null,
      "first_buy_sig": "3B5oMwEvhdqRPuQzWUJSy9ZSg6FB3LEBYDN4c5C9FrpMM5Jmg35orJNoeoWDUHuD6y8UccAMMqxLhCdpkALz1h1w",
      "verified": false,
      "flags": []
@@ -6355,7 +6355,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "217dt9idH1Q9UXT8rjpknnyFggizXUVD2r5EZNjopump",
-     "symbol": "AICOIN",
+     "symbol": "",
      "cost_usd": 747.14,
      "proceeds_usd": 610.81,
      "value_usd": 0.0,
@@ -6365,7 +6365,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1772783141,
      "last_trade_ts": 1772785078,
-     "launched_ts": 1772756773,
+     "launched_ts": null,
      "first_buy_sig": "Cf2gD7hRicKzyhq28XXfernEHsw4nr2gEWGnZsPq8K8GNJUmb3hc5KavAsJKXNnSkwNJdc6qcqwFkYNPPE6GgQL",
      "verified": false,
      "flags": []
@@ -6389,7 +6389,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "7PhaK3vSp2TGvUFW88bm33Cmnv6WRo3LNCokAavGsN3m",
-     "symbol": "AIXBT",
+     "symbol": "",
      "cost_usd": 125.0,
      "proceeds_usd": 54.61,
      "value_usd": 0.0,
@@ -6399,7 +6399,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1772647013,
      "last_trade_ts": 1772649742,
-     "launched_ts": 1772646563,
+     "launched_ts": null,
      "first_buy_sig": "5tAzrQCDfJBFVseeDGpjH2LWWBPJZobuoEtyaAmeipuLWht3rZXPBQBY9c8aSUhrgxiBDng1vqbGv21rN8hpkLG8",
      "verified": false,
      "flags": []
@@ -6687,7 +6687,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "AENK1YJ9978xp19xQLKat6eNmndf7Jg2FxFfKiwvpump",
-     "symbol": "",
+     "symbol": "LOUIE",
      "cost_usd": 907.93,
      "proceeds_usd": 690.91,
      "value_usd": 0.0,
@@ -6697,14 +6697,14 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1786401500,
      "last_trade_ts": 1786431175,
-     "launched_ts": null,
+     "launched_ts": 1786168981,
      "first_buy_sig": "5i5UPtpnrgW5aJPux4ePWzdTexNJN7EcZvHDBzNCnfsPMvWi2D9yMFXmhAWLYeSygM6JVgHjexo1fDZk3kNTrUPV",
      "verified": false,
      "flags": []
     },
     {
      "mint": "CZTnBZLV86yVqQ9F4xoQpfPeHgiasnwqmTUCta1C21fM",
-     "symbol": "",
+     "symbol": "GAMESTONK",
      "cost_usd": 500.0,
      "proceeds_usd": 82.67,
      "value_usd": 0.0,
@@ -6714,7 +6714,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1786385929,
      "last_trade_ts": 1786389811,
-     "launched_ts": null,
+     "launched_ts": 1786385708,
      "first_buy_sig": "5Awm4vVVz8rSJZmg6ZQtK8M2ppC5qvZmnnQXoa1ZyPbsuFKWE4aQNWBaNcKEBkC9LHZZnYD5CHpa7cwSV1pcoUsd",
      "verified": false,
      "flags": []
@@ -6738,7 +6738,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "8VEM1Yc4JPFqVwsTcoBKiqAmsUD7xEzCLuDZWXccZGPN",
-     "symbol": "",
+     "symbol": "Geeg",
      "cost_usd": 100.0,
      "proceeds_usd": 554.43,
      "value_usd": 0.0,
@@ -6748,7 +6748,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1786062158,
      "last_trade_ts": 1787601659,
-     "launched_ts": null,
+     "launched_ts": 1783915086,
      "first_buy_sig": "63di2phdbNmQPpQnXfSDxf1aNi2WM6JATmUc3EMo4vtrGtZgvF3xi8uLZHyDEvdmbVesNh9GcmRo6oQg1Xugauve",
      "verified": false,
      "flags": []
@@ -6993,7 +6993,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "3oX9emrqYRGzFEDPP3jA6tYnUBML4QSr3DfgD2r5pump",
-     "symbol": "",
+     "symbol": "滑る猫",
      "cost_usd": 2000.0,
      "proceeds_usd": 2643.78,
      "value_usd": 0.0,
@@ -7003,7 +7003,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1781747837,
      "last_trade_ts": 1781787513,
-     "launched_ts": null,
+     "launched_ts": 1781690437,
      "first_buy_sig": "jQhaocfzx8XhB8RqW3GxaYYT3zBsd1wNy3eMRTpXGYTi3zTwLVcgTeDErc1aH25B2WRJcmja8pTrooZY6obq5nf",
      "verified": false,
      "flags": []
@@ -7095,7 +7095,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "B5jkQN49W6oSWThPZu9y7HsgkabBawA7vxHJ3bpcpump",
-     "symbol": "DIAMOND",
+     "symbol": "",
      "cost_usd": 1000.0,
      "proceeds_usd": 1075.26,
      "value_usd": 0.0,
@@ -7105,7 +7105,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1778623037,
      "last_trade_ts": 1778623136,
-     "launched_ts": 1778621073,
+     "launched_ts": null,
      "first_buy_sig": "4n4QWzgRvHFQ6tQuGvbrRWCna7fY7sQwEnNyP8LWwkT5Bswei8NSoys3WJZekZQQdnpZbzY8W7F5ESA3xhEuBo1f",
      "verified": false,
      "flags": []
@@ -7265,7 +7265,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "4HhWcsfjaWYKJtjaxd4EyGSAL4Ky8C3DvqAWPHnrpump",
-     "symbol": "",
+     "symbol": "SHAPE",
      "cost_usd": 8000.0,
      "proceeds_usd": 7260.7,
      "value_usd": 0.0,
@@ -7275,7 +7275,7 @@ window.GEM_WALLETS = {
      "sells": 9,
      "first_buy_ts": 1773454025,
      "last_trade_ts": 1773967910,
-     "launched_ts": null,
+     "launched_ts": 1772504348,
      "first_buy_sig": "4CH5e6iVvjzaRSYf9niWgMKWzEMEPcDQXgNVTBiMmn47BrUJ3hhLf2jaPupoB6vYeRZ4NRViBi9nHhGQooEFWqre",
      "verified": false,
      "flags": []
@@ -7316,7 +7316,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "6RFfHjBTgjK3VjDTH6GQ7FN3EsYjjxWcTdExaubzsx1W",
-     "symbol": "early",
+     "symbol": "",
      "cost_usd": 199.41,
      "proceeds_usd": 102.26,
      "value_usd": 0.0,
@@ -7326,7 +7326,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1773104186,
      "last_trade_ts": 1773352968,
-     "launched_ts": 1772642987,
+     "launched_ts": null,
      "first_buy_sig": "k13Uny2hzkwUus4qzxYEowWrXx4xmDhwfMTPxKYrjBr29UKYhy6fexfL4HBKX5ByBidwH7a3yMAwsa9NQHCWcRy",
      "verified": false,
      "flags": []
@@ -7435,7 +7435,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "BpiuTW5TnoBbiHfPsxy34hsTzn9pQ2VW3tnG4p3iBAGS",
-     "symbol": "CLAUDEV",
+     "symbol": "",
      "cost_usd": 146.84,
      "proceeds_usd": 5.72,
      "value_usd": 0.0,
@@ -7445,7 +7445,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1768767499,
      "last_trade_ts": 1769485253,
-     "launched_ts": 1768763559,
+     "launched_ts": null,
      "first_buy_sig": "5fDULKgxpLWoqRC1EL7KbLwyjJ1iwxUFhrkLVHR8bKxC6HbA7GMZEByYqob742KiW9YZKiMDWk4hBy3jbFBiuHLE",
      "verified": false,
      "flags": []
@@ -7486,7 +7486,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump",
-     "symbol": "Mia",
+     "symbol": "",
      "cost_usd": 6000.0,
      "proceeds_usd": 4276.85,
      "value_usd": 0.0,
@@ -7496,7 +7496,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1768233980,
      "last_trade_ts": 1768767664,
-     "launched_ts": 1767516956,
+     "launched_ts": null,
      "first_buy_sig": "57G3kR8SPSikCeaysZkGb3ZKyqYHZuvxaCh9ki63atWVdF7q1DftkdytGQ83uucAFnB3ZG4JB8cTeFHynsYKVAq4",
      "verified": true,
      "flags": []
@@ -7663,7 +7663,7 @@ window.GEM_WALLETS = {
    "gems": [
     {
      "mint": "FtSRgyCEhKTc1PPgEAXvuHN3NyiP6LS9uyB28KCN3CAP",
-     "symbol": "CAPTCHA",
+     "symbol": "",
      "cost_usd": 7715.13,
      "proceeds_usd": 65598.4,
      "value_usd": 0.0,
@@ -7673,7 +7673,7 @@ window.GEM_WALLETS = {
      "sells": 12,
      "first_buy_ts": 1774384118,
      "last_trade_ts": 1774612670,
-     "launched_ts": 1774377742,
+     "launched_ts": null,
      "first_buy_sig": "4Xy44naKvJUxMxvtTGZooNwSevRg43umRXShFfEeUVYKzMzfXjLVe4cELXG1NLXBgHwqRpUQmGHX9nHz3CmQTr2m",
      "verified": true,
      "flags": []
@@ -7702,9 +7702,9 @@ window.GEM_WALLETS = {
      "symbol": "GTARP",
      "cost_usd": 100.0,
      "proceeds_usd": 0.0,
-     "value_usd": 164.58,
+     "value_usd": 121.1,
      "profit_usd": -100.0,
-     "multiple": 1.65,
+     "multiple": 1.21,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1792873283,
@@ -7852,7 +7852,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "E8TYqR58QyLvZLQb3pdNcZTXwWU2p9Ug5uocPfjUpump",
-     "symbol": "frohorse",
+     "symbol": "",
      "cost_usd": 1000.0,
      "proceeds_usd": 1456.7,
      "value_usd": 0.0,
@@ -7862,7 +7862,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1779727954,
      "last_trade_ts": 1780451018,
-     "launched_ts": 1779722103,
+     "launched_ts": null,
      "first_buy_sig": "5AwtY5hgCc13eCSWcgWQSbM65F1ydkAQwa1RMo9hybQwXWtir9B4FfbNubNLNy9MmrR86sUKKQFJwUakMTaC4eRS",
      "verified": false,
      "flags": []
@@ -7920,17 +7920,17 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "7pJAqX66LBuN1tKoKGzQhNURxHtCpBHjgeATh7kepump",
-     "symbol": "",
+     "symbol": "asports",
      "cost_usd": 500.0,
      "proceeds_usd": 0.0,
-     "value_usd": 135.88,
+     "value_usd": 135.23,
      "profit_usd": -500.0,
      "multiple": 0.27,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1777420442,
      "last_trade_ts": 1777420442,
-     "launched_ts": null,
+     "launched_ts": 1776761766,
      "first_buy_sig": "2nAHFQNvN97wZxFY3wz3j2M85TYWafxSrH5UGZ6kZD9sUgeMbVSgrvpfhbkPdCZS2inoHeZvjG62XjFEMtN9FRYE",
      "verified": false,
      "flags": []
@@ -8005,7 +8005,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "FtSRgyCEhKTc1PPgEAXvuHN3NyiP6LS9uyB28KCN3CAP",
-     "symbol": "CAPTCHA",
+     "symbol": "",
      "cost_usd": 7715.13,
      "proceeds_usd": 65598.4,
      "value_usd": 0.0,
@@ -8015,14 +8015,14 @@ window.GEM_WALLETS = {
      "sells": 12,
      "first_buy_ts": 1774384118,
      "last_trade_ts": 1774612670,
-     "launched_ts": 1774377742,
+     "launched_ts": null,
      "first_buy_sig": "4Xy44naKvJUxMxvtTGZooNwSevRg43umRXShFfEeUVYKzMzfXjLVe4cELXG1NLXBgHwqRpUQmGHX9nHz3CmQTr2m",
      "verified": true,
      "flags": []
     },
     {
      "mint": "7opAGer4hk78N7VtYjk2bVif6SzvPkBm8PzQAvzspump",
-     "symbol": "Replacement",
+     "symbol": "",
      "cost_usd": 50.0,
      "proceeds_usd": 8.6,
      "value_usd": 0.0,
@@ -8032,7 +8032,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1772656463,
      "last_trade_ts": 1776091128,
-     "launched_ts": 1772144292,
+     "launched_ts": null,
      "first_buy_sig": "5reKZmZXRBH1wkvuuuR2qmKZTkQdpvATMr93DKQmaWGfferBjAHWjUrJPfdDJ2e2QM4fnbMbhZ8tLAmL68qqrKCL",
      "verified": false,
      "flags": []
@@ -8107,7 +8107,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "3HwuPcznMavzQR7aUFbbDFWawZ94cfUdWApGxbjVpump",
-     "symbol": "",
+     "symbol": "PING",
      "cost_usd": 1000.0,
      "proceeds_usd": 15.32,
      "value_usd": 0.0,
@@ -8117,7 +8117,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1764780331,
      "last_trade_ts": 1771080220,
-     "launched_ts": null,
+     "launched_ts": 1761204006,
      "first_buy_sig": "3HvicucueVwwszEUC2RnZCMu5rsRfCsE75VLKMPT4k5TkR4sJ6AMPENqigf4gZyN7dh4CrnWhnRmYAraVKsmAMnT",
      "verified": false,
      "flags": []
@@ -8202,7 +8202,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1763133836,
      "last_trade_ts": 1763311742,
-     "launched_ts": 1748545477,
+     "launched_ts": 1745887720,
      "first_buy_sig": "3BtC141cBSur7bfwAWi3Rdasej247tCWdmaFLrkKnvc3ZRh6VNE44bGw6UvHYFC1oqcYDHsgH82n2HFdAq4cPc1U",
      "verified": true,
      "flags": []
@@ -8236,7 +8236,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1762963594,
      "last_trade_ts": 1762969887,
-     "launched_ts": 1761396180,
+     "launched_ts": 1761624405,
      "first_buy_sig": "9HLy9vHMHQASDU3mFvKurpChJqjhRJA8ZfJtugvQnFjukSrKhr79wUaWvMTMGggpVZyZTGVbmrna9GHCZceH7EA",
      "verified": true,
      "flags": []
@@ -8260,7 +8260,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "8HxW9Z3YT1gXgQcgEynZaHsEpLXRgijGfMYCkaAypump",
-     "symbol": "mec",
+     "symbol": "",
      "cost_usd": 6500.0,
      "proceeds_usd": 7265.76,
      "value_usd": 0.0,
@@ -8270,7 +8270,7 @@ window.GEM_WALLETS = {
      "sells": 3,
      "first_buy_ts": 1762375841,
      "last_trade_ts": 1762380394,
-     "launched_ts": 1762375389,
+     "launched_ts": null,
      "first_buy_sig": "493s1y7b2zZmGe6RFTkUmPtq6eW8UJ4rVRv1vBexr2yH2iFU2xVQXEKQvFG33zTjRntpNKA6YJiQP58hsKqvAQen",
      "verified": false,
      "flags": []
@@ -8728,7 +8728,7 @@ window.GEM_WALLETS = {
     "gem_profit_usd": 54295.31,
     "hit_rate": 0.015,
     "unverified": 51,
-    "tx_count": 788
+    "tx_count": 787
    },
    "reasons": [
     "1 winning trade(s) (5x+ on verified coins); needs 5",
@@ -8765,9 +8765,9 @@ window.GEM_WALLETS = {
      "symbol": "USELESS",
      "cost_usd": 10.0,
      "proceeds_usd": 0.0,
-     "value_usd": 9.67,
+     "value_usd": 9.91,
      "profit_usd": -10.0,
-     "multiple": 0.97,
+     "multiple": 0.99,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1793768762,
@@ -8779,7 +8779,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "ZrueWB1YvjruJpTGiJSYYfyuL71FZeeSUwJY1ZPeyes",
-     "symbol": "",
+     "symbol": "EYES",
      "cost_usd": 1000.0,
      "proceeds_usd": 558.94,
      "value_usd": 0.0,
@@ -8789,7 +8789,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1790431405,
      "last_trade_ts": 1790447380,
-     "launched_ts": null,
+     "launched_ts": 1790167729,
      "first_buy_sig": "cCP2MymxQfz7nk9b8fHAnLdL3d3UnoqnLnNvwQVrEkWuuquQtCnqtMHeqts4ZKRdSrbkFTRSvrqHhfDV4tHTPw5",
      "verified": false,
      "flags": []
@@ -8813,7 +8813,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "92QPy1K3yiQfEf6chrq8k1LbXWgsw4sAUQWxuqxupump",
-     "symbol": "BRUN",
+     "symbol": "",
      "cost_usd": 264.15,
      "proceeds_usd": 180.91,
      "value_usd": 0.0,
@@ -8823,7 +8823,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1776782186,
      "last_trade_ts": 1776782358,
-     "launched_ts": 1791352544,
+     "launched_ts": null,
      "first_buy_sig": "2zPozjpZMTjY6fYdYGzcpomwgDx2GBANoyVYQ2iJgtb7d8ddXFwSriFj7pRBgPigtGKxWpAQdMMf7KrtCvorrexY",
      "verified": false,
      "flags": []
@@ -8850,7 +8850,7 @@ window.GEM_WALLETS = {
      "symbol": "ELON",
      "cost_usd": 584.8,
      "proceeds_usd": 0.0,
-     "value_usd": 5.23,
+     "value_usd": 4.22,
      "profit_usd": -584.8,
      "multiple": 0.01,
      "buys": 1,
@@ -9017,7 +9017,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "5gJTrQ4kxTzJkt6aeLupUvkQv6dcXuGJJo6yTaeFpump",
-     "symbol": "",
+     "symbol": "Samara",
      "cost_usd": 2924.73,
      "proceeds_usd": 1721.49,
      "value_usd": 0.0,
@@ -9027,7 +9027,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1768369510,
      "last_trade_ts": 1768372869,
-     "launched_ts": null,
+     "launched_ts": 1768357488,
      "first_buy_sig": "5ry4QTa6uGW97siVyeSveRJD9rki3KoZD5fBYh8Am3FnArrndxYzee9Dr8io8WF2Z1pXdtQriVSHFrnReapXn4RV",
      "verified": false,
      "flags": []
@@ -9068,7 +9068,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "54mRH2CQuhECuo8HmEWFfA1StLFB3srx6ZRiPCEUBAGS",
-     "symbol": "BITLORD",
+     "symbol": "",
      "cost_usd": 281.01,
      "proceeds_usd": 88.49,
      "value_usd": 0.0,
@@ -9078,7 +9078,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1768146995,
      "last_trade_ts": 1768156525,
-     "launched_ts": 1768147843,
+     "launched_ts": null,
      "first_buy_sig": "jCxmH4hpCNV5tDrWTL1wNhgqmo47LVobQttgAuDQWBs2oXdCtjanMTy7LusWUa5szca6KjyroB4HcCon3zkt32x",
      "verified": false,
      "flags": []
@@ -9136,24 +9136,24 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "4b3QE69UsxLWJJ1jovadMcB5mTKahPphyPFoEJk5pump",
-     "symbol": "",
+     "symbol": "LI",
      "cost_usd": 225.75,
      "proceeds_usd": 0.0,
-     "value_usd": 34.29,
+     "value_usd": 28.8,
      "profit_usd": -225.75,
-     "multiple": 0.15,
+     "multiple": 0.13,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1767758842,
      "last_trade_ts": 1767758842,
-     "launched_ts": null,
+     "launched_ts": 1754434180,
      "first_buy_sig": "43FXoDMpSciy17XTMb8Qep9BbdRzdcMnrF6sFYJpb6zqMsh4MwQw7EQk2cUh95e4ZMPoA28tw9nUbgnuFCsTs9R7",
      "verified": false,
      "flags": []
     },
     {
      "mint": "Ecv1NVMfYSUW3YQ48siC8s7mdrvqp2syHWGi1rDdBAGS",
-     "symbol": "",
+     "symbol": "SPARK",
      "cost_usd": 142.16,
      "proceeds_usd": 103.07,
      "value_usd": 0.0,
@@ -9163,7 +9163,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1767758741,
      "last_trade_ts": 1769065836,
-     "launched_ts": null,
+     "launched_ts": 1754381392,
      "first_buy_sig": "35ALRUvxL2DkwzvEWyBvNaNLEUVBcbX7mh9ohEpioF6pYtRfsxtpvtZ4ReyjGiGiwa9Wx9APUbh9Q5DPcjdaaNUy",
      "verified": false,
      "flags": []
@@ -9187,7 +9187,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "8rToZDMKsmBH1M95Gejaa8CUKz1GuqgBpg74ibaZpump",
-     "symbol": "",
+     "symbol": "asshole",
      "cost_usd": 422.08,
      "proceeds_usd": 76.49,
      "value_usd": 0.0,
@@ -9197,7 +9197,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1767677909,
      "last_trade_ts": 1767782346,
-     "launched_ts": null,
+     "launched_ts": 1767673367,
      "first_buy_sig": "4ci7WvwqHTwBK77HEFpF8ZsBrhQbi7t8Cfow8Pu2sCWwBHwkTNEPzSaovXBChXQ7ActgGEJ2DCSU2YZ8nzKEpReQ",
      "verified": false,
      "flags": []
@@ -9255,17 +9255,17 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "JCeoBX79HfatfaY6xvuNyCHf86hwgkCCWDpEycVHtime",
-     "symbol": "",
+     "symbol": "toly",
      "cost_usd": 630.2,
      "proceeds_usd": 0.0,
-     "value_usd": 209.39,
+     "value_usd": 211.54,
      "profit_usd": -630.2,
-     "multiple": 0.33,
+     "multiple": 0.34,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1766936238,
      "last_trade_ts": 1766936238,
-     "launched_ts": null,
+     "launched_ts": 1740455212,
      "first_buy_sig": "HiMDpLhY5W33WZjw57HNVmQJ2rT5YjQ7mKBqRHFWu9aWi7DBQcXE9DUs9W7oXS8X52BjC14SUMNXG5fdRDRV65J",
      "verified": true,
      "flags": []
@@ -9292,9 +9292,9 @@ window.GEM_WALLETS = {
      "symbol": "TMTRD",
      "cost_usd": 246.52,
      "proceeds_usd": 0.0,
-     "value_usd": 68.47,
+     "value_usd": 66.58,
      "profit_usd": -246.52,
-     "multiple": 0.28,
+     "multiple": 0.27,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1766567346,
@@ -9408,17 +9408,17 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "8Y5MwnUM19uqhnsrFnKijrmn33CmHBTUoedXtTGDpump",
-     "symbol": "",
+     "symbol": "BASEDD",
      "cost_usd": 4384.36,
      "proceeds_usd": 0.0,
-     "value_usd": 76.38,
+     "value_usd": 71.32,
      "profit_usd": -4384.36,
      "multiple": 0.02,
      "buys": 7,
      "sells": 0,
      "first_buy_ts": 1765709196,
      "last_trade_ts": 1767995255,
-     "launched_ts": null,
+     "launched_ts": 1750204736,
      "first_buy_sig": "4prCjXTxm485PxfbNjZZuWPP9xCxJN7JpQVCyMKP1mvfhBjbeb8BN1tux3pYgadBaT29RV5wwEHxQy87AE1uMNgP",
      "verified": false,
      "flags": []
@@ -9547,9 +9547,9 @@ window.GEM_WALLETS = {
      "symbol": "TCG",
      "cost_usd": 1876.89,
      "proceeds_usd": 5525.44,
-     "value_usd": 1932.3,
+     "value_usd": 1911.78,
      "profit_usd": 3648.55,
-     "multiple": 3.97,
+     "multiple": 3.96,
      "buys": 2,
      "sells": 7,
      "first_buy_ts": 1764613109,
@@ -9615,7 +9615,7 @@ window.GEM_WALLETS = {
      "symbol": "SPARK",
      "cost_usd": 8721.87,
      "proceeds_usd": 0.0,
-     "value_usd": 356.17,
+     "value_usd": 338.05,
      "profit_usd": -8721.87,
      "multiple": 0.04,
      "buys": 5,
@@ -9697,7 +9697,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "C64cB3Ji5RgyeLz3YQmbYTzWRQ2w8X3jxW1B9V7MpxjC",
-     "symbol": "",
+     "symbol": "唢呐",
      "cost_usd": 3029.92,
      "proceeds_usd": 4302.17,
      "value_usd": 0.0,
@@ -9707,7 +9707,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1760460417,
      "last_trade_ts": 1760467397,
-     "launched_ts": null,
+     "launched_ts": 1760459981,
      "first_buy_sig": "4QZaJwUmWxnuvsehSZsWEJ3cqvW2dMKra7SayN9vwQRfBGwVFbXXwDM6FENaDJQzvaHgMfa8XnpHtXDHA73Bo43N",
      "verified": false,
      "flags": []
@@ -9734,7 +9734,7 @@ window.GEM_WALLETS = {
      "symbol": "PIKA",
      "cost_usd": 3187.07,
      "proceeds_usd": 0.0,
-     "value_usd": 198.31,
+     "value_usd": 196.53,
      "profit_usd": -3187.07,
      "multiple": 0.06,
      "buys": 1,
@@ -9826,7 +9826,7 @@ window.GEM_WALLETS = {
    "gems": [
     {
      "mint": "LYLikzBQtpa9ZgVrJsqYGQpR3cC1WMJrBHaXGrQmeta",
-     "symbol": "",
+     "symbol": "LOYAL",
      "cost_usd": 998.26,
      "proceeds_usd": 56013.58,
      "value_usd": 0.0,
@@ -9836,7 +9836,7 @@ window.GEM_WALLETS = {
      "sells": 4,
      "first_buy_ts": 1762487134,
      "last_trade_ts": 1763494766,
-     "launched_ts": null,
+     "launched_ts": 1761174032,
      "first_buy_sig": "2DrW5fU7hAqnsEYTVgzFrdiRpHdmy9fHdNqXJMUVQGM8EYCTxgBaBjj7BVWjpE2WGHeoYXLVPhC2fr6BVAxAk5aJ",
      "verified": true,
      "flags": []
@@ -9848,9 +9848,9 @@ window.GEM_WALLETS = {
      "symbol": "Datacenter",
      "cost_usd": 1000.0,
      "proceeds_usd": 0.0,
-     "value_usd": 134.71,
+     "value_usd": 121.26,
      "profit_usd": -1000.0,
-     "multiple": 0.13,
+     "multiple": 0.12,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1793972755,
@@ -10001,7 +10001,7 @@ window.GEM_WALLETS = {
      "symbol": "SPYx",
      "cost_usd": 8000.0,
      "proceeds_usd": 0.0,
-     "value_usd": 84.65,
+     "value_usd": 85.19,
      "profit_usd": -8000.0,
      "multiple": 0.01,
      "buys": 2,
@@ -10032,7 +10032,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "2QHXWq5TK64JbMptwMBP1BsfhrxZRRv9JsLa17X7pump",
-     "symbol": "SAW",
+     "symbol": "",
      "cost_usd": 800.06,
      "proceeds_usd": 1009.49,
      "value_usd": 0.0,
@@ -10042,7 +10042,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1790799326,
      "last_trade_ts": 1790892986,
-     "launched_ts": 1790787841,
+     "launched_ts": null,
      "first_buy_sig": "2nRCzvJTQKeYBSmojoCkx8NyxxL55AxZz1xzSCFuDcExfFK4s7hMSFgiqEk42Jeye8R7dHSy8M2J1BaRwqfgn2MY",
      "verified": false,
      "flags": []
@@ -10100,7 +10100,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "3hrakqTZceuodL7E5T3gpVcZjCaFFpuS7uxb4X59bijQ",
-     "symbol": "",
+     "symbol": "fatbear",
      "cost_usd": 500.0,
      "proceeds_usd": 82.25,
      "value_usd": 0.0,
@@ -10110,7 +10110,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1790610928,
      "last_trade_ts": 1790771097,
-     "launched_ts": null,
+     "launched_ts": 1790611169,
      "first_buy_sig": "54H7kq57fcdckmKB5WJjCBNKxFwz555oXvwupjpHauzwEHWsiXBYgsfhgqzD6gQuDNSn3aLiPR9KtWRTUMkV3zjC",
      "verified": false,
      "flags": []
@@ -10134,7 +10134,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "ZrueWB1YvjruJpTGiJSYYfyuL71FZeeSUwJY1ZPeyes",
-     "symbol": "",
+     "symbol": "EYES",
      "cost_usd": 7000.0,
      "proceeds_usd": 2289.26,
      "value_usd": 0.0,
@@ -10144,7 +10144,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1790461523,
      "last_trade_ts": 1790512896,
-     "launched_ts": null,
+     "launched_ts": 1790167729,
      "first_buy_sig": "4siWcGS3mb6Ex6bCUn3cqCUjjM6YezTxCAQYDi9x9qh7f116rRqNVPbdUZXvjv2hVv3DmFJjtNnoSZbVKKBPFEJ9",
      "verified": false,
      "flags": []
@@ -10202,17 +10202,17 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "8eMjbEgwqqBRLoHPFct6d5PRJeDuMD8d4AMhQKFYQceU",
-     "symbol": "MC",
+     "symbol": "",
      "cost_usd": 3000.0,
      "proceeds_usd": 0.0,
-     "value_usd": 6.89,
+     "value_usd": 6.74,
      "profit_usd": -3000.0,
      "multiple": 0.0,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1790048051,
      "last_trade_ts": 1790048051,
-     "launched_ts": 1790044262,
+     "launched_ts": null,
      "first_buy_sig": "5aTARAjd3vVDyusqNJHznkxwZaAyozb4zUHM1J8sN1tKkPCSREpyExDa98bFGyYiXMdAWGSrahoZB64JXdL1mU3B",
      "verified": false,
      "flags": []
@@ -10236,17 +10236,17 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "5gRNakEEg15bGo8DMPrdEwBcozBGm7LVutWGmnV26Kzg",
-     "symbol": "",
+     "symbol": "owlin",
      "cost_usd": 300.0,
      "proceeds_usd": 0.0,
-     "value_usd": 16.07,
+     "value_usd": 11.56,
      "profit_usd": -300.0,
-     "multiple": 0.05,
+     "multiple": 0.04,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1789951649,
      "last_trade_ts": 1789951649,
-     "launched_ts": null,
+     "launched_ts": 1789493279,
      "first_buy_sig": "2oUtn9pRqdMZyDg7RyEHaJ7H8Q1UxHKx3XcbSfttiTG46WVrmksiZuMrPMyV7VvYBjQwqRBivxQX2YLvpnyzCdzD",
      "verified": false,
      "flags": []
@@ -10304,7 +10304,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "45muzYAo5uztkFHdA2jM89PJz13Kh5z4WzHJJpqv7mEi",
-     "symbol": "Han",
+     "symbol": "",
      "cost_usd": 1000.06,
      "proceeds_usd": 673.72,
      "value_usd": 0.0,
@@ -10314,14 +10314,14 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1789668650,
      "last_trade_ts": 1789680967,
-     "launched_ts": 1789667803,
+     "launched_ts": null,
      "first_buy_sig": "5MjChz2xh2BRgnt8v1F8oZtSaPczWK2LY9oYEKaqZyBDoQABwhyeGfmHdktFUdP9aMzWfkmWrY9SSeoeuoUZW2gY",
      "verified": false,
      "flags": []
     },
     {
      "mint": "EC5zBYNL8mrr96SWc2adEXMpZ1ncdKdQvmLULKmm78Q4",
-     "symbol": "",
+     "symbol": "STUPID",
      "cost_usd": 2000.0,
      "proceeds_usd": 949.85,
      "value_usd": 0.0,
@@ -10331,7 +10331,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1789666510,
      "last_trade_ts": 1789747396,
-     "launched_ts": null,
+     "launched_ts": 1789612167,
      "first_buy_sig": "vXi8UEo1T4eqWsjGN6fwUjmRwWyrppkHHpqn7mY6VuC4CV4B8HeaMVwR9xJWzEXp7dq3pNbnR5LUEb4awp7Q1ay",
      "verified": false,
      "flags": []
@@ -10406,7 +10406,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "HoK7vodcoVYQepStM1dDVyX5iMp2q5narY9bammuGPpe",
-     "symbol": "TULIP",
+     "symbol": "",
      "cost_usd": 8500.0,
      "proceeds_usd": 25679.27,
      "value_usd": 0.0,
@@ -10416,24 +10416,24 @@ window.GEM_WALLETS = {
      "sells": 7,
      "first_buy_ts": 1789237811,
      "last_trade_ts": 1789398557,
-     "launched_ts": 1789236768,
+     "launched_ts": null,
      "first_buy_sig": "5AZKyhFF4dLQnBXeoZYkV22WhG1aQALZQ8Jto2izBM1ngg6feWTbZ4i8GCuuCR7eR1cZfZ19AYQKuT6Cmksa2Tmr",
      "verified": false,
      "flags": []
     },
     {
      "mint": "9Vom9P3aqhfCdtwDD56jfekniZ3j16oGGF61jBQEyhym",
-     "symbol": "",
+     "symbol": "BLENDCAT",
      "cost_usd": 400.0,
      "proceeds_usd": 0.0,
-     "value_usd": 36.93,
+     "value_usd": 35.58,
      "profit_usd": -400.0,
      "multiple": 0.09,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1789168570,
      "last_trade_ts": 1789168570,
-     "launched_ts": null,
+     "launched_ts": 1789163608,
      "first_buy_sig": "3Y7DhAqKjomXLCEPfd4yLXdYSpQTzbCtaJGVbQBC7srfCYj2SyWjxwhooxC4xAfSJxWSsarzWKVVNdYmSBEjcD1b",
      "verified": false,
      "flags": []
@@ -10457,7 +10457,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "HDEA1wMyocGGj9De8yY51qrCAWp7di3h7h12v2941dts",
-     "symbol": "QCAT",
+     "symbol": "",
      "cost_usd": 2000.0,
      "proceeds_usd": 1524.0,
      "value_usd": 0.0,
@@ -10467,7 +10467,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1789097407,
      "last_trade_ts": 1789159165,
-     "launched_ts": 1788988424,
+     "launched_ts": null,
      "first_buy_sig": "2knYsuKjPqHZ13DHbienznD3m5mDyvUa3QRjsWeqJPemHQHjQnUBsjenz6DQBpGgsorNs7pYRiBB1sEAMCj8gGLR",
      "verified": false,
      "flags": []
@@ -10593,7 +10593,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "25NtaXA44vwHcXL32QrS1S1AazoPf7MTXB6aMfMZpump",
-     "symbol": "",
+     "symbol": "PINU",
      "cost_usd": 3000.0,
      "proceeds_usd": 582.57,
      "value_usd": 0.0,
@@ -10603,7 +10603,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1788055105,
      "last_trade_ts": 1788322190,
-     "launched_ts": null,
+     "launched_ts": 1788035577,
      "first_buy_sig": "5agLfrxdgTXuLm91v494EwELe9EuMMcnFPEbQG2E9RcArm1Fy6v4tNNmjEtNAUFn2qk6sy7N3NfmdeHzsGzia8cE",
      "verified": false,
      "flags": []
@@ -10664,9 +10664,9 @@ window.GEM_WALLETS = {
      "symbol": "aoc",
      "cost_usd": 4500.0,
      "proceeds_usd": 0.0,
-     "value_usd": 1497.21,
+     "value_usd": 1912.02,
      "profit_usd": -4500.0,
-     "multiple": 0.33,
+     "multiple": 0.42,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1787750875,
@@ -10746,7 +10746,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "HDXeZq5Komdc4gcPbLgmrZFcsbupoteZkf1cPitRpump",
-     "symbol": "",
+     "symbol": "NANDRY",
      "cost_usd": 800.0,
      "proceeds_usd": 297.69,
      "value_usd": 0.0,
@@ -10756,14 +10756,14 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1787336025,
      "last_trade_ts": 1787343403,
-     "launched_ts": null,
+     "launched_ts": 1787336000,
      "first_buy_sig": "4V73quQTV6eqvFwCbttzpvLtsokfsVXUn8NDDxCdzJsBivnJBjcuQvn4NyQ1KLxgGt942NLE3PDfQjg5C7Czaoc5",
      "verified": false,
      "flags": []
     },
     {
      "mint": "7g2xyrq9Fk1TvFiqqcmLJAQ9jAtfHobmrdzzM9Dp2SpV",
-     "symbol": "CLUG",
+     "symbol": "",
      "cost_usd": 3000.0,
      "proceeds_usd": 1663.96,
      "value_usd": 0.0,
@@ -10773,7 +10773,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1787158913,
      "last_trade_ts": 1787240186,
-     "launched_ts": 1787103378,
+     "launched_ts": null,
      "first_buy_sig": "2TZSxhugwqE4DXzqLLgwUBBqj2By9UvCmxi75mm66Dkw8hP92t9sfFtFBR1YWm27W6cFgQA6YKqnaeAGn2aDt3tU",
      "verified": false,
      "flags": []
@@ -10891,7 +10891,7 @@ window.GEM_WALLETS = {
     "gem_profit_usd": 4942.15,
     "hit_rate": 0.008,
     "unverified": 102,
-    "tx_count": 1725
+    "tx_count": 1728
    },
    "reasons": [
     "1 winning trade(s) (5x+ on verified coins); needs 5",
@@ -11129,7 +11129,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "BeUAXnAoF1ip3kMLCpgdJ8WRQFTzntDkgfyVYyMwpump",
-     "symbol": "Archi",
+     "symbol": "",
      "cost_usd": 100.07,
      "proceeds_usd": 128.51,
      "value_usd": 0.0,
@@ -11139,14 +11139,14 @@ window.GEM_WALLETS = {
      "sells": 12,
      "first_buy_ts": 1790106885,
      "last_trade_ts": 1790117213,
-     "launched_ts": 1790104775,
+     "launched_ts": null,
      "first_buy_sig": "4yx1KpXpXU9m3cNa6MeE9YSeYcQC7Q1XRohRgyVYE7KeaipQpNEx2erZF6hdinSLxu8DWZqGRwrGVmdH38dZTKhd",
      "verified": false,
      "flags": []
     },
     {
      "mint": "CRJDgvxzZKCmCKbe7RjBkBWEhAneLFpncWAGuUrwpump",
-     "symbol": "WindChill",
+     "symbol": "",
      "cost_usd": 500.0,
      "proceeds_usd": 312.37,
      "value_usd": 0.0,
@@ -11156,7 +11156,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1787900243,
      "last_trade_ts": 1787900449,
-     "launched_ts": 1787897479,
+     "launched_ts": null,
      "first_buy_sig": "5nySAxHnPA9MXHVHVig8oJAaNMSxgcpd5ZhDUHfRrHTYR35HYYw8daHmdLfzK3XGeTpF9iJYg72XCh6yeEYv8BTm",
      "verified": false,
      "flags": []
@@ -11214,7 +11214,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "FHi4YQN2mXrSG5SWZet2oND1w6PVeHkhRqSCheSxpump",
-     "symbol": "",
+     "symbol": "FOLK",
      "cost_usd": 100.0,
      "proceeds_usd": 102.77,
      "value_usd": 0.0,
@@ -11224,7 +11224,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1783215396,
      "last_trade_ts": 1783215633,
-     "launched_ts": null,
+     "launched_ts": 1782959559,
      "first_buy_sig": "3nVLGkEBau8JhcSxrrMnjorxHdmfCmyFTUb6dDsvif5uW2MSiTABEgiihspSCGGhMxG2wbatFHnewWQJ4MiAgH5V",
      "verified": false,
      "flags": []
@@ -11554,7 +11554,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "822Xz33W1h8w4gXBUwHLpH74TJibNyRMYLfv3CrBpmHK",
-     "symbol": "assets",
+     "symbol": "",
      "cost_usd": 257.42,
      "proceeds_usd": 348.12,
      "value_usd": 0.0,
@@ -11564,7 +11564,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1769456649,
      "last_trade_ts": 1769456671,
-     "launched_ts": 1769456452,
+     "launched_ts": null,
      "first_buy_sig": "3tWaS4njkaWjqoEMGLkaeiu9VvbAMBgNxg96bun32tzpWKk6EJctw7HCpnx4yMWgho3DsS6W5UeEBMvQC8MgyubK",
      "verified": false,
      "flags": []
@@ -11622,7 +11622,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump",
-     "symbol": "",
+     "symbol": "RAAAAAH",
      "cost_usd": 788.94,
      "proceeds_usd": 636.22,
      "value_usd": 0.0,
@@ -11632,14 +11632,14 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1768777197,
      "last_trade_ts": 1768777208,
-     "launched_ts": null,
+     "launched_ts": 1766525974,
      "first_buy_sig": "5gieeYgkvay4dnpSavzu95p1TGtvDR3PGvGpTXWCKSscgySoYoMYtrcNTxXQ5wNBDWzLzB3k7fDyYXYsRLD8u2Ti",
      "verified": false,
      "flags": []
     },
     {
      "mint": "55DJNrN4rM7euSZSsaYfsEHGBQRcznibwiq1fR2HBAGS",
-     "symbol": "",
+     "symbol": "CURSED",
      "cost_usd": 81.6,
      "proceeds_usd": 9.74,
      "value_usd": 0.0,
@@ -11649,7 +11649,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1768624336,
      "last_trade_ts": 1768692372,
-     "launched_ts": null,
+     "launched_ts": 1768562508,
      "first_buy_sig": "2QcmVCWZEMpdCWK84K4zWgSZ8Bq9zHxELgB6nAjoR4QLCqrTFmzT3SDAbTwPi5FfEfSr7yheLm9YAa5gws4bSoms",
      "verified": false,
      "flags": []
@@ -11971,7 +11971,7 @@ window.GEM_WALLETS = {
     "gem_profit_usd": 0,
     "hit_rate": 0.0,
     "unverified": 130,
-    "tx_count": 1656
+    "tx_count": 1655
    },
    "reasons": [
     "0 winning trade(s) (5x+ on verified coins); needs 5",
@@ -12040,7 +12040,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "C4AYNMP4Hor2fNkLSkatgN8DuLfQRepGJpAVBhHUz5Ak",
-     "symbol": "PERPAD",
+     "symbol": "",
      "cost_usd": 8000.0,
      "proceeds_usd": 4500.56,
      "value_usd": 0.0,
@@ -12050,7 +12050,7 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1779806203,
      "last_trade_ts": 1779817655,
-     "launched_ts": 1779337128,
+     "launched_ts": null,
      "first_buy_sig": "5AzUzPsWLMAxd1is72uDwbLbEMPC3ay2uuZoZHeAsS3xqwmB3zuiT2U4M6iHjY4UQ5f4t5vHnmx4FtemgkPFc7Sj",
      "verified": false,
      "flags": []
@@ -12159,7 +12159,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "9XgfFWPxPU6hyDyGtfhC9D6eyRE3RUSgAYKHRznWpump",
-     "symbol": "kitkat",
+     "symbol": "",
      "cost_usd": 19000.0,
      "proceeds_usd": 17908.48,
      "value_usd": 0.0,
@@ -12169,7 +12169,7 @@ window.GEM_WALLETS = {
      "sells": 4,
      "first_buy_ts": 1761876906,
      "last_trade_ts": 1761934390,
-     "launched_ts": 1761784016,
+     "launched_ts": null,
      "first_buy_sig": "XYfw9yz1snXpTfxxbY1WGEbrSEkaEExYNEhDe2ne4BXivccXnZueHzGjT4XSEvxSVdRbkECyYH2yQMATp6ozg9Q",
      "verified": false,
      "flags": []
@@ -12210,7 +12210,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "GEuuznWpn6iuQAJxLKQDVGXPtrqXHNWTk3gZqqvJpump",
-     "symbol": "ACE",
+     "symbol": "",
      "cost_usd": 10000.0,
      "proceeds_usd": 11065.63,
      "value_usd": 0.0,
@@ -12220,7 +12220,7 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1761657526,
      "last_trade_ts": 1761781476,
-     "launched_ts": 1739586663,
+     "launched_ts": null,
      "first_buy_sig": "3rwXU5kUkpZQ4CMsKEXHxcWpCiNgDgDn41igWsiUYPZvgtzBMXWmMnST4vDrEjqA6gDCdxGK81doy7XK8HRHQqdE",
      "verified": false,
      "flags": []
@@ -12397,7 +12397,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "B8YVF2CA2hv2LnPdWpjNmqcS7g3tqhYkYm3wugcvHELP",
-     "symbol": "",
+     "symbol": "DEVELOPER",
      "cost_usd": 10000.0,
      "proceeds_usd": 7897.71,
      "value_usd": 0.0,
@@ -12407,7 +12407,7 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1759521980,
      "last_trade_ts": 1759674365,
-     "launched_ts": null,
+     "launched_ts": 1757881574,
      "first_buy_sig": "3gBXHiUNDBKkbD8ZMVaqtvqoCSDMebzuBCDEWbJ3RUu7QNzPiAnDQQgGrJTseZZJPUrAhkjmQBW2A9ZFkdg2cMDL",
      "verified": false,
      "flags": []
@@ -12465,7 +12465,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "SW1TCHLmRGTfW5xZknqQdpdarB8PD95sJYWpNp9TbFx",
-     "symbol": "",
+     "symbol": "SWTCH",
      "cost_usd": 16000.0,
      "proceeds_usd": 10413.35,
      "value_usd": 0.0,
@@ -12475,7 +12475,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1759336211,
      "last_trade_ts": 1759424573,
-     "launched_ts": null,
+     "launched_ts": 1790767816,
      "first_buy_sig": "5skqMjVa6KrKA9f6rcX9CmtreFRifLPRE7e5eeNdPCdJvf8CtwxAj42AG5aU6AZfEwEEjWqHYNgbfUcquveTbzHG",
      "verified": true,
      "flags": []
@@ -12601,7 +12601,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "FoBeu5sdn91be9rCCf9uHnfHoGaZEqZnK6FGoNLxbonk",
-     "symbol": "",
+     "symbol": "SPEAK",
      "cost_usd": 8700.0,
      "proceeds_usd": 3353.69,
      "value_usd": 0.0,
@@ -12611,14 +12611,14 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1757431972,
      "last_trade_ts": 1757476374,
-     "launched_ts": null,
+     "launched_ts": 1757368038,
      "first_buy_sig": "4EYH8wJMsmtJaEoDitxAnExAcDvazCAXsDkSLw85YZcs4DpcqrqTrn4qWgbHwvPyV3dtnymbatwDZ3pgQXdsa1Z5",
      "verified": false,
      "flags": []
     },
     {
      "mint": "96hj47MzSpZgVcT1v4nwpbQNEU59f6ys48PArGivpump",
-     "symbol": "Qstay",
+     "symbol": "",
      "cost_usd": 7500.0,
      "proceeds_usd": 18125.11,
      "value_usd": 0.0,
@@ -12628,7 +12628,7 @@ window.GEM_WALLETS = {
      "sells": 4,
      "first_buy_ts": 1757111157,
      "last_trade_ts": 1757273909,
-     "launched_ts": 1755535903,
+     "launched_ts": null,
      "first_buy_sig": "zPpWTy1b5mx3E1Nx3sKU6Zx4EaaQ3CWwCEUPK2owW1vG8GhrT9jX4cqXt55VRuFodqtMRKiGD4bbdcCZd2cV3xU",
      "verified": false,
      "flags": []
@@ -12686,7 +12686,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "445ksMigJLms4mw29DQkXs8aWBG4S8Z2kTBCtGhd5nGd",
-     "symbol": "GLMPS",
+     "symbol": "",
      "cost_usd": 5170.0,
      "proceeds_usd": 3465.29,
      "value_usd": 0.0,
@@ -12696,7 +12696,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1757010752,
      "last_trade_ts": 1757013816,
-     "launched_ts": 1747244860,
+     "launched_ts": null,
      "first_buy_sig": "3QgEKN6yfFuurLsCDiTPscmEGPFMeVVcoTzg1exqiRBFXF63SHmRavXiC4rodxwiLENsT4eFUJr9TY1NyijWJ4jR",
      "verified": false,
      "flags": []
@@ -12771,7 +12771,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "6DEa18xxCgx2SgBTJbFdEY6PTNZMWvG2nDv47LHspump",
-     "symbol": "glub",
+     "symbol": "",
      "cost_usd": 2200.0,
      "proceeds_usd": 410.28,
      "value_usd": 0.0,
@@ -12781,7 +12781,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1756755746,
      "last_trade_ts": 1756758793,
-     "launched_ts": 1756746167,
+     "launched_ts": null,
      "first_buy_sig": "35PdzxYpZipTAGKDeCpDLxwFmu8vnYWHbnnL2dY8x9VMw4HF2eo6ovMBTYQWcjrzQpVDTJ3bdpb6C1qspRYwSVDy",
      "verified": false,
      "flags": []
@@ -13153,7 +13153,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "GEuuznWpn6iuQAJxLKQDVGXPtrqXHNWTk3gZqqvJpump",
-     "symbol": "ACE",
+     "symbol": "",
      "cost_usd": 10.0,
      "proceeds_usd": 9.33,
      "value_usd": 0.0,
@@ -13163,7 +13163,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1761663106,
      "last_trade_ts": 1761664744,
-     "launched_ts": 1739586663,
+     "launched_ts": null,
      "first_buy_sig": "5rifb1MW1ytK4u322fskSu6z28ZBEsS4KwU8TyYDJxhR9s2tv5z7AQ12F6mEW7we4uF9ooUiPbTHvuATWWPqtv1N",
      "verified": false,
      "flags": []
@@ -13204,7 +13204,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "CtmadLp7st6DSehwFBE4BFvizBQib7kv8quJDTyoUJSP",
-     "symbol": "",
+     "symbol": "SP",
      "cost_usd": 6000.0,
      "proceeds_usd": 5815.38,
      "value_usd": 0.0,
@@ -13214,10 +13214,12 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1761633451,
      "last_trade_ts": 1761638065,
-     "launched_ts": null,
+     "launched_ts": 1762881229,
      "first_buy_sig": "63HACtomjqxk2t4aoubj3UVCQF8Kz1TpnKER8xRSVCKXHixJPeHbHnR2em8SbechJC4JBhd9p2y7z6F8yy5wn25Q",
      "verified": false,
-     "flags": []
+     "flags": [
+      "no liquidity (dead / rugged)"
+     ]
     },
     {
      "mint": "5bZvQWq86Ug54VAaNpxxebzR9cAHCLgo9AMVHnuANdev",
@@ -13323,7 +13325,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "LYLikzBQtpa9ZgVrJsqYGQpR3cC1WMJrBHaXGrQmeta",
-     "symbol": "",
+     "symbol": "LOYAL",
      "cost_usd": 18000.0,
      "proceeds_usd": 16948.45,
      "value_usd": 0.0,
@@ -13333,7 +13335,7 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1761501510,
      "last_trade_ts": 1761503164,
-     "launched_ts": null,
+     "launched_ts": 1761174032,
      "first_buy_sig": "3Nq9uFQE9rbtF3iU922J5rbbfgXBu7sC8nLi8VmLcpcmRrTaBs4gycE1Q8t8rXCayKso9TrRUKuGtfhszSmRirzM",
      "verified": true,
      "flags": []
@@ -13384,7 +13386,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1761487265,
      "last_trade_ts": 1761487485,
-     "launched_ts": 1673569334,
+     "launched_ts": 1669604577,
      "first_buy_sig": "5QNqvqSudAdrAWDEudEJ1fXbodNN9JGPc1smXoyGnJD3GARoUi2hixg3rmtmV5AV5SZLQwzhjdSxymREJfteP2dU",
      "verified": true,
      "flags": []
@@ -13418,14 +13420,14 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1761486396,
      "last_trade_ts": 1761489944,
-     "launched_ts": 1752019135,
+     "launched_ts": 1752074375,
      "first_buy_sig": "nT2u8MNxbn8wCWwiy43dpQv1vDTcFRNdXoywokofWWe3vY2Wnts4B4ZzhjhDSno8chHcraoLM917YzMzhaUz5k8",
      "verified": true,
      "flags": []
     },
     {
      "mint": "8vYdMxuaTven3VXnfagGvYjDFya1EgUE2ZoyujC3gBLV",
-     "symbol": "",
+     "symbol": "PASTERNAK",
      "cost_usd": 17000.0,
      "proceeds_usd": 16280.44,
      "value_usd": 0.0,
@@ -13435,7 +13437,7 @@ window.GEM_WALLETS = {
      "sells": 4,
      "first_buy_ts": 1761477204,
      "last_trade_ts": 1761491247,
-     "launched_ts": null,
+     "launched_ts": 1758144209,
      "first_buy_sig": "47PsR9f29nD9m4rjjCSvLtv323zwH4Hx1SRWu8tnpG7q8cfqzBzCSMUW5V2rb99RVtXbRtwBU7cbHxeuQpvth4NA",
      "verified": false,
      "flags": []
@@ -13527,7 +13529,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "CuXmQvh4DVTdWBdC2d3pNq8UXqbKJ3w9RPBTAALcKcTb",
-     "symbol": "DIRA",
+     "symbol": "",
      "cost_usd": 16500.0,
      "proceeds_usd": 20352.48,
      "value_usd": 0.0,
@@ -13537,7 +13539,7 @@ window.GEM_WALLETS = {
      "sells": 20,
      "first_buy_ts": 1761368093,
      "last_trade_ts": 1761376774,
-     "launched_ts": 1747229990,
+     "launched_ts": null,
      "first_buy_sig": "TUN8vxsuTFWgivfbhmAoU62798Twt811zRXjoUUmaWkee1pgKaPzV6KweP5Exj714YuHhLaEm1KTmBabpSjEtbY",
      "verified": false,
      "flags": []
@@ -13561,7 +13563,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "EgHo1Tq81VHKSYSx9KiWEsZvKRb5fZD9M4y5HPyUmoon",
-     "symbol": "",
+     "symbol": "YARA",
      "cost_usd": 20500.0,
      "proceeds_usd": 20752.55,
      "value_usd": 0.0,
@@ -13571,7 +13573,7 @@ window.GEM_WALLETS = {
      "sells": 15,
      "first_buy_ts": 1761289064,
      "last_trade_ts": 1761474184,
-     "launched_ts": null,
+     "launched_ts": 1745428875,
      "first_buy_sig": "3o5bZsgWzk3DHK9kzTYQPZU21W8bKqJsSeyXdWPrnuCBEqpVQegQLRvDPmF3LwL3UrRk68iaqCK7HDKWBWy1Gzww",
      "verified": true,
      "flags": []
@@ -13612,7 +13614,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "8BtoThi2ZoXnF7QQK1Wjmh2JuBw9FjVvhnGMVZ2vpump",
-     "symbol": "",
+     "symbol": "DARK",
      "cost_usd": 4000.0,
      "proceeds_usd": 5098.13,
      "value_usd": 0.0,
@@ -13622,7 +13624,7 @@ window.GEM_WALLETS = {
      "sells": 5,
      "first_buy_ts": 1761278383,
      "last_trade_ts": 1761279343,
-     "launched_ts": null,
+     "launched_ts": 1743784002,
      "first_buy_sig": "5cZTEUHgZNPxvzPkS2CpTGpemSrhAV1hqG5NkWSuxcrcGZQ4k1UWrPUENms6rJJykEbfhdgkhRATfmhCDXkfFaih",
      "verified": false,
      "flags": []
@@ -13697,7 +13699,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "2hXQn7nJbh2XFTxvtyKb5mKfnScuoiC1Sm8rnWydpump",
-     "symbol": "BREW",
+     "symbol": "",
      "cost_usd": 11000.0,
      "proceeds_usd": 12070.89,
      "value_usd": 0.0,
@@ -13707,7 +13709,7 @@ window.GEM_WALLETS = {
      "sells": 7,
      "first_buy_ts": 1761063060,
      "last_trade_ts": 1761322998,
-     "launched_ts": 1739205296,
+     "launched_ts": null,
      "first_buy_sig": "2AF1c6hBdWVDUuPRfg4pVRTTnjqmYs78nzQQQigAwaRhcAVBzTpph6R2KLzqGAQZaehMHEgs8XjytbaKTNCXpMDj",
      "verified": false,
      "flags": []
@@ -13833,7 +13835,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "4v2FjoQAb2mVazCQEsrUr4DQFvNbvAEgQWKDmfzYpURK",
-     "symbol": "",
+     "symbol": "SUPERMODEL",
      "cost_usd": 1200.0,
      "proceeds_usd": 1203.17,
      "value_usd": 0.0,
@@ -13843,14 +13845,14 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1760783980,
      "last_trade_ts": 1760786849,
-     "launched_ts": null,
+     "launched_ts": 1760209529,
      "first_buy_sig": "vvweT9sGrCgzhzE9wPhfwS5dQAVDWhTemqzJBo9m1Yxv174m9GBiwJGB8PWqrM8G3J2GZKXGW5fFoqbnThqe82A",
      "verified": false,
      "flags": []
     },
     {
      "mint": "Aeqq7RW4pfKkAigceEzXV9BdshAym3dKjYF9jhQHpump",
-     "symbol": "",
+     "symbol": "foid",
      "cost_usd": 1000.0,
      "proceeds_usd": 999.15,
      "value_usd": 0.0,
@@ -13860,7 +13862,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1760674577,
      "last_trade_ts": 1760674603,
-     "launched_ts": null,
+     "launched_ts": 1755548862,
      "first_buy_sig": "61oR4XYEAKxCR7L67fUpN7TV8tAbur1CY29m98v3fGFP2DXDGfB6tjc4gWXEJXrcZYJpTzNnGH65U662DkPCtB7a",
      "verified": false,
      "flags": []
@@ -13935,7 +13937,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "2dPkLQi1WLkrbQbBAS9d8GHARF4oWQXFXrUbMq7bstar",
-     "symbol": "STAR",
+     "symbol": "",
      "cost_usd": 12100.0,
      "proceeds_usd": 14296.92,
      "value_usd": 0.0,
@@ -13945,14 +13947,14 @@ window.GEM_WALLETS = {
      "sells": 17,
      "first_buy_ts": 1760451271,
      "last_trade_ts": 1760466418,
-     "launched_ts": 1751328735,
+     "launched_ts": null,
      "first_buy_sig": "5sRsd6CH5KyDAw9eCz1YJ1JtP5ktksZbFkCYjpYVvXoZPmzw895FoRxHPGymdY45NsMWvhWvXHt7eAX8MLiVgK6X",
      "verified": false,
      "flags": []
     },
     {
      "mint": "3MLpX3VviXDhzZzQwFMHXSRSdXvWWsycLEt3xcTapump",
-     "symbol": "WAGER",
+     "symbol": "",
      "cost_usd": 3900.0,
      "proceeds_usd": 4140.82,
      "value_usd": 0.0,
@@ -13962,7 +13964,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1760419396,
      "last_trade_ts": 1760427278,
-     "launched_ts": 1758260913,
+     "launched_ts": null,
      "first_buy_sig": "66pmc7unfV1rJwXpsDNNEYadmGT3GMek1CVTJiAgaSjdEn2aSAgG71b3KtaZxeky9HkPNLU6KrRxFRgF1BqAPa4r",
      "verified": false,
      "flags": []
@@ -13986,7 +13988,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "JCeoBX79HfatfaY6xvuNyCHf86hwgkCCWDpEycVHtime",
-     "symbol": "",
+     "symbol": "toly",
      "cost_usd": 4000.0,
      "proceeds_usd": 3956.14,
      "value_usd": 0.0,
@@ -13996,7 +13998,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1760387258,
      "last_trade_ts": 1760414501,
-     "launched_ts": null,
+     "launched_ts": 1740455212,
      "first_buy_sig": "4Hgp9Ub1eqTn6Ph96Kff3AtcAJjkwLjdThTmnb5gC3M5RPdvJiYLUq8TsL2hFJ31fJ7kvgmAviWCKXfNWnQVLnSt",
      "verified": true,
      "flags": []
@@ -14020,7 +14022,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "SW1TCHLmRGTfW5xZknqQdpdarB8PD95sJYWpNp9TbFx",
-     "symbol": "",
+     "symbol": "SWTCH",
      "cost_usd": 40010.0,
      "proceeds_usd": 45360.15,
      "value_usd": 0.0,
@@ -14030,10 +14032,12 @@ window.GEM_WALLETS = {
      "sells": 37,
      "first_buy_ts": 1760364337,
      "last_trade_ts": 1761507468,
-     "launched_ts": null,
+     "launched_ts": 1790767816,
      "first_buy_sig": "57d55VuhKC9ZaRkTi8w4LdiQRLKGy5ouEfCKUKcdPRPGVM6NUuSLKLyfkshoVGiTvJQpwvvHRZwyPhrA8yYdMzpV",
      "verified": true,
-     "flags": []
+     "flags": [
+      "no liquidity (dead / rugged)"
+     ]
     },
     {
      "mint": "Egs8S3cnfyYHBHiczH5d6v2Xj47AiSaD8gXm9xLkBAGS",
@@ -14132,7 +14136,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "BeUAXnAoF1ip3kMLCpgdJ8WRQFTzntDkgfyVYyMwpump",
-     "symbol": "Archi",
+     "symbol": "",
      "cost_usd": 1000.0,
      "proceeds_usd": 141.79,
      "value_usd": 0.0,
@@ -14142,7 +14146,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1790112650,
      "last_trade_ts": 1790121550,
-     "launched_ts": 1790104775,
+     "launched_ts": null,
      "first_buy_sig": "3Bj13frN8dwQbK6xjRqtuMRmtgkrDTWPPG8pvXfzrLUDqL8kNUQcSZaPYwq4X53Sa2c3tBUKredtgkbVLZWKnCMn",
      "verified": false,
      "flags": []
@@ -14360,9 +14364,9 @@ window.GEM_WALLETS = {
      "symbol": "MUSHU",
      "cost_usd": 5305.0,
      "proceeds_usd": 4.53,
-     "value_usd": 586.76,
+     "value_usd": 433.13,
      "profit_usd": -5300.47,
-     "multiple": 0.11,
+     "multiple": 0.08,
      "buys": 10,
      "sells": 1,
      "first_buy_ts": 1770438069,
@@ -14493,7 +14497,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "55DJNrN4rM7euSZSsaYfsEHGBQRcznibwiq1fR2HBAGS",
-     "symbol": "",
+     "symbol": "CURSED",
      "cost_usd": 750.0,
      "proceeds_usd": 565.64,
      "value_usd": 0.0,
@@ -14503,7 +14507,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1768778160,
      "last_trade_ts": 1768802684,
-     "launched_ts": null,
+     "launched_ts": 1768562508,
      "first_buy_sig": "5fnueZQkxKSjD3aujc3NK3baewieGUhhsrd39wJJ9k8MJde16kmSF9TJFR9xvuxMKVzZR4U2TTqgs6WyVPsDYKYV",
      "verified": false,
      "flags": []
@@ -14790,7 +14794,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "DCzCshB6Uu5uA2jMaTscghQx4ojD5bXFgeJDzZVJpump",
-     "symbol": "Peptides",
+     "symbol": "",
      "cost_usd": 1800.0,
      "proceeds_usd": 1227.62,
      "value_usd": 0.0,
@@ -14800,7 +14804,7 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1776473521,
      "last_trade_ts": 1777381417,
-     "launched_ts": 1771204014,
+     "launched_ts": null,
      "first_buy_sig": "2eMQb16LSRpKZ9YNPfaYxVcNoMAvoZjNP97rS4bXAqiuS6t4M2wnRAaXxsfhp7x17fCs4CqbzTaf2nEK26iVjRNp",
      "verified": false,
      "flags": []
@@ -14960,7 +14964,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "3GwPUbJauo9qRoX2h1ANj15RGn9L7GVLG67kWCAjbonk",
-     "symbol": "",
+     "symbol": "BONKWHEEL",
      "cost_usd": 1000.0,
      "proceeds_usd": 840.75,
      "value_usd": 0.0,
@@ -14970,7 +14974,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1770667759,
      "last_trade_ts": 1770667801,
-     "launched_ts": null,
+     "launched_ts": 1770667341,
      "first_buy_sig": "2z9yN8WPvyKwszD8XK7XeLp3ixDm7tdkHLWfs5p24UpSANkn5jjNwHhyW4SMMuaouDJ22p7aVf2aDatBMLzVVd35",
      "verified": false,
      "flags": []
@@ -15028,7 +15032,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "DEffWzJyaFRNyA4ogUox631hfHuv3KLeCcpBh2ipBAGS",
-     "symbol": "X1XHLOL",
+     "symbol": "",
      "cost_usd": 3500.0,
      "proceeds_usd": 3005.44,
      "value_usd": 0.0,
@@ -15038,7 +15042,7 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1769972154,
      "last_trade_ts": 1769976568,
-     "launched_ts": 1768579482,
+     "launched_ts": null,
      "first_buy_sig": "cmznDmgGzxe9n5wCvRvGmSRLtQ3CHzuKNK9jPmPD2sFcc7fa9JF56BvkYpLg4rhPYRF8iDHr2gXobMPfK8NEexe",
      "verified": true,
      "flags": []
@@ -15062,7 +15066,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "DgN9zcmQgWF98qkhoMEshq7G4eRDjxcHoXvijfffBAGS",
-     "symbol": "",
+     "symbol": "TOWN",
      "cost_usd": 9000.0,
      "proceeds_usd": 5788.2,
      "value_usd": 0.0,
@@ -15072,14 +15076,14 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1769872194,
      "last_trade_ts": 1769884986,
-     "launched_ts": null,
+     "launched_ts": 1769842718,
      "first_buy_sig": "3o8WwgHdy4vxqGeJzA6mz8AdUnDvtY7przqB4RbQEuoovr2v9wNh7kWeqq62AMFB9DXfC515MsdKcDbmHfUYw63V",
      "verified": false,
      "flags": []
     },
     {
      "mint": "8oCRS5SYaf4t5PGnCeQfpV7rjxGCcGqNDGHmHJBooPhX",
-     "symbol": "",
+     "symbol": "SNAP",
      "cost_usd": 4000.0,
      "proceeds_usd": 1650.21,
      "value_usd": 0.0,
@@ -15089,7 +15093,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1769804434,
      "last_trade_ts": 1769805451,
-     "launched_ts": null,
+     "launched_ts": 1769766064,
      "first_buy_sig": "4gjKGauZ7Xzr9Gu7hGnTebkJAW8SvSDNzQ5QntP641A5TVQ7Z1Yy2DUk8ewNk4NoNXnbXeD4cuaSE3j7WnLrz5DZ",
      "verified": false,
      "flags": []
@@ -15113,7 +15117,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "AnarbvjzbRxv391juRyWZiWmrAiqyLxb1LBz5FjWBAGS",
-     "symbol": "",
+     "symbol": "ORDO",
      "cost_usd": 2500.0,
      "proceeds_usd": 1309.56,
      "value_usd": 0.0,
@@ -15123,14 +15127,14 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1769792573,
      "last_trade_ts": 1769821940,
-     "launched_ts": null,
+     "launched_ts": 1769469871,
      "first_buy_sig": "5aGeynmWrgn7DBwW1keixK3qpo42ZZZch4ybXYjAfzDMbHtozuFv76LTaUecxAXtBbVzic7RxgYv7DMNKvNHd24u",
      "verified": false,
      "flags": []
     },
     {
      "mint": "6tVCDJP55xwBa9MLdeXJonFaF6MPFNMgnJ7k9RDFpump",
-     "symbol": "PISSFACE",
+     "symbol": "",
      "cost_usd": 3000.0,
      "proceeds_usd": 3136.31,
      "value_usd": 0.0,
@@ -15140,7 +15144,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1769781983,
      "last_trade_ts": 1769782360,
-     "launched_ts": 1769780771,
+     "launched_ts": null,
      "first_buy_sig": "2C7q1NEQYo2ciE3vi4Ugke5d8q1VW6AZRpVBaCU5rMTy1MjHMjSzSaFWgY9n1LrC545eLKr48rCBkLQuwf8VhUnr",
      "verified": false,
      "flags": []
@@ -15368,7 +15372,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "9Wyb1S1mnm6KySHFPTnqi2uyyS6c1aE7c4Vpvw91BAGS",
-     "symbol": "ZACHXBT",
+     "symbol": "",
      "cost_usd": 1700.0,
      "proceeds_usd": 798.25,
      "value_usd": 0.0,
@@ -15378,7 +15382,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1768914147,
      "last_trade_ts": 1768916460,
-     "launched_ts": 1768910740,
+     "launched_ts": null,
      "first_buy_sig": "kZM328eZ76dbgGS4sVAbn5hwNQFUYe1tcgcUNtdnDsDZn6hyDsiVizKEi65PFh498P5tAyTxer8VrA9DWNAKtct",
      "verified": false,
      "flags": []
@@ -15402,7 +15406,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "FWGC5ziwYMCT29y913WZSHmkSh7mF4MiddQwEBx5A6XA",
-     "symbol": "",
+     "symbol": "COW",
      "cost_usd": 9500.0,
      "proceeds_usd": 9025.41,
      "value_usd": 0.0,
@@ -15412,7 +15416,7 @@ window.GEM_WALLETS = {
      "sells": 9,
      "first_buy_ts": 1768748690,
      "last_trade_ts": 1768821973,
-     "launched_ts": null,
+     "launched_ts": 1768504147,
      "first_buy_sig": "46ZJXvdcmUA6HLqb2RMLB4njYn9XRxJzZ6n6SdZ1ZHBWfUCa5RsJfhFgd8NkkzQWY7VWaY53r3EwyjWSnd3XS1a3",
      "verified": false,
      "flags": []
@@ -15479,7 +15483,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "4qAv1QAoFpNtTqxpZmyjLfxM3RRcLqT84gJf3KNrQS3c",
-     "symbol": "",
+     "symbol": "BULLPAD",
      "cost_usd": 78.27,
      "proceeds_usd": 136.37,
      "value_usd": 0.0,
@@ -15489,7 +15493,7 @@ window.GEM_WALLETS = {
      "sells": 3,
      "first_buy_ts": 1788226967,
      "last_trade_ts": 1788227108,
-     "launched_ts": null,
+     "launched_ts": 1788227916,
      "first_buy_sig": "cibFiBnMk5MhVMzBEsC6oTwC1bYM9MtAWsX9JXSDy8P5WtCDMHTFnM1ooxhYzairru4EebAELZwJgjMN5uZjhNM",
      "verified": false,
      "flags": []
@@ -15904,7 +15908,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "73q7NoVCrHk9Yet1FVmpyDL6jRXjShZ7xHZ5gaJSpump",
-     "symbol": "PILLCREW",
+     "symbol": "",
      "cost_usd": 56.42,
      "proceeds_usd": 72.22,
      "value_usd": 0.0,
@@ -15914,7 +15918,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1788200757,
      "last_trade_ts": 1788200790,
-     "launched_ts": 1788199995,
+     "launched_ts": null,
      "first_buy_sig": "3nGU1NfKNp6RJ7EGQZpqDgmgmjB687aK2rAxmbJgQ9tQrj5KMnjscMojQCZcCyP86vJVdBBJb5tFQaDCxRkDJp8F",
      "verified": false,
      "flags": []
@@ -16074,7 +16078,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "5mLRwZ9YAWfoBv2WdPTUPKXTHkN7VKP7Z6aqkESfpump",
-     "symbol": "FINORA 2.0",
+     "symbol": "",
      "cost_usd": 39.23,
      "proceeds_usd": 36.56,
      "value_usd": 0.0,
@@ -16084,7 +16088,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1788190642,
      "last_trade_ts": 1788190700,
-     "launched_ts": 1790059370,
+     "launched_ts": null,
      "first_buy_sig": "4k5bNicjgGJyCzqBsyRaqhG3eAFR8dav24B1Vjj773hMi4kC9CYdeo71WeCSLLF6kBNxqkNkCArSyiYsYBn7kNDX",
      "verified": false,
      "flags": []
@@ -16295,7 +16299,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "GLXRZGPLCZuwr9uymkxBBKABf4yiuEQc5SbF4r4tpump",
-     "symbol": "Francis ",
+     "symbol": "",
      "cost_usd": 112.72,
      "proceeds_usd": 46.57,
      "value_usd": 0.0,
@@ -16305,7 +16309,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1788130455,
      "last_trade_ts": 1788131022,
-     "launched_ts": 1788130205,
+     "launched_ts": null,
      "first_buy_sig": "5awZFnmX2G7E4ZodqJszaEqsdX4pWJuyBX524SJaFRwUDqecouvgWPqbDXTkxYyGLFdqSiz8KGonEXcF7r6mH7RY",
      "verified": false,
      "flags": []
@@ -16483,10 +16487,10 @@ window.GEM_WALLETS = {
    ]
   },
   {
-   "wallet": "omegoMAe1AMY5MFKQQr3JwXVy8F4eCvmBAfcpo8XAfq",
+   "wallet": "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC",
    "tier": "REJECTED",
    "labels": [
-    "early buyer on 4 big coins: GATO early $66, JEANPHIL early $133, TripleT early $90"
+    "early buyer on 4 big coins: 1WIN early $52, stORE early $2,303, XFEE early $5,320"
    ],
    "sources": [
     "verified-early"
@@ -16521,16 +16525,16 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "HLnpSz9h2S4hiLQ43rnSD9XkcUThA7B8hQMKmDaiTLcC",
+   "wallet": "omegoMAe1AMY5MFKQQr3JwXVy8F4eCvmBAfcpo8XAfq",
    "tier": "REJECTED",
    "labels": [
-    "early buyer on 3 big coins: 1WIN early $52, stORE early $2,303, RUSH early $177"
+    "early buyer on 4 big coins: GATO early $66, EXFIL early $41, JEANPHIL early $133"
    ],
    "sources": [
     "verified-early"
    ],
    "gem_hits_in_search": 0,
-   "early_hits_in_search": 3,
+   "early_hits_in_search": 4,
    "stats": {
     "trades": 0,
     "judged": 0,
@@ -16562,7 +16566,7 @@ window.GEM_WALLETS = {
    "wallet": "nya666pQkP3PzWxi7JngU3rRMHuc7zbLK8c8wxQ4qpT",
    "tier": "REJECTED",
    "labels": [
-    "early buyer on 3 big coins: Buttcoin early $45, TripleT early $34, EXFIL early $118"
+    "early buyer on 3 big coins: Buttcoin early $45, EXFIL early $118, TripleT early $34"
    ],
    "sources": [
     "verified-early"
@@ -16638,7 +16642,7 @@ window.GEM_WALLETS = {
    "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
    "tier": "REJECTED",
    "labels": [
-    "early buyer on 3 big coins: JEANPHIL early $183, MANIFEST early $88, EXFIL early $190"
+    "early buyer on 3 big coins: EXFIL early $190, JEANPHIL early $183, MANIFEST early $88"
    ],
    "sources": [
     "verified-early"
@@ -16939,44 +16943,6 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "FZU56d9iPqohXM5XBrYYBZLi2UoUnZT4V5Qf2631tEzb",
-   "tier": "REJECTED",
-   "labels": [
-    "early buyer on 2 big coins: OTC early $132, EXFIL early $159"
-   ],
-   "sources": [
-    "verified-early"
-   ],
-   "gem_hits_in_search": 0,
-   "early_hits_in_search": 2,
-   "stats": {
-    "trades": 0,
-    "judged": 0,
-    "open": 0,
-    "gems": 0,
-    "wins_min_multiple": 0,
-    "losses": 0,
-    "min_multiple": null,
-    "median_multiple": null,
-    "best_multiple": null,
-    "invested_usd": 0,
-    "realized_usd": 0,
-    "gem_profit_usd": 0,
-    "hit_rate": null,
-    "unverified": 0,
-    "tx_count": 3000
-   },
-   "reasons": [
-    "too active (3,000+ transactions): bot / scalper, not a gem hunter",
-    "0 winning trade(s) (5x+ on verified coins); needs 5"
-   ],
-   "flags": [],
-   "notes": [],
-   "data_source": "helius",
-   "gems": [],
-   "trades": []
-  },
-  {
    "wallet": "KPEF3xjDBQjdbt32n91KsEQWoL6QQRwN6sWtxdikDJR",
    "tier": "REJECTED",
    "labels": [
@@ -17015,10 +16981,48 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "AmwJToZR4YkawNquDbiUHbZnC2Myq1CLRRryUQ9FBf89",
+   "wallet": "EpTEt8zmLVuqed5AEQMWbi6eaycQht4z8UDYrAws71cq",
    "tier": "REJECTED",
    "labels": [
-    "early buyer on 2 big coins: JEANPHIL early $41, EXFIL early $102"
+    "early buyer on 2 big coins: XFEE early $948, RUSH early $998"
+   ],
+   "sources": [
+    "verified-early"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 2,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 3000
+   },
+   "reasons": [
+    "too active (3,000+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "helius",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "FZU56d9iPqohXM5XBrYYBZLi2UoUnZT4V5Qf2631tEzb",
+   "tier": "REJECTED",
+   "labels": [
+    "early buyer on 2 big coins: OTC early $132, EXFIL early $159"
    ],
    "sources": [
     "verified-early"
@@ -17056,7 +17060,45 @@ window.GEM_WALLETS = {
    "wallet": "EwMndgvbgdXuTCvT7bRGX8wPKVevyq7QZNVqWvFqFVsh",
    "tier": "REJECTED",
    "labels": [
-    "early buyer on 2 big coins: JEANPHIL early $56, EXFIL early $74"
+    "early buyer on 2 big coins: EXFIL early $74, JEANPHIL early $56"
+   ],
+   "sources": [
+    "verified-early"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 2,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 3000
+   },
+   "reasons": [
+    "too active (3,000+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "helius",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "AmwJToZR4YkawNquDbiUHbZnC2Myq1CLRRryUQ9FBf89",
+   "tier": "REJECTED",
+   "labels": [
+    "early buyer on 2 big coins: EXFIL early $102, JEANPHIL early $41"
    ],
    "sources": [
     "verified-early"
@@ -17094,7 +17136,7 @@ window.GEM_WALLETS = {
    "wallet": "9keCU8mgA23XV8LCgSCJEo4Lspmo9fRBA3MyxJmZKQSp",
    "tier": "REJECTED",
    "labels": [
-    "early buyer on 2 big coins: JEANPHIL early $223, EXFIL early $245"
+    "early buyer on 2 big coins: EXFIL early $245, JEANPHIL early $223"
    ],
    "sources": [
     "verified-early"
@@ -17167,48 +17209,10 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "G3gZWqrYkNmYFKYCyfRCNtGuxdyuE2wiYKkZpiZn4WSS",
-   "tier": "REJECTED",
-   "labels": [
-    "Kolscan daily #1 Goyim ($64.2k)"
-   ],
-   "sources": [
-    "kolscan"
-   ],
-   "gem_hits_in_search": 0,
-   "early_hits_in_search": 0,
-   "stats": {
-    "trades": 0,
-    "judged": 0,
-    "open": 0,
-    "gems": 0,
-    "wins_min_multiple": 0,
-    "losses": 0,
-    "min_multiple": null,
-    "median_multiple": null,
-    "best_multiple": null,
-    "invested_usd": 0,
-    "realized_usd": 0,
-    "gem_profit_usd": 0,
-    "hit_rate": null,
-    "unverified": 0,
-    "tx_count": 3000
-   },
-   "reasons": [
-    "too active (3,000+ transactions): bot / scalper, not a gem hunter",
-    "0 winning trade(s) (5x+ on verified coins); needs 5"
-   ],
-   "flags": [],
-   "notes": [],
-   "data_source": "helius",
-   "gems": [],
-   "trades": []
-  },
-  {
    "wallet": "95TWoKkvv2z85EXBzd2z6NwbxH2f54AvwuCA9x3NoKep",
    "tier": "REJECTED",
    "labels": [
-    "Kolscan daily #2 Killua ($55.9k)"
+    "Kolscan daily #1 Killua ($31.3k)"
    ],
    "sources": [
     "kolscan"
@@ -17243,10 +17247,10 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "5t9xBNuDdGTGpjaPTx6hKd7sdRJbvtKS8Mhq6qVbo8Qz",
+   "wallet": "G3gZWqrYkNmYFKYCyfRCNtGuxdyuE2wiYKkZpiZn4WSS",
    "tier": "REJECTED",
    "labels": [
-    "Kolscan daily #3 Smokez ($36.1k)"
+    "Kolscan daily #2 Goyim ($18.8k)"
    ],
    "sources": [
     "kolscan"
@@ -17281,10 +17285,10 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "J23qr98GjGJJqKq9CBEnyRhHbmkaVxtTJNNxKu597wsA",
+   "wallet": "FzVQSzj8JJr6WMGqbUHzx2XH1KkrfxRrRPv6WcbbZmND",
    "tier": "REJECTED",
    "labels": [
-    "Kolscan daily #4 gr3g ($24.0k)"
+    "Kolscan daily #3 DustNukes ($16.5k)"
    ],
    "sources": [
     "kolscan"
@@ -17319,10 +17323,10 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "DfMxre4cKmvogbLrPigxmibVTTQDuzjdXojWzjCXXhzj",
+   "wallet": "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN",
    "tier": "REJECTED",
    "labels": [
-    "Kolscan daily #5 Euris ($21.0k)"
+    "Kolscan daily #4 West ($15.6k)"
    ],
    "sources": [
     "kolscan"
@@ -17357,10 +17361,10 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "4cXnf2z85UiZ5cyKsPMEULq1yufAtpkatmX4j4DBZqj2",
+   "wallet": "6aXFYXbFob1ZKAEDCcqZnX2vooA3TgEqDoy5dAQbeWoV",
    "tier": "REJECTED",
    "labels": [
-    "Kolscan daily #6 WaiterG ($12.5k)"
+    "Kolscan daily #5 Flames ($11.0k)"
    ],
    "sources": [
     "kolscan"
@@ -17395,48 +17399,10 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "DYAn4XpAkN5mhiXkRB7dGq4Jadnx6XYgu8L5b3WGhbrt",
+   "wallet": "FsG3BaPmRTdSrPaivbgJsFNCCa8cPfkUtk8VLWXkHpHP",
    "tier": "REJECTED",
    "labels": [
-    "Kolscan daily #7 The Doc ($9,024)"
-   ],
-   "sources": [
-    "kolscan"
-   ],
-   "gem_hits_in_search": 0,
-   "early_hits_in_search": 0,
-   "stats": {
-    "trades": 0,
-    "judged": 0,
-    "open": 0,
-    "gems": 0,
-    "wins_min_multiple": 0,
-    "losses": 0,
-    "min_multiple": null,
-    "median_multiple": null,
-    "best_multiple": null,
-    "invested_usd": 0,
-    "realized_usd": 0,
-    "gem_profit_usd": 0,
-    "hit_rate": null,
-    "unverified": 0,
-    "tx_count": 3000
-   },
-   "reasons": [
-    "too active (3,000+ transactions): bot / scalper, not a gem hunter",
-    "0 winning trade(s) (5x+ on verified coins); needs 5"
-   ],
-   "flags": [],
-   "notes": [],
-   "data_source": "helius",
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
-   "tier": "REJECTED",
-   "labels": [
-    "Kolscan daily #8 Schoen ($7,431)"
+    "Kolscan daily #6 Reljoo ($10.9k)"
    ],
    "sources": [
     "kolscan"
@@ -17474,7 +17440,7 @@ window.GEM_WALLETS = {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
    "tier": "REJECTED",
    "labels": [
-    "Kolscan daily #9 ban ($6,482)"
+    "Kolscan daily #7 ban ($8,655)"
    ],
    "sources": [
     "kolscan"
@@ -17509,10 +17475,86 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "9tY7u1HgEt2RDcxym3RJ9sfvT3aZStiiUwXd44X9RUr8",
+   "wallet": "CEUA7zVoDRqRYoeHTP58UHU6TR8yvtVbeLrX1dppqoXJ",
    "tier": "REJECTED",
    "labels": [
-    "Kolscan daily #10 Solana degen ($5,263)"
+    "Kolscan daily #8 Tom ($6,912)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 3000
+   },
+   "reasons": [
+    "too active (3,000+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "helius",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "5t9xBNuDdGTGpjaPTx6hKd7sdRJbvtKS8Mhq6qVbo8Qz",
+   "tier": "REJECTED",
+   "labels": [
+    "Kolscan daily #9 Smokez ($6,472)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 3000
+   },
+   "reasons": [
+    "too active (3,000+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "helius",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "39q2g5tTQn9n7KnuapzwS2smSx3NGYqBoea11tBjsGEt",
+   "tier": "REJECTED",
+   "labels": [
+    "Kolscan daily #10 Walta ($5,721)"
    ],
    "sources": [
     "kolscan"
@@ -19965,7 +20007,7 @@ window.GEM_WALLETS = {
     "gem_profit_usd": 0,
     "hit_rate": null,
     "unverified": 0,
-    "tx_count": 2
+    "tx_count": 3
    },
    "reasons": [
     "0 winning trade(s) (5x+ on verified coins); needs 5"
@@ -20681,7 +20723,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump",
-     "symbol": "2016",
+     "symbol": "",
      "cost_usd": 5288.49,
      "proceeds_usd": 6907.2,
      "value_usd": 0.0,
@@ -20691,7 +20733,7 @@ window.GEM_WALLETS = {
      "sells": 3,
      "first_buy_ts": 1769187265,
      "last_trade_ts": 1769220491,
-     "launched_ts": 1755735234,
+     "launched_ts": null,
      "first_buy_sig": "3ZXfAtbLLWfJkA2pNkLRB7HxQ3awwXppWkMZmiKjpcZ4SYyYak2x7RAUCDc8jodvHmwXb8zXHuAzwmYMy5FTjWXw",
      "verified": false,
      "flags": []
@@ -20749,7 +20791,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "8HxW9Z3YT1gXgQcgEynZaHsEpLXRgijGfMYCkaAypump",
-     "symbol": "mec",
+     "symbol": "",
      "cost_usd": 12500.0,
      "proceeds_usd": 5845.44,
      "value_usd": 0.0,
@@ -20759,14 +20801,14 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1762406942,
      "last_trade_ts": 1762445821,
-     "launched_ts": 1762375389,
+     "launched_ts": null,
      "first_buy_sig": "2GBVtx4CgzUJjup3x9LPD6peP637tt9thdsN6Xcr57RfMmJvZD9GZG618FyGSN9FyxC8Du4UWV8XAvuF5ykxyuxk",
      "verified": false,
      "flags": []
     },
     {
      "mint": "GEuuznWpn6iuQAJxLKQDVGXPtrqXHNWTk3gZqqvJpump",
-     "symbol": "ACE",
+     "symbol": "",
      "cost_usd": 23448.0,
      "proceeds_usd": 10739.3,
      "value_usd": 0.0,
@@ -20776,7 +20818,7 @@ window.GEM_WALLETS = {
      "sells": 4,
      "first_buy_ts": 1761609439,
      "last_trade_ts": 1764984605,
-     "launched_ts": 1739586663,
+     "launched_ts": null,
      "first_buy_sig": "3xtBeVc2Lf9rPFzZgcpU2uuUJE9tKkJJfuRBKDqZQq7txEtC4wYmyhWQ69N4UT46ss8yVQP2BCyNR7o4vQU6UJzL",
      "verified": false,
      "flags": []
@@ -20944,7 +20986,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "FHi4YQN2mXrSG5SWZet2oND1w6PVeHkhRqSCheSxpump",
-     "symbol": "",
+     "symbol": "FOLK",
      "cost_usd": 1800.0,
      "proceeds_usd": 470.69,
      "value_usd": 0.0,
@@ -20954,7 +20996,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1784341276,
      "last_trade_ts": 1784581966,
-     "launched_ts": null,
+     "launched_ts": 1782959559,
      "first_buy_sig": "4VeFxwmPUP3cV9rfHEisDdBaoTJ4pNEs8k8Z4ngv7PVfgrQmuGooYErvjfAEsdQbuEBpajHa89GXz9MybVWviRHo",
      "verified": false,
      "flags": []
@@ -21046,7 +21088,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "E8syR4zsgQG2zo9YyiyfX4ujubByR4z6qj9stjASpump",
-     "symbol": "",
+     "symbol": "STJUDE",
      "cost_usd": 3000.0,
      "proceeds_usd": 2609.94,
      "value_usd": 0.0,
@@ -21056,7 +21098,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1777497510,
      "last_trade_ts": 1777498002,
-     "launched_ts": null,
+     "launched_ts": 1777485236,
      "first_buy_sig": "j7P9nG3zB9JZk9X2AammTBa3k1TXaVtRqbAP1RDXmswG1uQXspiBpykUPZTQxwdVLSzPeqMtokgLmVRVAhE3qbm",
      "verified": false,
      "flags": []
@@ -21216,7 +21258,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "HBsbZz9hvxzi3EnCYWLLwvMPWgV4aeC74mEdvTg9bonk",
-     "symbol": "",
+     "symbol": "MACROHARD",
      "cost_usd": 1200.0,
      "proceeds_usd": 560.76,
      "value_usd": 0.0,
@@ -21226,14 +21268,14 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1773242266,
      "last_trade_ts": 1773247776,
-     "launched_ts": null,
+     "launched_ts": 1752444788,
      "first_buy_sig": "2zC7yigERYKG1Z2Sv3QCyjtnjaEJBZ8QeorRAyugJvxsnPkXRqrJBY2dn32xTgRwR57gN2H8pZ5gpkDUYpSAstxm",
      "verified": false,
      "flags": []
     },
     {
      "mint": "BdxZU97HsQWH1EFfrzVLy79gZBkKiFhomM6WoLAAJvvF",
-     "symbol": "Rosencratz",
+     "symbol": "",
      "cost_usd": 2000.0,
      "proceeds_usd": 1119.16,
      "value_usd": 0.0,
@@ -21243,7 +21285,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1773161590,
      "last_trade_ts": 1773161654,
-     "launched_ts": 1773161438,
+     "launched_ts": null,
      "first_buy_sig": "fc7rEWjWudfCPNpPeAHezwEG5XYZaHwxBG4eTB2EvU7tWqJkdNHuU2ALNRkZfB98mEYAuwnG7whGDCATvqVXNQp",
      "verified": false,
      "flags": []
@@ -21624,7 +21666,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump",
-     "symbol": "2016",
+     "symbol": "",
      "cost_usd": 3000.0,
      "proceeds_usd": 2894.11,
      "value_usd": 0.0,
@@ -21634,14 +21676,14 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1768517094,
      "last_trade_ts": 1768530589,
-     "launched_ts": 1755735234,
+     "launched_ts": null,
      "first_buy_sig": "tq39jKcDZa3VmYhXeJrNu6WLgCwE3nv2zd7Q3ELkuGmoJrEwmeWaUT6ih5nUZbVso6ziWEgLXBe2Fkd3E943wjq",
      "verified": false,
      "flags": []
     },
     {
      "mint": "DL6BBBQ6heTg9Zr5gFZxsCK2AZt2aVyRqUZgChqopump",
-     "symbol": "TIKTOK",
+     "symbol": "",
      "cost_usd": 1000.0,
      "proceeds_usd": 955.38,
      "value_usd": 0.0,
@@ -21651,7 +21693,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1768417025,
      "last_trade_ts": 1768417138,
-     "launched_ts": 1764390445,
+     "launched_ts": null,
      "first_buy_sig": "3AMwiBHskVeaPiRVdaLwNuE3u3Ld1TeebmBxr5cnetXEfxn4rj3rrhyUhvtE55h2tKu5SkYNWTVGTULWSnDQU4Ms",
      "verified": false,
      "flags": []
@@ -21675,7 +21717,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "5gJTrQ4kxTzJkt6aeLupUvkQv6dcXuGJJo6yTaeFpump",
-     "symbol": "",
+     "symbol": "Samara",
      "cost_usd": 4000.0,
      "proceeds_usd": 5459.29,
      "value_usd": 0.0,
@@ -21685,7 +21727,7 @@ window.GEM_WALLETS = {
      "sells": 4,
      "first_buy_ts": 1768362967,
      "last_trade_ts": 1768535149,
-     "launched_ts": null,
+     "launched_ts": 1768357488,
      "first_buy_sig": "2uR3XFXWNeuhHbv8Yf2qNECXbu8hatB9iFtuY5wUg867J7sBNs6wavXczkWXBQqUei5nK61xeiQ1ipq7k8bfsLtP",
      "verified": false,
      "flags": []
@@ -21828,7 +21870,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "8HxW9Z3YT1gXgQcgEynZaHsEpLXRgijGfMYCkaAypump",
-     "symbol": "mec",
+     "symbol": "",
      "cost_usd": 6500.0,
      "proceeds_usd": 5058.01,
      "value_usd": 0.0,
@@ -21838,7 +21880,7 @@ window.GEM_WALLETS = {
      "sells": 5,
      "first_buy_ts": 1762375754,
      "last_trade_ts": 1762380112,
-     "launched_ts": 1762375389,
+     "launched_ts": null,
      "first_buy_sig": "28aiuaywvT7wgJQ7at2pzh71ecGz11KWVP7X6vHYUxDdkjsufiGhwiaUiZhJCYdUhk8LzatSuND39shC7oe7oHt3",
      "verified": false,
      "flags": []
@@ -21879,7 +21921,7 @@ window.GEM_WALLETS = {
     "open": 1,
     "gems": 0,
     "wins_min_multiple": 1,
-    "losses": 27,
+    "losses": 28,
     "min_multiple": 0.03,
     "median_multiple": 0.93,
     "best_multiple": 5.13,
@@ -21888,7 +21930,7 @@ window.GEM_WALLETS = {
     "gem_profit_usd": 0,
     "hit_rate": 0.0,
     "unverified": 31,
-    "tx_count": 1746
+    "tx_count": 1748
    },
    "reasons": [
     "0 winning trade(s) (5x+ on verified coins); needs 5",
@@ -21899,7 +21941,7 @@ window.GEM_WALLETS = {
     "1 weak trade(s) were coins sent to another wallet, so not necessarily real losses"
    ],
    "notes": [
-    "731 trade(s) placed through the Fomo app"
+    "735 trade(s) placed through the Fomo app"
    ],
    "data_source": "helius",
    "gems": [],
@@ -21909,9 +21951,9 @@ window.GEM_WALLETS = {
      "symbol": "GABOX",
      "cost_usd": 605.0,
      "proceeds_usd": 0.0,
-     "value_usd": 924.59,
+     "value_usd": 981.96,
      "profit_usd": -605.0,
-     "multiple": 1.53,
+     "multiple": 1.62,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1794077934,
@@ -21926,9 +21968,9 @@ window.GEM_WALLETS = {
      "symbol": "TRCH1",
      "cost_usd": 1502.3,
      "proceeds_usd": 0.0,
-     "value_usd": 1540.56,
+     "value_usd": 1453.65,
      "profit_usd": -1502.3,
-     "multiple": 1.03,
+     "multiple": 0.97,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1793851788,
@@ -21943,9 +21985,9 @@ window.GEM_WALLETS = {
      "symbol": "RAWR",
      "cost_usd": 14757.79,
      "proceeds_usd": 0.0,
-     "value_usd": 17383.86,
+     "value_usd": 18195.99,
      "profit_usd": -14757.79,
-     "multiple": 1.18,
+     "multiple": 1.23,
      "buys": 8,
      "sells": 0,
      "first_buy_ts": 1793851710,
@@ -22059,7 +22101,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "WxjEodhExz9kX5yhSrbPpm5VkmNLpfxgW8ExDxvpump",
-     "symbol": "",
+     "symbol": "Noah",
      "cost_usd": 500.0,
      "proceeds_usd": 21.45,
      "value_usd": 0.0,
@@ -22069,7 +22111,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1783381967,
      "last_trade_ts": 1783382133,
-     "launched_ts": null,
+     "launched_ts": 1783381870,
      "first_buy_sig": "2qT4gxsCbU7qp8fMFfjP4x5LSjLnoHmkNeiGoL6rf2kRUR8BNWYXnDTCiomSuUECHnTMt1LwPZdKutXLpa8iEKSU",
      "verified": false,
      "flags": []
@@ -22093,7 +22135,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "J7nejjwUAxiSbX3DpvTkURscfFSrK33saNoU2ovHpump",
-     "symbol": "",
+     "symbol": "CASHBACK",
      "cost_usd": 1121.67,
      "proceeds_usd": 2269.87,
      "value_usd": 0.0,
@@ -22103,7 +22145,7 @@ window.GEM_WALLETS = {
      "sells": 3,
      "first_buy_ts": 1782231438,
      "last_trade_ts": 1783482338,
-     "launched_ts": null,
+     "launched_ts": 1781984125,
      "first_buy_sig": "DUXVPjwLJvcUJoABYH4MN3R4bysaN55yQq3AWrKmb31iV6b9YW1cvAiL21Vdc52BvtYrJuK69LW3FrdcnaagcaU",
      "verified": false,
      "flags": []
@@ -22178,7 +22220,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "7newJUjH7LGsGPDfEq83gxxy2d1q39A84SeUKha8pump",
-     "symbol": "",
+     "symbol": "ATELIER",
      "cost_usd": 1374.44,
      "proceeds_usd": 2469.46,
      "value_usd": 0.0,
@@ -22188,14 +22230,14 @@ window.GEM_WALLETS = {
      "sells": 9,
      "first_buy_ts": 1776138695,
      "last_trade_ts": 1785262133,
-     "launched_ts": null,
+     "launched_ts": 1771957022,
      "first_buy_sig": "5yPe132L9LwXUm9ijNVCAp7rzDGas9GmZfWdUxLjhhSPkAbNnr9PLorNKmMTCFoCidY7aejVMwBcR9apegPQokFp",
      "verified": false,
      "flags": []
     },
     {
      "mint": "5Aru7v34QY1F69aWuY3mXKf5oxpg2CZNYcmo9hvPpump",
-     "symbol": "SCAN",
+     "symbol": "",
      "cost_usd": 6092.71,
      "proceeds_usd": 4506.07,
      "value_usd": 0.0,
@@ -22205,14 +22247,14 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1775681945,
      "last_trade_ts": 1777724512,
-     "launched_ts": 1772062768,
+     "launched_ts": null,
      "first_buy_sig": "4PGK5f4TWe1NrvLuZZ5tja4dzD44hLCLv8wBRBjnK3fmmhP3HyjynMHcGtvCfwQ1pHcNdUprg31Sd7KRS2ai8kNt",
      "verified": true,
      "flags": []
     },
     {
      "mint": "Bsow2wFkVzy1itJnhLke6VRTqoEkYQZp7kbwPtS87FyN",
-     "symbol": "GIGGLES",
+     "symbol": "",
      "cost_usd": 500.0,
      "proceeds_usd": 466.39,
      "value_usd": 0.0,
@@ -22222,7 +22264,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1775583248,
      "last_trade_ts": 1775594978,
-     "launched_ts": 1746578728,
+     "launched_ts": null,
      "first_buy_sig": "mmP3SZwDtbnHfa9MzwUyEKhgzBadXcSF21tE9h3BauLxja1KrU9818ot9AsqVVC2HZczFZV3SQtifx6WagapGQj",
      "verified": false,
      "flags": []
@@ -22365,7 +22407,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "9NrkmoqwF1rBjsfKZvn7ngCy6zqvb8A6A5RfTvR2pump",
-     "symbol": "SS",
+     "symbol": "",
      "cost_usd": 7305.55,
      "proceeds_usd": 2629.53,
      "value_usd": 0.0,
@@ -22375,7 +22417,7 @@ window.GEM_WALLETS = {
      "sells": 6,
      "first_buy_ts": 1768976587,
      "last_trade_ts": 1773361908,
-     "launched_ts": 1767319060,
+     "launched_ts": null,
      "first_buy_sig": "5xaoZzaZStH3gQxyU12G6eB4P93iEC3mC9HtDRLJg2Uf7txExvVfTeFmQQWsTXHC4JU6vMnNpmeJw3duEaZgzDnD",
      "verified": false,
      "flags": []
@@ -22436,9 +22478,9 @@ window.GEM_WALLETS = {
      "symbol": "TCG",
      "cost_usd": 17142.62,
      "proceeds_usd": 7360.24,
-     "value_usd": 11791.86,
+     "value_usd": 11666.64,
      "profit_usd": -9782.38,
-     "multiple": 1.12,
+     "multiple": 1.11,
      "buys": 13,
      "sells": 12,
      "first_buy_ts": 1768360565,
@@ -22477,7 +22519,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1765469235,
      "last_trade_ts": 1765830717,
-     "launched_ts": 1749641947,
+     "launched_ts": 1776408638,
      "first_buy_sig": "5LrKMkWwagBysFKSW59E4AeqsPMh5TSHwcyXnsj3TyNBY91uw2PwuDYCwb2uvfquCJ7d9NAuLdgMeGMR14EgFqph",
      "verified": true,
      "flags": []
@@ -22494,14 +22536,14 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1763044560,
      "last_trade_ts": 1763611937,
-     "launched_ts": 1748545477,
+     "launched_ts": 1745887720,
      "first_buy_sig": "2eAhhQxidUyaNpKefhwNmA8QC3NVAr68ew7zGmTHDgpK9MgL3NnTGuvczwi9K8TAm5utND8TAL16EsNLtiyhV37",
      "verified": true,
      "flags": []
     },
     {
      "mint": "J4UBm5kvMSHeUwbNgZW4ySpCHBvS7LXknZ7rqQR9pump",
-     "symbol": "",
+     "symbol": "KHOLE",
      "cost_usd": 1000.0,
      "proceeds_usd": 879.56,
      "value_usd": 0.0,
@@ -22511,14 +22553,14 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1760715011,
      "last_trade_ts": 1760716969,
-     "launched_ts": null,
+     "launched_ts": 1759761735,
      "first_buy_sig": "5NaKLfZ62FAUjioKpqR4Tjws3iKrbNhcuc7EZwchAeYDwTq884HKVm78N83PVe6ri1by7STpJyN6PLrH22hiLxqW",
      "verified": false,
      "flags": []
     },
     {
      "mint": "j1MueUJvnJwRCKzgEQdJjSibhV5oy1uoLZDNsZ3time",
-     "symbol": "",
+     "symbol": "raj",
      "cost_usd": 2000.0,
      "proceeds_usd": 1366.84,
      "value_usd": 0.0,
@@ -22528,7 +22570,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1760469557,
      "last_trade_ts": 1762027802,
-     "launched_ts": null,
+     "launched_ts": 1740515687,
      "first_buy_sig": "5pZv3pKqUxD6am9Eq6uQidHHf65z6e3qwek78hLk7XpNQsK8dmAWAqC6yJ74iPXeMTYnDKe2SEURERKRJt1YAaya",
      "verified": false,
      "flags": []
@@ -22552,7 +22594,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "2dPkLQi1WLkrbQbBAS9d8GHARF4oWQXFXrUbMq7bstar",
-     "symbol": "STAR",
+     "symbol": "",
      "cost_usd": 5000.0,
      "proceeds_usd": 6676.6,
      "value_usd": 0.0,
@@ -22562,7 +22604,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1760451642,
      "last_trade_ts": 1760458237,
-     "launched_ts": 1751328735,
+     "launched_ts": null,
      "first_buy_sig": "4xbbrUUYL3QjT7UJ7zjnMMitNYf2EEpfqPPLtKGxe3jEyNojNSZiAb9mDStqCNU7ezv8EWEUtsuULUbpKuZGGuid",
      "verified": false,
      "flags": []
@@ -22586,7 +22628,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "JCeoBX79HfatfaY6xvuNyCHf86hwgkCCWDpEycVHtime",
-     "symbol": "",
+     "symbol": "toly",
      "cost_usd": 4000.0,
      "proceeds_usd": 3128.49,
      "value_usd": 0.0,
@@ -22596,7 +22638,7 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1760386589,
      "last_trade_ts": 1762027811,
-     "launched_ts": null,
+     "launched_ts": 1740455212,
      "first_buy_sig": "2d7cqMJ4CNuwvtDTNcrC1atWVW239UxBDdXq2q2rTpCUnQzrFW1zqfLnrfJ93SZFZoL4huozoTiaJx3LrNsahS1v",
      "verified": true,
      "flags": []
@@ -22674,9 +22716,9 @@ window.GEM_WALLETS = {
      "symbol": "PUMPCADE",
      "cost_usd": 34548.64,
      "proceeds_usd": 34021.0,
-     "value_usd": 96020.39,
+     "value_usd": 107035.71,
      "profit_usd": -527.64,
-     "multiple": 3.76,
+     "multiple": 4.08,
      "buys": 8,
      "sells": 20,
      "first_buy_ts": 1759756830,
@@ -22749,7 +22791,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "ZrueWB1YvjruJpTGiJSYYfyuL71FZeeSUwJY1ZPeyes",
-     "symbol": "",
+     "symbol": "EYES",
      "cost_usd": 4000.0,
      "proceeds_usd": 2459.18,
      "value_usd": 0.0,
@@ -22759,7 +22801,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1790688783,
      "last_trade_ts": 1790724924,
-     "launched_ts": null,
+     "launched_ts": 1790167729,
      "first_buy_sig": "NxUJ5avAM85Fgws1J8PwkwJMpucU3h78rV6y1FkYD51cqdb3widsaJLmS3LPqWjDFFBb1V3W8merirJrMAibm95",
      "verified": false,
      "flags": []
@@ -22817,7 +22859,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "3NVRZqJ43axJ7Jy8qtADxjFzgk8s2o5zaoLfQWRaAh7A",
-     "symbol": "",
+     "symbol": "LAB",
      "cost_usd": 8300.0,
      "proceeds_usd": 938.5,
      "value_usd": 0.01,
@@ -22827,14 +22869,14 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1777759265,
      "last_trade_ts": 1778527204,
-     "launched_ts": null,
+     "launched_ts": 1758388156,
      "first_buy_sig": "2qsYqSF2eK8xvymHeZ69NiBraWBj5gYzhKfZUfXrG5wnPHgqrjAYPXqDokELRN1p35y75mepbY4rrMg6Nwg44DFj",
      "verified": false,
      "flags": []
     },
     {
      "mint": "FtSRgyCEhKTc1PPgEAXvuHN3NyiP6LS9uyB28KCN3CAP",
-     "symbol": "CAPTCHA",
+     "symbol": "",
      "cost_usd": 2000.0,
      "proceeds_usd": 1351.69,
      "value_usd": 0.0,
@@ -22844,7 +22886,7 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1774462985,
      "last_trade_ts": 1774490892,
-     "launched_ts": 1774377742,
+     "launched_ts": null,
      "first_buy_sig": "5EWWoDedWPxfbaZSYaXYwwSAvVgiQPtZfiyBt2aB11fAGGGxZMhRQ8TYp412sDXZqA4o2s1cKLSzDdbWNBk1XRqt",
      "verified": true,
      "flags": []
@@ -22953,7 +22995,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "DgN9zcmQgWF98qkhoMEshq7G4eRDjxcHoXvijfffBAGS",
-     "symbol": "",
+     "symbol": "TOWN",
      "cost_usd": 334.85,
      "proceeds_usd": 353.5,
      "value_usd": 0.0,
@@ -22963,7 +23005,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1769871999,
      "last_trade_ts": 1769872073,
-     "launched_ts": null,
+     "launched_ts": 1769842718,
      "first_buy_sig": "3p2zLG9Seow97QJ2fTx3gMGja4dmWv8rXYyx7gk9Agu9hoqsYjpErcc4eaPE11XiznFM4HSRXey3ZryDM9ZxoN38",
      "verified": false,
      "flags": []
@@ -22987,7 +23029,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "BqYJQ6hVYxYzGrSbUyXy52oP6aFduq1PRxUVSrFtuDgz",
-     "symbol": "ELON",
+     "symbol": "",
      "cost_usd": 500.0,
      "proceeds_usd": 552.79,
      "value_usd": 0.0,
@@ -22997,7 +23039,7 @@ window.GEM_WALLETS = {
      "sells": 3,
      "first_buy_ts": 1769731472,
      "last_trade_ts": 1769733506,
-     "launched_ts": 1718004365,
+     "launched_ts": null,
      "first_buy_sig": "5eTQfReok9ssQPpjXzNnYjeskxowKwq4RsszV34u3ovcFzYfjhrHxvDCZTFP5J1gGS5mPuK4LJgbjAYBJVbpdkpD",
      "verified": false,
      "flags": []
@@ -23021,7 +23063,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "9CrY7PsMPx8pHaFKFV1Ty9CBp5GrvVT4dAanZoJHpump",
-     "symbol": "SHARK",
+     "symbol": "",
      "cost_usd": 1000.0,
      "proceeds_usd": 48.87,
      "value_usd": 0.0,
@@ -23031,7 +23073,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1769660771,
      "last_trade_ts": 1769882612,
-     "launched_ts": 1769547530,
+     "launched_ts": null,
      "first_buy_sig": "3caMdQjbXcuFgP5V1Z3KS11G8W8nrzniTd3esVFZfcWk7MuQ2daNSBnqnadkNV1Z2iZEZLoGYfgTQ5peYd6YN6Lk",
      "verified": false,
      "flags": []
@@ -23412,7 +23454,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "55DJNrN4rM7euSZSsaYfsEHGBQRcznibwiq1fR2HBAGS",
-     "symbol": "",
+     "symbol": "CURSED",
      "cost_usd": 293.03,
      "proceeds_usd": 202.67,
      "value_usd": 0.0,
@@ -23422,7 +23464,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1768614772,
      "last_trade_ts": 1768685621,
-     "launched_ts": null,
+     "launched_ts": 1768562508,
      "first_buy_sig": "3DtZc8e1U7Km2nRfhEwSCYCgPtyYS4qbYdA9gpzw9RTzzx3VV1hKdfVE163TFib626ny71CFJSeJiSVatETNH6aD",
      "verified": false,
      "flags": []
@@ -23599,7 +23641,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "Bw4hEZZSz2uff9wZLdpDikgbaWSd5fTEozQkV7KApump",
-     "symbol": "",
+     "symbol": "RAAAAAH",
      "cost_usd": 305.98,
      "proceeds_usd": 267.24,
      "value_usd": 0.0,
@@ -23609,7 +23651,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1767999998,
      "last_trade_ts": 1768011814,
-     "launched_ts": null,
+     "launched_ts": 1766525974,
      "first_buy_sig": "5eUSWPk9aJgyU5knr2bVYKjDvVGFQNHUWYbfFeXtthiCrqLyTbdQGNy5jYAfSBTDkWRYcDBx4DesrjAMd99rNYnW",
      "verified": false,
      "flags": []
@@ -23667,7 +23709,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "CDYx1sfYY25fTKExf5YPzAscBSBthj6bV4YAQtKBpump",
-     "symbol": "",
+     "symbol": "LOWKENUINE",
      "cost_usd": 406.45,
      "proceeds_usd": 276.34,
      "value_usd": 0.0,
@@ -23677,7 +23719,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1765322939,
      "last_trade_ts": 1765385513,
-     "launched_ts": null,
+     "launched_ts": 1764798430,
      "first_buy_sig": "4kic7HJ7p6E9vVpsEjd2h3iSiDRR9HUigamzTH9iziCFcDVznpJfFNh8ecfPbjK8DxA29JmrsSF5JehGBSrFRudN",
      "verified": false,
      "flags": []
@@ -23778,7 +23820,7 @@ window.GEM_WALLETS = {
     "gem_profit_usd": 0,
     "hit_rate": 0.0,
     "unverified": 11,
-    "tx_count": 2138
+    "tx_count": 2139
    },
    "reasons": [
     "0 winning trade(s) (5x+ on verified coins); needs 5",
@@ -23787,7 +23829,7 @@ window.GEM_WALLETS = {
    ],
    "flags": [],
    "notes": [
-    "1220 trade(s) placed through the Fomo app"
+    "1221 trade(s) placed through the Fomo app"
    ],
    "data_source": "helius",
    "gems": [],
@@ -24049,7 +24091,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "GEuuznWpn6iuQAJxLKQDVGXPtrqXHNWTk3gZqqvJpump",
-     "symbol": "ACE",
+     "symbol": "",
      "cost_usd": 60000.0,
      "proceeds_usd": 49508.8,
      "value_usd": 0.0,
@@ -24059,7 +24101,7 @@ window.GEM_WALLETS = {
      "sells": 6,
      "first_buy_ts": 1761663654,
      "last_trade_ts": 1761763108,
-     "launched_ts": 1739586663,
+     "launched_ts": null,
      "first_buy_sig": "3mjK4J3ZrDXpD1qxkasBzb5Kem8XGkFiqsoi5uDtZn1yfKT8YxRGr9XfFVWcc1UgsjgMRmZqLZK2cUEwJPLxmKFc",
      "verified": false,
      "flags": []
@@ -24236,7 +24278,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "HQDTzNa4nQVetoG6aCbSLX9kcH7tSv2j2sTV67Etpump",
-     "symbol": "BUN COIN",
+     "symbol": "",
      "cost_usd": 10000.0,
      "proceeds_usd": 10953.33,
      "value_usd": 0.0,
@@ -24246,14 +24288,14 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1757853105,
      "last_trade_ts": 1757853833,
-     "launched_ts": 1757804973,
+     "launched_ts": null,
      "first_buy_sig": "38XdQfPU6J4n9NbamPf4MBuckRgEuvF9nyT8xgCin1rP56PLhmukjN8vLriqSgbmLy32yoHwsNALYi4XjsNKittb",
      "verified": false,
      "flags": []
     },
     {
      "mint": "3arUrpH3nzaRJbbpVgY42dcqSq9A5BFgUxKozZ4npump",
-     "symbol": "STREAMER",
+     "symbol": "",
      "cost_usd": 50000.0,
      "proceeds_usd": 44897.47,
      "value_usd": 0.0,
@@ -24263,14 +24305,14 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1757811432,
      "last_trade_ts": 1757820788,
-     "launched_ts": 1756846876,
+     "launched_ts": null,
      "first_buy_sig": "4wsapn3wDQw32gf23tH2UZoAHukXULRG2qxzLiLDNd1wU5WjDBur9FFpAjHWxAsSjnrr3FCJewCCYjDkA9JQm1tD",
      "verified": false,
      "flags": []
     },
     {
      "mint": "EXoMAHnw2Gw5fXJTektedLJDVn9vn8tLTEQX7gHccQKR",
-     "symbol": "",
+     "symbol": "EXO",
      "cost_usd": 20000.0,
      "proceeds_usd": 15955.45,
      "value_usd": 0.0,
@@ -24280,7 +24322,7 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1757767669,
      "last_trade_ts": 1757799906,
-     "launched_ts": null,
+     "launched_ts": 1767125854,
      "first_buy_sig": "45vVeRcCdpxjx1xNnw5DJk8zEMG9cyDFj1SRPF2vahT7MdvoQctyqp67xngAjtttXfMzJrLLq1R9NbS888jsaBpo",
      "verified": false,
      "flags": []
@@ -24321,7 +24363,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "LiGHtkg3uTa9836RaNkKLLriqTNRcMdRAhqjGWNv777",
-     "symbol": "LIGHT",
+     "symbol": "",
      "cost_usd": 50000.0,
      "proceeds_usd": 52892.29,
      "value_usd": 0.0,
@@ -24331,7 +24373,7 @@ window.GEM_WALLETS = {
      "sells": 2,
      "first_buy_ts": 1755910402,
      "last_trade_ts": 1755943754,
-     "launched_ts": 1787584675,
+     "launched_ts": null,
      "first_buy_sig": "EUK16guQAqw9vRRyEW7X9iSLq3U3zC3GFFJLkbd7XkKfRJs3WSJ4GKH1mmhQj8nsyqbaYLNLmrz8aX6TtLruXTQ",
      "verified": true,
      "flags": []
@@ -24491,7 +24533,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "ENfpbQUM5xAnNP8ecyEQGFJ6KwbuPjMwv7ZjR29cDuAb",
-     "symbol": "GOONC",
+     "symbol": "",
      "cost_usd": 32182.72,
      "proceeds_usd": 15545.74,
      "value_usd": 0.0,
@@ -24501,7 +24543,7 @@ window.GEM_WALLETS = {
      "sells": 4,
      "first_buy_ts": 1747143794,
      "last_trade_ts": 1747456176,
-     "launched_ts": 1747102867,
+     "launched_ts": null,
      "first_buy_sig": "2mszBPzFFKWiBdPXFTEPCZQQe3758tGvsBSWNvVzqYY58Fjz5hiHBoB1djnoUSMKNtxguBhWoKeBWBzudAZRZFFW",
      "verified": false,
      "flags": []
@@ -24568,7 +24610,7 @@ window.GEM_WALLETS = {
     "gem_profit_usd": 0,
     "hit_rate": 0.0,
     "unverified": 9,
-    "tx_count": 328
+    "tx_count": 329
    },
    "reasons": [
     "0 winning trade(s) (5x+ on verified coins); needs 5",
@@ -24601,7 +24643,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "CRaZHiaKgvEyykTjftkx4gMUeCA44bJtQ2HC27LBBWxh",
-     "symbol": "buck",
+     "symbol": "",
      "cost_usd": 256.6,
      "proceeds_usd": 31.99,
      "value_usd": 0.0,
@@ -24611,7 +24653,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1787858099,
      "last_trade_ts": 1787859232,
-     "launched_ts": 1787669381,
+     "launched_ts": null,
      "first_buy_sig": "3NJyZdKhZct23okv7TJRVLC5dPRL9DNVckvruVhz8dx4Eq5JC7uduLeKKh1yacvBDxp7xEZyxMkY18CSgB18jRjV",
      "verified": false,
      "flags": []
@@ -24635,7 +24677,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "2vdtGEGFjyiUc465ZsEzTgSyAQmrAbgthf5HZoHxniga",
-     "symbol": "",
+     "symbol": "BULLCALL",
      "cost_usd": 2003.71,
      "proceeds_usd": 44.58,
      "value_usd": 0.0,
@@ -24645,7 +24687,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1786059171,
      "last_trade_ts": 1786208769,
-     "launched_ts": null,
+     "launched_ts": 1786047296,
      "first_buy_sig": "48aCeKkzsNaccERdxreeFas6Y6S5auP5oSCx64AS5uVebEN3wYe7owKpFZYDAspRqX7dnaAcPqjJvCSXaJ3Eq6Y1",
      "verified": false,
      "flags": []
@@ -24689,7 +24731,7 @@ window.GEM_WALLETS = {
      "symbol": "ZERO",
      "cost_usd": 105369.75,
      "proceeds_usd": 14507.32,
-     "value_usd": 6141.74,
+     "value_usd": 6093.95,
      "profit_usd": -90862.43,
      "multiple": 0.2,
      "buys": 11,
@@ -24756,7 +24798,7 @@ window.GEM_WALLETS = {
     },
     {
      "mint": "y4JiNFzBPofqiCpuDTcVq11nhUDQoDzeK1UBCoXxF9y",
-     "symbol": "",
+     "symbol": "CVT",
      "cost_usd": 5000.0,
      "proceeds_usd": 2212.2,
      "value_usd": 0.0,
@@ -24766,7 +24808,7 @@ window.GEM_WALLETS = {
      "sells": 1,
      "first_buy_ts": 1779707355,
      "last_trade_ts": 1781775375,
-     "launched_ts": null,
+     "launched_ts": 1778549840,
      "first_buy_sig": "5TG2ivZ39JNZSxdZyVf4xnpNztPVoZLVTjztCNXG3LBSh8zQ1vVnQeqiPRrtjRXY7J5DbpXLfJfYTetUkLPLdhom",
      "verified": true,
      "flags": []
