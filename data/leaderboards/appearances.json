@@ -1063,7 +1063,7 @@
    "pump.fun monthly": 5,
    "kolscan daily": 2
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "831yhv67QpKqLBJjbmw2xoDUeeFHGUx8RnuRj9imeoEs": {
   "name": "Trey",
@@ -1573,7 +1573,7 @@
    "kolscan daily": 3,
    "pump.fun weekly": 89
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "4w7HzF73v6mhd4Jf4Cx6VVNDPJn3aVCiJDV7SfqqaWEk": {
   "name": "cubicmanta24780",
@@ -2277,7 +2277,7 @@
    "pump.fun monthly": 2,
    "kolscan daily": 1
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "86AEJExyjeNNgcp7GrAvCXTDicf5aGWgoERbXFiG1EdD": {
   "name": "Publix",
@@ -2345,7 +2345,8 @@
     "2026-11-04",
     "2026-11-05",
     "2026-11-06",
-    "2026-11-07"
+    "2026-11-07",
+    "2026-11-10"
    ],
    "pump.fun monthly": [
     "2026-10-08"
@@ -2356,7 +2357,7 @@
    "kolscan daily": 3,
    "pump.fun monthly": 100
   },
-  "last_seen": 1794031043
+  "last_seen": 1794345447
  },
  "GfXQesPe3Zuwg8JhAt6Cg8euJDTVx751enp9EQQmhzPH": {
   "name": "Spuno",
@@ -2778,7 +2779,7 @@
    "pump.fun monthly": 52,
    "kolscan daily": 9
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "8MaVa9kdt3NW4Q5HyNAm1X5LbR8PQRVDc1W8NMVK88D5": {
   "name": "Daumen",
@@ -3099,16 +3100,17 @@
    "kolscan daily": [
     "2026-11-05",
     "2026-11-06",
-    "2026-11-08"
+    "2026-11-08",
+    "2026-11-10"
    ]
   },
   "best": {
    "pump.fun daily": 17,
    "pump.fun weekly": 24,
    "pump.fun monthly": 46,
-   "kolscan daily": 12
+   "kolscan daily": 4
   },
-  "last_seen": 1794133247
+  "last_seen": 1794345447
  },
  "H5yCFHBPNycF7xqnHkHJUHvVbk2anz7MzXzRzSo8eaJZ": {
   "name": "DonCryptonium",
@@ -3303,7 +3305,8 @@
     "2026-11-01",
     "2026-11-05",
     "2026-11-08",
-    "2026-11-09"
+    "2026-11-09",
+    "2026-11-10"
    ],
    "pump.fun weekly": [
     "2026-10-10",
@@ -3317,7 +3320,7 @@
    "kolscan daily": 4,
    "pump.fun weekly": 78
   },
-  "last_seen": 1794205547
+  "last_seen": 1794345447
  },
  "94JRjXuRjdo62mcyaxqmmYAFe9E73UZw5sRyJvQzzG2e": {
   "name": "badgerxz",
@@ -3460,7 +3463,7 @@
    "pump.fun monthly": 29,
    "kolscan daily": 15
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "HZXdwRRw27kfpYtTqc7bMfrRgK3LSUaiKDFtqoEihik8": {
   "name": "acridtuna55943",
@@ -4712,9 +4715,9 @@
   },
   "best": {
    "pump.fun weekly": 43,
-   "kolscan daily": 21
+   "kolscan daily": 10
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "649ot18fccD6Mc9V4aHWTdoSVCuqAEtg9aWuxBA9cRoU": {
   "name": "gar0u",
@@ -5774,9 +5777,9 @@
    "pump.fun weekly": 55,
    "pump.fun monthly": 22,
    "pump.fun daily": 50,
-   "kolscan daily": 18
+   "kolscan daily": 17
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "BtHnhjh8Ta2vGZkrL76AmXMur1ADo3tpRo2kQMe2BCSU": {
   "name": "stricttuna77011",
@@ -5944,7 +5947,7 @@
    "pump.fun daily": 25,
    "kolscan daily": 2
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "DKgPwxD2PRnskbRLQzjM4b91v6syYG1nDKprJUQUb2Rg": {
   "name": "PlasticRoundGem",
@@ -6524,7 +6527,7 @@
    "kolscan daily": 3,
    "pump.fun daily": 21
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "36YdEpphGT1P7WCNFa5XxPfLP5b8gJFr7Jtck5UYpB6N": {
   "name": "kanpai",
@@ -7291,7 +7294,7 @@
    "kolscan daily": 1,
    "pump.fun weekly": 11
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "4UwK5AE6Djdf3MfwtPGE8pFYD47MhU9fiStDVmSHJVMB": {
   "name": "CottagePvP",
@@ -7742,7 +7745,7 @@
    "pump.fun daily": 87,
    "pump.fun weekly": 69
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "FdSShBiR1nBtxQzhwNMszyRdcvMVLiAeVraJLvERERZL": {
   "name": "element69420",
@@ -8454,7 +8457,7 @@
    "kolscan daily": 16,
    "pump.fun weekly": 14
   },
-  "last_seen": 1794281623
+  "last_seen": 1794345447
  },
  "ArkdCAPErAo6KdVDTFA32YKnqaD7jfXsESFoyxQzDgnu": {
   "name": "normalseal38782",
@@ -8748,7 +8751,8 @@
     "2026-11-04",
     "2026-11-05",
     "2026-11-06",
-    "2026-11-08"
+    "2026-11-08",
+    "2026-11-10"
    ],
    "pump.fun daily": [
     "2026-10-26",
@@ -8765,7 +8769,7 @@
    "pump.fun daily": 5,
    "pump.fun weekly": 28
   },
-  "last_seen": 1794133247
+  "last_seen": 1794345447
  },
  "DemfvB4iwd3NmVquvWqWbB92yVZWFFqybqBeJGdyEeM6": {
   "name": "japbitch",
@@ -8863,7 +8867,7 @@
   "best": {
    "kolscan daily": 21
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "6hcX7fVMzeRpW3d7XhFsxYw2CuePfgSMmouZxSiNLj1U": {
   "name": "Ataberk 🧙‍♂️",
@@ -9135,7 +9139,7 @@
   "best": {
    "kolscan daily": 20
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "99i9uVA7Q56bY22ajKKUfTZTgTeP5yCtVGsrG9J4pDYQ": {
   "name": "Zrool",
@@ -10825,7 +10829,7 @@
    "pump.fun daily": 1,
    "pump.fun weekly": 28
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "4BdKaxN8G6ka4GYtQQWk4G4dZRUTX2vQH9GcXdBREFUk": {
   "name": "Jijo",
@@ -10864,7 +10868,7 @@
   "best": {
    "kolscan daily": 7
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "CCUcjek5p6DLoH2YNtjizxYhAnStXAQAGVxhp1cYJF7w": {
   "name": "el charto",
@@ -10978,7 +10982,7 @@
   "best": {
    "kolscan daily": 3
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "BtMBMPkoNbnLF9Xn552guQq528KKXcsNBNNBre3oaQtr": {
   "name": "Letterbomb",
@@ -11108,7 +11112,7 @@
    "kolscan daily": 14,
    "pump.fun monthly": 91
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "DiDwVJDo3ze1Tq9qvYJmQqy7PCAHpNjw8mN2WaRtXkQx": {
   "name": "leynine",
@@ -12542,7 +12546,7 @@
    "pump.fun daily": 15,
    "kolscan daily": 1
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "D9ptZig8eNRMmrdGRGTYfVWeLKCKWC5nKdf78Dur4dcY": {
   "name": "EmperorOsmo",
@@ -12997,7 +13001,7 @@
   "best": {
    "kolscan daily": 5
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "99xnE2zEFi8YhmKDaikc1EvH6ELTQJppnqUwMzmpLXrs": {
   "name": "Coler",
@@ -13108,7 +13112,7 @@
    "pump.fun daily": 4,
    "pump.fun weekly": 23
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "91sP85Ds9A4EXJ3gU3iHyLtUNJimxz8LrxRb2qhBNod9": {
   "name": "hood",
@@ -14820,7 +14824,7 @@
    "pump.fun daily": 75,
    "pump.fun monthly": 86
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "DCRSAhR9Q4RVSKX19oc2Zq7j8qCw3V4X632etRRX8Lr4": {
   "name": "Cheiff",
@@ -15113,7 +15117,7 @@
    "pump.fun daily": 52,
    "kolscan daily": 6
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "9ZV44JoeQP1ckhWGWqTyNK8U7ejAE1Fgwbs2eM2iSbzY": {
   "name": "TopProfits",
@@ -15535,7 +15539,7 @@
   "best": {
    "kolscan daily": 1
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "7zTnUTHMd5qFUpZrrbXazpvGwC1Hvb3g5rFjnFAygLSo": {
   "name": "Apollo",
@@ -16739,9 +16743,9 @@
    ]
   },
   "best": {
-   "kolscan daily": 9
+   "kolscan daily": 7
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "An68XCxJvfXc9NRWjNXGSFY55dyFVKjfgtpt8AKGJ2dE": {
   "name": "bihoz",
@@ -18579,13 +18583,14 @@
     "2026-10-26",
     "2026-11-01",
     "2026-11-02",
-    "2026-11-09"
+    "2026-11-09",
+    "2026-11-10"
    ]
   },
   "best": {
    "kolscan daily": 19
   },
-  "last_seen": 1794205547
+  "last_seen": 1794345447
  },
  "FwjYcbfktK8PC2bzCrqxR6QkUPxmHFbcFGNrz3YAV7ft": {
   "name": "Paper",
@@ -19433,7 +19438,7 @@
    "kolscan daily": 4,
    "pump.fun daily": 27
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "5B52w1ZW9tuwUduueP5J7HXz5AcGfruGoX6YoAudvyxG": {
   "name": "Yenni",
@@ -19884,7 +19889,7 @@
   "best": {
    "kolscan daily": 26
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "9rSmaSya7pUuyq2JHhcbq6rkuXCvLR3wteC5p7eta6Y8": {
   "name": "AliAnsar",
@@ -21507,7 +21512,7 @@
   "best": {
    "kolscan daily": 18
   },
-  "last_seen": 1794281623
+  "last_seen": 1794345447
  },
  "3cG7d6GmX47HKSX5nWRX9MJpruCojbzUkak92gSXGtG5": {
   "name": "Rektober",
@@ -22406,7 +22411,7 @@
    "kolscan daily": 2,
    "pump.fun daily": 95
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "5sNnKuWKUtZkdC1eFNyqz3XHpNoCRQ1D1DfHcNHMV7gn": {
   "name": "cryptovillain26",
@@ -23293,7 +23298,7 @@
   "best": {
    "kolscan daily": 8
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "4sAUSQFdvWRBxR8UoLBYbw8CcXuwXWxnN8pXa4mtm5nU": {
   "name": "Scharo",
@@ -25720,7 +25725,8 @@
     "2026-10-30",
     "2026-11-06",
     "2026-11-07",
-    "2026-11-08"
+    "2026-11-08",
+    "2026-11-10"
    ],
    "pump.fun daily": [
     "2026-10-20",
@@ -25736,7 +25742,7 @@
    "pump.fun daily": 30,
    "pump.fun weekly": 82
   },
-  "last_seen": 1794175426
+  "last_seen": 1794345447
  },
  "DKgvpfttzmJqZXdavDwTxwSVkajibjzJnN2FA99dyciK": {
   "name": "R💫WDY",
@@ -26063,13 +26069,14 @@
     "2026-10-16",
     "2026-10-17",
     "2026-11-01",
-    "2026-11-02"
+    "2026-11-02",
+    "2026-11-10"
    ]
   },
   "best": {
    "kolscan daily": 11
   },
-  "last_seen": 1793580256
+  "last_seen": 1794345447
  },
  "6sMhW4r5fn6Vw8FC5wtoaCjaMFHhvtQcpmg29mFP2CLr": {
   "name": "new_atlantis",
@@ -26348,13 +26355,14 @@
     "2026-10-17",
     "2026-10-18",
     "2026-10-19",
-    "2026-10-25"
+    "2026-10-25",
+    "2026-11-10"
    ]
   },
   "best": {
    "kolscan daily": 9
   },
-  "last_seen": 1792945060
+  "last_seen": 1794345447
  },
  "DwCp9GZw3ueoXPykHSPUkRZEwcTVbJH2i9Sf1cXYicWf": {
   "name": "wizard",
@@ -26537,13 +26545,14 @@
     "2026-11-06",
     "2026-11-07",
     "2026-11-08",
-    "2026-11-09"
+    "2026-11-09",
+    "2026-11-10"
    ]
   },
   "best": {
-   "kolscan daily": 4
+   "kolscan daily": 1
   },
-  "last_seen": 1794205547
+  "last_seen": 1794345447
  },
  "5UZMpyPMv8AuewpG8zx8t1Q2iSUeB7LETf8yhQHJcFud": {
   "name": "hambabi",
@@ -27221,7 +27230,7 @@
   "best": {
    "kolscan daily": 9
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "64ymeD9XTAkNJgHtXgrG6JCNZmBC9fSVcmgkL54pFikE": {
   "name": "Phineas.SOL",
@@ -28292,13 +28301,14 @@
     "2026-10-22",
     "2026-10-24",
     "2026-10-25",
-    "2026-10-26"
+    "2026-10-26",
+    "2026-11-10"
    ]
   },
   "best": {
    "kolscan daily": 25
   },
-  "last_seen": 1792989957
+  "last_seen": 1794345447
  },
  "9jrfRH7JyhKpAaw1H6NcapGGw7PNK75FaGYrxJM4GpXc": {
   "name": "ryder100x",
@@ -28536,7 +28546,7 @@
   "best": {
    "kolscan daily": 13
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "G3CaEuingKVjqsoHf7SpSQuLvRAJA69dikaQYxBqvwEr": {
   "name": "✶",
@@ -28788,7 +28798,7 @@
   "best": {
    "kolscan daily": 30
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "CXBxh3RfwkNwEtD1nizGx3mrDyz6M2M1b5kuk7QmyPPZ": {
   "name": "ceightkju",
@@ -29057,7 +29067,7 @@
   "best": {
    "kolscan daily": 3
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "EJa8hKLxkSBvxT5ipKPyTfAvQCoSVUP87YoicTeuZ5xp": {
   "name": "soby0x",
@@ -31395,9 +31405,9 @@
    ]
   },
   "best": {
-   "kolscan daily": 32
+   "kolscan daily": 29
   },
-  "last_seen": 1794281623
+  "last_seen": 1794345447
  },
  "Crg4yePLW6aRb7vpbo6tTQx8q8T5Myfjf9xokzXU8i1s": {
   "name": "Sska71",
@@ -33440,7 +33450,7 @@
   "best": {
    "kolscan daily": 32
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "A4ege1RE19ZjRsHqCqDRTdRoZynv9YUH6aG4bapUatCJ": {
   "name": "wheresmyarc",
@@ -37730,7 +37740,7 @@
   "best": {
    "kolscan daily": 16
   },
-  "last_seen": 1794281623
+  "last_seen": 1794345447
  },
  "6UwCF9JCEPRFfBKibwAoyuEZukLwzATiWRjiGnH1Eass": {
   "name": "BULLZ 🐂",
@@ -37820,9 +37830,9 @@
    ]
   },
   "best": {
-   "kolscan daily": 36
+   "kolscan daily": 30
   },
-  "last_seen": 1794322297
+  "last_seen": 1794345447
  },
  "9udqZzePbx3N7917LK9PzgxrDqQEQDECtLc8KTYCNghX": {
   "name": "MrDD",
@@ -37851,7 +37861,7 @@
   "best": {
    "kolscan daily": 12
   },
-  "last_seen": 1794281623
+  "last_seen": 1794345447
  },
  "EcVgevcb8F3QsHuBg96wrCXwC3j2gnrhLr1Q21YULNk8": {
   "name": "cuban",
@@ -37942,5 +37952,17 @@
    "kolscan daily": 27
   },
   "last_seen": 1794205547
+ },
+ "AtmeWwb6Y6KNDgu2dPJT5dsar84bFCbNxLiW2DyYfm8p": {
+  "name": "Sizeab1e",
+  "days": {
+   "kolscan daily": [
+    "2026-11-10"
+   ]
+  },
+  "best": {
+   "kolscan daily": 38
+  },
+  "last_seen": 1794345447
  }
 }
