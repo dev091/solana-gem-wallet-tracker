@@ -1,5 +1,5 @@
 {
- "generated_at": 1794225037,
+ "generated_at": 1794311949,
  "provider": "rpc",
  "criteria": {
   "entry_min_usd": 100.0,
@@ -364,7 +364,7 @@
     },
     {
      "mint": "9ef8bbV2d7kRmCfazikYjDynznesV34DhZoTHnawpump",
-     "symbol": "PerpScape",
+     "symbol": "",
      "cost_usd": 60.36,
      "proceeds_usd": 7.74,
      "value_usd": 0.0,
@@ -374,7 +374,7 @@
      "sells": 1,
      "first_buy_ts": 1790342530,
      "last_trade_ts": 1790342538,
-     "launched_ts": 1790342067,
+     "launched_ts": null,
      "first_buy_sig": "25cNqvm6xUAL5bmSS8xaoWEutu8vX3MHqJTyGDghD3FsZyWRZLQoHTgS22u1bTcVseJmgSHi3mD19Kan5RugQ9LK",
      "verified": false,
      "flags": []
@@ -398,7 +398,7 @@
     },
     {
      "mint": "AotFYJVM4hFQS97MWq6c2KoDgDYWFDCxLF9i8ZCfABPt",
-     "symbol": "",
+     "symbol": "SALLY",
      "cost_usd": 174.73,
      "proceeds_usd": 107.1,
      "value_usd": 0.0,
@@ -408,14 +408,14 @@
      "sells": 2,
      "first_buy_ts": 1790322608,
      "last_trade_ts": 1790411487,
-     "launched_ts": null,
+     "launched_ts": 1790185635,
      "first_buy_sig": "2mfqvS3oHowioH7AokszN2aopKdGMAY1McaFTixsHFLTNMr7aTfpfXpWBUHBiY18n3duPtXwp8YYx4kdeivd2pUC",
      "verified": false,
      "flags": []
     },
     {
      "mint": "F1JnncwQzrT8BM9DNkU9uqU4qqiH11GbhRWqCTeHpump",
-     "symbol": "SOLANAAI",
+     "symbol": "",
      "cost_usd": 116.59,
      "proceeds_usd": 108.08,
      "value_usd": 0.0,
@@ -425,7 +425,7 @@
      "sells": 2,
      "first_buy_ts": 1790322481,
      "last_trade_ts": 1790411484,
-     "launched_ts": 1777644707,
+     "launched_ts": null,
      "first_buy_sig": "3VsF6Tc3qwnjuu8TnAcyTvAqD7sakVX6RpGYyxEtuz1WyARtMUf2r9i5yhbUtjbonvqTQAFrinRaFLPUnKyUkvms",
      "verified": false,
      "flags": []
@@ -1256,13 +1256,13 @@
     "realized_usd": 209259.65,
     "gem_profit_usd": 225553.4,
     "hit_rate": 0.038,
-    "unverified": 29,
-    "tx_count": 1912
+    "unverified": 31,
+    "tx_count": 1938
    },
    "reasons": [
     "2 winning trade(s) (5x+ on verified coins); needs 5",
     "50 trade(s) under 5x (worst 0.00x)",
-    "29 trade(s) in coins Jupiter has not verified"
+    "31 trade(s) in coins Jupiter has not verified"
    ],
    "flags": [
     "1 weak trade(s) were coins sent to another wallet, so not necessarily real losses"
@@ -1313,9 +1313,9 @@
      "symbol": "mihao",
      "cost_usd": 2183.29,
      "proceeds_usd": 0.0,
-     "value_usd": 6077.86,
+     "value_usd": 8128.82,
      "profit_usd": -2183.29,
-     "multiple": 2.78,
+     "multiple": 3.72,
      "buys": 2,
      "sells": 0,
      "first_buy_ts": 1793337585,
@@ -1330,9 +1330,9 @@
      "symbol": "Pokémon",
      "cost_usd": 15000.0,
      "proceeds_usd": 0.0,
-     "value_usd": 1217.61,
+     "value_usd": 1464.09,
      "profit_usd": -15000.0,
-     "multiple": 0.08,
+     "multiple": 0.1,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1792485679,
@@ -1347,9 +1347,9 @@
      "symbol": "CLAWD",
      "cost_usd": 2500.0,
      "proceeds_usd": 0.0,
-     "value_usd": 557.83,
+     "value_usd": 669.81,
      "profit_usd": -2500.0,
-     "multiple": 0.22,
+     "multiple": 0.27,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1792061376,
@@ -1412,7 +1412,7 @@
     },
     {
      "mint": "3HC5wu2PmpSEgXKgS2r7TDCDCg7xsotx32Ym7ubzN1NX",
-     "symbol": "",
+     "symbol": "BRAINLET",
      "cost_usd": 1000.0,
      "proceeds_usd": 1693.84,
      "value_usd": 0.0,
@@ -1422,7 +1422,7 @@
      "sells": 1,
      "first_buy_ts": 1788766250,
      "last_trade_ts": 1788840527,
-     "launched_ts": null,
+     "launched_ts": 1788762469,
      "first_buy_sig": "2vq8am9HKg5APCqmnJHfZAiwG5dKhz3xAZwx4HNMefaxYCshkSJ9eN1BLywcU7PufnF3P9Kn7xyNUCsxedMkLpDG",
      "verified": false,
      "flags": []
@@ -1531,7 +1531,7 @@
     },
     {
      "mint": "C4AYNMP4Hor2fNkLSkatgN8DuLfQRepGJpAVBhHUz5Ak",
-     "symbol": "",
+     "symbol": "PERPAD",
      "cost_usd": 1500.0,
      "proceeds_usd": 1842.49,
      "value_usd": 0.0,
@@ -1541,7 +1541,7 @@
      "sells": 1,
      "first_buy_ts": 1779590733,
      "last_trade_ts": 1779593782,
-     "launched_ts": null,
+     "launched_ts": 1779337128,
      "first_buy_sig": "2v88AzHwuPBBrry9z9nQf4pbAgcvGpVjDkTW5ZLzVn2NDr7wcgHVnWD4kNjm2Jbw59B7mVCLoiKt5tT6hFJ3FBrL",
      "verified": false,
      "flags": []
@@ -1551,9 +1551,9 @@
      "symbol": "CJP",
      "cost_usd": 4758.53,
      "proceeds_usd": 0.0,
-     "value_usd": 682.79,
+     "value_usd": 692.66,
      "profit_usd": -4758.53,
-     "multiple": 0.14,
+     "multiple": 0.15,
      "buys": 5,
      "sells": 0,
      "first_buy_ts": 1779457474,
@@ -1602,9 +1602,9 @@
      "symbol": "KITTY",
      "cost_usd": 17000.0,
      "proceeds_usd": 32568.21,
-     "value_usd": 6769.62,
+     "value_usd": 6907.19,
      "profit_usd": 15568.21,
-     "multiple": 2.31,
+     "multiple": 2.32,
      "buys": 2,
      "sells": 9,
      "first_buy_ts": 1778166352,
@@ -1662,7 +1662,7 @@
      "last_trade_ts": 1779457893,
      "launched_ts": 1773115460,
      "first_buy_sig": "4H4uJ9VobEB1AjCzFh8FQN1zreCctPwTamuKynph3acrSngvBqk5wk6MceouGoa8bsN7F6iYyjsmkB2W5GK6hJ1T",
-     "verified": true,
+     "verified": false,
      "flags": []
     },
     {
@@ -1805,7 +1805,7 @@
     },
     {
      "mint": "8TuHAfTBTMW1fJNq5bNoeX4zhk2492DNsCgVSYzApump",
-     "symbol": "",
+     "symbol": "AMELIA",
      "cost_usd": 10000.0,
      "proceeds_usd": 2025.93,
      "value_usd": 0.0,
@@ -1815,7 +1815,7 @@
      "sells": 1,
      "first_buy_ts": 1769401291,
      "last_trade_ts": 1770179254,
-     "launched_ts": null,
+     "launched_ts": 1768042871,
      "first_buy_sig": "NifE1suvAKXVeQRyGDZdn4JmV3LqY94iW2AvoXfW9PQzEF6s6VsdJvnCB8FCaCWdq3BYxbW47cbPB2n3hVFNwtu",
      "verified": false,
      "flags": []
@@ -1873,7 +1873,7 @@
     },
     {
      "mint": "FWGC5ziwYMCT29y913WZSHmkSh7mF4MiddQwEBx5A6XA",
-     "symbol": "COW",
+     "symbol": "",
      "cost_usd": 12940.1,
      "proceeds_usd": 2040.74,
      "value_usd": 0.0,
@@ -1883,7 +1883,7 @@
      "sells": 1,
      "first_buy_ts": 1768718908,
      "last_trade_ts": 1768748214,
-     "launched_ts": 1768504147,
+     "launched_ts": null,
      "first_buy_sig": "2FXh4fZVdYdHpVqzMwUnqmUEv2723AB5B1nAo8HWquzJ8JS49N4di3xHCfykv3PqB8ZBAUvW8ZWt8ZtNRJ8cKMos",
      "verified": false,
      "flags": []
@@ -1924,7 +1924,7 @@
     },
     {
      "mint": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump",
-     "symbol": "",
+     "symbol": "2016",
      "cost_usd": 3499.89,
      "proceeds_usd": 4975.38,
      "value_usd": 0.0,
@@ -1934,7 +1934,7 @@
      "sells": 2,
      "first_buy_ts": 1768554949,
      "last_trade_ts": 1768653448,
-     "launched_ts": null,
+     "launched_ts": 1755735234,
      "first_buy_sig": "29uwbUw3L3G7UcHf5oVfkfoTj2VJTtYud1HTQMrVbXeUAmEsEyDSw8uwEL6WdjtEhkrEhfSTLkYh7Ka9cgPFyPBJ",
      "verified": false,
      "flags": []
@@ -1960,7 +1960,7 @@
     },
     {
      "mint": "FCPMdpvwxtWBvgDDsPuBb6wyf41ik2gtPqNN9jWSBAGS",
-     "symbol": "",
+     "symbol": "PPW",
      "cost_usd": 3000.0,
      "proceeds_usd": 2821.65,
      "value_usd": 0.0,
@@ -1970,7 +1970,7 @@
      "sells": 1,
      "first_buy_ts": 1768467392,
      "last_trade_ts": 1768568588,
-     "launched_ts": null,
+     "launched_ts": 1757527548,
      "first_buy_sig": "53zP7zYz8zeRhzncFMci62cLQxsm1ydDx4oc7fevJjzb5S35ChJHp8ocjtNRXYpKcEsWM8HYtcKD1uzEBH5bxE9t",
      "verified": true,
      "flags": []
@@ -2023,7 +2023,7 @@
      "last_trade_ts": 1767766298,
      "launched_ts": 1767595076,
      "first_buy_sig": "3VUckVpgncPE4yxm3ETkpZMBt4hpxgziX3rcZA46ekk28bzt4MLXei4snWK3qhbxfrJu5aTS98QuX3vZobxSsYo7",
-     "verified": true,
+     "verified": false,
      "flags": []
     },
     {
@@ -2164,7 +2164,7 @@
     },
     {
      "mint": "7kLWitc1sMjXvum9sT5MQGoVfd6ZG3cZjg6uY56Spump",
-     "symbol": "FLASHBANG",
+     "symbol": "",
      "cost_usd": 250.0,
      "proceeds_usd": 7.78,
      "value_usd": 0.0,
@@ -2174,7 +2174,7 @@
      "sells": 1,
      "first_buy_ts": 1765327797,
      "last_trade_ts": 1765695259,
-     "launched_ts": 1765246131,
+     "launched_ts": null,
      "first_buy_sig": "45CB2pVUndFKnNxfCmtfiUANrwUh7CuLequdGNsW6LotJMHcLqXo2in9cRpjLfCDVt4Ag5zZvJVqf1Vj5vWn42Am",
      "verified": false,
      "flags": []
@@ -2240,17 +2240,17 @@
     "realized_usd": 191404.01,
     "gem_profit_usd": 63703.59,
     "hit_rate": 0.008,
-    "unverified": 85,
-    "tx_count": 1521
+    "unverified": 88,
+    "tx_count": 1522
    },
    "reasons": [
     "1 winning trade(s) (5x+ on verified coins); needs 5",
     "117 trade(s) under 5x (worst 0.00x)",
-    "85 trade(s) in coins Jupiter has not verified"
+    "88 trade(s) in coins Jupiter has not verified"
    ],
    "flags": [],
    "notes": [
-    "1223 trade(s) placed through the Fomo app"
+    "1224 trade(s) placed through the Fomo app"
    ],
    "data_source": "helius",
    "gems": [
@@ -2326,7 +2326,7 @@
     },
     {
      "mint": "BXZTSaRAgDtPefLWCaVR4ersTst79FpbPoiztvGgpump",
-     "symbol": "",
+     "symbol": "Tschuna",
      "cost_usd": 800.0,
      "proceeds_usd": 265.59,
      "value_usd": 0.0,
@@ -2336,7 +2336,7 @@
      "sells": 1,
      "first_buy_ts": 1791644104,
      "last_trade_ts": 1791644564,
-     "launched_ts": null,
+     "launched_ts": 1791641280,
      "first_buy_sig": "5PNjiBXe4LjxCtnNimCgMJn4ZCPdozEC23a4kqFRsm78HThDz5RQ82P1cSUmaaaGBowb8mR2uQotTxWPyhP1zKHy",
      "verified": false,
      "flags": []
@@ -2360,7 +2360,7 @@
     },
     {
      "mint": "HLwEJQVzs7SvjXuXpBTRHaLp5S6uWoWTUhLjJxBfy1c7",
-     "symbol": "",
+     "symbol": "LAPTOP",
      "cost_usd": 5000.0,
      "proceeds_usd": 1169.74,
      "value_usd": 0.0,
@@ -2370,7 +2370,7 @@
      "sells": 1,
      "first_buy_ts": 1788792652,
      "last_trade_ts": 1788792720,
-     "launched_ts": null,
+     "launched_ts": 1706568353,
      "first_buy_sig": "4BPTSFN919KkSB9geQ6AVD6hpcWP9w4KzajawXrMw7x37bwM1XwMu8jAFtKnj6BN6g2awo1iTo4zcYXLbva4qgc7",
      "verified": false,
      "flags": []
@@ -2649,7 +2649,7 @@
     },
     {
      "mint": "D1BHW3Tz4ygwwfCGzje9tMAMHz5ScAWm1EZhSTmgpump",
-     "symbol": "TJR",
+     "symbol": "",
      "cost_usd": 2000.0,
      "proceeds_usd": 2473.07,
      "value_usd": 0.0,
@@ -2659,14 +2659,14 @@
      "sells": 2,
      "first_buy_ts": 1782669426,
      "last_trade_ts": 1782670911,
-     "launched_ts": 1782656493,
+     "launched_ts": null,
      "first_buy_sig": "3dfLDeDU6dQ4WXTt6etwy56ARFT46VdVv1qijMS6yUGfzq6bySZ25tLcq1Px7gTV9Pdj8t4AKaV6RC3M5YzEZT1r",
      "verified": false,
      "flags": []
     },
     {
      "mint": "SmsAPocWT66xxXEbTakqC1SDyYpeUoNYCk82gLB9wrd",
-     "symbol": "",
+     "symbol": "world",
      "cost_usd": 2000.0,
      "proceeds_usd": 229.87,
      "value_usd": 0.0,
@@ -2676,7 +2676,7 @@
      "sells": 1,
      "first_buy_ts": 1782582100,
      "last_trade_ts": 1782582405,
-     "launched_ts": null,
+     "launched_ts": 1782573778,
      "first_buy_sig": "4H3hVq6uUyaecpfDdTdHSCoSa9DDe8pa5bWdpSFGMVbh7QG335S56kxcHFHqAQKDqdHeUXxUiadtcLzdriNqayhK",
      "verified": false,
      "flags": []
@@ -2700,7 +2700,7 @@
     },
     {
      "mint": "Ddi2j3nWfN7meq4jBZUD1VC8QGUe1sNqrQUNxxXwpump",
-     "symbol": "",
+     "symbol": "AssetFunds",
      "cost_usd": 3328.3,
      "proceeds_usd": 3577.19,
      "value_usd": 0.0,
@@ -2710,14 +2710,14 @@
      "sells": 1,
      "first_buy_ts": 1782226813,
      "last_trade_ts": 1782227703,
-     "launched_ts": null,
+     "launched_ts": 1782225515,
      "first_buy_sig": "36Zx1V9K63JWoLC4shcv8iJazb7GcMF8D4kTdaPiPGVZab2FGqjPYBXdhwVg9Kows5V56ZF7yeug5nXMhpdhptbM",
      "verified": false,
      "flags": []
     },
     {
      "mint": "w9Fh8VWmytLKo48AbnDf3vVdzN5SzpG6gFwmxeLpump",
-     "symbol": "GutGenug",
+     "symbol": "",
      "cost_usd": 2000.0,
      "proceeds_usd": 1437.74,
      "value_usd": 0.0,
@@ -2727,7 +2727,7 @@
      "sells": 1,
      "first_buy_ts": 1781949209,
      "last_trade_ts": 1782031450,
-     "launched_ts": 1780980463,
+     "launched_ts": null,
      "first_buy_sig": "3mvFXvVsBktoqDCpRY6ap82xsaRShbSA23WsQyLfcqXP33Qvgz8o9rQ2wd1njNoWz5J9dyPNEmKrUhTM6N7jKpBx",
      "verified": false,
      "flags": []
@@ -2819,7 +2819,7 @@
     },
     {
      "mint": "GmshYgy1nqUxw9ooza8UUnTw1rxDKM5t7HP4KSYVpump",
-     "symbol": "Odysseus\r\n",
+     "symbol": "",
      "cost_usd": 6000.0,
      "proceeds_usd": 3154.75,
      "value_usd": 0.0,
@@ -2829,7 +2829,7 @@
      "sells": 1,
      "first_buy_ts": 1780242702,
      "last_trade_ts": 1780245418,
-     "launched_ts": 1780240129,
+     "launched_ts": null,
      "first_buy_sig": "3QXD69LQ8JJaxDSyy9H6MGWUzK4TMJDvuvyHBuw1cXQCzeJvu2tTEK5C8GeeCQJZUHzgLjiinbRnFGiDoDxY557g",
      "verified": false,
      "flags": []
@@ -2899,7 +2899,7 @@
      "last_trade_ts": 1779110947,
      "launched_ts": 1778968023,
      "first_buy_sig": "4MsSmwo3yhTk82HyPWhHeKpp2mmw3DWRzurzSL4fQUtuknR2cYFN8QANmvdQGhXwUXjiv4Y5iHKJ8cWMwU8XShaA",
-     "verified": true,
+     "verified": false,
      "flags": []
     },
     {
@@ -2955,7 +2955,7 @@
     },
     {
      "mint": "yaMZLbndNGBb4kaJesAG1mTsUwCgiri4yxfjQjJBpee",
-     "symbol": "",
+     "symbol": "PEETOKEN",
      "cost_usd": 200.0,
      "proceeds_usd": 77.24,
      "value_usd": 0.0,
@@ -2965,7 +2965,7 @@
      "sells": 1,
      "first_buy_ts": 1778676684,
      "last_trade_ts": 1778676897,
-     "launched_ts": null,
+     "launched_ts": 1774984313,
      "first_buy_sig": "4LD7wzdmpjRajLgCVXaTvV9icjApGLKgLUTuk3egMPfosQXPmdBTGS5JCGmfPhFYpsSbRR7XxuBLzBdbBKKmTgkw",
      "verified": false,
      "flags": []
@@ -3006,7 +3006,7 @@
     },
     {
      "mint": "4ZEzC3aX7yLv8VEBiuoT6PgEMPEoxGB7WS3Qt3iPpump",
-     "symbol": "AGI",
+     "symbol": "",
      "cost_usd": 3000.0,
      "proceeds_usd": 3304.95,
      "value_usd": 0.0,
@@ -3016,7 +3016,7 @@
      "sells": 2,
      "first_buy_ts": 1778355268,
      "last_trade_ts": 1778355956,
-     "launched_ts": 1778354315,
+     "launched_ts": null,
      "first_buy_sig": "2RsUBcJ7Y82hygZb35ehd1m1zX43WSDgcVMXGjQCKZQManPVwRiphD98EJFC2BEHyUNcfTxdN76pm87ktNeAA3Dk",
      "verified": false,
      "flags": []
@@ -3094,9 +3094,9 @@
      "symbol": "CARDS",
      "cost_usd": 122500.0,
      "proceeds_usd": 90044.3,
-     "value_usd": 23712.1,
+     "value_usd": 26220.89,
      "profit_usd": -32455.7,
-     "multiple": 0.93,
+     "multiple": 0.95,
      "buys": 11,
      "sells": 7,
      "first_buy_ts": 1777564322,
@@ -3320,13 +3320,13 @@
     "realized_usd": 148513.12,
     "gem_profit_usd": 46884.64,
     "hit_rate": 0.012,
-    "unverified": 51,
+    "unverified": 53,
     "tx_count": 862
    },
    "reasons": [
     "1 winning trade(s) (5x+ on verified coins); needs 5",
     "82 trade(s) under 5x (worst 0.00x)",
-    "51 trade(s) in coins Jupiter has not verified"
+    "53 trade(s) in coins Jupiter has not verified"
    ],
    "flags": [
     "sold $39.2k of coins it never bought (received by transfer): possible insider / dev-linked wallet"
@@ -3408,7 +3408,7 @@
     },
     {
      "mint": "FfpUuXzXcZAg2Lrk9PAd9DKbvvUdPREniyHgXyR6pump",
-     "symbol": "HIM",
+     "symbol": "",
      "cost_usd": 2499.86,
      "proceeds_usd": 671.86,
      "value_usd": 0.0,
@@ -3418,7 +3418,7 @@
      "sells": 1,
      "first_buy_ts": 1782850984,
      "last_trade_ts": 1782901791,
-     "launched_ts": 1782832265,
+     "launched_ts": null,
      "first_buy_sig": "512f6MitZch2ySQhgDFRUrtjiB1tUmbUVYxaEyaB7DVC9zQ5tmYfn7fADMhiDxh4Dzm54Koz6PgJB9KoNZFk3wAd",
      "verified": false,
      "flags": []
@@ -3527,7 +3527,7 @@
     },
     {
      "mint": "HxFSWTJE3SeUCgsKJUcuGQYAiH4S4BFEnSoktfKLpump",
-     "symbol": "ODAI",
+     "symbol": "",
      "cost_usd": 2500.0,
      "proceeds_usd": 409.44,
      "value_usd": 0.0,
@@ -3537,7 +3537,7 @@
      "sells": 1,
      "first_buy_ts": 1777274867,
      "last_trade_ts": 1777320245,
-     "launched_ts": 1777268643,
+     "launched_ts": null,
      "first_buy_sig": "4ocfKY5ZMHdQhuuUmN1EXgTwcmGFQcP689jbN9tMRutcmmjpTSDiURu3nYiaL3kqGZLN4kd3egp3xvhMAQfK8txg",
      "verified": false,
      "flags": []
@@ -3663,7 +3663,7 @@
     },
     {
      "mint": "v8ic5ww8fy6ejkq4Cr5CVpYnstaXjMsRGJZSWn5SS1t",
-     "symbol": "Pombon",
+     "symbol": "",
      "cost_usd": 10925.0,
      "proceeds_usd": 7993.81,
      "value_usd": 0.0,
@@ -3673,7 +3673,7 @@
      "sells": 1,
      "first_buy_ts": 1772213725,
      "last_trade_ts": 1772261325,
-     "launched_ts": 1772202947,
+     "launched_ts": null,
      "first_buy_sig": "4xcKBJAVYrC8jZLybZqSBhFZyLYZmT5iYzhWS92jS9s81Cr3RnP2GAgEpd7j8EiyNLTfQ9JDPyBeeHEwVUbMpN7b",
      "verified": false,
      "flags": []
@@ -3748,7 +3748,7 @@
     },
     {
      "mint": "Ab98dbe7st4dNKHgtWsP27zJHrfLNi7Gmqvx4j42BAGS",
-     "symbol": "LARRY",
+     "symbol": "",
      "cost_usd": 1019.0,
      "proceeds_usd": 604.48,
      "value_usd": 0.0,
@@ -3758,7 +3758,7 @@
      "sells": 1,
      "first_buy_ts": 1771089514,
      "last_trade_ts": 1771113230,
-     "launched_ts": 1770498270,
+     "launched_ts": null,
      "first_buy_sig": "7JRouKpvPtYLMPQa8JvEDUM9wtfZpBLg48VmEFXZuJGtupam7vewQT1pMV6aPXgAm3qbvexnwo9y3JTvQzMEDYc",
      "verified": false,
      "flags": []
@@ -3782,7 +3782,7 @@
     },
     {
      "mint": "CFB4Ff7W87uN9Gf2DSj63L7prZycJvzQeg1MbGxwBcqC",
-     "symbol": "",
+     "symbol": "BLOWFISH",
      "cost_usd": 8432.0,
      "proceeds_usd": 5206.12,
      "value_usd": 0.0,
@@ -3792,7 +3792,7 @@
      "sells": 1,
      "first_buy_ts": 1770472187,
      "last_trade_ts": 1770518577,
-     "launched_ts": null,
+     "launched_ts": 1770235102,
      "first_buy_sig": "XBgmi5G52VgbmWkemdyb5yuU8S9ukVBb4DUwYVE6XCog9Bqixk1UP2CRPDPvpJEi1oUMpV28ERcxpczw4LRxzBE",
      "verified": false,
      "flags": []
@@ -3833,7 +3833,7 @@
     },
     {
      "mint": "Gs1ojS38QirgAa43UkUbdP5gZXiVzArT5bxYfJjsyvfd",
-     "symbol": "",
+     "symbol": "SYNP",
      "cost_usd": 5000.0,
      "proceeds_usd": 2683.59,
      "value_usd": 0.0,
@@ -3843,7 +3843,7 @@
      "sells": 1,
      "first_buy_ts": 1769816241,
      "last_trade_ts": 1769816711,
-     "launched_ts": null,
+     "launched_ts": 1769759613,
      "first_buy_sig": "3poh5weT38Seo6S8Sw8JKBMweLugYv1hrdXrbNoHHHzSwkGnaWDk3PhQfEn9aNJbnjCWmVVoYwXwtwBZRkDj6X68",
      "verified": false,
      "flags": []
@@ -3986,7 +3986,7 @@
     },
     {
      "mint": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS",
-     "symbol": "",
+     "symbol": "GSD",
      "cost_usd": 10500.0,
      "proceeds_usd": 7096.85,
      "value_usd": 0.0,
@@ -3996,9 +3996,9 @@
      "sells": 1,
      "first_buy_ts": 1768756689,
      "last_trade_ts": 1768770177,
-     "launched_ts": null,
+     "launched_ts": 1768609857,
      "first_buy_sig": "2eKT7oDEQUwxALCwnYJcLNZGCSVXtekFZJeFKydyXbxMjiXy2PTRBGNN4kN33wTC3T81JN7XmUFQgQ7qLhtWg7bu",
-     "verified": true,
+     "verified": false,
      "flags": []
     },
     {
@@ -4020,7 +4020,7 @@
     },
     {
      "mint": "GLy5g87gQceq5fcrWn2UgDXACYzQa3pCGcQ1jSt5BAGS",
-     "symbol": "",
+     "symbol": "TAILWIND",
      "cost_usd": 5000.0,
      "proceeds_usd": 10098.98,
      "value_usd": 0.0,
@@ -4030,7 +4030,7 @@
      "sells": 1,
      "first_buy_ts": 1768575197,
      "last_trade_ts": 1768581142,
-     "launched_ts": null,
+     "launched_ts": 1768573987,
      "first_buy_sig": "2pinBSaCH28Rs4fq9HwZkqhnhgQF2ArXZaPpp7H6JtjZ9JMhoV8iFgmW4spUupcnjqi8qN5vonSYBxKx56miADCf",
      "verified": false,
      "flags": []
@@ -4054,7 +4054,7 @@
     },
     {
      "mint": "HephxhDavKo6joaqQe7ELo4cu7r636f8RXFgg7evBAGS",
-     "symbol": "SLOPCRAFT",
+     "symbol": "",
      "cost_usd": 11000.0,
      "proceeds_usd": 10492.71,
      "value_usd": 0.0,
@@ -4064,7 +4064,7 @@
      "sells": 1,
      "first_buy_ts": 1768573686,
      "last_trade_ts": 1768576439,
-     "launched_ts": 1768136085,
+     "launched_ts": null,
      "first_buy_sig": "2ZP6PXypbdw1yJivv2UFyndcyaAVxRxS2ZtuYpfEs2qCU2GDvtHHwyotX7N9KohTuuSu7T99yzs5ee5f2ss1gc8i",
      "verified": false,
      "flags": []
@@ -4088,7 +4088,7 @@
     },
     {
      "mint": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEBpump",
-     "symbol": "",
+     "symbol": "Grandma",
      "cost_usd": 5000.0,
      "proceeds_usd": 4143.85,
      "value_usd": 0.0,
@@ -4098,7 +4098,7 @@
      "sells": 1,
      "first_buy_ts": 1768495842,
      "last_trade_ts": 1768521328,
-     "launched_ts": null,
+     "launched_ts": 1768366403,
      "first_buy_sig": "3wuEAC3Dyxq8AvEfmJD5HktrUQmtxph7WZbfBFkygnGgtUSRQomBxocdHoo4UAvcBRCxCcCq9zJbdVVWRaWNoSxv",
      "verified": false,
      "flags": []
@@ -4190,7 +4190,7 @@
     },
     {
      "mint": "7gASrhXxE5u2oLASrAsZh3SAJrgSjKhb4qTe3FsqHTKb",
-     "symbol": "",
+     "symbol": "ALOKA",
      "cost_usd": 6952.0,
      "proceeds_usd": 5916.98,
      "value_usd": 0.0,
@@ -4200,7 +4200,7 @@
      "sells": 2,
      "first_buy_ts": 1767754069,
      "last_trade_ts": 1768417313,
-     "launched_ts": null,
+     "launched_ts": 1767378518,
      "first_buy_sig": "5yPhKyAcZ64rvn7sFWRLsgYdiQwXDgSRC6EKY8zym9kr6fnhffGTDhCWrE5KRRPoDjpKN9FKu4PzXTkVCpY8ZefZ",
      "verified": false,
      "flags": []
@@ -4236,7 +4236,7 @@
      "last_trade_ts": 1768598230,
      "launched_ts": 1767595076,
      "first_buy_sig": "dq8DYACizzsdn9TVZi4uMAwo6PEQRRCFC1WQQM2DmJAD7KCqKG9VGnmCteVXVqX7uK2VPogMNR4bbXj57D9CbcY",
-     "verified": true,
+     "verified": false,
      "flags": []
     },
     {
@@ -4275,7 +4275,7 @@
     },
     {
      "mint": "7EW5dDD6MYJK4PcZ89MGApJQwWeDEeNgH4NCVU4qpump",
-     "symbol": "PURCH",
+     "symbol": "",
      "cost_usd": 4361.0,
      "proceeds_usd": 1738.13,
      "value_usd": 0.0,
@@ -4285,14 +4285,14 @@
      "sells": 1,
      "first_buy_ts": 1766068675,
      "last_trade_ts": 1766139029,
-     "launched_ts": 1765992320,
+     "launched_ts": null,
      "first_buy_sig": "PbgutauZxWio7DeGES7DENCZqZwqoUkchKh6SYoqumwezTcE7n3JviJKVYQmp6SZeWRQz48Nk5aW5BMteYkXNCH",
      "verified": true,
      "flags": []
     },
     {
      "mint": "9XWWHExgN4yvyLRskzzfcr5AcBaqQ6UtwcDSVpUBsoar",
-     "symbol": "CPT",
+     "symbol": "",
      "cost_usd": 7000.0,
      "proceeds_usd": 5971.98,
      "value_usd": 0.0,
@@ -4302,7 +4302,7 @@
      "sells": 1,
      "first_buy_ts": 1765548995,
      "last_trade_ts": 1765551567,
-     "launched_ts": 1762459735,
+     "launched_ts": null,
      "first_buy_sig": "gdpxPx3a2hKJM5zWc2imvxPS96tfc1wU6oFirpxVrv4AyFNcEvTMcFMnpy6RXJ71otDL8a7jJyMBFcDhhWGkywd",
      "verified": true,
      "flags": []
@@ -4326,7 +4326,7 @@
     },
     {
      "mint": "7kLWitc1sMjXvum9sT5MQGoVfd6ZG3cZjg6uY56Spump",
-     "symbol": "FLASHBANG",
+     "symbol": "",
      "cost_usd": 1000.0,
      "proceeds_usd": 157.98,
      "value_usd": 0.0,
@@ -4336,7 +4336,7 @@
      "sells": 1,
      "first_buy_ts": 1765296524,
      "last_trade_ts": 1765458032,
-     "launched_ts": 1765246131,
+     "launched_ts": null,
      "first_buy_sig": "4W2CbUuV8EuQg7ZPb6XnFDNqpYNKXr9g3Ba4Cq7kny31sK94jjkQGzN8PZniM7Rq7HmD99NcxDbTGxPZbxpJiRh2",
      "verified": false,
      "flags": []
@@ -4402,13 +4402,13 @@
     "realized_usd": 141578.52,
     "gem_profit_usd": 34042.83,
     "hit_rate": 0.009,
-    "unverified": 81,
+    "unverified": 82,
     "tx_count": 2390
    },
    "reasons": [
     "1 winning trade(s) (5x+ on verified coins); needs 5",
     "111 trade(s) under 5x (worst 0.00x)",
-    "81 trade(s) in coins Jupiter has not verified"
+    "82 trade(s) in coins Jupiter has not verified"
    ],
    "flags": [
     "sold $31.4k of coins it never bought (received by transfer): possible insider / dev-linked wallet",
@@ -4562,7 +4562,7 @@
      "symbol": "LOOKSMAX",
      "cost_usd": 5.0,
      "proceeds_usd": 0.0,
-     "value_usd": 0.27,
+     "value_usd": 0.26,
      "profit_usd": -5.0,
      "multiple": 0.05,
      "buys": 1,
@@ -4627,7 +4627,7 @@
     },
     {
      "mint": "CoYQjWayXqM7uSbkzj7Z8ZhUqdQEiwvzaX3zukJPpump",
-     "symbol": "",
+     "symbol": "MOONDENG",
      "cost_usd": 6000.0,
      "proceeds_usd": 2838.54,
      "value_usd": 0.0,
@@ -4637,7 +4637,7 @@
      "sells": 1,
      "first_buy_ts": 1786559924,
      "last_trade_ts": 1786561828,
-     "launched_ts": null,
+     "launched_ts": 1786557271,
      "first_buy_sig": "46maCFN8Bd9mLKi4s9FNWVvepdAhxp5tUQcCFuWFvcWhqdmM2yoKxVgpRJsfXE23gNrwVTzdPyErK7srELfz4kNs",
      "verified": false,
      "flags": []
@@ -4661,7 +4661,7 @@
     },
     {
      "mint": "DcRcBtM7XopjPnmBUTmp8eWMTztkhVJUkuXeEsqApump",
-     "symbol": "PGUY",
+     "symbol": "",
      "cost_usd": 2000.0,
      "proceeds_usd": 565.17,
      "value_usd": 0.0,
@@ -4671,7 +4671,7 @@
      "sells": 1,
      "first_buy_ts": 1786497328,
      "last_trade_ts": 1786546607,
-     "launched_ts": 1746395240,
+     "launched_ts": null,
      "first_buy_sig": "2GJfiW3JDsG2mEb8Ho4AaHXFq5tg58btcVFfjA5G8tJjyWpMUg4DMnBKqQ1cxUQpJzxYRRJWp3ds6WBPoRPmTYhH",
      "verified": false,
      "flags": []
@@ -4797,7 +4797,7 @@
     },
     {
      "mint": "8NGpdSE1tZqUrvpUVqsn5Revncc6yUafk8mnAyK9fNCE",
-     "symbol": "Chud",
+     "symbol": "",
      "cost_usd": 4000.0,
      "proceeds_usd": 1084.62,
      "value_usd": 0.0,
@@ -4807,7 +4807,7 @@
      "sells": 1,
      "first_buy_ts": 1783296041,
      "last_trade_ts": 1784426846,
-     "launched_ts": 1782994399,
+     "launched_ts": null,
      "first_buy_sig": "5xWGo6ffLQ6ytUFWXkM1RmaJrFniRvfa5NHL8iJNb897uRfXzQ9g2YWwNqL3N5jmNcPxXsn7oNhaD8FMi2dofj5k",
      "verified": false,
      "flags": []
@@ -4933,7 +4933,7 @@
     },
     {
      "mint": "B428P1rqok8L3yfCUEV75oZ5c4au2EDrhfQmXibXpump",
-     "symbol": "",
+     "symbol": "Hypergamy",
      "cost_usd": 750.0,
      "proceeds_usd": 554.78,
      "value_usd": 0.0,
@@ -4943,14 +4943,14 @@
      "sells": 1,
      "first_buy_ts": 1780153874,
      "last_trade_ts": 1780155703,
-     "launched_ts": null,
+     "launched_ts": 1780153776,
      "first_buy_sig": "sMX8CCbGfrh378mXBimNQs7cPTK669R99o5t1vye6W8TndDityrJCXWXhd3BL4gyGMYhRzwR2SBERqJnk8JpVER",
      "verified": false,
      "flags": []
     },
     {
      "mint": "9XWWHExgN4yvyLRskzzfcr5AcBaqQ6UtwcDSVpUBsoar",
-     "symbol": "CPT",
+     "symbol": "",
      "cost_usd": 10000.0,
      "proceeds_usd": 7908.73,
      "value_usd": 0.0,
@@ -4960,7 +4960,7 @@
      "sells": 1,
      "first_buy_ts": 1779455956,
      "last_trade_ts": 1779466279,
-     "launched_ts": 1762459735,
+     "launched_ts": null,
      "first_buy_sig": "BPNnetySUtLSKVfHcQcs3pyipYne6muCYM9paKRD5wHsMurpbqq9xRh11vw8MkER9Vn3RL7RMk3SzpNzyWVaQw9",
      "verified": true,
      "flags": []
@@ -5052,7 +5052,7 @@
     },
     {
      "mint": "4pMsh7JF5wXjkx8sK6gJgv14xkBy1kUoMv4ixN8npump",
-     "symbol": "PIGEON",
+     "symbol": "",
      "cost_usd": 1500.0,
      "proceeds_usd": 1651.08,
      "value_usd": 0.0,
@@ -5062,7 +5062,7 @@
      "sells": 2,
      "first_buy_ts": 1779078094,
      "last_trade_ts": 1779292774,
-     "launched_ts": 1779069259,
+     "launched_ts": null,
      "first_buy_sig": "3ZaHmn382815aiYyFQXp6jGaza5tkoCEyWEqZE3zTHVep1oRCbFLDEFrsYNKDa4YG12E8aURGruXfJhMLzTP2dwu",
      "verified": false,
      "flags": []
@@ -5120,7 +5120,7 @@
     },
     {
      "mint": "FZWDFWR4HiHmhJEL2isENeCsuVhNKkEjAWdGqofVpump",
-     "symbol": "",
+     "symbol": "SH",
      "cost_usd": 1500.0,
      "proceeds_usd": 26.89,
      "value_usd": 0.0,
@@ -5130,7 +5130,7 @@
      "sells": 1,
      "first_buy_ts": 1778202720,
      "last_trade_ts": 1779121060,
-     "launched_ts": null,
+     "launched_ts": 1778189742,
      "first_buy_sig": "43jG7ZHmnWhbC4iFpKm9igzRaasqgXUwDAG9vqZagZiFG2V4jW9844L47eMdLzLuXkqeH2StHThpLQMf9pCTc8Kz",
      "verified": false,
      "flags": []
@@ -5171,7 +5171,7 @@
     },
     {
      "mint": "EJE1e8eZPbebxN4DgoFRtyMDjzuVEASFdosDY6Vmpump",
-     "symbol": "",
+     "symbol": "NIGGAHOUSE",
      "cost_usd": 800.0,
      "proceeds_usd": 477.81,
      "value_usd": 0.0,
@@ -5181,7 +5181,7 @@
      "sells": 1,
      "first_buy_ts": 1777520037,
      "last_trade_ts": 1778163998,
-     "launched_ts": null,
+     "launched_ts": 1777487782,
      "first_buy_sig": "z59pMrnGea8JBHERjEn2e3X91nbkkfbGKrr5zYTRDrE3SBdtLZvQaLv1EPZCnLXpH9BsTmUDAuvLpuAzqJFJmUF",
      "verified": false,
      "flags": []
@@ -5205,7 +5205,7 @@
     },
     {
      "mint": "2TfSKMphshQ8zFLMJuGsw2iotSdGHLhYYPM4uy1opump",
-     "symbol": "",
+     "symbol": "FOLD",
      "cost_usd": 15400.0,
      "proceeds_usd": 11675.43,
      "value_usd": 0.0,
@@ -5215,7 +5215,7 @@
      "sells": 4,
      "first_buy_ts": 1776343250,
      "last_trade_ts": 1779121138,
-     "launched_ts": null,
+     "launched_ts": 1770768113,
      "first_buy_sig": "aJqTitwDaTvYBQd2BotEBpzEt4RGfdXWxWhN5nsB5zdFqyfWhhn9vcmVtf5YEsiXWy5BFK9omemKHekwrbEBfg2",
      "verified": false,
      "flags": []
@@ -5409,7 +5409,7 @@
     },
     {
      "mint": "AnarbvjzbRxv391juRyWZiWmrAiqyLxb1LBz5FjWBAGS",
-     "symbol": "ORDO",
+     "symbol": "",
      "cost_usd": 1000.0,
      "proceeds_usd": 1421.18,
      "value_usd": 0.0,
@@ -5419,7 +5419,7 @@
      "sells": 1,
      "first_buy_ts": 1769790551,
      "last_trade_ts": 1769821076,
-     "launched_ts": 1769469871,
+     "launched_ts": null,
      "first_buy_sig": "UtENUbA7Q5b3itGpv9eBftJ7gH18WZgc3eDGTyP59D41s1L1n881EdFWgZYcs9fViie1SxPUjxSsRdVWBBU4Vjo",
      "verified": false,
      "flags": []
@@ -5485,13 +5485,13 @@
     "realized_usd": 139035.81,
     "gem_profit_usd": 129538.07,
     "hit_rate": 0.007,
-    "unverified": 106,
-    "tx_count": 1888
+    "unverified": 108,
+    "tx_count": 1890
    },
    "reasons": [
     "1 winning trade(s) (5x+ on verified coins); needs 5",
     "150 trade(s) under 5x (worst 0.00x)",
-    "106 trade(s) in coins Jupiter has not verified"
+    "108 trade(s) in coins Jupiter has not verified"
    ],
    "flags": [
     "1 weak trade(s) were coins sent to another wallet, so not necessarily real losses"
@@ -5981,7 +5981,7 @@
     },
     {
      "mint": "7kkQU6AhUadtoszttEKprirvpgBihJHPoHVczebvi7i3",
-     "symbol": "",
+     "symbol": "Chaton",
      "cost_usd": 500.0,
      "proceeds_usd": 438.79,
      "value_usd": 0.0,
@@ -5991,14 +5991,14 @@
      "sells": 1,
      "first_buy_ts": 1782573626,
      "last_trade_ts": 1782574547,
-     "launched_ts": null,
+     "launched_ts": 1781482669,
      "first_buy_sig": "3bMRj4HT2saPgKvHmRdUzEmfDUcPAyWP2VyByttD8TjYWppCi8bqSeVLUbgshvmR97BVU13k8VKNYRSrhGVV2JC5",
      "verified": false,
      "flags": []
     },
     {
      "mint": "7dsAXucdbXzhT8peJVfLvc7oWBjHqBUQZfc8VBZ3pump",
-     "symbol": "Crashout",
+     "symbol": "",
      "cost_usd": 1625.0,
      "proceeds_usd": 1330.45,
      "value_usd": 0.0,
@@ -6008,14 +6008,14 @@
      "sells": 4,
      "first_buy_ts": 1776474452,
      "last_trade_ts": 1776539980,
-     "launched_ts": 1776449655,
+     "launched_ts": null,
      "first_buy_sig": "2n8KC42Ne25cr3QU8Rfd43FPkkQhy3nDU8cTefZsCBbTxmrabo4VcL59q3j1iPHyaRmJwjH1EQUdUyQGDMoMy6M9",
      "verified": false,
      "flags": []
     },
     {
      "mint": "6z7pG15eRGiu4ByYR4TS8hfrMs6AwRqs3ZjRpSFKTRYo",
-     "symbol": "DELPHAI",
+     "symbol": "",
      "cost_usd": 250.0,
      "proceeds_usd": 312.93,
      "value_usd": 0.0,
@@ -6025,7 +6025,7 @@
      "sells": 1,
      "first_buy_ts": 1776444081,
      "last_trade_ts": 1776444243,
-     "launched_ts": 1776443222,
+     "launched_ts": null,
      "first_buy_sig": "2mM7BkVouHnhV4RWAemnzJV3Z7aeQxucWCf1oMPiLX1q3T98Tv97xYUuSniYubCMJ4ZC5cM5bSSQhVrTWmK97igw",
      "verified": false,
      "flags": []
@@ -6083,7 +6083,7 @@
     },
     {
      "mint": "6bo24bcyFELFKJJKSvNrWPHqWYxJi48PrwQ3R1fmpump",
-     "symbol": "Wcoin",
+     "symbol": "",
      "cost_usd": 500.0,
      "proceeds_usd": 352.24,
      "value_usd": 0.0,
@@ -6093,7 +6093,7 @@
      "sells": 1,
      "first_buy_ts": 1775824363,
      "last_trade_ts": 1775829794,
-     "launched_ts": 1775801529,
+     "launched_ts": null,
      "first_buy_sig": "412E3B5hEj5rHJaXhCPf8JKoVLNoGJbxZVzyemEsHRYVATxeUFz7N3LVFfRPHipB78auiKJyYiXYX2ekHi1LMCXd",
      "verified": false,
      "flags": []
@@ -6151,7 +6151,7 @@
     },
     {
      "mint": "8i6MEfc8eFNcvns7WgW3JRxFWaXumzXFeDWff4ewVdY2",
-     "symbol": "GAJAE",
+     "symbol": "",
      "cost_usd": 250.0,
      "proceeds_usd": 246.35,
      "value_usd": 0.0,
@@ -6161,14 +6161,14 @@
      "sells": 1,
      "first_buy_ts": 1775069266,
      "last_trade_ts": 1775070262,
-     "launched_ts": 1769866923,
+     "launched_ts": null,
      "first_buy_sig": "34HYgHyxco9uHZPwMNYm9FUJQ3fefAnUi2392FH3jB8iMqabMjKPXZyJT7qdTjPc64NnVB2w8BgPHvh3fGgbMCzj",
      "verified": false,
      "flags": []
     },
     {
      "mint": "EEXB4PETQL42SbnaqemwV1kiUbhHCw6rPYFpTX7fpump",
-     "symbol": "BIP360",
+     "symbol": "",
      "cost_usd": 175.0,
      "proceeds_usd": 116.52,
      "value_usd": 0.0,
@@ -6178,7 +6178,7 @@
      "sells": 1,
      "first_buy_ts": 1775063092,
      "last_trade_ts": 1775068055,
-     "launched_ts": 1774961001,
+     "launched_ts": null,
      "first_buy_sig": "JPqwDqf9JdFrhE2ygxHhTkZupZwZw7xm5P2z4p3H5V7Ba2B2mTXq6wHjpfU8z3HsXiZGQ9qanV5cWRKUByVXuBA",
      "verified": false,
      "flags": []
@@ -6202,7 +6202,7 @@
     },
     {
      "mint": "3GJ5N2p9ZHgd4eDBBhAw4tLigyjmYY4JBex3oK5Dycuv",
-     "symbol": "DOT",
+     "symbol": "",
      "cost_usd": 250.0,
      "proceeds_usd": 255.04,
      "value_usd": 0.0,
@@ -6212,7 +6212,7 @@
      "sells": 1,
      "first_buy_ts": 1775059260,
      "last_trade_ts": 1775059389,
-     "launched_ts": 1775051681,
+     "launched_ts": null,
      "first_buy_sig": "3ceG6gkx1bYGxhURy5vEbkiy7Y61cmNYJA3FFBbemzN9wid1p3PuYQyKt2ngqdNQmez5VpwEAYXMnmEkXyCAUd2P",
      "verified": false,
      "flags": []
@@ -6355,7 +6355,7 @@
     },
     {
      "mint": "217dt9idH1Q9UXT8rjpknnyFggizXUVD2r5EZNjopump",
-     "symbol": "",
+     "symbol": "AICOIN",
      "cost_usd": 747.14,
      "proceeds_usd": 610.81,
      "value_usd": 0.0,
@@ -6365,14 +6365,14 @@
      "sells": 1,
      "first_buy_ts": 1772783141,
      "last_trade_ts": 1772785078,
-     "launched_ts": null,
+     "launched_ts": 1772756773,
      "first_buy_sig": "Cf2gD7hRicKzyhq28XXfernEHsw4nr2gEWGnZsPq8K8GNJUmb3hc5KavAsJKXNnSkwNJdc6qcqwFkYNPPE6GgQL",
      "verified": false,
      "flags": []
     },
     {
      "mint": "76BYtPRBvsTrC9A8weQakBhaFRxsLjWyZyEyQjW5pump",
-     "symbol": "",
+     "symbol": "ガボン",
      "cost_usd": 500.0,
      "proceeds_usd": 378.86,
      "value_usd": 0.0,
@@ -6382,7 +6382,7 @@
      "sells": 1,
      "first_buy_ts": 1772648527,
      "last_trade_ts": 1772652973,
-     "launched_ts": null,
+     "launched_ts": 1772549460,
      "first_buy_sig": "3fBakZUyD7Ek4Pe9dEDwSC2m7DSZSk3HX83C7bpPZuB98cJPhPubniqcsg3VgEq9DQ6SpLbVMCHZ55mZqdodp6gg",
      "verified": false,
      "flags": []
@@ -6491,7 +6491,7 @@
     },
     {
      "mint": "6jfRbgs3B1KrhohSZ7KbhJckHZektQs1rRUSwWeZpump",
-     "symbol": "",
+     "symbol": "TOTO",
      "cost_usd": 550.0,
      "proceeds_usd": 413.62,
      "value_usd": 0.0,
@@ -6501,7 +6501,7 @@
      "sells": 1,
      "first_buy_ts": 1771525461,
      "last_trade_ts": 1771527871,
-     "launched_ts": null,
+     "launched_ts": 1771446278,
      "first_buy_sig": "2SbYcM2Q7XJ8irus8iffG7Qh6nEiQ52Gff2aQa49vkji9yfCViGWKMbyKi9AH8Pcq6gQRpf7fT51Xn7bt9XjWzjL",
      "verified": false,
      "flags": []
@@ -6525,7 +6525,7 @@
     },
     {
      "mint": "CFB4Ff7W87uN9Gf2DSj63L7prZycJvzQeg1MbGxwBcqC",
-     "symbol": "",
+     "symbol": "BLOWFISH",
      "cost_usd": 500.0,
      "proceeds_usd": 410.05,
      "value_usd": 0.0,
@@ -6535,7 +6535,7 @@
      "sells": 1,
      "first_buy_ts": 1770474132,
      "last_trade_ts": 1770475226,
-     "launched_ts": null,
+     "launched_ts": 1770235102,
      "first_buy_sig": "2B6x6fDkCQ7NgQFTa4Y4gDU4puNMozYZ34WrmWiZ7k8VJc1WehMY9iPcsFrQsSy5xVz3qCGWotL5n7oEyJjTszzh",
      "verified": false,
      "flags": []
@@ -6567,13 +6567,13 @@
     "realized_usd": 94191.27,
     "gem_profit_usd": 34907.01,
     "hit_rate": 0.015,
-    "unverified": 35,
-    "tx_count": 1044
+    "unverified": 37,
+    "tx_count": 1040
    },
    "reasons": [
     "1 winning trade(s) (5x+ on verified coins); needs 5",
     "64 trade(s) under 5x (worst 0.04x)",
-    "35 trade(s) in coins Jupiter has not verified"
+    "37 trade(s) in coins Jupiter has not verified"
    ],
    "flags": [],
    "notes": [
@@ -6704,7 +6704,7 @@
     },
     {
      "mint": "CZTnBZLV86yVqQ9F4xoQpfPeHgiasnwqmTUCta1C21fM",
-     "symbol": "GAMESTONK",
+     "symbol": "",
      "cost_usd": 500.0,
      "proceeds_usd": 82.67,
      "value_usd": 0.0,
@@ -6714,7 +6714,7 @@
      "sells": 1,
      "first_buy_ts": 1786385929,
      "last_trade_ts": 1786389811,
-     "launched_ts": 1786385708,
+     "launched_ts": null,
      "first_buy_sig": "5Awm4vVVz8rSJZmg6ZQtK8M2ppC5qvZmnnQXoa1ZyPbsuFKWE4aQNWBaNcKEBkC9LHZZnYD5CHpa7cwSV1pcoUsd",
      "verified": false,
      "flags": []
@@ -6806,7 +6806,7 @@
     },
     {
      "mint": "CaXFnAyYJVxBQdbDiYBgrkLYYh1XqTuVEJZsuvbkpump",
-     "symbol": "",
+     "symbol": "Dino",
      "cost_usd": 992.59,
      "proceeds_usd": 1014.6,
      "value_usd": 0.0,
@@ -6816,7 +6816,7 @@
      "sells": 2,
      "first_buy_ts": 1785790346,
      "last_trade_ts": 1785793605,
-     "launched_ts": null,
+     "launched_ts": 1785787654,
      "first_buy_sig": "3afgJKask7BnTRAoM1r6hm9yA6EdRFh7xxLdhjNn23CTYTWHKe2kJbxtdRy3StJdVok56qCHnRP8VmKTYbUcgpUj",
      "verified": false,
      "flags": []
@@ -6903,7 +6903,7 @@
      "last_trade_ts": 1783479600,
      "launched_ts": null,
      "first_buy_sig": "4aWjxa2pgviiic2R3ndhH6niHKWiU41UfUF8vgLKQ3uYVYVLF4KUyLMU9UciYf1jBgiDwF8Rw8dmQhEDXxu5tvKB",
-     "verified": true,
+     "verified": false,
      "flags": []
     },
     {
@@ -7095,7 +7095,7 @@
     },
     {
      "mint": "B5jkQN49W6oSWThPZu9y7HsgkabBawA7vxHJ3bpcpump",
-     "symbol": "",
+     "symbol": "DIAMOND",
      "cost_usd": 1000.0,
      "proceeds_usd": 1075.26,
      "value_usd": 0.0,
@@ -7105,7 +7105,7 @@
      "sells": 1,
      "first_buy_ts": 1778623037,
      "last_trade_ts": 1778623136,
-     "launched_ts": null,
+     "launched_ts": 1778621073,
      "first_buy_sig": "4n4QWzgRvHFQ6tQuGvbrRWCna7fY7sQwEnNyP8LWwkT5Bswei8NSoys3WJZekZQQdnpZbzY8W7F5ESA3xhEuBo1f",
      "verified": false,
      "flags": []
@@ -7384,7 +7384,7 @@
     },
     {
      "mint": "EtL967sgMgeDDSUrNhtQrbhe4T92idzqf4VuA6H7uGfQ",
-     "symbol": "",
+     "symbol": "MAYA",
      "cost_usd": 1000.0,
      "proceeds_usd": 1305.44,
      "value_usd": 0.0,
@@ -7394,7 +7394,7 @@
      "sells": 1,
      "first_buy_ts": 1771289550,
      "last_trade_ts": 1771303897,
-     "launched_ts": null,
+     "launched_ts": 1771287831,
      "first_buy_sig": "32PLwsb57mR8rraFU75XiGeShBs9XAd3nyg5HHx6T9MF49xTLuGrXCx9nRgodk7Lo2xMHaub6J8xHWz2RAqqUdLp",
      "verified": false,
      "flags": []
@@ -7486,7 +7486,7 @@
     },
     {
      "mint": "FyPDfX92B4uEk4zZouy96d1Kk1LgnCznBpzAFSsZpump",
-     "symbol": "",
+     "symbol": "Mia",
      "cost_usd": 6000.0,
      "proceeds_usd": 4276.85,
      "value_usd": 0.0,
@@ -7496,9 +7496,9 @@
      "sells": 1,
      "first_buy_ts": 1768233980,
      "last_trade_ts": 1768767664,
-     "launched_ts": null,
+     "launched_ts": 1767516956,
      "first_buy_sig": "57G3kR8SPSikCeaysZkGb3ZKyqYHZuvxaCh9ki63atWVdF7q1DftkdytGQ83uucAFnB3ZG4JB8cTeFHynsYKVAq4",
-     "verified": true,
+     "verified": false,
      "flags": []
     },
     {
@@ -7639,7 +7639,7 @@
     "open": 0,
     "gems": 1,
     "wins_min_multiple": 2,
-    "losses": 32,
+    "losses": 33,
     "min_multiple": 0.0,
     "median_multiple": 1.0,
     "best_multiple": 8.5,
@@ -7647,13 +7647,13 @@
     "realized_usd": 91157.29,
     "gem_profit_usd": 57883.27,
     "hit_rate": 0.015,
-    "unverified": 24,
+    "unverified": 25,
     "tx_count": 1583
    },
    "reasons": [
     "1 winning trade(s) (5x+ on verified coins); needs 5",
     "63 trade(s) under 5x (worst 0.00x)",
-    "24 trade(s) in coins Jupiter has not verified"
+    "25 trade(s) in coins Jupiter has not verified"
    ],
    "flags": [],
    "notes": [
@@ -7702,9 +7702,9 @@
      "symbol": "GTARP",
      "cost_usd": 100.0,
      "proceeds_usd": 0.0,
-     "value_usd": 121.1,
+     "value_usd": 83.18,
      "profit_usd": -100.0,
-     "multiple": 1.21,
+     "multiple": 0.83,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1792873283,
@@ -7886,7 +7886,7 @@
     },
     {
      "mint": "D2bSDzYKpFCePrp98dfN4uuKH1SBnYiiWjwmpYBspump",
-     "symbol": "SPAIN",
+     "symbol": "",
      "cost_usd": 1800.0,
      "proceeds_usd": 3432.69,
      "value_usd": 0.0,
@@ -7896,7 +7896,7 @@
      "sells": 2,
      "first_buy_ts": 1778862275,
      "last_trade_ts": 1779280974,
-     "launched_ts": 1778581162,
+     "launched_ts": null,
      "first_buy_sig": "2BfnqfxqFzaTT2HCuJBQKuAMJ1yhXhKX8WwNPPHrftVb6vc2zZGMQk67eyiF3FC46JcZghKowz6VixyazzEk99p",
      "verified": false,
      "flags": []
@@ -7923,9 +7923,9 @@
      "symbol": "asports",
      "cost_usd": 500.0,
      "proceeds_usd": 0.0,
-     "value_usd": 135.23,
+     "value_usd": 127.9,
      "profit_usd": -500.0,
-     "multiple": 0.27,
+     "multiple": 0.26,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1777420442,
@@ -7964,7 +7964,7 @@
      "sells": 11,
      "first_buy_ts": 1776175580,
      "last_trade_ts": 1782660919,
-     "launched_ts": 1731263928,
+     "launched_ts": 1703129888,
      "first_buy_sig": "5R8gUtmRJgfLqdqaFnLAAXw63v45AJy6hADuzSaucVNKFqMrR6YBQ6fHQSdQirb8znNPYoSmz45NuEZmQ5TWfLpo",
      "verified": true,
      "flags": []
@@ -8085,7 +8085,7 @@
      "last_trade_ts": 1767793047,
      "launched_ts": 1767595076,
      "first_buy_sig": "2c32djJRn5tyXnk3YVtE8RQjKK2VeREyzF3D4CUYtfXxDkxbPnoC6VZAknVcGe3Nzqwx19JBw1EjqEvHXcrjPXLM",
-     "verified": true,
+     "verified": false,
      "flags": []
     },
     {
@@ -8107,7 +8107,7 @@
     },
     {
      "mint": "3HwuPcznMavzQR7aUFbbDFWawZ94cfUdWApGxbjVpump",
-     "symbol": "PING",
+     "symbol": "",
      "cost_usd": 1000.0,
      "proceeds_usd": 15.32,
      "value_usd": 0.0,
@@ -8117,7 +8117,7 @@
      "sells": 1,
      "first_buy_ts": 1764780331,
      "last_trade_ts": 1771080220,
-     "launched_ts": 1761204006,
+     "launched_ts": null,
      "first_buy_sig": "3HvicucueVwwszEUC2RnZCMu5rsRfCsE75VLKMPT4k5TkR4sJ6AMPENqigf4gZyN7dh4CrnWhnRmYAraVKsmAMnT",
      "verified": false,
      "flags": []
@@ -8209,7 +8209,7 @@
     },
     {
      "mint": "9XWWHExgN4yvyLRskzzfcr5AcBaqQ6UtwcDSVpUBsoar",
-     "symbol": "CPT",
+     "symbol": "",
      "cost_usd": 500.0,
      "proceeds_usd": 290.06,
      "value_usd": 0.0,
@@ -8219,7 +8219,7 @@
      "sells": 1,
      "first_buy_ts": 1762998043,
      "last_trade_ts": 1763311731,
-     "launched_ts": 1762459735,
+     "launched_ts": null,
      "first_buy_sig": "3Z7gWAAWaa2wpMGMG4GCWCZNj5GvwmbqVRBYRXqAngMHx583RgUNWR8hJ6mzKahtkafG8tBAzD2LdnGegfyBWBVc",
      "verified": true,
      "flags": []
@@ -8236,7 +8236,7 @@
      "sells": 1,
      "first_buy_ts": 1762963594,
      "last_trade_ts": 1762969887,
-     "launched_ts": 1761624405,
+     "launched_ts": 1761396180,
      "first_buy_sig": "9HLy9vHMHQASDU3mFvKurpChJqjhRJA8ZfJtugvQnFjukSrKhr79wUaWvMTMGggpVZyZTGVbmrna9GHCZceH7EA",
      "verified": true,
      "flags": []
@@ -8260,7 +8260,7 @@
     },
     {
      "mint": "8HxW9Z3YT1gXgQcgEynZaHsEpLXRgijGfMYCkaAypump",
-     "symbol": "",
+     "symbol": "mec",
      "cost_usd": 6500.0,
      "proceeds_usd": 7265.76,
      "value_usd": 0.0,
@@ -8270,7 +8270,7 @@
      "sells": 3,
      "first_buy_ts": 1762375841,
      "last_trade_ts": 1762380394,
-     "launched_ts": null,
+     "launched_ts": 1762375389,
      "first_buy_sig": "493s1y7b2zZmGe6RFTkUmPtq6eW8UJ4rVRv1vBexr2yH2iFU2xVQXEKQvFG33zTjRntpNKA6YJiQP58hsKqvAQen",
      "verified": false,
      "flags": []
@@ -8389,7 +8389,7 @@
      "sells": 1,
      "first_buy_ts": 1760995966,
      "last_trade_ts": 1760996667,
-     "launched_ts": 1731026437,
+     "launched_ts": 1761001339,
      "first_buy_sig": "65JqJvU7iwbUuWtGRfXK6qMxjrVMuFiXMg9QQiaQgRArRarphEiEpRANVqeSdZmoLyivVxrHRAWuTt19iW2SFKFo",
      "verified": false,
      "flags": []
@@ -8634,7 +8634,7 @@
     },
     {
      "mint": "AvuNqYe1Rj6eEzan78NYJ1nD3Ldt6CT8wpwGNrE2pump",
-     "symbol": "",
+     "symbol": "DND",
      "cost_usd": 3300.0,
      "proceeds_usd": 17823.92,
      "value_usd": 0.0,
@@ -8644,7 +8644,7 @@
      "sells": 20,
      "first_buy_ts": 1759413012,
      "last_trade_ts": 1762236673,
-     "launched_ts": null,
+     "launched_ts": 1745500178,
      "first_buy_sig": "4JfwQ9n6BbtWC1FxcsJmwmFnj5hNrD3mjinkaHqwaWsHHEkjbr4rTuJyz22QkFpP67SSqaVtFL4FR1JjsMgnMLvG",
      "verified": false,
      "flags": []
@@ -8727,13 +8727,13 @@
     "realized_usd": 21672.59,
     "gem_profit_usd": 54295.31,
     "hit_rate": 0.015,
-    "unverified": 51,
-    "tx_count": 787
+    "unverified": 52,
+    "tx_count": 782
    },
    "reasons": [
     "1 winning trade(s) (5x+ on verified coins); needs 5",
     "63 trade(s) under 5x (worst 0.00x)",
-    "51 trade(s) in coins Jupiter has not verified"
+    "52 trade(s) in coins Jupiter has not verified"
    ],
    "flags": [],
    "notes": [
@@ -8765,9 +8765,9 @@
      "symbol": "USELESS",
      "cost_usd": 10.0,
      "proceeds_usd": 0.0,
-     "value_usd": 9.91,
+     "value_usd": 10.01,
      "profit_usd": -10.0,
-     "multiple": 0.99,
+     "multiple": 1.0,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1793768762,
@@ -8813,7 +8813,7 @@
     },
     {
      "mint": "92QPy1K3yiQfEf6chrq8k1LbXWgsw4sAUQWxuqxupump",
-     "symbol": "",
+     "symbol": "BRUN",
      "cost_usd": 264.15,
      "proceeds_usd": 180.91,
      "value_usd": 0.0,
@@ -8823,7 +8823,7 @@
      "sells": 1,
      "first_buy_ts": 1776782186,
      "last_trade_ts": 1776782358,
-     "launched_ts": null,
+     "launched_ts": 1791352544,
      "first_buy_sig": "2zPozjpZMTjY6fYdYGzcpomwgDx2GBANoyVYQ2iJgtb7d8ddXFwSriFj7pRBgPigtGKxWpAQdMMf7KrtCvorrexY",
      "verified": false,
      "flags": []
@@ -8833,9 +8833,9 @@
      "symbol": "POSITIONS",
      "cost_usd": 6.0,
      "proceeds_usd": 0.0,
-     "value_usd": 6.18,
+     "value_usd": 5.98,
      "profit_usd": -6.0,
-     "multiple": 1.03,
+     "multiple": 1.0,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1775142434,
@@ -8850,7 +8850,7 @@
      "symbol": "ELON",
      "cost_usd": 584.8,
      "proceeds_usd": 0.0,
-     "value_usd": 4.22,
+     "value_usd": 4.23,
      "profit_usd": -584.8,
      "multiple": 0.01,
      "buys": 1,
@@ -8932,17 +8932,17 @@
     },
     {
      "mint": "5dxdLpp7epQ9hEY14KUtYa8Bj4kb1ebiovyyUyDkbonk",
-     "symbol": "",
+     "symbol": "Memes",
      "cost_usd": 1930.65,
      "proceeds_usd": 0.0,
-     "value_usd": 37.1,
+     "value_usd": 75.34,
      "profit_usd": -1930.65,
-     "multiple": 0.02,
+     "multiple": 0.04,
      "buys": 2,
      "sells": 0,
      "first_buy_ts": 1768984916,
      "last_trade_ts": 1769099696,
-     "launched_ts": null,
+     "launched_ts": 1768965873,
      "first_buy_sig": "4mk2aWgcAMRmzgGMbQkm23rZ6TxiHp1w2w9EmSRGT4UNiJEfUH6LrbCuQVB8KGEMWJFyN2WXQmT5ZAaVyrfepU3T",
      "verified": false,
      "flags": []
@@ -8983,7 +8983,7 @@
     },
     {
      "mint": "BFuy9AJYKekZ2hik7b5mPhsunGscegi9vPY2bwzzBAGS",
-     "symbol": "",
+     "symbol": "DELPHI",
      "cost_usd": 1153.65,
      "proceeds_usd": 2161.89,
      "value_usd": 0.0,
@@ -8993,7 +8993,7 @@
      "sells": 1,
      "first_buy_ts": 1768584701,
      "last_trade_ts": 1768937540,
-     "launched_ts": null,
+     "launched_ts": 1768583042,
      "first_buy_sig": "39wfR8frhLEGjtQL9sPCgMMc6H77tygVxRtZy3dhuK4zYRHRZ1ntCS6dyDCqGw2uP8y66gxxaxD9hoTGAWSTxsBZ",
      "verified": false,
      "flags": []
@@ -9136,24 +9136,24 @@
     },
     {
      "mint": "4b3QE69UsxLWJJ1jovadMcB5mTKahPphyPFoEJk5pump",
-     "symbol": "LI",
+     "symbol": "",
      "cost_usd": 225.75,
      "proceeds_usd": 0.0,
-     "value_usd": 28.8,
+     "value_usd": 28.81,
      "profit_usd": -225.75,
      "multiple": 0.13,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1767758842,
      "last_trade_ts": 1767758842,
-     "launched_ts": 1754434180,
+     "launched_ts": null,
      "first_buy_sig": "43FXoDMpSciy17XTMb8Qep9BbdRzdcMnrF6sFYJpb6zqMsh4MwQw7EQk2cUh95e4ZMPoA28tw9nUbgnuFCsTs9R7",
      "verified": false,
      "flags": []
     },
     {
      "mint": "Ecv1NVMfYSUW3YQ48siC8s7mdrvqp2syHWGi1rDdBAGS",
-     "symbol": "SPARK",
+     "symbol": "",
      "cost_usd": 142.16,
      "proceeds_usd": 103.07,
      "value_usd": 0.0,
@@ -9163,7 +9163,7 @@
      "sells": 1,
      "first_buy_ts": 1767758741,
      "last_trade_ts": 1769065836,
-     "launched_ts": 1754381392,
+     "launched_ts": null,
      "first_buy_sig": "35ALRUvxL2DkwzvEWyBvNaNLEUVBcbX7mh9ohEpioF6pYtRfsxtpvtZ4ReyjGiGiwa9Wx9APUbh9Q5DPcjdaaNUy",
      "verified": false,
      "flags": []
@@ -9204,7 +9204,7 @@
     },
     {
      "mint": "7gASrhXxE5u2oLASrAsZh3SAJrgSjKhb4qTe3FsqHTKb",
-     "symbol": "",
+     "symbol": "ALOKA",
      "cost_usd": 685.22,
      "proceeds_usd": 3429.76,
      "value_usd": 0.0,
@@ -9214,7 +9214,7 @@
      "sells": 3,
      "first_buy_ts": 1767606425,
      "last_trade_ts": 1769280938,
-     "launched_ts": null,
+     "launched_ts": 1767378518,
      "first_buy_sig": "32oBvk157Kw3cmyx6Wy1VF7Mr6ZdXioF6EFXg1UwRCULDc2cMoSEkq3z5GBq58VEJs1JQM7qxm2cEGkYApy6ZmB9",
      "verified": false,
      "flags": []
@@ -9292,7 +9292,7 @@
      "symbol": "TMTRD",
      "cost_usd": 246.52,
      "proceeds_usd": 0.0,
-     "value_usd": 66.58,
+     "value_usd": 67.64,
      "profit_usd": -246.52,
      "multiple": 0.27,
      "buys": 1,
@@ -9408,17 +9408,17 @@
     },
     {
      "mint": "8Y5MwnUM19uqhnsrFnKijrmn33CmHBTUoedXtTGDpump",
-     "symbol": "BASEDD",
+     "symbol": "",
      "cost_usd": 4384.36,
      "proceeds_usd": 0.0,
-     "value_usd": 71.32,
+     "value_usd": 71.34,
      "profit_usd": -4384.36,
      "multiple": 0.02,
      "buys": 7,
      "sells": 0,
      "first_buy_ts": 1765709196,
      "last_trade_ts": 1767995255,
-     "launched_ts": 1750204736,
+     "launched_ts": null,
      "first_buy_sig": "4prCjXTxm485PxfbNjZZuWPP9xCxJN7JpQVCyMKP1mvfhBjbeb8BN1tux3pYgadBaT29RV5wwEHxQy87AE1uMNgP",
      "verified": false,
      "flags": []
@@ -9476,7 +9476,7 @@
     },
     {
      "mint": "7ea3ifsARjj2TeuPgScj5fNENpVodU4vXrA8yQcH8FK2",
-     "symbol": "",
+     "symbol": "AI",
      "cost_usd": 1395.95,
      "proceeds_usd": 523.23,
      "value_usd": 0.0,
@@ -9486,14 +9486,14 @@
      "sells": 1,
      "first_buy_ts": 1765518110,
      "last_trade_ts": 1765554890,
-     "launched_ts": null,
+     "launched_ts": 1765500011,
      "first_buy_sig": "3jozRhp9Yz5cgXhyaAUJTbpgQ8iwWAGcQZrgRzzDJLukg5sDrMNpK8r9foHbpZ4tirN3guaG7QqPgvbxYAtm4Frb",
      "verified": false,
      "flags": []
     },
     {
      "mint": "HSierbs7XspCMK8fUgCin9p4mC1yvsLbvW4usgz3pump",
-     "symbol": "",
+     "symbol": "1649AC",
      "cost_usd": 1357.1,
      "proceeds_usd": 158.1,
      "value_usd": 0.0,
@@ -9503,7 +9503,7 @@
      "sells": 1,
      "first_buy_ts": 1765482925,
      "last_trade_ts": 1765688397,
-     "launched_ts": null,
+     "launched_ts": 1765469572,
      "first_buy_sig": "5B2UXBTRzgfou2wAfmAbiXY5MdTUwqUy6wXSdjsGDtS83hWtrhtoNWmuvR2tCkQaFDYV5KH9QAroiSXoRyvwurRL",
      "verified": false,
      "flags": []
@@ -9547,9 +9547,9 @@
      "symbol": "TCG",
      "cost_usd": 1876.89,
      "proceeds_usd": 5525.44,
-     "value_usd": 1911.78,
+     "value_usd": 2040.03,
      "profit_usd": 3648.55,
-     "multiple": 3.96,
+     "multiple": 4.03,
      "buys": 2,
      "sells": 7,
      "first_buy_ts": 1764613109,
@@ -9615,7 +9615,7 @@
      "symbol": "SPARK",
      "cost_usd": 8721.87,
      "proceeds_usd": 0.0,
-     "value_usd": 338.05,
+     "value_usd": 337.84,
      "profit_usd": -8721.87,
      "multiple": 0.04,
      "buys": 5,
@@ -9697,7 +9697,7 @@
     },
     {
      "mint": "C64cB3Ji5RgyeLz3YQmbYTzWRQ2w8X3jxW1B9V7MpxjC",
-     "symbol": "唢呐",
+     "symbol": "",
      "cost_usd": 3029.92,
      "proceeds_usd": 4302.17,
      "value_usd": 0.0,
@@ -9707,7 +9707,7 @@
      "sells": 1,
      "first_buy_ts": 1760460417,
      "last_trade_ts": 1760467397,
-     "launched_ts": 1760459981,
+     "launched_ts": null,
      "first_buy_sig": "4QZaJwUmWxnuvsehSZsWEJ3cqvW2dMKra7SayN9vwQRfBGwVFbXXwDM6FENaDJQzvaHgMfa8XnpHtXDHA73Bo43N",
      "verified": false,
      "flags": []
@@ -9731,19 +9731,19 @@
     },
     {
      "mint": "HcrWkcgVMuS9D6vS6WfjynKuH7ud4ZykB7ASq2dyN4ks",
-     "symbol": "PIKA",
+     "symbol": "",
      "cost_usd": 3187.07,
      "proceeds_usd": 0.0,
-     "value_usd": 196.53,
+     "value_usd": 196.69,
      "profit_usd": -3187.07,
      "multiple": 0.06,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1759518081,
      "last_trade_ts": 1759518081,
-     "launched_ts": 1757417156,
+     "launched_ts": null,
      "first_buy_sig": "5FRAVkj91VwreBJnTsavc9JdggCceiVfY5xKJSGHKX3umUjkPmCCv1dGrLPs9RLB3M19K44Qbe9Ry4K6s8kha8kB",
-     "verified": true,
+     "verified": false,
      "flags": []
     },
     {
@@ -9765,7 +9765,7 @@
     },
     {
      "mint": "GS3pHMUtYSu5PPuDFey74frkiRQhPdvx8jEeN6Qzbonk",
-     "symbol": "",
+     "symbol": "pibble",
      "cost_usd": 1245.77,
      "proceeds_usd": 138.46,
      "value_usd": 0.0,
@@ -9775,7 +9775,7 @@
      "sells": 1,
      "first_buy_ts": 1758183034,
      "last_trade_ts": 1758701341,
-     "launched_ts": null,
+     "launched_ts": 1758174571,
      "first_buy_sig": "4VhB6pzFkQrLJL6yb5ySsHekx9Y6idG5DUUSWoTCDGLYQuT8PfuTN5MZ4kecjipfrFKNXPkVvFtwWu3r73TX2o8x",
      "verified": false,
      "flags": []
@@ -9794,33 +9794,33 @@
    "gem_hits_in_search": 0,
    "early_hits_in_search": 0,
    "stats": {
-    "trades": 191,
-    "judged": 190,
+    "trades": 192,
+    "judged": 191,
     "open": 1,
     "gems": 1,
     "wins_min_multiple": 4,
-    "losses": 141,
+    "losses": 142,
     "min_multiple": 0.0,
     "median_multiple": 0.69,
     "best_multiple": 56.11,
-    "invested_usd": 2790296.3,
-    "realized_usd": 10777.45,
+    "invested_usd": 2792296.3,
+    "realized_usd": 8777.45,
     "gem_profit_usd": 55015.32,
     "hit_rate": 0.005,
-    "unverified": 125,
-    "tx_count": 2542
+    "unverified": 129,
+    "tx_count": 2543
    },
    "reasons": [
     "1 winning trade(s) (5x+ on verified coins); needs 5",
-    "186 trade(s) under 5x (worst 0.00x)",
-    "125 trade(s) in coins Jupiter has not verified"
+    "187 trade(s) under 5x (worst 0.00x)",
+    "129 trade(s) in coins Jupiter has not verified"
    ],
    "flags": [
     "sold $5,278 of coins it never bought (received by transfer): possible insider / dev-linked wallet",
     "1 weak trade(s) were coins sent to another wallet, so not necessarily real losses"
    ],
    "notes": [
-    "1002 trade(s) placed through the Fomo app"
+    "1003 trade(s) placed through the Fomo app"
    ],
    "data_source": "helius",
    "gems": [
@@ -9844,13 +9844,30 @@
    ],
    "trades": [
     {
+     "mint": "BSwp4GjLnejXKqvmjueJmPXC7UZhNoF6RuMQJRpSmeta",
+     "symbol": "SAT",
+     "cost_usd": 2000.0,
+     "proceeds_usd": 0.0,
+     "value_usd": 2039.49,
+     "profit_usd": -2000.0,
+     "multiple": 1.02,
+     "buys": 1,
+     "sells": 0,
+     "first_buy_ts": 1794253854,
+     "last_trade_ts": 1794253854,
+     "launched_ts": 1794252600,
+     "first_buy_sig": "5AQWXRtgYBzTAfAnpN7Z91ufd58wW3XQofAirx9CeC4GMWsZwuSMnwLTshA6tecaUTwitQSyJNN4HKM6z9kKuMt7",
+     "verified": true,
+     "flags": []
+    },
+    {
      "mint": "2obQEJURUTQGNVTdwqZQX3HaAAd78dzhPP1PHksvpump",
      "symbol": "Datacenter",
      "cost_usd": 1000.0,
      "proceeds_usd": 0.0,
-     "value_usd": 121.26,
+     "value_usd": 81.0,
      "profit_usd": -1000.0,
-     "multiple": 0.12,
+     "multiple": 0.08,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1793972755,
@@ -9930,7 +9947,7 @@
     },
     {
      "mint": "ADvfRzYxQgybAd7z7pkAvL5jeSgqF2pbk5RRAR2zDMJR",
-     "symbol": "",
+     "symbol": "HOOKDOG",
      "cost_usd": 1100.0,
      "proceeds_usd": 440.83,
      "value_usd": 0.0,
@@ -9940,7 +9957,7 @@
      "sells": 1,
      "first_buy_ts": 1790983687,
      "last_trade_ts": 1791034688,
-     "launched_ts": null,
+     "launched_ts": 1790979997,
      "first_buy_sig": "aBZLDexEoQLDk6DZq9JFkK5UWViscdNidaUv9HtR8Qx7DieCJhAYuENDsYTitXyvaNpmKCGWXeskw925fpn8pRn",
      "verified": false,
      "flags": []
@@ -10001,7 +10018,7 @@
      "symbol": "SPYx",
      "cost_usd": 8000.0,
      "proceeds_usd": 0.0,
-     "value_usd": 85.19,
+     "value_usd": 86.64,
      "profit_usd": -8000.0,
      "multiple": 0.01,
      "buys": 2,
@@ -10015,7 +10032,7 @@
     },
     {
      "mint": "GPuN3s5PZTPcQV7cykNaTyX9cVesPSyz7111nsNKu4cv",
-     "symbol": "",
+     "symbol": "CSFUN",
      "cost_usd": 2000.0,
      "proceeds_usd": 1643.66,
      "value_usd": 0.0,
@@ -10025,14 +10042,14 @@
      "sells": 1,
      "first_buy_ts": 1790807452,
      "last_trade_ts": 1790807645,
-     "launched_ts": null,
+     "launched_ts": 1790806714,
      "first_buy_sig": "5srFeYXeA9TTDvzR4h3Nx4bbC49yBbEAkhaQ6gMf43mXM7i5bjXgNE9XPyVu1bXR9uKPhFyXiSpzofMJjvrtdNQm",
      "verified": false,
      "flags": []
     },
     {
      "mint": "2QHXWq5TK64JbMptwMBP1BsfhrxZRRv9JsLa17X7pump",
-     "symbol": "",
+     "symbol": "SAW",
      "cost_usd": 800.06,
      "proceeds_usd": 1009.49,
      "value_usd": 0.0,
@@ -10042,7 +10059,7 @@
      "sells": 1,
      "first_buy_ts": 1790799326,
      "last_trade_ts": 1790892986,
-     "launched_ts": null,
+     "launched_ts": 1790787841,
      "first_buy_sig": "2nRCzvJTQKeYBSmojoCkx8NyxxL55AxZz1xzSCFuDcExfFK4s7hMSFgiqEk42Jeye8R7dHSy8M2J1BaRwqfgn2MY",
      "verified": false,
      "flags": []
@@ -10100,7 +10117,7 @@
     },
     {
      "mint": "3hrakqTZceuodL7E5T3gpVcZjCaFFpuS7uxb4X59bijQ",
-     "symbol": "fatbear",
+     "symbol": "",
      "cost_usd": 500.0,
      "proceeds_usd": 82.25,
      "value_usd": 0.0,
@@ -10110,7 +10127,7 @@
      "sells": 1,
      "first_buy_ts": 1790610928,
      "last_trade_ts": 1790771097,
-     "launched_ts": 1790611169,
+     "launched_ts": null,
      "first_buy_sig": "54H7kq57fcdckmKB5WJjCBNKxFwz555oXvwupjpHauzwEHWsiXBYgsfhgqzD6gQuDNSn3aLiPR9KtWRTUMkV3zjC",
      "verified": false,
      "flags": []
@@ -10236,17 +10253,17 @@
     },
     {
      "mint": "5gRNakEEg15bGo8DMPrdEwBcozBGm7LVutWGmnV26Kzg",
-     "symbol": "owlin",
+     "symbol": "",
      "cost_usd": 300.0,
      "proceeds_usd": 0.0,
-     "value_usd": 11.56,
+     "value_usd": 11.61,
      "profit_usd": -300.0,
      "multiple": 0.04,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1789951649,
      "last_trade_ts": 1789951649,
-     "launched_ts": 1789493279,
+     "launched_ts": null,
      "first_buy_sig": "2oUtn9pRqdMZyDg7RyEHaJ7H8Q1UxHKx3XcbSfttiTG46WVrmksiZuMrPMyV7VvYBjQwqRBivxQX2YLvpnyzCdzD",
      "verified": false,
      "flags": []
@@ -10321,7 +10338,7 @@
     },
     {
      "mint": "EC5zBYNL8mrr96SWc2adEXMpZ1ncdKdQvmLULKmm78Q4",
-     "symbol": "STUPID",
+     "symbol": "",
      "cost_usd": 2000.0,
      "proceeds_usd": 949.85,
      "value_usd": 0.0,
@@ -10331,7 +10348,7 @@
      "sells": 1,
      "first_buy_ts": 1789666510,
      "last_trade_ts": 1789747396,
-     "launched_ts": 1789612167,
+     "launched_ts": null,
      "first_buy_sig": "vXi8UEo1T4eqWsjGN6fwUjmRwWyrppkHHpqn7mY6VuC4CV4B8HeaMVwR9xJWzEXp7dq3pNbnR5LUEb4awp7Q1ay",
      "verified": false,
      "flags": []
@@ -10372,7 +10389,7 @@
     },
     {
      "mint": "G2KDX81e31T6pZbkrJLPKAXqKcd8VoE3UEp83rRtpump",
-     "symbol": "",
+     "symbol": "HYPED",
      "cost_usd": 4000.0,
      "proceeds_usd": 6308.51,
      "value_usd": 0.0,
@@ -10382,7 +10399,7 @@
      "sells": 2,
      "first_buy_ts": 1789587111,
      "last_trade_ts": 1789588489,
-     "launched_ts": null,
+     "launched_ts": 1789586561,
      "first_buy_sig": "5xdhTwFMUi4hjfUbRJyDnAJW65ZSkREU6JckmoGf8459v7hGneK6dY2ASZU4UbtynSmASSynRvwWXSKBCaed19Ho",
      "verified": false,
      "flags": []
@@ -10426,17 +10443,19 @@
      "symbol": "BLENDCAT",
      "cost_usd": 400.0,
      "proceeds_usd": 0.0,
-     "value_usd": 35.58,
+     "value_usd": 0.0,
      "profit_usd": -400.0,
-     "multiple": 0.09,
+     "multiple": 0.0,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1789168570,
      "last_trade_ts": 1789168570,
-     "launched_ts": 1789163608,
+     "launched_ts": 1789163607,
      "first_buy_sig": "3Y7DhAqKjomXLCEPfd4yLXdYSpQTzbCtaJGVbQBC7srfCYj2SyWjxwhooxC4xAfSJxWSsarzWKVVNdYmSBEjcD1b",
      "verified": false,
-     "flags": []
+     "flags": [
+      "no liquidity (dead / rugged)"
+     ]
     },
     {
      "mint": "G1jonmoSEbMJSwEg1AmgDAJq2utmuBSZct8oqttBf9rT",
@@ -10457,7 +10476,7 @@
     },
     {
      "mint": "HDEA1wMyocGGj9De8yY51qrCAWp7di3h7h12v2941dts",
-     "symbol": "",
+     "symbol": "QCAT",
      "cost_usd": 2000.0,
      "proceeds_usd": 1524.0,
      "value_usd": 0.0,
@@ -10467,14 +10486,14 @@
      "sells": 1,
      "first_buy_ts": 1789097407,
      "last_trade_ts": 1789159165,
-     "launched_ts": null,
+     "launched_ts": 1788988424,
      "first_buy_sig": "2knYsuKjPqHZ13DHbienznD3m5mDyvUa3QRjsWeqJPemHQHjQnUBsjenz6DQBpGgsorNs7pYRiBB1sEAMCj8gGLR",
      "verified": false,
      "flags": []
     },
     {
      "mint": "FUKVnLQnbaYqUj3yhdVLr2J6PcgMkbHiDQLLqkPjrg3K",
-     "symbol": "S&P 500",
+     "symbol": "",
      "cost_usd": 15000.0,
      "proceeds_usd": 5599.5,
      "value_usd": 0.0,
@@ -10484,7 +10503,7 @@
      "sells": 1,
      "first_buy_ts": 1788983285,
      "last_trade_ts": 1788983510,
-     "launched_ts": 1788982847,
+     "launched_ts": null,
      "first_buy_sig": "2bbTucu88KDzX6ZUv3LUXwXJQB2KAMKm77dtdyDYjreU81XZwb5zQRXBBaero8mNAshBjmGVpbwvpU3Cdm6PBc9v",
      "verified": false,
      "flags": []
@@ -10571,7 +10590,7 @@
      "last_trade_ts": 1788140103,
      "launched_ts": 1788134399,
      "first_buy_sig": "3AqFRpaS2MCph1hadVsWJbAmJaoic4KBiinatjK8WyANEx25f9NBgmcp55Twj8ue4Rf2N8rpV1gFhq2ekxcDnADY",
-     "verified": true,
+     "verified": false,
      "flags": []
     },
     {
@@ -10593,7 +10612,7 @@
     },
     {
      "mint": "25NtaXA44vwHcXL32QrS1S1AazoPf7MTXB6aMfMZpump",
-     "symbol": "PINU",
+     "symbol": "",
      "cost_usd": 3000.0,
      "proceeds_usd": 582.57,
      "value_usd": 0.0,
@@ -10603,7 +10622,7 @@
      "sells": 1,
      "first_buy_ts": 1788055105,
      "last_trade_ts": 1788322190,
-     "launched_ts": 1788035577,
+     "launched_ts": null,
      "first_buy_sig": "5agLfrxdgTXuLm91v494EwELe9EuMMcnFPEbQG2E9RcArm1Fy6v4tNNmjEtNAUFn2qk6sy7N3NfmdeHzsGzia8cE",
      "verified": false,
      "flags": []
@@ -10664,9 +10683,9 @@
      "symbol": "aoc",
      "cost_usd": 4500.0,
      "proceeds_usd": 0.0,
-     "value_usd": 1912.02,
+     "value_usd": 1692.58,
      "profit_usd": -4500.0,
-     "multiple": 0.42,
+     "multiple": 0.38,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1787750875,
@@ -10678,7 +10697,7 @@
     },
     {
      "mint": "39fNg98hhpyiRTGD8Gf8y5MwFVgJJZEnDyTMKdDZpump",
-     "symbol": "",
+     "symbol": "SEYONGPARK",
      "cost_usd": 5000.0,
      "proceeds_usd": 54.02,
      "value_usd": 0.0,
@@ -10688,7 +10707,7 @@
      "sells": 1,
      "first_buy_ts": 1787660541,
      "last_trade_ts": 1788681040,
-     "launched_ts": null,
+     "launched_ts": 1787632576,
      "first_buy_sig": "2ACh5ekkDS73C1oL9o8fBKoyxcDYfAFxTPiuE4cPg1bsQ5csw8V6Z3xCvG3HxQBBW87PStKjJAeBK4kybUo9f5M8",
      "verified": false,
      "flags": []
@@ -10729,7 +10748,7 @@
     },
     {
      "mint": "8g2Z9sPJb3x5PN1P1GZbh6a9pu6naTycV1ACErKypump",
-     "symbol": "",
+     "symbol": "WWW",
      "cost_usd": 1486.64,
      "proceeds_usd": 1597.49,
      "value_usd": 0.0,
@@ -10739,14 +10758,14 @@
      "sells": 1,
      "first_buy_ts": 1787351058,
      "last_trade_ts": 1787351138,
-     "launched_ts": null,
+     "launched_ts": 1787350581,
      "first_buy_sig": "2UfrbWsQqgpQa8E53VrmX24zMiirRPC2SbBoQgQTwVXqPSHimhgR8vn53fshW2vvHjjsU5Vmn1Po1fpmDUHPbpm8",
      "verified": false,
      "flags": []
     },
     {
      "mint": "HDXeZq5Komdc4gcPbLgmrZFcsbupoteZkf1cPitRpump",
-     "symbol": "NANDRY",
+     "symbol": "",
      "cost_usd": 800.0,
      "proceeds_usd": 297.69,
      "value_usd": 0.0,
@@ -10756,14 +10775,14 @@
      "sells": 1,
      "first_buy_ts": 1787336025,
      "last_trade_ts": 1787343403,
-     "launched_ts": 1787336000,
+     "launched_ts": null,
      "first_buy_sig": "4V73quQTV6eqvFwCbttzpvLtsokfsVXUn8NDDxCdzJsBivnJBjcuQvn4NyQ1KLxgGt942NLE3PDfQjg5C7Czaoc5",
      "verified": false,
      "flags": []
     },
     {
      "mint": "7g2xyrq9Fk1TvFiqqcmLJAQ9jAtfHobmrdzzM9Dp2SpV",
-     "symbol": "",
+     "symbol": "CLUG",
      "cost_usd": 3000.0,
      "proceeds_usd": 1663.96,
      "value_usd": 0.0,
@@ -10773,7 +10792,7 @@
      "sells": 1,
      "first_buy_ts": 1787158913,
      "last_trade_ts": 1787240186,
-     "launched_ts": null,
+     "launched_ts": 1787103378,
      "first_buy_sig": "2TZSxhugwqE4DXzqLLgwUBBqj2By9UvCmxi75mm66Dkw8hP92t9sfFtFBR1YWm27W6cFgQA6YKqnaeAGn2aDt3tU",
      "verified": false,
      "flags": []
@@ -10845,23 +10864,6 @@
      "first_buy_sig": "X8DtnpY5GAPMux5pBZF2fGEW2p3U1G7vaKABpyjXyupXaikncFtY2JNYX5i9arAsLLPKUm7MhQEazFHagYW1ZEm",
      "verified": false,
      "flags": []
-    },
-    {
-     "mint": "7y5RFCQTjRGEuwCo4hNpy5dKgWnWFnicMuJR8Rr2CTvU",
-     "symbol": "",
-     "cost_usd": 1500.0,
-     "proceeds_usd": 358.13,
-     "value_usd": 0.0,
-     "profit_usd": -1141.87,
-     "multiple": 0.24,
-     "buys": 1,
-     "sells": 1,
-     "first_buy_ts": 1786132539,
-     "last_trade_ts": 1786217093,
-     "launched_ts": null,
-     "first_buy_sig": "5EBmUKbeW728uR8jfC7kGztaCfF1X8Zcj71bbc9T3Y2TWqQ3Gu4BvHKVwpHQK5syfvMHmq2yiYPk9Z534TabrLTJ",
-     "verified": false,
-     "flags": []
     }
    ]
   },
@@ -10878,25 +10880,25 @@
    "early_hits_in_search": 0,
    "stats": {
     "trades": 123,
-    "judged": 122,
-    "open": 1,
+    "judged": 123,
+    "open": 0,
     "gems": 1,
     "wins_min_multiple": 1,
-    "losses": 76,
+    "losses": 77,
     "min_multiple": 0.01,
-    "median_multiple": 0.89,
+    "median_multiple": 0.88,
     "best_multiple": 9.85,
     "invested_usd": 116167.69,
     "realized_usd": 6554.72,
     "gem_profit_usd": 4942.15,
     "hit_rate": 0.008,
-    "unverified": 102,
+    "unverified": 105,
     "tx_count": 1728
    },
    "reasons": [
     "1 winning trade(s) (5x+ on verified coins); needs 5",
-    "121 trade(s) under 5x (worst 0.01x)",
-    "102 trade(s) in coins Jupiter has not verified"
+    "122 trade(s) under 5x (worst 0.01x)",
+    "105 trade(s) in coins Jupiter has not verified"
    ],
    "flags": [],
    "notes": [
@@ -10959,7 +10961,7 @@
     },
     {
      "mint": "82ANgxJqcsbuaS1hRza6S2QnuKu3XQMUAo7zVg8qoirK",
-     "symbol": "DUCKENMILLER",
+     "symbol": "",
      "cost_usd": 100.0,
      "proceeds_usd": 89.88,
      "value_usd": 0.0,
@@ -10969,7 +10971,7 @@
      "sells": 1,
      "first_buy_ts": 1793294113,
      "last_trade_ts": 1793294143,
-     "launched_ts": 1793293167,
+     "launched_ts": null,
      "first_buy_sig": "3cYTufqYhAc1Su3DdbpnFYpcYv1HhVZpaFdNUWa5pobtuVeFMJXqrGectfYypFuKYminf2pYW6bzKn2hQjj66RUv",
      "verified": false,
      "flags": []
@@ -11316,7 +11318,7 @@
     },
     {
      "mint": "5TbDn1dFEcUTJp69Fxnu5wbwNec6LmoK42Sr5mmNmeta",
-     "symbol": "SUPER",
+     "symbol": "",
      "cost_usd": 889.77,
      "proceeds_usd": 494.5,
      "value_usd": 0.0,
@@ -11326,7 +11328,7 @@
      "sells": 3,
      "first_buy_ts": 1772786804,
      "last_trade_ts": 1772822618,
-     "launched_ts": 1772727566,
+     "launched_ts": null,
      "first_buy_sig": "cwbk5pNstkMgrdX8gYmznJv8VJTcNWch77nLYWzDihDpCG41pfy37kTNHpDiB92rL4ybNfwkPNxxL1C4JHFmKuz",
      "verified": true,
      "flags": []
@@ -11384,7 +11386,7 @@
     },
     {
      "mint": "Bq9D4BbhVR4kL1qSdsYpQ5JM59q2LzUYzv7zFA1epump",
-     "symbol": "",
+     "symbol": "RATHBUN",
      "cost_usd": 1000.0,
      "proceeds_usd": 1166.04,
      "value_usd": 0.0,
@@ -11394,7 +11396,7 @@
      "sells": 1,
      "first_buy_ts": 1770939728,
      "last_trade_ts": 1770939833,
-     "launched_ts": null,
+     "launched_ts": 1770935804,
      "first_buy_sig": "XCFtDgPBeeGjX3i41p3n1u77uzryqmG1yRKA7x5XBBejNhnzHXhwNKi3GhHsp8nF6VsZQRB51oMTcqaiA9AiKyQ",
      "verified": false,
      "flags": []
@@ -11486,7 +11488,7 @@
     },
     {
      "mint": "6sYMner8QHzrcVrVD4xSjjXkNVWmXgknY5CNs9wcAY6H",
-     "symbol": "",
+     "symbol": "CLAWBOT",
      "cost_usd": 316.21,
      "proceeds_usd": 297.27,
      "value_usd": 0.0,
@@ -11496,7 +11498,7 @@
      "sells": 1,
      "first_buy_ts": 1769589072,
      "last_trade_ts": 1769589181,
-     "launched_ts": null,
+     "launched_ts": 1769588904,
      "first_buy_sig": "2mc2jJ2My9Rxb94jnNcLLM2nTopLiSADNfXy5LdyMN2pGant98NvP9gVGYZd3HRixCtdH869eKTQf3H5KZ5d2RpN",
      "verified": false,
      "flags": []
@@ -11605,7 +11607,7 @@
     },
     {
      "mint": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS",
-     "symbol": "",
+     "symbol": "GSD",
      "cost_usd": 295.14,
      "proceeds_usd": 259.18,
      "value_usd": 0.0,
@@ -11615,9 +11617,9 @@
      "sells": 1,
      "first_buy_ts": 1768854138,
      "last_trade_ts": 1768856064,
-     "launched_ts": null,
+     "launched_ts": 1768609857,
      "first_buy_sig": "4kqYi1MgmpFhWcdFYSGRTrQorz4QMMYZJxSeKkoWATT8DmkAwZ6uRyAQcLig1QnLNWSfoJVoLesU1EioH5Jjypib",
-     "verified": true,
+     "verified": false,
      "flags": []
     },
     {
@@ -11639,7 +11641,7 @@
     },
     {
      "mint": "55DJNrN4rM7euSZSsaYfsEHGBQRcznibwiq1fR2HBAGS",
-     "symbol": "CURSED",
+     "symbol": "",
      "cost_usd": 81.6,
      "proceeds_usd": 9.74,
      "value_usd": 0.0,
@@ -11649,7 +11651,7 @@
      "sells": 1,
      "first_buy_ts": 1768624336,
      "last_trade_ts": 1768692372,
-     "launched_ts": 1768562508,
+     "launched_ts": null,
      "first_buy_sig": "2QcmVCWZEMpdCWK84K4zWgSZ8Bq9zHxELgB6nAjoR4QLCqrTFmzT3SDAbTwPi5FfEfSr7yheLm9YAa5gws4bSoms",
      "verified": false,
      "flags": []
@@ -11685,7 +11687,7 @@
      "last_trade_ts": 1769069156,
      "launched_ts": 1767595076,
      "first_buy_sig": "26P9Ya8hbjE8fmbZpf6yfpj8eZL7tpo8MhHRNgCPMpCXuE9hhzcb8N9crMoBy2mYxHn9MZuG6LDi5z8YDswHspLB",
-     "verified": true,
+     "verified": false,
      "flags": []
     },
     {
@@ -11826,7 +11828,7 @@
     },
     {
      "mint": "axUxN2q4AWzHaU6LXmjqQh7KEjaXDPKScjmzwEBpump",
-     "symbol": "",
+     "symbol": "Grandma",
      "cost_usd": 149.97,
      "proceeds_usd": 113.65,
      "value_usd": 0.0,
@@ -11836,7 +11838,7 @@
      "sells": 1,
      "first_buy_ts": 1768510962,
      "last_trade_ts": 1768522079,
-     "launched_ts": null,
+     "launched_ts": 1768366403,
      "first_buy_sig": "4zjCgr85ttnpoQPqkCB4RRuNW7RBHMnsgJ2teT2k5ahUWxZqkFA3vupD9AjGytQ2mKGZZMpE9BCUWcGwqT78E6W9",
      "verified": false,
      "flags": []
@@ -11877,7 +11879,7 @@
     },
     {
      "mint": "6XDqF7vCQY9VN8mL8ooEqnXctGJj43YyfwrrtTSDBAGS",
-     "symbol": "",
+     "symbol": "GUARDIAN",
      "cost_usd": 224.14,
      "proceeds_usd": 137.49,
      "value_usd": 0.0,
@@ -11887,7 +11889,7 @@
      "sells": 2,
      "first_buy_ts": 1768461405,
      "last_trade_ts": 1768463672,
-     "launched_ts": null,
+     "launched_ts": 1768461158,
      "first_buy_sig": "j3oMEEutzw88nmdGRXCa9w6syHLKW5S14GrLuY2VXP7XASQfENkXsuTe2Wj8CC4ky39uhDxxygyL5U5KvSM8CKo",
      "verified": false,
      "flags": []
@@ -11971,7 +11973,7 @@
     "gem_profit_usd": 0,
     "hit_rate": 0.0,
     "unverified": 130,
-    "tx_count": 1655
+    "tx_count": 1654
    },
    "reasons": [
     "0 winning trade(s) (5x+ on verified coins); needs 5",
@@ -12040,7 +12042,7 @@
     },
     {
      "mint": "C4AYNMP4Hor2fNkLSkatgN8DuLfQRepGJpAVBhHUz5Ak",
-     "symbol": "",
+     "symbol": "PERPAD",
      "cost_usd": 8000.0,
      "proceeds_usd": 4500.56,
      "value_usd": 0.0,
@@ -12050,7 +12052,7 @@
      "sells": 2,
      "first_buy_ts": 1779806203,
      "last_trade_ts": 1779817655,
-     "launched_ts": null,
+     "launched_ts": 1779337128,
      "first_buy_sig": "5AzUzPsWLMAxd1is72uDwbLbEMPC3ay2uuZoZHeAsS3xqwmB3zuiT2U4M6iHjY4UQ5f4t5vHnmx4FtemgkPFc7Sj",
      "verified": false,
      "flags": []
@@ -12159,7 +12161,7 @@
     },
     {
      "mint": "9XgfFWPxPU6hyDyGtfhC9D6eyRE3RUSgAYKHRznWpump",
-     "symbol": "",
+     "symbol": "kitkat",
      "cost_usd": 19000.0,
      "proceeds_usd": 17908.48,
      "value_usd": 0.0,
@@ -12169,7 +12171,7 @@
      "sells": 4,
      "first_buy_ts": 1761876906,
      "last_trade_ts": 1761934390,
-     "launched_ts": null,
+     "launched_ts": 1761784016,
      "first_buy_sig": "XYfw9yz1snXpTfxxbY1WGEbrSEkaEExYNEhDe2ne4BXivccXnZueHzGjT4XSEvxSVdRbkECyYH2yQMATp6ozg9Q",
      "verified": false,
      "flags": []
@@ -12210,7 +12212,7 @@
     },
     {
      "mint": "GEuuznWpn6iuQAJxLKQDVGXPtrqXHNWTk3gZqqvJpump",
-     "symbol": "",
+     "symbol": "ACE",
      "cost_usd": 10000.0,
      "proceeds_usd": 11065.63,
      "value_usd": 0.0,
@@ -12220,7 +12222,7 @@
      "sells": 2,
      "first_buy_ts": 1761657526,
      "last_trade_ts": 1761781476,
-     "launched_ts": null,
+     "launched_ts": 1739586663,
      "first_buy_sig": "3rwXU5kUkpZQ4CMsKEXHxcWpCiNgDgDn41igWsiUYPZvgtzBMXWmMnST4vDrEjqA6gDCdxGK81doy7XK8HRHQqdE",
      "verified": false,
      "flags": []
@@ -12380,7 +12382,7 @@
     },
     {
      "mint": "D1E9r2tDMT4SJJmZFCy8kqX8DERy7tdDvhq1QR3Tpump",
-     "symbol": "",
+     "symbol": "futardio",
      "cost_usd": 1000.0,
      "proceeds_usd": 130.04,
      "value_usd": 0.0,
@@ -12390,14 +12392,14 @@
      "sells": 1,
      "first_buy_ts": 1759777841,
      "last_trade_ts": 1759845445,
-     "launched_ts": null,
+     "launched_ts": 1759725186,
      "first_buy_sig": "1yrCuzRU1QQLApTt6qWqcXquSr6e9yXJDE35ygPpd5tf9sXcijtGyGwjTjmvtmmqKvSSp6Zt93yCRkFNBpbenVM",
      "verified": false,
      "flags": []
     },
     {
      "mint": "B8YVF2CA2hv2LnPdWpjNmqcS7g3tqhYkYm3wugcvHELP",
-     "symbol": "DEVELOPER",
+     "symbol": "",
      "cost_usd": 10000.0,
      "proceeds_usd": 7897.71,
      "value_usd": 0.0,
@@ -12407,7 +12409,7 @@
      "sells": 2,
      "first_buy_ts": 1759521980,
      "last_trade_ts": 1759674365,
-     "launched_ts": 1757881574,
+     "launched_ts": null,
      "first_buy_sig": "3gBXHiUNDBKkbD8ZMVaqtvqoCSDMebzuBCDEWbJ3RUu7QNzPiAnDQQgGrJTseZZJPUrAhkjmQBW2A9ZFkdg2cMDL",
      "verified": false,
      "flags": []
@@ -12448,7 +12450,7 @@
     },
     {
      "mint": "CmUnSFZCKUFGs2L8eZGQukAj833Y8r2SiJav55Nnrihd",
-     "symbol": "",
+     "symbol": "KARMA",
      "cost_usd": 10000.0,
      "proceeds_usd": 6905.58,
      "value_usd": 0.0,
@@ -12458,14 +12460,14 @@
      "sells": 1,
      "first_buy_ts": 1759447862,
      "last_trade_ts": 1759506817,
-     "launched_ts": null,
+     "launched_ts": 1747324025,
      "first_buy_sig": "nVEEUWrRgfNyjuz8SG57YekNZn7yibpYFx9NzuCrAf3h11HG6gwgd19mDzR9BWFUwxnAGgHjZ9cvD2Qzb79pLSS",
      "verified": false,
      "flags": []
     },
     {
      "mint": "SW1TCHLmRGTfW5xZknqQdpdarB8PD95sJYWpNp9TbFx",
-     "symbol": "SWTCH",
+     "symbol": "",
      "cost_usd": 16000.0,
      "proceeds_usd": 10413.35,
      "value_usd": 0.0,
@@ -12475,7 +12477,7 @@
      "sells": 1,
      "first_buy_ts": 1759336211,
      "last_trade_ts": 1759424573,
-     "launched_ts": 1790767816,
+     "launched_ts": null,
      "first_buy_sig": "5skqMjVa6KrKA9f6rcX9CmtreFRifLPRE7e5eeNdPCdJvf8CtwxAj42AG5aU6AZfEwEEjWqHYNgbfUcquveTbzHG",
      "verified": true,
      "flags": []
@@ -12516,7 +12518,7 @@
     },
     {
      "mint": "rnMLBLnUueJveGpLCS2BGsY3McJGRXZ8bqQ8eBWbonk",
-     "symbol": "MURICA",
+     "symbol": "",
      "cost_usd": 12500.0,
      "proceeds_usd": 76304.97,
      "value_usd": 0.0,
@@ -12526,7 +12528,7 @@
      "sells": 14,
      "first_buy_ts": 1757530514,
      "last_trade_ts": 1757553350,
-     "launched_ts": 1757528370,
+     "launched_ts": null,
      "first_buy_sig": "3zFATw7i1rFuuK2d4i4v1oosGBsqJKCmzqhiBFjB3zRAC3UkidnH5nb7Y8wj88AmGX5Ytm7idhhBSyw3L2YZot3R",
      "verified": false,
      "flags": []
@@ -12601,7 +12603,7 @@
     },
     {
      "mint": "FoBeu5sdn91be9rCCf9uHnfHoGaZEqZnK6FGoNLxbonk",
-     "symbol": "SPEAK",
+     "symbol": "",
      "cost_usd": 8700.0,
      "proceeds_usd": 3353.69,
      "value_usd": 0.0,
@@ -12611,7 +12613,7 @@
      "sells": 2,
      "first_buy_ts": 1757431972,
      "last_trade_ts": 1757476374,
-     "launched_ts": 1757368038,
+     "launched_ts": null,
      "first_buy_sig": "4EYH8wJMsmtJaEoDitxAnExAcDvazCAXsDkSLw85YZcs4DpcqrqTrn4qWgbHwvPyV3dtnymbatwDZ3pgQXdsa1Z5",
      "verified": false,
      "flags": []
@@ -12839,7 +12841,7 @@
     },
     {
      "mint": "B9iPvm8YybydhvMiKAuJuygEKuzspgxdavhFNzzUpump",
-     "symbol": "EMULITES",
+     "symbol": "",
      "cost_usd": 6600.0,
      "proceeds_usd": 26759.16,
      "value_usd": 0.0,
@@ -12849,7 +12851,7 @@
      "sells": 5,
      "first_buy_ts": 1756607083,
      "last_trade_ts": 1756649656,
-     "launched_ts": 1756564511,
+     "launched_ts": null,
      "first_buy_sig": "4aYXmrcef2T1wGTC9ui54vfpZ8Fi32yAb7BhYpPxhKtcYyqTzLQSqogDqdrP8HNUewBF9ifgK3T3FJr9Md44AZqh",
      "verified": false,
      "flags": []
@@ -13034,13 +13036,13 @@
     "realized_usd": 99256.92,
     "gem_profit_usd": 0,
     "hit_rate": 0.0,
-    "unverified": 48,
+    "unverified": 49,
     "tx_count": 2408
    },
    "reasons": [
     "0 winning trade(s) (5x+ on verified coins); needs 5",
     "78 trade(s) under 5x (worst 0.44x)",
-    "48 trade(s) in coins Jupiter has not verified"
+    "49 trade(s) in coins Jupiter has not verified"
    ],
    "flags": [],
    "notes": [
@@ -13153,7 +13155,7 @@
     },
     {
      "mint": "GEuuznWpn6iuQAJxLKQDVGXPtrqXHNWTk3gZqqvJpump",
-     "symbol": "",
+     "symbol": "ACE",
      "cost_usd": 10.0,
      "proceeds_usd": 9.33,
      "value_usd": 0.0,
@@ -13163,7 +13165,7 @@
      "sells": 1,
      "first_buy_ts": 1761663106,
      "last_trade_ts": 1761664744,
-     "launched_ts": null,
+     "launched_ts": 1739586663,
      "first_buy_sig": "5rifb1MW1ytK4u322fskSu6z28ZBEsS4KwU8TyYDJxhR9s2tv5z7AQ12F6mEW7we4uF9ooUiPbTHvuATWWPqtv1N",
      "verified": false,
      "flags": []
@@ -13240,7 +13242,7 @@
     },
     {
      "mint": "927LiYw7a3AtCZtszLDaYY1kD7i5vN1w2YXnbn6c9dev",
-     "symbol": "",
+     "symbol": "CGN",
      "cost_usd": 3000.0,
      "proceeds_usd": 3235.66,
      "value_usd": 0.0,
@@ -13250,7 +13252,7 @@
      "sells": 1,
      "first_buy_ts": 1761596459,
      "last_trade_ts": 1761596481,
-     "launched_ts": null,
+     "launched_ts": 1758219627,
      "first_buy_sig": "4yDKFsSASebLNjBLuBVzouubyYKkqCd5mAz9LmrR81tgyJwXFdK35G5D1UAUDojNGNs47qQMxHTp8KGwWAmM9Cy6",
      "verified": false,
      "flags": []
@@ -13291,7 +13293,7 @@
     },
     {
      "mint": "FCPMdpvwxtWBvgDDsPuBb6wyf41ik2gtPqNN9jWSBAGS",
-     "symbol": "",
+     "symbol": "PPW",
      "cost_usd": 2000.0,
      "proceeds_usd": 2276.88,
      "value_usd": 0.0,
@@ -13301,7 +13303,7 @@
      "sells": 1,
      "first_buy_ts": 1761572597,
      "last_trade_ts": 1761573119,
-     "launched_ts": null,
+     "launched_ts": 1757527548,
      "first_buy_sig": "25ygRdA8aDWKDu4ccu4nD2WeRWGVsqmEXD69e1W6Jvpir2sok2JVWELgTpxxb3VytEgyJqDnEvkFYqVQCFp1Fh99",
      "verified": true,
      "flags": []
@@ -13410,7 +13412,7 @@
     },
     {
      "mint": "EebvSxfGbjyHMJ2bu1jhtNidbhVbQJtcg9y561Kipump",
-     "symbol": "ZARD",
+     "symbol": "",
      "cost_usd": 4000.0,
      "proceeds_usd": 4058.36,
      "value_usd": 0.0,
@@ -13420,14 +13422,14 @@
      "sells": 1,
      "first_buy_ts": 1761486396,
      "last_trade_ts": 1761489944,
-     "launched_ts": 1752074375,
+     "launched_ts": null,
      "first_buy_sig": "nT2u8MNxbn8wCWwiy43dpQv1vDTcFRNdXoywokofWWe3vY2Wnts4B4ZzhjhDSno8chHcraoLM917YzMzhaUz5k8",
      "verified": true,
      "flags": []
     },
     {
      "mint": "8vYdMxuaTven3VXnfagGvYjDFya1EgUE2ZoyujC3gBLV",
-     "symbol": "PASTERNAK",
+     "symbol": "",
      "cost_usd": 17000.0,
      "proceeds_usd": 16280.44,
      "value_usd": 0.0,
@@ -13437,7 +13439,7 @@
      "sells": 4,
      "first_buy_ts": 1761477204,
      "last_trade_ts": 1761491247,
-     "launched_ts": 1758144209,
+     "launched_ts": null,
      "first_buy_sig": "47PsR9f29nD9m4rjjCSvLtv323zwH4Hx1SRWu8tnpG7q8cfqzBzCSMUW5V2rb99RVtXbRtwBU7cbHxeuQpvth4NA",
      "verified": false,
      "flags": []
@@ -13529,7 +13531,7 @@
     },
     {
      "mint": "CuXmQvh4DVTdWBdC2d3pNq8UXqbKJ3w9RPBTAALcKcTb",
-     "symbol": "",
+     "symbol": "DIRA",
      "cost_usd": 16500.0,
      "proceeds_usd": 20352.48,
      "value_usd": 0.0,
@@ -13539,7 +13541,7 @@
      "sells": 20,
      "first_buy_ts": 1761368093,
      "last_trade_ts": 1761376774,
-     "launched_ts": null,
+     "launched_ts": 1747229990,
      "first_buy_sig": "TUN8vxsuTFWgivfbhmAoU62798Twt811zRXjoUUmaWkee1pgKaPzV6KweP5Exj714YuHhLaEm1KTmBabpSjEtbY",
      "verified": false,
      "flags": []
@@ -13563,7 +13565,7 @@
     },
     {
      "mint": "EgHo1Tq81VHKSYSx9KiWEsZvKRb5fZD9M4y5HPyUmoon",
-     "symbol": "YARA",
+     "symbol": "",
      "cost_usd": 20500.0,
      "proceeds_usd": 20752.55,
      "value_usd": 0.0,
@@ -13573,9 +13575,9 @@
      "sells": 15,
      "first_buy_ts": 1761289064,
      "last_trade_ts": 1761474184,
-     "launched_ts": 1745428875,
+     "launched_ts": null,
      "first_buy_sig": "3o5bZsgWzk3DHK9kzTYQPZU21W8bKqJsSeyXdWPrnuCBEqpVQegQLRvDPmF3LwL3UrRk68iaqCK7HDKWBWy1Gzww",
-     "verified": true,
+     "verified": false,
      "flags": []
     },
     {
@@ -13641,7 +13643,7 @@
      "sells": 1,
      "first_buy_ts": 1761225606,
      "last_trade_ts": 1761226323,
-     "launched_ts": 1761396180,
+     "launched_ts": 1772154758,
      "first_buy_sig": "2T97hTCV7FYnsWiRkSYSJAcRHgqhtT5AqnQupR4H8UASMHmNYfo5bcS6B72bFYV5bGh8vzx3cNwsNADUf1xBWrCP",
      "verified": true,
      "flags": []
@@ -13699,7 +13701,7 @@
     },
     {
      "mint": "2hXQn7nJbh2XFTxvtyKb5mKfnScuoiC1Sm8rnWydpump",
-     "symbol": "",
+     "symbol": "BREW",
      "cost_usd": 11000.0,
      "proceeds_usd": 12070.89,
      "value_usd": 0.0,
@@ -13709,7 +13711,7 @@
      "sells": 7,
      "first_buy_ts": 1761063060,
      "last_trade_ts": 1761322998,
-     "launched_ts": null,
+     "launched_ts": 1739205296,
      "first_buy_sig": "2AF1c6hBdWVDUuPRfg4pVRTTnjqmYs78nzQQQigAwaRhcAVBzTpph6R2KLzqGAQZaehMHEgs8XjytbaKTNCXpMDj",
      "verified": false,
      "flags": []
@@ -13852,7 +13854,7 @@
     },
     {
      "mint": "Aeqq7RW4pfKkAigceEzXV9BdshAym3dKjYF9jhQHpump",
-     "symbol": "foid",
+     "symbol": "",
      "cost_usd": 1000.0,
      "proceeds_usd": 999.15,
      "value_usd": 0.0,
@@ -13862,7 +13864,7 @@
      "sells": 1,
      "first_buy_ts": 1760674577,
      "last_trade_ts": 1760674603,
-     "launched_ts": 1755548862,
+     "launched_ts": null,
      "first_buy_sig": "61oR4XYEAKxCR7L67fUpN7TV8tAbur1CY29m98v3fGFP2DXDGfB6tjc4gWXEJXrcZYJpTzNnGH65U662DkPCtB7a",
      "verified": false,
      "flags": []
@@ -14022,7 +14024,7 @@
     },
     {
      "mint": "SW1TCHLmRGTfW5xZknqQdpdarB8PD95sJYWpNp9TbFx",
-     "symbol": "SWTCH",
+     "symbol": "",
      "cost_usd": 40010.0,
      "proceeds_usd": 45360.15,
      "value_usd": 0.0,
@@ -14032,12 +14034,10 @@
      "sells": 37,
      "first_buy_ts": 1760364337,
      "last_trade_ts": 1761507468,
-     "launched_ts": 1790767816,
+     "launched_ts": null,
      "first_buy_sig": "57d55VuhKC9ZaRkTi8w4LdiQRLKGy5ouEfCKUKcdPRPGVM6NUuSLKLyfkshoVGiTvJQpwvvHRZwyPhrA8yYdMzpV",
      "verified": true,
-     "flags": [
-      "no liquidity (dead / rugged)"
-     ]
+     "flags": []
     },
     {
      "mint": "Egs8S3cnfyYHBHiczH5d6v2Xj47AiSaD8gXm9xLkBAGS",
@@ -14100,13 +14100,13 @@
     "realized_usd": 29019.55,
     "gem_profit_usd": 0,
     "hit_rate": 0.0,
-    "unverified": 10,
-    "tx_count": 2731
+    "unverified": 11,
+    "tx_count": 2730
    },
    "reasons": [
     "0 winning trade(s) (5x+ on verified coins); needs 5",
     "25 trade(s) under 5x (worst 0.01x)",
-    "10 trade(s) in coins Jupiter has not verified"
+    "11 trade(s) in coins Jupiter has not verified"
    ],
    "flags": [
     "2 weak trade(s) were coins sent to another wallet, so not necessarily real losses"
@@ -14364,9 +14364,9 @@
      "symbol": "MUSHU",
      "cost_usd": 5305.0,
      "proceeds_usd": 4.53,
-     "value_usd": 433.13,
+     "value_usd": 485.29,
      "profit_usd": -5300.47,
-     "multiple": 0.08,
+     "multiple": 0.09,
      "buys": 10,
      "sells": 1,
      "first_buy_ts": 1770438069,
@@ -14395,7 +14395,7 @@
     },
     {
      "mint": "7EW5dDD6MYJK4PcZ89MGApJQwWeDEeNgH4NCVU4qpump",
-     "symbol": "PURCH",
+     "symbol": "",
      "cost_usd": 9913.8,
      "proceeds_usd": 9979.26,
      "value_usd": 0.0,
@@ -14405,7 +14405,7 @@
      "sells": 7,
      "first_buy_ts": 1769984896,
      "last_trade_ts": 1769993014,
-     "launched_ts": 1765992320,
+     "launched_ts": null,
      "first_buy_sig": "3PhusoYtSYAyvf23tdMgGdm5kcchW15BgjHVzVZro81i5kT8B4auF5hGPHFRyVX5VFnCoDgwvxhi3VtQVJrYezZd",
      "verified": true,
      "flags": []
@@ -14429,7 +14429,7 @@
     },
     {
      "mint": "7MDApufGNAKDDTcM3hrUpUfZ8jcaXdaoSZy1sQdRpump",
-     "symbol": "",
+     "symbol": "Dale",
      "cost_usd": 8501.15,
      "proceeds_usd": 1301.52,
      "value_usd": 0.0,
@@ -14439,7 +14439,7 @@
      "sells": 2,
      "first_buy_ts": 1769299133,
      "last_trade_ts": 1769319641,
-     "launched_ts": null,
+     "launched_ts": 1769274714,
      "first_buy_sig": "5Hi7wWXsMrcMheTHkREYLbFNLzjejB93oRBAiGzLZG1dWFLD3X3ehNe4YzTLDok9fUHBPMsQBpVKxgqcFNGsFpR5",
      "verified": false,
      "flags": []
@@ -14497,7 +14497,7 @@
     },
     {
      "mint": "55DJNrN4rM7euSZSsaYfsEHGBQRcznibwiq1fR2HBAGS",
-     "symbol": "CURSED",
+     "symbol": "",
      "cost_usd": 750.0,
      "proceeds_usd": 565.64,
      "value_usd": 0.0,
@@ -14507,7 +14507,7 @@
      "sells": 1,
      "first_buy_ts": 1768778160,
      "last_trade_ts": 1768802684,
-     "launched_ts": 1768562508,
+     "launched_ts": null,
      "first_buy_sig": "5fnueZQkxKSjD3aujc3NK3baewieGUhhsrd39wJJ9k8MJde16kmSF9TJFR9xvuxMKVzZR4U2TTqgs6WyVPsDYKYV",
      "verified": false,
      "flags": []
@@ -14543,7 +14543,7 @@
      "last_trade_ts": 1769070003,
      "launched_ts": 1767595076,
      "first_buy_sig": "5KfAbBxAawnBZaPLoagfSmD1BALzo8SAxEfVdNNYfJWB3c6Tp25zSggWfZZmZB2msakwSAd1ybzDCC15CdgxAgNJ",
-     "verified": true,
+     "verified": false,
      "flags": []
     }
    ]
@@ -14590,7 +14590,7 @@
    "trades": [
     {
      "mint": "Dz8inTcgp22n9yQ92dMG8168Wi79ANT2z3oehtdMpump",
-     "symbol": "HelloWorld",
+     "symbol": "",
      "cost_usd": 500.0,
      "proceeds_usd": 286.73,
      "value_usd": 0.0,
@@ -14600,7 +14600,7 @@
      "sells": 1,
      "first_buy_ts": 1792346321,
      "last_trade_ts": 1792352578,
-     "launched_ts": 1792340669,
+     "launched_ts": null,
      "first_buy_sig": "2H58tmTbrTRSDBY5oKV79ryuPBi7nwbrbzEWSFWS7Ka3oHcUfhkGKTVQHws7ZGPbVKvAgQMTD4HDUSHjzoLFDZXM",
      "verified": false,
      "flags": []
@@ -14828,7 +14828,7 @@
     },
     {
      "mint": "74oDdJb1RMELxBPLGiJbEsf8QaPuaiBcfPJeXi5cpump",
-     "symbol": "",
+     "symbol": "FENTCOM",
      "cost_usd": 700.0,
      "proceeds_usd": 269.47,
      "value_usd": 0.0,
@@ -14838,7 +14838,7 @@
      "sells": 1,
      "first_buy_ts": 1773068052,
      "last_trade_ts": 1773092583,
-     "launched_ts": null,
+     "launched_ts": 1773067735,
      "first_buy_sig": "4bCYwvYynvJ7SJj6THsub1wdPkTGqKi92XDtsZCPcJVySF53onYzDvozZy8MYsLUrKxhKU9W2sR96sa5NDhVhw9V",
      "verified": false,
      "flags": []
@@ -14947,7 +14947,7 @@
     },
     {
      "mint": "EtL967sgMgeDDSUrNhtQrbhe4T92idzqf4VuA6H7uGfQ",
-     "symbol": "",
+     "symbol": "MAYA",
      "cost_usd": 5000.0,
      "proceeds_usd": 4757.71,
      "value_usd": 0.0,
@@ -14957,14 +14957,14 @@
      "sells": 1,
      "first_buy_ts": 1771290816,
      "last_trade_ts": 1771291041,
-     "launched_ts": null,
+     "launched_ts": 1771287831,
      "first_buy_sig": "45hP98NpFTtHyCw59g3dwGezhPLEiftciLQyp9zNywiteikm5ZHHFLAN9rjxfS5GuNp3bQFmn4SpSJEDiQLBWHip",
      "verified": false,
      "flags": []
     },
     {
      "mint": "3GwPUbJauo9qRoX2h1ANj15RGn9L7GVLG67kWCAjbonk",
-     "symbol": "BONKWHEEL",
+     "symbol": "",
      "cost_usd": 1000.0,
      "proceeds_usd": 840.75,
      "value_usd": 0.0,
@@ -14974,7 +14974,7 @@
      "sells": 1,
      "first_buy_ts": 1770667759,
      "last_trade_ts": 1770667801,
-     "launched_ts": 1770667341,
+     "launched_ts": null,
      "first_buy_sig": "2z9yN8WPvyKwszD8XK7XeLp3ixDm7tdkHLWfs5p24UpSANkn5jjNwHhyW4SMMuaouDJ22p7aVf2aDatBMLzVVd35",
      "verified": false,
      "flags": []
@@ -15049,7 +15049,7 @@
     },
     {
      "mint": "7EW5dDD6MYJK4PcZ89MGApJQwWeDEeNgH4NCVU4qpump",
-     "symbol": "PURCH",
+     "symbol": "",
      "cost_usd": 59000.0,
      "proceeds_usd": 20795.97,
      "value_usd": 0.0,
@@ -15059,7 +15059,7 @@
      "sells": 7,
      "first_buy_ts": 1769970175,
      "last_trade_ts": 1770243645,
-     "launched_ts": 1765992320,
+     "launched_ts": null,
      "first_buy_sig": "2i8NDSwBqPN1sLDSMgB4kA6N92px31JDM7MqyyfY5j8teoLxn9JEzcPQAjBQV77uqUEEe71KyLRAiLJA8MxUTEGo",
      "verified": true,
      "flags": []
@@ -15117,7 +15117,7 @@
     },
     {
      "mint": "AnarbvjzbRxv391juRyWZiWmrAiqyLxb1LBz5FjWBAGS",
-     "symbol": "ORDO",
+     "symbol": "",
      "cost_usd": 2500.0,
      "proceeds_usd": 1309.56,
      "value_usd": 0.0,
@@ -15127,14 +15127,14 @@
      "sells": 1,
      "first_buy_ts": 1769792573,
      "last_trade_ts": 1769821940,
-     "launched_ts": 1769469871,
+     "launched_ts": null,
      "first_buy_sig": "5aGeynmWrgn7DBwW1keixK3qpo42ZZZch4ybXYjAfzDMbHtozuFv76LTaUecxAXtBbVzic7RxgYv7DMNKvNHd24u",
      "verified": false,
      "flags": []
     },
     {
      "mint": "6tVCDJP55xwBa9MLdeXJonFaF6MPFNMgnJ7k9RDFpump",
-     "symbol": "",
+     "symbol": "PISSFACE",
      "cost_usd": 3000.0,
      "proceeds_usd": 3136.31,
      "value_usd": 0.0,
@@ -15144,7 +15144,7 @@
      "sells": 1,
      "first_buy_ts": 1769781983,
      "last_trade_ts": 1769782360,
-     "launched_ts": null,
+     "launched_ts": 1769780771,
      "first_buy_sig": "2C7q1NEQYo2ciE3vi4Ugke5d8q1VW6AZRpVBaCU5rMTy1MjHMjSzSaFWgY9n1LrC545eLKr48rCBkLQuwf8VhUnr",
      "verified": false,
      "flags": []
@@ -15321,7 +15321,7 @@
     },
     {
      "mint": "HXU8HiXKeMBTZ9QCSxWrdGySBhbHeJLhGbY6b4z6BAGS",
-     "symbol": "",
+     "symbol": "GRU",
      "cost_usd": 200.0,
      "proceeds_usd": 195.95,
      "value_usd": 0.0,
@@ -15331,7 +15331,7 @@
      "sells": 1,
      "first_buy_ts": 1768966829,
      "last_trade_ts": 1768966841,
-     "launched_ts": null,
+     "launched_ts": 1768581820,
      "first_buy_sig": "3sjWNSxJ8f9vC1G8emizePNdKxXUQZodrSwcoGVWG5gTDmLRqoGyYLFaAT9QzxNJ8LzkmFA5hiHyL3kPpsTg2cUe",
      "verified": false,
      "flags": []
@@ -15406,7 +15406,7 @@
     },
     {
      "mint": "FWGC5ziwYMCT29y913WZSHmkSh7mF4MiddQwEBx5A6XA",
-     "symbol": "COW",
+     "symbol": "",
      "cost_usd": 9500.0,
      "proceeds_usd": 9025.41,
      "value_usd": 0.0,
@@ -15416,7 +15416,7 @@
      "sells": 9,
      "first_buy_ts": 1768748690,
      "last_trade_ts": 1768821973,
-     "launched_ts": 1768504147,
+     "launched_ts": null,
      "first_buy_sig": "46ZJXvdcmUA6HLqb2RMLB4njYn9XRxJzZ6n6SdZ1ZHBWfUCa5RsJfhFgd8NkkzQWY7VWaY53r3EwyjWSnd3XS1a3",
      "verified": false,
      "flags": []
@@ -15448,14 +15448,14 @@
     "realized_usd": 429.28,
     "gem_profit_usd": 0,
     "hit_rate": 0.0,
-    "unverified": 310,
+    "unverified": 312,
     "tx_count": 1612
    },
    "reasons": [
     "traded 319 coins (> 300): bot / scalper",
     "0 winning trade(s) (5x+ on verified coins); needs 5",
     "318 trade(s) under 5x (worst 0.00x)",
-    "310 trade(s) in coins Jupiter has not verified"
+    "312 trade(s) in coins Jupiter has not verified"
    ],
    "flags": [
     "3 weak trade(s) were coins sent to another wallet, so not necessarily real losses"
@@ -15483,7 +15483,7 @@
     },
     {
      "mint": "4qAv1QAoFpNtTqxpZmyjLfxM3RRcLqT84gJf3KNrQS3c",
-     "symbol": "BULLPAD",
+     "symbol": "",
      "cost_usd": 78.27,
      "proceeds_usd": 136.37,
      "value_usd": 0.0,
@@ -15493,7 +15493,7 @@
      "sells": 3,
      "first_buy_ts": 1788226967,
      "last_trade_ts": 1788227108,
-     "launched_ts": 1788227916,
+     "launched_ts": null,
      "first_buy_sig": "cibFiBnMk5MhVMzBEsC6oTwC1bYM9MtAWsX9JXSDy8P5WtCDMHTFnM1ooxhYzairru4EebAELZwJgjMN5uZjhNM",
      "verified": false,
      "flags": []
@@ -15840,7 +15840,7 @@
     },
     {
      "mint": "EYBMhikmdqUs6j5p9mv1tfPY3HszsCyYeRpwme6Bpump",
-     "symbol": "VOXIE",
+     "symbol": "",
      "cost_usd": 118.46,
      "proceeds_usd": 149.73,
      "value_usd": 0.0,
@@ -15850,7 +15850,7 @@
      "sells": 2,
      "first_buy_ts": 1788202792,
      "last_trade_ts": 1788203195,
-     "launched_ts": 1788202784,
+     "launched_ts": null,
      "first_buy_sig": "2Bqs8uBKGhiVoJC3xBvdSq9tKEUKv5FJXkv6EP1mtjzezD83XuZfZ8qaa77GjSNgSrTDa1S7zgXrEUWgGaavrKd2",
      "verified": false,
      "flags": []
@@ -16078,7 +16078,7 @@
     },
     {
      "mint": "5mLRwZ9YAWfoBv2WdPTUPKXTHkN7VKP7Z6aqkESfpump",
-     "symbol": "",
+     "symbol": "FINORA 2.0",
      "cost_usd": 39.23,
      "proceeds_usd": 36.56,
      "value_usd": 0.0,
@@ -16088,7 +16088,7 @@
      "sells": 1,
      "first_buy_ts": 1788190642,
      "last_trade_ts": 1788190700,
-     "launched_ts": null,
+     "launched_ts": 1790059370,
      "first_buy_sig": "4k5bNicjgGJyCzqBsyRaqhG3eAFR8dav24B1Vjj773hMi4kC9CYdeo71WeCSLLF6kBNxqkNkCArSyiYsYBn7kNDX",
      "verified": false,
      "flags": []
@@ -16175,7 +16175,7 @@
      "last_trade_ts": 1788135124,
      "launched_ts": 1788134399,
      "first_buy_sig": "4Qiy8WNnXXXUvRFjACkqfgoFGLUFfwDksErKaLSmBfqPZ7rycXGhzSdQqixDyUvrx3TbfBUQhkX3NmdgQMpV6Rhp",
-     "verified": true,
+     "verified": false,
      "flags": []
     },
     {
@@ -16528,127 +16528,13 @@
    "wallet": "omegoMAe1AMY5MFKQQr3JwXVy8F4eCvmBAfcpo8XAfq",
    "tier": "REJECTED",
    "labels": [
-    "early buyer on 4 big coins: GATO early $66, EXFIL early $41, JEANPHIL early $133"
+    "early buyer on 4 big coins: GATO early $66, JEANPHIL early $133, HODL early $64"
    ],
    "sources": [
     "verified-early"
    ],
    "gem_hits_in_search": 0,
    "early_hits_in_search": 4,
-   "stats": {
-    "trades": 0,
-    "judged": 0,
-    "open": 0,
-    "gems": 0,
-    "wins_min_multiple": 0,
-    "losses": 0,
-    "min_multiple": null,
-    "median_multiple": null,
-    "best_multiple": null,
-    "invested_usd": 0,
-    "realized_usd": 0,
-    "gem_profit_usd": 0,
-    "hit_rate": null,
-    "unverified": 0,
-    "tx_count": 3000
-   },
-   "reasons": [
-    "too active (3,000+ transactions): bot / scalper, not a gem hunter",
-    "0 winning trade(s) (5x+ on verified coins); needs 5"
-   ],
-   "flags": [],
-   "notes": [],
-   "data_source": "helius",
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "nya666pQkP3PzWxi7JngU3rRMHuc7zbLK8c8wxQ4qpT",
-   "tier": "REJECTED",
-   "labels": [
-    "early buyer on 3 big coins: Buttcoin early $45, EXFIL early $118, TripleT early $34"
-   ],
-   "sources": [
-    "verified-early"
-   ],
-   "gem_hits_in_search": 0,
-   "early_hits_in_search": 3,
-   "stats": {
-    "trades": 0,
-    "judged": 0,
-    "open": 0,
-    "gems": 0,
-    "wins_min_multiple": 0,
-    "losses": 0,
-    "min_multiple": null,
-    "median_multiple": null,
-    "best_multiple": null,
-    "invested_usd": 0,
-    "realized_usd": 0,
-    "gem_profit_usd": 0,
-    "hit_rate": null,
-    "unverified": 0,
-    "tx_count": 3000
-   },
-   "reasons": [
-    "too active (3,000+ transactions): bot / scalper, not a gem hunter",
-    "0 winning trade(s) (5x+ on verified coins); needs 5"
-   ],
-   "flags": [],
-   "notes": [],
-   "data_source": "helius",
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "SF9TGdsfTPcA3ZVmPdPtYphgzRg6ZqUY4hnjPgjD1MW",
-   "tier": "REJECTED",
-   "labels": [
-    "early buyer on 3 big coins: Buttcoin early $140, JEANPHIL early $34, MANIFEST early $43"
-   ],
-   "sources": [
-    "verified-early"
-   ],
-   "gem_hits_in_search": 0,
-   "early_hits_in_search": 3,
-   "stats": {
-    "trades": 0,
-    "judged": 0,
-    "open": 0,
-    "gems": 0,
-    "wins_min_multiple": 0,
-    "losses": 0,
-    "min_multiple": null,
-    "median_multiple": null,
-    "best_multiple": null,
-    "invested_usd": 0,
-    "realized_usd": 0,
-    "gem_profit_usd": 0,
-    "hit_rate": null,
-    "unverified": 0,
-    "tx_count": 3000
-   },
-   "reasons": [
-    "too active (3,000+ transactions): bot / scalper, not a gem hunter",
-    "0 winning trade(s) (5x+ on verified coins); needs 5"
-   ],
-   "flags": [],
-   "notes": [],
-   "data_source": "helius",
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
-   "tier": "REJECTED",
-   "labels": [
-    "early buyer on 3 big coins: EXFIL early $190, JEANPHIL early $183, MANIFEST early $88"
-   ],
-   "sources": [
-    "verified-early"
-   ],
-   "gem_hits_in_search": 0,
-   "early_hits_in_search": 3,
    "stats": {
     "trades": 0,
     "judged": 0,
@@ -16943,10 +16829,86 @@
    "trades": []
   },
   {
-   "wallet": "KPEF3xjDBQjdbt32n91KsEQWoL6QQRwN6sWtxdikDJR",
+   "wallet": "GpMZbSM2GgvTKHJirzeGfMFoaZ8UR2X7F4v8vHTvxFbL",
    "tier": "REJECTED",
    "labels": [
-    "early buyer on 2 big coins: Buttcoin early $21, TripleT early $27"
+    "early buyer on 2 big coins: HEEBOO early $1,047, PAYAI early $42.2k"
+   ],
+   "sources": [
+    "verified-early"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 2,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 3000
+   },
+   "reasons": [
+    "too active (3,000+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "helius",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "nya666pQkP3PzWxi7JngU3rRMHuc7zbLK8c8wxQ4qpT",
+   "tier": "REJECTED",
+   "labels": [
+    "early buyer on 2 big coins: Buttcoin early $45, EXFIL early $118"
+   ],
+   "sources": [
+    "verified-early"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 2,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 3000
+   },
+   "reasons": [
+    "too active (3,000+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "helius",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "SF9TGdsfTPcA3ZVmPdPtYphgzRg6ZqUY4hnjPgjD1MW",
+   "tier": "REJECTED",
+   "labels": [
+    "early buyer on 2 big coins: Buttcoin early $140, JEANPHIL early $34"
    ],
    "sources": [
     "verified-early"
@@ -17019,10 +16981,10 @@
    "trades": []
   },
   {
-   "wallet": "FZU56d9iPqohXM5XBrYYBZLi2UoUnZT4V5Qf2631tEzb",
+   "wallet": "BMkHjN2N8K2PdCqeC92YYjUovn9ecW4GvFpH6yDggXWJ",
    "tier": "REJECTED",
    "labels": [
-    "early buyer on 2 big coins: OTC early $132, EXFIL early $159"
+    "early buyer on 2 big coins: JEANPHIL early $120, HODL early $73"
    ],
    "sources": [
     "verified-early"
@@ -17057,10 +17019,10 @@
    "trades": []
   },
   {
-   "wallet": "EwMndgvbgdXuTCvT7bRGX8wPKVevyq7QZNVqWvFqFVsh",
+   "wallet": "2sapuxSmfbKAziDJKTwJWtqfZoukBLKX5zeBCVdPDpz7",
    "tier": "REJECTED",
    "labels": [
-    "early buyer on 2 big coins: EXFIL early $74, JEANPHIL early $56"
+    "early buyer on 2 big coins: JEANPHIL early $106, HODL early $83"
    ],
    "sources": [
     "verified-early"
@@ -17098,7 +17060,83 @@
    "wallet": "AmwJToZR4YkawNquDbiUHbZnC2Myq1CLRRryUQ9FBf89",
    "tier": "REJECTED",
    "labels": [
-    "early buyer on 2 big coins: EXFIL early $102, JEANPHIL early $41"
+    "early buyer on 2 big coins: JEANPHIL early $41, EXFIL early $102"
+   ],
+   "sources": [
+    "verified-early"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 2,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 3000
+   },
+   "reasons": [
+    "too active (3,000+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "helius",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "jmemehQbZXX7QqNE7Eyi81MdTZw6cEAT6TU4Kinwtru",
+   "tier": "REJECTED",
+   "labels": [
+    "early buyer on 2 big coins: JEANPHIL early $183, EXFIL early $190"
+   ],
+   "sources": [
+    "verified-early"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 2,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 3000
+   },
+   "reasons": [
+    "too active (3,000+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "helius",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "EwMndgvbgdXuTCvT7bRGX8wPKVevyq7QZNVqWvFqFVsh",
+   "tier": "REJECTED",
+   "labels": [
+    "early buyer on 2 big coins: JEANPHIL early $56, EXFIL early $74"
    ],
    "sources": [
     "verified-early"
@@ -17136,7 +17174,7 @@
    "wallet": "9keCU8mgA23XV8LCgSCJEo4Lspmo9fRBA3MyxJmZKQSp",
    "tier": "REJECTED",
    "labels": [
-    "early buyer on 2 big coins: EXFIL early $245, JEANPHIL early $223"
+    "early buyer on 2 big coins: JEANPHIL early $223, EXFIL early $245"
    ],
    "sources": [
     "verified-early"
@@ -17171,48 +17209,10 @@
    "trades": []
   },
   {
-   "wallet": "5i8rFRKn3TEWHTPC9JH7B6QQSNRmBx5TgUGiub1kAbJA",
+   "wallet": "87rRdssFiTJKY4MGARa4G5vQ31hmR7MxSmhzeaJ5AAxJ",
    "tier": "REJECTED",
    "labels": [
-    "early buyer on 2 big coins: JEANPHIL early $34, MANIFEST early $43"
-   ],
-   "sources": [
-    "verified-early"
-   ],
-   "gem_hits_in_search": 0,
-   "early_hits_in_search": 2,
-   "stats": {
-    "trades": 0,
-    "judged": 0,
-    "open": 0,
-    "gems": 0,
-    "wins_min_multiple": 0,
-    "losses": 0,
-    "min_multiple": null,
-    "median_multiple": null,
-    "best_multiple": null,
-    "invested_usd": 0,
-    "realized_usd": 0,
-    "gem_profit_usd": 0,
-    "hit_rate": null,
-    "unverified": 0,
-    "tx_count": 3000
-   },
-   "reasons": [
-    "too active (3,000+ transactions): bot / scalper, not a gem hunter",
-    "0 winning trade(s) (5x+ on verified coins); needs 5"
-   ],
-   "flags": [],
-   "notes": [],
-   "data_source": "helius",
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "95TWoKkvv2z85EXBzd2z6NwbxH2f54AvwuCA9x3NoKep",
-   "tier": "REJECTED",
-   "labels": [
-    "Kolscan daily #1 Killua ($31.3k)"
+    "Kolscan daily #1 Dior ($14.8k)"
    ],
    "sources": [
     "kolscan"
@@ -17247,10 +17247,10 @@
    "trades": []
   },
   {
-   "wallet": "G3gZWqrYkNmYFKYCyfRCNtGuxdyuE2wiYKkZpiZn4WSS",
+   "wallet": "B32QbbdDAyhvUQzjcaM5j6ZVKwjCxAwGH5Xgvb9SJqnC",
    "tier": "REJECTED",
    "labels": [
-    "Kolscan daily #2 Goyim ($18.8k)"
+    "Kolscan daily #2 Kadenox ($11.3k)"
    ],
    "sources": [
     "kolscan"
@@ -17285,10 +17285,10 @@
    "trades": []
   },
   {
-   "wallet": "FzVQSzj8JJr6WMGqbUHzx2XH1KkrfxRrRPv6WcbbZmND",
+   "wallet": "88e2kBDJoN7eQCBj2sxT15etUZ3jPNzD4ijCs1TNySWJ",
    "tier": "REJECTED",
    "labels": [
-    "Kolscan daily #3 DustNukes ($16.5k)"
+    "Kolscan daily #3 yeekidd ($10.4k)"
    ],
    "sources": [
     "kolscan"
@@ -17326,7 +17326,7 @@
    "wallet": "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN",
    "tier": "REJECTED",
    "labels": [
-    "Kolscan daily #4 West ($15.6k)"
+    "Kolscan daily #4 West ($7,733)"
    ],
    "sources": [
     "kolscan"
@@ -17361,10 +17361,10 @@
    "trades": []
   },
   {
-   "wallet": "6aXFYXbFob1ZKAEDCcqZnX2vooA3TgEqDoy5dAQbeWoV",
+   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
    "tier": "REJECTED",
    "labels": [
-    "Kolscan daily #5 Flames ($11.0k)"
+    "Kolscan daily #5 Schoen ($7,424)"
    ],
    "sources": [
     "kolscan"
@@ -17399,124 +17399,10 @@
    "trades": []
   },
   {
-   "wallet": "FsG3BaPmRTdSrPaivbgJsFNCCa8cPfkUtk8VLWXkHpHP",
+   "wallet": "FzVQSzj8JJr6WMGqbUHzx2XH1KkrfxRrRPv6WcbbZmND",
    "tier": "REJECTED",
    "labels": [
-    "Kolscan daily #6 Reljoo ($10.9k)"
-   ],
-   "sources": [
-    "kolscan"
-   ],
-   "gem_hits_in_search": 0,
-   "early_hits_in_search": 0,
-   "stats": {
-    "trades": 0,
-    "judged": 0,
-    "open": 0,
-    "gems": 0,
-    "wins_min_multiple": 0,
-    "losses": 0,
-    "min_multiple": null,
-    "median_multiple": null,
-    "best_multiple": null,
-    "invested_usd": 0,
-    "realized_usd": 0,
-    "gem_profit_usd": 0,
-    "hit_rate": null,
-    "unverified": 0,
-    "tx_count": 3000
-   },
-   "reasons": [
-    "too active (3,000+ transactions): bot / scalper, not a gem hunter",
-    "0 winning trade(s) (5x+ on verified coins); needs 5"
-   ],
-   "flags": [],
-   "notes": [],
-   "data_source": "helius",
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "tier": "REJECTED",
-   "labels": [
-    "Kolscan daily #7 ban ($8,655)"
-   ],
-   "sources": [
-    "kolscan"
-   ],
-   "gem_hits_in_search": 0,
-   "early_hits_in_search": 0,
-   "stats": {
-    "trades": 0,
-    "judged": 0,
-    "open": 0,
-    "gems": 0,
-    "wins_min_multiple": 0,
-    "losses": 0,
-    "min_multiple": null,
-    "median_multiple": null,
-    "best_multiple": null,
-    "invested_usd": 0,
-    "realized_usd": 0,
-    "gem_profit_usd": 0,
-    "hit_rate": null,
-    "unverified": 0,
-    "tx_count": 3000
-   },
-   "reasons": [
-    "too active (3,000+ transactions): bot / scalper, not a gem hunter",
-    "0 winning trade(s) (5x+ on verified coins); needs 5"
-   ],
-   "flags": [],
-   "notes": [],
-   "data_source": "helius",
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "CEUA7zVoDRqRYoeHTP58UHU6TR8yvtVbeLrX1dppqoXJ",
-   "tier": "REJECTED",
-   "labels": [
-    "Kolscan daily #8 Tom ($6,912)"
-   ],
-   "sources": [
-    "kolscan"
-   ],
-   "gem_hits_in_search": 0,
-   "early_hits_in_search": 0,
-   "stats": {
-    "trades": 0,
-    "judged": 0,
-    "open": 0,
-    "gems": 0,
-    "wins_min_multiple": 0,
-    "losses": 0,
-    "min_multiple": null,
-    "median_multiple": null,
-    "best_multiple": null,
-    "invested_usd": 0,
-    "realized_usd": 0,
-    "gem_profit_usd": 0,
-    "hit_rate": null,
-    "unverified": 0,
-    "tx_count": 3000
-   },
-   "reasons": [
-    "too active (3,000+ transactions): bot / scalper, not a gem hunter",
-    "0 winning trade(s) (5x+ on verified coins); needs 5"
-   ],
-   "flags": [],
-   "notes": [],
-   "data_source": "helius",
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "5t9xBNuDdGTGpjaPTx6hKd7sdRJbvtKS8Mhq6qVbo8Qz",
-   "tier": "REJECTED",
-   "labels": [
-    "Kolscan daily #9 Smokez ($6,472)"
+    "Kolscan daily #6 DustNukes ($6,627)"
    ],
    "sources": [
     "kolscan"
@@ -17554,7 +17440,121 @@
    "wallet": "39q2g5tTQn9n7KnuapzwS2smSx3NGYqBoea11tBjsGEt",
    "tier": "REJECTED",
    "labels": [
-    "Kolscan daily #10 Walta ($5,721)"
+    "Kolscan daily #7 Walta ($6,452)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 3000
+   },
+   "reasons": [
+    "too active (3,000+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "helius",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "8rvAsDKeAcEjEkiZMug9k8v1y8mW6gQQiMobd89Uy7qR",
+   "tier": "REJECTED",
+   "labels": [
+    "Kolscan daily #8 Casino ($6,030)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 3000
+   },
+   "reasons": [
+    "too active (3,000+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "helius",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "862TYSvRYoiHAK3F3WwTRYAfuGiQaGdxedN9AGvRGWo2",
+   "tier": "REJECTED",
+   "labels": [
+    "Kolscan daily #9 Wugi ($5,482)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits_in_search": 0,
+   "early_hits_in_search": 0,
+   "stats": {
+    "trades": 0,
+    "judged": 0,
+    "open": 0,
+    "gems": 0,
+    "wins_min_multiple": 0,
+    "losses": 0,
+    "min_multiple": null,
+    "median_multiple": null,
+    "best_multiple": null,
+    "invested_usd": 0,
+    "realized_usd": 0,
+    "gem_profit_usd": 0,
+    "hit_rate": null,
+    "unverified": 0,
+    "tx_count": 3000
+   },
+   "reasons": [
+    "too active (3,000+ transactions): bot / scalper, not a gem hunter",
+    "0 winning trade(s) (5x+ on verified coins); needs 5"
+   ],
+   "flags": [],
+   "notes": [],
+   "data_source": "helius",
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "BCagckXeMChUKrHEd6fKFA1uiWDtcmCXMsqaheLiUPJd",
+   "tier": "REJECTED",
+   "labels": [
+    "Kolscan daily #10 dv ($5,407)"
    ],
    "sources": [
     "kolscan"
@@ -19597,7 +19597,7 @@
     "gem_profit_usd": 0,
     "hit_rate": null,
     "unverified": 0,
-    "tx_count": 2
+    "tx_count": 3
    },
    "reasons": [
     "0 winning trade(s) (5x+ on verified coins); needs 5"
@@ -20007,7 +20007,7 @@
     "gem_profit_usd": 0,
     "hit_rate": null,
     "unverified": 0,
-    "tx_count": 3
+    "tx_count": 5
    },
    "reasons": [
     "0 winning trade(s) (5x+ on verified coins); needs 5"
@@ -20452,7 +20452,7 @@
     "gem_profit_usd": 0,
     "hit_rate": 0.0,
     "unverified": 15,
-    "tx_count": 464
+    "tx_count": 467
    },
    "reasons": [
     "0 winning trade(s) (5x+ on verified coins); needs 5",
@@ -20461,7 +20461,7 @@
    ],
    "flags": [],
    "notes": [
-    "301 trade(s) placed through the Fomo app"
+    "302 trade(s) placed through the Fomo app"
    ],
    "data_source": "helius",
    "gems": [],
@@ -20723,7 +20723,7 @@
     },
     {
      "mint": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump",
-     "symbol": "",
+     "symbol": "2016",
      "cost_usd": 5288.49,
      "proceeds_usd": 6907.2,
      "value_usd": 0.0,
@@ -20733,7 +20733,7 @@
      "sells": 3,
      "first_buy_ts": 1769187265,
      "last_trade_ts": 1769220491,
-     "launched_ts": null,
+     "launched_ts": 1755735234,
      "first_buy_sig": "3ZXfAtbLLWfJkA2pNkLRB7HxQ3awwXppWkMZmiKjpcZ4SYyYak2x7RAUCDc8jodvHmwXb8zXHuAzwmYMy5FTjWXw",
      "verified": false,
      "flags": []
@@ -20791,7 +20791,7 @@
     },
     {
      "mint": "8HxW9Z3YT1gXgQcgEynZaHsEpLXRgijGfMYCkaAypump",
-     "symbol": "",
+     "symbol": "mec",
      "cost_usd": 12500.0,
      "proceeds_usd": 5845.44,
      "value_usd": 0.0,
@@ -20801,14 +20801,14 @@
      "sells": 2,
      "first_buy_ts": 1762406942,
      "last_trade_ts": 1762445821,
-     "launched_ts": null,
+     "launched_ts": 1762375389,
      "first_buy_sig": "2GBVtx4CgzUJjup3x9LPD6peP637tt9thdsN6Xcr57RfMmJvZD9GZG618FyGSN9FyxC8Du4UWV8XAvuF5ykxyuxk",
      "verified": false,
      "flags": []
     },
     {
      "mint": "GEuuznWpn6iuQAJxLKQDVGXPtrqXHNWTk3gZqqvJpump",
-     "symbol": "",
+     "symbol": "ACE",
      "cost_usd": 23448.0,
      "proceeds_usd": 10739.3,
      "value_usd": 0.0,
@@ -20818,7 +20818,7 @@
      "sells": 4,
      "first_buy_ts": 1761609439,
      "last_trade_ts": 1764984605,
-     "launched_ts": null,
+     "launched_ts": 1739586663,
      "first_buy_sig": "3xtBeVc2Lf9rPFzZgcpU2uuUJE9tKkJJfuRBKDqZQq7txEtC4wYmyhWQ69N4UT46ss8yVQP2BCyNR7o4vQU6UJzL",
      "verified": false,
      "flags": []
@@ -20867,13 +20867,13 @@
     "realized_usd": -48917.61,
     "gem_profit_usd": 0,
     "hit_rate": 0.0,
-    "unverified": 52,
+    "unverified": 53,
     "tx_count": 402
    },
    "reasons": [
     "0 winning trade(s) (5x+ on verified coins); needs 5",
     "67 trade(s) under 5x (worst 0.00x)",
-    "52 trade(s) in coins Jupiter has not verified"
+    "53 trade(s) in coins Jupiter has not verified"
    ],
    "flags": [],
    "notes": [
@@ -20952,7 +20952,7 @@
     },
     {
      "mint": "3aqXuwp6HuVXs9vdD9Gpg4dzJaUx443RjK7GXzphpump",
-     "symbol": "",
+     "symbol": "FRANK",
      "cost_usd": 5000.0,
      "proceeds_usd": 3815.12,
      "value_usd": 0.0,
@@ -20962,7 +20962,7 @@
      "sells": 1,
      "first_buy_ts": 1785269506,
      "last_trade_ts": 1785273043,
-     "launched_ts": null,
+     "launched_ts": 1785240236,
      "first_buy_sig": "4dDSv79L5yMGgirUsynt37p5KeSeHDH12J3zPbEZJZcxpLwhGi6Wzyvd1WHQbSxKJUTTpGdV1A18PkZaaBgAg9kb",
      "verified": false,
      "flags": []
@@ -21071,7 +21071,7 @@
     },
     {
      "mint": "2TfSKMphshQ8zFLMJuGsw2iotSdGHLhYYPM4uy1opump",
-     "symbol": "",
+     "symbol": "FOLD",
      "cost_usd": 6000.0,
      "proceeds_usd": 177.04,
      "value_usd": 0.0,
@@ -21081,14 +21081,14 @@
      "sells": 1,
      "first_buy_ts": 1777518153,
      "last_trade_ts": 1785871567,
-     "launched_ts": null,
+     "launched_ts": 1770768113,
      "first_buy_sig": "4owovTsgR5ixWe2V3DrAF3SpmFcAhfqQscYych5Qf3AkKJhCdJRSufrnktYC2i718GwM65cHFDWquVJi2RPLqdze",
      "verified": false,
      "flags": []
     },
     {
      "mint": "E8syR4zsgQG2zo9YyiyfX4ujubByR4z6qj9stjASpump",
-     "symbol": "STJUDE",
+     "symbol": "",
      "cost_usd": 3000.0,
      "proceeds_usd": 2609.94,
      "value_usd": 0.0,
@@ -21098,7 +21098,7 @@
      "sells": 1,
      "first_buy_ts": 1777497510,
      "last_trade_ts": 1777498002,
-     "launched_ts": 1777485236,
+     "launched_ts": null,
      "first_buy_sig": "j7P9nG3zB9JZk9X2AammTBa3k1TXaVtRqbAP1RDXmswG1uQXspiBpykUPZTQxwdVLSzPeqMtokgLmVRVAhE3qbm",
      "verified": false,
      "flags": []
@@ -21258,7 +21258,7 @@
     },
     {
      "mint": "HBsbZz9hvxzi3EnCYWLLwvMPWgV4aeC74mEdvTg9bonk",
-     "symbol": "MACROHARD",
+     "symbol": "",
      "cost_usd": 1200.0,
      "proceeds_usd": 560.76,
      "value_usd": 0.0,
@@ -21268,7 +21268,7 @@
      "sells": 1,
      "first_buy_ts": 1773242266,
      "last_trade_ts": 1773247776,
-     "launched_ts": 1752444788,
+     "launched_ts": null,
      "first_buy_sig": "2zC7yigERYKG1Z2Sv3QCyjtnjaEJBZ8QeorRAyugJvxsnPkXRqrJBY2dn32xTgRwR57gN2H8pZ5gpkDUYpSAstxm",
      "verified": false,
      "flags": []
@@ -21326,7 +21326,7 @@
     },
     {
      "mint": "EtL967sgMgeDDSUrNhtQrbhe4T92idzqf4VuA6H7uGfQ",
-     "symbol": "",
+     "symbol": "MAYA",
      "cost_usd": 4000.0,
      "proceeds_usd": 4393.54,
      "value_usd": 0.0,
@@ -21336,14 +21336,14 @@
      "sells": 1,
      "first_buy_ts": 1771289419,
      "last_trade_ts": 1771298249,
-     "launched_ts": null,
+     "launched_ts": 1771287831,
      "first_buy_sig": "647sqj3QbmeW18TUSJo76d9qfaLm7A7tcp3cihY4NTML3YpeBFXnbztS3cJDz6fcMRY6Ju3ew6uj3eW5owmi18eQ",
      "verified": false,
      "flags": []
     },
     {
      "mint": "vg22WXeS483q1vsNgPwuE4iWdVbhVEw3MqSXTJNpump",
-     "symbol": "Seedance",
+     "symbol": "",
      "cost_usd": 2000.0,
      "proceeds_usd": 590.46,
      "value_usd": 0.0,
@@ -21353,14 +21353,14 @@
      "sells": 1,
      "first_buy_ts": 1770873478,
      "last_trade_ts": 1771258932,
-     "launched_ts": 1770535763,
+     "launched_ts": null,
      "first_buy_sig": "mpdU1Dfgf34H2ihjakSnZs8snhd3iLhfbJzMY8ngNvN7vwH6MLVXWy14mHepBZtu4iESu6KpR44EuNRYgVwa37S",
      "verified": false,
      "flags": []
     },
     {
      "mint": "9AyLH5Puifc7v9MkTgA36JabS4wiVTEZ3aEPeNoTpump",
-     "symbol": "",
+     "symbol": "CORTISOL",
      "cost_usd": 1200.0,
      "proceeds_usd": 1117.57,
      "value_usd": 0.0,
@@ -21370,14 +21370,14 @@
      "sells": 1,
      "first_buy_ts": 1770579227,
      "last_trade_ts": 1770579268,
-     "launched_ts": null,
+     "launched_ts": 1768268737,
      "first_buy_sig": "4Q84ogVmvvFeN67tn5peA9TgCtYKFTroLBMugVJQjkHHPK6YfR4jjgiAF2dN4aSXXu2AcWoTsUaE5evHBGeVST99",
      "verified": false,
      "flags": []
     },
     {
      "mint": "CFB4Ff7W87uN9Gf2DSj63L7prZycJvzQeg1MbGxwBcqC",
-     "symbol": "",
+     "symbol": "BLOWFISH",
      "cost_usd": 7000.0,
      "proceeds_usd": 2828.36,
      "value_usd": 0.0,
@@ -21387,14 +21387,14 @@
      "sells": 2,
      "first_buy_ts": 1770407128,
      "last_trade_ts": 1771266412,
-     "launched_ts": null,
+     "launched_ts": 1770235102,
      "first_buy_sig": "2ysiPbLgp8fZxJMoyVpSw98hGgQ7CdAmJW4oEcB3NhvDGA1yiU6NKfYX44BZocKDPtLjsNVVpKihx1Wt6tzpj9CA",
      "verified": false,
      "flags": []
     },
     {
      "mint": "73qWYYtJCNmbPbQuVMyAMPXH7Kmmx6okupT8J2W4pump",
-     "symbol": "",
+     "symbol": "PEACE",
      "cost_usd": 3000.0,
      "proceeds_usd": 1962.58,
      "value_usd": 0.0,
@@ -21404,7 +21404,7 @@
      "sells": 1,
      "first_buy_ts": 1770090504,
      "last_trade_ts": 1770090700,
-     "launched_ts": null,
+     "launched_ts": 1769960219,
      "first_buy_sig": "2wLuv14hLpiXCXK2CvRLRkcgTsrJuWJ22i6uhYG3zT7syLn15WhseEJrenfLgXPmDXUg1cMt2K5gTWKWU87RrLAj",
      "verified": false,
      "flags": []
@@ -21547,7 +21547,7 @@
     },
     {
      "mint": "8116V1BW9zaXUM6pVhWVaAduKrLcEBi3RGXedKTrBAGS",
-     "symbol": "",
+     "symbol": "GSD",
      "cost_usd": 5000.0,
      "proceeds_usd": 1846.93,
      "value_usd": 0.0,
@@ -21557,9 +21557,9 @@
      "sells": 1,
      "first_buy_ts": 1769035969,
      "last_trade_ts": 1769312976,
-     "launched_ts": null,
+     "launched_ts": 1768609857,
      "first_buy_sig": "3VRCP3U5SCwjtKo3QA66HnEqCMQPGJVcUEmXYFMREnQ5RUyKXDVX5UPC3jSD53yfSVSHJwYXs7C1Jk4VPqiRxUxM",
-     "verified": true,
+     "verified": false,
      "flags": []
     },
     {
@@ -21581,7 +21581,7 @@
     },
     {
      "mint": "CZRsbB6BrHsAmGKeoxyfwzCyhttXvhfEukXCWnseBAGS",
-     "symbol": "",
+     "symbol": "AGENTTOWN",
      "cost_usd": 5000.0,
      "proceeds_usd": 9477.93,
      "value_usd": 0.0,
@@ -21591,7 +21591,7 @@
      "sells": 3,
      "first_buy_ts": 1768849427,
      "last_trade_ts": 1768855091,
-     "launched_ts": null,
+     "launched_ts": 1768695256,
      "first_buy_sig": "3ucBiPxEufdhFZVsMt89uMpi8bhBGS4ckX35xtgd4SzRcL4zCcArXdGTHHHjdndg8rKumyrNeqrgkCc4H9b3P5ao",
      "verified": false,
      "flags": []
@@ -21666,7 +21666,7 @@
     },
     {
      "mint": "EwEJ5R1im54MowvsGwYUkyfWRMV1qcRL21PumVd4pump",
-     "symbol": "",
+     "symbol": "2016",
      "cost_usd": 3000.0,
      "proceeds_usd": 2894.11,
      "value_usd": 0.0,
@@ -21676,7 +21676,7 @@
      "sells": 1,
      "first_buy_ts": 1768517094,
      "last_trade_ts": 1768530589,
-     "launched_ts": null,
+     "launched_ts": 1755735234,
      "first_buy_sig": "tq39jKcDZa3VmYhXeJrNu6WLgCwE3nv2zd7Q3ELkuGmoJrEwmeWaUT6ih5nUZbVso6ziWEgLXBe2Fkd3E943wjq",
      "verified": false,
      "flags": []
@@ -21870,7 +21870,7 @@
     },
     {
      "mint": "8HxW9Z3YT1gXgQcgEynZaHsEpLXRgijGfMYCkaAypump",
-     "symbol": "",
+     "symbol": "mec",
      "cost_usd": 6500.0,
      "proceeds_usd": 5058.01,
      "value_usd": 0.0,
@@ -21880,7 +21880,7 @@
      "sells": 5,
      "first_buy_ts": 1762375754,
      "last_trade_ts": 1762380112,
-     "launched_ts": null,
+     "launched_ts": 1762375389,
      "first_buy_sig": "28aiuaywvT7wgJQ7at2pzh71ecGz11KWVP7X6vHYUxDdkjsufiGhwiaUiZhJCYdUhk8LzatSuND39shC7oe7oHt3",
      "verified": false,
      "flags": []
@@ -21921,7 +21921,7 @@
     "open": 1,
     "gems": 0,
     "wins_min_multiple": 1,
-    "losses": 28,
+    "losses": 27,
     "min_multiple": 0.03,
     "median_multiple": 0.93,
     "best_multiple": 5.13,
@@ -21930,7 +21930,7 @@
     "gem_profit_usd": 0,
     "hit_rate": 0.0,
     "unverified": 31,
-    "tx_count": 1748
+    "tx_count": 1763
    },
    "reasons": [
     "0 winning trade(s) (5x+ on verified coins); needs 5",
@@ -21941,7 +21941,7 @@
     "1 weak trade(s) were coins sent to another wallet, so not necessarily real losses"
    ],
    "notes": [
-    "735 trade(s) placed through the Fomo app"
+    "736 trade(s) placed through the Fomo app"
    ],
    "data_source": "helius",
    "gems": [],
@@ -21951,9 +21951,9 @@
      "symbol": "GABOX",
      "cost_usd": 605.0,
      "proceeds_usd": 0.0,
-     "value_usd": 981.96,
+     "value_usd": 655.98,
      "profit_usd": -605.0,
-     "multiple": 1.62,
+     "multiple": 1.08,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1794077934,
@@ -21968,9 +21968,9 @@
      "symbol": "TRCH1",
      "cost_usd": 1502.3,
      "proceeds_usd": 0.0,
-     "value_usd": 1453.65,
+     "value_usd": 1540.1,
      "profit_usd": -1502.3,
-     "multiple": 0.97,
+     "multiple": 1.03,
      "buys": 1,
      "sells": 0,
      "first_buy_ts": 1793851788,
@@ -21985,9 +21985,9 @@
      "symbol": "RAWR",
      "cost_usd": 14757.79,
      "proceeds_usd": 0.0,
-     "value_usd": 18195.99,
+     "value_usd": 17921.62,
      "profit_usd": -14757.79,
-     "multiple": 1.23,
+     "multiple": 1.21,
      "buys": 8,
      "sells": 0,
      "first_buy_ts": 1793851710,
@@ -22101,7 +22101,7 @@
     },
     {
      "mint": "WxjEodhExz9kX5yhSrbPpm5VkmNLpfxgW8ExDxvpump",
-     "symbol": "Noah",
+     "symbol": "",
      "cost_usd": 500.0,
      "proceeds_usd": 21.45,
      "value_usd": 0.0,
@@ -22111,7 +22111,7 @@
      "sells": 1,
      "first_buy_ts": 1783381967,
      "last_trade_ts": 1783382133,
-     "launched_ts": 1783381870,
+     "launched_ts": null,
      "first_buy_sig": "2qT4gxsCbU7qp8fMFfjP4x5LSjLnoHmkNeiGoL6rf2kRUR8BNWYXnDTCiomSuUECHnTMt1LwPZdKutXLpa8iEKSU",
      "verified": false,
      "flags": []
@@ -22135,7 +22135,7 @@
     },
     {
      "mint": "J7nejjwUAxiSbX3DpvTkURscfFSrK33saNoU2ovHpump",
-     "symbol": "CASHBACK",
+     "symbol": "",
      "cost_usd": 1121.67,
      "proceeds_usd": 2269.87,
      "value_usd": 0.0,
@@ -22145,7 +22145,7 @@
      "sells": 3,
      "first_buy_ts": 1782231438,
      "last_trade_ts": 1783482338,
-     "launched_ts": 1781984125,
+     "launched_ts": null,
      "first_buy_sig": "DUXVPjwLJvcUJoABYH4MN3R4bysaN55yQq3AWrKmb31iV6b9YW1cvAiL21Vdc52BvtYrJuK69LW3FrdcnaagcaU",
      "verified": false,
      "flags": []
@@ -22169,7 +22169,7 @@
     },
     {
      "mint": "AZwo2yaRbnxspUwSg4K11bHt89QsqyW4gKfV2wNQdaos",
-     "symbol": "",
+     "symbol": "DRINK",
      "cost_usd": 1001.92,
      "proceeds_usd": 1154.24,
      "value_usd": 0.0,
@@ -22179,7 +22179,7 @@
      "sells": 1,
      "first_buy_ts": 1777949422,
      "last_trade_ts": 1779413249,
-     "launched_ts": null,
+     "launched_ts": 1749671155,
      "first_buy_sig": "2htJyP5DT2cucktGRJ2CbTi5uqf579cMfKj7bK4y7geEJXwhqkhAaLrqXP6jcXucFQp4JvfkaSxxMwrhPAM6eXzH",
      "verified": true,
      "flags": []
@@ -22203,7 +22203,7 @@
     },
     {
      "mint": "AoKgjNMumZ2JjHFaGnrcKSnuTTRqrHWdKHhPMhzjpump",
-     "symbol": "JIGGLYPUFF",
+     "symbol": "",
      "cost_usd": 2029.33,
      "proceeds_usd": 1639.89,
      "value_usd": 0.0,
@@ -22213,14 +22213,14 @@
      "sells": 2,
      "first_buy_ts": 1777042130,
      "last_trade_ts": 1779413256,
-     "launched_ts": 1764540821,
+     "launched_ts": null,
      "first_buy_sig": "4jSfDdTtrs6SYJYf3GVBBPn6xhpsFN2ZAbYSmEwaQUHSfr8tdcL9haJ9d61Moq6NiGSFgzxiF3ogZBXmpLE5qwiD",
      "verified": false,
      "flags": []
     },
     {
      "mint": "7newJUjH7LGsGPDfEq83gxxy2d1q39A84SeUKha8pump",
-     "symbol": "ATELIER",
+     "symbol": "",
      "cost_usd": 1374.44,
      "proceeds_usd": 2469.46,
      "value_usd": 0.0,
@@ -22230,14 +22230,14 @@
      "sells": 9,
      "first_buy_ts": 1776138695,
      "last_trade_ts": 1785262133,
-     "launched_ts": 1771957022,
+     "launched_ts": null,
      "first_buy_sig": "5yPe132L9LwXUm9ijNVCAp7rzDGas9GmZfWdUxLjhhSPkAbNnr9PLorNKmMTCFoCidY7aejVMwBcR9apegPQokFp",
      "verified": false,
      "flags": []
     },
     {
      "mint": "5Aru7v34QY1F69aWuY3mXKf5oxpg2CZNYcmo9hvPpump",
-     "symbol": "",
+     "symbol": "SCAN",
      "cost_usd": 6092.71,
      "proceeds_usd": 4506.07,
      "value_usd": 0.0,
@@ -22247,7 +22247,7 @@
      "sells": 2,
      "first_buy_ts": 1775681945,
      "last_trade_ts": 1777724512,
-     "launched_ts": null,
+     "launched_ts": 1772062768,
      "first_buy_sig": "4PGK5f4TWe1NrvLuZZ5tja4dzD44hLCLv8wBRBjnK3fmmhP3HyjynMHcGtvCfwQ1pHcNdUprg31Sd7KRS2ai8kNt",
      "verified": true,
      "flags": []
@@ -22407,7 +22407,7 @@
     },
     {
      "mint": "9NrkmoqwF1rBjsfKZvn7ngCy6zqvb8A6A5RfTvR2pump",
-     "symbol": "",
+     "symbol": "SS",
      "cost_usd": 7305.55,
      "proceeds_usd": 2629.53,
      "value_usd": 0.0,
@@ -22417,7 +22417,7 @@
      "sells": 6,
      "first_buy_ts": 1768976587,
      "last_trade_ts": 1773361908,
-     "launched_ts": null,
+     "launched_ts": 1767319060,
      "first_buy_sig": "5xaoZzaZStH3gQxyU12G6eB4P93iEC3mC9HtDRLJg2Uf7txExvVfTeFmQQWsTXHC4JU6vMnNpmeJw3duEaZgzDnD",
      "verified": false,
      "flags": []
@@ -22478,9 +22478,9 @@
      "symbol": "TCG",
      "cost_usd": 17142.62,
      "proceeds_usd": 7360.24,
-     "value_usd": 11666.64,
+     "value_usd": 12449.28,
      "profit_usd": -9782.38,
-     "multiple": 1.11,
+     "multiple": 1.16,
      "buys": 13,
      "sells": 12,
      "first_buy_ts": 1768360565,
@@ -22519,7 +22519,7 @@
      "sells": 1,
      "first_buy_ts": 1765469235,
      "last_trade_ts": 1765830717,
-     "launched_ts": 1776408638,
+     "launched_ts": 1787899000,
      "first_buy_sig": "5LrKMkWwagBysFKSW59E4AeqsPMh5TSHwcyXnsj3TyNBY91uw2PwuDYCwb2uvfquCJ7d9NAuLdgMeGMR14EgFqph",
      "verified": true,
      "flags": []
@@ -22543,7 +22543,7 @@
     },
     {
      "mint": "J4UBm5kvMSHeUwbNgZW4ySpCHBvS7LXknZ7rqQR9pump",
-     "symbol": "KHOLE",
+     "symbol": "",
      "cost_usd": 1000.0,
      "proceeds_usd": 879.56,
      "value_usd": 0.0,
@@ -22553,14 +22553,14 @@
      "sells": 1,
      "first_buy_ts": 1760715011,
      "last_trade_ts": 1760716969,
-     "launched_ts": 1759761735,
+     "launched_ts": null,
      "first_buy_sig": "5NaKLfZ62FAUjioKpqR4Tjws3iKrbNhcuc7EZwchAeYDwTq884HKVm78N83PVe6ri1by7STpJyN6PLrH22hiLxqW",
      "verified": false,
      "flags": []
     },
     {
      "mint": "j1MueUJvnJwRCKzgEQdJjSibhV5oy1uoLZDNsZ3time",
-     "symbol": "raj",
+     "symbol": "",
      "cost_usd": 2000.0,
      "proceeds_usd": 1366.84,
      "value_usd": 0.0,
@@ -22570,7 +22570,7 @@
      "sells": 1,
      "first_buy_ts": 1760469557,
      "last_trade_ts": 1762027802,
-     "launched_ts": 1740515687,
+     "launched_ts": null,
      "first_buy_sig": "5pZv3pKqUxD6am9Eq6uQidHHf65z6e3qwek78hLk7XpNQsK8dmAWAqC6yJ74iPXeMTYnDKe2SEURERKRJt1YAaya",
      "verified": false,
      "flags": []
@@ -22662,7 +22662,7 @@
     },
     {
      "mint": "HAs8hvTB8ZH6dBG26KQGik4fxitNYi41jnYd49bvtime",
-     "symbol": "Ansem",
+     "symbol": "",
      "cost_usd": 6000.0,
      "proceeds_usd": 4521.78,
      "value_usd": 0.0,
@@ -22672,7 +22672,7 @@
      "sells": 4,
      "first_buy_ts": 1760385969,
      "last_trade_ts": 1762027819,
-     "launched_ts": 1742963438,
+     "launched_ts": null,
      "first_buy_sig": "UL1gqTuiD4cPAad2CZDUmf2isjf14wom6p4gcLXAtKcT5ijW5jjrmEiyYu9bvaNDFqW7sdXPFsQEzD7iCcijq5c",
      "verified": true,
      "flags": []
@@ -22716,9 +22716,9 @@
      "symbol": "PUMPCADE",
      "cost_usd": 34548.64,
      "proceeds_usd": 34021.0,
-     "value_usd": 107035.71,
+     "value_usd": 94097.9,
      "profit_usd": -527.64,
-     "multiple": 4.08,
+     "multiple": 3.71,
      "buys": 8,
      "sells": 20,
      "first_buy_ts": 1759756830,
@@ -22755,13 +22755,13 @@
     "realized_usd": -65633.64,
     "gem_profit_usd": 0,
     "hit_rate": 0.0,
-    "unverified": 51,
-    "tx_count": 1317
+    "unverified": 53,
+    "tx_count": 1326
    },
    "reasons": [
     "0 winning trade(s) (5x+ on verified coins); needs 5",
     "64 trade(s) under 5x (worst 0.00x)",
-    "51 trade(s) in coins Jupiter has not verified"
+    "53 trade(s) in coins Jupiter has not verified"
    ],
    "flags": [
     "2 weak trade(s) were coins sent to another wallet, so not necessarily real losses"
@@ -22859,7 +22859,7 @@
     },
     {
      "mint": "3NVRZqJ43axJ7Jy8qtADxjFzgk8s2o5zaoLfQWRaAh7A",
-     "symbol": "LAB",
+     "symbol": "",
      "cost_usd": 8300.0,
      "proceeds_usd": 938.5,
      "value_usd": 0.01,
@@ -22869,7 +22869,7 @@
      "sells": 1,
      "first_buy_ts": 1777759265,
      "last_trade_ts": 1778527204,
-     "launched_ts": 1758388156,
+     "launched_ts": null,
      "first_buy_sig": "2qsYqSF2eK8xvymHeZ69NiBraWBj5gYzhKfZUfXrG5wnPHgqrjAYPXqDokELRN1p35y75mepbY4rrMg6Nwg44DFj",
      "verified": false,
      "flags": []
@@ -22910,7 +22910,7 @@
     },
     {
      "mint": "5TbDn1dFEcUTJp69Fxnu5wbwNec6LmoK42Sr5mmNmeta",
-     "symbol": "SUPER",
+     "symbol": "",
      "cost_usd": 1500.0,
      "proceeds_usd": 508.81,
      "value_usd": 0.0,
@@ -22920,7 +22920,7 @@
      "sells": 3,
      "first_buy_ts": 1772786553,
      "last_trade_ts": 1777411569,
-     "launched_ts": 1772727566,
+     "launched_ts": null,
      "first_buy_sig": "q28EUUgQMTu22sMVmbi9v5kQiCsEzj8JqRsM5bE5bnAknW5cXe63jNPTw9xY8TdRUHrxBjRf7ge1tXr8KJny8bg",
      "verified": true,
      "flags": []
@@ -23029,7 +23029,7 @@
     },
     {
      "mint": "BqYJQ6hVYxYzGrSbUyXy52oP6aFduq1PRxUVSrFtuDgz",
-     "symbol": "",
+     "symbol": "ELON",
      "cost_usd": 500.0,
      "proceeds_usd": 552.79,
      "value_usd": 0.0,
@@ -23039,7 +23039,7 @@
      "sells": 3,
      "first_buy_ts": 1769731472,
      "last_trade_ts": 1769733506,
-     "launched_ts": null,
+     "launched_ts": 1718004365,
      "first_buy_sig": "5eTQfReok9ssQPpjXzNnYjeskxowKwq4RsszV34u3ovcFzYfjhrHxvDCZTFP5J1gGS5mPuK4LJgbjAYBJVbpdkpD",
      "verified": false,
      "flags": []
@@ -23211,7 +23211,7 @@
      "last_trade_ts": 1769465672,
      "launched_ts": 1769446628,
      "first_buy_sig": "5ycpmgtKfnEjRSHDDfsCCmHKpVErdKE2JTvjxiQ4mu3ja9C88oUNMPTau9hMsZUU3yxq2FQqwhpnqS3oVmahvESZ",
-     "verified": true,
+     "verified": false,
      "flags": []
     },
     {
@@ -23233,7 +23233,7 @@
     },
     {
      "mint": "7MDApufGNAKDDTcM3hrUpUfZ8jcaXdaoSZy1sQdRpump",
-     "symbol": "",
+     "symbol": "Dale",
      "cost_usd": 11866.57,
      "proceeds_usd": 7253.35,
      "value_usd": 0.0,
@@ -23243,7 +23243,7 @@
      "sells": 11,
      "first_buy_ts": 1769299183,
      "last_trade_ts": 1769319554,
-     "launched_ts": null,
+     "launched_ts": 1769274714,
      "first_buy_sig": "5QbBwerdjwEtM4yYCNsKEBRmNVzuwA5FZMX6fMn93yYAuND7EdDp7gvtGyb3nLoYVhVWVPsZENjJLbNVDCgYMo77",
      "verified": false,
      "flags": []
@@ -23335,7 +23335,7 @@
     },
     {
      "mint": "E1dtJs9uY31fVJKyeekBcQD5QKw4hJcTjbYjzm3eGusB",
-     "symbol": "",
+     "symbol": "Lola",
      "cost_usd": 1462.48,
      "proceeds_usd": 2391.91,
      "value_usd": 0.0,
@@ -23345,7 +23345,7 @@
      "sells": 4,
      "first_buy_ts": 1768887804,
      "last_trade_ts": 1769292557,
-     "launched_ts": null,
+     "launched_ts": 1768883862,
      "first_buy_sig": "2Wu2FU1npc1TrzqYadK6EvfvYgy6rtqcwxWkgMoK6H1zV4RaJz4sdDEHFxBwon9Fd45wiRK5jkFsoD74kFc4MzSh",
      "verified": false,
      "flags": []
@@ -23386,7 +23386,7 @@
     },
     {
      "mint": "J948jWGHJsf13FWuZxWdajRuBXxPpgLy1hMCzisvBAGS",
-     "symbol": "NPM",
+     "symbol": "",
      "cost_usd": 3253.91,
      "proceeds_usd": 1714.46,
      "value_usd": 0.0,
@@ -23396,7 +23396,7 @@
      "sells": 1,
      "first_buy_ts": 1768880626,
      "last_trade_ts": 1768880952,
-     "launched_ts": 1768863044,
+     "launched_ts": null,
      "first_buy_sig": "NCdmHYR1JEkoEAGRXD5QquVYYjQZNVNZ4CjRkxXiQuUdva8wGCqkSavDKUNwXAxpcyuZKUEmAe9MW2K5rHDdiRr",
      "verified": false,
      "flags": []
@@ -23420,7 +23420,7 @@
     },
     {
      "mint": "79VXvEt7xSPhvQggeJ75UVqD41yXJwBS44zrstreBAGS",
-     "symbol": "NOCODE",
+     "symbol": "",
      "cost_usd": 4809.31,
      "proceeds_usd": 3887.43,
      "value_usd": 0.0,
@@ -23430,7 +23430,7 @@
      "sells": 4,
      "first_buy_ts": 1768782665,
      "last_trade_ts": 1768786129,
-     "launched_ts": 1768773644,
+     "launched_ts": null,
      "first_buy_sig": "2BKr4sX5rCYEuV5wtzVo9YjBPJ8QAL2yJyUCX9Y5CwAoNLzCUv2keu1r6qMiMGTULveB5yU2u8kwtJQPDR3omLBR",
      "verified": false,
      "flags": []
@@ -23449,12 +23449,12 @@
      "last_trade_ts": 1768802280,
      "launched_ts": 1767595076,
      "first_buy_sig": "2jy6GdWKstYFafJrqNrrJSuAhm4mhHsHQTBz5GFVFvEiKMnh9i1YYbj3RwDUSAWu2c6XTYe4NiTRxGD6vEfsP2bU",
-     "verified": true,
+     "verified": false,
      "flags": []
     },
     {
      "mint": "55DJNrN4rM7euSZSsaYfsEHGBQRcznibwiq1fR2HBAGS",
-     "symbol": "CURSED",
+     "symbol": "",
      "cost_usd": 293.03,
      "proceeds_usd": 202.67,
      "value_usd": 0.0,
@@ -23464,7 +23464,7 @@
      "sells": 1,
      "first_buy_ts": 1768614772,
      "last_trade_ts": 1768685621,
-     "launched_ts": 1768562508,
+     "launched_ts": null,
      "first_buy_sig": "3DtZc8e1U7Km2nRfhEwSCYCgPtyYS4qbYdA9gpzw9RTzzx3VV1hKdfVE163TFib626ny71CFJSeJiSVatETNH6aD",
      "verified": false,
      "flags": []
@@ -23709,7 +23709,7 @@
     },
     {
      "mint": "CDYx1sfYY25fTKExf5YPzAscBSBthj6bV4YAQtKBpump",
-     "symbol": "LOWKENUINE",
+     "symbol": "",
      "cost_usd": 406.45,
      "proceeds_usd": 276.34,
      "value_usd": 0.0,
@@ -23719,7 +23719,7 @@
      "sells": 1,
      "first_buy_ts": 1765322939,
      "last_trade_ts": 1765385513,
-     "launched_ts": 1764798430,
+     "launched_ts": null,
      "first_buy_sig": "4kic7HJ7p6E9vVpsEjd2h3iSiDRR9HUigamzTH9iziCFcDVznpJfFNh8ecfPbjK8DxA29JmrsSF5JehGBSrFRudN",
      "verified": false,
      "flags": []
@@ -23760,7 +23760,7 @@
     },
     {
      "mint": "6PDR3o1KGccEt3m8XfkoRvkBfjkkkwuQz5gtLxGApump",
-     "symbol": "",
+     "symbol": "Altcoin",
      "cost_usd": 250.0,
      "proceeds_usd": 177.41,
      "value_usd": 0.0,
@@ -23770,7 +23770,7 @@
      "sells": 1,
      "first_buy_ts": 1764993526,
      "last_trade_ts": 1765061936,
-     "launched_ts": null,
+     "launched_ts": 1763243454,
      "first_buy_sig": "4hMpxBna7KvDsVvVRSxUuBMQ1bG2TyMqx1pL6k1V4j6JUrHMrKDAfM18bfaZ5pMRSizwJs2hGW4DZdZyqu99kspi",
      "verified": false,
      "flags": []
@@ -23820,7 +23820,7 @@
     "gem_profit_usd": 0,
     "hit_rate": 0.0,
     "unverified": 11,
-    "tx_count": 2139
+    "tx_count": 2148
    },
    "reasons": [
     "0 winning trade(s) (5x+ on verified coins); needs 5",
@@ -24091,7 +24091,7 @@
     },
     {
      "mint": "GEuuznWpn6iuQAJxLKQDVGXPtrqXHNWTk3gZqqvJpump",
-     "symbol": "",
+     "symbol": "ACE",
      "cost_usd": 60000.0,
      "proceeds_usd": 49508.8,
      "value_usd": 0.0,
@@ -24101,7 +24101,7 @@
      "sells": 6,
      "first_buy_ts": 1761663654,
      "last_trade_ts": 1761763108,
-     "launched_ts": null,
+     "launched_ts": 1739586663,
      "first_buy_sig": "3mjK4J3ZrDXpD1qxkasBzb5Kem8XGkFiqsoi5uDtZn1yfKT8YxRGr9XfFVWcc1UgsjgMRmZqLZK2cUEwJPLxmKFc",
      "verified": false,
      "flags": []
@@ -24142,7 +24142,7 @@
     },
     {
      "mint": "E7NgL19JbN8BhUDgWjkH8MtnbhJoaGaWJqosxZZepump",
-     "symbol": "PAYAI",
+     "symbol": "",
      "cost_usd": 227500.0,
      "proceeds_usd": 127506.84,
      "value_usd": 0.0,
@@ -24152,7 +24152,7 @@
      "sells": 5,
      "first_buy_ts": 1761577601,
      "last_trade_ts": 1761813496,
-     "launched_ts": 1741491135,
+     "launched_ts": null,
      "first_buy_sig": "5TAhnPrvv3nQBa4ofwogNKRtUm2k4mKhh1Ej8ZLzvQyCYdSnKSZu6cBt8GEVm4sHyprseKnR7YozQMbWn3nQDbSn",
      "verified": false,
      "flags": []
@@ -24312,7 +24312,7 @@
     },
     {
      "mint": "EXoMAHnw2Gw5fXJTektedLJDVn9vn8tLTEQX7gHccQKR",
-     "symbol": "EXO",
+     "symbol": "",
      "cost_usd": 20000.0,
      "proceeds_usd": 15955.45,
      "value_usd": 0.0,
@@ -24322,7 +24322,7 @@
      "sells": 2,
      "first_buy_ts": 1757767669,
      "last_trade_ts": 1757799906,
-     "launched_ts": 1767125854,
+     "launched_ts": null,
      "first_buy_sig": "45vVeRcCdpxjx1xNnw5DJk8zEMG9cyDFj1SRPF2vahT7MdvoQctyqp67xngAjtttXfMzJrLLq1R9NbS888jsaBpo",
      "verified": false,
      "flags": []
@@ -24533,7 +24533,7 @@
     },
     {
      "mint": "ENfpbQUM5xAnNP8ecyEQGFJ6KwbuPjMwv7ZjR29cDuAb",
-     "symbol": "",
+     "symbol": "GOONC",
      "cost_usd": 32182.72,
      "proceeds_usd": 15545.74,
      "value_usd": 0.0,
@@ -24543,7 +24543,7 @@
      "sells": 4,
      "first_buy_ts": 1747143794,
      "last_trade_ts": 1747456176,
-     "launched_ts": null,
+     "launched_ts": 1747102867,
      "first_buy_sig": "2mszBPzFFKWiBdPXFTEPCZQQe3758tGvsBSWNvVzqYY58Fjz5hiHBoB1djnoUSMKNtxguBhWoKeBWBzudAZRZFFW",
      "verified": false,
      "flags": []
@@ -24643,7 +24643,7 @@
     },
     {
      "mint": "CRaZHiaKgvEyykTjftkx4gMUeCA44bJtQ2HC27LBBWxh",
-     "symbol": "",
+     "symbol": "buck",
      "cost_usd": 256.6,
      "proceeds_usd": 31.99,
      "value_usd": 0.0,
@@ -24653,7 +24653,7 @@
      "sells": 1,
      "first_buy_ts": 1787858099,
      "last_trade_ts": 1787859232,
-     "launched_ts": null,
+     "launched_ts": 1787669381,
      "first_buy_sig": "3NJyZdKhZct23okv7TJRVLC5dPRL9DNVckvruVhz8dx4Eq5JC7uduLeKKh1yacvBDxp7xEZyxMkY18CSgB18jRjV",
      "verified": false,
      "flags": []
@@ -24677,7 +24677,7 @@
     },
     {
      "mint": "2vdtGEGFjyiUc465ZsEzTgSyAQmrAbgthf5HZoHxniga",
-     "symbol": "BULLCALL",
+     "symbol": "",
      "cost_usd": 2003.71,
      "proceeds_usd": 44.58,
      "value_usd": 0.0,
@@ -24687,14 +24687,14 @@
      "sells": 1,
      "first_buy_ts": 1786059171,
      "last_trade_ts": 1786208769,
-     "launched_ts": 1786047296,
+     "launched_ts": null,
      "first_buy_sig": "48aCeKkzsNaccERdxreeFas6Y6S5auP5oSCx64AS5uVebEN3wYe7owKpFZYDAspRqX7dnaAcPqjJvCSXaJ3Eq6Y1",
      "verified": false,
      "flags": []
     },
     {
      "mint": "5xhJC2F2q8Mgk1DYaMBTxNY8t8xDE7cdgTcv5cevpump",
-     "symbol": "TIT",
+     "symbol": "",
      "cost_usd": 200.0,
      "proceeds_usd": 98.0,
      "value_usd": 0.0,
@@ -24704,14 +24704,14 @@
      "sells": 1,
      "first_buy_ts": 1784989760,
      "last_trade_ts": 1785342946,
-     "launched_ts": 1784835457,
+     "launched_ts": null,
      "first_buy_sig": "38skwvLkoRCZcELQgEGWydoKUtqcF5Lmg3E95XfKs4AA5Gr4bwJzm6M56VF26j7vTbP7zXQwaeJbJtmNjib6PBiW",
      "verified": false,
      "flags": []
     },
     {
      "mint": "AKXbMZ6HWnFHrnypuW66WGWfoKsdPbtT3aWN82V4fomo",
-     "symbol": "",
+     "symbol": "FOMO",
      "cost_usd": 1000.0,
      "proceeds_usd": 91.46,
      "value_usd": 0.0,
@@ -24721,7 +24721,7 @@
      "sells": 1,
      "first_buy_ts": 1784727014,
      "last_trade_ts": 1784738976,
-     "launched_ts": null,
+     "launched_ts": 1784725796,
      "first_buy_sig": "5aNg2RjVqHc6MZeSySMDCKVLGgpyu36bLHMjEXqSYJPo1HsvrqM5AtLw635CaBunWZZMman6ix6Vz2CiAEDKoKuh",
      "verified": false,
      "flags": []
@@ -24731,9 +24731,9 @@
      "symbol": "ZERO",
      "cost_usd": 105369.75,
      "proceeds_usd": 14507.32,
-     "value_usd": 6093.95,
+     "value_usd": 5679.72,
      "profit_usd": -90862.43,
-     "multiple": 0.2,
+     "multiple": 0.19,
      "buys": 11,
      "sells": 5,
      "first_buy_ts": 1782816189,
@@ -24747,7 +24747,7 @@
     },
     {
      "mint": "9ZkArkhhDMe19ToEUWnUiM75XWJxcTSF2vmKHM2Spump",
-     "symbol": "",
+     "symbol": "GOKHSHTEIN",
      "cost_usd": 3114.27,
      "proceeds_usd": 347.41,
      "value_usd": 0.0,
@@ -24757,14 +24757,14 @@
      "sells": 1,
      "first_buy_ts": 1782660671,
      "last_trade_ts": 1783495728,
-     "launched_ts": null,
+     "launched_ts": 1782630380,
      "first_buy_sig": "4MeELTDQUJD45jjPTsA9MuKM7EaiziCEKijtoqjVrqkkuZTixka2BJkjaimcQhFPtivDfuRbJzsAj7vo4tyucZM6",
      "verified": false,
      "flags": []
     },
     {
      "mint": "5WrhAdqrtaBqzjoPEQ4bVkukQGCmR9mrcKeeifCKpump",
-     "symbol": "Chaton",
+     "symbol": "",
      "cost_usd": 4325.97,
      "proceeds_usd": 6206.41,
      "value_usd": 0.0,
@@ -24774,14 +24774,14 @@
      "sells": 1,
      "first_buy_ts": 1781526719,
      "last_trade_ts": 1781541225,
-     "launched_ts": 1781517838,
+     "launched_ts": null,
      "first_buy_sig": "3owuoArARQRLBgV2zgmENf3L99qH2zsM8rhxAvL7F57PtPELo82nkeyjqBQ56cG4yMnjA6YHc8ZLMv7GdEwmQWGu",
      "verified": false,
      "flags": []
     },
     {
      "mint": "7kkQU6AhUadtoszttEKprirvpgBihJHPoHVczebvi7i3",
-     "symbol": "",
+     "symbol": "Chaton",
      "cost_usd": 2289.46,
      "proceeds_usd": 1906.19,
      "value_usd": 0.0,
@@ -24791,14 +24791,14 @@
      "sells": 1,
      "first_buy_ts": 1781524543,
      "last_trade_ts": 1781526707,
-     "launched_ts": null,
+     "launched_ts": 1781482669,
      "first_buy_sig": "4HQAikKqm4CbPz6sT4mBwCzvBSHoruMxWc2wnZC7c2Vr88fJKfBMK3yuCAYsmySCitHrhNf5CbUY9gbYrFpbHinE",
      "verified": false,
      "flags": []
     },
     {
      "mint": "y4JiNFzBPofqiCpuDTcVq11nhUDQoDzeK1UBCoXxF9y",
-     "symbol": "CVT",
+     "symbol": "",
      "cost_usd": 5000.0,
      "proceeds_usd": 2212.2,
      "value_usd": 0.0,
@@ -24808,7 +24808,7 @@
      "sells": 1,
      "first_buy_ts": 1779707355,
      "last_trade_ts": 1781775375,
-     "launched_ts": 1778549840,
+     "launched_ts": null,
      "first_buy_sig": "5TG2ivZ39JNZSxdZyVf4xnpNztPVoZLVTjztCNXG3LBSh8zQ1vVnQeqiPRrtjRXY7J5DbpXLfJfYTetUkLPLdhom",
      "verified": true,
      "flags": []
