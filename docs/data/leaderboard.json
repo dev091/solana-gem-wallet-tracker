@@ -1,5 +1,5 @@
 {
- "updated_at": 1794253737,
+ "updated_at": 1794281623,
  "errors": {
   "pump.fun daily": "HTTP 403 for https://frontend-api-v3.pump.fun/pnl-leaderboard?period=daily&limit=100: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA",
   "pump.fun weekly": "HTTP 403 for https://frontend-api-v3.pump.fun/pnl-leaderboard?period=weekly&limit=100: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA",
@@ -7,11 +7,11 @@
  },
  "ladders": {
   "kolscan daily": {
-   "1": 15290.3,
-   "5": 8194.3,
-   "10": 5845.1,
-   "20": 3304.5,
-   "50": 274.8
+   "1": 11374.7,
+   "5": 6772.5,
+   "10": 5354.2,
+   "20": 3319.1,
+   "50": 271.5
   }
  },
  "boards": {
@@ -19,38 +19,24 @@
    {
     "board": "kolscan daily",
     "rank": 1,
-    "wallet": "4Be9CvxqHW6BYiRAxW9Q3xu1ycTMWaL5z8NX4HR3ha7t",
-    "name": "Mitch",
-    "pnl_usd": 15290.3,
-    "pnl_sol": 176.46,
+    "wallet": "B32QbbdDAyhvUQzjcaM5j6ZVKwjCxAwGH5Xgvb9SJqnC",
+    "name": "Kadenox",
+    "pnl_usd": 11374.7,
+    "pnl_sol": 132.76,
     "realized_usd": null,
     "spent_sol": null,
     "roi_pct": null,
     "positions": null,
-    "wins": 1,
-    "losses": 0
+    "wins": 23,
+    "losses": 22
    },
    {
     "board": "kolscan daily",
     "rank": 2,
-    "wallet": "6aXFYXbFob1ZKAEDCcqZnX2vooA3TgEqDoy5dAQbeWoV",
-    "name": "Flames",
-    "pnl_usd": 12886.1,
-    "pnl_sol": 148.71,
-    "realized_usd": null,
-    "spent_sol": null,
-    "roi_pct": null,
-    "positions": null,
-    "wins": 48,
-    "losses": 60
-   },
-   {
-    "board": "kolscan daily",
-    "rank": 3,
     "wallet": "88e2kBDJoN7eQCBj2sxT15etUZ3jPNzD4ijCs1TNySWJ",
     "name": "yeekidd",
-    "pnl_usd": 11886.5,
-    "pnl_sol": 137.18,
+    "pnl_usd": 9455.8,
+    "pnl_sol": 110.36,
     "realized_usd": null,
     "spent_sol": null,
     "roi_pct": null,
@@ -60,108 +46,80 @@
    },
    {
     "board": "kolscan daily",
-    "rank": 4,
-    "wallet": "95TWoKkvv2z85EXBzd2z6NwbxH2f54AvwuCA9x3NoKep",
-    "name": "Killua",
-    "pnl_usd": 9055.8,
-    "pnl_sol": 104.51,
-    "realized_usd": null,
-    "spent_sol": null,
-    "roi_pct": null,
-    "positions": null,
-    "wins": 3,
-    "losses": 0
-   },
-   {
-    "board": "kolscan daily",
-    "rank": 5,
-    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-    "name": "ban",
-    "pnl_usd": 8194.3,
-    "pnl_sol": 94.57,
-    "realized_usd": null,
-    "spent_sol": null,
-    "roi_pct": null,
-    "positions": null,
-    "wins": 95,
-    "losses": 41
-   },
-   {
-    "board": "kolscan daily",
-    "rank": 6,
-    "wallet": "FsG3BaPmRTdSrPaivbgJsFNCCa8cPfkUtk8VLWXkHpHP",
-    "name": "Reljoo",
-    "pnl_usd": 7461.3,
-    "pnl_sol": 86.11,
-    "realized_usd": null,
-    "spent_sol": null,
-    "roi_pct": null,
-    "positions": null,
-    "wins": 15,
-    "losses": 18
-   },
-   {
-    "board": "kolscan daily",
-    "rank": 7,
-    "wallet": "J6TDXvarvpBdPXTaTU8eJbtso1PUCYKGkVtMKUUY8iEa",
-    "name": "Pain",
-    "pnl_usd": 7249.6,
-    "pnl_sol": 83.67,
+    "rank": 3,
+    "wallet": "Be24Gbf5KisDk1LcWWZsBn8dvB816By7YzYF5zWZnRR6",
+    "name": "Chairman ²",
+    "pnl_usd": 8822.5,
+    "pnl_sol": 102.97,
     "realized_usd": null,
     "spent_sol": null,
     "roi_pct": null,
     "positions": null,
     "wins": 1,
-    "losses": 0
+    "losses": 3
    },
    {
     "board": "kolscan daily",
-    "rank": 8,
-    "wallet": "FzVQSzj8JJr6WMGqbUHzx2XH1KkrfxRrRPv6WcbbZmND",
-    "name": "DustNukes",
-    "pnl_usd": 6977.8,
-    "pnl_sol": 80.53,
-    "realized_usd": null,
-    "spent_sol": null,
-    "roi_pct": null,
-    "positions": null,
-    "wins": 50,
-    "losses": 71
-   },
-   {
-    "board": "kolscan daily",
-    "rank": 9,
+    "rank": 4,
     "wallet": "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN",
     "name": "West",
-    "pnl_usd": 6495.0,
-    "pnl_sol": 74.96,
+    "pnl_usd": 8021.6,
+    "pnl_sol": 93.62,
     "realized_usd": null,
     "spent_sol": null,
     "roi_pct": null,
     "positions": null,
-    "wins": 43,
-    "losses": 65
+    "wins": 40,
+    "losses": 60
    },
    {
     "board": "kolscan daily",
-    "rank": 10,
-    "wallet": "G3gZWqrYkNmYFKYCyfRCNtGuxdyuE2wiYKkZpiZn4WSS",
-    "name": "Goyim",
-    "pnl_usd": 5845.1,
-    "pnl_sol": 67.46,
+    "rank": 5,
+    "wallet": "J23qr98GjGJJqKq9CBEnyRhHbmkaVxtTJNNxKu597wsA",
+    "name": "gr3g",
+    "pnl_usd": 6772.5,
+    "pnl_sol": 79.04,
     "realized_usd": null,
     "spent_sol": null,
     "roi_pct": null,
     "positions": null,
     "wins": 0,
-    "losses": 0
+    "losses": 2
    },
    {
     "board": "kolscan daily",
-    "rank": 11,
+    "rank": 6,
+    "wallet": "87rRdssFiTJKY4MGARa4G5vQ31hmR7MxSmhzeaJ5AAxJ",
+    "name": "Dior",
+    "pnl_usd": 5876.3,
+    "pnl_sol": 68.58,
+    "realized_usd": null,
+    "spent_sol": null,
+    "roi_pct": null,
+    "positions": null,
+    "wins": 0,
+    "losses": 2
+   },
+   {
+    "board": "kolscan daily",
+    "rank": 7,
+    "wallet": "BCagckXeMChUKrHEd6fKFA1uiWDtcmCXMsqaheLiUPJd",
+    "name": "dv",
+    "pnl_usd": 5589.1,
+    "pnl_sol": 65.23,
+    "realized_usd": null,
+    "spent_sol": null,
+    "roi_pct": null,
+    "positions": null,
+    "wins": 16,
+    "losses": 15
+   },
+   {
+    "board": "kolscan daily",
+    "rank": 8,
     "wallet": "862TYSvRYoiHAK3F3WwTRYAfuGiQaGdxedN9AGvRGWo2",
     "name": "Wugi",
-    "pnl_usd": 5561.8,
+    "pnl_usd": 5499.5,
     "pnl_sol": 64.19,
     "realized_usd": null,
     "spent_sol": null,
@@ -172,129 +130,171 @@
    },
    {
     "board": "kolscan daily",
-    "rank": 12,
-    "wallet": "ApRnQN2HkbCn7W2WWiT2FEKvuKJp9LugRyAE1a9Hdz1",
-    "name": "S",
-    "pnl_usd": 4670.3,
-    "pnl_sol": 53.9,
+    "rank": 9,
+    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
+    "name": "ban",
+    "pnl_usd": 5358.2,
+    "pnl_sol": 62.54,
+    "realized_usd": null,
+    "spent_sol": null,
+    "roi_pct": null,
+    "positions": null,
+    "wins": 87,
+    "losses": 45
+   },
+   {
+    "board": "kolscan daily",
+    "rank": 10,
+    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+    "name": "decu",
+    "pnl_usd": 5354.2,
+    "pnl_sol": 62.49,
+    "realized_usd": null,
+    "spent_sol": null,
+    "roi_pct": null,
+    "positions": null,
+    "wins": 78,
+    "losses": 70
+   },
+   {
+    "board": "kolscan daily",
+    "rank": 11,
+    "wallet": "9iaawVBEsFG35PSwd4PahwT8fYNQe9XYuRdWm872dUqY",
+    "name": "Meechie",
+    "pnl_usd": 5021.4,
+    "pnl_sol": 58.61,
     "realized_usd": null,
     "spent_sol": null,
     "roi_pct": null,
     "positions": null,
     "wins": 21,
-    "losses": 13
+    "losses": 37
+   },
+   {
+    "board": "kolscan daily",
+    "rank": 12,
+    "wallet": "EgnY4zmqXuaqodCLW366jjd2ecki6pvmMF74MkSxMFQW",
+    "name": "Eric Cryptoman",
+    "pnl_usd": 4768.9,
+    "pnl_sol": 55.66,
+    "realized_usd": null,
+    "spent_sol": null,
+    "roi_pct": null,
+    "positions": null,
+    "wins": 0,
+    "losses": 0
    },
    {
     "board": "kolscan daily",
     "rank": 13,
-    "wallet": "BCagckXeMChUKrHEd6fKFA1uiWDtcmCXMsqaheLiUPJd",
-    "name": "dv",
-    "pnl_usd": 4560.7,
-    "pnl_sol": 52.63,
+    "wallet": "5o3kAZLwEzNF1kfVv8JSEqv6sSB88pZbHxF1oYTxgXzG",
+    "name": "neo.",
+    "pnl_usd": 4421.2,
+    "pnl_sol": 51.6,
     "realized_usd": null,
     "spent_sol": null,
     "roi_pct": null,
     "positions": null,
-    "wins": 8,
-    "losses": 5
+    "wins": 4,
+    "losses": 4
    },
    {
     "board": "kolscan daily",
     "rank": 14,
-    "wallet": "87rRdssFiTJKY4MGARa4G5vQ31hmR7MxSmhzeaJ5AAxJ",
-    "name": "Dior",
-    "pnl_usd": 4294.6,
-    "pnl_sol": 49.56,
+    "wallet": "78N177fzNJpp8pG49xDv1efYcTMSzo9tPTKEA9mAVkh2",
+    "name": "Sheep",
+    "pnl_usd": 4335.6,
+    "pnl_sol": 50.6,
     "realized_usd": null,
     "spent_sol": null,
     "roi_pct": null,
     "positions": null,
-    "wins": 0,
-    "losses": 2
+    "wins": 38,
+    "losses": 8
    },
    {
     "board": "kolscan daily",
     "rank": 15,
-    "wallet": "EgnY4zmqXuaqodCLW366jjd2ecki6pvmMF74MkSxMFQW",
-    "name": "Eric Cryptoman",
-    "pnl_usd": 3979.6,
-    "pnl_sol": 45.93,
-    "realized_usd": null,
-    "spent_sol": null,
-    "roi_pct": null,
-    "positions": null,
-    "wins": 0,
-    "losses": 0
-   },
-   {
-    "board": "kolscan daily",
-    "rank": 16,
-    "wallet": "78N177fzNJpp8pG49xDv1efYcTMSzo9tPTKEA9mAVkh2",
-    "name": "Sheep",
-    "pnl_usd": 3787.5,
-    "pnl_sol": 43.71,
-    "realized_usd": null,
-    "spent_sol": null,
-    "roi_pct": null,
-    "positions": null,
-    "wins": 33,
-    "losses": 7
-   },
-   {
-    "board": "kolscan daily",
-    "rank": 17,
-    "wallet": "sAdNbe1cKNMDqDsa4npB3TfL62T14uAo2MsUQfLvzLT",
-    "name": "Ethan Prosper",
-    "pnl_usd": 3606.5,
-    "pnl_sol": 41.62,
-    "realized_usd": null,
-    "spent_sol": null,
-    "roi_pct": null,
-    "positions": null,
-    "wins": 1,
-    "losses": 0
-   },
-   {
-    "board": "kolscan daily",
-    "rank": 18,
-    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
-    "name": "trunoest",
-    "pnl_usd": 3593.0,
-    "pnl_sol": 41.47,
+    "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
+    "name": "Schoen",
+    "pnl_usd": 3895.3,
+    "pnl_sol": 45.46,
     "realized_usd": null,
     "spent_sol": null,
     "roi_pct": null,
     "positions": null,
     "wins": 24,
-    "losses": 21
+    "losses": 23
+   },
+   {
+    "board": "kolscan daily",
+    "rank": 16,
+    "wallet": "DtjYbZntc2mEm1UrZHNcKguak6h6QM4S5xobnwFgg92Y",
+    "name": "Files",
+    "pnl_usd": 3869.9,
+    "pnl_sol": 45.17,
+    "realized_usd": null,
+    "spent_sol": null,
+    "roi_pct": null,
+    "positions": null,
+    "wins": 9,
+    "losses": 20
+   },
+   {
+    "board": "kolscan daily",
+    "rank": 17,
+    "wallet": "FzVQSzj8JJr6WMGqbUHzx2XH1KkrfxRrRPv6WcbbZmND",
+    "name": "DustNukes",
+    "pnl_usd": 3814.1,
+    "pnl_sol": 44.52,
+    "realized_usd": null,
+    "spent_sol": null,
+    "roi_pct": null,
+    "positions": null,
+    "wins": 52,
+    "losses": 78
+   },
+   {
+    "board": "kolscan daily",
+    "rank": 18,
+    "wallet": "DYAn4XpAkN5mhiXkRB7dGq4Jadnx6XYgu8L5b3WGhbrt",
+    "name": "The Doc",
+    "pnl_usd": 3493.9,
+    "pnl_sol": 40.78,
+    "realized_usd": null,
+    "spent_sol": null,
+    "roi_pct": null,
+    "positions": null,
+    "wins": 12,
+    "losses": 12
    },
    {
     "board": "kolscan daily",
     "rank": 19,
-    "wallet": "GM7Hrz2bDq33ezMtL6KGidSWZXMWgZ6qBuugkb5H8NvN",
-    "name": "Beaver",
-    "pnl_usd": 3405.1,
-    "pnl_sol": 39.3,
+    "wallet": "8rvAsDKeAcEjEkiZMug9k8v1y8mW6gQQiMobd89Uy7qR",
+    "name": "Casino",
+    "pnl_usd": 3488.4,
+    "pnl_sol": 40.71,
     "realized_usd": null,
     "spent_sol": null,
     "roi_pct": null,
     "positions": null,
-    "wins": 3,
-    "losses": 5
+    "wins": 8,
+    "losses": 12
    },
    {
     "board": "kolscan daily",
     "rank": 20,
-    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-    "name": "decu",
-    "pnl_usd": 3304.5,
-    "pnl_sol": 38.14,
+    "wallet": "sAdNbe1cKNMDqDsa4npB3TfL62T14uAo2MsUQfLvzLT",
+    "name": "Ethan Prosper",
+    "pnl_usd": 3319.1,
+    "pnl_sol": 38.74,
     "realized_usd": null,
     "spent_sol": null,
     "roi_pct": null,
     "positions": null,
-    "wins": 61,
-    "losses": 67
+    "wins": 1,
+    "losses": 3
    }
   ]
  },
@@ -1048,13 +1048,19 @@
    "pump_daily_5": null,
    "pump_daily_100": null,
    "kolscan_5": 8194.3
+  },
+  {
+   "ts": 1794281623,
+   "pump_daily_5": null,
+   "pump_daily_100": null,
+   "kolscan_5": 6772.5
   }
  ],
  "repeat_leaders": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "name": "decu",
-   "score": 109,
+   "score": 110,
    "boards_now": [
     "kolscan daily"
    ],
@@ -1068,7 +1074,7 @@
   {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
    "name": "trunoest",
-   "score": 105,
+   "score": 106,
    "boards_now": [
     "kolscan daily"
    ],
@@ -1082,7 +1088,7 @@
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
    "name": "ban",
-   "score": 96,
+   "score": 97,
    "boards_now": [
     "kolscan daily"
    ],
@@ -1096,7 +1102,7 @@
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
    "name": "Limfork.eth",
-   "score": 82,
+   "score": 83,
    "boards_now": [
     "kolscan daily"
    ],
@@ -1156,6 +1162,20 @@
    "spent_30d_sol": null
   },
   {
+   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
+   "name": "Schoen",
+   "score": 69,
+   "boards_now": [
+    "kolscan daily"
+   ],
+   "best_rank": 1,
+   "days_on_daily_board": 13,
+   "pnl_24h_usd": null,
+   "pnl_30d_usd": null,
+   "roi_30d_pct": null,
+   "spent_30d_sol": null
+  },
+  {
    "wallet": "3VUNtVtjjx5ckUojT7UocJ5fbuAJRsNUXNfTBnPte9vC",
    "name": "buddhaaaaa",
    "score": 69,
@@ -1168,23 +1188,25 @@
    "spent_30d_sol": null
   },
   {
-   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
-   "name": "Schoen",
+   "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
+   "name": "daddychilllll",
    "score": 68,
    "boards_now": [],
-   "best_rank": 1,
-   "days_on_daily_board": 13,
+   "best_rank": 7,
+   "days_on_daily_board": 14,
    "pnl_24h_usd": null,
    "pnl_30d_usd": null,
    "roi_30d_pct": null,
    "spent_30d_sol": null
   },
   {
-   "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
-   "name": "daddychilllll",
-   "score": 68,
-   "boards_now": [],
-   "best_rank": 7,
+   "wallet": "2X4H5Y9C4Fy6Pf3wpq8Q4gMvLcWvfrrwDv2bdR8AAwQv",
+   "name": "Orange",
+   "score": 67,
+   "boards_now": [
+    "kolscan daily"
+   ],
+   "best_rank": 8,
    "days_on_daily_board": 14,
    "pnl_24h_usd": null,
    "pnl_30d_usd": null,
@@ -1210,18 +1232,6 @@
    "boards_now": [],
    "best_rank": 8,
    "days_on_daily_board": 12,
-   "pnl_24h_usd": null,
-   "pnl_30d_usd": null,
-   "roi_30d_pct": null,
-   "spent_30d_sol": null
-  },
-  {
-   "wallet": "2X4H5Y9C4Fy6Pf3wpq8Q4gMvLcWvfrrwDv2bdR8AAwQv",
-   "name": "Orange",
-   "score": 66,
-   "boards_now": [],
-   "best_rank": 8,
-   "days_on_daily_board": 14,
    "pnl_24h_usd": null,
    "pnl_30d_usd": null,
    "roi_30d_pct": null,
@@ -1266,7 +1276,7 @@
   {
    "wallet": "387FRwow6MKDhSwuMULhKjqeXuxoBY4BbbaSntdk9LaH",
    "name": "Shawty",
-   "score": 56,
+   "score": 57,
    "boards_now": [
     "kolscan daily"
    ],
@@ -1284,6 +1294,20 @@
    "boards_now": [],
    "best_rank": 13,
    "days_on_daily_board": 9,
+   "pnl_24h_usd": null,
+   "pnl_30d_usd": null,
+   "roi_30d_pct": null,
+   "spent_30d_sol": null
+  },
+  {
+   "wallet": "8MaVa9kdt3NW4Q5HyNAm1X5LbR8PQRVDc1W8NMVK88D5",
+   "name": "Daumen",
+   "score": 55,
+   "boards_now": [
+    "kolscan daily"
+   ],
+   "best_rank": 14,
+   "days_on_daily_board": 2,
    "pnl_24h_usd": null,
    "pnl_30d_usd": null,
    "roi_30d_pct": null,
@@ -1308,18 +1332,6 @@
    "boards_now": [],
    "best_rank": 12,
    "days_on_daily_board": 17,
-   "pnl_24h_usd": null,
-   "pnl_30d_usd": null,
-   "roi_30d_pct": null,
-   "spent_30d_sol": null
-  },
-  {
-   "wallet": "8MaVa9kdt3NW4Q5HyNAm1X5LbR8PQRVDc1W8NMVK88D5",
-   "name": "Daumen",
-   "score": 54,
-   "boards_now": [],
-   "best_rank": 14,
-   "days_on_daily_board": 2,
    "pnl_24h_usd": null,
    "pnl_30d_usd": null,
    "roi_30d_pct": null,
@@ -1377,9 +1389,7 @@
    "wallet": "J9TYAsWWidbrcZybmLSfrLzryANf4CgJBLdvwdGuC8MB",
    "name": "Johnson",
    "score": 51,
-   "boards_now": [
-    "kolscan daily"
-   ],
+   "boards_now": [],
    "best_rank": 2,
    "days_on_daily_board": 10,
    "pnl_24h_usd": null,
@@ -1436,6 +1446,20 @@
    "spent_30d_sol": null
   },
   {
+   "wallet": "CgaA9a1JwAXJyfHuvZ7VW8YfTVRkdiT5mjBBSKcg7Rz5",
+   "name": "Art",
+   "score": 49,
+   "boards_now": [
+    "kolscan daily"
+   ],
+   "best_rank": 9,
+   "days_on_daily_board": 3,
+   "pnl_24h_usd": null,
+   "pnl_30d_usd": null,
+   "roi_30d_pct": null,
+   "spent_30d_sol": null
+  },
+  {
    "wallet": "6DQAGJT7VZPVBsuG4kn3AvpyHCEi7B2RFFvMZdbqQqqP",
    "name": "cupsey",
    "score": 48,
@@ -1448,24 +1472,26 @@
    "spent_30d_sol": null
   },
   {
-   "wallet": "CgaA9a1JwAXJyfHuvZ7VW8YfTVRkdiT5mjBBSKcg7Rz5",
-   "name": "Art",
-   "score": 48,
-   "boards_now": [],
-   "best_rank": 9,
-   "days_on_daily_board": 3,
-   "pnl_24h_usd": null,
-   "pnl_30d_usd": null,
-   "roi_30d_pct": null,
-   "spent_30d_sol": null
-  },
-  {
    "wallet": "6qudAN2kV8mtCcYJxb5QQ6Vr15itdHHdeVbYm99NKMhy",
    "name": "thedetective",
    "score": 48,
    "boards_now": [],
    "best_rank": 13,
    "days_on_daily_board": 9,
+   "pnl_24h_usd": null,
+   "pnl_30d_usd": null,
+   "roi_30d_pct": null,
+   "spent_30d_sol": null
+  },
+  {
+   "wallet": "FqamE7xrahg7FEWoByrx1o8SeyHt44rpmE6ZQfT7zrve",
+   "name": "EustazZ",
+   "score": 48,
+   "boards_now": [
+    "kolscan daily"
+   ],
+   "best_rank": 15,
+   "days_on_daily_board": 1,
    "pnl_24h_usd": null,
    "pnl_30d_usd": null,
    "roi_30d_pct": null,
@@ -1526,18 +1552,6 @@
    "boards_now": [],
    "best_rank": 7,
    "days_on_daily_board": 7,
-   "pnl_24h_usd": null,
-   "pnl_30d_usd": null,
-   "roi_30d_pct": null,
-   "spent_30d_sol": null
-  },
-  {
-   "wallet": "8Ltv5royXzxVG3tAhVhRnfXrzapS5Dwqt1ocxprgu6YP",
-   "name": "blu7k",
-   "score": 47,
-   "boards_now": [],
-   "best_rank": 11,
-   "days_on_daily_board": 8,
    "pnl_24h_usd": null,
    "pnl_30d_usd": null,
    "roi_30d_pct": null,
