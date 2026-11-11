@@ -1,5 +1,5 @@
 {
- "updated_at": 1794385567,
+ "updated_at": 1794414878,
  "mode": "holdings",
  "tracked": [
   {
@@ -22,7 +22,7 @@
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 97)",
+   "label": "consistent ban (score 98)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -52,7 +52,7 @@
   },
   {
    "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent OGAntD (score 70)",
+   "label": "consistent OGAntD (score 71)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -4602,24 +4602,6 @@
   }
  ],
  "consensus": [
-  {
-   "mint": "FZxHLUGiGchY5uvvoeqh1EKiXTrGdN67WUBhUc1fLoat",
-   "symbol": "PUSSY",
-   "wallets": [
-    "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
-    "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB"
-   ],
-   "last_ts": 1794361385
-  },
-  {
-   "mint": "7oJPrdPWttGaioDiFNcvPi6zPCFJLPN69Cfvfi8wpump",
-   "symbol": "DCT",
-   "wallets": [
-    "2X4H5Y9C4Fy6Pf3wpq8Q4gMvLcWvfrrwDv2bdR8AAwQv",
-    "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB"
-   ],
-   "last_ts": 1794326914
-  },
   {
    "mint": "Gj3jvLG44hNq3997UpKxoFibtN9XFoeJakFnfkuMpump",
    "symbol": "Gj3j…pump",
