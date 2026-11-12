@@ -1,28 +1,22 @@
 {
- "updated_at": 1794455233,
+ "updated_at": 1794484713,
  "mode": "holdings",
  "tracked": [
   {
-   "wallet": "9YmQh3JniNwU4DyreS1cZDYXczS3t1cari7Eg2qePLqe",
-   "label": "early buyer on 2 big coins: GATO early $50, MASK early $89",
-   "tier": "GEM_HUNTER",
-   "gems": 6
-  },
-  {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 111)",
+   "label": "consistent decu (score 112)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
-   "label": "consistent trunoest (score 107)",
+   "label": "consistent trunoest (score 108)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 98)",
+   "label": "consistent ban (score 99)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -46,7 +40,7 @@
   },
   {
    "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
-   "label": "consistent milito (score 72)",
+   "label": "consistent milito (score 73)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -58,7 +52,7 @@
   },
   {
    "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
-   "label": "consistent Schoen (score 70)",
+   "label": "consistent Schoen (score 71)",
    "tier": "BOARD",
    "gems": 0
   },
