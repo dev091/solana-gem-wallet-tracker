@@ -1,5 +1,5 @@
 {
- "updated_at": 1794414878,
+ "updated_at": 1794455233,
  "mode": "holdings",
  "tracked": [
   {
@@ -4601,25 +4601,5 @@
    "liquidity": null
   }
  ],
- "consensus": [
-  {
-   "mint": "Gj3jvLG44hNq3997UpKxoFibtN9XFoeJakFnfkuMpump",
-   "symbol": "Gj3j…pump",
-   "wallets": [
-    "2QrfK8gf3vBcFfuaCJbFxGk3w1JxwjamGE9aGwdQHFas",
-    "2X4H5Y9C4Fy6Pf3wpq8Q4gMvLcWvfrrwDv2bdR8AAwQv",
-    "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM"
-   ],
-   "last_ts": 1794361387
-  },
-  {
-   "mint": "4DYpQAiKQA872y9xuSGFLSguho8XZn9mQBmVcRQZpump",
-   "symbol": "CLICKING",
-   "wallets": [
-    "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-    "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV"
-   ],
-   "last_ts": 1794385563
-  }
- ]
+ "consensus": []
 }
