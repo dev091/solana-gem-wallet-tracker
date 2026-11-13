@@ -1,5 +1,5 @@
 {
- "updated_at": 1794512487,
+ "updated_at": 1794530831,
  "mode": "holdings",
  "tracked": [
   {
@@ -46,7 +46,7 @@
   },
   {
    "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent OGAntD (score 71)",
+   "label": "consistent OGAntD (score 72)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -63,14 +63,14 @@
    "gems": 0
   },
   {
-   "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
-   "label": "consistent daddychilllll (score 68)",
+   "wallet": "2X4H5Y9C4Fy6Pf3wpq8Q4gMvLcWvfrrwDv2bdR8AAwQv",
+   "label": "consistent Orange (score 69)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "2X4H5Y9C4Fy6Pf3wpq8Q4gMvLcWvfrrwDv2bdR8AAwQv",
-   "label": "consistent Orange (score 68)",
+   "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
+   "label": "consistent daddychilllll (score 68)",
    "tier": "BOARD",
    "gems": 0
   },
