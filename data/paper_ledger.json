@@ -10,7 +10,7 @@
    "entry": 3.276e-05,
    "peak": 3.276e-05,
    "last": 3.18e-05,
-   "price_24h": null,
+   "price_24h": 3.18e-05,
    "wallet_buy_usd": 957.4
   },
   {
@@ -23,7 +23,7 @@
    "entry": 3.233e-05,
    "peak": 3.233e-05,
    "last": 3.168e-05,
-   "price_24h": null,
+   "price_24h": 3.168e-05,
    "wallet_buy_usd": 1227.51
   },
   {
@@ -36,7 +36,7 @@
    "entry": 3.331e-05,
    "peak": 3.331e-05,
    "last": 3.331e-05,
-   "price_24h": null,
+   "price_24h": 3.331e-05,
    "wallet_buy_usd": 987.02
   },
   {
@@ -49,7 +49,7 @@
    "entry": 3.225e-05,
    "peak": 3.225e-05,
    "last": 3.17e-05,
-   "price_24h": null,
+   "price_24h": 3.17e-05,
    "wallet_buy_usd": 1215.41
   },
   {
@@ -62,7 +62,7 @@
    "entry": 3.313e-05,
    "peak": 3.313e-05,
    "last": 3.232e-05,
-   "price_24h": null,
+   "price_24h": 3.232e-05,
    "wallet_buy_usd": 1079.16
   },
   {
@@ -75,7 +75,7 @@
    "entry": 3.244e-05,
    "peak": 3.244e-05,
    "last": 3.187e-05,
-   "price_24h": null,
+   "price_24h": 3.187e-05,
    "wallet_buy_usd": 999.29
   },
   {
@@ -88,7 +88,7 @@
    "entry": 3.337e-05,
    "peak": 3.337e-05,
    "last": 3.337e-05,
-   "price_24h": null,
+   "price_24h": 3.337e-05,
    "wallet_buy_usd": 1038.84
   },
   {
@@ -101,7 +101,7 @@
    "entry": 3.293e-05,
    "peak": 3.293e-05,
    "last": 3.205e-05,
-   "price_24h": null,
+   "price_24h": 3.205e-05,
    "wallet_buy_usd": 1060.49
   },
   {
@@ -114,7 +114,7 @@
    "entry": 3.269e-05,
    "peak": 3.269e-05,
    "last": 3.179e-05,
-   "price_24h": null,
+   "price_24h": 3.179e-05,
    "wallet_buy_usd": 961.52
   },
   {
@@ -127,7 +127,7 @@
    "entry": 3.182e-05,
    "peak": 3.182e-05,
    "last": 3.095e-05,
-   "price_24h": null,
+   "price_24h": 3.095e-05,
    "wallet_buy_usd": 972.28
   },
   {
@@ -140,7 +140,7 @@
    "entry": 3.186e-05,
    "peak": 3.186e-05,
    "last": 3.103e-05,
-   "price_24h": null,
+   "price_24h": 3.103e-05,
    "wallet_buy_usd": 993.88
   },
   {
@@ -153,7 +153,7 @@
    "entry": 3.241e-05,
    "peak": 3.241e-05,
    "last": 3.129e-05,
-   "price_24h": null,
+   "price_24h": 3.129e-05,
    "wallet_buy_usd": 835.53
   },
   {
@@ -166,7 +166,7 @@
    "entry": 3.27e-05,
    "peak": 3.27e-05,
    "last": 3.27e-05,
-   "price_24h": null,
+   "price_24h": 3.27e-05,
    "wallet_buy_usd": 996.65
   },
   {
@@ -179,7 +179,7 @@
    "entry": 3.273e-05,
    "peak": 3.273e-05,
    "last": 3.177e-05,
-   "price_24h": null,
+   "price_24h": 3.177e-05,
    "wallet_buy_usd": 1098.01
   },
   {
@@ -192,7 +192,7 @@
    "entry": 3.226e-05,
    "peak": 3.226e-05,
    "last": 3.226e-05,
-   "price_24h": null,
+   "price_24h": 3.226e-05,
    "wallet_buy_usd": 948.51
   },
   {
@@ -205,7 +205,7 @@
    "entry": 3.298e-05,
    "peak": 3.298e-05,
    "last": 3.227e-05,
-   "price_24h": null,
+   "price_24h": 3.227e-05,
    "wallet_buy_usd": 918.64
   },
   {
@@ -218,7 +218,7 @@
    "entry": 3.241e-05,
    "peak": 3.241e-05,
    "last": 3.229e-05,
-   "price_24h": null,
+   "price_24h": 3.229e-05,
    "wallet_buy_usd": 1089.34
   },
   {
@@ -376,19 +376,6 @@
    "last": 4.664e-05,
    "price_24h": null,
    "wallet_buy_usd": 622.41
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 113)",
-   "tier": "BOARD",
-   "mint": "5Gugs1nJXPcfBLNT8JCpW658H5EcvWMcY2KHVc67pump",
-   "symbol": "BREAD",
-   "opened_at": 1794584453,
-   "entry": 6.345e-06,
-   "peak": 6.345e-06,
-   "last": 6.345e-06,
-   "price_24h": null,
-   "wallet_buy_usd": 139.56
   }
  ],
  "closed": [
@@ -11877,6 +11864,27 @@
     "mirror": 0.305,
     "tp2x_half": 0.305,
     "hold_24h": 0.3234
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 113)",
+   "tier": "BOARD",
+   "mint": "5Gugs1nJXPcfBLNT8JCpW658H5EcvWMcY2KHVc67pump",
+   "symbol": "BREAD",
+   "opened_at": 1794584453,
+   "entry": 6.345e-06,
+   "peak": 6.345e-06,
+   "last": 6.345e-06,
+   "price_24h": 3.352e-06,
+   "wallet_buy_usd": 139.56,
+   "closed_at": 1794606264,
+   "exit": 3.352e-06,
+   "reason": "wallet sold",
+   "returns": {
+    "mirror": 0.5074,
+    "tp2x_half": 0.5074,
+    "hold_24h": 0.5074
    }
   }
  ]

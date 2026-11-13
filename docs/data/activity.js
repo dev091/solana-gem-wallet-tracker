@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1794584453,
+ "updated_at": 1794606264,
  "mode": "holdings",
  "tracked": [
   {
@@ -16,7 +16,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 99)",
+   "label": "consistent ban (score 100)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -94,6 +94,21 @@ window.GEM_ACTIVITY = {
   }
  ],
  "events": [
+  {
+   "ts": 1794605945,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 113)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "5Gugs1nJXPcfBLNT8JCpW658H5EcvWMcY2KHVc67pump",
+   "tokens": 21994878.827138,
+   "usd": 73.73,
+   "symbol": "BREAD",
+   "price": 3.352e-06,
+   "market_cap": 3352.05,
+   "liquidity": null
+  },
   {
    "ts": 1794584131,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4578,21 +4593,6 @@ window.GEM_ACTIVITY = {
    "price": 0.9577,
    "market_cap": 3715.0,
    "liquidity": 59151.85
-  },
-  {
-   "ts": 1794018835,
-   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 80)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "84pvQtNyFYFdehFwoyjF6GoiS2U5h9Rgp2B23ktLpump",
-   "tokens": 31416240.14738,
-   "usd": 134.07,
-   "symbol": "84pv…pump",
-   "price": 4.2674487836486625e-06,
-   "market_cap": null,
-   "liquidity": null
   }
  ],
  "consensus": []
