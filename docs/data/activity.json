@@ -1,5 +1,5 @@
 {
- "updated_at": 1794669971,
+ "updated_at": 1794686794,
  "mode": "holdings",
  "tracked": [
   {
@@ -45,14 +45,14 @@
    "gems": 0
   },
   {
-   "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
-   "label": "consistent milito (score 73)",
+   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
+   "label": "consistent Schoen (score 73)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
-   "label": "consistent Schoen (score 72)",
+   "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
+   "label": "consistent milito (score 73)",
    "tier": "BOARD",
    "gems": 0
   },
