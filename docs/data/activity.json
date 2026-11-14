@@ -1,28 +1,28 @@
 {
- "updated_at": 1794606264,
+ "updated_at": 1794645917,
  "mode": "holdings",
  "tracked": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 113)",
+   "label": "consistent decu (score 114)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
-   "label": "consistent trunoest (score 109)",
+   "label": "consistent trunoest (score 110)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 100)",
+   "label": "consistent ban (score 101)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 85)",
+   "label": "consistent Limfork.eth (score 86)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -33,14 +33,14 @@
    "gems": 0
   },
   {
-   "wallet": "GeUnv1jmtviRbR7Gu1JnXSGkUMUgFVBHuEVQVpTaUX1W",
-   "label": "consistent Gladey (score 74)",
+   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
+   "label": "consistent OGAntD (score 74)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent OGAntD (score 73)",
+   "wallet": "GeUnv1jmtviRbR7Gu1JnXSGkUMUgFVBHuEVQVpTaUX1W",
+   "label": "consistent Gladey (score 74)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -57,14 +57,14 @@
    "gems": 0
   },
   {
-   "wallet": "3VUNtVtjjx5ckUojT7UocJ5fbuAJRsNUXNfTBnPte9vC",
-   "label": "consistent buddhaaaaa (score 69)",
+   "wallet": "2X4H5Y9C4Fy6Pf3wpq8Q4gMvLcWvfrrwDv2bdR8AAwQv",
+   "label": "consistent Orange (score 70)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "2X4H5Y9C4Fy6Pf3wpq8Q4gMvLcWvfrrwDv2bdR8AAwQv",
-   "label": "consistent Orange (score 69)",
+   "wallet": "3VUNtVtjjx5ckUojT7UocJ5fbuAJRsNUXNfTBnPte9vC",
+   "label": "consistent buddhaaaaa (score 69)",
    "tier": "BOARD",
    "gems": 0
   },

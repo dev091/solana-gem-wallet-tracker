@@ -231,7 +231,7 @@
    "entry": 3.957e-05,
    "peak": 4.786e-05,
    "last": 4.786e-05,
-   "price_24h": null,
+   "price_24h": 4.786e-05,
    "wallet_buy_usd": 612.73
   },
   {
@@ -244,7 +244,7 @@
    "entry": 4.892e-05,
    "peak": 4.892e-05,
    "last": 4.892e-05,
-   "price_24h": null,
+   "price_24h": 4.892e-05,
    "wallet_buy_usd": 724.85
   },
   {
@@ -257,7 +257,7 @@
    "entry": 4.822e-05,
    "peak": 4.822e-05,
    "last": 4.822e-05,
-   "price_24h": null,
+   "price_24h": 4.822e-05,
    "wallet_buy_usd": 565.53
   },
   {
@@ -270,7 +270,7 @@
    "entry": 4.359e-05,
    "peak": 4.836e-05,
    "last": 4.836e-05,
-   "price_24h": null,
+   "price_24h": 4.836e-05,
    "wallet_buy_usd": 703.51
   },
   {
@@ -283,7 +283,7 @@
    "entry": 4.752e-05,
    "peak": 4.752e-05,
    "last": 4.752e-05,
-   "price_24h": null,
+   "price_24h": 4.752e-05,
    "wallet_buy_usd": 642.75
   },
   {
@@ -308,7 +308,7 @@
    "opened_at": 1794584453,
    "entry": 4.711e-05,
    "peak": 4.711e-05,
-   "last": 4.711e-05,
+   "last": 4.457e-05,
    "price_24h": null,
    "wallet_buy_usd": 756.33
   },
