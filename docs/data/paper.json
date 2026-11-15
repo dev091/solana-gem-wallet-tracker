@@ -1,5 +1,5 @@
 {
- "updated_at": 1794770063,
+ "updated_at": 1794785306,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
@@ -701,6 +701,19 @@
   ]
  },
  "open": [
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 115)",
+   "tier": "BOARD",
+   "mint": "SPCXxcqXj6e5dJDVNovHN8744zkbhM2bYudU45BimGb",
+   "symbol": "SPCX",
+   "opened_at": 1794785306,
+   "entry": 139.76,
+   "peak": 139.76,
+   "last": 139.76,
+   "price_24h": null,
+   "wallet_buy_usd": 50.82
+  },
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 115)",

@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1794746957,
+ "updated_at": 1794785306,
  "mode": "holdings",
  "tracked": [
   {
@@ -22,7 +22,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 86)",
+   "label": "consistent Limfork.eth (score 87)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -58,7 +58,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "2X4H5Y9C4Fy6Pf3wpq8Q4gMvLcWvfrrwDv2bdR8AAwQv",
-   "label": "consistent Orange (score 70)",
+   "label": "consistent Orange (score 71)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -94,6 +94,36 @@ window.GEM_ACTIVITY = {
   }
  ],
  "events": [
+  {
+   "ts": 1794784987,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 115)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+   "tokens": 11099.439875,
+   "usd": 32.5,
+   "symbol": "PUMP",
+   "price": 0.002928,
+   "market_cap": 1342662064.0,
+   "liquidity": 1568437.61
+  },
+  {
+   "ts": 1794784987,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 115)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "SPCXxcqXj6e5dJDVNovHN8744zkbhM2bYudU45BimGb",
+   "tokens": 0.36363100000000004,
+   "usd": 50.82,
+   "symbol": "SPCX",
+   "price": 139.76,
+   "market_cap": null,
+   "liquidity": 2655472.73
+  },
   {
    "ts": 1794746639,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4563,36 +4593,6 @@ window.GEM_ACTIVITY = {
    "price": 2.983e-05,
    "market_cap": 28358.0,
    "liquidity": 12333.62
-  },
-  {
-   "ts": 1794018837,
-   "wallet": "3VUNtVtjjx5ckUojT7UocJ5fbuAJRsNUXNfTBnPte9vC",
-   "label": "consistent buddhaaaaa (score 69)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "buy",
-   "mint": "9XG4zXTNBPQg6tAERZky9a6owYuctGhNNNMn7BX8pump",
-   "tokens": 38788986.480787,
-   "usd": 538.78,
-   "symbol": "SCAMSEY",
-   "price": 1.389e-05,
-   "market_cap": 13898.81,
-   "liquidity": null
-  },
-  {
-   "ts": 1794018836,
-   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent OGAntD (score 70)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "32c8HjtHHQRn8Mz3hsE2k3X9pWLD4mPWHVEvnLSgcxzQ",
-   "tokens": 17958350.459214,
-   "usd": 43.79,
-   "symbol": "32c8…cxzQ",
-   "price": 2.438306868288652e-06,
-   "market_cap": null,
-   "liquidity": null
   }
  ],
  "consensus": []
