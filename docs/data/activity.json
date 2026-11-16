@@ -1,5 +1,5 @@
 {
- "updated_at": 1794826350,
+ "updated_at": 1794862462,
  "mode": "holdings",
  "tracked": [
   {
@@ -94,6 +94,36 @@
   }
  ],
  "events": [
+  {
+   "ts": 1794862142,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 116)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "76Cj3ZBFT5EhhHW1sDzDfbx7jD6ot4VN1TTi52vjoGZM",
+   "tokens": 15732580.111933,
+   "usd": 742.74,
+   "symbol": "UNKNOWN",
+   "price": 4.721e-05,
+   "market_cap": 47219.0,
+   "liquidity": 27259.09
+  },
+  {
+   "ts": 1794862142,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 116)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "7NsXSsnmCnKCpX5pTEoZ2P9VoXrosNs4bTDnScaAVtia",
+   "tokens": 16674660.796591,
+   "usd": 784.71,
+   "symbol": "UNKNOWN",
+   "price": 4.706e-05,
+   "market_cap": 47063.0,
+   "liquidity": 27291.67
+  },
   {
    "ts": 1794826031,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4563,36 +4593,6 @@
    "price": 6.331e-06,
    "market_cap": 6331.68,
    "liquidity": null
-  },
-  {
-   "ts": 1794018837,
-   "wallet": "2QrfK8gf3vBcFfuaCJbFxGk3w1JxwjamGE9aGwdQHFas",
-   "label": "consistent Thokani (score 66)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "Ew8KqgSitYucieR5KnSAL2SUFspcwA8AgSuZ5xWspump",
-   "tokens": 29091539.314964,
-   "usd": 3019.7,
-   "symbol": "Kurumi",
-   "price": 0.0001038,
-   "market_cap": 103845.0,
-   "liquidity": 47611.25
-  },
-  {
-   "ts": 1794018837,
-   "wallet": "2QrfK8gf3vBcFfuaCJbFxGk3w1JxwjamGE9aGwdQHFas",
-   "label": "consistent Thokani (score 66)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "buy",
-   "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
-   "tokens": 6789.381961,
-   "usd": 26.7,
-   "symbol": "PUMP",
-   "price": 0.003933,
-   "market_cap": 1806294575.0,
-   "liquidity": 2575695.59
   }
  ],
  "consensus": []
