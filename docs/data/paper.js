@@ -1,5 +1,5 @@
 window.GEM_PAPER = {
- "updated_at": 1794785306,
+ "updated_at": 1794798131,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
@@ -709,8 +709,8 @@ window.GEM_PAPER = {
    "symbol": "SPCX",
    "opened_at": 1794785306,
    "entry": 139.76,
-   "peak": 139.76,
-   "last": 139.76,
+   "peak": 140.25,
+   "last": 140.25,
    "price_24h": null,
    "wallet_buy_usd": 50.82
   },
