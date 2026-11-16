@@ -1,5 +1,5 @@
 window.GEM_WALLETS = {
- "generated_at": 1794740976,
+ "generated_at": 1794828481,
  "provider": "rpc",
  "criteria": {
   "entry_min_usd": 100.0,
@@ -66,10 +66,10 @@ window.GEM_WALLETS = {
  },
  "wallets": [
   {
-   "wallet": "6HJetMbdHBuk3mLUainxAPpBpWzDgYbHGTS2TqDAUSX2",
+   "wallet": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #1 LJC ($30.9k)"
+    "Kolscan daily #1 slingoor ($98.9k)"
    ],
    "sources": [
     "kolscan"
@@ -88,7 +88,7 @@ window.GEM_WALLETS = {
    "wallet": "4Be9CvxqHW6BYiRAxW9Q3xu1ycTMWaL5z8NX4HR3ha7t",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #2 Mitch ($12.1k)"
+    "Kolscan daily #2 Mitch ($14.5k)"
    ],
    "sources": [
     "kolscan"
@@ -104,86 +104,10 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "J9TYAsWWidbrcZybmLSfrLzryANf4CgJBLdvwdGuC8MB",
+   "wallet": "88e2kBDJoN7eQCBj2sxT15etUZ3jPNzD4ijCs1TNySWJ",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #3 Johnson ($9,085)"
-   ],
-   "sources": [
-    "kolscan"
-   ],
-   "gem_hits_in_search": 0,
-   "stats": {},
-   "reasons": [
-    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
-   ],
-   "flags": [],
-   "notes": [],
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "5ZuV8eqkvzYFVEKbLvGBdexL2tFv7E5BCd2HZpjqbdg",
-   "tier": "ERROR",
-   "labels": [
-    "Kolscan daily #4 Doji ($8,730)"
-   ],
-   "sources": [
-    "kolscan"
-   ],
-   "gem_hits_in_search": 0,
-   "stats": {},
-   "reasons": [
-    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
-   ],
-   "flags": [],
-   "notes": [],
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
-   "tier": "ERROR",
-   "labels": [
-    "Kolscan daily #5 trunoest ($7,338)"
-   ],
-   "sources": [
-    "kolscan"
-   ],
-   "gem_hits_in_search": 0,
-   "stats": {},
-   "reasons": [
-    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
-   ],
-   "flags": [],
-   "notes": [],
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "tier": "ERROR",
-   "labels": [
-    "Kolscan daily #6 decu ($6,744)"
-   ],
-   "sources": [
-    "kolscan"
-   ],
-   "gem_hits_in_search": 0,
-   "stats": {},
-   "reasons": [
-    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
-   ],
-   "flags": [],
-   "notes": [],
-   "gems": [],
-   "trades": []
-  },
-  {
-   "wallet": "J23qr98GjGJJqKq9CBEnyRhHbmkaVxtTJNNxKu597wsA",
-   "tier": "ERROR",
-   "labels": [
-    "Kolscan daily #7 gr3g ($5,826)"
+    "Kolscan daily #3 yeekidd ($8,447)"
    ],
    "sources": [
     "kolscan"
@@ -202,7 +126,7 @@ window.GEM_WALLETS = {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #8 ban ($5,584)"
+    "Kolscan daily #4 ban ($8,150)"
    ],
    "sources": [
     "kolscan"
@@ -218,10 +142,10 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
+   "wallet": "862TYSvRYoiHAK3F3WwTRYAfuGiQaGdxedN9AGvRGWo2",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #9 OGAntD ($4,881)"
+    "Kolscan daily #5 Wugi ($6,581)"
    ],
    "sources": [
     "kolscan"
@@ -237,10 +161,86 @@ window.GEM_WALLETS = {
    "trades": []
   },
   {
-   "wallet": "5YRgrP3mjGzrzirYYN5HAQH19cTYREYwGxW6XRJQUzij",
+   "wallet": "Be24Gbf5KisDk1LcWWZsBn8dvB816By7YzYF5zWZnRR6",
    "tier": "ERROR",
    "labels": [
-    "Kolscan daily #10 slingoor ($4,607)"
+    "Kolscan daily #6 Chairman ² ($5,965)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "tier": "ERROR",
+   "labels": [
+    "Kolscan daily #7 decu ($4,997)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
+   "tier": "ERROR",
+   "labels": [
+    "Kolscan daily #8 Limfork.eth ($4,699)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "CEUA7zVoDRqRYoeHTP58UHU6TR8yvtVbeLrX1dppqoXJ",
+   "tier": "ERROR",
+   "labels": [
+    "Kolscan daily #9 Tom ($3,325)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits_in_search": 0,
+   "stats": {},
+   "reasons": [
+    "HttpError: HTTP 429 for https://mainnet.helius-rpc.com/?api-key=***: max usage reached"
+   ],
+   "flags": [],
+   "notes": [],
+   "gems": [],
+   "trades": []
+  },
+  {
+   "wallet": "DNsh1UfJdxmze6T6GV9QK5SoFm7HsM5TRNxVuwVgo8Zj",
+   "tier": "ERROR",
+   "labels": [
+    "Kolscan daily #10 Hash ($3,278)"
    ],
    "sources": [
     "kolscan"
