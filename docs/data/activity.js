@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1794918289,
+ "updated_at": 1794950286,
  "mode": "holdings",
  "tracked": [
   {
@@ -94,6 +94,36 @@ window.GEM_ACTIVITY = {
   }
  ],
  "events": [
+  {
+   "ts": 1794949966,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 117)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "HhuBC77yzXVCVGs4z32wY89UxcB7VVsRBverEDfTpump",
+   "tokens": 12833990.208433,
+   "usd": 46.24,
+   "symbol": "------",
+   "price": 3.603e-06,
+   "market_cap": 3603.33,
+   "liquidity": null
+  },
+  {
+   "ts": 1794949966,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 117)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "7wBDq76oKF3z3VXGvd429jmm7QYwXzuRxtTxPNfg38ig",
+   "tokens": 9336931.144952,
+   "usd": 453.21,
+   "symbol": "UNKNOWN",
+   "price": 4.854e-05,
+   "market_cap": 48543.0,
+   "liquidity": 27991.24
+  },
   {
    "ts": 1794862142,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4563,36 +4593,6 @@ window.GEM_ACTIVITY = {
    "price": 0.013,
    "market_cap": 12893221.0,
    "liquidity": 423686.75
-  },
-  {
-   "ts": 1794042977,
-   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 81)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "A7bdiYdS5GjqGFtxf17ppRHtDKPkkRqbKtR27dxvQXaS",
-   "tokens": 0.0245031,
-   "usd": 32.45,
-   "symbol": "ZEC",
-   "price": 1324.28,
-   "market_cap": 32705.0,
-   "liquidity": 4057286.22
-  },
-  {
-   "ts": 1794042974,
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 107)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "buy",
-   "mint": "6KV1JMAgj7fwyeUJPLy3Qp8wveQkyLSbgcJkLKNapump",
-   "tokens": 35183330.97,
-   "usd": 222.75,
-   "symbol": "FUCKED",
-   "price": 6.331e-06,
-   "market_cap": 6331.68,
-   "liquidity": null
   }
  ],
  "consensus": []
