@@ -1,5 +1,5 @@
 {
- "updated_at": 1794970835,
+ "updated_at": 1795000764,
  "mode": "holdings",
  "tracked": [
   {
@@ -94,6 +94,21 @@
   }
  ],
  "events": [
+  {
+   "ts": 1795000441,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 118)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "5qrojTjYuKgDSkC8Lk3aWR1SwvdZux2aeatSwA7wixZw",
+   "tokens": 6428488.830744,
+   "usd": 299.18,
+   "symbol": "UNKNOWN",
+   "price": 4.654e-05,
+   "market_cap": 46546.0,
+   "liquidity": 27736.21
+  },
   {
    "ts": 1794970731,
    "wallet": "3VUNtVtjjx5ckUojT7UocJ5fbuAJRsNUXNfTBnPte9vC",
@@ -4577,21 +4592,6 @@
    "symbol": "DOGE",
    "price": 3.699e-06,
    "market_cap": 3699.25,
-   "liquidity": null
-  },
-  {
-   "ts": 1794066578,
-   "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 81)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "buy",
-   "mint": "BTn5nRSK4q3ZmoyjVD7w5UAatA5K176V5CQyPCYCBAGS",
-   "tokens": 16119829.421760248,
-   "usd": 230.84,
-   "symbol": "WSB",
-   "price": 1.432e-05,
-   "market_cap": 14325.9,
    "liquidity": null
   }
  ],
