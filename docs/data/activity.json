@@ -1,22 +1,22 @@
 {
- "updated_at": 1795135962,
+ "updated_at": 1795162369,
  "mode": "holdings",
  "tracked": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 119)",
+   "label": "consistent decu (score 120)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
-   "label": "consistent trunoest (score 115)",
+   "label": "consistent trunoest (score 116)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 106)",
+   "label": "consistent ban (score 107)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -75,6 +75,12 @@
    "gems": 0
   },
   {
+   "wallet": "387FRwow6MKDhSwuMULhKjqeXuxoBY4BbbaSntdk9LaH",
+   "label": "consistent Shawty (score 67)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
    "wallet": "2QrfK8gf3vBcFfuaCJbFxGk3w1JxwjamGE9aGwdQHFas",
    "label": "consistent Thokani (score 66)",
    "tier": "BOARD",
@@ -83,12 +89,6 @@
   {
    "wallet": "9LXWa7V3AE15VfBupcx5gDts2ix3Y9NzbcKZKjkkq6hV",
    "label": "consistent rikz_ (score 66)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "387FRwow6MKDhSwuMULhKjqeXuxoBY4BbbaSntdk9LaH",
-   "label": "consistent Shawty (score 66)",
    "tier": "BOARD",
    "gems": 0
   }
