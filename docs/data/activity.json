@@ -1,22 +1,22 @@
 {
- "updated_at": 1795194207,
+ "updated_at": 1795233808,
  "mode": "holdings",
  "tracked": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 120)",
+   "label": "consistent decu (score 121)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
-   "label": "consistent trunoest (score 116)",
+   "label": "consistent trunoest (score 117)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 107)",
+   "label": "consistent ban (score 108)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -94,6 +94,36 @@
   }
  ],
  "events": [
+  {
+   "ts": 1795233489,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 121)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "sell",
+   "mint": "GpU5tFGEtuVUfmGTiQaE6JyNuGbTWyHiQNGqvATipump",
+   "tokens": 26669467.137135,
+   "usd": 81.69,
+   "symbol": "MILLY",
+   "price": 3.063e-06,
+   "market_cap": 3063.84,
+   "liquidity": null
+  },
+  {
+   "ts": 1795233489,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 121)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "G1huxQGFiWA6TBU2oqVBvxUVQEb5SskLTt9Zb14dYRk1",
+   "tokens": 580101.8409910016,
+   "usd": 162.95,
+   "symbol": "PARALOOM",
+   "price": 0.0002809,
+   "market_cap": 280946877.0,
+   "liquidity": 1123848.99
+  },
   {
    "ts": 1795193884,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4563,36 +4593,6 @@
    "price": 2.225e-05,
    "market_cap": 20607.0,
    "liquidity": 13979.48
-  },
-  {
-   "ts": 1794130155,
-   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
-   "label": "consistent Schoen (score 68)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "buy",
-   "mint": "29odnuih5B7Bo6KNNJ6VWe3VCQgEN1mvbzDWDLxbpump",
-   "tokens": 19515590.869855,
-   "usd": 598.35,
-   "symbol": "💎",
-   "price": 3.066e-05,
-   "market_cap": 29230.0,
-   "liquidity": 12512.6
-  },
-  {
-   "ts": 1794130155,
-   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
-   "label": "consistent Schoen (score 68)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "buy",
-   "mint": "4zgsp8SGdYvwAK4s8BxF7yq45zr4AXN5NLmFJ6p8Ps4J",
-   "tokens": 20983701.80347,
-   "usd": 657.06,
-   "symbol": "4zgs…Ps4J",
-   "price": 3.1312842183726967e-05,
-   "market_cap": null,
-   "liquidity": null
   }
  ],
  "consensus": []
