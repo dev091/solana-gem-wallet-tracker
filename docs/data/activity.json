@@ -1,5 +1,5 @@
 {
- "updated_at": 1795355141,
+ "updated_at": 1795379810,
  "mode": "holdings",
  "tracked": [
   {
@@ -10,7 +10,7 @@
   },
   {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
-   "label": "consistent trunoest (score 120)",
+   "label": "consistent trunoest (score 121)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -40,13 +40,13 @@
   },
   {
    "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
-   "label": "consistent milito (score 77)",
+   "label": "consistent milito (score 78)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "GeUnv1jmtviRbR7Gu1JnXSGkUMUgFVBHuEVQVpTaUX1W",
-   "label": "consistent Gladey (score 76)",
+   "label": "consistent Gladey (score 77)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -64,7 +64,7 @@
   },
   {
    "wallet": "3VUNtVtjjx5ckUojT7UocJ5fbuAJRsNUXNfTBnPte9vC",
-   "label": "consistent buddhaaaaa (score 71)",
+   "label": "consistent buddhaaaaa (score 72)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -111,26 +111,20 @@
    "gems": 0
   },
   {
+   "wallet": "GRBoKJycw7ahcSiwSRuDkvPoxP29WcTWj6EttAEo3nZC",
+   "label": "small-money winner SwiftSeedVoice",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "57GkzmFnC2esjUTbsJMdew8K95CKSvgcNFJFngQHQz9C",
+   "label": "small-money winner TobiazLincoln",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
    "wallet": "8eGFHtyqn8vCRk9tPCuExEAftGAcwz8rKwFDVeAagdfm",
    "label": "small-money winner DragonCryptoCN",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "AwCkRdx8WyFeZtLxqFvYXQKts85gSTYq6RESy84eftyV",
-   "label": "small-money winner ibangurmom",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "3kfyzegbWkgAdLWtywmGcLFcUw2RPzt3i1EEzdXYtYM8",
-   "label": "small-money winner ThePatientOne",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "FTK2zCVLRa6X1aZ1P3XZU27iAvM8hjHDXiK3BubTEFmW",
-   "label": "small-money winner bob",
    "tier": "BOARD",
    "gems": 0
   }
