@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1795326023,
+ "updated_at": 1795355141,
  "mode": "holdings",
  "tracked": [
   {
@@ -93,8 +93,20 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
+   "wallet": "HFGGHdikjv4i6NHDXejSm5XKhnhzaG5uR7UnDW8rFtrs",
+   "label": "small-money winner MegaWarpEpoch",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
    "wallet": "h4fgp49aXoUPzNLQanw6iDJhHy8LMtYLhJBVigTUqy1",
    "label": "small-money winner Xenith2001",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "JAKZN3SeH8sFm9fc167PUApU6WmGV9qHvNvfyEHmSVQL",
+   "label": "small-money winner RedonMua",
    "tier": "BOARD",
    "gems": 0
   },
@@ -109,9 +121,36 @@ window.GEM_ACTIVITY = {
    "label": "small-money winner ibangurmom",
    "tier": "BOARD",
    "gems": 0
+  },
+  {
+   "wallet": "3kfyzegbWkgAdLWtywmGcLFcUw2RPzt3i1EEzdXYtYM8",
+   "label": "small-money winner ThePatientOne",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "FTK2zCVLRa6X1aZ1P3XZU27iAvM8hjHDXiK3BubTEFmW",
+   "label": "small-money winner bob",
+   "tier": "BOARD",
+   "gems": 0
   }
  ],
  "events": [
+  {
+   "ts": 1795354660,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 124)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "G1huxQGFiWA6TBU2oqVBvxUVQEb5SskLTt9Zb14dYRk1",
+   "tokens": 590256.1400980018,
+   "usd": 165.8,
+   "symbol": "PARALOOM",
+   "price": 0.0002809,
+   "market_cap": 280936991.0,
+   "liquidity": 1123809.44
+  },
   {
    "ts": 1795325633,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4595,21 +4634,6 @@ window.GEM_ACTIVITY = {
    "symbol": "007",
    "price": 2.492e-06,
    "market_cap": 2492.54,
-   "liquidity": null
-  },
-  {
-   "ts": 1794130155,
-   "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
-   "label": "consistent daddychilllll (score 68)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "5At1mFSkPUu6oZZQ6XJuSoKZQg58icJhwtBdsc7Upump",
-   "tokens": 37981378.103852,
-   "usd": 94.92,
-   "symbol": "Bags",
-   "price": 2.499e-06,
-   "market_cap": 2499.23,
    "liquidity": null
   }
  ],
