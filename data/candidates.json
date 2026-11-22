@@ -1,13 +1,13 @@
 {
- "generated_at": 1795255706,
+ "generated_at": 1795342052,
  "sources": {
   "seeds": {
    "ok": true,
    "wallets": 0
   },
   "pump-board": {
-   "ok": false,
-   "error": "HTTP 403 for https://frontend-api-v3.pump.fun/pnl-leaderboard?period=daily&limit=20: <!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA"
+   "ok": true,
+   "wallets": 24
   },
   "kolscan": {
    "ok": true,
@@ -45,53 +45,291 @@
  },
  "candidates": [
   {
+   "wallet": "EjhX8RakDRQzxg8YHAPDvVNPp2eog8bWX26KDmhivBhf",
+   "labels": [
+    "Pump.fun daily #3 stanczyk ($133.0k)",
+    "Pump.fun weekly #3 stanczyk ($191.1k)"
+   ],
+   "sources": [
+    "pump.fun daily",
+    "pump.fun weekly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "EM3nHRn4Fsj6dPo1SjoudN1mqUBmHXwyZqaQoH3SHfkZ",
+   "labels": [
+    "Pump.fun daily #4 panceramic ($104.3k)",
+    "Pump.fun weekly #4 panceramic ($120.5k)"
+   ],
+   "sources": [
+    "pump.fun daily",
+    "pump.fun weekly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "3dsGGVnGEvdDpTgj3pGgCXLU26KMEMVntCwNU8f7T8Bh",
+   "labels": [
+    "Pump.fun daily #6 eztic ($87.7k)",
+    "Pump.fun weekly #6 eztic ($87.3k)"
+   ],
+   "sources": [
+    "pump.fun daily",
+    "pump.fun weekly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "2QefNUdC4y6MBMbu7VDPaR8G7bwEaF9g9nfd7GvBkNm2",
+   "labels": [
+    "Pump.fun daily #7 LikeTrailLord ($81.6k)",
+    "Pump.fun weekly #5 LikeTrailLord ($92.0k)"
+   ],
+   "sources": [
+    "pump.fun daily",
+    "pump.fun weekly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "23cKMyD5BLnSyy7riTCjgbNj4sTbPQrC1Ei69X6HuAea",
+   "labels": [
+    "Pump.fun weekly #1 BoiledLongWhale ($241.8k)",
+    "Pump.fun monthly #3 BoiledLongWhale ($237.5k)"
+   ],
+   "sources": [
+    "pump.fun weekly",
+    "pump.fun monthly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "BSWzqnWrir5s54Fa94GEwBi1CSAR1q6Nio9JGsPGFcy1",
+   "labels": [
+    "Pump.fun weekly #2 gtsby ($224.8k)",
+    "Pump.fun monthly #6 gtsby ($159.7k)"
+   ],
+   "sources": [
+    "pump.fun weekly",
+    "pump.fun monthly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "labels": [
+    "Pump.fun monthly #7 notdecu ($151.9k)",
+    "Kolscan daily #8 decu ($6,715)"
+   ],
+   "sources": [
+    "pump.fun monthly",
+    "kolscan"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
+   "labels": [
+    "Pump.fun monthly #9 banval ($149.2k)",
+    "Kolscan daily #4 ban ($17.5k)"
+   ],
+   "sources": [
+    "pump.fun monthly",
+    "kolscan"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
+   "labels": [
+    "Pump.fun monthly #10 trunoest ($137.1k)",
+    "Kolscan daily #7 trunoest ($6,950)"
+   ],
+   "sources": [
+    "pump.fun monthly",
+    "kolscan"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "GV6UUmNxz2RpKxmNAPadYKb7uQpszwqQAu3qLJxVdC52",
+   "labels": [
+    "Pump.fun daily #1 ansemconzimp ($854.6k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "9BMzTpSo4URse1oN666pmexhdjpU1vA5p7LtroCFQdLU",
+   "labels": [
+    "Pump.fun daily #2 Aurelius ($134.9k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "AH39BneW9UeWxQysUcwogQrYFdPvJuRVZ5w4ccq9SKfL",
+   "labels": [
+    "Pump.fun daily #5 _logjam ($98.3k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "HDixbrzwwLXczhDBk1JVrurPQsuLE8FUKnW2pucSXN3o",
+   "labels": [
+    "Pump.fun daily #8 latentfish83215 ($79.2k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "2M2vLX34LXMg24dMEnjWHvRXS1tshpEDRWzmXgV8ENNZ",
+   "labels": [
+    "Pump.fun daily #9 SossaDotKek ($69.3k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "9tH2zRYdS3X7PEcsPno3GST1EHe8GX8CSNih1pKpamAp",
+   "labels": [
+    "Pump.fun daily #10 faceofsol ($66.0k)"
+   ],
+   "sources": [
+    "pump.fun daily"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "8vpGoRUFX5V84njyUQiXi9KYe5CPcY4wMWviTX37ZRm",
+   "labels": [
+    "Pump.fun weekly #7 229Billion ($75.9k)"
+   ],
+   "sources": [
+    "pump.fun weekly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "Jh5SzFV6PXXEYgXHj7MBm6eiRC9QTMDetsZe2XpZUqF",
+   "labels": [
+    "Pump.fun weekly #8 0xDeka ($74.7k)"
+   ],
+   "sources": [
+    "pump.fun weekly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "9wMySLRUmC44G5yL3sa8iPv5MmqaSskeqC4MhrmFbWsQ",
+   "labels": [
+    "Pump.fun weekly #9 0xddds ($71.2k)"
+   ],
+   "sources": [
+    "pump.fun weekly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "5dzH7gh5FjtrxUwtfBufJyTBA4fyCUGheZsdYQsE9vag",
+   "labels": [
+    "Pump.fun weekly #10 hermes ($69.7k)"
+   ],
+   "sources": [
+    "pump.fun weekly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "6DQAGJT7VZPVBsuG4kn3AvpyHCEi7B2RFFvMZdbqQqqP",
+   "labels": [
+    "Pump.fun monthly #1 cupsey ($322.3k)"
+   ],
+   "sources": [
+    "pump.fun monthly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "DADDY96nGXz3unXJhBzWRFgmB5kwGkEi6e7VEodneZoy",
+   "labels": [
+    "Pump.fun monthly #2 daddywal ($294.9k)"
+   ],
+   "sources": [
+    "pump.fun monthly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "EFmDSnRbFCHkUz3z9vVMahma725xe8zXoT1ru7ymwAgz",
+   "labels": [
+    "Pump.fun monthly #4 cefuli ($195.7k)"
+   ],
+   "sources": [
+    "pump.fun monthly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "E5KPzhc3NdWztE6qg1juWfZKTUHLdhD3efFCzBZUXWka",
+   "labels": [
+    "Pump.fun monthly #5 swaagsol ($177.0k)"
+   ],
+   "sources": [
+    "pump.fun monthly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "GeUnv1jmtviRbR7Gu1JnXSGkUMUgFVBHuEVQVpTaUX1W",
+   "labels": [
+    "Pump.fun monthly #8 Gladey ($149.8k)"
+   ],
+   "sources": [
+    "pump.fun monthly"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
    "wallet": "J23qr98GjGJJqKq9CBEnyRhHbmkaVxtTJNNxKu597wsA",
    "labels": [
-    "Kolscan daily #1 gr3g ($16.0k)"
-   ],
-   "sources": [
-    "kolscan"
-   ],
-   "gem_hits": 0,
-   "early_hits": 0
-  },
-  {
-   "wallet": "DfMxre4cKmvogbLrPigxmibVTTQDuzjdXojWzjCXXhzj",
-   "labels": [
-    "Kolscan daily #2 Euris ($12.7k)"
-   ],
-   "sources": [
-    "kolscan"
-   ],
-   "gem_hits": 0,
-   "early_hits": 0
-  },
-  {
-   "wallet": "4cXnf2z85UiZ5cyKsPMEULq1yufAtpkatmX4j4DBZqj2",
-   "labels": [
-    "Kolscan daily #3 WaiterG ($9,347)"
-   ],
-   "sources": [
-    "kolscan"
-   ],
-   "gem_hits": 0,
-   "early_hits": 0
-  },
-  {
-   "wallet": "87rRdssFiTJKY4MGARa4G5vQ31hmR7MxSmhzeaJ5AAxJ",
-   "labels": [
-    "Kolscan daily #4 Dior ($8,310)"
-   ],
-   "sources": [
-    "kolscan"
-   ],
-   "gem_hits": 0,
-   "early_hits": 0
-  },
-  {
-   "wallet": "6S8GezkxYUfZy9JPtYnanbcZTMB87Wjt1qx3c6ELajKC",
-   "labels": [
-    "Kolscan daily #5 Nyhrox ($7,980)"
+    "Kolscan daily #1 gr3g ($63.3k)"
    ],
    "sources": [
     "kolscan"
@@ -102,7 +340,7 @@
   {
    "wallet": "4Be9CvxqHW6BYiRAxW9Q3xu1ycTMWaL5z8NX4HR3ha7t",
    "labels": [
-    "Kolscan daily #6 Mitch ($7,945)"
+    "Kolscan daily #2 Mitch ($49.3k)"
    ],
    "sources": [
     "kolscan"
@@ -111,9 +349,9 @@
    "early_hits": 0
   },
   {
-   "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
+   "wallet": "Be24Gbf5KisDk1LcWWZsBn8dvB816By7YzYF5zWZnRR6",
    "labels": [
-    "Kolscan daily #7 ban ($6,166)"
+    "Kolscan daily #3 Chairman ² ($32.7k)"
    ],
    "sources": [
     "kolscan"
@@ -122,9 +360,9 @@
    "early_hits": 0
   },
   {
-   "wallet": "AQdBYZNy3BZ1vouGUjA1w9Ay7aq7kH5UQSuh4LQWKotY",
+   "wallet": "87rRdssFiTJKY4MGARa4G5vQ31hmR7MxSmhzeaJ5AAxJ",
    "labels": [
-    "Kolscan daily #8 Armoski ($6,013)"
+    "Kolscan daily #5 Dior ($13.7k)"
    ],
    "sources": [
     "kolscan"
@@ -133,9 +371,9 @@
    "early_hits": 0
   },
   {
-   "wallet": "5B79fMkcFeRTiwm7ehsZsFiKsC7m7n1Bgv9yLxPp9q2X",
+   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
    "labels": [
-    "Kolscan daily #9 bandit ($5,660)"
+    "Kolscan daily #6 Schoen ($12.1k)"
    ],
    "sources": [
     "kolscan"
@@ -144,9 +382,20 @@
    "early_hits": 0
   },
   {
-   "wallet": "JDd3hy3gQn2V982mi1zqhNqUw1GfV2UL6g76STojCJPN",
+   "wallet": "6HJetMbdHBuk3mLUainxAPpBpWzDgYbHGTS2TqDAUSX2",
    "labels": [
-    "Kolscan daily #10 West ($5,447)"
+    "Kolscan daily #9 LJC ($6,629)"
+   ],
+   "sources": [
+    "kolscan"
+   ],
+   "gem_hits": 0,
+   "early_hits": 0
+  },
+  {
+   "wallet": "8deJ9xeUvXSJwicYptA9mHsU2rN2pDx37KWzkDkEXhU6",
+   "labels": [
+    "Kolscan daily #10 Cooker ($5,758)"
    ],
    "sources": [
     "kolscan"
