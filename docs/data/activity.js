@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1795379810,
+ "updated_at": 1795396384,
  "mode": "holdings",
  "tracked": [
   {
@@ -130,6 +130,36 @@ window.GEM_ACTIVITY = {
   }
  ],
  "events": [
+  {
+   "ts": 1795395928,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 124)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "4cficzPdVet6gvfAn1cVki1XuE4BKUA8CFNPoRbR8nqt",
+   "tokens": 14838832.858493,
+   "usd": 688.97,
+   "symbol": "UNKNOWN",
+   "price": 4.643e-05,
+   "market_cap": 46434.0,
+   "liquidity": 26867.95
+  },
+  {
+   "ts": 1795395928,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 124)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "G1huxQGFiWA6TBU2oqVBvxUVQEb5SskLTt9Zb14dYRk1",
+   "tokens": 367571.4790580012,
+   "usd": 103.25,
+   "symbol": "PARALOOM",
+   "price": 0.0002809,
+   "market_cap": 280936991.0,
+   "liquidity": 1123809.44
+  },
   {
    "ts": 1795354660,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4599,36 +4629,6 @@ window.GEM_ACTIVITY = {
    "price": 0.0001209,
    "market_cap": 120977885.0,
    "liquidity": 483937.77
-  },
-  {
-   "ts": 1794154484,
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 108)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "buy",
-   "mint": "4CU1JyMAd9exiTw9sSGPMgBWsMPjnZfRHAKQC4Kapump",
-   "tokens": 22767498.459364,
-   "usd": 938.02,
-   "symbol": "INVESTOR",
-   "price": 4.12e-05,
-   "market_cap": 41206.49,
-   "liquidity": null
-  },
-  {
-   "ts": 1794130155,
-   "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
-   "label": "consistent daddychilllll (score 68)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "sell",
-   "mint": "3wc942eKr2jtkMJuqhgwFFSthbzQFt8e2ohDAb73pump",
-   "tokens": 36941280.831402,
-   "usd": 92.06,
-   "symbol": "007",
-   "price": 2.492e-06,
-   "market_cap": 2492.54,
-   "liquidity": null
   }
  ],
  "consensus": []
