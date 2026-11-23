@@ -1,5 +1,5 @@
 {
- "updated_at": 1795425134,
+ "updated_at": 1795469552,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
@@ -703,6 +703,19 @@
  "open": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 128)",
+   "tier": "BOARD",
+   "mint": "DE8xsZjZawaiasV1pGvho6iLrfYz89XPrycSmAgkNDUk",
+   "symbol": "UNKNOWN",
+   "opened_at": 1795469551,
+   "entry": 4.828e-05,
+   "peak": 4.828e-05,
+   "last": 4.828e-05,
+   "price_24h": null,
+   "wallet_buy_usd": 684.43
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 124)",
    "tier": "BOARD",
    "mint": "4cficzPdVet6gvfAn1cVki1XuE4BKUA8CFNPoRbR8nqt",
@@ -722,8 +735,8 @@
    "symbol": "UNKNOWN",
    "opened_at": 1795326023,
    "entry": 4.685e-05,
-   "peak": 4.956e-05,
-   "last": 4.956e-05,
+   "peak": 4.998e-05,
+   "last": 4.998e-05,
    "price_24h": 4.956e-05,
    "wallet_buy_usd": 716.88
   },

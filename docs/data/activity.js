@@ -1,10 +1,10 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1795425134,
+ "updated_at": 1795469551,
  "mode": "holdings",
  "tracked": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 127)",
+   "label": "consistent decu (score 128)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -46,7 +46,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
-   "label": "consistent milito (score 78)",
+   "label": "consistent milito (score 79)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -111,13 +111,46 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
+   "wallet": "8BbxGij39Qwsg4uP1vF6Fx1mN1Bn7Zocueidw72y3uZP",
+   "label": "small-money winner liltechnomancer",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "A1HNvuaTXoQsQVsmBCt8JyvrSEcFEYqCyfCmFe5kH4Xu",
+   "label": "small-money winner robert1123",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
    "wallet": "3kfyzegbWkgAdLWtywmGcLFcUw2RPzt3i1EEzdXYtYM8",
    "label": "small-money winner ThePatientOne",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "H1TLERBQyQzSd5gbvbWwP97GjeL9txzWoN5BK4UG7xYm",
+   "label": "small-money winner 0xWarlord_",
    "tier": "BOARD",
    "gems": 0
   }
  ],
  "events": [
+  {
+   "ts": 1795469073,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 128)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "DE8xsZjZawaiasV1pGvho6iLrfYz89XPrycSmAgkNDUk",
+   "tokens": 14176306.284984,
+   "usd": 684.43,
+   "symbol": "UNKNOWN",
+   "price": 4.828e-05,
+   "market_cap": 48281.0,
+   "liquidity": 27782.23
+  },
   {
    "ts": 1795395928,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4602,21 +4635,6 @@ window.GEM_ACTIVITY = {
    "price": 0.000219,
    "market_cap": 219092.0,
    "liquidity": 44992.51
-  },
-  {
-   "ts": 1794154485,
-   "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 95)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "buy",
-   "mint": "4nHFkUojiE5zhP6VLVS93tbbtdKnLPv1Wx76nvmsBXoe",
-   "tokens": 1455801.1993259788,
-   "usd": 176.01,
-   "symbol": "GTA6",
-   "price": 0.0001209,
-   "market_cap": 120977885.0,
-   "liquidity": 483937.77
   }
  ],
  "consensus": []
