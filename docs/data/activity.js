@@ -1,10 +1,10 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1795537129,
+ "updated_at": 1795567917,
  "mode": "holdings",
  "tracked": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 132)",
+   "label": "consistent notdecu (score 132)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -16,19 +16,19 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent banval (score 118)",
+   "label": "consistent ban (score 119)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 91)",
+   "label": "consistent Limfork.eth (score 93)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
-   "label": "consistent schoen (score 86)",
+   "label": "consistent Schoen (score 89)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -70,7 +70,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "387FRwow6MKDhSwuMULhKjqeXuxoBY4BbbaSntdk9LaH",
-   "label": "consistent Shawty (score 73)",
+   "label": "consistent Shawty (score 74)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -87,20 +87,14 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "ArkdCAPErAo6KdVDTFA32YKnqaD7jfXsESFoyxQzDgnu",
-   "label": "consistent normalseal38782 (score 68)",
+   "wallet": "2QrfK8gf3vBcFfuaCJbFxGk3w1JxwjamGE9aGwdQHFas",
+   "label": "consistent Thokani (score 68)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "h4fgp49aXoUPzNLQanw6iDJhHy8LMtYLhJBVigTUqy1",
    "label": "small-money winner Xenith2001",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "GTX9cgCpbqfh4ZjZHvUXbiMFQjknbgkQnbQHwbuTzayJ",
-   "label": "small-money winner PIXEL_mm",
    "tier": "BOARD",
    "gems": 0
   },
@@ -119,12 +113,6 @@ window.GEM_ACTIVITY = {
   {
    "wallet": "8BbxGij39Qwsg4uP1vF6Fx1mN1Bn7Zocueidw72y3uZP",
    "label": "small-money winner liltechnomancer",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "D8kKvpeGujoUifhumESFahjauzyddzYei8TKPNoYPzPa",
-   "label": "small-money winner GambitAce",
    "tier": "BOARD",
    "gems": 0
   }
