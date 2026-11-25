@@ -1,40 +1,40 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1795567917,
+ "updated_at": 1795598665,
  "mode": "holdings",
  "tracked": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent notdecu (score 132)",
+   "label": "consistent decu (score 135)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "ardinRsN1mNYVeoJWTBsWeYeXvuR9UUDGMsCDKpb6AT",
-   "label": "consistent trunoest (score 127)",
+   "label": "consistent trunoest (score 130)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 119)",
+   "label": "consistent banval (score 121)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 93)",
+   "label": "consistent Limfork.eth (score 95)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
-   "label": "consistent Schoen (score 89)",
+   "label": "consistent schoen (score 90)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "GeUnv1jmtviRbR7Gu1JnXSGkUMUgFVBHuEVQVpTaUX1W",
-   "label": "consistent Gladey (score 83)",
+   "label": "consistent Gladey (score 86)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -45,14 +45,14 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
-   "label": "consistent milito (score 80)",
+   "wallet": "3VUNtVtjjx5ckUojT7UocJ5fbuAJRsNUXNfTBnPte9vC",
+   "label": "consistent buddhaaaaa (score 81)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "3VUNtVtjjx5ckUojT7UocJ5fbuAJRsNUXNfTBnPte9vC",
-   "label": "consistent buddhaaaaa (score 78)",
+   "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
+   "label": "consistent milito (score 81)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -63,38 +63,44 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "2X4H5Y9C4Fy6Pf3wpq8Q4gMvLcWvfrrwDv2bdR8AAwQv",
-   "label": "consistent Orange (score 74)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
    "wallet": "387FRwow6MKDhSwuMULhKjqeXuxoBY4BbbaSntdk9LaH",
-   "label": "consistent Shawty (score 74)",
+   "label": "consistent Shawty (score 76)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
-   "label": "consistent daddychilllll (score 71)",
+   "wallet": "2X4H5Y9C4Fy6Pf3wpq8Q4gMvLcWvfrrwDv2bdR8AAwQv",
+   "label": "consistent orange (score 75)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "F9zT1F46HAoPanR4NC1Yw7TyP8Z9tCavTe48mrzK7aN4",
-   "label": "consistent BraveSmallCub (score 71)",
+   "label": "consistent BraveSmallCub (score 73)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
+   "label": "consistent daddychilllll (score 72)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "2QrfK8gf3vBcFfuaCJbFxGk3w1JxwjamGE9aGwdQHFas",
-   "label": "consistent Thokani (score 68)",
+   "label": "consistent Thokani (score 70)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "h4fgp49aXoUPzNLQanw6iDJhHy8LMtYLhJBVigTUqy1",
    "label": "small-money winner Xenith2001",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "CBtcPZ6RidEqs693CMo1rHG58rVpCmEqp9Y59SW1V3KB",
+   "label": "small-money winner eggrolls",
    "tier": "BOARD",
    "gems": 0
   },
@@ -107,6 +113,18 @@ window.GEM_ACTIVITY = {
   {
    "wallet": "4VvdcB1Bde2qCPdbxkFcy79qk3cT1nMXFoGuhfhCa7gr",
    "label": "small-money winner M4ks1",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "EGiTNq9rwCpm6bhKURuswVbxCG7zT1xKfMgLXMzm67gQ",
+   "label": "small-money winner 3hree6ixhours",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "5bE6GP5mmfnfDtzia9GBp1g8MiJ9YToNmbmKKcPBsBXX",
+   "label": "small-money winner topblastrrr",
    "tier": "BOARD",
    "gems": 0
   },
