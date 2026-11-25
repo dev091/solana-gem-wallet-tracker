@@ -1,10 +1,10 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1795598665,
+ "updated_at": 1795635404,
  "mode": "holdings",
  "tracked": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 135)",
+   "label": "consistent notdecu (score 135)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -16,7 +16,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent banval (score 121)",
+   "label": "consistent ban (score 122)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -28,7 +28,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
-   "label": "consistent schoen (score 90)",
+   "label": "consistent Schoen (score 91)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -63,14 +63,14 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "387FRwow6MKDhSwuMULhKjqeXuxoBY4BbbaSntdk9LaH",
-   "label": "consistent Shawty (score 76)",
+   "wallet": "2X4H5Y9C4Fy6Pf3wpq8Q4gMvLcWvfrrwDv2bdR8AAwQv",
+   "label": "consistent orange (score 76)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "2X4H5Y9C4Fy6Pf3wpq8Q4gMvLcWvfrrwDv2bdR8AAwQv",
-   "label": "consistent orange (score 75)",
+   "wallet": "387FRwow6MKDhSwuMULhKjqeXuxoBY4BbbaSntdk9LaH",
+   "label": "consistent Shawty (score 76)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -93,38 +93,14 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "h4fgp49aXoUPzNLQanw6iDJhHy8LMtYLhJBVigTUqy1",
-   "label": "small-money winner Xenith2001",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
    "wallet": "CBtcPZ6RidEqs693CMo1rHG58rVpCmEqp9Y59SW1V3KB",
    "label": "small-money winner eggrolls",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "7cqEAmRBuWYyLkpJUEKUUiYcHjSJXYpvZ3rfg1onHT93",
-   "label": "small-money winner wigginout",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "4VvdcB1Bde2qCPdbxkFcy79qk3cT1nMXFoGuhfhCa7gr",
-   "label": "small-money winner M4ks1",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "EGiTNq9rwCpm6bhKURuswVbxCG7zT1xKfMgLXMzm67gQ",
-   "label": "small-money winner 3hree6ixhours",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "5bE6GP5mmfnfDtzia9GBp1g8MiJ9YToNmbmKKcPBsBXX",
-   "label": "small-money winner topblastrrr",
+   "wallet": "ABEGScSATHFybdwqY3eb15xx3duqXHKWjcFZAN5FsBBb",
+   "label": "small-money winner waddles",
    "tier": "BOARD",
    "gems": 0
   },
@@ -136,6 +112,21 @@ window.GEM_ACTIVITY = {
   }
  ],
  "events": [
+  {
+   "ts": 1795635016,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent notdecu (score 135)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "BB4PGmhB2Vg2UVNtQMazehRdgKGjf9rCaMo7EwVK3A8C",
+   "tokens": 16447692.041719,
+   "usd": 799.69,
+   "symbol": "UNKNOWN",
+   "price": 4.862e-05,
+   "market_cap": 48630.0,
+   "liquidity": 27011.25
+  },
   {
    "ts": 1795497960,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4620,21 +4611,6 @@ window.GEM_ACTIVITY = {
    "price": 0.003709,
    "market_cap": 1702177406.0,
    "liquidity": 2420584.97
-  },
-  {
-   "ts": 1794170010,
-   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
-   "label": "consistent Schoen (score 68)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "buy",
-   "mint": "DNYRJmZuD7cx3rXjaoosQyDx5QBV8ZS3eBWWnUFbpump",
-   "tokens": 4629456.956829,
-   "usd": 2255.93,
-   "symbol": "SLINGOOR",
-   "price": 0.0004873,
-   "market_cap": 477215.0,
-   "liquidity": 68899.75
   }
  ],
  "consensus": []

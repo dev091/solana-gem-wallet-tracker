@@ -77,6 +77,19 @@
    "last": 4.8380994542555584e-05,
    "price_24h": 4.8380994542555584e-05,
    "wallet_buy_usd": 629.29
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent notdecu (score 135)",
+   "tier": "BOARD",
+   "mint": "BB4PGmhB2Vg2UVNtQMazehRdgKGjf9rCaMo7EwVK3A8C",
+   "symbol": "UNKNOWN",
+   "opened_at": 1795635404,
+   "entry": 4.862e-05,
+   "peak": 4.862e-05,
+   "last": 4.862e-05,
+   "price_24h": null,
+   "wallet_buy_usd": 799.69
   }
  ],
  "closed": [
