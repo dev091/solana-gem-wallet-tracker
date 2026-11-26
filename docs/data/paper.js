@@ -1,27 +1,27 @@
 window.GEM_PAPER = {
- "updated_at": 1795660443,
+ "updated_at": 1795692622,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
  "summary": {
   "overall": {
-   "trades": 640,
+   "trades": 645,
    "mirror": {
-    "pnl_usd": -1456.53,
-    "win_rate": 0.158,
-    "avg_return_pct": -11.4,
+    "pnl_usd": -1455.33,
+    "win_rate": 0.16,
+    "avg_return_pct": -11.3,
     "best_x": 20.33
    },
    "tp2x_half": {
-    "pnl_usd": -1648.74,
-    "win_rate": 0.164,
-    "avg_return_pct": -12.9,
+    "pnl_usd": -1647.54,
+    "win_rate": 0.166,
+    "avg_return_pct": -12.8,
     "best_x": 11.13
    },
    "hold_24h": {
-    "pnl_usd": -1645.2,
-    "win_rate": 0.147,
-    "avg_return_pct": -12.9,
+    "pnl_usd": -1644.0,
+    "win_rate": 0.149,
+    "avg_return_pct": -12.7,
     "best_x": 9.67
    }
   },
@@ -675,27 +675,27 @@ window.GEM_PAPER = {
     "tier": "BOARD"
    },
    {
-    "trades": 191,
+    "trades": 196,
     "mirror": {
-     "pnl_usd": -493.26,
-     "win_rate": 0.136,
-     "avg_return_pct": -12.9,
+     "pnl_usd": -492.06,
+     "win_rate": 0.143,
+     "avg_return_pct": -12.6,
      "best_x": 1.88
     },
     "tp2x_half": {
-     "pnl_usd": -490.32,
-     "win_rate": 0.136,
-     "avg_return_pct": -12.8,
+     "pnl_usd": -489.12,
+     "win_rate": 0.143,
+     "avg_return_pct": -12.5,
      "best_x": 1.88
     },
     "hold_24h": {
-     "pnl_usd": -520.76,
-     "win_rate": 0.084,
-     "avg_return_pct": -13.6,
+     "pnl_usd": -519.56,
+     "win_rate": 0.092,
+     "avg_return_pct": -13.3,
      "best_x": 2.02
     },
     "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-    "label": "consistent decu (score 128)",
+    "label": "consistent decu (score 131)",
     "tier": "BOARD"
    }
   ]
@@ -709,8 +709,8 @@ window.GEM_PAPER = {
    "symbol": "PUMP",
    "opened_at": 1795660443,
    "entry": 0.002643,
-   "peak": 0.002643,
-   "last": 0.002643,
+   "peak": 0.002653,
+   "last": 0.002653,
    "price_24h": null,
    "wallet_buy_usd": 64.39
   },
@@ -723,48 +723,32 @@ window.GEM_PAPER = {
    "opened_at": 1795635404,
    "entry": 4.862e-05,
    "peak": 4.862e-05,
-   "last": 4.862e-05,
+   "last": 4.857906577372649e-05,
    "price_24h": null,
    "wallet_buy_usd": 799.69
-  },
+  }
+ ],
+ "closed": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 131)",
    "tier": "BOARD",
-   "mint": "DmuXqJ6jSW9ucoAGcsTePj4UbVecvUoSvZXku3EVQowF",
+   "mint": "7ZG6tNJu2LCXgUaCayzKzohj8Q3tKWM9Aoi54Ri8hDS2",
    "symbol": "UNKNOWN",
    "opened_at": 1795498374,
-   "entry": 4.868e-05,
-   "peak": 4.868e-05,
-   "last": 4.654e-05,
-   "price_24h": 4.654e-05,
-   "wallet_buy_usd": 882.82
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 131)",
-   "tier": "BOARD",
-   "mint": "9yZPFe4aiqbB6YoanW7h2cv2AL8qo1htLQx1QgQfJkVE",
-   "symbol": "UNKNOWN",
-   "opened_at": 1795498374,
-   "entry": 4.35e-05,
-   "peak": 4.814e-05,
-   "last": 4.814e-05,
-   "price_24h": 4.814e-05,
-   "wallet_buy_usd": 641.84
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 131)",
-   "tier": "BOARD",
-   "mint": "8VkV9Ngb7k7rrn7cUCSc8FS5ZbaRf1XRn1kFGU6zBafY",
-   "symbol": "UNKNOWN",
-   "opened_at": 1795498374,
-   "entry": 4.878e-05,
-   "peak": 4.905e-05,
-   "last": 4.9009128625258825e-05,
-   "price_24h": 4.9009128625258825e-05,
-   "wallet_buy_usd": 819.56
+   "entry": 4.024e-05,
+   "peak": 4.846e-05,
+   "last": 4.8380994542555584e-05,
+   "price_24h": 4.8380994542555584e-05,
+   "wallet_buy_usd": 629.29,
+   "closed_at": 1795692622,
+   "exit": 4.8380994542555584e-05,
+   "reason": "48h limit",
+   "returns": {
+    "mirror": 1.1547,
+    "tp2x_half": 1.1547,
+    "hold_24h": 1.1547
+   }
   },
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -777,23 +761,79 @@ window.GEM_PAPER = {
    "peak": 4.803e-05,
    "last": 4.797562219634387e-05,
    "price_24h": 4.797562219634387e-05,
-   "wallet_buy_usd": 657.89
+   "wallet_buy_usd": 657.89,
+   "closed_at": 1795692622,
+   "exit": 4.797562219634387e-05,
+   "reason": "48h limit",
+   "returns": {
+    "mirror": 0.9593,
+    "tp2x_half": 0.9593,
+    "hold_24h": 0.9593
+   }
   },
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 131)",
    "tier": "BOARD",
-   "mint": "7ZG6tNJu2LCXgUaCayzKzohj8Q3tKWM9Aoi54Ri8hDS2",
+   "mint": "8VkV9Ngb7k7rrn7cUCSc8FS5ZbaRf1XRn1kFGU6zBafY",
    "symbol": "UNKNOWN",
    "opened_at": 1795498374,
-   "entry": 4.024e-05,
-   "peak": 4.846e-05,
-   "last": 4.8380994542555584e-05,
-   "price_24h": 4.8380994542555584e-05,
-   "wallet_buy_usd": 629.29
-  }
- ],
- "closed": [
+   "entry": 4.878e-05,
+   "peak": 4.905e-05,
+   "last": 4.9009128625258825e-05,
+   "price_24h": 4.9009128625258825e-05,
+   "wallet_buy_usd": 819.56,
+   "closed_at": 1795692622,
+   "exit": 4.9009128625258825e-05,
+   "reason": "48h limit",
+   "returns": {
+    "mirror": 0.9649,
+    "tp2x_half": 0.9649,
+    "hold_24h": 0.9649
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 131)",
+   "tier": "BOARD",
+   "mint": "9yZPFe4aiqbB6YoanW7h2cv2AL8qo1htLQx1QgQfJkVE",
+   "symbol": "UNKNOWN",
+   "opened_at": 1795498374,
+   "entry": 4.35e-05,
+   "peak": 4.814e-05,
+   "last": 4.814e-05,
+   "price_24h": 4.814e-05,
+   "wallet_buy_usd": 641.84,
+   "closed_at": 1795692622,
+   "exit": 4.814e-05,
+   "reason": "48h limit",
+   "returns": {
+    "mirror": 1.0628,
+    "tp2x_half": 1.0628,
+    "hold_24h": 1.0628
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent decu (score 131)",
+   "tier": "BOARD",
+   "mint": "DmuXqJ6jSW9ucoAGcsTePj4UbVecvUoSvZXku3EVQowF",
+   "symbol": "UNKNOWN",
+   "opened_at": 1795498374,
+   "entry": 4.868e-05,
+   "peak": 4.868e-05,
+   "last": 4.654e-05,
+   "price_24h": 4.654e-05,
+   "wallet_buy_usd": 882.82,
+   "closed_at": 1795692622,
+   "exit": 4.654e-05,
+   "reason": "48h limit",
+   "returns": {
+    "mirror": 0.9182,
+    "tp2x_half": 0.9182,
+    "hold_24h": 0.9182
+   }
+  },
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent decu (score 128)",
@@ -6987,111 +7027,6 @@ window.GEM_PAPER = {
     "mirror": 1.1477,
     "tp2x_half": 1.1477,
     "hold_24h": 1.0384
-   }
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 47)",
-   "tier": "BOARD",
-   "mint": "7g32WbhysZCJTmJBdg4sfEd8CfeDkH6PfgPvaoEwh6AX",
-   "symbol": "UNKNOWN",
-   "opened_at": 1792366660,
-   "entry": 3.07e-05,
-   "peak": 3.171e-05,
-   "last": 3.139e-05,
-   "price_24h": 3.157e-05,
-   "wallet_buy_usd": 125.86,
-   "closed_at": 1792541737,
-   "exit": 3.139e-05,
-   "reason": "48h limit",
-   "returns": {
-    "mirror": 0.982,
-    "tp2x_half": 0.982,
-    "hold_24h": 0.9876
-   }
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 47)",
-   "tier": "BOARD",
-   "mint": "B2VmK9EJih3oHDLU8UN1TexmrKRVn7SKJb4XoCGU2SWz",
-   "symbol": "UNKNOWN",
-   "opened_at": 1792329894,
-   "entry": 2.955e-05,
-   "peak": 2.955e-05,
-   "last": 2.955e-05,
-   "price_24h": 2.955e-05,
-   "wallet_buy_usd": 140.68,
-   "closed_at": 1792519599,
-   "exit": 2.955e-05,
-   "reason": "48h limit",
-   "returns": {
-    "mirror": 0.9604,
-    "tp2x_half": 0.9604,
-    "hold_24h": 0.9604
-   }
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 47)",
-   "tier": "BOARD",
-   "mint": "2u73whNbXhErbA8xXj7Ggjog97huvPBHXv91HwqEYuji",
-   "symbol": "UNKNOWN",
-   "opened_at": 1792329894,
-   "entry": 2.997e-05,
-   "peak": 3.118e-05,
-   "last": 3.118e-05,
-   "price_24h": 3.055e-05,
-   "wallet_buy_usd": 137.03,
-   "closed_at": 1792519599,
-   "exit": 3.118e-05,
-   "reason": "48h limit",
-   "returns": {
-    "mirror": 0.9992,
-    "tp2x_half": 0.9992,
-    "hold_24h": 0.979
-   }
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 51)",
-   "tier": "BOARD",
-   "mint": "8F94qzmWfrBMFW4yzQFDqQmnntRUkcFqEwJpZ26tpump",
-   "symbol": "DOGETTE",
-   "opened_at": 1792440753,
-   "entry": 7.563e-06,
-   "peak": 7.563e-06,
-   "last": 7.563e-06,
-   "price_24h": 3.258e-06,
-   "wallet_buy_usd": 192.45,
-   "closed_at": 1792453757,
-   "exit": 3.258e-06,
-   "reason": "wallet sold",
-   "returns": {
-    "mirror": 0.4137,
-    "tp2x_half": 0.4137,
-    "hold_24h": 0.4137
-   }
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 42)",
-   "tier": "BOARD",
-   "mint": "6TCoRoHuQGY2c9gAoaCEqC2ieMC6h29uGjb5xbbXNbnT",
-   "symbol": "MET",
-   "opened_at": 1792260027,
-   "entry": 0.2109,
-   "peak": 0.2109,
-   "last": 0.2109,
-   "price_24h": 0.2109,
-   "wallet_buy_usd": 347.84,
-   "closed_at": 1792440753,
-   "exit": 0.2109,
-   "reason": "48h limit",
-   "returns": {
-    "mirror": 0.9604,
-    "tp2x_half": 0.9604,
-    "hold_24h": 0.9604
    }
   }
  ]
