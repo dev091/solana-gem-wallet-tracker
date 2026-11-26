@@ -10,7 +10,7 @@
    "entry": 4.862e-05,
    "peak": 4.862e-05,
    "last": 4.857906577372649e-05,
-   "price_24h": null,
+   "price_24h": 4.857906577372649e-05,
    "wallet_buy_usd": 799.69
   },
   {
@@ -22,7 +22,7 @@
    "opened_at": 1795660443,
    "entry": 0.002643,
    "peak": 0.002653,
-   "last": 0.002653,
+   "last": 0.002598,
    "price_24h": null,
    "wallet_buy_usd": 64.39
   }

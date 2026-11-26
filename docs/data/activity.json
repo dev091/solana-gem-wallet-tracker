@@ -1,5 +1,5 @@
 {
- "updated_at": 1795692622,
+ "updated_at": 1795724959,
  "mode": "holdings",
  "tracked": [
   {
@@ -16,19 +16,19 @@
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 125)",
+   "label": "consistent banval (score 125)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "BQVz7fQ1WsQmSTMY3umdPEPPTm1sdcBcX9sP7o6kPRmB",
-   "label": "consistent Limfork.eth (score 95)",
+   "label": "consistent Limfork.eth (score 96)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
-   "label": "consistent schoen (score 93)",
+   "label": "consistent Schoen (score 94)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -89,18 +89,6 @@
   {
    "wallet": "2QrfK8gf3vBcFfuaCJbFxGk3w1JxwjamGE9aGwdQHFas",
    "label": "consistent Thokani (score 72)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "95TWoKkvv2z85EXBzd2z6NwbxH2f54AvwuCA9x3NoKep",
-   "label": "small-money winner killuacooks",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "9sK738XzYrt9Jkhy1iL5zLjv4Us18t65o7ACmzMbLUXf",
-   "label": "small-money winner unc1422",
    "tier": "BOARD",
    "gems": 0
   },
