@@ -1,5 +1,5 @@
 {
- "updated_at": 1795635404,
+ "updated_at": 1795660443,
  "mode": "holdings",
  "tracked": [
   {
@@ -112,6 +112,21 @@
   }
  ],
  "events": [
+  {
+   "ts": 1795660055,
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent notdecu (score 135)",
+   "tier": "BOARD",
+   "gems": 0,
+   "side": "buy",
+   "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+   "tokens": 24362.100483000002,
+   "usd": 64.39,
+   "symbol": "PUMP",
+   "price": 0.002643,
+   "market_cap": 932222537.0,
+   "liquidity": 18433018.65
+  },
   {
    "ts": 1795635016,
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
@@ -4596,21 +4611,6 @@
    "price": 2.8128614417078707e-05,
    "market_cap": null,
    "liquidity": null
-  },
-  {
-   "ts": 1794170010,
-   "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
-   "label": "consistent Schoen (score 68)",
-   "tier": "BOARD",
-   "gems": 0,
-   "side": "buy",
-   "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
-   "tokens": 202866.46441999997,
-   "usd": 752.43,
-   "symbol": "PUMP",
-   "price": 0.003709,
-   "market_cap": 1702177406.0,
-   "liquidity": 2420584.97
   }
  ],
  "consensus": []
