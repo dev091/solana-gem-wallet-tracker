@@ -1,5 +1,5 @@
 window.GEM_PAPER = {
- "updated_at": 1795724959,
+ "updated_at": 1795748979,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
@@ -709,9 +709,9 @@ window.GEM_PAPER = {
    "symbol": "PUMP",
    "opened_at": 1795660443,
    "entry": 0.002643,
-   "peak": 0.002653,
-   "last": 0.002598,
-   "price_24h": null,
+   "peak": 0.00268,
+   "last": 0.00268,
+   "price_24h": 0.00268,
    "wallet_buy_usd": 64.39
   },
   {

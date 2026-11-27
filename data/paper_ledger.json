@@ -21,9 +21,9 @@
    "symbol": "PUMP",
    "opened_at": 1795660443,
    "entry": 0.002643,
-   "peak": 0.002653,
-   "last": 0.002598,
-   "price_24h": null,
+   "peak": 0.00268,
+   "last": 0.00268,
+   "price_24h": 0.00268,
    "wallet_buy_usd": 64.39
   }
  ],
