@@ -4,25 +4,12 @@
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent notdecu (score 135)",
    "tier": "BOARD",
-   "mint": "BB4PGmhB2Vg2UVNtQMazehRdgKGjf9rCaMo7EwVK3A8C",
-   "symbol": "UNKNOWN",
-   "opened_at": 1795635404,
-   "entry": 4.862e-05,
-   "peak": 4.862e-05,
-   "last": 4.857906577372649e-05,
-   "price_24h": 4.857906577372649e-05,
-   "wallet_buy_usd": 799.69
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent notdecu (score 135)",
-   "tier": "BOARD",
    "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
    "symbol": "PUMP",
    "opened_at": 1795660443,
    "entry": 0.002643,
    "peak": 0.00268,
-   "last": 0.002678,
+   "last": 0.002589,
    "price_24h": 0.00268,
    "wallet_buy_usd": 64.39
   }
@@ -13571,6 +13558,27 @@
     "mirror": 1.1547,
     "tp2x_half": 1.1547,
     "hold_24h": 1.1547
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent notdecu (score 135)",
+   "tier": "BOARD",
+   "mint": "BB4PGmhB2Vg2UVNtQMazehRdgKGjf9rCaMo7EwVK3A8C",
+   "symbol": "UNKNOWN",
+   "opened_at": 1795635404,
+   "entry": 4.862e-05,
+   "peak": 4.862e-05,
+   "last": 4.857906577372649e-05,
+   "price_24h": 4.857906577372649e-05,
+   "wallet_buy_usd": 799.69,
+   "closed_at": 1795815450,
+   "exit": 4.857906577372649e-05,
+   "reason": "48h limit",
+   "returns": {
+    "mirror": 0.9596,
+    "tp2x_half": 0.9596,
+    "hold_24h": 0.9596
    }
   }
  ]
