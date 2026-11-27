@@ -1,5 +1,5 @@
 {
- "updated_at": 1795748979,
+ "updated_at": 1795782350,
  "mode": "holdings",
  "tracked": [
   {
@@ -16,13 +16,13 @@
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent banval (score 127)",
+   "label": "consistent ban (score 128)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "5hAgYC8TJCcEZV7LTXAzkTrm7YL29YXyQQJPCNrG84zM",
-   "label": "consistent Schoen (score 97)",
+   "label": "consistent schoen (score 97)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -63,14 +63,14 @@
    "gems": 0
   },
   {
-   "wallet": "387FRwow6MKDhSwuMULhKjqeXuxoBY4BbbaSntdk9LaH",
-   "label": "consistent Shawty (score 79)",
+   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
+   "label": "consistent OGAntD (score 80)",
    "tier": "BOARD",
    "gems": 0
   },
   {
-   "wallet": "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP",
-   "label": "consistent OGAntD (score 78)",
+   "wallet": "387FRwow6MKDhSwuMULhKjqeXuxoBY4BbbaSntdk9LaH",
+   "label": "consistent Shawty (score 79)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -89,6 +89,12 @@
   {
    "wallet": "pXGQ6J2ziRCvmYSLTT55FASf2jSHeCD6gju5xka31yV",
    "label": "consistent daddychilllll (score 74)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
+   "wallet": "7iRo63BzGA3BoXyNhrhR3WNzBzRN1WP4bDik4Q5t9fDR",
+   "label": "small-money winner rekt_tekashi",
    "tier": "BOARD",
    "gems": 0
   }
