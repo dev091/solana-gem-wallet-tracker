@@ -1,5 +1,5 @@
 window.GEM_ACTIVITY = {
- "updated_at": 1795782350,
+ "updated_at": 1795837085,
  "mode": "holdings",
  "tracked": [
   {
@@ -16,7 +16,7 @@ window.GEM_ACTIVITY = {
   },
   {
    "wallet": "EqiFgyNw6kgrmYstWyrP8VjKhka7XEmKTZzHSmwpr1Zb",
-   "label": "consistent ban (score 128)",
+   "label": "consistent ban (score 129)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -45,20 +45,20 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
+   "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
+   "label": "consistent milito (score 82)",
+   "tier": "BOARD",
+   "gems": 0
+  },
+  {
    "wallet": "2X4H5Y9C4Fy6Pf3wpq8Q4gMvLcWvfrrwDv2bdR8AAwQv",
-   "label": "consistent Orange (score 82)",
+   "label": "consistent orange (score 82)",
    "tier": "BOARD",
    "gems": 0
   },
   {
    "wallet": "29yFzeBZgxf5zqrAkKXwgZtQehRf4pL8WbV2nRJikbw8",
    "label": "consistent throatycrab1008 (score 81)",
-   "tier": "BOARD",
-   "gems": 0
-  },
-  {
-   "wallet": "EeXvxkcGqMDZeTaVeawzxm9mbzZwqDUMmfG3bF7uzumH",
-   "label": "consistent milito (score 81)",
    "tier": "BOARD",
    "gems": 0
   },
@@ -93,8 +93,8 @@ window.GEM_ACTIVITY = {
    "gems": 0
   },
   {
-   "wallet": "7iRo63BzGA3BoXyNhrhR3WNzBzRN1WP4bDik4Q5t9fDR",
-   "label": "small-money winner rekt_tekashi",
+   "wallet": "EobBWY77TkuirHKdAb5rPkXU4S4EmoQpx94pmYvBqNfU",
+   "label": "small-money winner Kowalskixd",
    "tier": "BOARD",
    "gems": 0
   }

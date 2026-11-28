@@ -1,26 +1,26 @@
 {
- "updated_at": 1795815450,
+ "updated_at": 1795837085,
  "stake_usd": 20.0,
  "fee_pct_per_side": 2.0,
  "max_hold_hours": 48,
  "summary": {
   "overall": {
-   "trades": 646,
+   "trades": 647,
    "mirror": {
-    "pnl_usd": -1456.14,
+    "pnl_usd": -1457.17,
     "win_rate": 0.159,
     "avg_return_pct": -11.3,
     "best_x": 20.33
    },
    "tp2x_half": {
-    "pnl_usd": -1648.35,
-    "win_rate": 0.166,
-    "avg_return_pct": -12.8,
+    "pnl_usd": -1649.38,
+    "win_rate": 0.165,
+    "avg_return_pct": -12.7,
     "best_x": 11.13
    },
    "hold_24h": {
-    "pnl_usd": -1644.81,
-    "win_rate": 0.149,
+    "pnl_usd": -1645.34,
+    "win_rate": 0.148,
     "avg_return_pct": -12.7,
     "best_x": 9.67
    }
@@ -675,21 +675,21 @@
     "tier": "BOARD"
    },
    {
-    "trades": 197,
+    "trades": 198,
     "mirror": {
-     "pnl_usd": -492.87,
-     "win_rate": 0.142,
+     "pnl_usd": -493.9,
+     "win_rate": 0.141,
      "avg_return_pct": -12.5,
      "best_x": 1.88
     },
     "tp2x_half": {
-     "pnl_usd": -489.93,
-     "win_rate": 0.142,
+     "pnl_usd": -490.96,
+     "win_rate": 0.141,
      "avg_return_pct": -12.4,
      "best_x": 1.88
     },
     "hold_24h": {
-     "pnl_usd": -520.37,
+     "pnl_usd": -520.9,
      "win_rate": 0.091,
      "avg_return_pct": -13.2,
      "best_x": 2.02
@@ -700,7 +700,8 @@
    }
   ]
  },
- "open": [
+ "open": [],
+ "closed": [
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent notdecu (score 135)",
@@ -710,12 +711,18 @@
    "opened_at": 1795660443,
    "entry": 0.002643,
    "peak": 0.00268,
-   "last": 0.002589,
+   "last": 0.00261,
    "price_24h": 0.00268,
-   "wallet_buy_usd": 64.39
-  }
- ],
- "closed": [
+   "wallet_buy_usd": 64.39,
+   "closed_at": 1795837085,
+   "exit": 0.00261,
+   "reason": "48h limit",
+   "returns": {
+    "mirror": 0.9484,
+    "tp2x_half": 0.9484,
+    "hold_24h": 0.9738
+   }
+  },
   {
    "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
    "label": "consistent notdecu (score 135)",
@@ -6993,27 +7000,6 @@
     "mirror": 1.0136,
     "tp2x_half": 1.0136,
     "hold_24h": 1.0136
-   }
-  },
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent decu (score 51)",
-   "tier": "BOARD",
-   "mint": "GL2EP6zA8QeF36PBFmyXYzjZKuqpCGqv2f72ygdam3T6",
-   "symbol": "UNKNOWN",
-   "opened_at": 1792440753,
-   "entry": 2.941e-05,
-   "peak": 3.096e-05,
-   "last": 3.096e-05,
-   "price_24h": 3.035e-05,
-   "wallet_buy_usd": 108.35,
-   "closed_at": 1792621715,
-   "exit": 3.096e-05,
-   "reason": "48h limit",
-   "returns": {
-    "mirror": 1.011,
-    "tp2x_half": 1.011,
-    "hold_24h": 0.9911
    }
   }
  ]

@@ -1,19 +1,5 @@
 {
- "open": [
-  {
-   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
-   "label": "consistent notdecu (score 135)",
-   "tier": "BOARD",
-   "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
-   "symbol": "PUMP",
-   "opened_at": 1795660443,
-   "entry": 0.002643,
-   "peak": 0.00268,
-   "last": 0.002589,
-   "price_24h": 0.00268,
-   "wallet_buy_usd": 64.39
-  }
- ],
+ "open": [],
  "closed": [
   {
    "wallet": "FqamE7xrahg7FEWoByrx1o8SeyHt44rpmE6ZQfT7zrve",
@@ -13579,6 +13565,27 @@
     "mirror": 0.9596,
     "tp2x_half": 0.9596,
     "hold_24h": 0.9596
+   }
+  },
+  {
+   "wallet": "4vw54BmAogeRV3vPKWyFet5yf8DTLcREzdSzx4rw9Ud9",
+   "label": "consistent notdecu (score 135)",
+   "tier": "BOARD",
+   "mint": "pumpCmXqMfrsAkQ5r49WcJnRayYRqmXz6ae8H7H9Dfn",
+   "symbol": "PUMP",
+   "opened_at": 1795660443,
+   "entry": 0.002643,
+   "peak": 0.00268,
+   "last": 0.00261,
+   "price_24h": 0.00268,
+   "wallet_buy_usd": 64.39,
+   "closed_at": 1795837085,
+   "exit": 0.00261,
+   "reason": "48h limit",
+   "returns": {
+    "mirror": 0.9484,
+    "tp2x_half": 0.9484,
+    "hold_24h": 0.9738
    }
   }
  ]
